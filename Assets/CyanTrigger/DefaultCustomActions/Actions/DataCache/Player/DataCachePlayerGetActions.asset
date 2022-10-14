@@ -1,0 +1,58 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 61d0ad128b95568438c70898dc9e600c, type: 3}
+  m_Name: DataCachePlayerGetActions
+  m_EditorClassIdentifier: 
+  autoAddPriority: 0
+  exposedActions:
+  - guid: 38d5ccc4-99bd-467f-b22b-6de5c58240b3
+    actionNamespace: DataCache
+    actionVariantName: PlayerGet
+    description: Get a Player value for a given key. It is recommended to save the
+      value to a variable instead of calling this multiple times
+    variables:
+    - type:
+        typeDef: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      udonName: key
+      displayName: key
+      description: 
+      defaultValue:
+        objEncoded: 
+        unityObjects: []
+      variableType: 3
+    - type:
+        typeDef: VRC.SDKBase.VRCPlayerApi, VRCSDKBase, Version=0.0.0.0, Culture=neutral,
+          PublicKeyToken=null
+      udonName: player
+      displayName: player
+      description: 
+      defaultValue:
+        objEncoded: 
+        unityObjects: []
+      variableType: 6
+    - type:
+        typeDef: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      udonName: hasValue
+      displayName: hasValue
+      description: 
+      defaultValue:
+        objEncoded: Ai8AAAAAARgAAABTAHkAcwB0AGUAbQAuAEIAbwBvAGwAZQBhAG4ALAAgAG0AcwBjAG8AcgBsAGkAYgAAAAAALAAF
+        unityObjects: []
+      variableType: 6
+    baseEventName: Event_Custom
+    eventEntry: _Get
+    autoAdd: 0
+  isMultiInstance: 0
+  defaultNamespace: DataCache
+  udonProgramAsset: {fileID: 11400000, guid: 0341a4f10e06f40418cf1bb1f6f76709, type: 2}
+  assetGuid: 0341a4f10e06f40418cf1bb1f6f76709
+  thisGuid: 186be1c3a32bf70459f87973fdf05d94

@@ -1,0 +1,58 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 61d0ad128b95568438c70898dc9e600c, type: 3}
+  m_Name: DataCacheUdonGetActions
+  m_EditorClassIdentifier: 
+  autoAddPriority: 0
+  exposedActions:
+  - guid: 3223dc45-09c7-4f6e-b01f-a30e1b300771
+    actionNamespace: DataCache
+    actionVariantName: UdonGet
+    description: Get a UdonBehaviour value for a given key. It is recommended to
+      save the value to a variable instead of calling this multiple times
+    variables:
+    - type:
+        typeDef: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      udonName: key
+      displayName: key
+      description: 
+      defaultValue:
+        objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBAAAAAAU=
+        unityObjects: []
+      variableType: 3
+    - type:
+        typeDef: VRC.Udon.UdonBehaviour, VRC.Udon, Version=0.0.0.0, Culture=neutral,
+          PublicKeyToken=null
+      udonName: udon
+      displayName: udon
+      description: 
+      defaultValue:
+        objEncoded: Lg==
+        unityObjects: []
+      variableType: 6
+    - type:
+        typeDef: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      udonName: hasValue
+      displayName: hasValue
+      description: 
+      defaultValue:
+        objEncoded: Ai8AAAAAARgAAABTAHkAcwB0AGUAbQAuAEIAbwBvAGwAZQBhAG4ALAAgAG0AcwBjAG8AcgBsAGkAYgAAAAAALAAF
+        unityObjects: []
+      variableType: 6
+    baseEventName: Event_Custom
+    eventEntry: _Get
+    autoAdd: 0
+  isMultiInstance: 0
+  defaultNamespace: DataCache
+  udonProgramAsset: {fileID: 11400000, guid: fbc9f6f0415cf364ea62c9c5c607ce63, type: 2}
+  assetGuid: fbc9f6f0415cf364ea62c9c5c607ce63
+  thisGuid: 0c550cac45dcd3749b0eb4a8f6de9bf0

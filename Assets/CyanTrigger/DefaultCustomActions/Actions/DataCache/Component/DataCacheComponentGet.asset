@@ -1,0 +1,1453 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a31a3a978bd0448580d4ef9f3d6d95bf, type: 3}
+  m_Name: DataCacheComponentGet
+  m_EditorClassIdentifier: 
+  serializedUdonProgramAsset: {fileID: 11400000, guid: 631f92edef33f034ba745dfcec2be3f7,
+    type: 2}
+  udonAssembly: ".data_start\r\n  .export __CyanTrigger_ProgramName_SystemString\r\n 
+    .export key\r\n  .export component\r\n  .export componentType\r\n  .export hasValue\r\n 
+    __CyanTrigger_ProgramName_SystemString: %SystemString, null\r\n  __CyanTrigger_ProgramHash_SystemString:
+    %SystemString, null\r\n  __0_ra_SystemUInt32: %SystemUInt32, null\r\n  __1_ea_SystemUInt32:
+    %SystemUInt32, null\r\n  __null: %SystemObject, null\r\n  _this_gameobject: %UnityEngineGameObject,
+    this\r\n  _this_local_player: %VRCSDKBaseVRCPlayerApi, null\r\n  key: %SystemString,
+    null\r\n  component: %UnityEngineComponent, null\r\n  componentType: %SystemType,
+    null\r\n  hasValue: %SystemBoolean, null\r\n  __ag_0_0_SystemString: %SystemString,
+    null\r\n  __ag_0_1_SystemString: %SystemString, null\r\n  __ag_0_2_SystemString:
+    %SystemString, null\r\n  __ag_0_3_SystemBoolean: %SystemBoolean, null\r\n  __ag_0_4_SystemBoolean:
+    %SystemBoolean, null\r\n  __18_lp_init_SystemBoolean_ct_intern: %SystemBoolean,
+    null\r\n  __ag_0_5_SystemString: %SystemString, null\r\n  __ag_0_6_SystemString:
+    %SystemString, null\r\n  __21_local_var_SystemBoolean: %SystemBoolean, null\r\n 
+    __22_const_SystemBoolean: %SystemBoolean, null\r\n  __23_local_var_SystemBoolean:
+    %SystemBoolean, null\r\n  __24_const_SystemType: %SystemType, null\r\n  __25_local_var_SystemString:
+    %SystemString, null\r\n  __26_local_var_SystemString: %SystemString, null\r\n 
+    __27_local_var_SystemBoolean: %SystemBoolean, null\r\n  __28___jump_return_0_SystemUInt32:
+    %SystemUInt32, null\r\n  __29_local_var_SystemBoolean: %SystemBoolean, null\r\n 
+    __30_local_var_SystemString: %SystemString, null\r\n  __31_ref_SystemString:
+    %SystemString, null\r\n  __32_ref_SystemString: %SystemString, null\r\n  __33_local_var_SystemString:
+    %SystemString, null\r\n  __34_ref_SystemString: %SystemString, null\r\n  __35_ref_SystemBoolean:
+    %SystemBoolean, null\r\n  __36_local_var_UnityEngineGameObject: %UnityEngineGameObject,
+    null\r\n  __37_local_var_SystemBoolean: %SystemBoolean, null\r\n  __38_local_var_SystemBoolean:
+    %SystemBoolean, null\r\n  __39_local_var_SystemString: %SystemString, null\r\n 
+    __40_ref_SystemString: %SystemString, null\r\n  __41_ref_SystemString: %SystemString,
+    null\r\n  __42_local_var_SystemString: %SystemString, null\r\n  __43_ref_SystemString:
+    %SystemString, null\r\n  __44_ref_SystemBoolean: %SystemBoolean, null\r\n  __45_local_var_UnityEngineComponent[]:
+    %UnityEngineComponentArray, null\r\n  __46_local_var_SystemInt32: %SystemInt32,
+    null\r\n  __47_ref_SystemInt32: %SystemInt32, null\r\n  __48_local_var_SystemString:
+    %SystemString, null\r\n  __49_ref_SystemString: %SystemString, null\r\n  __50_local_var_SystemString:
+    %SystemString, null\r\n  __51_local_var_SystemBoolean: %SystemBoolean, null\r\n 
+    __52___jump_return_1_SystemUInt32: %SystemUInt32, null\r\n  __53_local_var_SystemBoolean:
+    %SystemBoolean, null\r\n  __54_local_var_SystemBoolean: %SystemBoolean, null\r\n 
+    __55_local_var_SystemInt32: %SystemInt32, null\r\n  __56_local_var_SystemBoolean:
+    %SystemBoolean, null\r\n  __57_local_var_SystemString: %SystemString, null\r\n 
+    __58_ref_SystemString: %SystemString, null\r\n  __59_ref_SystemString: %SystemString,
+    null\r\n  __60_local_var_SystemString: %SystemString, null\r\n  __61_ref_SystemString:
+    %SystemString, null\r\n  __62_ref_SystemBoolean: %SystemBoolean, null\r\n  __63_ref_SystemBoolean:
+    %SystemBoolean, null\r\n.data_end\r\n\n.code_start\r\n  .export __ag_0_0\r\n 
+    __ag_0_0:\r\n    PUSH, __1_ea_SystemUInt32\r\n    PUSH, __18_lp_init_SystemBoolean_ct_intern\r\n   
+    JUMP_IF_FALSE, 0x0000003C\r\n    PUSH, __ag_0_4_SystemBoolean\r\n    PUSH, __18_lp_init_SystemBoolean_ct_intern\r\n   
+    COPY\r\n    PUSH, _this_local_player\r\n    EXTERN, \"VRCSDKBaseNetworking.__get_LocalPlayer__VRCSDKBaseVRCPlayerApi\"\r\n   
+    PUSH, __ag_0_1_SystemString\r\n    PUSH, __ag_0_6_SystemString\r\n    PUSH, __ag_0_0_SystemString\r\n   
+    PUSH, __ag_0_2_SystemString\r\n    EXTERN, \"SystemString.__Concat__SystemString_SystemString_SystemString__SystemString\"\r\n   
+    PUSH, _this_local_player\r\n    PUSH, __ag_0_2_SystemString\r\n    PUSH, __ag_0_5_SystemString\r\n   
+    EXTERN, \"VRCSDKBaseVRCPlayerApi.__GetPlayerTag__SystemString__SystemString\"\r\n   
+    PUSH, __ag_0_5_SystemString\r\n    PUSH, __ag_0_3_SystemBoolean\r\n    EXTERN,
+    \"SystemString.__IsNullOrEmpty__SystemString__SystemBoolean\"\r\n    PUSH, __ag_0_3_SystemBoolean\r\n   
+    PUSH, __ag_0_3_SystemBoolean\r\n    EXTERN, \"SystemBoolean.__op_UnaryNegation__SystemBoolean__SystemBoolean\"\r\n   
+    PUSH, __0_ra_SystemUInt32\r\n    COPY\r\n    JUMP_INDIRECT, __0_ra_SystemUInt32\r\n\r\n 
+    .export _Get\r\n  _Get:\r\n    PUSH, __1_ea_SystemUInt32\r\n    PUSH, __22_const_SystemBoolean\r\n   
+    PUSH, __21_local_var_SystemBoolean\r\n    COPY\r\n    PUSH, componentType\r\n   
+    PUSH, __23_local_var_SystemBoolean\r\n    EXTERN, \"VRCSDKBaseUtilities.__IsValid__SystemObject__SystemBoolean\"\r\n   
+    PUSH, __23_local_var_SystemBoolean\r\n    PUSH, __21_local_var_SystemBoolean\r\n   
+    EXTERN, \"SystemBoolean.__op_UnaryNegation__SystemBoolean__SystemBoolean\"\r\n   
+    PUSH, __21_local_var_SystemBoolean\r\n    JUMP_IF_FALSE, 0x00000138\r\n    PUSH,
+    __24_const_SystemType\r\n    PUSH, componentType\r\n    COPY\r\n    PUSH, componentType\r\n   
+    PUSH, __25_local_var_SystemString\r\n    EXTERN, \"SystemType.__get_Name__SystemString\"\r\n   
+    PUSH, key\r\n    PUSH, __ag_0_0_SystemString\r\n    COPY\r\n    PUSH, __25_local_var_SystemString\r\n   
+    PUSH, __ag_0_6_SystemString\r\n    COPY\r\n    PUSH, __26_local_var_SystemString\r\n   
+    PUSH, __ag_0_5_SystemString\r\n    COPY\r\n    PUSH, __27_local_var_SystemBoolean\r\n   
+    PUSH, __ag_0_3_SystemBoolean\r\n    COPY\r\n    PUSH, __28___jump_return_0_SystemUInt32\r\n   
+    JUMP, 0x00000008\r\n    PUSH, __ag_0_5_SystemString\r\n    PUSH, __26_local_var_SystemString\r\n   
+    COPY\r\n    PUSH, __ag_0_3_SystemBoolean\r\n    PUSH, __27_local_var_SystemBoolean\r\n   
+    COPY\r\n    PUSH, __22_const_SystemBoolean\r\n    PUSH, __29_local_var_SystemBoolean\r\n   
+    COPY\r\n    PUSH, __27_local_var_SystemBoolean\r\n    PUSH, __29_local_var_SystemBoolean\r\n   
+    EXTERN, \"SystemBoolean.__op_UnaryNegation__SystemBoolean__SystemBoolean\"\r\n   
+    PUSH, __29_local_var_SystemBoolean\r\n    JUMP_IF_FALSE, 0x000002AC\r\n    PUSH,
+    __31_ref_SystemString\r\n    PUSH, __25_local_var_SystemString\r\n    PUSH, __32_ref_SystemString\r\n   
+    PUSH, __30_local_var_SystemString\r\n    EXTERN, \"SystemString.__Concat__SystemString_SystemString_SystemString__SystemString\"\r\n   
+    PUSH, __30_local_var_SystemString\r\n    PUSH, __34_ref_SystemString\r\n    PUSH,
+    key\r\n    PUSH, __33_local_var_SystemString\r\n    EXTERN, \"SystemString.__Concat__SystemString_SystemString_SystemString__SystemString\"\r\n   
+    PUSH, __33_local_var_SystemString\r\n    PUSH, _this_gameobject\r\n    EXTERN,
+    \"UnityEngineDebug.__LogError__SystemObject_UnityEngineObject__SystemVoid\"\r\n   
+    PUSH, __null\r\n    PUSH, component\r\n    COPY\r\n    PUSH, __35_ref_SystemBoolean\r\n   
+    PUSH, hasValue\r\n    COPY\r\n    JUMP, 0x0000063C\r\n    PUSH, __26_local_var_SystemString\r\n   
+    PUSH, __36_local_var_UnityEngineGameObject\r\n    EXTERN, \"UnityEngineGameObject.__Find__SystemString__UnityEngineGameObject\"\r\n   
+    PUSH, __22_const_SystemBoolean\r\n    PUSH, __37_local_var_SystemBoolean\r\n   
+    COPY\r\n    PUSH, __36_local_var_UnityEngineGameObject\r\n    PUSH, __38_local_var_SystemBoolean\r\n   
+    EXTERN, \"VRCSDKBaseUtilities.__IsValid__SystemObject__SystemBoolean\"\r\n   
+    PUSH, __38_local_var_SystemBoolean\r\n    PUSH, __37_local_var_SystemBoolean\r\n   
+    EXTERN, \"SystemBoolean.__op_UnaryNegation__SystemBoolean__SystemBoolean\"\r\n   
+    PUSH, __37_local_var_SystemBoolean\r\n    JUMP_IF_FALSE, 0x000003B0\r\n    PUSH,
+    __40_ref_SystemString\r\n    PUSH, __25_local_var_SystemString\r\n    PUSH, __41_ref_SystemString\r\n   
+    PUSH, __39_local_var_SystemString\r\n    EXTERN, \"SystemString.__Concat__SystemString_SystemString_SystemString__SystemString\"\r\n   
+    PUSH, __39_local_var_SystemString\r\n    PUSH, __43_ref_SystemString\r\n    PUSH,
+    key\r\n    PUSH, __42_local_var_SystemString\r\n    EXTERN, \"SystemString.__Concat__SystemString_SystemString_SystemString__SystemString\"\r\n   
+    PUSH, __42_local_var_SystemString\r\n    PUSH, _this_gameobject\r\n    EXTERN,
+    \"UnityEngineDebug.__LogError__SystemObject_UnityEngineObject__SystemVoid\"\r\n   
+    PUSH, __null\r\n    PUSH, component\r\n    COPY\r\n    PUSH, __44_ref_SystemBoolean\r\n   
+    PUSH, hasValue\r\n    COPY\r\n    JUMP, 0x0000063C\r\n    PUSH, __null\r\n   
+    PUSH, component\r\n    COPY\r\n    PUSH, __36_local_var_UnityEngineGameObject\r\n   
+    PUSH, componentType\r\n    PUSH, __45_local_var_UnityEngineComponent[]\r\n   
+    EXTERN, \"UnityEngineGameObject.__GetComponents__SystemType__UnityEngineComponentArray\"\r\n   
+    PUSH, __47_ref_SystemInt32\r\n    PUSH, __46_local_var_SystemInt32\r\n    COPY\r\n   
+    PUSH, __25_local_var_SystemString\r\n    PUSH, __49_ref_SystemString\r\n    PUSH,
+    __48_local_var_SystemString\r\n    EXTERN, \"SystemString.__Concat__SystemString_SystemString__SystemString\"\r\n   
+    PUSH, key\r\n    PUSH, __ag_0_0_SystemString\r\n    COPY\r\n    PUSH, __48_local_var_SystemString\r\n   
+    PUSH, __ag_0_6_SystemString\r\n    COPY\r\n    PUSH, __50_local_var_SystemString\r\n   
+    PUSH, __ag_0_5_SystemString\r\n    COPY\r\n    PUSH, __51_local_var_SystemBoolean\r\n   
+    PUSH, __ag_0_3_SystemBoolean\r\n    COPY\r\n    PUSH, __52___jump_return_1_SystemUInt32\r\n   
+    JUMP, 0x00000008\r\n    PUSH, __ag_0_5_SystemString\r\n    PUSH, __50_local_var_SystemString\r\n   
+    COPY\r\n    PUSH, __ag_0_3_SystemBoolean\r\n    PUSH, __51_local_var_SystemBoolean\r\n   
+    COPY\r\n    PUSH, __51_local_var_SystemBoolean\r\n    JUMP_IF_FALSE, 0x000004D0\r\n   
+    PUSH, __50_local_var_SystemString\r\n    PUSH, __46_local_var_SystemInt32\r\n   
+    PUSH, __53_local_var_SystemBoolean\r\n    EXTERN, \"SystemInt32.__TryParse__SystemString_SystemInt32Ref__SystemBoolean\"\r\n   
+    PUSH, __22_const_SystemBoolean\r\n    PUSH, __54_local_var_SystemBoolean\r\n   
+    COPY\r\n    PUSH, __45_local_var_UnityEngineComponent[]\r\n    PUSH, __55_local_var_SystemInt32\r\n   
+    EXTERN, \"UnityEngineComponentArray.__get_Length__SystemInt32\"\r\n    PUSH,
+    __46_local_var_SystemInt32\r\n    PUSH, __55_local_var_SystemInt32\r\n    PUSH,
+    __54_local_var_SystemBoolean\r\n    EXTERN, \"SystemInt32.__op_LessThan__SystemInt32_SystemInt32__SystemBoolean\"\r\n   
+    PUSH, __54_local_var_SystemBoolean\r\n    JUMP_IF_FALSE, 0x0000054C\r\n    PUSH,
+    __45_local_var_UnityEngineComponent[]\r\n    PUSH, __46_local_var_SystemInt32\r\n   
+    PUSH, component\r\n    EXTERN, \"UnityEngineComponentArray.__Get__SystemInt32__UnityEngineComponent\"\r\n   
+    PUSH, __22_const_SystemBoolean\r\n    PUSH, __56_local_var_SystemBoolean\r\n   
+    COPY\r\n    PUSH, component\r\n    PUSH, __null\r\n    PUSH, __56_local_var_SystemBoolean\r\n   
+    EXTERN, \"UnityEngineComponent.__op_Equality__UnityEngineObject_UnityEngineObject__SystemBoolean\"\r\n   
+    PUSH, __56_local_var_SystemBoolean\r\n    JUMP_IF_FALSE, 0x00000628\r\n    PUSH,
+    __58_ref_SystemString\r\n    PUSH, __25_local_var_SystemString\r\n    PUSH, __59_ref_SystemString\r\n   
+    PUSH, __57_local_var_SystemString\r\n    EXTERN, \"SystemString.__Concat__SystemString_SystemString_SystemString__SystemString\"\r\n   
+    PUSH, __57_local_var_SystemString\r\n    PUSH, __61_ref_SystemString\r\n    PUSH,
+    key\r\n    PUSH, __60_local_var_SystemString\r\n    EXTERN, \"SystemString.__Concat__SystemString_SystemString_SystemString__SystemString\"\r\n   
+    PUSH, __60_local_var_SystemString\r\n    PUSH, _this_gameobject\r\n    EXTERN,
+    \"UnityEngineDebug.__LogError__SystemObject_UnityEngineObject__SystemVoid\"\r\n   
+    PUSH, __null\r\n    PUSH, component\r\n    COPY\r\n    PUSH, __62_ref_SystemBoolean\r\n   
+    PUSH, hasValue\r\n    COPY\r\n    JUMP, 0x0000063C\r\n    PUSH, __63_ref_SystemBoolean\r\n   
+    PUSH, hasValue\r\n    COPY\r\n    PUSH, __0_ra_SystemUInt32\r\n    COPY\r\n   
+    JUMP_INDIRECT, __0_ra_SystemUInt32\r\n\r\n.code_end\r\n"
+  assemblyError: 
+  triggerHash: F23C3532C9C0913C62BB773DE5255CA9
+  shouldBeNetworked: 0
+  warningMessages: []
+  errorMessages: []
+  ctDataInstance:
+    version: 6
+    updateOrder: 0
+    autoSetSyncMode: 1
+    programSyncMode: 2
+    programName: 
+    events:
+    - name: _Get
+      eventId: 58d4c62b-f213-4025-974f-b2a96a228b22
+      eventInstance:
+        actionType:
+          directEvent: Event_Custom
+          guid: 
+        inputs: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      actionInstances:
+      - actionType:
+          directEvent: CyanTriggerSpecial_If
+          guid: 
+        inputs: []
+        multiInput: []
+        expanded: 1
+        comment:
+          comment: Check if component type is valid, set to "Component" type if not
+            valid.
+      - actionType:
+          directEvent: CyanTriggerSpecial_Condition
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: 
+          variableID: ef05da6e-8618-4cff-a8d5-0907200af52b
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBFAAAAGkAbgB2AGEAbABpAGQAQwBvAG0AcABvAG4AZQBuAHQAVAB5AHAAZQAF
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: VRCSDKBaseUtilities.__IsValid__SystemObject__SystemBoolean
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: componentType
+          variableID: 99536076-4771-4343-9ef5-56727fac1254
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        - isVariable: 1
+          name: 
+          variableID: 5a93a363-20d9-4d23-bfda-9aba57d95266
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBBwAAAGkAcwBWAGEAbABpAGQABQ==
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: SystemBoolean.__op_UnaryNegation__SystemBoolean__SystemBoolean
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: isValid
+          variableID: 5a93a363-20d9-4d23-bfda-9aba57d95266
+          data:
+            objEncoded: Ai8AAAAAARgAAABTAHkAcwB0AGUAbQAuAEIAbwBvAGwAZQBhAG4ALAAgAG0AcwBjAG8AcgBsAGkAYgAAAAAALAAF
+            unityObjects: []
+        - isVariable: 1
+          name: invalidComponentType
+          variableID: ef05da6e-8618-4cff-a8d5-0907200af52b
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: CyanTriggerSpecial_BlockEnd
+          guid: 
+        inputs: []
+        multiInput: []
+        expanded: 1
+        comment:
+          comment: 
+      - actionType:
+          directEvent: CyanTriggerSpecial_ConditionBody
+          guid: 
+        inputs: []
+        multiInput: []
+        expanded: 1
+        comment:
+          comment: 
+      - actionType:
+          directEvent: Type_UnityEngineComponent
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: componentType
+          variableID: 99536076-4771-4343-9ef5-56727fac1254
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBDQAAAGMAbwBtAHAAbwBuAGUAbgB0AFQAeQBwAGUABQ==
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: CyanTriggerSpecial_BlockEnd
+          guid: 
+        inputs: []
+        multiInput: []
+        expanded: 1
+        comment:
+          comment: 
+      - actionType:
+          directEvent: CyanTriggerSpecial_BlockEnd
+          guid: 
+        inputs: []
+        multiInput: []
+        expanded: 1
+        comment:
+          comment: 
+      - actionType:
+          directEvent: SystemType.__get_Name__SystemString
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: componentType
+          variableID: 99536076-4771-4343-9ef5-56727fac1254
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        - isVariable: 1
+          name: 
+          variableID: c0c00a17-a780-4a1d-b082-ab5508487aa2
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBDQAAAGMAbwBtAHAAbwBuAGUAbgB0AE4AYQBtAGUABQ==
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: 
+          guid: ddcb5c48-f163-4490-a9ce-4200fce9cc46
+        inputs:
+        - isVariable: 1
+          name: key
+          variableID: f9624e6f-219c-4fb6-aab9-0bfb5e2f5f0f
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBAAAAAAU=
+            unityObjects: []
+        - isVariable: 1
+          name: componentName
+          variableID: c0c00a17-a780-4a1d-b082-ab5508487aa2
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBAAAAAAU=
+            unityObjects: []
+        - isVariable: 1
+          name: 
+          variableID: 42f383b6-bf17-4ca2-93de-1ae42c188616
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBBAAAAHAAYQB0AGgABQ==
+            unityObjects: []
+        - isVariable: 1
+          name: 
+          variableID: dacb8537-4121-42a5-8fa9-1320af3fcc70
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBDwAAAGgAYQBzAEUAeABpAHMAdABpAG4AZwBQAGEAdABoAAU=
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: CyanTriggerSpecial_If
+          guid: 
+        inputs: []
+        multiInput: []
+        expanded: 1
+        comment:
+          comment: If key is empty, log an error and return
+      - actionType:
+          directEvent: CyanTriggerSpecial_Condition
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: 
+          variableID: 6e8805c3-a602-4681-896b-cb16ef647370
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBCwAAAHAAYQB0AGgASQBzAEUAbQBwAHQAeQAF
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: SystemBoolean.__op_UnaryNegation__SystemBoolean__SystemBoolean
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: hasExistingPath
+          variableID: dacb8537-4121-42a5-8fa9-1320af3fcc70
+          data:
+            objEncoded: Ai8AAAAAARgAAABTAHkAcwB0AGUAbQAuAEIAbwBvAGwAZQBhAG4ALAAgAG0AcwBjAG8AcgBsAGkAYgAAAAAALAAF
+            unityObjects: []
+        - isVariable: 1
+          name: pathIsEmpty
+          variableID: 6e8805c3-a602-4681-896b-cb16ef647370
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: CyanTriggerSpecial_BlockEnd
+          guid: 
+        inputs: []
+        multiInput: []
+        expanded: 1
+        comment:
+          comment: 
+      - actionType:
+          directEvent: CyanTriggerSpecial_ConditionBody
+          guid: 
+        inputs: []
+        multiInput: []
+        expanded: 1
+        comment:
+          comment: 
+      - actionType:
+          directEvent: SystemString.__Concat__SystemString_SystemString_SystemString__SystemString
+          guid: 
+        inputs:
+        - isVariable: 0
+          name: __logPrefix
+          variableID: c0feec68-69b7-40c1-8d6b-bf70cc61224d
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBDgAAAFsARABhAHQAYQBDAGEAYwBoAGUALgBHAGUAdAAF
+            unityObjects: []
+        - isVariable: 1
+          name: componentName
+          variableID: c0c00a17-a780-4a1d-b082-ab5508487aa2
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBAAAAAAU=
+            unityObjects: []
+        - isVariable: 0
+          name: key
+          variableID: f9624e6f-219c-4fb6-aab9-0bfb5e2f5f0f
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBAQAAAF0ABQ==
+            unityObjects: []
+        - isVariable: 1
+          name: 
+          variableID: 5409bc78-87d7-4616-a9de-806bd974934b
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBCQAAAGwAbwBnAFAAcgBlAGYAaQB4AAU=
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: SystemString.__Concat__SystemString_SystemString_SystemString__SystemString
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: logPrefix
+          variableID: 5409bc78-87d7-4616-a9de-806bd974934b
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBAAAAAAU=
+            unityObjects: []
+        - isVariable: 0
+          name: 
+          variableID: 
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBFQAAACAARABhAHQAYQAgAGUAbQBwAHQAeQAgAGYAbwByACAAawBlAHkAOgAgAAU=
+            unityObjects: []
+        - isVariable: 1
+          name: key
+          variableID: f9624e6f-219c-4fb6-aab9-0bfb5e2f5f0f
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBAAAAAAU=
+            unityObjects: []
+        - isVariable: 1
+          name: 
+          variableID: 2b37e1c4-83b3-44c1-ab90-93c368203caf
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBCAAAAGwAbwBnAEUAcgByAG8AcgAF
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: UnityEngineDebug.__LogError__SystemObject_UnityEngineObject__SystemVoid
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: logError
+          variableID: 2b37e1c4-83b3-44c1-ab90-93c368203caf
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        - isVariable: 1
+          name: This GameObject
+          variableID: _this_gameobject
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: UnityEngineComponent__.Set__UnityEngineComponent__UnityEngineComponent
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: null
+          variableID: __null
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        - isVariable: 1
+          name: component
+          variableID: df3b0679-685c-4bd5-a0b4-fb9085147f2c
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBDAAAAGMAbwBtAHAAbwBuAGUAbgB0AFYAYQByAAU=
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: SystemBoolean__.Set__SystemBoolean__SystemBoolean
+          guid: 
+        inputs:
+        - isVariable: 0
+          name: 
+          variableID: 
+          data:
+            objEncoded: Ai8AAAAAARgAAABTAHkAcwB0AGUAbQAuAEIAbwBvAGwAZQBhAG4ALAAgAG0AcwBjAG8AcgBsAGkAYgAAAAAALAAF
+            unityObjects: []
+        - isVariable: 1
+          name: hasValue
+          variableID: 66a3ca1d-31e2-4671-81ec-f5e79cbd9f2b
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBBwAAAGIAbwBvAGwAVgBhAHIABQ==
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: CyanTriggerSpecial_Return
+          guid: 
+        inputs: []
+        multiInput: []
+        expanded: 1
+        comment:
+          comment: 
+      - actionType:
+          directEvent: CyanTriggerSpecial_BlockEnd
+          guid: 
+        inputs: []
+        multiInput: []
+        expanded: 1
+        comment:
+          comment: 
+      - actionType:
+          directEvent: CyanTriggerSpecial_BlockEnd
+          guid: 
+        inputs: []
+        multiInput: []
+        expanded: 1
+        comment:
+          comment: 
+      - actionType:
+          directEvent: UnityEngineGameObject.__Find__SystemString__UnityEngineGameObject
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: path
+          variableID: 42f383b6-bf17-4ca2-93de-1ae42c188616
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBAAAAAAU=
+            unityObjects: []
+        - isVariable: 1
+          name: 
+          variableID: 86e86955-7fc5-4ac8-a039-f91b66d4bac5
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBCQAAAGsAZQB5AE8AYgBqAGUAYwB0AAU=
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: Find the object for the given path.
+      - actionType:
+          directEvent: CyanTriggerSpecial_If
+          guid: 
+        inputs: []
+        multiInput: []
+        expanded: 1
+        comment:
+          comment: Check if there was an object at this path. Log an error if not.
+      - actionType:
+          directEvent: CyanTriggerSpecial_Condition
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: 
+          variableID: 87d9fdd3-b5de-45f3-b9d0-5185c36f6951
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBDwAAAGsAZQB5AE8AYgBqAGUAYwB0AEkAcwBOAHUAbABsAAU=
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: VRCSDKBaseUtilities.__IsValid__SystemObject__SystemBoolean
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: keyObject
+          variableID: 86e86955-7fc5-4ac8-a039-f91b66d4bac5
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        - isVariable: 1
+          name: 
+          variableID: b373b4a3-dd7b-4c55-bd37-03b14969c23c
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBBwAAAGkAcwBWAGEAbABpAGQABQ==
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: SystemBoolean.__op_UnaryNegation__SystemBoolean__SystemBoolean
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: isValid
+          variableID: b373b4a3-dd7b-4c55-bd37-03b14969c23c
+          data:
+            objEncoded: Ai8AAAAAARgAAABTAHkAcwB0AGUAbQAuAEIAbwBvAGwAZQBhAG4ALAAgAG0AcwBjAG8AcgBsAGkAYgAAAAAALAAF
+            unityObjects: []
+        - isVariable: 1
+          name: keyObjectIsNull
+          variableID: 87d9fdd3-b5de-45f3-b9d0-5185c36f6951
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: CyanTriggerSpecial_BlockEnd
+          guid: 
+        inputs: []
+        multiInput: []
+        expanded: 1
+        comment:
+          comment: 
+      - actionType:
+          directEvent: CyanTriggerSpecial_ConditionBody
+          guid: 
+        inputs: []
+        multiInput: []
+        expanded: 1
+        comment:
+          comment: 
+      - actionType:
+          directEvent: SystemString.__Concat__SystemString_SystemString_SystemString__SystemString
+          guid: 
+        inputs:
+        - isVariable: 0
+          name: __logPrefix
+          variableID: c0feec68-69b7-40c1-8d6b-bf70cc61224d
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBDgAAAFsARABhAHQAYQBDAGEAYwBoAGUALgBHAGUAdAAF
+            unityObjects: []
+        - isVariable: 1
+          name: componentName
+          variableID: c0c00a17-a780-4a1d-b082-ab5508487aa2
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBAAAAAAU=
+            unityObjects: []
+        - isVariable: 0
+          name: key
+          variableID: f9624e6f-219c-4fb6-aab9-0bfb5e2f5f0f
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBAQAAAF0ABQ==
+            unityObjects: []
+        - isVariable: 1
+          name: 
+          variableID: 1e0c0036-ecdc-4755-a04f-29e6d918995b
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBCQAAAGwAbwBnAFAAcgBlAGYAaQB4AAU=
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: SystemString.__Concat__SystemString_SystemString_SystemString__SystemString
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: logPrefix
+          variableID: 1e0c0036-ecdc-4755-a04f-29e6d918995b
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBAAAAAAU=
+            unityObjects: []
+        - isVariable: 0
+          name: 
+          variableID: 
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBGgAAACAATwBiAGoAZQBjAHQAIAB3AGEAcwAgAG4AdQBsAGwAIABmAG8AcgAgAGsAZQB5ADoAIAAF
+            unityObjects: []
+        - isVariable: 1
+          name: key
+          variableID: f9624e6f-219c-4fb6-aab9-0bfb5e2f5f0f
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBAAAAAAU=
+            unityObjects: []
+        - isVariable: 1
+          name: 
+          variableID: 140f4303-1078-4e4e-8ac8-e0ca0d71597a
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBCAAAAGwAbwBnAEUAcgByAG8AcgAF
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: UnityEngineDebug.__LogError__SystemObject_UnityEngineObject__SystemVoid
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: logError
+          variableID: 140f4303-1078-4e4e-8ac8-e0ca0d71597a
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        - isVariable: 1
+          name: This GameObject
+          variableID: _this_gameobject
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: UnityEngineComponent__.Set__UnityEngineComponent__UnityEngineComponent
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: null
+          variableID: __null
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        - isVariable: 1
+          name: component
+          variableID: df3b0679-685c-4bd5-a0b4-fb9085147f2c
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBDAAAAGMAbwBtAHAAbwBuAGUAbgB0AFYAYQByAAU=
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: SystemBoolean__.Set__SystemBoolean__SystemBoolean
+          guid: 
+        inputs:
+        - isVariable: 0
+          name: 
+          variableID: 
+          data:
+            objEncoded: Ai8AAAAAARgAAABTAHkAcwB0AGUAbQAuAEIAbwBvAGwAZQBhAG4ALAAgAG0AcwBjAG8AcgBsAGkAYgAAAAAALAAF
+            unityObjects: []
+        - isVariable: 1
+          name: hasValue
+          variableID: 66a3ca1d-31e2-4671-81ec-f5e79cbd9f2b
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBBwAAAGIAbwBvAGwAVgBhAHIABQ==
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: CyanTriggerSpecial_Return
+          guid: 
+        inputs: []
+        multiInput: []
+        expanded: 1
+        comment:
+          comment: 
+      - actionType:
+          directEvent: CyanTriggerSpecial_BlockEnd
+          guid: 
+        inputs: []
+        multiInput: []
+        expanded: 1
+        comment:
+          comment: 
+      - actionType:
+          directEvent: CyanTriggerSpecial_BlockEnd
+          guid: 
+        inputs: []
+        multiInput: []
+        expanded: 1
+        comment:
+          comment: 
+      - actionType:
+          directEvent: UnityEngineComponent__.Set__UnityEngineComponent__UnityEngineComponent
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: null
+          variableID: __null
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        - isVariable: 1
+          name: component
+          variableID: df3b0679-685c-4bd5-a0b4-fb9085147f2c
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBDAAAAGMAbwBtAHAAbwBuAGUAbgB0AFYAYQByAAU=
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: CyanTriggerSpecial_Block
+          guid: 
+        inputs: []
+        multiInput: []
+        expanded: 1
+        comment:
+          comment: Get the component based on the set component index
+      - actionType:
+          directEvent: UnityEngineGameObject.__GetComponents__SystemType__UnityEngineComponentArray
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: keyObject
+          variableID: 86e86955-7fc5-4ac8-a039-f91b66d4bac5
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        - isVariable: 1
+          name: componentType
+          variableID: 99536076-4771-4343-9ef5-56727fac1254
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        - isVariable: 1
+          name: 
+          variableID: e52308de-1fbc-436f-945f-8b6ffa1cf536
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBDQAAAGEAbABsAEMAbwBtAHAAbwBuAGUAbgB0AHMABQ==
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: SystemInt32__.Set__SystemInt32__SystemInt32
+          guid: 
+        inputs:
+        - isVariable: 0
+          name: 
+          variableID: 
+          data:
+            objEncoded: Ai8AAAAAARYAAABTAHkAcwB0AGUAbQAuAEkAbgB0ADMAMgAsACAAbQBzAGMAbwByAGwAaQBiAAAAAAAYAAAAAAU=
+            unityObjects: []
+        - isVariable: 1
+          name: 
+          variableID: 90e73e06-8604-4f14-964a-210b79b57dcd
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBDgAAAGMAbwBtAHAAbwBuAGUAbgB0AEkAbgBkAGUAeAAF
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: SystemString.__Concat__SystemString_SystemString__SystemString
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: componentName
+          variableID: c0c00a17-a780-4a1d-b082-ab5508487aa2
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBAAAAAAU=
+            unityObjects: []
+        - isVariable: 0
+          name: 
+          variableID: 
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBEQAAAC4AYwBvAG0AcABvAG4AZQBuAHQAXwBpAG4AZABlAHgALgAF
+            unityObjects: []
+        - isVariable: 1
+          name: 
+          variableID: e918e515-8c49-4947-88ee-d7b0fe16fd1e
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBDAAAAGMAbwBtAHAASQBuAGQAZQB4AEsAZQB5AAU=
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: 
+          guid: ddcb5c48-f163-4490-a9ce-4200fce9cc46
+        inputs:
+        - isVariable: 1
+          name: key
+          variableID: f9624e6f-219c-4fb6-aab9-0bfb5e2f5f0f
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBAAAAAAU=
+            unityObjects: []
+        - isVariable: 1
+          name: compIndexKey
+          variableID: e918e515-8c49-4947-88ee-d7b0fe16fd1e
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBAAAAAAU=
+            unityObjects: []
+        - isVariable: 1
+          name: 
+          variableID: 382a25cf-cde3-40a4-8618-d04330e23d76
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBDwAAAGMAbwBtAHAASQBuAGQAZQBkAFMAdAByAGkAbgBnAAU=
+            unityObjects: []
+        - isVariable: 1
+          name: 
+          variableID: 6c097035-b459-4af0-a86b-86afd50279da
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBDAAAAGgAYQBzAEMAbwBtAHAASQBuAGQAZQB4AAU=
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: CyanTriggerSpecial_If
+          guid: 
+        inputs: []
+        multiInput: []
+        expanded: 1
+        comment:
+          comment: Check if the index tag has a value and try parsing as an int.
+      - actionType:
+          directEvent: CyanTriggerSpecial_Condition
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: hasCompIndex
+          variableID: 6c097035-b459-4af0-a86b-86afd50279da
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBBgAAAGgAYQBzAEsAZQB5AAU=
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: CyanTriggerSpecial_BlockEnd
+          guid: 
+        inputs: []
+        multiInput: []
+        expanded: 1
+        comment:
+          comment: 
+      - actionType:
+          directEvent: CyanTriggerSpecial_ConditionBody
+          guid: 
+        inputs: []
+        multiInput: []
+        expanded: 1
+        comment:
+          comment: 
+      - actionType:
+          directEvent: SystemInt32.__TryParse__SystemString_SystemInt32Ref__SystemBoolean
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: compIndedString
+          variableID: 382a25cf-cde3-40a4-8618-d04330e23d76
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBAAAAAAU=
+            unityObjects: []
+        - isVariable: 1
+          name: componentIndex
+          variableID: 90e73e06-8604-4f14-964a-210b79b57dcd
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBBgAAAHIAZQBzAHUAbAB0AAU=
+            unityObjects: []
+        - isVariable: 1
+          name: 
+          variableID: b141d523-fee6-456f-84b8-1599729172d6
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: CyanTriggerSpecial_BlockEnd
+          guid: 
+        inputs: []
+        multiInput: []
+        expanded: 1
+        comment:
+          comment: 
+      - actionType:
+          directEvent: CyanTriggerSpecial_BlockEnd
+          guid: 
+        inputs: []
+        multiInput: []
+        expanded: 1
+        comment:
+          comment: 
+      - actionType:
+          directEvent: CyanTriggerSpecial_If
+          guid: 
+        inputs: []
+        multiInput: []
+        expanded: 1
+        comment:
+          comment: Check if the index value is within bounds of the component array,
+            and get the udon component if so.
+      - actionType:
+          directEvent: CyanTriggerSpecial_Condition
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: 
+          variableID: f5286dd4-44fa-4472-b60f-a46958404c87
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBCAAAAGkAbgBCAG8AdQBuAGQAcwAF
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: UnityEngineComponentArray.__get_Length__SystemInt32
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: allComponents
+          variableID: e52308de-1fbc-436f-945f-8b6ffa1cf536
+          data:
+            objEncoded: Ai8AAAAAAS8AAABVAG4AaQB0AHkARQBuAGcAaQBuAGUALgBDAG8AbQBwAG8AbgBlAG4AdABbAF0ALAAgAFUAbgBpAHQAeQBFAG4AZwBpAG4AZQAuAEMAbwByAGUATQBvAGQAdQBsAGUAAAAAAAYAAAAAAAAAAAcF
+            unityObjects: []
+        - isVariable: 1
+          name: 
+          variableID: ef93099f-359b-441f-b741-9a561d58fb6c
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBBgAAAGwAZQBuAGcAdABoAAU=
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: SystemInt32.__op_LessThan__SystemInt32_SystemInt32__SystemBoolean
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: componentIndex
+          variableID: 90e73e06-8604-4f14-964a-210b79b57dcd
+          data:
+            objEncoded: Ai8AAAAAARYAAABTAHkAcwB0AGUAbQAuAEkAbgB0ADMAMgAsACAAbQBzAGMAbwByAGwAaQBiAAAAAAAYAAAAAAU=
+            unityObjects: []
+        - isVariable: 1
+          name: length
+          variableID: ef93099f-359b-441f-b741-9a561d58fb6c
+          data:
+            objEncoded: Ai8AAAAAARYAAABTAHkAcwB0AGUAbQAuAEkAbgB0ADMAMgAsACAAbQBzAGMAbwByAGwAaQBiAAAAAAAYAAAAAAU=
+            unityObjects: []
+        - isVariable: 1
+          name: inBounds
+          variableID: f5286dd4-44fa-4472-b60f-a46958404c87
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: CyanTriggerSpecial_BlockEnd
+          guid: 
+        inputs: []
+        multiInput: []
+        expanded: 1
+        comment:
+          comment: 
+      - actionType:
+          directEvent: CyanTriggerSpecial_ConditionBody
+          guid: 
+        inputs: []
+        multiInput: []
+        expanded: 1
+        comment:
+          comment: 
+      - actionType:
+          directEvent: UnityEngineComponentArray.__Get__SystemInt32__UnityEngineComponent
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: allComponents
+          variableID: e52308de-1fbc-436f-945f-8b6ffa1cf536
+          data:
+            objEncoded: Ai8AAAAAAS8AAABVAG4AaQB0AHkARQBuAGcAaQBuAGUALgBDAG8AbQBwAG8AbgBlAG4AdABbAF0ALAAgAFUAbgBpAHQAeQBFAG4AZwBpAG4AZQAuAEMAbwByAGUATQBvAGQAdQBsAGUAAAAAAAYAAAAAAAAAAAcF
+            unityObjects: []
+        - isVariable: 1
+          name: componentIndex
+          variableID: 90e73e06-8604-4f14-964a-210b79b57dcd
+          data:
+            objEncoded: Ai8AAAAAARYAAABTAHkAcwB0AGUAbQAuAEkAbgB0ADMAMgAsACAAbQBzAGMAbwByAGwAaQBiAAAAAAAYAAAAAAU=
+            unityObjects: []
+        - isVariable: 1
+          name: component
+          variableID: df3b0679-685c-4bd5-a0b4-fb9085147f2c
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: CyanTriggerSpecial_BlockEnd
+          guid: 
+        inputs: []
+        multiInput: []
+        expanded: 1
+        comment:
+          comment: 
+      - actionType:
+          directEvent: CyanTriggerSpecial_BlockEnd
+          guid: 
+        inputs: []
+        multiInput: []
+        expanded: 1
+        comment:
+          comment: 
+      - actionType:
+          directEvent: CyanTriggerSpecial_BlockEnd
+          guid: 
+        inputs: []
+        multiInput: []
+        expanded: 1
+        comment:
+          comment: 
+      - actionType:
+          directEvent: CyanTriggerSpecial_If
+          guid: 
+        inputs: []
+        multiInput: []
+        expanded: 1
+        comment:
+          comment: Check if the component exists after getting.
+      - actionType:
+          directEvent: CyanTriggerSpecial_Condition
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: 
+          variableID: faecf550-7694-4d68-8b05-d8201a318212
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBDwAAAGsAZQB5AE8AYgBqAGUAYwB0AEkAcwBOAHUAbABsAAU=
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: UnityEngineComponent.__op_Equality__UnityEngineObject_UnityEngineObject__SystemBoolean
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: component
+          variableID: df3b0679-685c-4bd5-a0b4-fb9085147f2c
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        - isVariable: 1
+          name: null
+          variableID: __null
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        - isVariable: 1
+          name: keyObjectIsNull
+          variableID: faecf550-7694-4d68-8b05-d8201a318212
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: CyanTriggerSpecial_BlockEnd
+          guid: 
+        inputs: []
+        multiInput: []
+        expanded: 1
+        comment:
+          comment: 
+      - actionType:
+          directEvent: CyanTriggerSpecial_ConditionBody
+          guid: 
+        inputs: []
+        multiInput: []
+        expanded: 1
+        comment:
+          comment: 
+      - actionType:
+          directEvent: SystemString.__Concat__SystemString_SystemString_SystemString__SystemString
+          guid: 
+        inputs:
+        - isVariable: 0
+          name: __logPrefix
+          variableID: c0feec68-69b7-40c1-8d6b-bf70cc61224d
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBDgAAAFsARABhAHQAYQBDAGEAYwBoAGUALgBHAGUAdAAF
+            unityObjects: []
+        - isVariable: 1
+          name: componentName
+          variableID: c0c00a17-a780-4a1d-b082-ab5508487aa2
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBAAAAAAU=
+            unityObjects: []
+        - isVariable: 0
+          name: key
+          variableID: f9624e6f-219c-4fb6-aab9-0bfb5e2f5f0f
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBAQAAAF0ABQ==
+            unityObjects: []
+        - isVariable: 1
+          name: 
+          variableID: 07f2c79d-73ad-44c8-9516-005779c150fb
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBCQAAAGwAbwBnAFAAcgBlAGYAaQB4AAU=
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: SystemString.__Concat__SystemString_SystemString_SystemString__SystemString
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: logPrefix
+          variableID: 07f2c79d-73ad-44c8-9516-005779c150fb
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBAAAAAAU=
+            unityObjects: []
+        - isVariable: 0
+          name: 
+          variableID: 
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBLAAAACAATwBiAGoAZQBjAHQAIABmAG8AcgAgAGsAZQB5ACAAZABpAGQAIABuAG8AdAAgAGgAYQB2AGUAIAB0AGgAZQAgAGMAbwBtAHAAbwBuAGUAbgB0ADoAIAAF
+            unityObjects: []
+        - isVariable: 1
+          name: key
+          variableID: f9624e6f-219c-4fb6-aab9-0bfb5e2f5f0f
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBAAAAAAU=
+            unityObjects: []
+        - isVariable: 1
+          name: 
+          variableID: 4cd7ce3a-e209-4e5d-97fc-121c90d7b08c
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBCAAAAGwAbwBnAEUAcgByAG8AcgAF
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: UnityEngineDebug.__LogError__SystemObject_UnityEngineObject__SystemVoid
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: logError
+          variableID: 4cd7ce3a-e209-4e5d-97fc-121c90d7b08c
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        - isVariable: 1
+          name: This GameObject
+          variableID: _this_gameobject
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: UnityEngineComponent__.Set__UnityEngineComponent__UnityEngineComponent
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: null
+          variableID: __null
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        - isVariable: 1
+          name: component
+          variableID: df3b0679-685c-4bd5-a0b4-fb9085147f2c
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBDAAAAGMAbwBtAHAAbwBuAGUAbgB0AFYAYQByAAU=
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: SystemBoolean__.Set__SystemBoolean__SystemBoolean
+          guid: 
+        inputs:
+        - isVariable: 0
+          name: 
+          variableID: 
+          data:
+            objEncoded: Ai8AAAAAARgAAABTAHkAcwB0AGUAbQAuAEIAbwBvAGwAZQBhAG4ALAAgAG0AcwBjAG8AcgBsAGkAYgAAAAAALAAF
+            unityObjects: []
+        - isVariable: 1
+          name: hasValue
+          variableID: 66a3ca1d-31e2-4671-81ec-f5e79cbd9f2b
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBBwAAAGIAbwBvAGwAVgBhAHIABQ==
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: CyanTriggerSpecial_Return
+          guid: 
+        inputs: []
+        multiInput: []
+        expanded: 1
+        comment:
+          comment: 
+      - actionType:
+          directEvent: CyanTriggerSpecial_BlockEnd
+          guid: 
+        inputs: []
+        multiInput: []
+        expanded: 1
+        comment:
+          comment: 
+      - actionType:
+          directEvent: CyanTriggerSpecial_BlockEnd
+          guid: 
+        inputs: []
+        multiInput: []
+        expanded: 1
+        comment:
+          comment: 
+      - actionType:
+          directEvent: SystemBoolean__.Set__SystemBoolean__SystemBoolean
+          guid: 
+        inputs:
+        - isVariable: 0
+          name: 
+          variableID: 
+          data:
+            objEncoded: Ai8AAAAAARgAAABTAHkAcwB0AGUAbQAuAEIAbwBvAGwAZQBhAG4ALAAgAG0AcwBjAG8AcgBsAGkAYgAAAAAALAEF
+            unityObjects: []
+        - isVariable: 1
+          name: hasValue
+          variableID: 66a3ca1d-31e2-4671-81ec-f5e79cbd9f2b
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBBwAAAGIAbwBvAGwAVgBhAHIABQ==
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      eventOptions:
+        userGate: 0
+        userGateExtraData: []
+        broadcast: 0
+        delay: 0
+        replay: 0
+      expanded: 1
+    variables:
+    - isVariable: 0
+      name: key
+      variableID: f9624e6f-219c-4fb6-aab9-0bfb5e2f5f0f
+      data:
+        objEncoded: Lg==
+        unityObjects: []
+      type:
+        typeDef: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      sync: 0
+      showInInspector: 1
+      typeInfo: 0
+      comment:
+        comment: 
+    - isVariable: 0
+      name: component
+      variableID: df3b0679-685c-4bd5-a0b4-fb9085147f2c
+      data:
+        objEncoded: Lg==
+        unityObjects: []
+      type:
+        typeDef: UnityEngine.Component, UnityEngine.CoreModule, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
+      sync: 0
+      showInInspector: 1
+      typeInfo: 0
+      comment:
+        comment: 
+    - isVariable: 0
+      name: componentType
+      variableID: 99536076-4771-4343-9ef5-56727fac1254
+      data:
+        objEncoded: Lg==
+        unityObjects: []
+      type:
+        typeDef: System.Type, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      sync: 0
+      showInInspector: 1
+      typeInfo: 0
+      comment:
+        comment: 
+    - isVariable: 0
+      name: hasValue
+      variableID: 66a3ca1d-31e2-4671-81ec-f5e79cbd9f2b
+      data:
+        objEncoded: Ai8AAAAAARgAAABTAHkAcwB0AGUAbQAuAEIAbwBvAGwAZQBhAG4ALAAgAG0AcwBjAG8AcgBsAGkAYgAAAAAALAAF
+        unityObjects: []
+      type:
+        typeDef: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      sync: 0
+      showInInspector: 1
+      typeInfo: 0
+      comment:
+        comment: 
+    comment:
+      comment: 
+    expandVariables: 1
+    expandOtherSettings: 0
+    expandSyncSection: 0
+    ignoreEventWarnings: 1
+  publicVariableReferences:
+    actionDataIndices: []
+    userVariableNames:
+    - key
+    - component
+    - componentType
+    - hasValue
+    userVariableTypes:
+    - typeDef: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+    - typeDef: UnityEngine.Component, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+    - typeDef: System.Type, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+    - typeDef: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+  ignoreOdinData: 1
+  serializationDataOdin:
+    SerializedFormat: 0
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes: []
+  allowEditingInInspector: 0
+  expandInInspector: 0
+  isLocked: 1

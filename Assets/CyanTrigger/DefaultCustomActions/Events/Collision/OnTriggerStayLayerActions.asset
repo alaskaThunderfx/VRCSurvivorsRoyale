@@ -1,0 +1,40 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 61d0ad128b95568438c70898dc9e600c, type: 3}
+  m_Name: OnTriggerStayLayerActions
+  m_EditorClassIdentifier: 
+  autoAddPriority: 0
+  exposedActions:
+  - guid: e6ecbb60-031e-449a-a6d4-5b007dbca221
+    actionNamespace: OnTriggerStay
+    actionVariantName: LayerMask
+    description: Fires for every Fixed Update frame while any GameObject on a layer
+      specified in the LayerMask exists inside the trigger colliders on this GameObject
+    variables:
+    - type:
+        typeDef: UnityEngine.LayerMask, UnityEngine.CoreModule, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
+      udonName: CollisionMask
+      displayName: LayerMask
+      description: 
+      defaultValue:
+        objEncoded: Ai8AAAAAAS0AAABVAG4AaQB0AHkARQBuAGcAaQBuAGUALgBMAGEAeQBlAHIATQBhAHMAawAsACAAVQBuAGkAdAB5AEUAbgBnAGkAbgBlAC4AQwBvAHIAZQBNAG8AZAB1AGwAZQAAAAAAGAAAAAAF
+        unityObjects: []
+      variableType: 3
+    baseEventName: Event_OnTriggerEnter
+    eventEntry: _onTriggerStay
+    autoAdd: 0
+  isMultiInstance: 0
+  defaultNamespace: 
+  udonProgramAsset: {fileID: 11400000, guid: ef93044a10349644eb4181137c5aeb49, type: 2}
+  assetGuid: ef93044a10349644eb4181137c5aeb49
+  thisGuid: e55459cbf72bffc46b36ebfdab25ae6d

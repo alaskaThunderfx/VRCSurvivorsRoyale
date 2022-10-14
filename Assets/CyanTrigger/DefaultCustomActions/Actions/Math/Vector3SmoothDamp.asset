@@ -1,0 +1,3208 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a31a3a978bd0448580d4ef9f3d6d95bf, type: 3}
+  m_Name: Vector3SmoothDamp
+  m_EditorClassIdentifier: 
+  serializedUdonProgramAsset: {fileID: 11400000, guid: 91fa66963173fdd41868014ba8057ee7,
+    type: 2}
+  udonAssembly: ".data_start\r\n  .export __CyanTrigger_ProgramName_SystemString\r\n 
+    __CyanTrigger_ProgramName_SystemString: %SystemString, null\r\n  __CyanTrigger_ProgramHash_SystemString:
+    %SystemString, null\r\n  __0_ra_SystemUInt32: %SystemUInt32, null\r\n  __1_ea_SystemUInt32:
+    %SystemUInt32, null\r\n  _arg_current_SmoothDamp: %UnityEngineVector3, null\r\n 
+    _arg_target_SmoothDamp: %UnityEngineVector3, null\r\n  _arg_currentVelocity_SmoothDamp:
+    %UnityEngineVector3, null\r\n  _arg_smoothTime_SmoothDamp: %SystemSingle, null\r\n 
+    _arg_results_SmoothDamp: %UnityEngineVector3, null\r\n  __14_local_var_SystemSingle:
+    %SystemSingle, null\r\n  __15_local_var_SystemSingle: %SystemSingle, null\r\n 
+    __16_local_var_SystemSingle: %SystemSingle, null\r\n  __17_ref_SystemSingle:
+    %SystemSingle, null\r\n  __18_local_var_SystemSingle: %SystemSingle, null\r\n 
+    __19_ref_SystemSingle: %SystemSingle, null\r\n  __20_local_var_SystemSingle:
+    %SystemSingle, null\r\n  __21_ref_SystemSingle: %SystemSingle, null\r\n  __22_ref_SystemSingle:
+    %SystemSingle, null\r\n  __23_local_var_SystemSingle: %SystemSingle, null\r\n 
+    __24_ref_SystemSingle: %SystemSingle, null\r\n  __25_local_var_SystemSingle:
+    %SystemSingle, null\r\n  __26_local_var_SystemSingle: %SystemSingle, null\r\n 
+    __27_local_var_SystemSingle: %SystemSingle, null\r\n  __28_local_var_SystemSingle:
+    %SystemSingle, null\r\n  __29_ref_SystemSingle: %SystemSingle, null\r\n  __30_local_var_SystemSingle:
+    %SystemSingle, null\r\n  __31_ref_SystemSingle: %SystemSingle, null\r\n  __32_local_var_SystemSingle:
+    %SystemSingle, null\r\n  __33_ref_SystemSingle: %SystemSingle, null\r\n  __34_local_var_SystemSingle:
+    %SystemSingle, null\r\n  __35_ref_SystemSingle: %SystemSingle, null\r\n  __36_local_var_SystemSingle:
+    %SystemSingle, null\r\n  __37_local_var_SystemSingle: %SystemSingle, null\r\n 
+    __38_local_var_SystemSingle: %SystemSingle, null\r\n  __39_local_var_SystemSingle:
+    %SystemSingle, null\r\n  __40_local_var_SystemSingle: %SystemSingle, null\r\n 
+    __41_local_var_SystemSingle: %SystemSingle, null\r\n  __42_local_var_SystemSingle:
+    %SystemSingle, null\r\n  __43_local_var_SystemSingle: %SystemSingle, null\r\n 
+    __44_local_var_SystemSingle: %SystemSingle, null\r\n  __45_local_var_UnityEngineVector3:
+    %UnityEngineVector3, null\r\n  __46_local_var_SystemSingle: %SystemSingle, null\r\n 
+    __47_local_var_SystemSingle: %SystemSingle, null\r\n  __48_local_var_SystemSingle:
+    %SystemSingle, null\r\n  __49_local_var_SystemSingle: %SystemSingle, null\r\n 
+    __50_local_var_SystemSingle: %SystemSingle, null\r\n  __51_local_var_SystemSingle:
+    %SystemSingle, null\r\n  __52_local_var_SystemBoolean: %SystemBoolean, null\r\n 
+    __53_const_SystemBoolean: %SystemBoolean, null\r\n  __54_local_var_SystemSingle:
+    %SystemSingle, null\r\n  __55_local_var_SystemSingle: %SystemSingle, null\r\n 
+    __56_local_var_SystemSingle: %SystemSingle, null\r\n  __57_local_var_SystemSingle:
+    %SystemSingle, null\r\n  __58_local_var_SystemSingle: %SystemSingle, null\r\n 
+    __59_local_var_SystemSingle: %SystemSingle, null\r\n  __60_local_var_SystemSingle:
+    %SystemSingle, null\r\n  __61_local_var_SystemSingle: %SystemSingle, null\r\n 
+    __62_local_var_SystemSingle: %SystemSingle, null\r\n  __63_local_var_SystemSingle:
+    %SystemSingle, null\r\n  __64_local_var_SystemSingle: %SystemSingle, null\r\n 
+    __65_local_var_SystemSingle: %SystemSingle, null\r\n  __66_local_var_SystemSingle:
+    %SystemSingle, null\r\n  __67_local_var_SystemSingle: %SystemSingle, null\r\n 
+    __68_local_var_SystemSingle: %SystemSingle, null\r\n  __69_local_var_SystemSingle:
+    %SystemSingle, null\r\n  __70_local_var_SystemSingle: %SystemSingle, null\r\n 
+    __71_local_var_SystemSingle: %SystemSingle, null\r\n  __72_local_var_SystemSingle:
+    %SystemSingle, null\r\n  __73_local_var_SystemBoolean: %SystemBoolean, null\r\n 
+    __74_local_var_SystemSingle: %SystemSingle, null\r\n  __75_local_var_SystemSingle:
+    %SystemSingle, null\r\n  __76_local_var_SystemSingle: %SystemSingle, null\r\n 
+    __77_local_var_SystemSingle: %SystemSingle, null\r\n  __78_ref_SystemSingle:
+    %SystemSingle, null\r\n  __79_local_var_SystemSingle: %SystemSingle, null\r\n 
+    __80_local_var_SystemSingle: %SystemSingle, null\r\n  __81_local_var_SystemSingle:
+    %SystemSingle, null\r\n.data_end\r\n\n.code_start\r\n  .export SmoothDamp\r\n 
+    SmoothDamp:\r\n    PUSH, __1_ea_SystemUInt32\r\n    PUSH, __14_local_var_SystemSingle\r\n   
+    EXTERN, \"UnityEngineTime.__get_deltaTime__SystemSingle\"\r\n    PUSH, __15_local_var_SystemSingle\r\n   
+    EXTERN, \"UnityEngineMathf.__get_Infinity__SystemSingle\"\r\n    PUSH, __17_ref_SystemSingle\r\n   
+    PUSH, __16_local_var_SystemSingle\r\n    COPY\r\n    PUSH, __19_ref_SystemSingle\r\n   
+    PUSH, __18_local_var_SystemSingle\r\n    COPY\r\n    PUSH, __21_ref_SystemSingle\r\n   
+    PUSH, __20_local_var_SystemSingle\r\n    COPY\r\n    PUSH, __22_ref_SystemSingle\r\n   
+    PUSH, _arg_smoothTime_SmoothDamp\r\n    PUSH, _arg_smoothTime_SmoothDamp\r\n   
+    EXTERN, \"UnityEngineMathf.__Max__SystemSingle_SystemSingle__SystemSingle\"\r\n   
+    PUSH, __24_ref_SystemSingle\r\n    PUSH, _arg_smoothTime_SmoothDamp\r\n    PUSH,
+    __23_local_var_SystemSingle\r\n    EXTERN, \"SystemSingle.__op_Division__SystemSingle_SystemSingle__SystemSingle\"\r\n   
+    PUSH, __23_local_var_SystemSingle\r\n    PUSH, __14_local_var_SystemSingle\r\n   
+    PUSH, __25_local_var_SystemSingle\r\n    EXTERN, \"SystemSingle.__op_Multiplication__SystemSingle_SystemSingle__SystemSingle\"\r\n   
+    PUSH, __25_local_var_SystemSingle\r\n    PUSH, __25_local_var_SystemSingle\r\n   
+    PUSH, __26_local_var_SystemSingle\r\n    EXTERN, \"SystemSingle.__op_Multiplication__SystemSingle_SystemSingle__SystemSingle\"\r\n   
+    PUSH, __26_local_var_SystemSingle\r\n    PUSH, __25_local_var_SystemSingle\r\n   
+    PUSH, __27_local_var_SystemSingle\r\n    EXTERN, \"SystemSingle.__op_Multiplication__SystemSingle_SystemSingle__SystemSingle\"\r\n   
+    PUSH, __29_ref_SystemSingle\r\n    PUSH, __25_local_var_SystemSingle\r\n    PUSH,
+    __28_local_var_SystemSingle\r\n    EXTERN, \"SystemSingle.__op_Addition__SystemSingle_SystemSingle__SystemSingle\"\r\n   
+    PUSH, __31_ref_SystemSingle\r\n    PUSH, __26_local_var_SystemSingle\r\n    PUSH,
+    __30_local_var_SystemSingle\r\n    EXTERN, \"SystemSingle.__op_Multiplication__SystemSingle_SystemSingle__SystemSingle\"\r\n   
+    PUSH, __28_local_var_SystemSingle\r\n    PUSH, __30_local_var_SystemSingle\r\n   
+    PUSH, __28_local_var_SystemSingle\r\n    EXTERN, \"SystemSingle.__op_Addition__SystemSingle_SystemSingle__SystemSingle\"\r\n   
+    PUSH, __33_ref_SystemSingle\r\n    PUSH, __27_local_var_SystemSingle\r\n    PUSH,
+    __32_local_var_SystemSingle\r\n    EXTERN, \"SystemSingle.__op_Multiplication__SystemSingle_SystemSingle__SystemSingle\"\r\n   
+    PUSH, __28_local_var_SystemSingle\r\n    PUSH, __32_local_var_SystemSingle\r\n   
+    PUSH, __28_local_var_SystemSingle\r\n    EXTERN, \"SystemSingle.__op_Addition__SystemSingle_SystemSingle__SystemSingle\"\r\n   
+    PUSH, __35_ref_SystemSingle\r\n    PUSH, __28_local_var_SystemSingle\r\n    PUSH,
+    __34_local_var_SystemSingle\r\n    EXTERN, \"SystemSingle.__op_Division__SystemSingle_SystemSingle__SystemSingle\"\r\n   
+    PUSH, _arg_current_SmoothDamp\r\n    PUSH, __36_local_var_SystemSingle\r\n   
+    EXTERN, \"UnityEngineVector3.__get_x__SystemSingle\"\r\n    PUSH, _arg_target_SmoothDamp\r\n   
+    PUSH, __37_local_var_SystemSingle\r\n    EXTERN, \"UnityEngineVector3.__get_x__SystemSingle\"\r\n   
+    PUSH, __36_local_var_SystemSingle\r\n    PUSH, __37_local_var_SystemSingle\r\n   
+    PUSH, __38_local_var_SystemSingle\r\n    EXTERN, \"SystemSingle.__op_Subtraction__SystemSingle_SystemSingle__SystemSingle\"\r\n   
+    PUSH, _arg_current_SmoothDamp\r\n    PUSH, __39_local_var_SystemSingle\r\n   
+    EXTERN, \"UnityEngineVector3.__get_y__SystemSingle\"\r\n    PUSH, _arg_target_SmoothDamp\r\n   
+    PUSH, __40_local_var_SystemSingle\r\n    EXTERN, \"UnityEngineVector3.__get_y__SystemSingle\"\r\n   
+    PUSH, __39_local_var_SystemSingle\r\n    PUSH, __40_local_var_SystemSingle\r\n   
+    PUSH, __41_local_var_SystemSingle\r\n    EXTERN, \"SystemSingle.__op_Subtraction__SystemSingle_SystemSingle__SystemSingle\"\r\n   
+    PUSH, _arg_current_SmoothDamp\r\n    PUSH, __42_local_var_SystemSingle\r\n   
+    EXTERN, \"UnityEngineVector3.__get_z__SystemSingle\"\r\n    PUSH, _arg_target_SmoothDamp\r\n   
+    PUSH, __43_local_var_SystemSingle\r\n    EXTERN, \"UnityEngineVector3.__get_z__SystemSingle\"\r\n   
+    PUSH, __42_local_var_SystemSingle\r\n    PUSH, __43_local_var_SystemSingle\r\n   
+    PUSH, __44_local_var_SystemSingle\r\n    EXTERN, \"SystemSingle.__op_Subtraction__SystemSingle_SystemSingle__SystemSingle\"\r\n   
+    PUSH, _arg_target_SmoothDamp\r\n    PUSH, __45_local_var_UnityEngineVector3\r\n   
+    COPY\r\n    PUSH, __15_local_var_SystemSingle\r\n    PUSH, _arg_smoothTime_SmoothDamp\r\n   
+    PUSH, __46_local_var_SystemSingle\r\n    EXTERN, \"SystemSingle.__op_Multiplication__SystemSingle_SystemSingle__SystemSingle\"\r\n   
+    PUSH, __46_local_var_SystemSingle\r\n    PUSH, __46_local_var_SystemSingle\r\n   
+    PUSH, __47_local_var_SystemSingle\r\n    EXTERN, \"SystemSingle.__op_Multiplication__SystemSingle_SystemSingle__SystemSingle\"\r\n   
+    PUSH, __38_local_var_SystemSingle\r\n    PUSH, __38_local_var_SystemSingle\r\n   
+    PUSH, __48_local_var_SystemSingle\r\n    EXTERN, \"SystemSingle.__op_Multiplication__SystemSingle_SystemSingle__SystemSingle\"\r\n   
+    PUSH, __41_local_var_SystemSingle\r\n    PUSH, __41_local_var_SystemSingle\r\n   
+    PUSH, __49_local_var_SystemSingle\r\n    EXTERN, \"SystemSingle.__op_Multiplication__SystemSingle_SystemSingle__SystemSingle\"\r\n   
+    PUSH, __48_local_var_SystemSingle\r\n    PUSH, __49_local_var_SystemSingle\r\n   
+    PUSH, __50_local_var_SystemSingle\r\n    EXTERN, \"SystemSingle.__op_Addition__SystemSingle_SystemSingle__SystemSingle\"\r\n   
+    PUSH, __44_local_var_SystemSingle\r\n    PUSH, __44_local_var_SystemSingle\r\n   
+    PUSH, __51_local_var_SystemSingle\r\n    EXTERN, \"SystemSingle.__op_Multiplication__SystemSingle_SystemSingle__SystemSingle\"\r\n   
+    PUSH, __50_local_var_SystemSingle\r\n    PUSH, __51_local_var_SystemSingle\r\n   
+    PUSH, __50_local_var_SystemSingle\r\n    EXTERN, \"SystemSingle.__op_Addition__SystemSingle_SystemSingle__SystemSingle\"\r\n   
+    PUSH, __53_const_SystemBoolean\r\n    PUSH, __52_local_var_SystemBoolean\r\n   
+    COPY\r\n    PUSH, __50_local_var_SystemSingle\r\n    PUSH, __47_local_var_SystemSingle\r\n   
+    PUSH, __52_local_var_SystemBoolean\r\n    EXTERN, \"SystemSingle.__op_GreaterThan__SystemSingle_SystemSingle__SystemBoolean\"\r\n   
+    PUSH, __52_local_var_SystemBoolean\r\n    JUMP_IF_FALSE, 0x000004C4\r\n    PUSH,
+    __50_local_var_SystemSingle\r\n    PUSH, __54_local_var_SystemSingle\r\n    EXTERN,
+    \"UnityEngineMathf.__Sqrt__SystemSingle__SystemSingle\"\r\n    PUSH, __38_local_var_SystemSingle\r\n   
+    PUSH, __54_local_var_SystemSingle\r\n    PUSH, __38_local_var_SystemSingle\r\n   
+    EXTERN, \"SystemSingle.__op_Division__SystemSingle_SystemSingle__SystemSingle\"\r\n   
+    PUSH, __38_local_var_SystemSingle\r\n    PUSH, __46_local_var_SystemSingle\r\n   
+    PUSH, __38_local_var_SystemSingle\r\n    EXTERN, \"SystemSingle.__op_Multiplication__SystemSingle_SystemSingle__SystemSingle\"\r\n   
+    PUSH, __41_local_var_SystemSingle\r\n    PUSH, __54_local_var_SystemSingle\r\n   
+    PUSH, __41_local_var_SystemSingle\r\n    EXTERN, \"SystemSingle.__op_Division__SystemSingle_SystemSingle__SystemSingle\"\r\n   
+    PUSH, __41_local_var_SystemSingle\r\n    PUSH, __46_local_var_SystemSingle\r\n   
+    PUSH, __41_local_var_SystemSingle\r\n    EXTERN, \"SystemSingle.__op_Multiplication__SystemSingle_SystemSingle__SystemSingle\"\r\n   
+    PUSH, __44_local_var_SystemSingle\r\n    PUSH, __54_local_var_SystemSingle\r\n   
+    PUSH, __44_local_var_SystemSingle\r\n    EXTERN, \"SystemSingle.__op_Division__SystemSingle_SystemSingle__SystemSingle\"\r\n   
+    PUSH, __44_local_var_SystemSingle\r\n    PUSH, __46_local_var_SystemSingle\r\n   
+    PUSH, __44_local_var_SystemSingle\r\n    EXTERN, \"SystemSingle.__op_Multiplication__SystemSingle_SystemSingle__SystemSingle\"\r\n   
+    PUSH, __36_local_var_SystemSingle\r\n    PUSH, __38_local_var_SystemSingle\r\n   
+    PUSH, __37_local_var_SystemSingle\r\n    EXTERN, \"SystemSingle.__op_Subtraction__SystemSingle_SystemSingle__SystemSingle\"\r\n   
+    PUSH, _arg_target_SmoothDamp\r\n    PUSH, __37_local_var_SystemSingle\r\n   
+    EXTERN, \"UnityEngineVector3.__set_x__SystemSingle\"\r\n    PUSH, __39_local_var_SystemSingle\r\n   
+    PUSH, __41_local_var_SystemSingle\r\n    PUSH, __40_local_var_SystemSingle\r\n   
+    EXTERN, \"SystemSingle.__op_Subtraction__SystemSingle_SystemSingle__SystemSingle\"\r\n   
+    PUSH, _arg_target_SmoothDamp\r\n    PUSH, __40_local_var_SystemSingle\r\n   
+    EXTERN, \"UnityEngineVector3.__set_y__SystemSingle\"\r\n    PUSH, __42_local_var_SystemSingle\r\n   
+    PUSH, __44_local_var_SystemSingle\r\n    PUSH, __43_local_var_SystemSingle\r\n   
+    EXTERN, \"SystemSingle.__op_Subtraction__SystemSingle_SystemSingle__SystemSingle\"\r\n   
+    PUSH, _arg_target_SmoothDamp\r\n    PUSH, __43_local_var_SystemSingle\r\n   
+    EXTERN, \"UnityEngineVector3.__set_z__SystemSingle\"\r\n    PUSH, _arg_currentVelocity_SmoothDamp\r\n   
+    PUSH, __55_local_var_SystemSingle\r\n    EXTERN, \"UnityEngineVector3.__get_x__SystemSingle\"\r\n   
+    PUSH, _arg_currentVelocity_SmoothDamp\r\n    PUSH, __56_local_var_SystemSingle\r\n   
+    EXTERN, \"UnityEngineVector3.__get_y__SystemSingle\"\r\n    PUSH, _arg_currentVelocity_SmoothDamp\r\n   
+    PUSH, __57_local_var_SystemSingle\r\n    EXTERN, \"UnityEngineVector3.__get_z__SystemSingle\"\r\n   
+    PUSH, __23_local_var_SystemSingle\r\n    PUSH, __38_local_var_SystemSingle\r\n   
+    PUSH, __58_local_var_SystemSingle\r\n    EXTERN, \"SystemSingle.__op_Multiplication__SystemSingle_SystemSingle__SystemSingle\"\r\n   
+    PUSH, __55_local_var_SystemSingle\r\n    PUSH, __58_local_var_SystemSingle\r\n   
+    PUSH, __58_local_var_SystemSingle\r\n    EXTERN, \"SystemSingle.__op_Addition__SystemSingle_SystemSingle__SystemSingle\"\r\n   
+    PUSH, __58_local_var_SystemSingle\r\n    PUSH, __14_local_var_SystemSingle\r\n   
+    PUSH, __58_local_var_SystemSingle\r\n    EXTERN, \"SystemSingle.__op_Multiplication__SystemSingle_SystemSingle__SystemSingle\"\r\n   
+    PUSH, __23_local_var_SystemSingle\r\n    PUSH, __41_local_var_SystemSingle\r\n   
+    PUSH, __59_local_var_SystemSingle\r\n    EXTERN, \"SystemSingle.__op_Multiplication__SystemSingle_SystemSingle__SystemSingle\"\r\n   
+    PUSH, __56_local_var_SystemSingle\r\n    PUSH, __59_local_var_SystemSingle\r\n   
+    PUSH, __59_local_var_SystemSingle\r\n    EXTERN, \"SystemSingle.__op_Addition__SystemSingle_SystemSingle__SystemSingle\"\r\n   
+    PUSH, __59_local_var_SystemSingle\r\n    PUSH, __14_local_var_SystemSingle\r\n   
+    PUSH, __59_local_var_SystemSingle\r\n    EXTERN, \"SystemSingle.__op_Multiplication__SystemSingle_SystemSingle__SystemSingle\"\r\n   
+    PUSH, __23_local_var_SystemSingle\r\n    PUSH, __44_local_var_SystemSingle\r\n   
+    PUSH, __60_local_var_SystemSingle\r\n    EXTERN, \"SystemSingle.__op_Multiplication__SystemSingle_SystemSingle__SystemSingle\"\r\n   
+    PUSH, __57_local_var_SystemSingle\r\n    PUSH, __60_local_var_SystemSingle\r\n   
+    PUSH, __60_local_var_SystemSingle\r\n    EXTERN, \"SystemSingle.__op_Addition__SystemSingle_SystemSingle__SystemSingle\"\r\n   
+    PUSH, __60_local_var_SystemSingle\r\n    PUSH, __14_local_var_SystemSingle\r\n   
+    PUSH, __60_local_var_SystemSingle\r\n    EXTERN, \"SystemSingle.__op_Multiplication__SystemSingle_SystemSingle__SystemSingle\"\r\n   
+    PUSH, __23_local_var_SystemSingle\r\n    PUSH, __58_local_var_SystemSingle\r\n   
+    PUSH, __61_local_var_SystemSingle\r\n    EXTERN, \"SystemSingle.__op_Multiplication__SystemSingle_SystemSingle__SystemSingle\"\r\n   
+    PUSH, __55_local_var_SystemSingle\r\n    PUSH, __61_local_var_SystemSingle\r\n   
+    PUSH, __55_local_var_SystemSingle\r\n    EXTERN, \"SystemSingle.__op_Subtraction__SystemSingle_SystemSingle__SystemSingle\"\r\n   
+    PUSH, __55_local_var_SystemSingle\r\n    PUSH, __34_local_var_SystemSingle\r\n   
+    PUSH, __55_local_var_SystemSingle\r\n    EXTERN, \"SystemSingle.__op_Multiplication__SystemSingle_SystemSingle__SystemSingle\"\r\n   
+    PUSH, _arg_currentVelocity_SmoothDamp\r\n    PUSH, __55_local_var_SystemSingle\r\n   
+    EXTERN, \"UnityEngineVector3.__set_x__SystemSingle\"\r\n    PUSH, __23_local_var_SystemSingle\r\n   
+    PUSH, __59_local_var_SystemSingle\r\n    PUSH, __62_local_var_SystemSingle\r\n   
+    EXTERN, \"SystemSingle.__op_Multiplication__SystemSingle_SystemSingle__SystemSingle\"\r\n   
+    PUSH, __56_local_var_SystemSingle\r\n    PUSH, __62_local_var_SystemSingle\r\n   
+    PUSH, __56_local_var_SystemSingle\r\n    EXTERN, \"SystemSingle.__op_Subtraction__SystemSingle_SystemSingle__SystemSingle\"\r\n   
+    PUSH, __56_local_var_SystemSingle\r\n    PUSH, __34_local_var_SystemSingle\r\n   
+    PUSH, __56_local_var_SystemSingle\r\n    EXTERN, \"SystemSingle.__op_Multiplication__SystemSingle_SystemSingle__SystemSingle\"\r\n   
+    PUSH, _arg_currentVelocity_SmoothDamp\r\n    PUSH, __56_local_var_SystemSingle\r\n   
+    EXTERN, \"UnityEngineVector3.__set_y__SystemSingle\"\r\n    PUSH, __23_local_var_SystemSingle\r\n   
+    PUSH, __60_local_var_SystemSingle\r\n    PUSH, __63_local_var_SystemSingle\r\n   
+    EXTERN, \"SystemSingle.__op_Multiplication__SystemSingle_SystemSingle__SystemSingle\"\r\n   
+    PUSH, __57_local_var_SystemSingle\r\n    PUSH, __63_local_var_SystemSingle\r\n   
+    PUSH, __57_local_var_SystemSingle\r\n    EXTERN, \"SystemSingle.__op_Subtraction__SystemSingle_SystemSingle__SystemSingle\"\r\n   
+    PUSH, __57_local_var_SystemSingle\r\n    PUSH, __34_local_var_SystemSingle\r\n   
+    PUSH, __57_local_var_SystemSingle\r\n    EXTERN, \"SystemSingle.__op_Multiplication__SystemSingle_SystemSingle__SystemSingle\"\r\n   
+    PUSH, _arg_currentVelocity_SmoothDamp\r\n    PUSH, __57_local_var_SystemSingle\r\n   
+    EXTERN, \"UnityEngineVector3.__set_z__SystemSingle\"\r\n    PUSH, __38_local_var_SystemSingle\r\n   
+    PUSH, __58_local_var_SystemSingle\r\n    PUSH, __16_local_var_SystemSingle\r\n   
+    EXTERN, \"SystemSingle.__op_Addition__SystemSingle_SystemSingle__SystemSingle\"\r\n   
+    PUSH, __16_local_var_SystemSingle\r\n    PUSH, __34_local_var_SystemSingle\r\n   
+    PUSH, __16_local_var_SystemSingle\r\n    EXTERN, \"SystemSingle.__op_Multiplication__SystemSingle_SystemSingle__SystemSingle\"\r\n   
+    PUSH, __37_local_var_SystemSingle\r\n    PUSH, __16_local_var_SystemSingle\r\n   
+    PUSH, __16_local_var_SystemSingle\r\n    EXTERN, \"SystemSingle.__op_Addition__SystemSingle_SystemSingle__SystemSingle\"\r\n   
+    PUSH, __41_local_var_SystemSingle\r\n    PUSH, __59_local_var_SystemSingle\r\n   
+    PUSH, __18_local_var_SystemSingle\r\n    EXTERN, \"SystemSingle.__op_Addition__SystemSingle_SystemSingle__SystemSingle\"\r\n   
+    PUSH, __18_local_var_SystemSingle\r\n    PUSH, __34_local_var_SystemSingle\r\n   
+    PUSH, __18_local_var_SystemSingle\r\n    EXTERN, \"SystemSingle.__op_Multiplication__SystemSingle_SystemSingle__SystemSingle\"\r\n   
+    PUSH, __40_local_var_SystemSingle\r\n    PUSH, __18_local_var_SystemSingle\r\n   
+    PUSH, __18_local_var_SystemSingle\r\n    EXTERN, \"SystemSingle.__op_Addition__SystemSingle_SystemSingle__SystemSingle\"\r\n   
+    PUSH, __44_local_var_SystemSingle\r\n    PUSH, __60_local_var_SystemSingle\r\n   
+    PUSH, __20_local_var_SystemSingle\r\n    EXTERN, \"SystemSingle.__op_Addition__SystemSingle_SystemSingle__SystemSingle\"\r\n   
+    PUSH, __20_local_var_SystemSingle\r\n    PUSH, __34_local_var_SystemSingle\r\n   
+    PUSH, __20_local_var_SystemSingle\r\n    EXTERN, \"SystemSingle.__op_Multiplication__SystemSingle_SystemSingle__SystemSingle\"\r\n   
+    PUSH, __43_local_var_SystemSingle\r\n    PUSH, __20_local_var_SystemSingle\r\n   
+    PUSH, __20_local_var_SystemSingle\r\n    EXTERN, \"SystemSingle.__op_Addition__SystemSingle_SystemSingle__SystemSingle\"\r\n   
+    PUSH, __45_local_var_UnityEngineVector3\r\n    PUSH, __64_local_var_SystemSingle\r\n   
+    EXTERN, \"UnityEngineVector3.__get_x__SystemSingle\"\r\n    PUSH, __45_local_var_UnityEngineVector3\r\n   
+    PUSH, __65_local_var_SystemSingle\r\n    EXTERN, \"UnityEngineVector3.__get_y__SystemSingle\"\r\n   
+    PUSH, __45_local_var_UnityEngineVector3\r\n    PUSH, __66_local_var_SystemSingle\r\n   
+    EXTERN, \"UnityEngineVector3.__get_z__SystemSingle\"\r\n    PUSH, __64_local_var_SystemSingle\r\n   
+    PUSH, __36_local_var_SystemSingle\r\n    PUSH, __67_local_var_SystemSingle\r\n   
+    EXTERN, \"SystemSingle.__op_Subtraction__SystemSingle_SystemSingle__SystemSingle\"\r\n   
+    PUSH, __65_local_var_SystemSingle\r\n    PUSH, __39_local_var_SystemSingle\r\n   
+    PUSH, __68_local_var_SystemSingle\r\n    EXTERN, \"SystemSingle.__op_Subtraction__SystemSingle_SystemSingle__SystemSingle\"\r\n   
+    PUSH, __66_local_var_SystemSingle\r\n    PUSH, __42_local_var_SystemSingle\r\n   
+    PUSH, __69_local_var_SystemSingle\r\n    EXTERN, \"SystemSingle.__op_Subtraction__SystemSingle_SystemSingle__SystemSingle\"\r\n   
+    PUSH, __16_local_var_SystemSingle\r\n    PUSH, __64_local_var_SystemSingle\r\n   
+    PUSH, __70_local_var_SystemSingle\r\n    EXTERN, \"SystemSingle.__op_Subtraction__SystemSingle_SystemSingle__SystemSingle\"\r\n   
+    PUSH, __18_local_var_SystemSingle\r\n    PUSH, __65_local_var_SystemSingle\r\n   
+    PUSH, __71_local_var_SystemSingle\r\n    EXTERN, \"SystemSingle.__op_Subtraction__SystemSingle_SystemSingle__SystemSingle\"\r\n   
+    PUSH, __20_local_var_SystemSingle\r\n    PUSH, __66_local_var_SystemSingle\r\n   
+    PUSH, __72_local_var_SystemSingle\r\n    EXTERN, \"SystemSingle.__op_Subtraction__SystemSingle_SystemSingle__SystemSingle\"\r\n   
+    PUSH, __53_const_SystemBoolean\r\n    PUSH, __73_local_var_SystemBoolean\r\n   
+    COPY\r\n    PUSH, __67_local_var_SystemSingle\r\n    PUSH, __70_local_var_SystemSingle\r\n   
+    PUSH, __74_local_var_SystemSingle\r\n    EXTERN, \"SystemSingle.__op_Multiplication__SystemSingle_SystemSingle__SystemSingle\"\r\n   
+    PUSH, __68_local_var_SystemSingle\r\n    PUSH, __71_local_var_SystemSingle\r\n   
+    PUSH, __75_local_var_SystemSingle\r\n    EXTERN, \"SystemSingle.__op_Multiplication__SystemSingle_SystemSingle__SystemSingle\"\r\n   
+    PUSH, __74_local_var_SystemSingle\r\n    PUSH, __75_local_var_SystemSingle\r\n   
+    PUSH, __76_local_var_SystemSingle\r\n    EXTERN, \"SystemSingle.__op_Addition__SystemSingle_SystemSingle__SystemSingle\"\r\n   
+    PUSH, __69_local_var_SystemSingle\r\n    PUSH, __72_local_var_SystemSingle\r\n   
+    PUSH, __77_local_var_SystemSingle\r\n    EXTERN, \"SystemSingle.__op_Multiplication__SystemSingle_SystemSingle__SystemSingle\"\r\n   
+    PUSH, __76_local_var_SystemSingle\r\n    PUSH, __77_local_var_SystemSingle\r\n   
+    PUSH, __76_local_var_SystemSingle\r\n    EXTERN, \"SystemSingle.__op_Addition__SystemSingle_SystemSingle__SystemSingle\"\r\n   
+    PUSH, __76_local_var_SystemSingle\r\n    PUSH, __78_ref_SystemSingle\r\n    PUSH,
+    __73_local_var_SystemBoolean\r\n    EXTERN, \"SystemSingle.__op_GreaterThan__SystemSingle_SystemSingle__SystemBoolean\"\r\n   
+    PUSH, __73_local_var_SystemBoolean\r\n    JUMP_IF_FALSE, 0x00000CE0\r\n    PUSH,
+    __45_local_var_UnityEngineVector3\r\n    PUSH, __16_local_var_SystemSingle\r\n   
+    EXTERN, \"UnityEngineVector3.__get_x__SystemSingle\"\r\n    PUSH, __45_local_var_UnityEngineVector3\r\n   
+    PUSH, __18_local_var_SystemSingle\r\n    EXTERN, \"UnityEngineVector3.__get_y__SystemSingle\"\r\n   
+    PUSH, __45_local_var_UnityEngineVector3\r\n    PUSH, __20_local_var_SystemSingle\r\n   
+    EXTERN, \"UnityEngineVector3.__get_z__SystemSingle\"\r\n    PUSH, __45_local_var_UnityEngineVector3\r\n   
+    PUSH, __64_local_var_SystemSingle\r\n    EXTERN, \"UnityEngineVector3.__get_x__SystemSingle\"\r\n   
+    PUSH, __16_local_var_SystemSingle\r\n    PUSH, __64_local_var_SystemSingle\r\n   
+    PUSH, __79_local_var_SystemSingle\r\n    EXTERN, \"SystemSingle.__op_Subtraction__SystemSingle_SystemSingle__SystemSingle\"\r\n   
+    PUSH, __79_local_var_SystemSingle\r\n    PUSH, __14_local_var_SystemSingle\r\n   
+    PUSH, __55_local_var_SystemSingle\r\n    EXTERN, \"SystemSingle.__op_Division__SystemSingle_SystemSingle__SystemSingle\"\r\n   
+    PUSH, _arg_currentVelocity_SmoothDamp\r\n    PUSH, __55_local_var_SystemSingle\r\n   
+    EXTERN, \"UnityEngineVector3.__set_x__SystemSingle\"\r\n    PUSH, __45_local_var_UnityEngineVector3\r\n   
+    PUSH, __65_local_var_SystemSingle\r\n    EXTERN, \"UnityEngineVector3.__get_y__SystemSingle\"\r\n   
+    PUSH, __18_local_var_SystemSingle\r\n    PUSH, __65_local_var_SystemSingle\r\n   
+    PUSH, __80_local_var_SystemSingle\r\n    EXTERN, \"SystemSingle.__op_Subtraction__SystemSingle_SystemSingle__SystemSingle\"\r\n   
+    PUSH, __80_local_var_SystemSingle\r\n    PUSH, __14_local_var_SystemSingle\r\n   
+    PUSH, __56_local_var_SystemSingle\r\n    EXTERN, \"SystemSingle.__op_Division__SystemSingle_SystemSingle__SystemSingle\"\r\n   
+    PUSH, _arg_currentVelocity_SmoothDamp\r\n    PUSH, __56_local_var_SystemSingle\r\n   
+    EXTERN, \"UnityEngineVector3.__set_y__SystemSingle\"\r\n    PUSH, __45_local_var_UnityEngineVector3\r\n   
+    PUSH, __66_local_var_SystemSingle\r\n    EXTERN, \"UnityEngineVector3.__get_z__SystemSingle\"\r\n   
+    PUSH, __20_local_var_SystemSingle\r\n    PUSH, __66_local_var_SystemSingle\r\n   
+    PUSH, __81_local_var_SystemSingle\r\n    EXTERN, \"SystemSingle.__op_Subtraction__SystemSingle_SystemSingle__SystemSingle\"\r\n   
+    PUSH, __81_local_var_SystemSingle\r\n    PUSH, __14_local_var_SystemSingle\r\n   
+    PUSH, __57_local_var_SystemSingle\r\n    EXTERN, \"SystemSingle.__op_Division__SystemSingle_SystemSingle__SystemSingle\"\r\n   
+    PUSH, _arg_currentVelocity_SmoothDamp\r\n    PUSH, __57_local_var_SystemSingle\r\n   
+    EXTERN, \"UnityEngineVector3.__set_z__SystemSingle\"\r\n    PUSH, __16_local_var_SystemSingle\r\n   
+    PUSH, __18_local_var_SystemSingle\r\n    PUSH, __20_local_var_SystemSingle\r\n   
+    PUSH, _arg_results_SmoothDamp\r\n    EXTERN, \"UnityEngineVector3.__ctor__SystemSingle_SystemSingle_SystemSingle__UnityEngineVector3\"\r\n   
+    PUSH, __0_ra_SystemUInt32\r\n    COPY\r\n    JUMP_INDIRECT, __0_ra_SystemUInt32\r\n\r\n.code_end\r\n"
+  assemblyError: 
+  triggerHash: EFD608CF953D13677B0D9E640C67BBDA
+  shouldBeNetworked: 0
+  warningMessages: []
+  errorMessages: []
+  ctDataInstance:
+    version: 6
+    updateOrder: 0
+    autoSetSyncMode: 1
+    programSyncMode: 2
+    programName: 
+    events:
+    - name: SmoothDamp
+      eventId: 4e1d4aa5-32f6-430b-9fc8-c70a69e1eba4
+      eventInstance:
+        actionType:
+          directEvent: Event_Custom
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: 
+          variableID: 
+          data:
+            objEncoded: 
+            unityObjects: []
+        multiInput:
+        - isVariable: 1
+          name: current
+          variableID: fad08e33-d30f-49d9-8bb1-895fcb0d4f6b
+          data:
+            objEncoded: Ai8AAAAAARwAAABTAHkAcwB0AGUAbQAuAFIAdQBuAHQAaQBtAGUAVAB5AHAAZQAsACAAbQBzAGMAbwByAGwAaQBiAAAAAAAoASsAAABVAG4AaQB0AHkARQBuAGcAaQBuAGUALgBWAGUAYwB0AG8AcgAzACwAIABVAG4AaQB0AHkARQBuAGcAaQBuAGUALgBDAG8AcgBlAE0AbwBkAHUAbABlAAU=
+            unityObjects: []
+        - isVariable: 1
+          name: target
+          variableID: 5cee553b-0cb8-4d75-b596-533c22fc5a64
+          data:
+            objEncoded: Ai8AAAAAARwAAABTAHkAcwB0AGUAbQAuAFIAdQBuAHQAaQBtAGUAVAB5AHAAZQAsACAAbQBzAGMAbwByAGwAaQBiAAAAAAAoASsAAABVAG4AaQB0AHkARQBuAGcAaQBuAGUALgBWAGUAYwB0AG8AcgAzACwAIABVAG4AaQB0AHkARQBuAGcAaQBuAGUALgBDAG8AcgBlAE0AbwBkAHUAbABlAAU=
+            unityObjects: []
+        - isVariable: 0
+          name: currentVelocity
+          variableID: a6a47221-056e-4c22-8ae0-f38838833cd2
+          data:
+            objEncoded: Ai8AAAAAARwAAABTAHkAcwB0AGUAbQAuAFIAdQBuAHQAaQBtAGUAVAB5AHAAZQAsACAAbQBzAGMAbwByAGwAaQBiAAAAAAAoASsAAABVAG4AaQB0AHkARQBuAGcAaQBuAGUALgBWAGUAYwB0AG8AcgAzACwAIABVAG4AaQB0AHkARQBuAGcAaQBuAGUALgBDAG8AcgBlAE0AbwBkAHUAbABlAAU=
+            unityObjects: []
+        - isVariable: 1
+          name: smoothTime
+          variableID: 10ed65b5-794e-4bb6-a0be-146ae17c92d9
+          data:
+            objEncoded: Ai8AAAAAARwAAABTAHkAcwB0AGUAbQAuAFIAdQBuAHQAaQBtAGUAVAB5AHAAZQAsACAAbQBzAGMAbwByAGwAaQBiAAAAAAAoARcAAABTAHkAcwB0AGUAbQAuAFMAaQBuAGcAbABlACwAIABtAHMAYwBvAHIAbABpAGIABQ==
+            unityObjects: []
+        - isVariable: 0
+          name: results
+          variableID: af52e541-49df-49db-8489-5b95ea14911e
+          data:
+            objEncoded: Ai8AAAAAARwAAABTAHkAcwB0AGUAbQAuAFIAdQBuAHQAaQBtAGUAVAB5AHAAZQAsACAAbQBzAGMAbwByAGwAaQBiAAAAAAAoASsAAABVAG4AaQB0AHkARQBuAGcAaQBuAGUALgBWAGUAYwB0AG8AcgAzACwAIABVAG4AaQB0AHkARQBuAGcAaQBuAGUALgBDAG8AcgBlAE0AbwBkAHUAbABlAAU=
+            unityObjects: []
+        expanded: 1
+        comment:
+          comment: 
+      actionInstances:
+      - actionType:
+          directEvent: UnityEngineTime.__get_deltaTime__SystemSingle
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: 
+          variableID: 385438dc-72d3-4387-9513-895dc27e5cdd
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBCQAAAGQAZQBsAHQAYQBUAGkAbQBlAAU=
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: UnityEngineMathf.__get_Infinity__SystemSingle
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: 
+          variableID: f7972c62-a390-4df5-bd3f-fd968730d463
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBCAAAAG0AYQB4AFMAcABlAGUAZAAF
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: SystemSingle__.Set__SystemSingle__SystemSingle
+          guid: 
+        inputs:
+        - isVariable: 0
+          name: 
+          variableID: 
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAaQBuAGcAbABlACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACAAAAAABQ==
+            unityObjects: []
+        - isVariable: 1
+          name: 
+          variableID: 1b041ff5-5ea7-426a-86de-61af82bc00b5
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBCAAAAG8AdQB0AHAAdQB0AF8AeAAF
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: SystemSingle__.Set__SystemSingle__SystemSingle
+          guid: 
+        inputs:
+        - isVariable: 0
+          name: 
+          variableID: 
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAaQBuAGcAbABlACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACAAAAAABQ==
+            unityObjects: []
+        - isVariable: 1
+          name: 
+          variableID: fe48296f-045f-43c7-8e50-2bf0ff98492e
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBCAAAAG8AdQB0AHAAdQB0AF8AeQAF
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: SystemSingle__.Set__SystemSingle__SystemSingle
+          guid: 
+        inputs:
+        - isVariable: 0
+          name: 
+          variableID: 
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAaQBuAGcAbABlACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACAAAAAABQ==
+            unityObjects: []
+        - isVariable: 1
+          name: 
+          variableID: e12336de-0904-442e-852d-3780756082f3
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBCAAAAG8AdQB0AHAAdQB0AF8AegAF
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: UnityEngineMathf.__Max__SystemSingle_SystemSingle__SystemSingle
+          guid: 
+        inputs:
+        - isVariable: 0
+          name: 
+          variableID: 
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAaQBuAGcAbABlACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACAXt9E4BQ==
+            unityObjects: []
+        - isVariable: 1
+          name: smoothTime
+          variableID: 10ed65b5-794e-4bb6-a0be-146ae17c92d9
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAaQBuAGcAbABlACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACAAAAAABQ==
+            unityObjects: []
+        - isVariable: 1
+          name: smoothTime
+          variableID: 10ed65b5-794e-4bb6-a0be-146ae17c92d9
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: SystemSingle.__op_Division__SystemSingle_SystemSingle__SystemSingle
+          guid: 
+        inputs:
+        - isVariable: 0
+          name: 
+          variableID: 
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAaQBuAGcAbABlACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACAAAABABQ==
+            unityObjects: []
+        - isVariable: 1
+          name: smoothTime
+          variableID: 10ed65b5-794e-4bb6-a0be-146ae17c92d9
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAaQBuAGcAbABlACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACAAAAAABQ==
+            unityObjects: []
+        - isVariable: 1
+          name: 
+          variableID: 2f53a4ba-1196-4f86-b882-34dd5b273188
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBBQAAAG8AbQBlAGcAYQAF
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: SystemSingle.__op_Multiplication__SystemSingle_SystemSingle__SystemSingle
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: omega
+          variableID: 2f53a4ba-1196-4f86-b882-34dd5b273188
+          data:
+            objEncoded: 
+            unityObjects: []
+        - isVariable: 1
+          name: deltaTime
+          variableID: 385438dc-72d3-4387-9513-895dc27e5cdd
+          data:
+            objEncoded: 
+            unityObjects: []
+        - isVariable: 1
+          name: 
+          variableID: 7261c12b-afef-41f4-b0f5-6a9d51154781
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBAQAAAHgABQ==
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: SystemSingle.__op_Multiplication__SystemSingle_SystemSingle__SystemSingle
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: x
+          variableID: 7261c12b-afef-41f4-b0f5-6a9d51154781
+          data:
+            objEncoded: 
+            unityObjects: []
+        - isVariable: 1
+          name: x
+          variableID: 7261c12b-afef-41f4-b0f5-6a9d51154781
+          data:
+            objEncoded: 
+            unityObjects: []
+        - isVariable: 1
+          name: 
+          variableID: 5d9fd8fe-3454-4cdd-aa3f-97ad6b269292
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBAgAAAHgAeAAF
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: SystemSingle.__op_Multiplication__SystemSingle_SystemSingle__SystemSingle
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: xx
+          variableID: 5d9fd8fe-3454-4cdd-aa3f-97ad6b269292
+          data:
+            objEncoded: 
+            unityObjects: []
+        - isVariable: 1
+          name: x
+          variableID: 7261c12b-afef-41f4-b0f5-6a9d51154781
+          data:
+            objEncoded: 
+            unityObjects: []
+        - isVariable: 1
+          name: 
+          variableID: a5415cce-fe39-4932-9f77-7605146c3995
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBAwAAAHgAeAB4AAU=
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: SystemSingle.__op_Addition__SystemSingle_SystemSingle__SystemSingle
+          guid: 
+        inputs:
+        - isVariable: 0
+          name: 
+          variableID: 
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAaQBuAGcAbABlACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACAAAIA/BQ==
+            unityObjects: []
+        - isVariable: 1
+          name: x
+          variableID: 7261c12b-afef-41f4-b0f5-6a9d51154781
+          data:
+            objEncoded: 
+            unityObjects: []
+        - isVariable: 1
+          name: 
+          variableID: 717f0968-38e6-4159-98c7-198123b79b11
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBAwAAAGQAZQBuAAU=
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: SystemSingle.__op_Multiplication__SystemSingle_SystemSingle__SystemSingle
+          guid: 
+        inputs:
+        - isVariable: 0
+          name: 
+          variableID: 
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAaQBuAGcAbABlACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACCPwvU+BQ==
+            unityObjects: []
+        - isVariable: 1
+          name: xx
+          variableID: 5d9fd8fe-3454-4cdd-aa3f-97ad6b269292
+          data:
+            objEncoded: 
+            unityObjects: []
+        - isVariable: 1
+          name: 
+          variableID: c355b04c-64df-45e6-90ed-089a07e8b31e
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBBAAAAHgAeAA0ADgABQ==
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: SystemSingle.__op_Addition__SystemSingle_SystemSingle__SystemSingle
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: den
+          variableID: 717f0968-38e6-4159-98c7-198123b79b11
+          data:
+            objEncoded: 
+            unityObjects: []
+        - isVariable: 1
+          name: xx48
+          variableID: c355b04c-64df-45e6-90ed-089a07e8b31e
+          data:
+            objEncoded: 
+            unityObjects: []
+        - isVariable: 1
+          name: den
+          variableID: 717f0968-38e6-4159-98c7-198123b79b11
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBCgAAAF8AUwBpAG4AZwBsAGUAXwAxADIABQ==
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: SystemSingle.__op_Multiplication__SystemSingle_SystemSingle__SystemSingle
+          guid: 
+        inputs:
+        - isVariable: 0
+          name: 
+          variableID: 
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAaQBuAGcAbABlACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACDXo3A+BQ==
+            unityObjects: []
+        - isVariable: 1
+          name: xxx
+          variableID: a5415cce-fe39-4932-9f77-7605146c3995
+          data:
+            objEncoded: 
+            unityObjects: []
+        - isVariable: 1
+          name: 
+          variableID: 5e306290-4f03-4fc9-b15c-e5b9e140c3c9
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBBgAAAHgAeAB4ADIAMwA1AAU=
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: SystemSingle.__op_Addition__SystemSingle_SystemSingle__SystemSingle
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: den
+          variableID: 717f0968-38e6-4159-98c7-198123b79b11
+          data:
+            objEncoded: 
+            unityObjects: []
+        - isVariable: 1
+          name: xxx235
+          variableID: 5e306290-4f03-4fc9-b15c-e5b9e140c3c9
+          data:
+            objEncoded: 
+            unityObjects: []
+        - isVariable: 1
+          name: den
+          variableID: 717f0968-38e6-4159-98c7-198123b79b11
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBCgAAAF8AUwBpAG4AZwBsAGUAXwAxADYABQ==
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: SystemSingle.__op_Division__SystemSingle_SystemSingle__SystemSingle
+          guid: 
+        inputs:
+        - isVariable: 0
+          name: 
+          variableID: 
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAaQBuAGcAbABlACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACAAAIA/BQ==
+            unityObjects: []
+        - isVariable: 1
+          name: den
+          variableID: 717f0968-38e6-4159-98c7-198123b79b11
+          data:
+            objEncoded: 
+            unityObjects: []
+        - isVariable: 1
+          name: 
+          variableID: 467b1698-f7fa-4845-8342-1c28fb5c958b
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBAwAAAGUAeABwAAU=
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: UnityEngineVector3.__get_x__SystemSingle
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: current
+          variableID: fad08e33-d30f-49d9-8bb1-895fcb0d4f6b
+          data:
+            objEncoded: Ai8AAAAAASsAAABVAG4AaQB0AHkARQBuAGcAaQBuAGUALgBWAGUAYwB0AG8AcgAzACwAIABVAG4AaQB0AHkARQBuAGcAaQBuAGUALgBDAG8AcgBlAE0AbwBkAHUAbABlAAAAAAAgAAAAACAAAAAAIAAAAAAF
+            unityObjects: []
+        - isVariable: 1
+          name: 
+          variableID: f84a70e9-b2b9-4616-86cf-bf50494edd2b
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBCAAAAGMAdQByAHIAZQBuAHQAWAAF
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: UnityEngineVector3.__get_x__SystemSingle
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: target
+          variableID: 5cee553b-0cb8-4d75-b596-533c22fc5a64
+          data:
+            objEncoded: Ai8AAAAAASsAAABVAG4AaQB0AHkARQBuAGcAaQBuAGUALgBWAGUAYwB0AG8AcgAzACwAIABVAG4AaQB0AHkARQBuAGcAaQBuAGUALgBDAG8AcgBlAE0AbwBkAHUAbABlAAAAAAAgAAAAACAAAAAAIAAAAAAF
+            unityObjects: []
+        - isVariable: 1
+          name: 
+          variableID: 917e2ffe-1aad-47b3-9bcc-d607e1beaeaf
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBBwAAAHQAYQByAGcAZQB0AFgABQ==
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: SystemSingle.__op_Subtraction__SystemSingle_SystemSingle__SystemSingle
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: currentX
+          variableID: f84a70e9-b2b9-4616-86cf-bf50494edd2b
+          data:
+            objEncoded: 
+            unityObjects: []
+        - isVariable: 1
+          name: targetX
+          variableID: 917e2ffe-1aad-47b3-9bcc-d607e1beaeaf
+          data:
+            objEncoded: 
+            unityObjects: []
+        - isVariable: 1
+          name: 
+          variableID: e7c3b63e-4a8f-4f1f-8faf-a666044cb955
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBCAAAAGMAaABhAG4AZwBlAF8AeAAF
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: UnityEngineVector3.__get_y__SystemSingle
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: current
+          variableID: fad08e33-d30f-49d9-8bb1-895fcb0d4f6b
+          data:
+            objEncoded: Ai8AAAAAASsAAABVAG4AaQB0AHkARQBuAGcAaQBuAGUALgBWAGUAYwB0AG8AcgAzACwAIABVAG4AaQB0AHkARQBuAGcAaQBuAGUALgBDAG8AcgBlAE0AbwBkAHUAbABlAAAAAAAgAAAAACAAAAAAIAAAAAAF
+            unityObjects: []
+        - isVariable: 1
+          name: 
+          variableID: 2d3512a8-75e3-4752-a40f-7d75e8200618
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBCAAAAGMAdQByAHIAZQBuAHQAWQAF
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: UnityEngineVector3.__get_y__SystemSingle
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: target
+          variableID: 5cee553b-0cb8-4d75-b596-533c22fc5a64
+          data:
+            objEncoded: Ai8AAAAAASsAAABVAG4AaQB0AHkARQBuAGcAaQBuAGUALgBWAGUAYwB0AG8AcgAzACwAIABVAG4AaQB0AHkARQBuAGcAaQBuAGUALgBDAG8AcgBlAE0AbwBkAHUAbABlAAAAAAAgAAAAACAAAAAAIAAAAAAF
+            unityObjects: []
+        - isVariable: 1
+          name: 
+          variableID: 2ef694fe-2374-40ee-9795-1ecea696ad61
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBBwAAAHQAYQByAGcAZQB0AFkABQ==
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: SystemSingle.__op_Subtraction__SystemSingle_SystemSingle__SystemSingle
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: currentY
+          variableID: 2d3512a8-75e3-4752-a40f-7d75e8200618
+          data:
+            objEncoded: 
+            unityObjects: []
+        - isVariable: 1
+          name: targetY
+          variableID: 2ef694fe-2374-40ee-9795-1ecea696ad61
+          data:
+            objEncoded: 
+            unityObjects: []
+        - isVariable: 1
+          name: 
+          variableID: d3cb2b40-4c44-4efc-b7d2-2b38afd6cca7
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBCAAAAGMAaABhAG4AZwBlAF8AeQAF
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: UnityEngineVector3.__get_z__SystemSingle
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: current
+          variableID: fad08e33-d30f-49d9-8bb1-895fcb0d4f6b
+          data:
+            objEncoded: Ai8AAAAAASsAAABVAG4AaQB0AHkARQBuAGcAaQBuAGUALgBWAGUAYwB0AG8AcgAzACwAIABVAG4AaQB0AHkARQBuAGcAaQBuAGUALgBDAG8AcgBlAE0AbwBkAHUAbABlAAAAAAAgAAAAACAAAAAAIAAAAAAF
+            unityObjects: []
+        - isVariable: 1
+          name: 
+          variableID: ad528ade-f335-45ae-acd3-e6696856a774
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBCAAAAGMAdQByAHIAZQBuAHQAWgAF
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: UnityEngineVector3.__get_z__SystemSingle
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: target
+          variableID: 5cee553b-0cb8-4d75-b596-533c22fc5a64
+          data:
+            objEncoded: Ai8AAAAAASsAAABVAG4AaQB0AHkARQBuAGcAaQBuAGUALgBWAGUAYwB0AG8AcgAzACwAIABVAG4AaQB0AHkARQBuAGcAaQBuAGUALgBDAG8AcgBlAE0AbwBkAHUAbABlAAAAAAAgAAAAACAAAAAAIAAAAAAF
+            unityObjects: []
+        - isVariable: 1
+          name: 
+          variableID: e73692bc-3aff-4297-95a6-6a0770763474
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBBwAAAHQAYQByAGcAZQB0AFoABQ==
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: SystemSingle.__op_Subtraction__SystemSingle_SystemSingle__SystemSingle
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: currentZ
+          variableID: ad528ade-f335-45ae-acd3-e6696856a774
+          data:
+            objEncoded: 
+            unityObjects: []
+        - isVariable: 1
+          name: targetZ
+          variableID: e73692bc-3aff-4297-95a6-6a0770763474
+          data:
+            objEncoded: 
+            unityObjects: []
+        - isVariable: 1
+          name: 
+          variableID: 7b82299a-0a5b-4f52-8999-4645311d03ce
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBCAAAAGMAaABhAG4AZwBlAF8AegAF
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: UnityEngineVector3__.Set__UnityEngineVector3__UnityEngineVector3
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: target
+          variableID: 5cee553b-0cb8-4d75-b596-533c22fc5a64
+          data:
+            objEncoded: Ai8AAAAAASsAAABVAG4AaQB0AHkARQBuAGcAaQBuAGUALgBWAGUAYwB0AG8AcgAzACwAIABVAG4AaQB0AHkARQBuAGcAaQBuAGUALgBDAG8AcgBlAE0AbwBkAHUAbABlAAAAAAAgAAAAACAAAAAAIAAAAAAF
+            unityObjects: []
+        - isVariable: 1
+          name: 
+          variableID: 490f4f7f-2548-43af-b84d-bea047f38561
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBCgAAAG8AcgBpAGcAaQBuAGEAbABUAG8ABQ==
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: SystemSingle.__op_Multiplication__SystemSingle_SystemSingle__SystemSingle
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: maxSpeed
+          variableID: f7972c62-a390-4df5-bd3f-fd968730d463
+          data:
+            objEncoded: 
+            unityObjects: []
+        - isVariable: 1
+          name: smoothTime
+          variableID: 10ed65b5-794e-4bb6-a0be-146ae17c92d9
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAaQBuAGcAbABlACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACAAAAAABQ==
+            unityObjects: []
+        - isVariable: 1
+          name: 
+          variableID: daae4ce8-bfa4-4cbd-8fc9-85903a220af5
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBCQAAAG0AYQB4AEMAaABhAG4AZwBlAAU=
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: SystemSingle.__op_Multiplication__SystemSingle_SystemSingle__SystemSingle
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: maxChange
+          variableID: daae4ce8-bfa4-4cbd-8fc9-85903a220af5
+          data:
+            objEncoded: 
+            unityObjects: []
+        - isVariable: 1
+          name: maxChange
+          variableID: daae4ce8-bfa4-4cbd-8fc9-85903a220af5
+          data:
+            objEncoded: 
+            unityObjects: []
+        - isVariable: 1
+          name: 
+          variableID: 4d67255f-d571-49c1-bfd3-480f984539a7
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBCwAAAG0AYQB4AEMAaABhAG4AZwBlAFMAcQAF
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: SystemSingle.__op_Multiplication__SystemSingle_SystemSingle__SystemSingle
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: change_x
+          variableID: e7c3b63e-4a8f-4f1f-8faf-a666044cb955
+          data:
+            objEncoded: 
+            unityObjects: []
+        - isVariable: 1
+          name: change_x
+          variableID: e7c3b63e-4a8f-4f1f-8faf-a666044cb955
+          data:
+            objEncoded: 
+            unityObjects: []
+        - isVariable: 1
+          name: 
+          variableID: 143e1e92-e12d-47d3-b697-7efe627744f3
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBCgAAAGMAaABhAG4AZwBlAF8AeABTAHEABQ==
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: SystemSingle.__op_Multiplication__SystemSingle_SystemSingle__SystemSingle
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: change_y
+          variableID: d3cb2b40-4c44-4efc-b7d2-2b38afd6cca7
+          data:
+            objEncoded: 
+            unityObjects: []
+        - isVariable: 1
+          name: change_y
+          variableID: d3cb2b40-4c44-4efc-b7d2-2b38afd6cca7
+          data:
+            objEncoded: 
+            unityObjects: []
+        - isVariable: 1
+          name: 
+          variableID: aa40140f-78f6-43d5-a4e2-a89b881af03a
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBCgAAAGMAaABhAG4AZwBlAF8AeQBTAHEABQ==
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: SystemSingle.__op_Addition__SystemSingle_SystemSingle__SystemSingle
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: change_xSq
+          variableID: 143e1e92-e12d-47d3-b697-7efe627744f3
+          data:
+            objEncoded: 
+            unityObjects: []
+        - isVariable: 1
+          name: change_ySq
+          variableID: aa40140f-78f6-43d5-a4e2-a89b881af03a
+          data:
+            objEncoded: 
+            unityObjects: []
+        - isVariable: 1
+          name: 
+          variableID: de2492aa-9e86-4bdb-93ea-df4ba523119e
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBBgAAAHMAcQByAG0AYQBnAAU=
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: SystemSingle.__op_Multiplication__SystemSingle_SystemSingle__SystemSingle
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: change_z
+          variableID: 7b82299a-0a5b-4f52-8999-4645311d03ce
+          data:
+            objEncoded: 
+            unityObjects: []
+        - isVariable: 1
+          name: change_z
+          variableID: 7b82299a-0a5b-4f52-8999-4645311d03ce
+          data:
+            objEncoded: 
+            unityObjects: []
+        - isVariable: 1
+          name: 
+          variableID: b06cf65d-4a28-4eda-bb1a-0e1d7d653aa2
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBCgAAAGMAaABhAG4AZwBlAF8AegBTAHEABQ==
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: SystemSingle.__op_Addition__SystemSingle_SystemSingle__SystemSingle
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: sqrmag
+          variableID: de2492aa-9e86-4bdb-93ea-df4ba523119e
+          data:
+            objEncoded: 
+            unityObjects: []
+        - isVariable: 1
+          name: change_zSq
+          variableID: b06cf65d-4a28-4eda-bb1a-0e1d7d653aa2
+          data:
+            objEncoded: 
+            unityObjects: []
+        - isVariable: 1
+          name: sqrmag
+          variableID: de2492aa-9e86-4bdb-93ea-df4ba523119e
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBCgAAAF8AUwBpAG4AZwBsAGUAXwAzADMABQ==
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: CyanTriggerSpecial_If
+          guid: 
+        inputs: []
+        multiInput: []
+        expanded: 1
+        comment:
+          comment: 
+      - actionType:
+          directEvent: CyanTriggerSpecial_Condition
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: 
+          variableID: 506b2242-f80e-40a9-8d45-c732a83c5a88
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBEgAAAHMAcQByAG0AYQBnAEcAdAByAE0AYQB4AEMAaABhAG4AZwBlAAU=
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: SystemSingle.__op_GreaterThan__SystemSingle_SystemSingle__SystemBoolean
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: sqrmag
+          variableID: de2492aa-9e86-4bdb-93ea-df4ba523119e
+          data:
+            objEncoded: 
+            unityObjects: []
+        - isVariable: 1
+          name: maxChangeSq
+          variableID: 4d67255f-d571-49c1-bfd3-480f984539a7
+          data:
+            objEncoded: 
+            unityObjects: []
+        - isVariable: 1
+          name: sqrmagGtrMaxChange
+          variableID: 506b2242-f80e-40a9-8d45-c732a83c5a88
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBCgAAAF8AQgBvAG8AbABlAGEAbgBfADEABQ==
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: CyanTriggerSpecial_BlockEnd
+          guid: 
+        inputs: []
+        multiInput: []
+        expanded: 1
+        comment:
+          comment: 
+      - actionType:
+          directEvent: CyanTriggerSpecial_ConditionBody
+          guid: 
+        inputs: []
+        multiInput: []
+        expanded: 1
+        comment:
+          comment: 
+      - actionType:
+          directEvent: UnityEngineMathf.__Sqrt__SystemSingle__SystemSingle
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: sqrmag
+          variableID: de2492aa-9e86-4bdb-93ea-df4ba523119e
+          data:
+            objEncoded: 
+            unityObjects: []
+        - isVariable: 1
+          name: 
+          variableID: e0135eeb-9a39-4447-81a1-4a26ae8c0608
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBAwAAAG0AYQBnAAU=
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: SystemSingle.__op_Division__SystemSingle_SystemSingle__SystemSingle
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: change_x
+          variableID: e7c3b63e-4a8f-4f1f-8faf-a666044cb955
+          data:
+            objEncoded: 
+            unityObjects: []
+        - isVariable: 1
+          name: mag
+          variableID: e0135eeb-9a39-4447-81a1-4a26ae8c0608
+          data:
+            objEncoded: 
+            unityObjects: []
+        - isVariable: 1
+          name: change_x
+          variableID: e7c3b63e-4a8f-4f1f-8faf-a666044cb955
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBCgAAAF8AUwBpAG4AZwBsAGUAXwAzADYABQ==
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: SystemSingle.__op_Multiplication__SystemSingle_SystemSingle__SystemSingle
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: change_x
+          variableID: e7c3b63e-4a8f-4f1f-8faf-a666044cb955
+          data:
+            objEncoded: 
+            unityObjects: []
+        - isVariable: 1
+          name: maxChange
+          variableID: daae4ce8-bfa4-4cbd-8fc9-85903a220af5
+          data:
+            objEncoded: 
+            unityObjects: []
+        - isVariable: 1
+          name: change_x
+          variableID: e7c3b63e-4a8f-4f1f-8faf-a666044cb955
+          data:
+            objEncoded: 
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: SystemSingle.__op_Division__SystemSingle_SystemSingle__SystemSingle
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: change_y
+          variableID: d3cb2b40-4c44-4efc-b7d2-2b38afd6cca7
+          data:
+            objEncoded: 
+            unityObjects: []
+        - isVariable: 1
+          name: mag
+          variableID: e0135eeb-9a39-4447-81a1-4a26ae8c0608
+          data:
+            objEncoded: 
+            unityObjects: []
+        - isVariable: 1
+          name: change_y
+          variableID: d3cb2b40-4c44-4efc-b7d2-2b38afd6cca7
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBCgAAAF8AUwBpAG4AZwBsAGUAXwAzADcABQ==
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: SystemSingle.__op_Multiplication__SystemSingle_SystemSingle__SystemSingle
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: change_y
+          variableID: d3cb2b40-4c44-4efc-b7d2-2b38afd6cca7
+          data:
+            objEncoded: 
+            unityObjects: []
+        - isVariable: 1
+          name: maxChange
+          variableID: daae4ce8-bfa4-4cbd-8fc9-85903a220af5
+          data:
+            objEncoded: 
+            unityObjects: []
+        - isVariable: 1
+          name: change_y
+          variableID: d3cb2b40-4c44-4efc-b7d2-2b38afd6cca7
+          data:
+            objEncoded: 
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: SystemSingle.__op_Division__SystemSingle_SystemSingle__SystemSingle
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: change_z
+          variableID: 7b82299a-0a5b-4f52-8999-4645311d03ce
+          data:
+            objEncoded: 
+            unityObjects: []
+        - isVariable: 1
+          name: mag
+          variableID: e0135eeb-9a39-4447-81a1-4a26ae8c0608
+          data:
+            objEncoded: 
+            unityObjects: []
+        - isVariable: 1
+          name: change_z
+          variableID: 7b82299a-0a5b-4f52-8999-4645311d03ce
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBCgAAAF8AUwBpAG4AZwBsAGUAXwAzADgABQ==
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: SystemSingle.__op_Multiplication__SystemSingle_SystemSingle__SystemSingle
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: change_z
+          variableID: 7b82299a-0a5b-4f52-8999-4645311d03ce
+          data:
+            objEncoded: 
+            unityObjects: []
+        - isVariable: 1
+          name: maxChange
+          variableID: daae4ce8-bfa4-4cbd-8fc9-85903a220af5
+          data:
+            objEncoded: 
+            unityObjects: []
+        - isVariable: 1
+          name: change_z
+          variableID: 7b82299a-0a5b-4f52-8999-4645311d03ce
+          data:
+            objEncoded: 
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: CyanTriggerSpecial_BlockEnd
+          guid: 
+        inputs: []
+        multiInput: []
+        expanded: 1
+        comment:
+          comment: 
+      - actionType:
+          directEvent: CyanTriggerSpecial_BlockEnd
+          guid: 
+        inputs: []
+        multiInput: []
+        expanded: 1
+        comment:
+          comment: 
+      - actionType:
+          directEvent: SystemSingle.__op_Subtraction__SystemSingle_SystemSingle__SystemSingle
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: currentX
+          variableID: f84a70e9-b2b9-4616-86cf-bf50494edd2b
+          data:
+            objEncoded: 
+            unityObjects: []
+        - isVariable: 1
+          name: change_x
+          variableID: e7c3b63e-4a8f-4f1f-8faf-a666044cb955
+          data:
+            objEncoded: 
+            unityObjects: []
+        - isVariable: 1
+          name: targetX
+          variableID: 917e2ffe-1aad-47b3-9bcc-d607e1beaeaf
+          data:
+            objEncoded: 
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: UnityEngineVector3.__set_x__SystemSingle
+          guid: 
+        inputs:
+        - isVariable: 0
+          name: 
+          variableID: 
+          data:
+            objEncoded: 
+            unityObjects: []
+        - isVariable: 1
+          name: targetX
+          variableID: 917e2ffe-1aad-47b3-9bcc-d607e1beaeaf
+          data:
+            objEncoded: 
+            unityObjects: []
+        multiInput:
+        - isVariable: 1
+          name: target
+          variableID: 5cee553b-0cb8-4d75-b596-533c22fc5a64
+          data:
+            objEncoded: Ai8AAAAAASsAAABVAG4AaQB0AHkARQBuAGcAaQBuAGUALgBWAGUAYwB0AG8AcgAzACwAIABVAG4AaQB0AHkARQBuAGcAaQBuAGUALgBDAG8AcgBlAE0AbwBkAHUAbABlAAAAAAAgAAAAACAAAAAAIAAAAAAF
+            unityObjects: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: SystemSingle.__op_Subtraction__SystemSingle_SystemSingle__SystemSingle
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: currentY
+          variableID: 2d3512a8-75e3-4752-a40f-7d75e8200618
+          data:
+            objEncoded: 
+            unityObjects: []
+        - isVariable: 1
+          name: change_y
+          variableID: d3cb2b40-4c44-4efc-b7d2-2b38afd6cca7
+          data:
+            objEncoded: 
+            unityObjects: []
+        - isVariable: 1
+          name: targetY
+          variableID: 2ef694fe-2374-40ee-9795-1ecea696ad61
+          data:
+            objEncoded: 
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: UnityEngineVector3.__set_y__SystemSingle
+          guid: 
+        inputs:
+        - isVariable: 0
+          name: 
+          variableID: 
+          data:
+            objEncoded: 
+            unityObjects: []
+        - isVariable: 1
+          name: targetY
+          variableID: 2ef694fe-2374-40ee-9795-1ecea696ad61
+          data:
+            objEncoded: 
+            unityObjects: []
+        multiInput:
+        - isVariable: 1
+          name: target
+          variableID: 5cee553b-0cb8-4d75-b596-533c22fc5a64
+          data:
+            objEncoded: Ai8AAAAAASsAAABVAG4AaQB0AHkARQBuAGcAaQBuAGUALgBWAGUAYwB0AG8AcgAzACwAIABVAG4AaQB0AHkARQBuAGcAaQBuAGUALgBDAG8AcgBlAE0AbwBkAHUAbABlAAAAAAAgAAAAACAAAAAAIAAAAAAF
+            unityObjects: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: SystemSingle.__op_Subtraction__SystemSingle_SystemSingle__SystemSingle
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: currentZ
+          variableID: ad528ade-f335-45ae-acd3-e6696856a774
+          data:
+            objEncoded: 
+            unityObjects: []
+        - isVariable: 1
+          name: change_z
+          variableID: 7b82299a-0a5b-4f52-8999-4645311d03ce
+          data:
+            objEncoded: 
+            unityObjects: []
+        - isVariable: 1
+          name: targetZ
+          variableID: e73692bc-3aff-4297-95a6-6a0770763474
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBCgAAAF8AUwBpAG4AZwBsAGUAXwA0ADAABQ==
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: UnityEngineVector3.__set_z__SystemSingle
+          guid: 
+        inputs:
+        - isVariable: 0
+          name: 
+          variableID: 
+          data:
+            objEncoded: 
+            unityObjects: []
+        - isVariable: 1
+          name: targetZ
+          variableID: e73692bc-3aff-4297-95a6-6a0770763474
+          data:
+            objEncoded: 
+            unityObjects: []
+        multiInput:
+        - isVariable: 1
+          name: target
+          variableID: 5cee553b-0cb8-4d75-b596-533c22fc5a64
+          data:
+            objEncoded: Ai8AAAAAASsAAABVAG4AaQB0AHkARQBuAGcAaQBuAGUALgBWAGUAYwB0AG8AcgAzACwAIABVAG4AaQB0AHkARQBuAGcAaQBuAGUALgBDAG8AcgBlAE0AbwBkAHUAbABlAAAAAAAgAAAAACAAAAAAIAAAAAAF
+            unityObjects: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: UnityEngineVector3.__get_x__SystemSingle
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: currentVelocity
+          variableID: a6a47221-056e-4c22-8ae0-f38838833cd2
+          data:
+            objEncoded: Ai8AAAAAASsAAABVAG4AaQB0AHkARQBuAGcAaQBuAGUALgBWAGUAYwB0AG8AcgAzACwAIABVAG4AaQB0AHkARQBuAGcAaQBuAGUALgBDAG8AcgBlAE0AbwBkAHUAbABlAAAAAAAgAAAAACAAAAAAIAAAAAAF
+            unityObjects: []
+        - isVariable: 1
+          name: 
+          variableID: 12ec7099-589d-41e5-a495-0f84caf39d9f
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBEQAAAGMAdQByAHIAZQBuAHQAVgBlAGwAbwBjAGkAdAB5AF8AeAAF
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: UnityEngineVector3.__get_y__SystemSingle
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: currentVelocity
+          variableID: a6a47221-056e-4c22-8ae0-f38838833cd2
+          data:
+            objEncoded: Ai8AAAAAASsAAABVAG4AaQB0AHkARQBuAGcAaQBuAGUALgBWAGUAYwB0AG8AcgAzACwAIABVAG4AaQB0AHkARQBuAGcAaQBuAGUALgBDAG8AcgBlAE0AbwBkAHUAbABlAAAAAAAgAAAAACAAAAAAIAAAAAAF
+            unityObjects: []
+        - isVariable: 1
+          name: 
+          variableID: 615111a6-af09-493c-861a-41e7970b08e6
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBEQAAAGMAdQByAHIAZQBuAHQAVgBlAGwAbwBjAGkAdAB5AF8AeQAF
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: UnityEngineVector3.__get_z__SystemSingle
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: currentVelocity
+          variableID: a6a47221-056e-4c22-8ae0-f38838833cd2
+          data:
+            objEncoded: Ai8AAAAAASsAAABVAG4AaQB0AHkARQBuAGcAaQBuAGUALgBWAGUAYwB0AG8AcgAzACwAIABVAG4AaQB0AHkARQBuAGcAaQBuAGUALgBDAG8AcgBlAE0AbwBkAHUAbABlAAAAAAAgAAAAACAAAAAAIAAAAAAF
+            unityObjects: []
+        - isVariable: 1
+          name: 
+          variableID: 6d9752dd-5c51-4ff8-8b29-0b957f7b21b7
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBEQAAAGMAdQByAHIAZQBuAHQAVgBlAGwAbwBjAGkAdAB5AF8AegAF
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: SystemSingle.__op_Multiplication__SystemSingle_SystemSingle__SystemSingle
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: omega
+          variableID: 2f53a4ba-1196-4f86-b882-34dd5b273188
+          data:
+            objEncoded: 
+            unityObjects: []
+        - isVariable: 1
+          name: change_x
+          variableID: e7c3b63e-4a8f-4f1f-8faf-a666044cb955
+          data:
+            objEncoded: 
+            unityObjects: []
+        - isVariable: 1
+          name: 
+          variableID: 73e8e69b-82ba-4798-86a3-ffabce97863a
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBBgAAAHQAZQBtAHAAXwB4AAU=
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: SystemSingle.__op_Addition__SystemSingle_SystemSingle__SystemSingle
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: currentVelocity_x
+          variableID: 12ec7099-589d-41e5-a495-0f84caf39d9f
+          data:
+            objEncoded: 
+            unityObjects: []
+        - isVariable: 1
+          name: temp_x
+          variableID: 73e8e69b-82ba-4798-86a3-ffabce97863a
+          data:
+            objEncoded: 
+            unityObjects: []
+        - isVariable: 1
+          name: temp_x
+          variableID: 73e8e69b-82ba-4798-86a3-ffabce97863a
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBCgAAAF8AUwBpAG4AZwBsAGUAXwA0ADMABQ==
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: SystemSingle.__op_Multiplication__SystemSingle_SystemSingle__SystemSingle
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: temp_x
+          variableID: 73e8e69b-82ba-4798-86a3-ffabce97863a
+          data:
+            objEncoded: 
+            unityObjects: []
+        - isVariable: 1
+          name: deltaTime
+          variableID: 385438dc-72d3-4387-9513-895dc27e5cdd
+          data:
+            objEncoded: 
+            unityObjects: []
+        - isVariable: 1
+          name: temp_x
+          variableID: 73e8e69b-82ba-4798-86a3-ffabce97863a
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBBgAAAHQAZQBtAHAAXwB4AAU=
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: SystemSingle.__op_Multiplication__SystemSingle_SystemSingle__SystemSingle
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: omega
+          variableID: 2f53a4ba-1196-4f86-b882-34dd5b273188
+          data:
+            objEncoded: 
+            unityObjects: []
+        - isVariable: 1
+          name: change_y
+          variableID: d3cb2b40-4c44-4efc-b7d2-2b38afd6cca7
+          data:
+            objEncoded: 
+            unityObjects: []
+        - isVariable: 1
+          name: 
+          variableID: 8454d9c3-0040-47c0-b936-b1163ab1e584
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBBgAAAHQAZQBtAHAAXwB5AAU=
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: SystemSingle.__op_Addition__SystemSingle_SystemSingle__SystemSingle
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: currentVelocity_y
+          variableID: 615111a6-af09-493c-861a-41e7970b08e6
+          data:
+            objEncoded: 
+            unityObjects: []
+        - isVariable: 1
+          name: temp_y
+          variableID: 8454d9c3-0040-47c0-b936-b1163ab1e584
+          data:
+            objEncoded: 
+            unityObjects: []
+        - isVariable: 1
+          name: temp_y
+          variableID: 8454d9c3-0040-47c0-b936-b1163ab1e584
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBCgAAAF8AUwBpAG4AZwBsAGUAXwA0ADcABQ==
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: SystemSingle.__op_Multiplication__SystemSingle_SystemSingle__SystemSingle
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: temp_y
+          variableID: 8454d9c3-0040-47c0-b936-b1163ab1e584
+          data:
+            objEncoded: 
+            unityObjects: []
+        - isVariable: 1
+          name: deltaTime
+          variableID: 385438dc-72d3-4387-9513-895dc27e5cdd
+          data:
+            objEncoded: 
+            unityObjects: []
+        - isVariable: 1
+          name: temp_y
+          variableID: 8454d9c3-0040-47c0-b936-b1163ab1e584
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBBgAAAHQAZQBtAHAAXwB5AAU=
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: SystemSingle.__op_Multiplication__SystemSingle_SystemSingle__SystemSingle
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: omega
+          variableID: 2f53a4ba-1196-4f86-b882-34dd5b273188
+          data:
+            objEncoded: 
+            unityObjects: []
+        - isVariable: 1
+          name: change_z
+          variableID: 7b82299a-0a5b-4f52-8999-4645311d03ce
+          data:
+            objEncoded: 
+            unityObjects: []
+        - isVariable: 1
+          name: 
+          variableID: a5ac955f-3072-499e-a307-b85a8fbab91b
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBBgAAAHQAZQBtAHAAXwB6AAU=
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: SystemSingle.__op_Addition__SystemSingle_SystemSingle__SystemSingle
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: currentVelocity_z
+          variableID: 6d9752dd-5c51-4ff8-8b29-0b957f7b21b7
+          data:
+            objEncoded: 
+            unityObjects: []
+        - isVariable: 1
+          name: temp_z
+          variableID: a5ac955f-3072-499e-a307-b85a8fbab91b
+          data:
+            objEncoded: 
+            unityObjects: []
+        - isVariable: 1
+          name: temp_z
+          variableID: a5ac955f-3072-499e-a307-b85a8fbab91b
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBCgAAAF8AUwBpAG4AZwBsAGUAXwA1ADEABQ==
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: SystemSingle.__op_Multiplication__SystemSingle_SystemSingle__SystemSingle
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: temp_z
+          variableID: a5ac955f-3072-499e-a307-b85a8fbab91b
+          data:
+            objEncoded: 
+            unityObjects: []
+        - isVariable: 1
+          name: deltaTime
+          variableID: 385438dc-72d3-4387-9513-895dc27e5cdd
+          data:
+            objEncoded: 
+            unityObjects: []
+        - isVariable: 1
+          name: temp_z
+          variableID: a5ac955f-3072-499e-a307-b85a8fbab91b
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBBgAAAHQAZQBtAHAAXwB6AAU=
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: SystemSingle.__op_Multiplication__SystemSingle_SystemSingle__SystemSingle
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: omega
+          variableID: 2f53a4ba-1196-4f86-b882-34dd5b273188
+          data:
+            objEncoded: 
+            unityObjects: []
+        - isVariable: 1
+          name: temp_x
+          variableID: 73e8e69b-82ba-4798-86a3-ffabce97863a
+          data:
+            objEncoded: 
+            unityObjects: []
+        - isVariable: 1
+          name: 
+          variableID: b0650b19-76e3-4c95-ac6e-d0f1a0dd1fba
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBCgAAAG8AbQBlAGcAYQBUAGUAbQBwAFgABQ==
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: SystemSingle.__op_Subtraction__SystemSingle_SystemSingle__SystemSingle
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: currentVelocity_x
+          variableID: 12ec7099-589d-41e5-a495-0f84caf39d9f
+          data:
+            objEncoded: 
+            unityObjects: []
+        - isVariable: 1
+          name: omegaTempX
+          variableID: b0650b19-76e3-4c95-ac6e-d0f1a0dd1fba
+          data:
+            objEncoded: 
+            unityObjects: []
+        - isVariable: 1
+          name: currentVelocity_x
+          variableID: 12ec7099-589d-41e5-a495-0f84caf39d9f
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBCgAAAF8AUwBpAG4AZwBsAGUAXwA1ADUABQ==
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: SystemSingle.__op_Multiplication__SystemSingle_SystemSingle__SystemSingle
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: currentVelocity_x
+          variableID: 12ec7099-589d-41e5-a495-0f84caf39d9f
+          data:
+            objEncoded: 
+            unityObjects: []
+        - isVariable: 1
+          name: exp
+          variableID: 467b1698-f7fa-4845-8342-1c28fb5c958b
+          data:
+            objEncoded: 
+            unityObjects: []
+        - isVariable: 1
+          name: currentVelocity_x
+          variableID: 12ec7099-589d-41e5-a495-0f84caf39d9f
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBCgAAAF8AUwBpAG4AZwBsAGUAXwA1ADYABQ==
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: UnityEngineVector3.__set_x__SystemSingle
+          guid: 
+        inputs:
+        - isVariable: 0
+          name: 
+          variableID: 
+          data:
+            objEncoded: 
+            unityObjects: []
+        - isVariable: 1
+          name: currentVelocity_x
+          variableID: 12ec7099-589d-41e5-a495-0f84caf39d9f
+          data:
+            objEncoded: 
+            unityObjects: []
+        multiInput:
+        - isVariable: 1
+          name: currentVelocity
+          variableID: a6a47221-056e-4c22-8ae0-f38838833cd2
+          data:
+            objEncoded: Ai8AAAAAASsAAABVAG4AaQB0AHkARQBuAGcAaQBuAGUALgBWAGUAYwB0AG8AcgAzACwAIABVAG4AaQB0AHkARQBuAGcAaQBuAGUALgBDAG8AcgBlAE0AbwBkAHUAbABlAAAAAAAgAAAAACAAAAAAIAAAAAAF
+            unityObjects: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: SystemSingle.__op_Multiplication__SystemSingle_SystemSingle__SystemSingle
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: omega
+          variableID: 2f53a4ba-1196-4f86-b882-34dd5b273188
+          data:
+            objEncoded: 
+            unityObjects: []
+        - isVariable: 1
+          name: temp_y
+          variableID: 8454d9c3-0040-47c0-b936-b1163ab1e584
+          data:
+            objEncoded: 
+            unityObjects: []
+        - isVariable: 1
+          name: 
+          variableID: e1633d2f-28e2-472e-9ec4-bdacea504983
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBCgAAAG8AbQBlAGcAYQBUAGUAbQBwAFkABQ==
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: SystemSingle.__op_Subtraction__SystemSingle_SystemSingle__SystemSingle
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: currentVelocity_y
+          variableID: 615111a6-af09-493c-861a-41e7970b08e6
+          data:
+            objEncoded: 
+            unityObjects: []
+        - isVariable: 1
+          name: omegaTempY
+          variableID: e1633d2f-28e2-472e-9ec4-bdacea504983
+          data:
+            objEncoded: 
+            unityObjects: []
+        - isVariable: 1
+          name: currentVelocity_y
+          variableID: 615111a6-af09-493c-861a-41e7970b08e6
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBCgAAAF8AUwBpAG4AZwBsAGUAXwA1ADkABQ==
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: SystemSingle.__op_Multiplication__SystemSingle_SystemSingle__SystemSingle
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: currentVelocity_y
+          variableID: 615111a6-af09-493c-861a-41e7970b08e6
+          data:
+            objEncoded: 
+            unityObjects: []
+        - isVariable: 1
+          name: exp
+          variableID: 467b1698-f7fa-4845-8342-1c28fb5c958b
+          data:
+            objEncoded: 
+            unityObjects: []
+        - isVariable: 1
+          name: currentVelocity_y
+          variableID: 615111a6-af09-493c-861a-41e7970b08e6
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBCgAAAF8AUwBpAG4AZwBsAGUAXwA2ADAABQ==
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: UnityEngineVector3.__set_y__SystemSingle
+          guid: 
+        inputs:
+        - isVariable: 0
+          name: 
+          variableID: 
+          data:
+            objEncoded: 
+            unityObjects: []
+        - isVariable: 1
+          name: currentVelocity_y
+          variableID: 615111a6-af09-493c-861a-41e7970b08e6
+          data:
+            objEncoded: 
+            unityObjects: []
+        multiInput:
+        - isVariable: 1
+          name: currentVelocity
+          variableID: a6a47221-056e-4c22-8ae0-f38838833cd2
+          data:
+            objEncoded: Ai8AAAAAASsAAABVAG4AaQB0AHkARQBuAGcAaQBuAGUALgBWAGUAYwB0AG8AcgAzACwAIABVAG4AaQB0AHkARQBuAGcAaQBuAGUALgBDAG8AcgBlAE0AbwBkAHUAbABlAAAAAAAgAAAAACAAAAAAIAAAAAAF
+            unityObjects: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: SystemSingle.__op_Multiplication__SystemSingle_SystemSingle__SystemSingle
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: omega
+          variableID: 2f53a4ba-1196-4f86-b882-34dd5b273188
+          data:
+            objEncoded: 
+            unityObjects: []
+        - isVariable: 1
+          name: temp_z
+          variableID: a5ac955f-3072-499e-a307-b85a8fbab91b
+          data:
+            objEncoded: 
+            unityObjects: []
+        - isVariable: 1
+          name: 
+          variableID: fe3d5e49-54b5-45e6-9a5f-da9c149f5338
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBCgAAAG8AbQBlAGcAYQBUAGUAbQBwAFoABQ==
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: SystemSingle.__op_Subtraction__SystemSingle_SystemSingle__SystemSingle
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: currentVelocity_z
+          variableID: 6d9752dd-5c51-4ff8-8b29-0b957f7b21b7
+          data:
+            objEncoded: 
+            unityObjects: []
+        - isVariable: 1
+          name: omegaTempZ
+          variableID: fe3d5e49-54b5-45e6-9a5f-da9c149f5338
+          data:
+            objEncoded: 
+            unityObjects: []
+        - isVariable: 1
+          name: currentVelocity_z
+          variableID: 6d9752dd-5c51-4ff8-8b29-0b957f7b21b7
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBCgAAAF8AUwBpAG4AZwBsAGUAXwA2ADMABQ==
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: SystemSingle.__op_Multiplication__SystemSingle_SystemSingle__SystemSingle
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: currentVelocity_z
+          variableID: 6d9752dd-5c51-4ff8-8b29-0b957f7b21b7
+          data:
+            objEncoded: 
+            unityObjects: []
+        - isVariable: 1
+          name: exp
+          variableID: 467b1698-f7fa-4845-8342-1c28fb5c958b
+          data:
+            objEncoded: 
+            unityObjects: []
+        - isVariable: 1
+          name: currentVelocity_z
+          variableID: 6d9752dd-5c51-4ff8-8b29-0b957f7b21b7
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBCgAAAF8AUwBpAG4AZwBsAGUAXwA2ADQABQ==
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: UnityEngineVector3.__set_z__SystemSingle
+          guid: 
+        inputs:
+        - isVariable: 0
+          name: 
+          variableID: 
+          data:
+            objEncoded: 
+            unityObjects: []
+        - isVariable: 1
+          name: currentVelocity_z
+          variableID: 6d9752dd-5c51-4ff8-8b29-0b957f7b21b7
+          data:
+            objEncoded: 
+            unityObjects: []
+        multiInput:
+        - isVariable: 1
+          name: currentVelocity
+          variableID: a6a47221-056e-4c22-8ae0-f38838833cd2
+          data:
+            objEncoded: Ai8AAAAAASsAAABVAG4AaQB0AHkARQBuAGcAaQBuAGUALgBWAGUAYwB0AG8AcgAzACwAIABVAG4AaQB0AHkARQBuAGcAaQBuAGUALgBDAG8AcgBlAE0AbwBkAHUAbABlAAAAAAAgAAAAACAAAAAAIAAAAAAF
+            unityObjects: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: SystemSingle.__op_Addition__SystemSingle_SystemSingle__SystemSingle
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: change_x
+          variableID: e7c3b63e-4a8f-4f1f-8faf-a666044cb955
+          data:
+            objEncoded: 
+            unityObjects: []
+        - isVariable: 1
+          name: temp_x
+          variableID: 73e8e69b-82ba-4798-86a3-ffabce97863a
+          data:
+            objEncoded: 
+            unityObjects: []
+        - isVariable: 1
+          name: output_x
+          variableID: 1b041ff5-5ea7-426a-86de-61af82bc00b5
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBCgAAAF8AUwBpAG4AZwBsAGUAXwA2ADYABQ==
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: SystemSingle.__op_Multiplication__SystemSingle_SystemSingle__SystemSingle
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: output_x
+          variableID: 1b041ff5-5ea7-426a-86de-61af82bc00b5
+          data:
+            objEncoded: 
+            unityObjects: []
+        - isVariable: 1
+          name: exp
+          variableID: 467b1698-f7fa-4845-8342-1c28fb5c958b
+          data:
+            objEncoded: 
+            unityObjects: []
+        - isVariable: 1
+          name: output_x
+          variableID: 1b041ff5-5ea7-426a-86de-61af82bc00b5
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBCgAAAF8AUwBpAG4AZwBsAGUAXwA2ADcABQ==
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: SystemSingle.__op_Addition__SystemSingle_SystemSingle__SystemSingle
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: targetX
+          variableID: 917e2ffe-1aad-47b3-9bcc-d607e1beaeaf
+          data:
+            objEncoded: 
+            unityObjects: []
+        - isVariable: 1
+          name: output_x
+          variableID: 1b041ff5-5ea7-426a-86de-61af82bc00b5
+          data:
+            objEncoded: 
+            unityObjects: []
+        - isVariable: 1
+          name: output_x
+          variableID: 1b041ff5-5ea7-426a-86de-61af82bc00b5
+          data:
+            objEncoded: 
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: SystemSingle.__op_Addition__SystemSingle_SystemSingle__SystemSingle
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: change_y
+          variableID: d3cb2b40-4c44-4efc-b7d2-2b38afd6cca7
+          data:
+            objEncoded: 
+            unityObjects: []
+        - isVariable: 1
+          name: temp_y
+          variableID: 8454d9c3-0040-47c0-b936-b1163ab1e584
+          data:
+            objEncoded: 
+            unityObjects: []
+        - isVariable: 1
+          name: output_y
+          variableID: fe48296f-045f-43c7-8e50-2bf0ff98492e
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBCgAAAF8AUwBpAG4AZwBsAGUAXwA2ADkABQ==
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: SystemSingle.__op_Multiplication__SystemSingle_SystemSingle__SystemSingle
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: output_y
+          variableID: fe48296f-045f-43c7-8e50-2bf0ff98492e
+          data:
+            objEncoded: 
+            unityObjects: []
+        - isVariable: 1
+          name: exp
+          variableID: 467b1698-f7fa-4845-8342-1c28fb5c958b
+          data:
+            objEncoded: 
+            unityObjects: []
+        - isVariable: 1
+          name: output_y
+          variableID: fe48296f-045f-43c7-8e50-2bf0ff98492e
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBCgAAAF8AUwBpAG4AZwBsAGUAXwA3ADAABQ==
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: SystemSingle.__op_Addition__SystemSingle_SystemSingle__SystemSingle
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: targetY
+          variableID: 2ef694fe-2374-40ee-9795-1ecea696ad61
+          data:
+            objEncoded: 
+            unityObjects: []
+        - isVariable: 1
+          name: output_y
+          variableID: fe48296f-045f-43c7-8e50-2bf0ff98492e
+          data:
+            objEncoded: 
+            unityObjects: []
+        - isVariable: 1
+          name: output_y
+          variableID: fe48296f-045f-43c7-8e50-2bf0ff98492e
+          data:
+            objEncoded: 
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: SystemSingle.__op_Addition__SystemSingle_SystemSingle__SystemSingle
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: change_z
+          variableID: 7b82299a-0a5b-4f52-8999-4645311d03ce
+          data:
+            objEncoded: 
+            unityObjects: []
+        - isVariable: 1
+          name: temp_z
+          variableID: a5ac955f-3072-499e-a307-b85a8fbab91b
+          data:
+            objEncoded: 
+            unityObjects: []
+        - isVariable: 1
+          name: output_z
+          variableID: e12336de-0904-442e-852d-3780756082f3
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBCgAAAF8AUwBpAG4AZwBsAGUAXwA3ADIABQ==
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: SystemSingle.__op_Multiplication__SystemSingle_SystemSingle__SystemSingle
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: output_z
+          variableID: e12336de-0904-442e-852d-3780756082f3
+          data:
+            objEncoded: 
+            unityObjects: []
+        - isVariable: 1
+          name: exp
+          variableID: 467b1698-f7fa-4845-8342-1c28fb5c958b
+          data:
+            objEncoded: 
+            unityObjects: []
+        - isVariable: 1
+          name: output_z
+          variableID: e12336de-0904-442e-852d-3780756082f3
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBCgAAAF8AUwBpAG4AZwBsAGUAXwA3ADMABQ==
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: SystemSingle.__op_Addition__SystemSingle_SystemSingle__SystemSingle
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: targetZ
+          variableID: e73692bc-3aff-4297-95a6-6a0770763474
+          data:
+            objEncoded: 
+            unityObjects: []
+        - isVariable: 1
+          name: output_z
+          variableID: e12336de-0904-442e-852d-3780756082f3
+          data:
+            objEncoded: 
+            unityObjects: []
+        - isVariable: 1
+          name: output_z
+          variableID: e12336de-0904-442e-852d-3780756082f3
+          data:
+            objEncoded: 
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: UnityEngineVector3.__get_x__SystemSingle
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: originalTo
+          variableID: 490f4f7f-2548-43af-b84d-bea047f38561
+          data:
+            objEncoded: 
+            unityObjects: []
+        - isVariable: 1
+          name: 
+          variableID: 9c38fbfe-34c4-487f-840a-38d4b5dd22fe
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBDAAAAG8AcgBpAGcAaQBuAGEAbABUAG8AXwB4AAU=
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: UnityEngineVector3.__get_y__SystemSingle
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: originalTo
+          variableID: 490f4f7f-2548-43af-b84d-bea047f38561
+          data:
+            objEncoded: 
+            unityObjects: []
+        - isVariable: 1
+          name: 
+          variableID: b9c2b7e6-0c1d-4737-97f8-4ad117770c6b
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBDAAAAG8AcgBpAGcAaQBuAGEAbABUAG8AXwB5AAU=
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: UnityEngineVector3.__get_z__SystemSingle
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: originalTo
+          variableID: 490f4f7f-2548-43af-b84d-bea047f38561
+          data:
+            objEncoded: 
+            unityObjects: []
+        - isVariable: 1
+          name: 
+          variableID: 2e8c8d0b-81ba-498a-ae5d-1b45ba984719
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBDAAAAG8AcgBpAGcAaQBuAGEAbABUAG8AXwB6AAU=
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: SystemSingle.__op_Subtraction__SystemSingle_SystemSingle__SystemSingle
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: originalTo_x
+          variableID: 9c38fbfe-34c4-487f-840a-38d4b5dd22fe
+          data:
+            objEncoded: 
+            unityObjects: []
+        - isVariable: 1
+          name: currentX
+          variableID: f84a70e9-b2b9-4616-86cf-bf50494edd2b
+          data:
+            objEncoded: 
+            unityObjects: []
+        - isVariable: 1
+          name: 
+          variableID: a9e3a119-d1b7-4ca3-814d-370d27102fe0
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBEgAAAG8AcgBpAGcATQBpAG4AdQBzAEMAdQByAHIAZQBuAHQAXwB4AAU=
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: SystemSingle.__op_Subtraction__SystemSingle_SystemSingle__SystemSingle
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: originalTo_y
+          variableID: b9c2b7e6-0c1d-4737-97f8-4ad117770c6b
+          data:
+            objEncoded: 
+            unityObjects: []
+        - isVariable: 1
+          name: currentY
+          variableID: 2d3512a8-75e3-4752-a40f-7d75e8200618
+          data:
+            objEncoded: 
+            unityObjects: []
+        - isVariable: 1
+          name: 
+          variableID: d3bf88f0-e4eb-4d53-955f-230c3337c31e
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBEgAAAG8AcgBpAGcATQBpAG4AdQBzAEMAdQByAHIAZQBuAHQAXwB5AAU=
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: SystemSingle.__op_Subtraction__SystemSingle_SystemSingle__SystemSingle
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: originalTo_z
+          variableID: 2e8c8d0b-81ba-498a-ae5d-1b45ba984719
+          data:
+            objEncoded: 
+            unityObjects: []
+        - isVariable: 1
+          name: currentZ
+          variableID: ad528ade-f335-45ae-acd3-e6696856a774
+          data:
+            objEncoded: 
+            unityObjects: []
+        - isVariable: 1
+          name: 
+          variableID: faa91291-2574-4e0a-96f1-e0fd822c0305
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBEgAAAG8AcgBpAGcATQBpAG4AdQBzAEMAdQByAHIAZQBuAHQAXwB6AAU=
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: SystemSingle.__op_Subtraction__SystemSingle_SystemSingle__SystemSingle
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: output_x
+          variableID: 1b041ff5-5ea7-426a-86de-61af82bc00b5
+          data:
+            objEncoded: 
+            unityObjects: []
+        - isVariable: 1
+          name: originalTo_x
+          variableID: 9c38fbfe-34c4-487f-840a-38d4b5dd22fe
+          data:
+            objEncoded: 
+            unityObjects: []
+        - isVariable: 1
+          name: 
+          variableID: 65458446-0b22-4a4b-a6ca-4fc3b09df021
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBDgAAAG8AdQB0AE0AaQBuAHUAcwBPAHIAaQBnAF8AeAAF
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: SystemSingle.__op_Subtraction__SystemSingle_SystemSingle__SystemSingle
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: output_y
+          variableID: fe48296f-045f-43c7-8e50-2bf0ff98492e
+          data:
+            objEncoded: 
+            unityObjects: []
+        - isVariable: 1
+          name: originalTo_y
+          variableID: b9c2b7e6-0c1d-4737-97f8-4ad117770c6b
+          data:
+            objEncoded: 
+            unityObjects: []
+        - isVariable: 1
+          name: 
+          variableID: cd2c65a5-cc65-4c96-b77f-eb4daebada95
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBDgAAAG8AdQB0AE0AaQBuAHUAcwBPAHIAaQBnAF8AeQAF
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: SystemSingle.__op_Subtraction__SystemSingle_SystemSingle__SystemSingle
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: output_z
+          variableID: e12336de-0904-442e-852d-3780756082f3
+          data:
+            objEncoded: 
+            unityObjects: []
+        - isVariable: 1
+          name: originalTo_z
+          variableID: 2e8c8d0b-81ba-498a-ae5d-1b45ba984719
+          data:
+            objEncoded: 
+            unityObjects: []
+        - isVariable: 1
+          name: 
+          variableID: ccc48230-52bd-4c6f-b881-d76b74e362bf
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBDgAAAG8AdQB0AE0AaQBuAHUAcwBPAHIAaQBnAF8AegAF
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: CyanTriggerSpecial_If
+          guid: 
+        inputs: []
+        multiInput: []
+        expanded: 1
+        comment:
+          comment: 
+      - actionType:
+          directEvent: CyanTriggerSpecial_Condition
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: 
+          variableID: 5f6d7c76-27e1-46a1-a373-385eca7678af
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBCgAAAGQAbwB0AEcAdAByAFoAZQByAG8ABQ==
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: SystemSingle.__op_Multiplication__SystemSingle_SystemSingle__SystemSingle
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: origMinusCurrent_x
+          variableID: a9e3a119-d1b7-4ca3-814d-370d27102fe0
+          data:
+            objEncoded: 
+            unityObjects: []
+        - isVariable: 1
+          name: outMinusOrig_x
+          variableID: 65458446-0b22-4a4b-a6ca-4fc3b09df021
+          data:
+            objEncoded: 
+            unityObjects: []
+        - isVariable: 1
+          name: 
+          variableID: cf1fb540-2f37-4dee-883a-9128b4b7a736
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBBQAAAG0AdQBsAHQAWAAF
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: SystemSingle.__op_Multiplication__SystemSingle_SystemSingle__SystemSingle
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: origMinusCurrent_y
+          variableID: d3bf88f0-e4eb-4d53-955f-230c3337c31e
+          data:
+            objEncoded: 
+            unityObjects: []
+        - isVariable: 1
+          name: outMinusOrig_y
+          variableID: cd2c65a5-cc65-4c96-b77f-eb4daebada95
+          data:
+            objEncoded: 
+            unityObjects: []
+        - isVariable: 1
+          name: 
+          variableID: b5869cb2-a6a1-4c09-8872-748e735c9145
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBBQAAAG0AdQBsAHQAWQAF
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: SystemSingle.__op_Addition__SystemSingle_SystemSingle__SystemSingle
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: multX
+          variableID: cf1fb540-2f37-4dee-883a-9128b4b7a736
+          data:
+            objEncoded: 
+            unityObjects: []
+        - isVariable: 1
+          name: multY
+          variableID: b5869cb2-a6a1-4c09-8872-748e735c9145
+          data:
+            objEncoded: 
+            unityObjects: []
+        - isVariable: 1
+          name: 
+          variableID: fffd9cb6-37f9-4001-96b0-bcfc1588f889
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBAwAAAGQAbwB0AAU=
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: SystemSingle.__op_Multiplication__SystemSingle_SystemSingle__SystemSingle
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: origMinusCurrent_z
+          variableID: faa91291-2574-4e0a-96f1-e0fd822c0305
+          data:
+            objEncoded: 
+            unityObjects: []
+        - isVariable: 1
+          name: outMinusOrig_z
+          variableID: ccc48230-52bd-4c6f-b881-d76b74e362bf
+          data:
+            objEncoded: 
+            unityObjects: []
+        - isVariable: 1
+          name: 
+          variableID: 4c794a24-f0d2-493a-931a-bb8a3b023031
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBBQAAAG0AdQBsAHQAWgAF
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: SystemSingle.__op_Addition__SystemSingle_SystemSingle__SystemSingle
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: dot
+          variableID: fffd9cb6-37f9-4001-96b0-bcfc1588f889
+          data:
+            objEncoded: 
+            unityObjects: []
+        - isVariable: 1
+          name: multZ
+          variableID: 4c794a24-f0d2-493a-931a-bb8a3b023031
+          data:
+            objEncoded: 
+            unityObjects: []
+        - isVariable: 1
+          name: dot
+          variableID: fffd9cb6-37f9-4001-96b0-bcfc1588f889
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBCgAAAF8AUwBpAG4AZwBsAGUAXwA5ADMABQ==
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: SystemSingle.__op_GreaterThan__SystemSingle_SystemSingle__SystemBoolean
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: dot
+          variableID: fffd9cb6-37f9-4001-96b0-bcfc1588f889
+          data:
+            objEncoded: 
+            unityObjects: []
+        - isVariable: 0
+          name: 
+          variableID: 
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAaQBuAGcAbABlACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACAAAAAABQ==
+            unityObjects: []
+        - isVariable: 1
+          name: dotGtrZero
+          variableID: 5f6d7c76-27e1-46a1-a373-385eca7678af
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBCgAAAF8AQgBvAG8AbABlAGEAbgBfADIABQ==
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: CyanTriggerSpecial_BlockEnd
+          guid: 
+        inputs: []
+        multiInput: []
+        expanded: 1
+        comment:
+          comment: 
+      - actionType:
+          directEvent: CyanTriggerSpecial_ConditionBody
+          guid: 
+        inputs: []
+        multiInput: []
+        expanded: 1
+        comment:
+          comment: 
+      - actionType:
+          directEvent: UnityEngineVector3.__get_x__SystemSingle
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: originalTo
+          variableID: 490f4f7f-2548-43af-b84d-bea047f38561
+          data:
+            objEncoded: 
+            unityObjects: []
+        - isVariable: 1
+          name: output_x
+          variableID: 1b041ff5-5ea7-426a-86de-61af82bc00b5
+          data:
+            objEncoded: 
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: UnityEngineVector3.__get_y__SystemSingle
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: originalTo
+          variableID: 490f4f7f-2548-43af-b84d-bea047f38561
+          data:
+            objEncoded: 
+            unityObjects: []
+        - isVariable: 1
+          name: output_y
+          variableID: fe48296f-045f-43c7-8e50-2bf0ff98492e
+          data:
+            objEncoded: 
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: UnityEngineVector3.__get_z__SystemSingle
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: originalTo
+          variableID: 490f4f7f-2548-43af-b84d-bea047f38561
+          data:
+            objEncoded: 
+            unityObjects: []
+        - isVariable: 1
+          name: output_z
+          variableID: e12336de-0904-442e-852d-3780756082f3
+          data:
+            objEncoded: 
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: UnityEngineVector3.__get_x__SystemSingle
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: originalTo
+          variableID: 490f4f7f-2548-43af-b84d-bea047f38561
+          data:
+            objEncoded: 
+            unityObjects: []
+        - isVariable: 1
+          name: originalTo_x
+          variableID: 9c38fbfe-34c4-487f-840a-38d4b5dd22fe
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBCgAAAF8AUwBpAG4AZwBsAGUAXwA5ADUABQ==
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: SystemSingle.__op_Subtraction__SystemSingle_SystemSingle__SystemSingle
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: output_x
+          variableID: 1b041ff5-5ea7-426a-86de-61af82bc00b5
+          data:
+            objEncoded: 
+            unityObjects: []
+        - isVariable: 1
+          name: originalTo_x
+          variableID: 9c38fbfe-34c4-487f-840a-38d4b5dd22fe
+          data:
+            objEncoded: 
+            unityObjects: []
+        - isVariable: 1
+          name: 
+          variableID: f87be93b-8bff-4ae7-9a2f-dd9086029553
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBBgAAAGQAZQBsAHQAYQBYAAU=
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: SystemSingle.__op_Division__SystemSingle_SystemSingle__SystemSingle
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: deltaX
+          variableID: f87be93b-8bff-4ae7-9a2f-dd9086029553
+          data:
+            objEncoded: 
+            unityObjects: []
+        - isVariable: 1
+          name: deltaTime
+          variableID: 385438dc-72d3-4387-9513-895dc27e5cdd
+          data:
+            objEncoded: 
+            unityObjects: []
+        - isVariable: 1
+          name: currentVelocity_x
+          variableID: 12ec7099-589d-41e5-a495-0f84caf39d9f
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBCgAAAF8AUwBpAG4AZwBsAGUAXwA5ADcABQ==
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: UnityEngineVector3.__set_x__SystemSingle
+          guid: 
+        inputs:
+        - isVariable: 0
+          name: 
+          variableID: 
+          data:
+            objEncoded: 
+            unityObjects: []
+        - isVariable: 1
+          name: currentVelocity_x
+          variableID: 12ec7099-589d-41e5-a495-0f84caf39d9f
+          data:
+            objEncoded: 
+            unityObjects: []
+        multiInput:
+        - isVariable: 1
+          name: currentVelocity
+          variableID: a6a47221-056e-4c22-8ae0-f38838833cd2
+          data:
+            objEncoded: Ai8AAAAAASsAAABVAG4AaQB0AHkARQBuAGcAaQBuAGUALgBWAGUAYwB0AG8AcgAzACwAIABVAG4AaQB0AHkARQBuAGcAaQBuAGUALgBDAG8AcgBlAE0AbwBkAHUAbABlAAAAAAAgAAAAACAAAAAAIAAAAAAF
+            unityObjects: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: UnityEngineVector3.__get_y__SystemSingle
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: originalTo
+          variableID: 490f4f7f-2548-43af-b84d-bea047f38561
+          data:
+            objEncoded: 
+            unityObjects: []
+        - isVariable: 1
+          name: originalTo_y
+          variableID: b9c2b7e6-0c1d-4737-97f8-4ad117770c6b
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBCgAAAF8AUwBpAG4AZwBsAGUAXwA5ADgABQ==
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: SystemSingle.__op_Subtraction__SystemSingle_SystemSingle__SystemSingle
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: output_y
+          variableID: fe48296f-045f-43c7-8e50-2bf0ff98492e
+          data:
+            objEncoded: 
+            unityObjects: []
+        - isVariable: 1
+          name: originalTo_y
+          variableID: b9c2b7e6-0c1d-4737-97f8-4ad117770c6b
+          data:
+            objEncoded: 
+            unityObjects: []
+        - isVariable: 1
+          name: 
+          variableID: b736c3b4-d3b6-49e3-96dc-a0f5b5a90e60
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBBgAAAGQAZQBsAHQAYQBZAAU=
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: SystemSingle.__op_Division__SystemSingle_SystemSingle__SystemSingle
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: deltaY
+          variableID: b736c3b4-d3b6-49e3-96dc-a0f5b5a90e60
+          data:
+            objEncoded: 
+            unityObjects: []
+        - isVariable: 1
+          name: deltaTime
+          variableID: 385438dc-72d3-4387-9513-895dc27e5cdd
+          data:
+            objEncoded: 
+            unityObjects: []
+        - isVariable: 1
+          name: currentVelocity_y
+          variableID: 615111a6-af09-493c-861a-41e7970b08e6
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBCwAAAF8AUwBpAG4AZwBsAGUAXwAxADAAMAAF
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: UnityEngineVector3.__set_y__SystemSingle
+          guid: 
+        inputs:
+        - isVariable: 0
+          name: 
+          variableID: 
+          data:
+            objEncoded: 
+            unityObjects: []
+        - isVariable: 1
+          name: currentVelocity_y
+          variableID: 615111a6-af09-493c-861a-41e7970b08e6
+          data:
+            objEncoded: 
+            unityObjects: []
+        multiInput:
+        - isVariable: 1
+          name: currentVelocity
+          variableID: a6a47221-056e-4c22-8ae0-f38838833cd2
+          data:
+            objEncoded: Ai8AAAAAASsAAABVAG4AaQB0AHkARQBuAGcAaQBuAGUALgBWAGUAYwB0AG8AcgAzACwAIABVAG4AaQB0AHkARQBuAGcAaQBuAGUALgBDAG8AcgBlAE0AbwBkAHUAbABlAAAAAAAgAAAAACAAAAAAIAAAAAAF
+            unityObjects: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: UnityEngineVector3.__get_z__SystemSingle
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: originalTo
+          variableID: 490f4f7f-2548-43af-b84d-bea047f38561
+          data:
+            objEncoded: 
+            unityObjects: []
+        - isVariable: 1
+          name: originalTo_z
+          variableID: 2e8c8d0b-81ba-498a-ae5d-1b45ba984719
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBCwAAAF8AUwBpAG4AZwBsAGUAXwAxADAAMQAF
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: SystemSingle.__op_Subtraction__SystemSingle_SystemSingle__SystemSingle
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: output_z
+          variableID: e12336de-0904-442e-852d-3780756082f3
+          data:
+            objEncoded: 
+            unityObjects: []
+        - isVariable: 1
+          name: originalTo_z
+          variableID: 2e8c8d0b-81ba-498a-ae5d-1b45ba984719
+          data:
+            objEncoded: 
+            unityObjects: []
+        - isVariable: 1
+          name: 
+          variableID: 945e40dc-5e16-415f-881c-600fcb1f9b2d
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBBgAAAGQAZQBsAHQAYQBaAAU=
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: SystemSingle.__op_Division__SystemSingle_SystemSingle__SystemSingle
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: deltaZ
+          variableID: 945e40dc-5e16-415f-881c-600fcb1f9b2d
+          data:
+            objEncoded: 
+            unityObjects: []
+        - isVariable: 1
+          name: deltaTime
+          variableID: 385438dc-72d3-4387-9513-895dc27e5cdd
+          data:
+            objEncoded: 
+            unityObjects: []
+        - isVariable: 1
+          name: currentVelocity_z
+          variableID: 6d9752dd-5c51-4ff8-8b29-0b957f7b21b7
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBCwAAAF8AUwBpAG4AZwBsAGUAXwAxADAAMwAF
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: UnityEngineVector3.__set_z__SystemSingle
+          guid: 
+        inputs:
+        - isVariable: 0
+          name: 
+          variableID: 
+          data:
+            objEncoded: 
+            unityObjects: []
+        - isVariable: 1
+          name: currentVelocity_z
+          variableID: 6d9752dd-5c51-4ff8-8b29-0b957f7b21b7
+          data:
+            objEncoded: 
+            unityObjects: []
+        multiInput:
+        - isVariable: 1
+          name: currentVelocity
+          variableID: a6a47221-056e-4c22-8ae0-f38838833cd2
+          data:
+            objEncoded: Ai8AAAAAASsAAABVAG4AaQB0AHkARQBuAGcAaQBuAGUALgBWAGUAYwB0AG8AcgAzACwAIABVAG4AaQB0AHkARQBuAGcAaQBuAGUALgBDAG8AcgBlAE0AbwBkAHUAbABlAAAAAAAgAAAAACAAAAAAIAAAAAAF
+            unityObjects: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: CyanTriggerSpecial_BlockEnd
+          guid: 
+        inputs: []
+        multiInput: []
+        expanded: 1
+        comment:
+          comment: 
+      - actionType:
+          directEvent: CyanTriggerSpecial_BlockEnd
+          guid: 
+        inputs: []
+        multiInput: []
+        expanded: 1
+        comment:
+          comment: 
+      - actionType:
+          directEvent: UnityEngineVector3.__ctor__SystemSingle_SystemSingle_SystemSingle__UnityEngineVector3
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: output_x
+          variableID: 1b041ff5-5ea7-426a-86de-61af82bc00b5
+          data:
+            objEncoded: 
+            unityObjects: []
+        - isVariable: 1
+          name: output_y
+          variableID: fe48296f-045f-43c7-8e50-2bf0ff98492e
+          data:
+            objEncoded: 
+            unityObjects: []
+        - isVariable: 1
+          name: output_z
+          variableID: e12336de-0904-442e-852d-3780756082f3
+          data:
+            objEncoded: 
+            unityObjects: []
+        - isVariable: 1
+          name: results
+          variableID: af52e541-49df-49db-8489-5b95ea14911e
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      eventOptions:
+        userGate: 0
+        userGateExtraData: []
+        broadcast: 0
+        delay: 0
+        replay: 0
+      expanded: 1
+    variables: []
+    comment:
+      comment: 
+    expandVariables: 0
+    expandOtherSettings: 1
+    expandSyncSection: 0
+    ignoreEventWarnings: 1
+  publicVariableReferences:
+    actionDataIndices: []
+    userVariableNames: []
+    userVariableTypes: []
+  ignoreOdinData: 1
+  serializationDataOdin:
+    SerializedFormat: 0
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes: []
+  allowEditingInInspector: 0
+  expandInInspector: 0
+  isLocked: 1

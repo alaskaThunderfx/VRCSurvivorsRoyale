@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 61d0ad128b95568438c70898dc9e600c, type: 3}
+  m_Name: PlayerJoinLocalActions
+  m_EditorClassIdentifier: 
+  autoAddPriority: 0
+  exposedActions:
+  - guid: a307640a-9b3e-44d4-a3bf-c591b713c8c6
+    actionNamespace: OnPlayerJoined
+    actionVariantName: Local Player
+    description: Fires when the local player joins the instance
+    variables: []
+    baseEventName: Event_OnPlayerJoined
+    eventEntry: _onPlayerJoined
+    autoAdd: 0
+  isMultiInstance: 0
+  defaultNamespace: 
+  udonProgramAsset: {fileID: 11400000, guid: bfa422787973cd04c8d1021acd744edc, type: 2}
+  assetGuid: bfa422787973cd04c8d1021acd744edc
+  thisGuid: 5bf427c3afc433d43baada58bcdec106

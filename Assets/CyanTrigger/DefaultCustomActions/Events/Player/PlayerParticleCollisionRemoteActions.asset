@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 61d0ad128b95568438c70898dc9e600c, type: 3}
+  m_Name: PlayerParticleCollisionRemoteActions
+  m_EditorClassIdentifier: 
+  autoAddPriority: 0
+  exposedActions:
+  - guid: af3da4cd-99b4-4f41-ab73-135aa2967bad
+    actionNamespace: OnPlayerParticleCollision
+    actionVariantName: Remote Player
+    description: Fires when any remote player collides with a particle fired from
+      a ParticleSystem on this GameObject. Note that Particle Collision must be enabled
+    variables: []
+    baseEventName: Event_OnPlayerParticleCollision
+    eventEntry: _onPlayerParticleCollision
+    autoAdd: 0
+  isMultiInstance: 0
+  defaultNamespace: 
+  udonProgramAsset: {fileID: 11400000, guid: d7e224afa2265db449a69e7e9fb8935d, type: 2}
+  assetGuid: d7e224afa2265db449a69e7e9fb8935d
+  thisGuid: 4a6a923a38993a244a4603283941543f

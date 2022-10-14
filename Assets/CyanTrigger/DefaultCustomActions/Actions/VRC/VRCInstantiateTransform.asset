@@ -1,0 +1,253 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a31a3a978bd0448580d4ef9f3d6d95bf, type: 3}
+  m_Name: VRCInstantiateTransform
+  m_EditorClassIdentifier: 
+  serializedUdonProgramAsset: {fileID: 11400000, guid: f57a73ca2889748498d8b91674c22248,
+    type: 2}
+  udonAssembly: ".data_start\r\n  .export __CyanTrigger_ProgramName_SystemString\r\n 
+    .export transform\r\n  .export gameObject\r\n  .export outGameObject\r\n  __CyanTrigger_ProgramName_SystemString:
+    %SystemString, null\r\n  __CyanTrigger_ProgramHash_SystemString: %SystemString,
+    null\r\n  __0_ra_SystemUInt32: %SystemUInt32, null\r\n  __1_ea_SystemUInt32:
+    %SystemUInt32, null\r\n  transform: %UnityEngineTransform, null\r\n  gameObject:
+    %UnityEngineGameObject, null\r\n  outGameObject: %UnityEngineGameObject, null\r\n 
+    __12_local_var_UnityEngineVector3: %UnityEngineVector3, null\r\n  __13_local_var_UnityEngineQuaternion:
+    %UnityEngineQuaternion, null\r\n  __14_local_var_UnityEngineTransform: %UnityEngineTransform,
+    null\r\n.data_end\r\n\n.code_start\r\n  .export _Spawn\r\n  _Spawn:\r\n    PUSH,
+    __1_ea_SystemUInt32\r\n    PUSH, gameObject\r\n    PUSH, outGameObject\r\n   
+    EXTERN, \"VRCInstantiate.__Instantiate__UnityEngineGameObject__UnityEngineGameObject\"\r\n   
+    PUSH, transform\r\n    PUSH, __12_local_var_UnityEngineVector3\r\n    EXTERN,
+    \"UnityEngineTransform.__get_position__UnityEngineVector3\"\r\n    PUSH, transform\r\n   
+    PUSH, __13_local_var_UnityEngineQuaternion\r\n    EXTERN, \"UnityEngineTransform.__get_rotation__UnityEngineQuaternion\"\r\n   
+    PUSH, outGameObject\r\n    PUSH, __14_local_var_UnityEngineTransform\r\n    EXTERN,
+    \"UnityEngineGameObject.__get_transform__UnityEngineTransform\"\r\n    PUSH,
+    __14_local_var_UnityEngineTransform\r\n    PUSH, __12_local_var_UnityEngineVector3\r\n   
+    PUSH, __13_local_var_UnityEngineQuaternion\r\n    EXTERN, \"UnityEngineTransform.__SetPositionAndRotation__UnityEngineVector3_UnityEngineQuaternion__SystemVoid\"\r\n   
+    PUSH, __0_ra_SystemUInt32\r\n    COPY\r\n    JUMP_INDIRECT, __0_ra_SystemUInt32\r\n\r\n.code_end\r\n"
+  assemblyError: 
+  triggerHash: 949B756CE30729866985B6D2EB372022
+  shouldBeNetworked: 0
+  warningMessages: []
+  errorMessages: []
+  ctDataInstance:
+    version: 6
+    updateOrder: 0
+    autoSetSyncMode: 1
+    programSyncMode: 2
+    programName: 
+    events:
+    - name: _Spawn
+      eventId: 43b9dbc5-5223-4756-ad11-0561ef6f3290
+      eventInstance:
+        actionType:
+          directEvent: Event_Custom
+          guid: 
+        inputs: []
+        multiInput: []
+        expanded: 1
+        comment:
+          comment: 
+      actionInstances:
+      - actionType:
+          directEvent: VRCInstantiate.__Instantiate__UnityEngineGameObject__UnityEngineGameObject
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: gameObject
+          variableID: f7df859a-ac92-4824-8b48-473561bc8766
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        - isVariable: 1
+          name: outGameObject
+          variableID: 891fcf4f-b362-4bc7-9731-ea0eb75d679c
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: UnityEngineTransform.__get_position__UnityEngineVector3
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: transform
+          variableID: 6b6416d7-283f-4caf-9564-373656b32337
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        - isVariable: 1
+          name: 
+          variableID: 8b848969-0ce6-4a04-8e7d-33410c478254
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBCAAAAHAAbwBzAGkAdABpAG8AbgAF
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: UnityEngineTransform.__get_rotation__UnityEngineQuaternion
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: transform
+          variableID: 6b6416d7-283f-4caf-9564-373656b32337
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        - isVariable: 1
+          name: 
+          variableID: 3b27952f-f6ef-410e-9062-9a898be9cb41
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBCAAAAHIAbwB0AGEAdABpAG8AbgAF
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: UnityEngineGameObject.__get_transform__UnityEngineTransform
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: outGameObject
+          variableID: 891fcf4f-b362-4bc7-9731-ea0eb75d679c
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        - isVariable: 1
+          name: 
+          variableID: 7e348878-7b08-494f-a6ad-750ad8cf8ebe
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBDAAAAG8AdQB0AFQAcgBhAG4AcwBmAG8AcgBtAAU=
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: UnityEngineTransform.__SetPositionAndRotation__UnityEngineVector3_UnityEngineQuaternion__SystemVoid
+          guid: 
+        inputs:
+        - isVariable: 0
+          name: 
+          variableID: 
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        - isVariable: 1
+          name: position
+          variableID: 8b848969-0ce6-4a04-8e7d-33410c478254
+          data:
+            objEncoded: Ai8AAAAAASsAAABVAG4AaQB0AHkARQBuAGcAaQBuAGUALgBWAGUAYwB0AG8AcgAzACwAIABVAG4AaQB0AHkARQBuAGcAaQBuAGUALgBDAG8AcgBlAE0AbwBkAHUAbABlAAAAAAAgAAAAACAAAAAAIAAAAAAF
+            unityObjects: []
+        - isVariable: 1
+          name: rotation
+          variableID: 3b27952f-f6ef-410e-9062-9a898be9cb41
+          data:
+            objEncoded: Ai8AAAAAAS4AAABVAG4AaQB0AHkARQBuAGcAaQBuAGUALgBRAHUAYQB0AGUAcgBuAGkAbwBuACwAIABVAG4AaQB0AHkARQBuAGcAaQBuAGUALgBDAG8AcgBlAE0AbwBkAHUAbABlAAAAAAAgAAAAACAAAAAAIAAAAAAgAAAAAAU=
+            unityObjects: []
+        multiInput:
+        - isVariable: 1
+          name: outTransform
+          variableID: 7e348878-7b08-494f-a6ad-750ad8cf8ebe
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        expanded: 0
+        comment:
+          comment: 
+      eventOptions:
+        userGate: 0
+        userGateExtraData: []
+        broadcast: 0
+        delay: 0
+        replay: 0
+      expanded: 1
+    variables:
+    - isVariable: 0
+      name: transform
+      variableID: 6b6416d7-283f-4caf-9564-373656b32337
+      data:
+        objEncoded: Lg==
+        unityObjects: []
+      type:
+        typeDef: UnityEngine.Transform, UnityEngine.CoreModule, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
+      sync: 0
+      showInInspector: 1
+      typeInfo: 0
+      comment:
+        comment: 
+    - isVariable: 0
+      name: gameObject
+      variableID: f7df859a-ac92-4824-8b48-473561bc8766
+      data:
+        objEncoded: Lg==
+        unityObjects: []
+      type:
+        typeDef: UnityEngine.GameObject, UnityEngine.CoreModule, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
+      sync: 0
+      showInInspector: 1
+      typeInfo: 0
+      comment:
+        comment: 
+    - isVariable: 0
+      name: outGameObject
+      variableID: 891fcf4f-b362-4bc7-9731-ea0eb75d679c
+      data:
+        objEncoded: Lg==
+        unityObjects: []
+      type:
+        typeDef: UnityEngine.GameObject, UnityEngine.CoreModule, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
+      sync: 0
+      showInInspector: 1
+      typeInfo: 0
+      comment:
+        comment: 
+    comment:
+      comment: 
+    expandVariables: 1
+    expandOtherSettings: 1
+    expandSyncSection: 0
+    ignoreEventWarnings: 1
+  publicVariableReferences:
+    actionDataIndices: []
+    userVariableNames:
+    - transform
+    - gameObject
+    - outGameObject
+    userVariableTypes:
+    - typeDef: UnityEngine.Transform, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+    - typeDef: UnityEngine.GameObject, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+    - typeDef: UnityEngine.GameObject, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+  ignoreOdinData: 1
+  serializationDataOdin:
+    SerializedFormat: 0
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes: []
+  allowEditingInInspector: 0
+  expandInInspector: 0
+  isLocked: 1

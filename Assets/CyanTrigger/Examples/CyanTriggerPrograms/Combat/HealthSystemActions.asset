@@ -1,0 +1,233 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 61d0ad128b95568438c70898dc9e600c, type: 3}
+  m_Name: HealthSystemActions
+  m_EditorClassIdentifier: 
+  autoAddPriority: 0
+  exposedActions:
+  - guid: af882533-08d3-42fc-a9f7-ee8dc8c3c810
+    actionNamespace: HealthSystem
+    actionVariantName: SetHealth
+    description: 
+    variables:
+    - type:
+        typeDef: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      udonName: _arg_newHealth__SetHealth
+      displayName: newHealth
+      description: 
+      defaultValue:
+        objEncoded: Ai8AAAAAARYAAABTAHkAcwB0AGUAbQAuAEkAbgB0ADMAMgAsACAAbQBzAGMAbwByAGwAaQBiAAAAAAAYAAAAAAU=
+        unityObjects: []
+      variableType: 3
+    baseEventName: Event_Custom
+    eventEntry: _SetHealth
+    autoAdd: 0
+  - guid: 283dd7da-551e-47ce-a830-e6a94376e04b
+    actionNamespace: HealthSystem
+    actionVariantName: SetMaxHealth
+    description: 
+    variables:
+    - type:
+        typeDef: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      udonName: _arg_newMax__SetMaxHealth
+      displayName: newMax
+      description: 
+      defaultValue:
+        objEncoded: Ai8AAAAAARYAAABTAHkAcwB0AGUAbQAuAEkAbgB0ADMAMgAsACAAbQBzAGMAbwByAGwAaQBiAAAAAAAYAAAAAAU=
+        unityObjects: []
+      variableType: 3
+    baseEventName: Event_Custom
+    eventEntry: _SetMaxHealth
+    autoAdd: 0
+  - guid: 3bcaf134-44e0-4a9d-9f83-93385a119835
+    actionNamespace: HealthSystem
+    actionVariantName: ApplyMaxHealth
+    description: 
+    variables: []
+    baseEventName: Event_Custom
+    eventEntry: _ApplyMaxHealth
+    autoAdd: 0
+  - guid: 3b5cd7fb-a7f6-4328-84c8-334c2f5b1a2c
+    actionNamespace: HealthSystem
+    actionVariantName: AddHealth
+    description: 
+    variables:
+    - type:
+        typeDef: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      udonName: _arg_addedHealth__AddHealth
+      displayName: addedHealth
+      description: 
+      defaultValue:
+        objEncoded: Ai8AAAAAARYAAABTAHkAcwB0AGUAbQAuAEkAbgB0ADMAMgAsACAAbQBzAGMAbwByAGwAaQBiAAAAAAAYAAAAAAU=
+        unityObjects: []
+      variableType: 3
+    baseEventName: Event_Custom
+    eventEntry: _AddHealth
+    autoAdd: 0
+  - guid: f9d84f73-a031-43d5-99e5-b2bd09bc4cf1
+    actionNamespace: HealthSystem
+    actionVariantName: AddDamage
+    description: 
+    variables:
+    - type:
+        typeDef: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      udonName: _arg_addedDamage__AddDamage
+      displayName: addedDamage
+      description: 
+      defaultValue:
+        objEncoded: Ai8AAAAAARYAAABTAHkAcwB0AGUAbQAuAEkAbgB0ADMAMgAsACAAbQBzAGMAbwByAGwAaQBiAAAAAAAYAAAAAAU=
+        unityObjects: []
+      variableType: 3
+    baseEventName: Event_Custom
+    eventEntry: _AddDamage
+    autoAdd: 0
+  - guid: 64f1925f-8d23-4367-84f4-95e00d861aa1
+    actionNamespace: HealthSystem
+    actionVariantName: UpdateHealth
+    description: 
+    variables:
+    - type:
+        typeDef: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      udonName: _arg_updateAmount__UpdateHealth
+      displayName: amount
+      description: 
+      defaultValue:
+        objEncoded: Ai8AAAAAARYAAABTAHkAcwB0AGUAbQAuAEkAbgB0ADMAMgAsACAAbQBzAGMAbwByAGwAaQBiAAAAAAAYAAAAAAU=
+        unityObjects: []
+      variableType: 3
+    baseEventName: Event_Custom
+    eventEntry: _UpdateHealth
+    autoAdd: 0
+  - guid: 89182a20-3e44-4c1b-9c61-2725c653cd5f
+    actionNamespace: HealthSystem
+    actionVariantName: GetCurrentHealth
+    description: 
+    variables:
+    - type:
+        typeDef: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      udonName: health
+      displayName: currentHealth
+      description: 
+      defaultValue:
+        objEncoded: Ai8AAAAAARYAAABTAHkAcwB0AGUAbQAuAEkAbgB0ADMAMgAsACAAbQBzAGMAbwByAGwAaQBiAAAAAAAYAAAAAAU=
+        unityObjects: []
+      variableType: 6
+    baseEventName: Event_Custom
+    eventEntry: __EmptyEntryEvent
+    autoAdd: 0
+  - guid: 4bcb6271-16b3-4ffa-8106-6bca088bb44e
+    actionNamespace: HealthSystem
+    actionVariantName: GetCurrentHealthPercent
+    description: 
+    variables:
+    - type:
+        typeDef: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      udonName: _arg_healthPercent__GetCurrentHealthPercent
+      displayName: healthPercent
+      description: 
+      defaultValue:
+        objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAaQBuAGcAbABlACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACAAAAAABQ==
+        unityObjects: []
+      variableType: 6
+    baseEventName: Event_Custom
+    eventEntry: _GetCurrentHealthPercent
+    autoAdd: 0
+  - guid: d4fda7db-b88a-4190-b0f2-3ae92d94f5d1
+    actionNamespace: HealthSystem
+    actionVariantName: IsDead
+    description: 
+    variables:
+    - type:
+        typeDef: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      udonName: _arg_isDead__IsDead
+      displayName: isDead
+      description: 
+      defaultValue:
+        objEncoded: Ai8AAAAAARgAAABTAHkAcwB0AGUAbQAuAEIAbwBvAGwAZQBhAG4ALAAgAG0AcwBjAG8AcgBsAGkAYgAAAAAALAAF
+        unityObjects: []
+      variableType: 6
+    baseEventName: Event_Custom
+    eventEntry: _IsDead
+    autoAdd: 0
+  - guid: ac5310a5-b3da-4f2b-964d-4e284575de4d
+    actionNamespace: HealthSystem
+    actionVariantName: SetOnHealedEvent
+    description: 
+    variables:
+    - type:
+        typeDef: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      udonName: onHealedEvent
+      displayName: healedEventName
+      description: 
+      defaultValue:
+        objEncoded: Lg==
+        unityObjects: []
+      variableType: 3
+    baseEventName: Event_Custom
+    eventEntry: __EmptyEntryEvent
+    autoAdd: 0
+  - guid: 9ea1a6e5-22be-4a19-ac23-5f029a08d53e
+    actionNamespace: HealthSystem
+    actionVariantName: SetOnDamagedEvent
+    description: 
+    variables:
+    - type:
+        typeDef: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      udonName: onDamagedEvent
+      displayName: damagedEventName
+      description: 
+      defaultValue:
+        objEncoded: Lg==
+        unityObjects: []
+      variableType: 3
+    baseEventName: Event_Custom
+    eventEntry: __EmptyEntryEvent
+    autoAdd: 0
+  - guid: d50ea320-5de0-4827-ab4e-94fbb32ef2ae
+    actionNamespace: HealthSystem
+    actionVariantName: SetOnDeathEvent
+    description: 
+    variables:
+    - type:
+        typeDef: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      udonName: onDeathEvent
+      displayName: deathEventName
+      description: 
+      defaultValue:
+        objEncoded: Lg==
+        unityObjects: []
+      variableType: 3
+    baseEventName: Event_Custom
+    eventEntry: __EmptyEntryEvent
+    autoAdd: 0
+  - guid: 94468229-f081-43d6-b5bf-be293a45a916
+    actionNamespace: HealthSystem
+    actionVariantName: SetMinDurationBetweenDamage
+    description: 
+    variables:
+    - type:
+        typeDef: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      udonName: minDurationBetweenDamage
+      displayName: minDurationBetweenDamage
+      description: 
+      defaultValue:
+        objEncoded: 
+        unityObjects: []
+      variableType: 3
+    baseEventName: Event_Custom
+    eventEntry: __EmptyEntryEvent
+    autoAdd: 0
+  isMultiInstance: 0
+  defaultNamespace: HealthSystem
+  udonProgramAsset: {fileID: 11400000, guid: 77ff92c18f2ffea408dad0817358d058, type: 2}
+  assetGuid: 77ff92c18f2ffea408dad0817358d058
+  thisGuid: fdd304a62b616c443b952b6f4dbf261d

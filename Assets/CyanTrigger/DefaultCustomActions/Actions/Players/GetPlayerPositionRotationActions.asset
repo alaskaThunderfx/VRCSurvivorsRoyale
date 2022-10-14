@@ -1,0 +1,59 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 61d0ad128b95568438c70898dc9e600c, type: 3}
+  m_Name: GetPlayerPositionRotationActions
+  m_EditorClassIdentifier: 
+  autoAddPriority: 0
+  exposedActions:
+  - guid: 268cf47b-4bc3-43b5-a3bf-ce411bea8a57
+    actionNamespace: VRCPlayerApi
+    actionVariantName: GetPositionAndRotation
+    description: Get the position and rotation of the specified player
+    variables:
+    - type:
+        typeDef: VRC.SDKBase.VRCPlayerApi, VRCSDKBase, Version=0.0.0.0, Culture=neutral,
+          PublicKeyToken=null
+      udonName: player
+      displayName: player
+      description: 
+      defaultValue:
+        objEncoded: Lg==
+        unityObjects: []
+      variableType: 3
+    - type:
+        typeDef: UnityEngine.Vector3, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
+          PublicKeyToken=null
+      udonName: position
+      displayName: position
+      description: 
+      defaultValue:
+        objEncoded: Ai8AAAAAASsAAABVAG4AaQB0AHkARQBuAGcAaQBuAGUALgBWAGUAYwB0AG8AcgAzACwAIABVAG4AaQB0AHkARQBuAGcAaQBuAGUALgBDAG8AcgBlAE0AbwBkAHUAbABlAAAAAAAgAAAAACAAAAAAIAAAAAAF
+        unityObjects: []
+      variableType: 6
+    - type:
+        typeDef: UnityEngine.Quaternion, UnityEngine.CoreModule, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
+      udonName: rotation
+      displayName: rotation
+      description: 
+      defaultValue:
+        objEncoded: Ai8AAAAAAS4AAABVAG4AaQB0AHkARQBuAGcAaQBuAGUALgBRAHUAYQB0AGUAcgBuAGkAbwBuACwAIABVAG4AaQB0AHkARQBuAGcAaQBuAGUALgBDAG8AcgBlAE0AbwBkAHUAbABlAAAAAAAgAAAAACAAAAAAIAAAAAAgAACAPwU=
+        unityObjects: []
+      variableType: 6
+    baseEventName: Event_Custom
+    eventEntry: _GetPositionAndRotation
+    autoAdd: 0
+  isMultiInstance: 0
+  defaultNamespace: 
+  udonProgramAsset: {fileID: 11400000, guid: 600ed80f707fcdb468b139d4401e64ca, type: 2}
+  assetGuid: 600ed80f707fcdb468b139d4401e64ca
+  thisGuid: cbb8e56c1163d4247aae109c2fa7d196

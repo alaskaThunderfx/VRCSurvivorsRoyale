@@ -1,0 +1,40 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 61d0ad128b95568438c70898dc9e600c, type: 3}
+  m_Name: OnTriggerStayNameContainsActions
+  m_EditorClassIdentifier: 
+  autoAddPriority: 0
+  exposedActions:
+  - guid: 7f1ccc37-8122-49d4-a5ac-897576d3d46e
+    actionNamespace: OnTriggerStay
+    actionVariantName: NameContains
+    description: Fires for every Fixed Update frame while any GameObject with a name
+      that contains the specified text exists inside the trigger colliders on this
+      GameObject
+    variables:
+    - type:
+        typeDef: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      udonName: searchText
+      displayName: Search Text
+      description: 
+      defaultValue:
+        objEncoded: Lg==
+        unityObjects: []
+      variableType: 19
+    baseEventName: Event_OnTriggerStay
+    eventEntry: _onTriggerStay
+    autoAdd: 0
+  isMultiInstance: 0
+  defaultNamespace: 
+  udonProgramAsset: {fileID: 11400000, guid: 4792e9b7f0d16f84ab2389d022922cdd, type: 2}
+  assetGuid: 4792e9b7f0d16f84ab2389d022922cdd
+  thisGuid: 6abf9497b4dcab8478496d1abfbe82cb

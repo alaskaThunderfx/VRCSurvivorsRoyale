@@ -1,0 +1,191 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a31a3a978bd0448580d4ef9f3d6d95bf, type: 3}
+  m_Name: TransformTeleport
+  m_EditorClassIdentifier: 
+  serializedUdonProgramAsset: {fileID: 11400000, guid: 40da6fb9e168e4043832b83492d4bd89,
+    type: 2}
+  udonAssembly: ".data_start\r\n  .export __CyanTrigger_ProgramName_SystemString\r\n 
+    .export srcTransform\r\n  .export dstTransform\r\n  __CyanTrigger_ProgramName_SystemString:
+    %SystemString, null\r\n  __CyanTrigger_ProgramHash_SystemString: %SystemString,
+    null\r\n  __0_ra_SystemUInt32: %SystemUInt32, null\r\n  __1_ea_SystemUInt32:
+    %SystemUInt32, null\r\n  srcTransform: %UnityEngineTransform, null\r\n  dstTransform:
+    %UnityEngineTransform, null\r\n  __11_local_var_UnityEngineVector3: %UnityEngineVector3,
+    null\r\n  __12_local_var_UnityEngineQuaternion: %UnityEngineQuaternion, null\r\n.data_end\r\n\n.code_start\r\n 
+    .export _Teleport\r\n  _Teleport:\r\n    PUSH, __1_ea_SystemUInt32\r\n    PUSH,
+    srcTransform\r\n    PUSH, __11_local_var_UnityEngineVector3\r\n    EXTERN, \"UnityEngineTransform.__get_position__UnityEngineVector3\"\r\n   
+    PUSH, srcTransform\r\n    PUSH, __12_local_var_UnityEngineQuaternion\r\n    EXTERN,
+    \"UnityEngineTransform.__get_rotation__UnityEngineQuaternion\"\r\n    PUSH, dstTransform\r\n   
+    PUSH, __11_local_var_UnityEngineVector3\r\n    PUSH, __12_local_var_UnityEngineQuaternion\r\n   
+    EXTERN, \"UnityEngineTransform.__SetPositionAndRotation__UnityEngineVector3_UnityEngineQuaternion__SystemVoid\"\r\n   
+    PUSH, __0_ra_SystemUInt32\r\n    COPY\r\n    JUMP_INDIRECT, __0_ra_SystemUInt32\r\n\r\n.code_end\r\n"
+  assemblyError: 
+  triggerHash: C026C6EF39B884EF61B04999FB4E6CBE
+  shouldBeNetworked: 0
+  warningMessages: []
+  errorMessages: []
+  ctDataInstance:
+    version: 6
+    updateOrder: 0
+    autoSetSyncMode: 1
+    programSyncMode: 2
+    programName: 
+    events:
+    - name: _Teleport
+      eventId: 7973385c-7453-476a-b1d3-8995828692a0
+      eventInstance:
+        actionType:
+          directEvent: Event_Custom
+          guid: 
+        inputs: []
+        multiInput: []
+        expanded: 1
+        comment:
+          comment: 
+      actionInstances:
+      - actionType:
+          directEvent: UnityEngineTransform.__get_position__UnityEngineVector3
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: srcTransform
+          variableID: 1db9d120-045b-4ba7-936b-58db928fb07d
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        - isVariable: 1
+          name: 
+          variableID: e419ff13-f458-48f1-bf61-fc255cfd2634
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBCAAAAHAAbwBzAGkAdABpAG8AbgAF
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: UnityEngineTransform.__get_rotation__UnityEngineQuaternion
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: srcTransform
+          variableID: 1db9d120-045b-4ba7-936b-58db928fb07d
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        - isVariable: 1
+          name: 
+          variableID: 805ac1d4-a1c1-469e-8302-8bfe9fa2e533
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBCAAAAHIAbwB0AGEAdABpAG8AbgAF
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: UnityEngineTransform.__SetPositionAndRotation__UnityEngineVector3_UnityEngineQuaternion__SystemVoid
+          guid: 
+        inputs:
+        - isVariable: 0
+          name: 
+          variableID: 
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        - isVariable: 1
+          name: position
+          variableID: e419ff13-f458-48f1-bf61-fc255cfd2634
+          data:
+            objEncoded: Ai8AAAAAASsAAABVAG4AaQB0AHkARQBuAGcAaQBuAGUALgBWAGUAYwB0AG8AcgAzACwAIABVAG4AaQB0AHkARQBuAGcAaQBuAGUALgBDAG8AcgBlAE0AbwBkAHUAbABlAAAAAAAgAAAAACAAAAAAIAAAAAAF
+            unityObjects: []
+        - isVariable: 1
+          name: rotation
+          variableID: 805ac1d4-a1c1-469e-8302-8bfe9fa2e533
+          data:
+            objEncoded: Ai8AAAAAAS4AAABVAG4AaQB0AHkARQBuAGcAaQBuAGUALgBRAHUAYQB0AGUAcgBuAGkAbwBuACwAIABVAG4AaQB0AHkARQBuAGcAaQBuAGUALgBDAG8AcgBlAE0AbwBkAHUAbABlAAAAAAAgAAAAACAAAAAAIAAAAAAgAAAAAAU=
+            unityObjects: []
+        multiInput:
+        - isVariable: 1
+          name: dstTransform
+          variableID: 1e949061-d481-4463-a373-ca31d4384f96
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        expanded: 0
+        comment:
+          comment: 
+      eventOptions:
+        userGate: 0
+        userGateExtraData: []
+        broadcast: 0
+        delay: 0
+        replay: 0
+      expanded: 1
+    variables:
+    - isVariable: 0
+      name: srcTransform
+      variableID: 1db9d120-045b-4ba7-936b-58db928fb07d
+      data:
+        objEncoded: Lg==
+        unityObjects: []
+      type:
+        typeDef: UnityEngine.Transform, UnityEngine.CoreModule, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
+      sync: 0
+      showInInspector: 1
+      typeInfo: 0
+      comment:
+        comment: 
+    - isVariable: 0
+      name: dstTransform
+      variableID: 1e949061-d481-4463-a373-ca31d4384f96
+      data:
+        objEncoded: Lg==
+        unityObjects: []
+      type:
+        typeDef: UnityEngine.Transform, UnityEngine.CoreModule, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
+      sync: 0
+      showInInspector: 1
+      typeInfo: 0
+      comment:
+        comment: 
+    comment:
+      comment: 
+    expandVariables: 1
+    expandOtherSettings: 1
+    expandSyncSection: 0
+    ignoreEventWarnings: 1
+  publicVariableReferences:
+    actionDataIndices: []
+    userVariableNames:
+    - srcTransform
+    - dstTransform
+    userVariableTypes:
+    - typeDef: UnityEngine.Transform, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+    - typeDef: UnityEngine.Transform, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+  ignoreOdinData: 1
+  serializationDataOdin:
+    SerializedFormat: 0
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes: []
+  allowEditingInInspector: 0
+  expandInInspector: 0
+  isLocked: 1

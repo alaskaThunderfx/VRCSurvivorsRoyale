@@ -1,0 +1,278 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 61d0ad128b95568438c70898dc9e600c, type: 3}
+  m_Name: StringArrayListActions
+  m_EditorClassIdentifier: 
+  autoAddPriority: 0
+  exposedActions:
+  - guid: 2d037e69-840c-4855-b0fc-3df8cf3ea413
+    actionNamespace: StringArrayList
+    actionVariantName: SetIndex
+    description: 
+    variables:
+    - type:
+        typeDef: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      udonName: _arg_index__SetIndex
+      displayName: index
+      description: 
+      defaultValue:
+        objEncoded: Ai8AAAAAARYAAABTAHkAcwB0AGUAbQAuAEkAbgB0ADMAMgAsACAAbQBzAGMAbwByAGwAaQBiAAAAAAAYAAAAAAU=
+        unityObjects: []
+      variableType: 3
+    - type:
+        typeDef: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      udonName: _arg_item__SetIndex
+      displayName: item
+      description: 
+      defaultValue:
+        objEncoded: Lg==
+        unityObjects: []
+      variableType: 3
+    baseEventName: Event_Custom
+    eventEntry: _SetIndex
+    autoAdd: 0
+  - guid: d23627e2-759f-4f17-864e-54f482095ae8
+    actionNamespace: StringArrayList
+    actionVariantName: GetIndex
+    description: 
+    variables:
+    - type:
+        typeDef: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      udonName: _arg_index__GetIndex
+      displayName: index
+      description: 
+      defaultValue:
+        objEncoded: Lg==
+        unityObjects: []
+      variableType: 3
+    - type:
+        typeDef: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      udonName: _arg_item__GetIndex
+      displayName: item
+      description: 
+      defaultValue:
+        objEncoded: Lg==
+        unityObjects: []
+      variableType: 6
+    baseEventName: Event_Custom
+    eventEntry: _GetIndex
+    autoAdd: 0
+  - guid: 52020651-d7a5-4143-9cc1-a8935b492285
+    actionNamespace: StringArrayList
+    actionVariantName: Clear
+    description: 
+    variables: []
+    baseEventName: Event_Custom
+    eventEntry: _Clear
+    autoAdd: 0
+  - guid: c086995b-4e23-4720-966f-340a9b8ccbe2
+    actionNamespace: StringArrayList
+    actionVariantName: AddLast
+    description: 
+    variables:
+    - type:
+        typeDef: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      udonName: _arg_item__Add
+      displayName: item
+      description: 
+      defaultValue:
+        objEncoded: Lg==
+        unityObjects: []
+      variableType: 3
+    baseEventName: Event_Custom
+    eventEntry: _Add
+    autoAdd: 0
+  - guid: 4c8365d4-e882-4b86-a0e9-9cb68a920333
+    actionNamespace: StringArrayList
+    actionVariantName: Insert
+    description: 
+    variables:
+    - type:
+        typeDef: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      udonName: _arg_index__Insert
+      displayName: index
+      description: 
+      defaultValue:
+        objEncoded: Ai8AAAAAARYAAABTAHkAcwB0AGUAbQAuAEkAbgB0ADMAMgAsACAAbQBzAGMAbwByAGwAaQBiAAAAAAAYAAAAAAU=
+        unityObjects: []
+      variableType: 3
+    - type:
+        typeDef: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      udonName: _arg_item__Insert
+      displayName: item
+      description: 
+      defaultValue:
+        objEncoded: Lg==
+        unityObjects: []
+      variableType: 3
+    baseEventName: Event_Custom
+    eventEntry: _Insert
+    autoAdd: 0
+  - guid: 0751c63f-6017-4afa-b2fa-013b7735db96
+    actionNamespace: StringArrayList
+    actionVariantName: RemoveAt
+    description: 
+    variables:
+    - type:
+        typeDef: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      udonName: _arg_index__RemoveAt
+      displayName: index
+      description: 
+      defaultValue:
+        objEncoded: Lg==
+        unityObjects: []
+      variableType: 3
+    baseEventName: Event_Custom
+    eventEntry: _RemoveAt
+    autoAdd: 0
+  - guid: f98f4207-9eac-4a3b-8d1b-4a296db0cd4e
+    actionNamespace: StringArrayList
+    actionVariantName: RemoveLast
+    description: 
+    variables: []
+    baseEventName: Event_Custom
+    eventEntry: _RemoveLast
+    autoAdd: 0
+  - guid: d111f3b9-86c4-4787-8be9-96a412d38512
+    actionNamespace: StringArrayList
+    actionVariantName: RemoveAtUnordered
+    description: 
+    variables:
+    - type:
+        typeDef: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      udonName: _arg_index__RemoveAtUnordered
+      displayName: index
+      description: 
+      defaultValue:
+        objEncoded: Ai8AAAAAARYAAABTAHkAcwB0AGUAbQAuAEkAbgB0ADMAMgAsACAAbQBzAGMAbwByAGwAaQBiAAAAAAAYAAAAAAU=
+        unityObjects: []
+      variableType: 3
+    baseEventName: Event_Custom
+    eventEntry: _RemoveAtUnordered
+    autoAdd: 0
+  - guid: bd811e56-bae3-4ec0-849b-ed15bbe905f4
+    actionNamespace: StringArrayList
+    actionVariantName: Swap
+    description: 
+    variables:
+    - type:
+        typeDef: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      udonName: _arg_index1__Swap
+      displayName: index1
+      description: 
+      defaultValue:
+        objEncoded: Ai8AAAAAARYAAABTAHkAcwB0AGUAbQAuAEkAbgB0ADMAMgAsACAAbQBzAGMAbwByAGwAaQBiAAAAAAAYAAAAAAU=
+        unityObjects: []
+      variableType: 3
+    - type:
+        typeDef: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      udonName: _arg_index2__Swap
+      displayName: index2
+      description: 
+      defaultValue:
+        objEncoded: Ai8AAAAAARYAAABTAHkAcwB0AGUAbQAuAEkAbgB0ADMAMgAsACAAbQBzAGMAbwByAGwAaQBiAAAAAAAYAAAAAAU=
+        unityObjects: []
+      variableType: 3
+    baseEventName: Event_Custom
+    eventEntry: _Swap
+    autoAdd: 0
+  - guid: 66683c84-7e56-40f8-ad99-5b895876c42e
+    actionNamespace: StringArrayList
+    actionVariantName: Get Length
+    description: 
+    variables:
+    - type:
+        typeDef: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      udonName: length
+      displayName: length
+      description: 
+      defaultValue:
+        objEncoded: Ai8AAAAAARYAAABTAHkAcwB0AGUAbQAuAEkAbgB0ADMAMgAsACAAbQBzAGMAbwByAGwAaQBiAAAAAAAYAAAAAAU=
+        unityObjects: []
+      variableType: 6
+    baseEventName: Event_Custom
+    eventEntry: __EmptyEntryEvent
+    autoAdd: 0
+  - guid: 72790b77-b2a9-4684-8726-01e2fe451105
+    actionNamespace: StringArrayList
+    actionVariantName: GetBackingArray
+    description: 
+    variables:
+    - type:
+        typeDef: System.String[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      udonName: itemArray
+      displayName: itemArray
+      description: 
+      defaultValue:
+        objEncoded: Ai8AAAAAARkAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnAFsAXQAsACAAbQBzAGMAbwByAGwAaQBiAAAAAAAGAAAAAAAAAAAHBQ==
+        unityObjects: []
+      variableType: 6
+    baseEventName: Event_Custom
+    eventEntry: __EmptyEntryEvent
+    autoAdd: 0
+  - guid: 8cedcfd7-a43e-4d3f-a033-3860076a16a7
+    actionNamespace: StringArrayList
+    actionVariantName: Remove
+    description: 
+    variables:
+    - type:
+        typeDef: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      udonName: _arg_item__RemoveValue
+      displayName: item
+      description: 
+      defaultValue:
+        objEncoded: 
+        unityObjects: []
+      variableType: 3
+    - type:
+        typeDef: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      udonName: _arg_removeAll__RemoveValue
+      displayName: removeAll
+      description: 
+      defaultValue:
+        objEncoded: Ai8AAAAAARgAAABTAHkAcwB0AGUAbQAuAEIAbwBvAGwAZQBhAG4ALAAgAG0AcwBjAG8AcgBsAGkAYgAAAAAALAAF
+        unityObjects: []
+      variableType: 9
+    baseEventName: Event_Custom
+    eventEntry: _RemoveValue
+    autoAdd: 0
+  - guid: 4cd6be88-ffa5-4df5-84b1-68a200c7028e
+    actionNamespace: StringArrayList
+    actionVariantName: RemoveAll
+    description: 
+    variables:
+    - type:
+        typeDef: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      udonName: _arg_item__RemoveValue
+      displayName: item
+      description: 
+      defaultValue:
+        objEncoded: 
+        unityObjects: []
+      variableType: 3
+    - type:
+        typeDef: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      udonName: _arg_removeAll__RemoveValue
+      displayName: removeAll
+      description: 
+      defaultValue:
+        objEncoded: Ai8AAAAAARgAAABTAHkAcwB0AGUAbQAuAEIAbwBvAGwAZQBhAG4ALAAgAG0AcwBjAG8AcgBsAGkAYgAAAAAALAEF
+        unityObjects: []
+      variableType: 9
+    baseEventName: Event_Custom
+    eventEntry: _RemoveValue
+    autoAdd: 0
+  isMultiInstance: 1
+  defaultNamespace: StringArrayList
+  udonProgramAsset: {fileID: 11400000, guid: 785ab8a83f29e1d419f25a1e93f8802a, type: 2}
+  assetGuid: 785ab8a83f29e1d419f25a1e93f8802a
+  thisGuid: 30c72f7c4481dbc4680e3f6bcc1cafe9

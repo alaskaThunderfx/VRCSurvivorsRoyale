@@ -1,0 +1,196 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a31a3a978bd0448580d4ef9f3d6d95bf, type: 3}
+  m_Name: DataCacheStringClear
+  m_EditorClassIdentifier: 
+  serializedUdonProgramAsset: {fileID: 11400000, guid: 7ff5411127789ca40ba20f31c5ad159e,
+    type: 2}
+  udonAssembly: ".data_start\r\n  .export __CyanTrigger_ProgramName_SystemString\r\n 
+    .export key\r\n  .export cacheType\r\n  __CyanTrigger_ProgramName_SystemString:
+    %SystemString, null\r\n  __CyanTrigger_ProgramHash_SystemString: %SystemString,
+    null\r\n  __0_ra_SystemUInt32: %SystemUInt32, null\r\n  __1_ea_SystemUInt32:
+    %SystemUInt32, null\r\n  _this_local_player: %VRCSDKBaseVRCPlayerApi, null\r\n 
+    key: %SystemString, null\r\n  cacheType: %SystemString, null\r\n  __tagKeyPrefix:
+    %SystemString, null\r\n  __12_local_var_SystemString: %SystemString, null\r\n 
+    __13_ref_SystemString: %SystemString, null\r\n  __14_lp_init_SystemBoolean_ct_intern:
+    %SystemBoolean, null\r\n  __15_const_SystemBoolean: %SystemBoolean, null\r\n.data_end\r\n\n.code_start\r\n 
+    .export _Clear\r\n  _Clear:\r\n    PUSH, __1_ea_SystemUInt32\r\n    PUSH, __14_lp_init_SystemBoolean_ct_intern\r\n   
+    JUMP_IF_FALSE, 0x0000003C\r\n    PUSH, __15_const_SystemBoolean\r\n    PUSH,
+    __14_lp_init_SystemBoolean_ct_intern\r\n    COPY\r\n    PUSH, _this_local_player\r\n   
+    EXTERN, \"VRCSDKBaseNetworking.__get_LocalPlayer__VRCSDKBaseVRCPlayerApi\"\r\n   
+    PUSH, __tagKeyPrefix\r\n    PUSH, cacheType\r\n    PUSH, key\r\n    PUSH, __12_local_var_SystemString\r\n   
+    EXTERN, \"SystemString.__Concat__SystemString_SystemString_SystemString__SystemString\"\r\n   
+    PUSH, _this_local_player\r\n    PUSH, __12_local_var_SystemString\r\n    PUSH,
+    __13_ref_SystemString\r\n    EXTERN, \"VRCSDKBaseVRCPlayerApi.__SetPlayerTag__SystemString_SystemString__SystemVoid\"\r\n   
+    PUSH, __0_ra_SystemUInt32\r\n    COPY\r\n    JUMP_INDIRECT, __0_ra_SystemUInt32\r\n\r\n.code_end\r\n"
+  assemblyError: 
+  triggerHash: 8A79ACCAA7FB3DCE2B464EE32CE7418F
+  shouldBeNetworked: 0
+  warningMessages: []
+  errorMessages: []
+  ctDataInstance:
+    version: 6
+    updateOrder: 0
+    autoSetSyncMode: 1
+    programSyncMode: 2
+    programName: 
+    events:
+    - name: _Clear
+      eventId: ee067bbc-feb0-40f2-b512-be2c15daa238
+      eventInstance:
+        actionType:
+          directEvent: Event_Custom
+          guid: 
+        inputs: []
+        multiInput: []
+        expanded: 1
+        comment:
+          comment: 
+      actionInstances:
+      - actionType:
+          directEvent: SystemString.__Concat__SystemString_SystemString_SystemString__SystemString
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: __tagKeyPrefix
+          variableID: a43d8dae-b0e5-4b2c-aeba-376ad4c30da6
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBAAAAAAU=
+            unityObjects: []
+        - isVariable: 1
+          name: cacheType
+          variableID: d5f93e3e-9f37-49ff-8724-9cf916ed07cd
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBAAAAAAU=
+            unityObjects: []
+        - isVariable: 1
+          name: key
+          variableID: f9624e6f-219c-4fb6-aab9-0bfb5e2f5f0f
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBAAAAAAU=
+            unityObjects: []
+        - isVariable: 1
+          name: 
+          variableID: a152473e-306e-49ec-bb76-6e0cbf88bbd5
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBBgAAAHQAYQBnAEsAZQB5AAU=
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: VRCSDKBaseVRCPlayerApi.__SetPlayerTag__SystemString_SystemString__SystemVoid
+          guid: 
+        inputs:
+        - isVariable: 0
+          name: 
+          variableID: 
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        - isVariable: 1
+          name: tagKey
+          variableID: a152473e-306e-49ec-bb76-6e0cbf88bbd5
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBAAAAAAU=
+            unityObjects: []
+        - isVariable: 0
+          name: 
+          variableID: 
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBAAAAAAU=
+            unityObjects: []
+        multiInput:
+        - isVariable: 1
+          name: Local Player
+          variableID: _this_local_player
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        expanded: 0
+        comment:
+          comment: Set tag to empty string to clear it.
+      eventOptions:
+        userGate: 0
+        userGateExtraData: []
+        broadcast: 0
+        delay: 0
+        replay: 0
+      expanded: 1
+    variables:
+    - isVariable: 0
+      name: key
+      variableID: f9624e6f-219c-4fb6-aab9-0bfb5e2f5f0f
+      data:
+        objEncoded: Lg==
+        unityObjects: []
+      type:
+        typeDef: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      sync: 0
+      showInInspector: 1
+      typeInfo: 0
+      comment:
+        comment: 
+    - isVariable: 0
+      name: cacheType
+      variableID: d5f93e3e-9f37-49ff-8724-9cf916ed07cd
+      data:
+        objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBBwAAAHMAdAByAGkAbgBnAC4ABQ==
+        unityObjects: []
+      type:
+        typeDef: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      sync: 0
+      showInInspector: 1
+      typeInfo: 0
+      comment:
+        comment: 
+    - isVariable: 0
+      name: __tagKeyPrefix
+      variableID: a43d8dae-b0e5-4b2c-aeba-376ad4c30da6
+      data:
+        objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBHwAAAGMAbwBtAC4AYwB5AGEAbgAuAGMAeQBhAG4AdAByAGkAZwBnAGUAcgAuAGQAYQB0AGEAYwBhAGMAaABlAC4ABQ==
+        unityObjects: []
+      type:
+        typeDef: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      sync: 0
+      showInInspector: 1
+      typeInfo: 0
+      comment:
+        comment: 
+    comment:
+      comment: 
+    expandVariables: 1
+    expandOtherSettings: 0
+    expandSyncSection: 0
+    ignoreEventWarnings: 1
+  publicVariableReferences:
+    actionDataIndices: []
+    userVariableNames:
+    - key
+    - cacheType
+    userVariableTypes:
+    - typeDef: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+    - typeDef: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+  ignoreOdinData: 1
+  serializationDataOdin:
+    SerializedFormat: 0
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes: []
+  allowEditingInInspector: 0
+  expandInInspector: 0
+  isLocked: 1

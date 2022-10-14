@@ -1,0 +1,74 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 61d0ad128b95568438c70898dc9e600c, type: 3}
+  m_Name: MathfSmoothDampActions
+  m_EditorClassIdentifier: 
+  autoAddPriority: 0
+  exposedActions:
+  - guid: fb572ed5-4f52-4a71-8591-1c738f82104d
+    actionNamespace: Mathf
+    actionVariantName: SmoothDamp_CT
+    description: 
+    variables:
+    - type:
+        typeDef: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      udonName: _arg_current__SmoothDamp
+      displayName: current
+      description: 
+      defaultValue:
+        objEncoded: 
+        unityObjects: []
+      variableType: 3
+    - type:
+        typeDef: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      udonName: _arg_target__SmoothDamp
+      displayName: target
+      description: 
+      defaultValue:
+        objEncoded: 
+        unityObjects: []
+      variableType: 3
+    - type:
+        typeDef: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      udonName: _arg_currentVelocity__SmoothDamp
+      displayName: currentVelocity
+      description: 
+      defaultValue:
+        objEncoded: 
+        unityObjects: []
+      variableType: 6
+    - type:
+        typeDef: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      udonName: _arg_smoothTime__SmoothDamp
+      displayName: smoothTime
+      description: 
+      defaultValue:
+        objEncoded: 
+        unityObjects: []
+      variableType: 3
+    - type:
+        typeDef: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      udonName: _arg_results__SmoothDamp
+      displayName: results
+      description: 
+      defaultValue:
+        objEncoded: 
+        unityObjects: []
+      variableType: 6
+    baseEventName: Event_Custom
+    eventEntry: _SmoothDamp
+    autoAdd: 0
+  isMultiInstance: 0
+  defaultNamespace: Mathf
+  udonProgramAsset: {fileID: 11400000, guid: 53b140e2aaf6def49bab5e1fa02e9e41, type: 2}
+  assetGuid: 53b140e2aaf6def49bab5e1fa02e9e41
+  thisGuid: 454d6f410d2cc654789e624f5ec71e76

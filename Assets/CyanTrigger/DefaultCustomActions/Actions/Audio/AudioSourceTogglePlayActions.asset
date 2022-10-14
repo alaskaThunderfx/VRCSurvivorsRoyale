@@ -1,0 +1,39 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 61d0ad128b95568438c70898dc9e600c, type: 3}
+  m_Name: AudioSourceTogglePlayActions
+  m_EditorClassIdentifier: 
+  autoAddPriority: 0
+  exposedActions:
+  - guid: 09bb1814-102a-404b-9f13-eab0d49592d0
+    actionNamespace: AudioSource
+    actionVariantName: TogglePlay
+    description: Toggle an AudioSource between playing and stopped
+    variables:
+    - type:
+        typeDef: UnityEngine.AudioSource, UnityEngine.AudioModule, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
+      udonName: AudioSource
+      displayName: AudioSource
+      description: 
+      defaultValue:
+        objEncoded: Lg==
+        unityObjects: []
+      variableType: 19
+    baseEventName: Event_Custom
+    eventEntry: _AudioSourceTogglePlay
+    autoAdd: 0
+  isMultiInstance: 0
+  defaultNamespace: 
+  udonProgramAsset: {fileID: 11400000, guid: dc286fad3e8f01247b237a0b19ca1ed7, type: 2}
+  assetGuid: dc286fad3e8f01247b237a0b19ca1ed7
+  thisGuid: 4eb9bb9831f1d974eb64ea6efcbf2b98

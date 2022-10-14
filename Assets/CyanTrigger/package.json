@@ -1,0 +1,39 @@
+{
+  "name": "com.cyan.cyantrigger",
+  "displayName": "CyanTrigger",
+  "version": "0.4.2",
+  "unity": "2019.4",
+  "description": "A VRChat Udon compiler that simplifies creating logic while still providing the full power of Udon. Features Event and Action lists with in scene editing. Visually similar to VRCSDK2's VRC_Trigger.",
+  "author" : {
+    "name" : "CyanLaser"
+  },
+  "url" : "https://booth.pm/en/items/3194594",
+  "samples" : [
+    {
+      "displayName" : "ExamplesAndPrefabs",
+      "description" : "Examples of how to use CyanTrigger and useful sample prefabs.",
+      "path" : "Samples~/GeneralExamples"
+    },
+    {
+      "displayName" : "DefaultCustomActions",
+      "description" : "Helpful Custom Actions for making logic using CyanTrigger.",
+      "path" : "Samples~/DefaultCustomActions"
+    }
+  ],
+  "vpmDependencies": {
+    "com.vrchat.worlds": "3.1.x"
+  },
+  "legacyFolders" : {
+    "Assets\\CyanTrigger\\DefaultCustomActions" : "18c5393a2789ef247a01fda9efeecd96",
+    "Assets\\CyanTrigger\\Editor" : "645d4060f293c1645a6808bf56a36133",
+    "Assets\\CyanTrigger\\Examples" : "5537fd307d7a93b4b8711020e5a8e589",
+    "Assets\\CyanTrigger\\Resources" : "b07965ba377fb8044b908e83ec68c56c",
+    "Assets\\CyanTrigger\\Runtime" : "965354f146da23042abe6e090742449e",
+    "Assets\\CyanTrigger" : "b6e805649837a4340bfd55ffe4c700bb",
+    "Assets\\CyanTriggerExamples" : "d0143e885dafbbd40ac4cdf1ec09361d"
+  },
+  "legacyFiles" : {
+    "Assets\\CyanTrigger\\CyanTriggerLicense.txt" : "5e1f7f33dafe75e42b53f895b9ae7093",
+    "Assets\\CyanTrigger\\package.json" : "70ef95417547a714b80f77073e7f810d"
+  }
+}

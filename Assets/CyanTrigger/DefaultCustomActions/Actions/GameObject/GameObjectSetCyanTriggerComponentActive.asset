@@ -1,0 +1,317 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a31a3a978bd0448580d4ef9f3d6d95bf, type: 3}
+  m_Name: GameObjectSetCyanTriggerComponentActive
+  m_EditorClassIdentifier: 
+  serializedUdonProgramAsset: {fileID: 11400000, guid: bf95a37eab767c24ebb9f833f8cec576,
+    type: 2}
+  udonAssembly: ".data_start\r\n  .export __CyanTrigger_ProgramName_SystemString\r\n 
+    __CyanTrigger_ProgramName_SystemString: %SystemString, null\r\n  __CyanTrigger_ProgramHash_SystemString:
+    %SystemString, null\r\n  __0_ra_SystemUInt32: %SystemUInt32, null\r\n  __1_ea_SystemUInt32:
+    %SystemUInt32, null\r\n  __null: %SystemObject, null\r\n  _arg_gameObject__SetCyanTriggerComponentActive:
+    %UnityEngineGameObject, null\r\n  _arg_expectedProgramName__SetCyanTriggerComponentActive:
+    %SystemString, null\r\n  _arg_enable__SetCyanTriggerComponentActive: %SystemBoolean,
+    null\r\n  __ag_0_0_SystemInt32: %SystemInt32, null\r\n  __ag_0_1_SystemInt32:
+    %SystemInt32, null\r\n  __ag_0_2___jump_return_SystemUInt32: %SystemUInt32, null\r\n 
+    __ag_0_3_SystemBoolean: %SystemBoolean, null\r\n  __ag_0_4_SystemBoolean: %SystemBoolean,
+    null\r\n  __ag_0_5_SystemInt32: %SystemInt32, null\r\n  __ag_0_6_SystemInt32:
+    %SystemInt32, null\r\n  __ag_0_7_SystemInt32: %SystemInt32, null\r\n  __ag_0_8_SystemBoolean:
+    %SystemBoolean, null\r\n  __ag_0_9_SystemInt32: %SystemInt32, null\r\n  __ag_0_10_SystemInt32:
+    %SystemInt32, null\r\n  __ag_0_11_SystemType: %SystemType, null\r\n  __ag_0_12_SystemString:
+    %SystemString, null\r\n  __ag_0_13_SystemString: %SystemString, null\r\n  __ag_0_14_VRCUdonCommonInterfacesIUdonEventReceiver[]:
+    %VRCUdonCommonInterfacesIUdonEventReceiverArray, null\r\n  __ag_0_15_SystemString:
+    %SystemString, null\r\n  __ag_0_16_SystemBoolean: %SystemBoolean, null\r\n  __ag_0_17_SystemType:
+    %SystemType, null\r\n  __ag_0_18_SystemType: %SystemType, null\r\n  __ag_0_19_UnityEngineGameObject:
+    %UnityEngineGameObject, null\r\n  __ag_0_20_SystemInt32: %SystemInt32, null\r\n 
+    __ag_0_21_SystemInt32: %SystemInt32, null\r\n  __ag_0_22_SystemObject: %SystemObject,
+    null\r\n  __ag_0_23_SystemString: %SystemString, null\r\n  __ag_0_24_SystemBoolean:
+    %SystemBoolean, null\r\n  __ag_0_25_UnityEngineGameObject: %UnityEngineGameObject,
+    null\r\n  __ag_0_26_UnityEngineComponent[]: %UnityEngineComponentArray, null\r\n 
+    __ag_0_27_SystemInt32: %SystemInt32, null\r\n  __ag_0_28_SystemString: %SystemString,
+    null\r\n  __ag_0_29_SystemInt32: %SystemInt32, null\r\n  __ag_0_30_SystemBoolean:
+    %SystemBoolean, null\r\n  __ag_0_31_SystemInt32: %SystemInt32, null\r\n  __ag_0_32_UnityEngineComponent:
+    %UnityEngineComponent, null\r\n  __ag_0_33_SystemBoolean: %SystemBoolean, null\r\n 
+    __ag_0_34_SystemInt32: %SystemInt32, null\r\n  __ag_0_35_VRCUdonCommonInterfacesIUdonEventReceiver[]:
+    %VRCUdonCommonInterfacesIUdonEventReceiverArray, null\r\n  __ag_0_36_SystemBoolean:
+    %SystemBoolean, null\r\n  __ag_0_37_SystemBoolean: %SystemBoolean, null\r\n 
+    __ag_0_38_SystemInt32: %SystemInt32, null\r\n  __ag_0_39_UnityEngineComponent:
+    %UnityEngineComponent, null\r\n  __52_local_var_VRCUdonCommonInterfacesIUdonEventReceiver[]:
+    %VRCUdonCommonInterfacesIUdonEventReceiverArray, null\r\n  __53___jump_return_1_SystemUInt32:
+    %SystemUInt32, null\r\n  __54_local_var_SystemInt32: %SystemInt32, null\r\n 
+    __55_local_var_SystemObject: %SystemObject, null\r\n  __56_const_SystemInt32:
+    %SystemInt32, null\r\n  __57_const_SystemInt32: %SystemInt32, null\r\n  __58_temp_SystemInt32:
+    %SystemInt32, null\r\n  __59_temp_SystemInt32: %SystemInt32, null\r\n  __60_temp_SystemInt32:
+    %SystemInt32, null\r\n  __61_temp_SystemBoolean: %SystemBoolean, null\r\n  __62_temp_SystemBoolean:
+    %SystemBoolean, null\r\n.data_end\r\n\n.code_start\r\n  .export __ag_0_0\r\n 
+    __ag_0_0:\r\n    PUSH, __1_ea_SystemUInt32\r\n    PUSH, __ag_0_18_SystemType\r\n   
+    PUSH, __ag_0_11_SystemType\r\n    COPY\r\n    PUSH, __null\r\n    PUSH, __ag_0_26_UnityEngineComponent[]\r\n   
+    COPY\r\n    PUSH, __ag_0_25_UnityEngineGameObject\r\n    PUSH, __ag_0_11_SystemType\r\n   
+    PUSH, __ag_0_26_UnityEngineComponent[]\r\n    EXTERN, \"UnityEngineGameObject.__GetComponents__SystemType__UnityEngineComponentArray\"\r\n   
+    PUSH, __ag_0_23_SystemString\r\n    PUSH, __ag_0_37_SystemBoolean\r\n    EXTERN,
+    \"SystemString.__IsNullOrEmpty__SystemString__SystemBoolean\"\r\n    PUSH, __ag_0_1_SystemInt32\r\n   
+    PUSH, __ag_0_38_SystemInt32\r\n    COPY\r\n    PUSH, __ag_0_26_UnityEngineComponent[]\r\n   
+    PUSH, __ag_0_9_SystemInt32\r\n    EXTERN, \"SystemArray.__get_Length__SystemInt32\"\r\n   
+    PUSH, __ag_0_34_SystemInt32\r\n    PUSH, __ag_0_6_SystemInt32\r\n    COPY\r\n   
+    PUSH, __ag_0_9_SystemInt32\r\n    PUSH, __ag_0_5_SystemInt32\r\n    COPY\r\n   
+    PUSH, __ag_0_10_SystemInt32\r\n    PUSH, __ag_0_27_SystemInt32\r\n    COPY\r\n   
+    PUSH, __ag_0_27_SystemInt32\r\n    PUSH, __ag_0_34_SystemInt32\r\n    PUSH, __ag_0_33_SystemBoolean\r\n   
+    EXTERN, \"SystemInt32.__op_GreaterThanOrEqual__SystemInt32_SystemInt32__SystemBoolean\"\r\n   
+    JUMP, 0x00000118\r\n    PUSH, __ag_0_6_SystemInt32\r\n    PUSH, __ag_0_27_SystemInt32\r\n   
+    PUSH, __ag_0_6_SystemInt32\r\n    EXTERN, \"SystemInt32.__op_Addition__SystemInt32_SystemInt32__SystemInt32\"\r\n   
+    PUSH, __ag_0_6_SystemInt32\r\n    PUSH, __ag_0_5_SystemInt32\r\n    PUSH, __ag_0_30_SystemBoolean\r\n   
+    PUSH, __ag_0_33_SystemBoolean\r\n    JUMP_IF_FALSE, 0x00000150\r\n    EXTERN,
+    \"SystemInt32.__op_LessThan__SystemInt32_SystemInt32__SystemBoolean\"\r\n   
+    JUMP, 0x00000158\r\n    EXTERN, \"SystemInt32.__op_GreaterThan__SystemInt32_SystemInt32__SystemBoolean\"\r\n   
+    PUSH, __ag_0_30_SystemBoolean\r\n    JUMP_IF_FALSE, 0x000002FC\r\n    PUSH, __ag_0_26_UnityEngineComponent[]\r\n   
+    PUSH, __ag_0_6_SystemInt32\r\n    PUSH, __ag_0_22_SystemObject\r\n    EXTERN,
+    \"SystemArray.__GetValue__SystemInt32__SystemObject\"\r\n    PUSH, __ag_0_22_SystemObject\r\n   
+    PUSH, __ag_0_13_SystemString\r\n    PUSH, __ag_0_17_SystemType\r\n    EXTERN,
+    \"VRCUdonCommonInterfacesIUdonEventReceiver.__GetProgramVariableType__SystemString__SystemType\"\r\n   
+    PUSH, __ag_0_17_SystemType\r\n    PUSH, __ag_0_16_SystemBoolean\r\n    EXTERN,
+    \"VRCSDKBaseUtilities.__IsValid__SystemObject__SystemBoolean\"\r\n    PUSH, __ag_0_16_SystemBoolean\r\n   
+    JUMP_IF_FALSE, 0x000001F8\r\n    PUSH, __ag_0_22_SystemObject\r\n    PUSH, __ag_0_13_SystemString\r\n   
+    PUSH, __ag_0_12_SystemString\r\n    EXTERN, \"VRCUdonCommonInterfacesIUdonEventReceiver.__GetProgramVariable__SystemString__SystemObject\"\r\n   
+    JUMP, 0x0000020C\r\n    PUSH, __null\r\n    PUSH, __ag_0_12_SystemString\r\n   
+    COPY\r\n    PUSH, __ag_0_12_SystemString\r\n    PUSH, __ag_0_4_SystemBoolean\r\n   
+    EXTERN, \"SystemString.__IsNullOrEmpty__SystemString__SystemBoolean\"\r\n   
+    PUSH, __ag_0_4_SystemBoolean\r\n    JUMP_IF_FALSE, 0x0000023C\r\n    JUMP, 0x000000F8\r\n   
+    PUSH, __ag_0_24_SystemBoolean\r\n    PUSH, __ag_0_36_SystemBoolean\r\n    COPY\r\n   
+    PUSH, __ag_0_37_SystemBoolean\r\n    PUSH, __ag_0_16_SystemBoolean\r\n    EXTERN,
+    \"SystemBoolean.__op_UnaryNegation__SystemBoolean__SystemBoolean\"\r\n    PUSH,
+    __ag_0_8_SystemBoolean\r\n    PUSH, __ag_0_16_SystemBoolean\r\n    JUMP_IF_FALSE,
+    0x000002AC\r\n    POP\r\n    PUSH, __ag_0_23_SystemString\r\n    PUSH, __ag_0_12_SystemString\r\n   
+    PUSH, __ag_0_36_SystemBoolean\r\n    EXTERN, \"SystemString.__op_Equality__SystemString_SystemString__SystemBoolean\"\r\n   
+    PUSH, __ag_0_36_SystemBoolean\r\n    JUMP_IF_FALSE, 0x000002F4\r\n    PUSH, __ag_0_26_UnityEngineComponent[]\r\n   
+    PUSH, __ag_0_38_SystemInt32\r\n    PUSH, __ag_0_22_SystemObject\r\n    EXTERN,
+    \"UnityEngineComponentArray.__Set__SystemInt32_UnityEngineComponent__SystemVoid\"\r\n   
+    PUSH, __ag_0_38_SystemInt32\r\n    PUSH, __ag_0_29_SystemInt32\r\n    PUSH, __ag_0_38_SystemInt32\r\n   
+    EXTERN, \"SystemInt32.__op_Addition__SystemInt32_SystemInt32__SystemInt32\"\r\n   
+    JUMP, 0x000000F8\r\n    PUSH, __ag_0_38_SystemInt32\r\n    PUSH, __ag_0_35_VRCUdonCommonInterfacesIUdonEventReceiver[]\r\n   
+    EXTERN, \"VRCUdonCommonInterfacesIUdonEventReceiverArray.__ctor__SystemInt32__VRCUdonCommonInterfacesIUdonEventReceiverArray\"\r\n   
+    PUSH, __ag_0_31_SystemInt32\r\n    PUSH, __ag_0_7_SystemInt32\r\n    COPY\r\n   
+    PUSH, __ag_0_38_SystemInt32\r\n    PUSH, __ag_0_20_SystemInt32\r\n    COPY\r\n   
+    PUSH, __ag_0_21_SystemInt32\r\n    PUSH, __ag_0_0_SystemInt32\r\n    COPY\r\n   
+    PUSH, __ag_0_0_SystemInt32\r\n    PUSH, __ag_0_34_SystemInt32\r\n    PUSH, __ag_0_16_SystemBoolean\r\n   
+    EXTERN, \"SystemInt32.__op_GreaterThanOrEqual__SystemInt32_SystemInt32__SystemBoolean\"\r\n   
+    JUMP, 0x00000398\r\n    PUSH, __ag_0_7_SystemInt32\r\n    PUSH, __ag_0_0_SystemInt32\r\n   
+    PUSH, __ag_0_7_SystemInt32\r\n    EXTERN, \"SystemInt32.__op_Addition__SystemInt32_SystemInt32__SystemInt32\"\r\n   
+    PUSH, __ag_0_7_SystemInt32\r\n    PUSH, __ag_0_20_SystemInt32\r\n    PUSH, __ag_0_3_SystemBoolean\r\n   
+    PUSH, __ag_0_16_SystemBoolean\r\n    JUMP_IF_FALSE, 0x000003D0\r\n    EXTERN,
+    \"SystemInt32.__op_LessThan__SystemInt32_SystemInt32__SystemBoolean\"\r\n   
+    JUMP, 0x000003D8\r\n    EXTERN, \"SystemInt32.__op_GreaterThan__SystemInt32_SystemInt32__SystemBoolean\"\r\n   
+    PUSH, __ag_0_3_SystemBoolean\r\n    JUMP_IF_FALSE, 0x00000430\r\n    PUSH, __ag_0_26_UnityEngineComponent[]\r\n   
+    PUSH, __ag_0_7_SystemInt32\r\n    PUSH, __ag_0_32_UnityEngineComponent\r\n   
+    EXTERN, \"UnityEngineComponentArray.__Get__SystemInt32__UnityEngineComponent\"\r\n   
+    PUSH, __ag_0_35_VRCUdonCommonInterfacesIUdonEventReceiver[]\r\n    PUSH, __ag_0_7_SystemInt32\r\n   
+    PUSH, __ag_0_32_UnityEngineComponent\r\n    EXTERN, \"VRCUdonCommonInterfacesIUdonEventReceiverArray.__Set__SystemInt32_VRCUdonCommonInterfacesIUdonEventReceiver__SystemVoid\"\r\n   
+    JUMP, 0x00000378\r\n    PUSH, __0_ra_SystemUInt32\r\n    COPY\r\n    JUMP_INDIRECT,
+    __0_ra_SystemUInt32\r\n\r\n  .export __ag_0_1\r\n  __ag_0_1:\r\n    PUSH, __1_ea_SystemUInt32\r\n   
+    PUSH, __ag_0_39_UnityEngineComponent\r\n    PUSH, __ag_0_19_UnityEngineGameObject\r\n   
+    EXTERN, \"UnityEngineComponent.__get_gameObject__UnityEngineGameObject\"\r\n   
+    PUSH, __ag_0_19_UnityEngineGameObject\r\n    PUSH, __ag_0_25_UnityEngineGameObject\r\n   
+    COPY\r\n    PUSH, __ag_0_28_SystemString\r\n    PUSH, __ag_0_23_SystemString\r\n   
+    COPY\r\n    PUSH, __ag_0_14_VRCUdonCommonInterfacesIUdonEventReceiver[]\r\n   
+    PUSH, __ag_0_35_VRCUdonCommonInterfacesIUdonEventReceiver[]\r\n    COPY\r\n   
+    PUSH, __ag_0_2___jump_return_SystemUInt32\r\n    JUMP, 0x00000008\r\n    PUSH,
+    __ag_0_35_VRCUdonCommonInterfacesIUdonEventReceiver[]\r\n    PUSH, __ag_0_14_VRCUdonCommonInterfacesIUdonEventReceiver[]\r\n   
+    COPY\r\n    PUSH, __0_ra_SystemUInt32\r\n    COPY\r\n    JUMP_INDIRECT, __0_ra_SystemUInt32\r\n\r\n 
+    .export _SetCyanTriggerComponentActive\r\n  _SetCyanTriggerComponentActive:\r\n   
+    PUSH, __1_ea_SystemUInt32\r\n    PUSH, _arg_gameObject__SetCyanTriggerComponentActive\r\n   
+    PUSH, __ag_0_25_UnityEngineGameObject\r\n    COPY\r\n    PUSH, _arg_expectedProgramName__SetCyanTriggerComponentActive\r\n   
+    PUSH, __ag_0_23_SystemString\r\n    COPY\r\n    PUSH, __52_local_var_VRCUdonCommonInterfacesIUdonEventReceiver[]\r\n   
+    PUSH, __ag_0_35_VRCUdonCommonInterfacesIUdonEventReceiver[]\r\n    COPY\r\n   
+    PUSH, __53___jump_return_1_SystemUInt32\r\n    JUMP, 0x00000008\r\n    PUSH,
+    __ag_0_35_VRCUdonCommonInterfacesIUdonEventReceiver[]\r\n    PUSH, __52_local_var_VRCUdonCommonInterfacesIUdonEventReceiver[]\r\n   
+    COPY\r\n    PUSH, __52_local_var_VRCUdonCommonInterfacesIUdonEventReceiver[]\r\n   
+    PUSH, __58_temp_SystemInt32\r\n    EXTERN, \"SystemArray.__get_Length__SystemInt32\"\r\n   
+    PUSH, __56_const_SystemInt32\r\n    PUSH, __54_local_var_SystemInt32\r\n    COPY\r\n   
+    PUSH, __58_temp_SystemInt32\r\n    PUSH, __60_temp_SystemInt32\r\n    COPY\r\n   
+    PUSH, __57_const_SystemInt32\r\n    PUSH, __59_temp_SystemInt32\r\n    COPY\r\n   
+    PUSH, __59_temp_SystemInt32\r\n    PUSH, __56_const_SystemInt32\r\n    PUSH,
+    __61_temp_SystemBoolean\r\n    EXTERN, \"SystemInt32.__op_GreaterThanOrEqual__SystemInt32_SystemInt32__SystemBoolean\"\r\n   
+    JUMP, 0x000005DC\r\n    PUSH, __54_local_var_SystemInt32\r\n    PUSH, __59_temp_SystemInt32\r\n   
+    PUSH, __54_local_var_SystemInt32\r\n    EXTERN, \"SystemInt32.__op_Addition__SystemInt32_SystemInt32__SystemInt32\"\r\n   
+    PUSH, __54_local_var_SystemInt32\r\n    PUSH, __60_temp_SystemInt32\r\n    PUSH,
+    __62_temp_SystemBoolean\r\n    PUSH, __61_temp_SystemBoolean\r\n    JUMP_IF_FALSE,
+    0x00000614\r\n    EXTERN, \"SystemInt32.__op_LessThan__SystemInt32_SystemInt32__SystemBoolean\"\r\n   
+    JUMP, 0x0000061C\r\n    EXTERN, \"SystemInt32.__op_GreaterThan__SystemInt32_SystemInt32__SystemBoolean\"\r\n   
+    PUSH, __62_temp_SystemBoolean\r\n    JUMP_IF_FALSE, 0x0000066C\r\n    PUSH, __52_local_var_VRCUdonCommonInterfacesIUdonEventReceiver[]\r\n   
+    PUSH, __54_local_var_SystemInt32\r\n    PUSH, __55_local_var_SystemObject\r\n   
+    EXTERN, \"SystemArray.__GetValue__SystemInt32__SystemObject\"\r\n    PUSH, __55_local_var_SystemObject\r\n   
+    PUSH, _arg_enable__SetCyanTriggerComponentActive\r\n    EXTERN, \"VRCUdonCommonInterfacesIUdonEventReceiver.__set_enabled__SystemBoolean__SystemVoid\"\r\n   
+    JUMP, 0x000005BC\r\n    PUSH, __0_ra_SystemUInt32\r\n    COPY\r\n    JUMP_INDIRECT,
+    __0_ra_SystemUInt32\r\n\r\n.code_end\r\n"
+  assemblyError: 
+  triggerHash: 2477DE34DA3D7FADE8DAF3916BAC61EF
+  shouldBeNetworked: 0
+  warningMessages: []
+  errorMessages: []
+  ctDataInstance:
+    version: 6
+    updateOrder: 0
+    autoSetSyncMode: 1
+    programSyncMode: 2
+    programName: 
+    events:
+    - name: _SetCyanTriggerComponentActive
+      eventId: 162216ae-44ac-4f41-8342-20e56d51d910
+      eventInstance:
+        actionType:
+          directEvent: Event_Custom
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: 
+          variableID: 
+          data:
+            objEncoded: 
+            unityObjects: []
+        multiInput:
+        - isVariable: 1
+          name: gameObject
+          variableID: 0b286d35-ab3f-4352-9a66-e1f047572e8b
+          data:
+            objEncoded: Ai8AAAAAARwAAABTAHkAcwB0AGUAbQAuAFIAdQBuAHQAaQBtAGUAVAB5AHAAZQAsACAAbQBzAGMAbwByAGwAaQBiAAAAAAAoAS4AAABVAG4AaQB0AHkARQBuAGcAaQBuAGUALgBHAGEAbQBlAE8AYgBqAGUAYwB0ACwAIABVAG4AaQB0AHkARQBuAGcAaQBuAGUALgBDAG8AcgBlAE0AbwBkAHUAbABlAAU=
+            unityObjects: []
+        - isVariable: 1
+          name: expectedProgramName
+          variableID: 10fb0546-15ba-4aae-8eb8-0eb055400998
+          data:
+            objEncoded: Ai8AAAAAARwAAABTAHkAcwB0AGUAbQAuAFIAdQBuAHQAaQBtAGUAVAB5AHAAZQAsACAAbQBzAGMAbwByAGwAaQBiAAAAAAAoARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIABQ==
+            unityObjects: []
+        - isVariable: 1
+          name: enable
+          variableID: da467f1c-98f7-43ba-ba8b-eb76bf23d189
+          data:
+            objEncoded: Ai8AAAAAARwAAABTAHkAcwB0AGUAbQAuAFIAdQBuAHQAaQBtAGUAVAB5AHAAZQAsACAAbQBzAGMAbwByAGwAaQBiAAAAAAAoARgAAABTAHkAcwB0AGUAbQAuAEIAbwBvAGwAZQBhAG4ALAAgAG0AcwBjAG8AcgBsAGkAYgAF
+            unityObjects: []
+        expanded: 1
+        comment:
+          comment: 
+      actionInstances:
+      - actionType:
+          directEvent: 
+          guid: caa8df78-8993-4182-a49e-987309190af5
+        inputs:
+        - isVariable: 1
+          name: gameObject
+          variableID: 0b286d35-ab3f-4352-9a66-e1f047572e8b
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        - isVariable: 1
+          name: expectedProgramName
+          variableID: 10fb0546-15ba-4aae-8eb8-0eb055400998
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBAAAAAAU=
+            unityObjects: []
+        - isVariable: 1
+          name: 
+          variableID: f3b048de-203d-410b-81dc-3da1e45252ef
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBDAAAAGMAeQBhAG4AVAByAGkAZwBnAGUAcgBzAAU=
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: CyanTriggerSpecial_ForEach
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: cyanTriggers
+          variableID: f3b048de-203d-410b-81dc-3da1e45252ef
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        - isVariable: 1
+          name: 
+          variableID: 5e10e69d-dfa1-4728-9b94-e80534fa1ba7
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBBQAAAGkAbgBkAGUAeAAF
+            unityObjects: []
+        - isVariable: 1
+          name: 
+          variableID: 2a1c0fdb-097a-4c50-af9c-57744f5df7b2
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBCwAAAGMAeQBhAG4AVAByAGkAZwBnAGUAcgAF
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: VRCUdonCommonInterfacesIUdonEventReceiver.__set_enabled__SystemBoolean__SystemVoid
+          guid: 
+        inputs:
+        - isVariable: 0
+          name: 
+          variableID: 
+          data:
+            objEncoded: 
+            unityObjects: []
+        - isVariable: 1
+          name: enable
+          variableID: da467f1c-98f7-43ba-ba8b-eb76bf23d189
+          data:
+            objEncoded: Ai8AAAAAARgAAABTAHkAcwB0AGUAbQAuAEIAbwBvAGwAZQBhAG4ALAAgAG0AcwBjAG8AcgBsAGkAYgAAAAAALAAF
+            unityObjects: []
+        multiInput:
+        - isVariable: 1
+          name: cyanTrigger
+          variableID: 2a1c0fdb-097a-4c50-af9c-57744f5df7b2
+          data:
+            objEncoded: 
+            unityObjects: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: CyanTriggerSpecial_BlockEnd
+          guid: 
+        inputs: []
+        multiInput: []
+        expanded: 1
+        comment:
+          comment: 
+      eventOptions:
+        userGate: 0
+        userGateExtraData: []
+        broadcast: 0
+        delay: 0
+        replay: 0
+      expanded: 1
+    variables: []
+    comment:
+      comment: 
+    expandVariables: 0
+    expandOtherSettings: 1
+    expandSyncSection: 0
+    ignoreEventWarnings: 1
+  publicVariableReferences:
+    actionDataIndices: []
+    userVariableNames: []
+    userVariableTypes: []
+  ignoreOdinData: 1
+  serializationDataOdin:
+    SerializedFormat: 0
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes: []
+  allowEditingInInspector: 0
+  expandInInspector: 0
+  isLocked: 1

@@ -1,0 +1,47 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 61d0ad128b95568438c70898dc9e600c, type: 3}
+  m_Name: DataCacheIntSetActions
+  m_EditorClassIdentifier: 
+  autoAddPriority: 0
+  exposedActions:
+  - guid: 52789e1a-7daa-49b1-990d-5c5d1115e668
+    actionNamespace: DataCache
+    actionVariantName: IntSet
+    description: Set a Int value for a given key that can be retrieved on any CyanTrigger
+    variables:
+    - type:
+        typeDef: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      udonName: key
+      displayName: key
+      description: 
+      defaultValue:
+        objEncoded: 
+        unityObjects: []
+      variableType: 3
+    - type:
+        typeDef: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      udonName: value
+      displayName: value
+      description: 
+      defaultValue:
+        objEncoded: 
+        unityObjects: []
+      variableType: 3
+    baseEventName: Event_Custom
+    eventEntry: _Set
+    autoAdd: 0
+  isMultiInstance: 0
+  defaultNamespace: DataCache
+  udonProgramAsset: {fileID: 11400000, guid: 003b88bc34f29bf4f92cc19ea072d353, type: 2}
+  assetGuid: 003b88bc34f29bf4f92cc19ea072d353
+  thisGuid: 61dea32523ff77a47bcf21782df666b1

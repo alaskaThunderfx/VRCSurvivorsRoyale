@@ -1,0 +1,345 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a31a3a978bd0448580d4ef9f3d6d95bf, type: 3}
+  m_Name: TeleportPlayerRandomRadius
+  m_EditorClassIdentifier: 
+  serializedUdonProgramAsset: {fileID: 11400000, guid: c3000426a08c9864dad199c9d6e286e2,
+    type: 2}
+  udonAssembly: ".data_start\r\n  .export __CyanTrigger_ProgramName_SystemString\r\n 
+    .export target\r\n  .export randomRadius\r\n  __CyanTrigger_ProgramName_SystemString:
+    %SystemString, null\r\n  __CyanTrigger_ProgramHash_SystemString: %SystemString,
+    null\r\n  __0_ra_SystemUInt32: %SystemUInt32, null\r\n  __1_ea_SystemUInt32:
+    %SystemUInt32, null\r\n  _this_local_player: %VRCSDKBaseVRCPlayerApi, null\r\n 
+    target: %UnityEngineTransform, null\r\n  randomRadius: %SystemSingle, null\r\n 
+    __11_local_var_UnityEngineVector2: %UnityEngineVector2, null\r\n  __12_local_var_UnityEngineVector3:
+    %UnityEngineVector3, null\r\n  __13_local_var_UnityEngineQuaternion: %UnityEngineQuaternion,
+    null\r\n  __14_local_var_SystemSingle: %SystemSingle, null\r\n  __15_local_var_SystemSingle:
+    %SystemSingle, null\r\n  __16_local_var_UnityEngineVector3: %UnityEngineVector3,
+    null\r\n  __17_ref_SystemSingle: %SystemSingle, null\r\n  __18_lp_init_SystemBoolean_ct_intern:
+    %SystemBoolean, null\r\n  __19_const_SystemBoolean: %SystemBoolean, null\r\n.data_end\r\n\n.code_start\r\n 
+    .export _TeleportTo\r\n  _TeleportTo:\r\n    PUSH, __1_ea_SystemUInt32\r\n   
+    PUSH, __18_lp_init_SystemBoolean_ct_intern\r\n    JUMP_IF_FALSE, 0x0000003C\r\n   
+    PUSH, __19_const_SystemBoolean\r\n    PUSH, __18_lp_init_SystemBoolean_ct_intern\r\n   
+    COPY\r\n    PUSH, _this_local_player\r\n    EXTERN, \"VRCSDKBaseNetworking.__get_LocalPlayer__VRCSDKBaseVRCPlayerApi\"\r\n   
+    PUSH, __11_local_var_UnityEngineVector2\r\n    EXTERN, \"UnityEngineRandom.__get_insideUnitCircle__UnityEngineVector2\"\r\n   
+    PUSH, __11_local_var_UnityEngineVector2\r\n    PUSH, randomRadius\r\n    PUSH,
+    __11_local_var_UnityEngineVector2\r\n    EXTERN, \"UnityEngineVector2.__op_Multiply__UnityEngineVector2_SystemSingle__UnityEngineVector2\"\r\n   
+    PUSH, target\r\n    PUSH, __12_local_var_UnityEngineVector3\r\n    EXTERN, \"UnityEngineTransform.__get_position__UnityEngineVector3\"\r\n   
+    PUSH, target\r\n    PUSH, __13_local_var_UnityEngineQuaternion\r\n    EXTERN,
+    \"UnityEngineTransform.__get_rotation__UnityEngineQuaternion\"\r\n    PUSH, __11_local_var_UnityEngineVector2\r\n   
+    PUSH, __14_local_var_SystemSingle\r\n    EXTERN, \"UnityEngineVector2.__get_x__SystemSingle\"\r\n   
+    PUSH, __11_local_var_UnityEngineVector2\r\n    PUSH, __15_local_var_SystemSingle\r\n   
+    EXTERN, \"UnityEngineVector2.__get_y__SystemSingle\"\r\n    PUSH, __14_local_var_SystemSingle\r\n   
+    PUSH, __17_ref_SystemSingle\r\n    PUSH, __15_local_var_SystemSingle\r\n    PUSH,
+    __16_local_var_UnityEngineVector3\r\n    EXTERN, \"UnityEngineVector3.__ctor__SystemSingle_SystemSingle_SystemSingle__UnityEngineVector3\"\r\n   
+    PUSH, __12_local_var_UnityEngineVector3\r\n    PUSH, __16_local_var_UnityEngineVector3\r\n   
+    PUSH, __12_local_var_UnityEngineVector3\r\n    EXTERN, \"UnityEngineVector3.__op_Addition__UnityEngineVector3_UnityEngineVector3__UnityEngineVector3\"\r\n   
+    PUSH, _this_local_player\r\n    PUSH, __12_local_var_UnityEngineVector3\r\n   
+    PUSH, __13_local_var_UnityEngineQuaternion\r\n    EXTERN, \"VRCSDKBaseVRCPlayerApi.__TeleportTo__UnityEngineVector3_UnityEngineQuaternion__SystemVoid\"\r\n   
+    PUSH, __0_ra_SystemUInt32\r\n    COPY\r\n    JUMP_INDIRECT, __0_ra_SystemUInt32\r\n\r\n.code_end\r\n"
+  assemblyError: 
+  triggerHash: 40E2B246B0B5B6EEE03E8E617837733A
+  shouldBeNetworked: 0
+  warningMessages: []
+  errorMessages: []
+  ctDataInstance:
+    version: 6
+    updateOrder: 0
+    autoSetSyncMode: 1
+    programSyncMode: 2
+    programName: 
+    events:
+    - name: _TeleportTo
+      eventId: 5d8d79bf-7e00-4690-b7c0-5e579b261da3
+      eventInstance:
+        actionType:
+          directEvent: Event_Custom
+          guid: 
+        inputs: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      actionInstances:
+      - actionType:
+          directEvent: UnityEngineRandom.__get_insideUnitCircle__UnityEngineVector2
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: 
+          variableID: 9cfe969c-307e-46ed-9e19-6ce8cf8aba33
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBCgAAAG8AZgBmAHMAZQB0AFYAZQBjADIABQ==
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: UnityEngineVector2.__op_Multiply__UnityEngineVector2_SystemSingle__UnityEngineVector2
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: offsetVec2
+          variableID: 9cfe969c-307e-46ed-9e19-6ce8cf8aba33
+          data:
+            objEncoded: Ai8AAAAAASsAAABVAG4AaQB0AHkARQBuAGcAaQBuAGUALgBWAGUAYwB0AG8AcgAyACwAIABVAG4AaQB0AHkARQBuAGcAaQBuAGUALgBDAG8AcgBlAE0AbwBkAHUAbABlAAAAAAAgAAAAACAAAAAABQ==
+            unityObjects: []
+        - isVariable: 1
+          name: randomRadius
+          variableID: fabf36f6-1c21-46ef-a1d2-754f333667a5
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAaQBuAGcAbABlACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACAAAAAABQ==
+            unityObjects: []
+        - isVariable: 1
+          name: offsetVec2
+          variableID: 9cfe969c-307e-46ed-9e19-6ce8cf8aba33
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: UnityEngineTransform.__get_position__UnityEngineVector3
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: target
+          variableID: b682f5e3-e6d0-4910-9306-6013882e75df
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        - isVariable: 1
+          name: 
+          variableID: 6ff55171-274d-4f7d-b26a-90af75e10345
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBCAAAAHAAbwBzAGkAdABpAG8AbgAF
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: UnityEngineTransform.__get_rotation__UnityEngineQuaternion
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: target
+          variableID: b682f5e3-e6d0-4910-9306-6013882e75df
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        - isVariable: 1
+          name: 
+          variableID: 69d18708-3d53-4ed8-a90f-a93ce86c1f05
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBCAAAAHIAbwB0AGEAdABpAG8AbgAF
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: UnityEngineVector2.__get_x__SystemSingle
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: offsetVec2
+          variableID: 9cfe969c-307e-46ed-9e19-6ce8cf8aba33
+          data:
+            objEncoded: Ai8AAAAAASsAAABVAG4AaQB0AHkARQBuAGcAaQBuAGUALgBWAGUAYwB0AG8AcgAyACwAIABVAG4AaQB0AHkARQBuAGcAaQBuAGUALgBDAG8AcgBlAE0AbwBkAHUAbABlAAAAAAAgAAAAACAAAAAABQ==
+            unityObjects: []
+        - isVariable: 1
+          name: 
+          variableID: 2cae72e7-72a4-4107-88a9-76efcf5e1c86
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBBwAAAHgATwBmAGYAcwBlAHQABQ==
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: UnityEngineVector2.__get_y__SystemSingle
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: offsetVec2
+          variableID: 9cfe969c-307e-46ed-9e19-6ce8cf8aba33
+          data:
+            objEncoded: Ai8AAAAAASsAAABVAG4AaQB0AHkARQBuAGcAaQBuAGUALgBWAGUAYwB0AG8AcgAyACwAIABVAG4AaQB0AHkARQBuAGcAaQBuAGUALgBDAG8AcgBlAE0AbwBkAHUAbABlAAAAAAAgAAAAACAAAAAABQ==
+            unityObjects: []
+        - isVariable: 1
+          name: 
+          variableID: 1e879fff-f1a0-4070-b74f-eb7b85f98eac
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBBwAAAHoATwBmAGYAcwBlAHQABQ==
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: UnityEngineVector3.__ctor__SystemSingle_SystemSingle_SystemSingle__UnityEngineVector3
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: xOffset
+          variableID: 2cae72e7-72a4-4107-88a9-76efcf5e1c86
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAaQBuAGcAbABlACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACAAAAAABQ==
+            unityObjects: []
+        - isVariable: 0
+          name: 
+          variableID: 
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAaQBuAGcAbABlACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACAAAAAABQ==
+            unityObjects: []
+        - isVariable: 1
+          name: zOffset
+          variableID: 1e879fff-f1a0-4070-b74f-eb7b85f98eac
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAaQBuAGcAbABlACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACAAAAAABQ==
+            unityObjects: []
+        - isVariable: 1
+          name: 
+          variableID: 4ac34bf0-0634-4c18-ad5f-c4849a7c4443
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBCgAAAG8AZgBmAHMAZQB0AFYAZQBjADMABQ==
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: UnityEngineVector3.__op_Addition__UnityEngineVector3_UnityEngineVector3__UnityEngineVector3
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: position
+          variableID: 6ff55171-274d-4f7d-b26a-90af75e10345
+          data:
+            objEncoded: Ai8AAAAAASsAAABVAG4AaQB0AHkARQBuAGcAaQBuAGUALgBWAGUAYwB0AG8AcgAzACwAIABVAG4AaQB0AHkARQBuAGcAaQBuAGUALgBDAG8AcgBlAE0AbwBkAHUAbABlAAAAAAAgAAAAACAAAAAAIAAAAAAF
+            unityObjects: []
+        - isVariable: 1
+          name: offsetVec3
+          variableID: 4ac34bf0-0634-4c18-ad5f-c4849a7c4443
+          data:
+            objEncoded: Ai8AAAAAASsAAABVAG4AaQB0AHkARQBuAGcAaQBuAGUALgBWAGUAYwB0AG8AcgAzACwAIABVAG4AaQB0AHkARQBuAGcAaQBuAGUALgBDAG8AcgBlAE0AbwBkAHUAbABlAAAAAAAgAAAAACAAAAAAIAAAAAAF
+            unityObjects: []
+        - isVariable: 1
+          name: position
+          variableID: 6ff55171-274d-4f7d-b26a-90af75e10345
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: VRCSDKBaseVRCPlayerApi.__TeleportTo__UnityEngineVector3_UnityEngineQuaternion__SystemVoid
+          guid: 
+        inputs:
+        - isVariable: 0
+          name: 
+          variableID: 
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        - isVariable: 1
+          name: position
+          variableID: 6ff55171-274d-4f7d-b26a-90af75e10345
+          data:
+            objEncoded: Ai8AAAAAASsAAABVAG4AaQB0AHkARQBuAGcAaQBuAGUALgBWAGUAYwB0AG8AcgAzACwAIABVAG4AaQB0AHkARQBuAGcAaQBuAGUALgBDAG8AcgBlAE0AbwBkAHUAbABlAAAAAAAgAAAAACAAAAAAIAAAAAAF
+            unityObjects: []
+        - isVariable: 1
+          name: rotation
+          variableID: 69d18708-3d53-4ed8-a90f-a93ce86c1f05
+          data:
+            objEncoded: Ai8AAAAAAS4AAABVAG4AaQB0AHkARQBuAGcAaQBuAGUALgBRAHUAYQB0AGUAcgBuAGkAbwBuACwAIABVAG4AaQB0AHkARQBuAGcAaQBuAGUALgBDAG8AcgBlAE0AbwBkAHUAbABlAAAAAAAgAAAAACAAAAAAIAAAAAAgAAAAAAU=
+            unityObjects: []
+        multiInput:
+        - isVariable: 1
+          name: Local Player
+          variableID: _this_local_player
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        expanded: 0
+        comment:
+          comment: 
+      eventOptions:
+        userGate: 0
+        userGateExtraData: []
+        broadcast: 0
+        delay: 0
+        replay: 0
+      expanded: 1
+    variables:
+    - isVariable: 0
+      name: target
+      variableID: b682f5e3-e6d0-4910-9306-6013882e75df
+      data:
+        objEncoded: Lg==
+        unityObjects: []
+      type:
+        typeDef: UnityEngine.Transform, UnityEngine.CoreModule, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
+      sync: 0
+      showInInspector: 1
+      typeInfo: 0
+      comment:
+        comment: 
+    - isVariable: 0
+      name: randomRadius
+      variableID: fabf36f6-1c21-46ef-a1d2-754f333667a5
+      data:
+        objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAaQBuAGcAbABlACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACAAAAAABQ==
+        unityObjects: []
+      type:
+        typeDef: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      sync: 0
+      showInInspector: 1
+      typeInfo: 0
+      comment:
+        comment: 
+    comment:
+      comment: 
+    expandVariables: 1
+    expandOtherSettings: 1
+    expandSyncSection: 0
+    ignoreEventWarnings: 1
+  publicVariableReferences:
+    actionDataIndices: []
+    userVariableNames:
+    - target
+    - randomRadius
+    userVariableTypes:
+    - typeDef: UnityEngine.Transform, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+    - typeDef: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+  ignoreOdinData: 1
+  serializationDataOdin:
+    SerializedFormat: 0
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes: []
+  allowEditingInInspector: 0
+  expandInInspector: 0
+  isLocked: 1

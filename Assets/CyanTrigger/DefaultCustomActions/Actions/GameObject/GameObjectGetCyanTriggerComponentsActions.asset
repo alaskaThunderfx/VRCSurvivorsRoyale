@@ -1,0 +1,171 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 61d0ad128b95568438c70898dc9e600c, type: 3}
+  m_Name: GameObjectGetCyanTriggerComponentsActions
+  m_EditorClassIdentifier: 
+  autoAddPriority: 0
+  exposedActions:
+  - guid: caa8df78-8993-4182-a49e-987309190af5
+    actionNamespace: GameObject
+    actionVariantName: GetCyanTriggerComponents
+    description: Get all CyanTrigger and CyanTriggerAsset with the specified program
+      name on the provided GameObject
+    variables:
+    - type:
+        typeDef: UnityEngine.GameObject, UnityEngine.CoreModule, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
+      udonName: _arg_gameObject__GetCyanTriggerComponents
+      displayName: gameObject
+      description: 
+      defaultValue:
+        objEncoded: 
+        unityObjects: []
+      variableType: 3
+    - type:
+        typeDef: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      udonName: _arg_expectedProgramName__GetCyanTriggerComponents
+      displayName: expectedProgramName
+      description: 
+      defaultValue:
+        objEncoded: 
+        unityObjects: []
+      variableType: 3
+    - type:
+        typeDef: VRC.Udon.Common.Interfaces.IUdonEventReceiver[], VRC.Udon.Common,
+          Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+      udonName: _arg_cyanTriggers__GetCyanTriggerComponents
+      displayName: cyanTriggers
+      description: 
+      defaultValue:
+        objEncoded: 
+        unityObjects: []
+      variableType: 6
+    baseEventName: Event_Custom
+    eventEntry: _GetCyanTriggerComponents
+    autoAdd: 0
+  - guid: 708f0e12-3c79-4e21-ba3f-c27d9a86051d
+    actionNamespace: GameObject
+    actionVariantName: GetCyanTriggerComponents
+    description: Get all CyanTrigger and CyanTriggerAsset on the provided GameObject
+    variables:
+    - type:
+        typeDef: UnityEngine.GameObject, UnityEngine.CoreModule, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
+      udonName: _arg_gameObject__GetCyanTriggerComponents
+      displayName: gameObject
+      description: 
+      defaultValue:
+        objEncoded: 
+        unityObjects: []
+      variableType: 3
+    - type:
+        typeDef: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      udonName: _arg_expectedProgramName__GetCyanTriggerComponents
+      displayName: expectedProgramName
+      description: 
+      defaultValue:
+        objEncoded: 
+        unityObjects: []
+      variableType: 9
+    - type:
+        typeDef: VRC.Udon.Common.Interfaces.IUdonEventReceiver[], VRC.Udon.Common,
+          Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+      udonName: _arg_cyanTriggers__GetCyanTriggerComponents
+      displayName: cyanTriggers
+      description: 
+      defaultValue:
+        objEncoded: 
+        unityObjects: []
+      variableType: 6
+    baseEventName: Event_Custom
+    eventEntry: _GetCyanTriggerComponents
+    autoAdd: 0
+  - guid: 394fcabb-41bc-44a3-8828-ecba958b7248
+    actionNamespace: Component
+    actionVariantName: GetCyanTriggerComponents
+    description: Get all CyanTrigger and CyanTriggerAsset with the specified program
+      name on the provided GameObject
+    variables:
+    - type:
+        typeDef: UnityEngine.Component, UnityEngine.CoreModule, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
+      udonName: _arg_component__ComponentGetCyanTriggerComponents
+      displayName: component
+      description: 
+      defaultValue:
+        objEncoded: 
+        unityObjects: []
+      variableType: 3
+    - type:
+        typeDef: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      udonName: _arg_expectedProgramName__ComponentGetCyanTriggerComponents
+      displayName: expectedProgramName
+      description: 
+      defaultValue:
+        objEncoded: 
+        unityObjects: []
+      variableType: 3
+    - type:
+        typeDef: VRC.Udon.Common.Interfaces.IUdonEventReceiver[], VRC.Udon.Common,
+          Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+      udonName: _arg_cyanTriggers__ComponentGetCyanTriggerComponents
+      displayName: cyanTriggers
+      description: 
+      defaultValue:
+        objEncoded: 
+        unityObjects: []
+      variableType: 6
+    baseEventName: Event_Custom
+    eventEntry: _ComponentGetCyanTriggerComponents
+    autoAdd: 0
+  - guid: b5b5c897-5d87-47e7-a107-d1882b396fa2
+    actionNamespace: Component
+    actionVariantName: GetCyanTriggerComponents
+    description: Get all CyanTrigger and CyanTriggerAsset on the provided GameObject
+    variables:
+    - type:
+        typeDef: UnityEngine.Component, UnityEngine.CoreModule, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
+      udonName: _arg_component__ComponentGetCyanTriggerComponents
+      displayName: component
+      description: 
+      defaultValue:
+        objEncoded: 
+        unityObjects: []
+      variableType: 3
+    - type:
+        typeDef: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      udonName: _arg_expectedProgramName__ComponentGetCyanTriggerComponents
+      displayName: expectedProgramName
+      description: 
+      defaultValue:
+        objEncoded: 
+        unityObjects: []
+      variableType: 9
+    - type:
+        typeDef: VRC.Udon.Common.Interfaces.IUdonEventReceiver[], VRC.Udon.Common,
+          Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+      udonName: _arg_cyanTriggers__ComponentGetCyanTriggerComponents
+      displayName: cyanTriggers
+      description: 
+      defaultValue:
+        objEncoded: Ai8AAAAAAUAAAABWAFIAQwAuAFUAZABvAG4ALgBDAG8AbQBtAG8AbgAuAEkAbgB0AGUAcgBmAGEAYwBlAHMALgBJAFUAZABvAG4ARQB2AGUAbgB0AFIAZQBjAGUAaQB2AGUAcgBbAF0ALAAgAFYAUgBDAC4AVQBkAG8AbgAuAEMAbwBtAG0AbwBuAAAAAAAGAAAAAAAAAAAHBQ==
+        unityObjects: []
+      variableType: 6
+    baseEventName: Event_Custom
+    eventEntry: _ComponentGetCyanTriggerComponents
+    autoAdd: 0
+  isMultiInstance: 0
+  defaultNamespace: GameObject
+  udonProgramAsset: {fileID: 11400000, guid: 9d45f4388604b6f4eb094bc7141f3dc2, type: 2}
+  assetGuid: 9d45f4388604b6f4eb094bc7141f3dc2
+  thisGuid: 96342b455359a2849afe24257bbd6efe

@@ -1,0 +1,1752 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a31a3a978bd0448580d4ef9f3d6d95bf, type: 3}
+  m_Name: FadeControllerCalls
+  m_EditorClassIdentifier: 
+  serializedUdonProgramAsset: {fileID: 11400000, guid: 3145fb384a4ab5b44b63cabdd7904595,
+    type: 2}
+  udonAssembly: ".data_start\r\n  .export __CyanTrigger_ProgramName_SystemString\r\n 
+    .export fadeController\r\n  __CyanTrigger_ProgramName_SystemString: %SystemString,
+    null\r\n  __CyanTrigger_ProgramHash_SystemString: %SystemString, null\r\n  __0_ra_SystemUInt32:
+    %SystemUInt32, null\r\n  __1_ea_SystemUInt32: %SystemUInt32, null\r\n  __null:
+    %SystemObject, null\r\n  _this_gameobject: %UnityEngineGameObject, this\r\n 
+    _this_udonbehaviour: %VRCUdonUdonBehaviour, this\r\n  _this_local_player: %VRCSDKBaseVRCPlayerApi,
+    null\r\n  fadeController: %VRCUdonUdonBehaviour, null\r\n  _arg_color__SetColor:
+    %UnityEngineColor, null\r\n  _arg_immobilizePlayer__SetImmobilizePlayer: %SystemBoolean,
+    null\r\n  _arg_onFadeInEvent__StartFadeWithEvent: %SystemString, null\r\n  _arg_onFadeInEvent__StartFadeWithEventAndDuration:
+    %SystemString, null\r\n  _arg_fadeInDuration__StartFadeWithEventAndDuration:
+    %SystemSingle, null\r\n  _arg_onFadeOutEvent__EndFadeWithEvent: %SystemString,
+    null\r\n  _arg_onFadeEndEvent__EndFadeWithEventAndDuration: %SystemString, null\r\n 
+    _arg_fadeEndDuration__EndFadeWithEventAndDuration: %SystemSingle, null\r\n  _arg_onFadeInEvent__FadeInAndOutWithEvents:
+    %SystemString, null\r\n  _arg_onFadeEndEvent__FadeInAndOutWithEvents: %SystemString,
+    null\r\n  _arg_onFadeInEvent__FadeInAndOutWithEventsAndDurations: %SystemString,
+    null\r\n  _arg_fadeInDuration__FadeInAndOutWithEventsAndDurations: %SystemSingle,
+    null\r\n  _arg_onFadeEndEvent__FadeInAndOutWithEventsAndDurations: %SystemString,
+    null\r\n  _arg_fadeEndDuration__FadeInAndOutWithEventsAndDurations: %SystemSingle,
+    null\r\n  _arg_onFadeInEvent__FadeInAndOutWithEventsDurationsAndHold: %SystemString,
+    null\r\n  _arg_fadeInDuration__FadeInAndOutWithEventsDurationsAndHold: %SystemSingle,
+    null\r\n  _arg_onFadeHoldEvent__FadeInAndOutWithEventsDurationsAndHold: %SystemString,
+    null\r\n  _arg_fadeHoldDuration__FadeInAndOutWithEventsDurationsAndHold: %SystemSingle,
+    null\r\n  _arg_onFadeEndEvent__FadeInAndOutWithEventsDurationsAndHold: %SystemString,
+    null\r\n  _arg_fadeEndDuration__FadeInAndOutWithEventsDurationsAndHold: %SystemSingle,
+    null\r\n  _arg_isFading__IsFading: %SystemBoolean, null\r\n  __ag_0_0_SystemBoolean:
+    %SystemBoolean, null\r\n  __ag_0_1_UnityEngineComponent: %UnityEngineComponent,
+    null\r\n  __ag_0_2_SystemInt32: %SystemInt32, null\r\n  __ag_0_3_SystemString:
+    %SystemString, null\r\n  __ag_0_4_SystemBoolean: %SystemBoolean, null\r\n  __ag_0_5_SystemInt32:
+    %SystemInt32, null\r\n  __ag_0_6_SystemString: %SystemString, null\r\n  __ag_0_7_SystemString:
+    %SystemString, null\r\n  __ag_0_8_SystemBoolean: %SystemBoolean, null\r\n  __ag_0_9_UnityEngineGameObject:
+    %UnityEngineGameObject, null\r\n  __ag_0_10_SystemBoolean: %SystemBoolean, null\r\n 
+    __ag_0_11_SystemBoolean: %SystemBoolean, null\r\n  __ag_0_12_SystemString: %SystemString,
+    null\r\n  __ag_0_13_SystemBoolean: %SystemBoolean, null\r\n  __ag_0_14_SystemString:
+    %SystemString, null\r\n  __ag_0_15___jump_return_SystemUInt32: %SystemUInt32,
+    null\r\n  __ag_0_16_SystemString: %SystemString, null\r\n  __ag_0_17_SystemString:
+    %SystemString, null\r\n  __ag_0_18_SystemString: %SystemString, null\r\n  __ag_0_19_SystemBoolean:
+    %SystemBoolean, null\r\n  __ag_0_20_SystemBoolean: %SystemBoolean, null\r\n 
+    __ag_0_21_SystemString: %SystemString, null\r\n  __ag_0_22_SystemBoolean: %SystemBoolean,
+    null\r\n  __ag_0_23_SystemString: %SystemString, null\r\n  __ag_0_24_SystemString:
+    %SystemString, null\r\n  __ag_0_25_SystemType: %SystemType, null\r\n  __ag_0_26_SystemString:
+    %SystemString, null\r\n  __ag_0_27_SystemString: %SystemString, null\r\n  __ag_0_28_SystemString:
+    %SystemString, null\r\n  __ag_0_29_SystemType: %SystemType, null\r\n  __ag_0_30___jump_return_SystemUInt32:
+    %SystemUInt32, null\r\n  __ag_0_31___jump_return_SystemUInt32: %SystemUInt32,
+    null\r\n  __63_lp_init_SystemBoolean_ct_intern: %SystemBoolean, null\r\n  __ag_0_32_SystemType:
+    %SystemType, null\r\n  __ag_0_33_SystemString: %SystemString, null\r\n  __ag_0_34_SystemString:
+    %SystemString, null\r\n  __ag_0_35_SystemString: %SystemString, null\r\n  __ag_0_36_SystemString:
+    %SystemString, null\r\n  __ag_0_37_SystemBoolean: %SystemBoolean, null\r\n  __ag_0_38_SystemString:
+    %SystemString, null\r\n  __ag_0_39_SystemBoolean: %SystemBoolean, null\r\n  __ag_0_40_SystemString:
+    %SystemString, null\r\n  __ag_0_41_SystemBoolean: %SystemBoolean, null\r\n  __ag_0_42_SystemType:
+    %SystemType, null\r\n  __ag_0_43_SystemInt32: %SystemInt32, null\r\n  __ag_0_44_SystemBoolean:
+    %SystemBoolean, null\r\n  __ag_0_45_SystemBoolean: %SystemBoolean, null\r\n 
+    __ag_0_46_SystemString: %SystemString, null\r\n  __ag_0_47_SystemString: %SystemString,
+    null\r\n  __ag_0_48_SystemBoolean: %SystemBoolean, null\r\n  __ag_0_49_VRCUdonUdonBehaviour:
+    %VRCUdonUdonBehaviour, null\r\n  __ag_0_50_SystemBoolean: %SystemBoolean, null\r\n 
+    __ag_0_51_SystemString: %SystemString, null\r\n  __ag_0_52_SystemString: %SystemString,
+    null\r\n  __ag_0_53_SystemString: %SystemString, null\r\n  __ag_0_54_UnityEngineComponent[]:
+    %UnityEngineComponentArray, null\r\n  __ag_0_55_SystemString: %SystemString,
+    null\r\n  __ag_0_56_SystemBoolean: %SystemBoolean, null\r\n  __ag_0_57_SystemBoolean:
+    %SystemBoolean, null\r\n  __ag_0_58_SystemString: %SystemString, null\r\n  __ag_0_59_SystemBoolean:
+    %SystemBoolean, null\r\n  __ag_1_0_SystemString: %SystemString, null\r\n  __93_local_var_SystemBoolean:
+    %SystemBoolean, null\r\n  __94_const_SystemBoolean: %SystemBoolean, null\r\n 
+    __95_local_var_SystemBoolean: %SystemBoolean, null\r\n  __96_local_var_SystemBoolean:
+    %SystemBoolean, null\r\n  __97_ref_SystemString: %SystemString, null\r\n  __98___jump_return_3_SystemUInt32:
+    %SystemUInt32, null\r\n  __99_ref_SystemString: %SystemString, null\r\n  __100___jump_return_4_SystemUInt32:
+    %SystemUInt32, null\r\n  __101_ref_SystemString: %SystemString, null\r\n  __102___jump_return_5_SystemUInt32:
+    %SystemUInt32, null\r\n  __103_ref_SystemString: %SystemString, null\r\n  __104_ref_SystemString:
+    %SystemString, null\r\n  __105___jump_return_6_SystemUInt32: %SystemUInt32, null\r\n 
+    __106_ref_SystemString: %SystemString, null\r\n  __107_ref_SystemString: %SystemString,
+    null\r\n  __108___jump_return_7_SystemUInt32: %SystemUInt32, null\r\n  __109_ref_SystemString:
+    %SystemString, null\r\n  __110_const_SystemString: %SystemString, null\r\n  __111_const_SystemString:
+    %SystemString, null\r\n  __112_ref_SystemString: %SystemString, null\r\n  __113___jump_return_8_SystemUInt32:
+    %SystemUInt32, null\r\n  __114_ref_SystemString: %SystemString, null\r\n  __115_const_SystemString:
+    %SystemString, null\r\n  __116_const_SystemString: %SystemString, null\r\n  __117_ref_SystemString:
+    %SystemString, null\r\n  __118___jump_return_9_SystemUInt32: %SystemUInt32, null\r\n 
+    __119_ref_SystemString: %SystemString, null\r\n  __120_const_SystemString: %SystemString,
+    null\r\n  __121_const_SystemString: %SystemString, null\r\n  __122_ref_SystemString:
+    %SystemString, null\r\n  __123___jump_return_10_SystemUInt32: %SystemUInt32,
+    null\r\n  __124_ref_SystemString: %SystemString, null\r\n  __125_const_SystemString:
+    %SystemString, null\r\n  __126_const_SystemString: %SystemString, null\r\n  __127_const_SystemString:
+    %SystemString, null\r\n  __128_ref_SystemString: %SystemString, null\r\n  __129___jump_return_11_SystemUInt32:
+    %SystemUInt32, null\r\n  __130_ref_SystemString: %SystemString, null\r\n  __131_const_SystemString:
+    %SystemString, null\r\n  __132_const_SystemString: %SystemString, null\r\n  __133_const_SystemString:
+    %SystemString, null\r\n  __134_ref_SystemString: %SystemString, null\r\n  __135___jump_return_12_SystemUInt32:
+    %SystemUInt32, null\r\n  __136_ref_SystemString: %SystemString, null\r\n  __137_const_SystemString:
+    %SystemString, null\r\n  __138_const_SystemString: %SystemString, null\r\n  __139_const_SystemString:
+    %SystemString, null\r\n  __140_const_SystemString: %SystemString, null\r\n  __141_const_SystemString:
+    %SystemString, null\r\n  __142_ref_SystemString: %SystemString, null\r\n  __143___jump_return_13_SystemUInt32:
+    %SystemUInt32, null\r\n  __144_ref_SystemString: %SystemString, null\r\n  __145_const_SystemString:
+    %SystemString, null\r\n  __146_const_SystemString: %SystemString, null\r\n  __147_const_SystemString:
+    %SystemString, null\r\n  __148_const_SystemString: %SystemString, null\r\n  __149_const_SystemString:
+    %SystemString, null\r\n  __150_const_SystemString: %SystemString, null\r\n  __151_const_SystemString:
+    %SystemString, null\r\n  __152_ref_SystemString: %SystemString, null\r\n  __153___jump_return_14_SystemUInt32:
+    %SystemUInt32, null\r\n  __154_ref_SystemString: %SystemString, null\r\n  __155_const_SystemString:
+    %SystemString, null\r\n.data_end\r\n\n.code_start\r\n  .export __ag_0_0\r\n 
+    __ag_0_0:\r\n    PUSH, __1_ea_SystemUInt32\r\n    PUSH, __63_lp_init_SystemBoolean_ct_intern\r\n   
+    JUMP_IF_FALSE, 0x0000003C\r\n    PUSH, __ag_0_59_SystemBoolean\r\n    PUSH, __63_lp_init_SystemBoolean_ct_intern\r\n   
+    COPY\r\n    PUSH, _this_local_player\r\n    EXTERN, \"VRCSDKBaseNetworking.__get_LocalPlayer__VRCSDKBaseVRCPlayerApi\"\r\n   
+    PUSH, __ag_0_28_SystemString\r\n    PUSH, __ag_0_35_SystemString\r\n    PUSH,
+    __ag_0_33_SystemString\r\n    PUSH, __ag_0_3_SystemString\r\n    EXTERN, \"SystemString.__Concat__SystemString_SystemString_SystemString__SystemString\"\r\n   
+    PUSH, _this_local_player\r\n    PUSH, __ag_0_3_SystemString\r\n    PUSH, __ag_0_38_SystemString\r\n   
+    EXTERN, \"VRCSDKBaseVRCPlayerApi.__GetPlayerTag__SystemString__SystemString\"\r\n   
+    PUSH, __ag_0_38_SystemString\r\n    PUSH, __ag_0_37_SystemBoolean\r\n    EXTERN,
+    \"SystemString.__IsNullOrEmpty__SystemString__SystemBoolean\"\r\n    PUSH, __ag_0_37_SystemBoolean\r\n   
+    PUSH, __ag_0_37_SystemBoolean\r\n    EXTERN, \"SystemBoolean.__op_UnaryNegation__SystemBoolean__SystemBoolean\"\r\n   
+    PUSH, __0_ra_SystemUInt32\r\n    COPY\r\n    JUMP_INDIRECT, __0_ra_SystemUInt32\r\n\r\n 
+    .export __ag_0_1\r\n  __ag_0_1:\r\n    PUSH, __1_ea_SystemUInt32\r\n    PUSH,
+    __ag_0_22_SystemBoolean\r\n    PUSH, __ag_0_11_SystemBoolean\r\n    COPY\r\n   
+    PUSH, __ag_0_32_SystemType\r\n    PUSH, __ag_0_50_SystemBoolean\r\n    EXTERN,
+    \"VRCSDKBaseUtilities.__IsValid__SystemObject__SystemBoolean\"\r\n    PUSH, __ag_0_50_SystemBoolean\r\n   
+    PUSH, __ag_0_11_SystemBoolean\r\n    EXTERN, \"SystemBoolean.__op_UnaryNegation__SystemBoolean__SystemBoolean\"\r\n   
+    PUSH, __ag_0_11_SystemBoolean\r\n    JUMP_IF_FALSE, 0x00000138\r\n    PUSH, __ag_0_25_SystemType\r\n   
+    PUSH, __ag_0_32_SystemType\r\n    COPY\r\n    PUSH, __ag_0_32_SystemType\r\n   
+    PUSH, __ag_0_47_SystemString\r\n    EXTERN, \"SystemType.__get_Name__SystemString\"\r\n   
+    PUSH, __ag_0_14_SystemString\r\n    PUSH, __ag_0_33_SystemString\r\n    COPY\r\n   
+    PUSH, __ag_0_47_SystemString\r\n    PUSH, __ag_0_35_SystemString\r\n    COPY\r\n   
+    PUSH, __ag_0_21_SystemString\r\n    PUSH, __ag_0_38_SystemString\r\n    COPY\r\n   
+    PUSH, __ag_0_8_SystemBoolean\r\n    PUSH, __ag_0_37_SystemBoolean\r\n    COPY\r\n   
+    PUSH, __ag_0_31___jump_return_SystemUInt32\r\n    JUMP, 0x00000008\r\n    PUSH,
+    __ag_0_38_SystemString\r\n    PUSH, __ag_0_21_SystemString\r\n    COPY\r\n   
+    PUSH, __ag_0_37_SystemBoolean\r\n    PUSH, __ag_0_8_SystemBoolean\r\n    COPY\r\n   
+    PUSH, __ag_0_22_SystemBoolean\r\n    PUSH, __ag_0_13_SystemBoolean\r\n    COPY\r\n   
+    PUSH, __ag_0_8_SystemBoolean\r\n    PUSH, __ag_0_13_SystemBoolean\r\n    EXTERN,
+    \"SystemBoolean.__op_UnaryNegation__SystemBoolean__SystemBoolean\"\r\n    PUSH,
+    __ag_0_13_SystemBoolean\r\n    JUMP_IF_FALSE, 0x000002AC\r\n    PUSH, __ag_0_18_SystemString\r\n   
+    PUSH, __ag_0_47_SystemString\r\n    PUSH, __ag_0_7_SystemString\r\n    PUSH,
+    __ag_0_34_SystemString\r\n    EXTERN, \"SystemString.__Concat__SystemString_SystemString_SystemString__SystemString\"\r\n   
+    PUSH, __ag_0_34_SystemString\r\n    PUSH, __ag_0_6_SystemString\r\n    PUSH,
+    __ag_0_14_SystemString\r\n    PUSH, __ag_0_40_SystemString\r\n    EXTERN, \"SystemString.__Concat__SystemString_SystemString_SystemString__SystemString\"\r\n   
+    PUSH, __ag_0_40_SystemString\r\n    PUSH, _this_gameobject\r\n    EXTERN, \"UnityEngineDebug.__LogError__SystemObject_UnityEngineObject__SystemVoid\"\r\n   
+    PUSH, __null\r\n    PUSH, __ag_0_1_UnityEngineComponent\r\n    COPY\r\n    PUSH,
+    __ag_0_19_SystemBoolean\r\n    PUSH, __ag_0_10_SystemBoolean\r\n    COPY\r\n   
+    JUMP, 0x0000063C\r\n    PUSH, __ag_0_21_SystemString\r\n    PUSH, __ag_0_9_UnityEngineGameObject\r\n   
+    EXTERN, \"UnityEngineGameObject.__Find__SystemString__UnityEngineGameObject\"\r\n   
+    PUSH, __ag_0_22_SystemBoolean\r\n    PUSH, __ag_0_45_SystemBoolean\r\n    COPY\r\n   
+    PUSH, __ag_0_9_UnityEngineGameObject\r\n    PUSH, __ag_0_39_SystemBoolean\r\n   
+    EXTERN, \"VRCSDKBaseUtilities.__IsValid__SystemObject__SystemBoolean\"\r\n   
+    PUSH, __ag_0_39_SystemBoolean\r\n    PUSH, __ag_0_45_SystemBoolean\r\n    EXTERN,
+    \"SystemBoolean.__op_UnaryNegation__SystemBoolean__SystemBoolean\"\r\n    PUSH,
+    __ag_0_45_SystemBoolean\r\n    JUMP_IF_FALSE, 0x000003B0\r\n    PUSH, __ag_0_46_SystemString\r\n   
+    PUSH, __ag_0_47_SystemString\r\n    PUSH, __ag_0_26_SystemString\r\n    PUSH,
+    __ag_0_12_SystemString\r\n    EXTERN, \"SystemString.__Concat__SystemString_SystemString_SystemString__SystemString\"\r\n   
+    PUSH, __ag_0_12_SystemString\r\n    PUSH, __ag_0_53_SystemString\r\n    PUSH,
+    __ag_0_14_SystemString\r\n    PUSH, __ag_0_36_SystemString\r\n    EXTERN, \"SystemString.__Concat__SystemString_SystemString_SystemString__SystemString\"\r\n   
+    PUSH, __ag_0_36_SystemString\r\n    PUSH, _this_gameobject\r\n    EXTERN, \"UnityEngineDebug.__LogError__SystemObject_UnityEngineObject__SystemVoid\"\r\n   
+    PUSH, __null\r\n    PUSH, __ag_0_1_UnityEngineComponent\r\n    COPY\r\n    PUSH,
+    __ag_0_20_SystemBoolean\r\n    PUSH, __ag_0_10_SystemBoolean\r\n    COPY\r\n   
+    JUMP, 0x0000063C\r\n    PUSH, __null\r\n    PUSH, __ag_0_1_UnityEngineComponent\r\n   
+    COPY\r\n    PUSH, __ag_0_9_UnityEngineGameObject\r\n    PUSH, __ag_0_32_SystemType\r\n   
+    PUSH, __ag_0_54_UnityEngineComponent[]\r\n    EXTERN, \"UnityEngineGameObject.__GetComponents__SystemType__UnityEngineComponentArray\"\r\n   
+    PUSH, __ag_0_43_SystemInt32\r\n    PUSH, __ag_0_2_SystemInt32\r\n    COPY\r\n   
+    PUSH, __ag_0_47_SystemString\r\n    PUSH, __ag_0_23_SystemString\r\n    PUSH,
+    __ag_0_27_SystemString\r\n    EXTERN, \"SystemString.__Concat__SystemString_SystemString__SystemString\"\r\n   
+    PUSH, __ag_0_14_SystemString\r\n    PUSH, __ag_0_33_SystemString\r\n    COPY\r\n   
+    PUSH, __ag_0_27_SystemString\r\n    PUSH, __ag_0_35_SystemString\r\n    COPY\r\n   
+    PUSH, __ag_0_58_SystemString\r\n    PUSH, __ag_0_38_SystemString\r\n    COPY\r\n   
+    PUSH, __ag_0_41_SystemBoolean\r\n    PUSH, __ag_0_37_SystemBoolean\r\n    COPY\r\n   
+    PUSH, __ag_0_30___jump_return_SystemUInt32\r\n    JUMP, 0x00000008\r\n    PUSH,
+    __ag_0_38_SystemString\r\n    PUSH, __ag_0_58_SystemString\r\n    COPY\r\n   
+    PUSH, __ag_0_37_SystemBoolean\r\n    PUSH, __ag_0_41_SystemBoolean\r\n    COPY\r\n   
+    PUSH, __ag_0_41_SystemBoolean\r\n    JUMP_IF_FALSE, 0x000004D0\r\n    PUSH, __ag_0_58_SystemString\r\n   
+    PUSH, __ag_0_2_SystemInt32\r\n    PUSH, __ag_0_57_SystemBoolean\r\n    EXTERN,
+    \"SystemInt32.__TryParse__SystemString_SystemInt32Ref__SystemBoolean\"\r\n   
+    PUSH, __ag_0_22_SystemBoolean\r\n    PUSH, __ag_0_0_SystemBoolean\r\n    COPY\r\n   
+    PUSH, __ag_0_54_UnityEngineComponent[]\r\n    PUSH, __ag_0_5_SystemInt32\r\n   
+    EXTERN, \"UnityEngineComponentArray.__get_Length__SystemInt32\"\r\n    PUSH,
+    __ag_0_2_SystemInt32\r\n    PUSH, __ag_0_5_SystemInt32\r\n    PUSH, __ag_0_0_SystemBoolean\r\n   
+    EXTERN, \"SystemInt32.__op_LessThan__SystemInt32_SystemInt32__SystemBoolean\"\r\n   
+    PUSH, __ag_0_0_SystemBoolean\r\n    JUMP_IF_FALSE, 0x0000054C\r\n    PUSH, __ag_0_54_UnityEngineComponent[]\r\n   
+    PUSH, __ag_0_2_SystemInt32\r\n    PUSH, __ag_0_1_UnityEngineComponent\r\n   
+    EXTERN, \"UnityEngineComponentArray.__Get__SystemInt32__UnityEngineComponent\"\r\n   
+    PUSH, __ag_0_22_SystemBoolean\r\n    PUSH, __ag_0_4_SystemBoolean\r\n    COPY\r\n   
+    PUSH, __ag_0_1_UnityEngineComponent\r\n    PUSH, __null\r\n    PUSH, __ag_0_4_SystemBoolean\r\n   
+    EXTERN, \"UnityEngineComponent.__op_Equality__UnityEngineObject_UnityEngineObject__SystemBoolean\"\r\n   
+    PUSH, __ag_0_4_SystemBoolean\r\n    JUMP_IF_FALSE, 0x00000628\r\n    PUSH, __ag_0_55_SystemString\r\n   
+    PUSH, __ag_0_47_SystemString\r\n    PUSH, __ag_0_52_SystemString\r\n    PUSH,
+    __ag_0_24_SystemString\r\n    EXTERN, \"SystemString.__Concat__SystemString_SystemString_SystemString__SystemString\"\r\n   
+    PUSH, __ag_0_24_SystemString\r\n    PUSH, __ag_0_17_SystemString\r\n    PUSH,
+    __ag_0_14_SystemString\r\n    PUSH, __ag_0_51_SystemString\r\n    EXTERN, \"SystemString.__Concat__SystemString_SystemString_SystemString__SystemString\"\r\n   
+    PUSH, __ag_0_51_SystemString\r\n    PUSH, _this_gameobject\r\n    EXTERN, \"UnityEngineDebug.__LogError__SystemObject_UnityEngineObject__SystemVoid\"\r\n   
+    PUSH, __null\r\n    PUSH, __ag_0_1_UnityEngineComponent\r\n    COPY\r\n    PUSH,
+    __ag_0_44_SystemBoolean\r\n    PUSH, __ag_0_10_SystemBoolean\r\n    COPY\r\n   
+    JUMP, 0x0000063C\r\n    PUSH, __ag_0_56_SystemBoolean\r\n    PUSH, __ag_0_10_SystemBoolean\r\n   
+    COPY\r\n    PUSH, __0_ra_SystemUInt32\r\n    COPY\r\n    JUMP_INDIRECT, __0_ra_SystemUInt32\r\n\r\n 
+    .export __ag_0_2\r\n  __ag_0_2:\r\n    PUSH, __1_ea_SystemUInt32\r\n    PUSH,
+    __ag_0_29_SystemType\r\n    PUSH, __ag_0_42_SystemType\r\n    COPY\r\n    PUSH,
+    __ag_0_16_SystemString\r\n    PUSH, __ag_0_14_SystemString\r\n    COPY\r\n   
+    PUSH, __ag_0_42_SystemType\r\n    PUSH, __ag_0_32_SystemType\r\n    COPY\r\n   
+    PUSH, __ag_0_49_VRCUdonUdonBehaviour\r\n    PUSH, __ag_0_1_UnityEngineComponent\r\n   
+    COPY\r\n    PUSH, __ag_0_48_SystemBoolean\r\n    PUSH, __ag_0_10_SystemBoolean\r\n   
+    COPY\r\n    PUSH, __ag_0_15___jump_return_SystemUInt32\r\n    JUMP, 0x000000D0\r\n   
+    PUSH, __ag_0_1_UnityEngineComponent\r\n    PUSH, __ag_0_49_VRCUdonUdonBehaviour\r\n   
+    COPY\r\n    PUSH, __ag_0_10_SystemBoolean\r\n    PUSH, __ag_0_48_SystemBoolean\r\n   
+    COPY\r\n    PUSH, __0_ra_SystemUInt32\r\n    COPY\r\n    JUMP_INDIRECT, __0_ra_SystemUInt32\r\n\r\n 
+    .export __ag_1_0\r\n  __ag_1_0:\r\n    PUSH, __1_ea_SystemUInt32\r\n    PUSH,
+    __ag_1_0_SystemString\r\n    PUSH, _this_gameobject\r\n    EXTERN, \"UnityEngineDebug.__LogError__SystemObject_UnityEngineObject__SystemVoid\"\r\n   
+    PUSH, __0_ra_SystemUInt32\r\n    COPY\r\n    JUMP_INDIRECT, __0_ra_SystemUInt32\r\n\r\n 
+    .export _GetFadeController\r\n  _GetFadeController:\r\n    PUSH, __1_ea_SystemUInt32\r\n   
+    PUSH, __94_const_SystemBoolean\r\n    PUSH, __93_local_var_SystemBoolean\r\n   
+    COPY\r\n    PUSH, fadeController\r\n    PUSH, __95_local_var_SystemBoolean\r\n   
+    EXTERN, \"VRCSDKBaseUtilities.__IsValid__SystemObject__SystemBoolean\"\r\n   
+    PUSH, __93_local_var_SystemBoolean\r\n    JUMP_IF_FALSE, 0x00000788\r\n    JUMP,
+    0x00000838\r\n    PUSH, __97_ref_SystemString\r\n    PUSH, __ag_0_16_SystemString\r\n   
+    COPY\r\n    PUSH, fadeController\r\n    PUSH, __ag_0_49_VRCUdonUdonBehaviour\r\n   
+    COPY\r\n    PUSH, __96_local_var_SystemBoolean\r\n    PUSH, __ag_0_48_SystemBoolean\r\n   
+    COPY\r\n    PUSH, __98___jump_return_3_SystemUInt32\r\n    JUMP, 0x00000658\r\n   
+    PUSH, __ag_0_49_VRCUdonUdonBehaviour\r\n    PUSH, fadeController\r\n    COPY\r\n   
+    PUSH, __ag_0_48_SystemBoolean\r\n    PUSH, __96_local_var_SystemBoolean\r\n   
+    COPY\r\n    PUSH, __96_local_var_SystemBoolean\r\n    JUMP_IF_FALSE, 0x00000814\r\n   
+    JUMP, 0x00000838\r\n    PUSH, __99_ref_SystemString\r\n    PUSH, __ag_1_0_SystemString\r\n   
+    COPY\r\n    PUSH, __100___jump_return_4_SystemUInt32\r\n    JUMP, 0x00000710\r\n   
+    PUSH, __0_ra_SystemUInt32\r\n    COPY\r\n    JUMP_INDIRECT, __0_ra_SystemUInt32\r\n\r\n 
+    .export _SetColor\r\n  _SetColor:\r\n    PUSH, __1_ea_SystemUInt32\r\n    PUSH,
+    __102___jump_return_5_SystemUInt32\r\n    JUMP, 0x00000744\r\n    PUSH, fadeController\r\n   
+    PUSH, __103_ref_SystemString\r\n    PUSH, _arg_color__SetColor\r\n    EXTERN,
+    \"VRCUdonCommonInterfacesIUdonEventReceiver.__SetProgramVariable__SystemString_SystemObject__SystemVoid\"\r\n   
+    PUSH, __0_ra_SystemUInt32\r\n    COPY\r\n    JUMP_INDIRECT, __0_ra_SystemUInt32\r\n\r\n 
+    .export _SetImmobilizePlayer\r\n  _SetImmobilizePlayer:\r\n    PUSH, __1_ea_SystemUInt32\r\n   
+    PUSH, __105___jump_return_6_SystemUInt32\r\n    JUMP, 0x00000744\r\n    PUSH,
+    fadeController\r\n    PUSH, __106_ref_SystemString\r\n    PUSH, _arg_immobilizePlayer__SetImmobilizePlayer\r\n   
+    EXTERN, \"VRCUdonCommonInterfacesIUdonEventReceiver.__SetProgramVariable__SystemString_SystemObject__SystemVoid\"\r\n   
+    PUSH, __0_ra_SystemUInt32\r\n    COPY\r\n    JUMP_INDIRECT, __0_ra_SystemUInt32\r\n\r\n 
+    .export _StartFadeWithEvent\r\n  _StartFadeWithEvent:\r\n    PUSH, __1_ea_SystemUInt32\r\n   
+    PUSH, __108___jump_return_7_SystemUInt32\r\n    JUMP, 0x00000744\r\n    PUSH,
+    fadeController\r\n    PUSH, __110_const_SystemString\r\n    PUSH, _arg_onFadeInEvent__StartFadeWithEvent\r\n   
+    EXTERN, \"VRCUdonCommonInterfacesIUdonEventReceiver.__SetProgramVariable__SystemString_SystemObject__SystemVoid\"\r\n   
+    PUSH, fadeController\r\n    PUSH, __111_const_SystemString\r\n    PUSH, _this_udonbehaviour\r\n   
+    EXTERN, \"VRCUdonCommonInterfacesIUdonEventReceiver.__SetProgramVariable__SystemString_SystemObject__SystemVoid\"\r\n   
+    PUSH, fadeController\r\n    PUSH, __109_ref_SystemString\r\n    EXTERN, \"VRCUdonCommonInterfacesIUdonEventReceiver.__SendCustomEvent__SystemString__SystemVoid\"\r\n   
+    PUSH, __0_ra_SystemUInt32\r\n    COPY\r\n    JUMP_INDIRECT, __0_ra_SystemUInt32\r\n\r\n 
+    .export _StartFadeWithEventAndDuration\r\n  _StartFadeWithEventAndDuration:\r\n   
+    PUSH, __1_ea_SystemUInt32\r\n    PUSH, __113___jump_return_8_SystemUInt32\r\n   
+    JUMP, 0x00000744\r\n    PUSH, fadeController\r\n    PUSH, __110_const_SystemString\r\n   
+    PUSH, _arg_onFadeInEvent__StartFadeWithEventAndDuration\r\n    EXTERN, \"VRCUdonCommonInterfacesIUdonEventReceiver.__SetProgramVariable__SystemString_SystemObject__SystemVoid\"\r\n   
+    PUSH, fadeController\r\n    PUSH, __115_const_SystemString\r\n    PUSH, _arg_fadeInDuration__StartFadeWithEventAndDuration\r\n   
+    EXTERN, \"VRCUdonCommonInterfacesIUdonEventReceiver.__SetProgramVariable__SystemString_SystemObject__SystemVoid\"\r\n   
+    PUSH, fadeController\r\n    PUSH, __116_const_SystemString\r\n    PUSH, _this_udonbehaviour\r\n   
+    EXTERN, \"VRCUdonCommonInterfacesIUdonEventReceiver.__SetProgramVariable__SystemString_SystemObject__SystemVoid\"\r\n   
+    PUSH, fadeController\r\n    PUSH, __114_ref_SystemString\r\n    EXTERN, \"VRCUdonCommonInterfacesIUdonEventReceiver.__SendCustomEvent__SystemString__SystemVoid\"\r\n   
+    PUSH, __0_ra_SystemUInt32\r\n    COPY\r\n    JUMP_INDIRECT, __0_ra_SystemUInt32\r\n\r\n 
+    .export _EndFadeWithEvent\r\n  _EndFadeWithEvent:\r\n    PUSH, __1_ea_SystemUInt32\r\n   
+    PUSH, __118___jump_return_9_SystemUInt32\r\n    JUMP, 0x00000744\r\n    PUSH,
+    fadeController\r\n    PUSH, __120_const_SystemString\r\n    PUSH, _arg_onFadeOutEvent__EndFadeWithEvent\r\n   
+    EXTERN, \"VRCUdonCommonInterfacesIUdonEventReceiver.__SetProgramVariable__SystemString_SystemObject__SystemVoid\"\r\n   
+    PUSH, fadeController\r\n    PUSH, __121_const_SystemString\r\n    PUSH, _this_udonbehaviour\r\n   
+    EXTERN, \"VRCUdonCommonInterfacesIUdonEventReceiver.__SetProgramVariable__SystemString_SystemObject__SystemVoid\"\r\n   
+    PUSH, fadeController\r\n    PUSH, __119_ref_SystemString\r\n    EXTERN, \"VRCUdonCommonInterfacesIUdonEventReceiver.__SendCustomEvent__SystemString__SystemVoid\"\r\n   
+    PUSH, __0_ra_SystemUInt32\r\n    COPY\r\n    JUMP_INDIRECT, __0_ra_SystemUInt32\r\n\r\n 
+    .export _EndFadeWithEventAndDuration\r\n  _EndFadeWithEventAndDuration:\r\n   
+    PUSH, __1_ea_SystemUInt32\r\n    PUSH, __123___jump_return_10_SystemUInt32\r\n   
+    JUMP, 0x00000744\r\n    PUSH, fadeController\r\n    PUSH, __125_const_SystemString\r\n   
+    PUSH, _arg_onFadeEndEvent__EndFadeWithEventAndDuration\r\n    EXTERN, \"VRCUdonCommonInterfacesIUdonEventReceiver.__SetProgramVariable__SystemString_SystemObject__SystemVoid\"\r\n   
+    PUSH, fadeController\r\n    PUSH, __126_const_SystemString\r\n    PUSH, _arg_fadeEndDuration__EndFadeWithEventAndDuration\r\n   
+    EXTERN, \"VRCUdonCommonInterfacesIUdonEventReceiver.__SetProgramVariable__SystemString_SystemObject__SystemVoid\"\r\n   
+    PUSH, fadeController\r\n    PUSH, __127_const_SystemString\r\n    PUSH, _this_udonbehaviour\r\n   
+    EXTERN, \"VRCUdonCommonInterfacesIUdonEventReceiver.__SetProgramVariable__SystemString_SystemObject__SystemVoid\"\r\n   
+    PUSH, fadeController\r\n    PUSH, __124_ref_SystemString\r\n    EXTERN, \"VRCUdonCommonInterfacesIUdonEventReceiver.__SendCustomEvent__SystemString__SystemVoid\"\r\n   
+    PUSH, __0_ra_SystemUInt32\r\n    COPY\r\n    JUMP_INDIRECT, __0_ra_SystemUInt32\r\n\r\n 
+    .export _FadeInAndOutWithEvents\r\n  _FadeInAndOutWithEvents:\r\n    PUSH, __1_ea_SystemUInt32\r\n   
+    PUSH, __129___jump_return_11_SystemUInt32\r\n    JUMP, 0x00000744\r\n    PUSH,
+    fadeController\r\n    PUSH, __131_const_SystemString\r\n    PUSH, _arg_onFadeInEvent__FadeInAndOutWithEvents\r\n   
+    EXTERN, \"VRCUdonCommonInterfacesIUdonEventReceiver.__SetProgramVariable__SystemString_SystemObject__SystemVoid\"\r\n   
+    PUSH, fadeController\r\n    PUSH, __132_const_SystemString\r\n    PUSH, _arg_onFadeEndEvent__FadeInAndOutWithEvents\r\n   
+    EXTERN, \"VRCUdonCommonInterfacesIUdonEventReceiver.__SetProgramVariable__SystemString_SystemObject__SystemVoid\"\r\n   
+    PUSH, fadeController\r\n    PUSH, __133_const_SystemString\r\n    PUSH, _this_udonbehaviour\r\n   
+    EXTERN, \"VRCUdonCommonInterfacesIUdonEventReceiver.__SetProgramVariable__SystemString_SystemObject__SystemVoid\"\r\n   
+    PUSH, fadeController\r\n    PUSH, __130_ref_SystemString\r\n    EXTERN, \"VRCUdonCommonInterfacesIUdonEventReceiver.__SendCustomEvent__SystemString__SystemVoid\"\r\n   
+    PUSH, __0_ra_SystemUInt32\r\n    COPY\r\n    JUMP_INDIRECT, __0_ra_SystemUInt32\r\n\r\n 
+    .export _FadeInAndOutWithEventsAndDurations\r\n  _FadeInAndOutWithEventsAndDurations:\r\n   
+    PUSH, __1_ea_SystemUInt32\r\n    PUSH, __135___jump_return_12_SystemUInt32\r\n   
+    JUMP, 0x00000744\r\n    PUSH, fadeController\r\n    PUSH, __137_const_SystemString\r\n   
+    PUSH, _arg_onFadeInEvent__FadeInAndOutWithEventsAndDurations\r\n    EXTERN, \"VRCUdonCommonInterfacesIUdonEventReceiver.__SetProgramVariable__SystemString_SystemObject__SystemVoid\"\r\n   
+    PUSH, fadeController\r\n    PUSH, __138_const_SystemString\r\n    PUSH, _arg_fadeInDuration__FadeInAndOutWithEventsAndDurations\r\n   
+    EXTERN, \"VRCUdonCommonInterfacesIUdonEventReceiver.__SetProgramVariable__SystemString_SystemObject__SystemVoid\"\r\n   
+    PUSH, fadeController\r\n    PUSH, __139_const_SystemString\r\n    PUSH, _arg_onFadeEndEvent__FadeInAndOutWithEventsAndDurations\r\n   
+    EXTERN, \"VRCUdonCommonInterfacesIUdonEventReceiver.__SetProgramVariable__SystemString_SystemObject__SystemVoid\"\r\n   
+    PUSH, fadeController\r\n    PUSH, __140_const_SystemString\r\n    PUSH, _arg_fadeEndDuration__FadeInAndOutWithEventsAndDurations\r\n   
+    EXTERN, \"VRCUdonCommonInterfacesIUdonEventReceiver.__SetProgramVariable__SystemString_SystemObject__SystemVoid\"\r\n   
+    PUSH, fadeController\r\n    PUSH, __141_const_SystemString\r\n    PUSH, _this_udonbehaviour\r\n   
+    EXTERN, \"VRCUdonCommonInterfacesIUdonEventReceiver.__SetProgramVariable__SystemString_SystemObject__SystemVoid\"\r\n   
+    PUSH, fadeController\r\n    PUSH, __136_ref_SystemString\r\n    EXTERN, \"VRCUdonCommonInterfacesIUdonEventReceiver.__SendCustomEvent__SystemString__SystemVoid\"\r\n   
+    PUSH, __0_ra_SystemUInt32\r\n    COPY\r\n    JUMP_INDIRECT, __0_ra_SystemUInt32\r\n\r\n 
+    .export _FadeInAndOutWithEventsDurationsAndHold\r\n  _FadeInAndOutWithEventsDurationsAndHold:\r\n   
+    PUSH, __1_ea_SystemUInt32\r\n    PUSH, __143___jump_return_13_SystemUInt32\r\n   
+    JUMP, 0x00000744\r\n    PUSH, fadeController\r\n    PUSH, __145_const_SystemString\r\n   
+    PUSH, _arg_onFadeInEvent__FadeInAndOutWithEventsDurationsAndHold\r\n    EXTERN,
+    \"VRCUdonCommonInterfacesIUdonEventReceiver.__SetProgramVariable__SystemString_SystemObject__SystemVoid\"\r\n   
+    PUSH, fadeController\r\n    PUSH, __146_const_SystemString\r\n    PUSH, _arg_fadeInDuration__FadeInAndOutWithEventsDurationsAndHold\r\n   
+    EXTERN, \"VRCUdonCommonInterfacesIUdonEventReceiver.__SetProgramVariable__SystemString_SystemObject__SystemVoid\"\r\n   
+    PUSH, fadeController\r\n    PUSH, __147_const_SystemString\r\n    PUSH, _arg_onFadeHoldEvent__FadeInAndOutWithEventsDurationsAndHold\r\n   
+    EXTERN, \"VRCUdonCommonInterfacesIUdonEventReceiver.__SetProgramVariable__SystemString_SystemObject__SystemVoid\"\r\n   
+    PUSH, fadeController\r\n    PUSH, __148_const_SystemString\r\n    PUSH, _arg_fadeHoldDuration__FadeInAndOutWithEventsDurationsAndHold\r\n   
+    EXTERN, \"VRCUdonCommonInterfacesIUdonEventReceiver.__SetProgramVariable__SystemString_SystemObject__SystemVoid\"\r\n   
+    PUSH, fadeController\r\n    PUSH, __149_const_SystemString\r\n    PUSH, _arg_onFadeEndEvent__FadeInAndOutWithEventsDurationsAndHold\r\n   
+    EXTERN, \"VRCUdonCommonInterfacesIUdonEventReceiver.__SetProgramVariable__SystemString_SystemObject__SystemVoid\"\r\n   
+    PUSH, fadeController\r\n    PUSH, __150_const_SystemString\r\n    PUSH, _arg_fadeEndDuration__FadeInAndOutWithEventsDurationsAndHold\r\n   
+    EXTERN, \"VRCUdonCommonInterfacesIUdonEventReceiver.__SetProgramVariable__SystemString_SystemObject__SystemVoid\"\r\n   
+    PUSH, fadeController\r\n    PUSH, __151_const_SystemString\r\n    PUSH, _this_udonbehaviour\r\n   
+    EXTERN, \"VRCUdonCommonInterfacesIUdonEventReceiver.__SetProgramVariable__SystemString_SystemObject__SystemVoid\"\r\n   
+    PUSH, fadeController\r\n    PUSH, __144_ref_SystemString\r\n    EXTERN, \"VRCUdonCommonInterfacesIUdonEventReceiver.__SendCustomEvent__SystemString__SystemVoid\"\r\n   
+    PUSH, __0_ra_SystemUInt32\r\n    COPY\r\n    JUMP_INDIRECT, __0_ra_SystemUInt32\r\n\r\n 
+    .export _IsFading\r\n  _IsFading:\r\n    PUSH, __1_ea_SystemUInt32\r\n    PUSH,
+    __153___jump_return_14_SystemUInt32\r\n    JUMP, 0x00000744\r\n    PUSH, fadeController\r\n   
+    PUSH, __155_const_SystemString\r\n    PUSH, _arg_isFading__IsFading\r\n    EXTERN,
+    \"VRCUdonCommonInterfacesIUdonEventReceiver.__SetProgramVariable__SystemString_SystemObject__SystemVoid\"\r\n   
+    PUSH, fadeController\r\n    PUSH, __154_ref_SystemString\r\n    EXTERN, \"VRCUdonCommonInterfacesIUdonEventReceiver.__SendCustomEvent__SystemString__SystemVoid\"\r\n   
+    PUSH, fadeController\r\n    PUSH, __155_const_SystemString\r\n    PUSH, _arg_isFading__IsFading\r\n   
+    EXTERN, \"VRCUdonCommonInterfacesIUdonEventReceiver.__GetProgramVariable__SystemString__SystemObject\"\r\n   
+    PUSH, __0_ra_SystemUInt32\r\n    COPY\r\n    JUMP_INDIRECT, __0_ra_SystemUInt32\r\n\r\n.code_end\r\n"
+  assemblyError: 
+  triggerHash: F9498B0CAC74C869BEF47B72AFC5F5B8
+  shouldBeNetworked: 0
+  warningMessages: []
+  errorMessages: []
+  ctDataInstance:
+    version: 6
+    updateOrder: 0
+    autoSetSyncMode: 1
+    programSyncMode: 2
+    programName: 
+    events:
+    - name: _GetFadeController
+      eventId: d82e9e0e-6678-434b-a082-0a77e5c101c2
+      eventInstance:
+        actionType:
+          directEvent: Event_Custom
+          guid: 
+        inputs: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      actionInstances:
+      - actionType:
+          directEvent: CyanTriggerSpecial_If
+          guid: 
+        inputs: []
+        multiInput: []
+        expanded: 1
+        comment:
+          comment: If FadeController is valid, skip trying to get it.
+      - actionType:
+          directEvent: CyanTriggerSpecial_Condition
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: 
+          variableID: 31af0e6e-cdb4-4504-9b32-ba3ea876f263
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBCQAAAGkAcwBJAG4AdgBhAGwAaQBkAAU=
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: VRCSDKBaseUtilities.__IsValid__SystemObject__SystemBoolean
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: fadeController
+          variableID: 0856eaa0-55fa-47e0-b5ca-f7322e9ad7a7
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        - isVariable: 1
+          name: 
+          variableID: 5548e6e6-cf36-4a0c-8ac8-d3157eaa617e
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBBwAAAGkAcwBWAGEAbABpAGQABQ==
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: CyanTriggerSpecial_BlockEnd
+          guid: 
+        inputs: []
+        multiInput: []
+        expanded: 1
+        comment:
+          comment: 
+      - actionType:
+          directEvent: CyanTriggerSpecial_ConditionBody
+          guid: 
+        inputs: []
+        multiInput: []
+        expanded: 1
+        comment:
+          comment: 
+      - actionType:
+          directEvent: CyanTriggerSpecial_Return
+          guid: 
+        inputs: []
+        multiInput: []
+        expanded: 1
+        comment:
+          comment: 
+      - actionType:
+          directEvent: CyanTriggerSpecial_BlockEnd
+          guid: 
+        inputs: []
+        multiInput: []
+        expanded: 1
+        comment:
+          comment: 
+      - actionType:
+          directEvent: CyanTriggerSpecial_BlockEnd
+          guid: 
+        inputs: []
+        multiInput: []
+        expanded: 1
+        comment:
+          comment: 
+      - actionType:
+          directEvent: 
+          guid: 3223dc45-09c7-4f6e-b01f-a30e1b300771
+        inputs:
+        - isVariable: 0
+          name: 
+          variableID: 
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBGwAAAEMAeQBhAG4ALgBQAGwAYQB5AGUAcgBGAGEAZABlAEMAbwBuAHQAcgBvAGwAbABlAHIAVgAyAAU=
+            unityObjects: []
+        - isVariable: 1
+          name: fadeController
+          variableID: 0856eaa0-55fa-47e0-b5ca-f7322e9ad7a7
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBDgAAAGYAYQBkAGUAQwBvAG4AdAByAG8AbABsAGUAcgAF
+            unityObjects: []
+        - isVariable: 1
+          name: 
+          variableID: 1c39254d-baea-4604-a887-2146a2813783
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBBwAAAGkAcwBWAGEAbABpAGQABQ==
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: Get the controller from data cache.
+      - actionType:
+          directEvent: CyanTriggerSpecial_If
+          guid: 
+        inputs: []
+        multiInput: []
+        expanded: 1
+        comment:
+          comment: Check if valid and return.
+      - actionType:
+          directEvent: CyanTriggerSpecial_Condition
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: isValid
+          variableID: 1c39254d-baea-4604-a887-2146a2813783
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBCQAAAGkAcwBJAG4AdgBhAGwAaQBkAAU=
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: CyanTriggerSpecial_BlockEnd
+          guid: 
+        inputs: []
+        multiInput: []
+        expanded: 1
+        comment:
+          comment: 
+      - actionType:
+          directEvent: CyanTriggerSpecial_ConditionBody
+          guid: 
+        inputs: []
+        multiInput: []
+        expanded: 1
+        comment:
+          comment: 
+      - actionType:
+          directEvent: CyanTriggerSpecial_Return
+          guid: 
+        inputs: []
+        multiInput: []
+        expanded: 1
+        comment:
+          comment: 
+      - actionType:
+          directEvent: CyanTriggerSpecial_BlockEnd
+          guid: 
+        inputs: []
+        multiInput: []
+        expanded: 1
+        comment:
+          comment: 
+      - actionType:
+          directEvent: CyanTriggerSpecial_BlockEnd
+          guid: 
+        inputs: []
+        multiInput: []
+        expanded: 1
+        comment:
+          comment: 
+      - actionType:
+          directEvent: 
+          guid: 0458d31f-51cf-42da-b17f-3b9a88ee3cd2
+        inputs:
+        - isVariable: 0
+          name: 
+          variableID: 
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBRAAAAFsARgBhAGQAZQBDAG8AbgB0AHIAbwBsAGwAZQByAF0AIABGAGEAZABlAEMAbwBuAHQAcgBvAGwAbABlAHIAVgAyACAAcAByAGUAZgBhAGIAIAB3AGEAcwAgAG4AbwB0ACAAZgBvAHUAbgBkACAAaQBuACAAdABoAGUAIABzAGMAZQBuAGUAIQAF
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: Log Error before udon crashes trying to use the FadeController
+      eventOptions:
+        userGate: 0
+        userGateExtraData: []
+        broadcast: 0
+        delay: 0
+        replay: 0
+      expanded: 0
+    - name: _SetColor
+      eventId: 1513beba-243e-4ab9-b518-708337e61bad
+      eventInstance:
+        actionType:
+          directEvent: Event_Custom
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: 
+          variableID: 
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        multiInput:
+        - isVariable: 1
+          name: color
+          variableID: f4636ab0-5b00-4604-9377-afb46134fe69
+          data:
+            objEncoded: Ai8AAAAAARwAAABTAHkAcwB0AGUAbQAuAFIAdQBuAHQAaQBtAGUAVAB5AHAAZQAsACAAbQBzAGMAbwByAGwAaQBiAAAAAAAoASkAAABVAG4AaQB0AHkARQBuAGcAaQBuAGUALgBDAG8AbABvAHIALAAgAFUAbgBpAHQAeQBFAG4AZwBpAG4AZQAuAEMAbwByAGUATQBvAGQAdQBsAGUABQ==
+            unityObjects: []
+        expanded: 1
+        comment:
+          comment: 
+      actionInstances:
+      - actionType:
+          directEvent: VRCUdonCommonInterfacesIUdonEventReceiver.__SendCustomEvent__SystemString__SystemVoid
+          guid: 
+        inputs:
+        - isVariable: 0
+          name: 
+          variableID: 
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        - isVariable: 0
+          name: 
+          variableID: 
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBEgAAAF8ARwBlAHQARgBhAGQAZQBDAG8AbgB0AHIAbwBsAGwAZQByAAU=
+            unityObjects: []
+        - isVariable: 0
+          name: 
+          variableID: 
+          data:
+            objEncoded: Ai8AAAAAATEAAABDAHkAYQBuAC4AQwBUAC4AQwB5AGEAbgBUAHIAaQBnAGcAZQByAEUAdgBlAG4AdABBAHIAZwBEAGEAdABhACwAIABDAHkAYQBuAC4AQwB5AGEAbgBUAHIAaQBnAGcAZQByAAAAAAAnAQkAAABlAHYAZQBuAHQATgBhAG0AZQABEgAAAF8ARwBlAHQARgBhAGQAZQBDAG8AbgB0AHIAbwBsAGwAZQByAAEBDQAAAHYAYQByAGkAYQBiAGwAZQBOAGEAbQBlAHMALwEAAAABGQAAAFMAeQBzAHQAZQBtAC4AUwB0AHIAaQBuAGcAWwBdACwAIABtAHMAYwBvAHIAbABpAGIAAQAAAAYAAAAAAAAAAAcFAQERAAAAdgBhAHIAaQBhAGIAbABlAFUAZABvAG4ATgBhAG0AZQBzADABAAAAAgAAAAYAAAAAAAAAAAcFAQEMAAAAdgBhAHIAaQBhAGIAbABlAE8AdQB0AHMALwIAAAABGgAAAFMAeQBzAHQAZQBtAC4AQgBvAG8AbABlAGEAbgBbAF0ALAAgAG0AcwBjAG8AcgBsAGkAYgADAAAACAAAAAABAAAABQEBDQAAAHYAYQByAGkAYQBiAGwAZQBUAHkAcABlAHMALwMAAAABFwAAAFMAeQBzAHQAZQBtAC4AVAB5AHAAZQBbAF0ALAAgAG0AcwBjAG8AcgBsAGkAYgAEAAAABgAAAAAAAAAABwUF
+            unityObjects: []
+        multiInput:
+        - isVariable: 1
+          name: This UdonBehaviour
+          variableID: _this_udonbehaviour
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: VRCUdonCommonInterfacesIUdonEventReceiver.__SetProgramVariable__SystemString_SystemObject__SystemVoid
+          guid: 
+        inputs:
+        - isVariable: 0
+          name: 
+          variableID: 
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        - isVariable: 0
+          name: 
+          variableID: 
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBCQAAAGYAYQBkAGUAQwBvAGwAbwByAAU=
+            unityObjects: []
+        - isVariable: 1
+          name: color
+          variableID: f4636ab0-5b00-4604-9377-afb46134fe69
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        multiInput:
+        - isVariable: 1
+          name: fadeController
+          variableID: 0856eaa0-55fa-47e0-b5ca-f7322e9ad7a7
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        expanded: 0
+        comment:
+          comment: 
+      eventOptions:
+        userGate: 0
+        userGateExtraData: []
+        broadcast: 0
+        delay: 0
+        replay: 0
+      expanded: 0
+    - name: _SetImmobilizePlayer
+      eventId: 3cb79d32-9b6d-4165-b47a-9ffe403929a8
+      eventInstance:
+        actionType:
+          directEvent: Event_Custom
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: 
+          variableID: 
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        multiInput:
+        - isVariable: 1
+          name: immobilizePlayer
+          variableID: 91b60766-edbb-4859-ad97-d132f3c7bfd0
+          data:
+            objEncoded: Ai8AAAAAARwAAABTAHkAcwB0AGUAbQAuAFIAdQBuAHQAaQBtAGUAVAB5AHAAZQAsACAAbQBzAGMAbwByAGwAaQBiAAAAAAAoARgAAABTAHkAcwB0AGUAbQAuAEIAbwBvAGwAZQBhAG4ALAAgAG0AcwBjAG8AcgBsAGkAYgAF
+            unityObjects: []
+        expanded: 1
+        comment:
+          comment: 
+      actionInstances:
+      - actionType:
+          directEvent: VRCUdonCommonInterfacesIUdonEventReceiver.__SendCustomEvent__SystemString__SystemVoid
+          guid: 
+        inputs:
+        - isVariable: 0
+          name: 
+          variableID: 
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        - isVariable: 0
+          name: 
+          variableID: 
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBEgAAAF8ARwBlAHQARgBhAGQAZQBDAG8AbgB0AHIAbwBsAGwAZQByAAU=
+            unityObjects: []
+        - isVariable: 0
+          name: 
+          variableID: 
+          data:
+            objEncoded: Ai8AAAAAATEAAABDAHkAYQBuAC4AQwBUAC4AQwB5AGEAbgBUAHIAaQBnAGcAZQByAEUAdgBlAG4AdABBAHIAZwBEAGEAdABhACwAIABDAHkAYQBuAC4AQwB5AGEAbgBUAHIAaQBnAGcAZQByAAAAAAAnAQkAAABlAHYAZQBuAHQATgBhAG0AZQABEgAAAF8ARwBlAHQARgBhAGQAZQBDAG8AbgB0AHIAbwBsAGwAZQByAAEBDQAAAHYAYQByAGkAYQBiAGwAZQBOAGEAbQBlAHMALwEAAAABGQAAAFMAeQBzAHQAZQBtAC4AUwB0AHIAaQBuAGcAWwBdACwAIABtAHMAYwBvAHIAbABpAGIAAQAAAAYAAAAAAAAAAAcFAQERAAAAdgBhAHIAaQBhAGIAbABlAFUAZABvAG4ATgBhAG0AZQBzADABAAAAAgAAAAYAAAAAAAAAAAcFAQEMAAAAdgBhAHIAaQBhAGIAbABlAE8AdQB0AHMALwIAAAABGgAAAFMAeQBzAHQAZQBtAC4AQgBvAG8AbABlAGEAbgBbAF0ALAAgAG0AcwBjAG8AcgBsAGkAYgADAAAACAAAAAABAAAABQEBDQAAAHYAYQByAGkAYQBiAGwAZQBUAHkAcABlAHMALwMAAAABFwAAAFMAeQBzAHQAZQBtAC4AVAB5AHAAZQBbAF0ALAAgAG0AcwBjAG8AcgBsAGkAYgAEAAAABgAAAAAAAAAABwUF
+            unityObjects: []
+        multiInput:
+        - isVariable: 1
+          name: This UdonBehaviour
+          variableID: _this_udonbehaviour
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: VRCUdonCommonInterfacesIUdonEventReceiver.__SetProgramVariable__SystemString_SystemObject__SystemVoid
+          guid: 
+        inputs:
+        - isVariable: 0
+          name: 
+          variableID: 
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        - isVariable: 0
+          name: 
+          variableID: 
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBEAAAAGkAbQBtAG8AYgBpAGwAaQB6AGUAUABsAGEAeQBlAHIABQ==
+            unityObjects: []
+        - isVariable: 1
+          name: immobilizePlayer
+          variableID: 91b60766-edbb-4859-ad97-d132f3c7bfd0
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        multiInput:
+        - isVariable: 1
+          name: fadeController
+          variableID: 0856eaa0-55fa-47e0-b5ca-f7322e9ad7a7
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        expanded: 0
+        comment:
+          comment: 
+      eventOptions:
+        userGate: 0
+        userGateExtraData: []
+        broadcast: 0
+        delay: 0
+        replay: 0
+      expanded: 0
+    - name: _StartFadeWithEvent
+      eventId: b45e5790-0151-4e8d-9cea-3817a213fc92
+      eventInstance:
+        actionType:
+          directEvent: Event_Custom
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: 
+          variableID: 
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        multiInput:
+        - isVariable: 1
+          name: onFadeInEvent
+          variableID: 22615c6b-ae57-4186-9bdf-b086739bb6bc
+          data:
+            objEncoded: Ai8AAAAAARwAAABTAHkAcwB0AGUAbQAuAFIAdQBuAHQAaQBtAGUAVAB5AHAAZQAsACAAbQBzAGMAbwByAGwAaQBiAAAAAAAoARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIABQ==
+            unityObjects: []
+        expanded: 1
+        comment:
+          comment: 
+      actionInstances:
+      - actionType:
+          directEvent: VRCUdonCommonInterfacesIUdonEventReceiver.__SendCustomEvent__SystemString__SystemVoid
+          guid: 
+        inputs:
+        - isVariable: 0
+          name: 
+          variableID: 
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        - isVariable: 0
+          name: 
+          variableID: 
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBEgAAAF8ARwBlAHQARgBhAGQAZQBDAG8AbgB0AHIAbwBsAGwAZQByAAU=
+            unityObjects: []
+        - isVariable: 0
+          name: 
+          variableID: 
+          data:
+            objEncoded: Ai8AAAAAATEAAABDAHkAYQBuAC4AQwBUAC4AQwB5AGEAbgBUAHIAaQBnAGcAZQByAEUAdgBlAG4AdABBAHIAZwBEAGEAdABhACwAIABDAHkAYQBuAC4AQwB5AGEAbgBUAHIAaQBnAGcAZQByAAAAAAAnAQkAAABlAHYAZQBuAHQATgBhAG0AZQABEgAAAF8ARwBlAHQARgBhAGQAZQBDAG8AbgB0AHIAbwBsAGwAZQByAAEBDQAAAHYAYQByAGkAYQBiAGwAZQBOAGEAbQBlAHMALwEAAAABGQAAAFMAeQBzAHQAZQBtAC4AUwB0AHIAaQBuAGcAWwBdACwAIABtAHMAYwBvAHIAbABpAGIAAQAAAAYAAAAAAAAAAAcFAQERAAAAdgBhAHIAaQBhAGIAbABlAFUAZABvAG4ATgBhAG0AZQBzADABAAAAAgAAAAYAAAAAAAAAAAcFAQEMAAAAdgBhAHIAaQBhAGIAbABlAE8AdQB0AHMALwIAAAABGgAAAFMAeQBzAHQAZQBtAC4AQgBvAG8AbABlAGEAbgBbAF0ALAAgAG0AcwBjAG8AcgBsAGkAYgADAAAACAAAAAABAAAABQEBDQAAAHYAYQByAGkAYQBiAGwAZQBUAHkAcABlAHMALwMAAAABFwAAAFMAeQBzAHQAZQBtAC4AVAB5AHAAZQBbAF0ALAAgAG0AcwBjAG8AcgBsAGkAYgAEAAAABgAAAAAAAAAABwUF
+            unityObjects: []
+        multiInput:
+        - isVariable: 1
+          name: This UdonBehaviour
+          variableID: _this_udonbehaviour
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: VRCUdonCommonInterfacesIUdonEventReceiver.__SendCustomEvent__SystemString__SystemVoid
+          guid: 
+        inputs:
+        - isVariable: 0
+          name: 
+          variableID: 
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        - isVariable: 0
+          name: 
+          variableID: 
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBEwAAAF8AUwB0AGEAcgB0AEYAYQBkAGUAVwBpAHQAaABFAHYAZQBuAHQABQ==
+            unityObjects: []
+        - isVariable: 0
+          name: 
+          variableID: 
+          data:
+            objEncoded: Ai8AAAAAATEAAABDAHkAYQBuAC4AQwBUAC4AQwB5AGEAbgBUAHIAaQBnAGcAZQByAEUAdgBlAG4AdABBAHIAZwBEAGEAdABhACwAIABDAHkAYQBuAC4AQwB5AGEAbgBUAHIAaQBnAGcAZQByAAAAAAAnAQkAAABlAHYAZQBuAHQATgBhAG0AZQABEwAAAF8AUwB0AGEAcgB0AEYAYQBkAGUAVwBpAHQAaABFAHYAZQBuAHQAAQENAAAAdgBhAHIAaQBhAGIAbABlAE4AYQBtAGUAcwAvAQAAAAEZAAAAUwB5AHMAdABlAG0ALgBTAHQAcgBpAG4AZwBbAF0ALAAgAG0AcwBjAG8AcgBsAGkAYgABAAAABgIAAAAAAAAAKAENAAAAbwBuAEYAYQBkAGUASQBuAEUAdgBlAG4AdAAoAQQAAAB1AGQAbwBuAAcFAQERAAAAdgBhAHIAaQBhAGIAbABlAFUAZABvAG4ATgBhAG0AZQBzADABAAAAAgAAAAYCAAAAAAAAACgBJgAAAF8AYQByAGcAXwBvAG4ARgBhAGQAZQBJAG4ARQB2AGUAbgB0AF8AXwBTAHQAYQByAHQARgBhAGQAZQBXAGkAdABoAEUAdgBlAG4AdAAoAR0AAABfAGEAcgBnAF8AdQBkAG8AbgBfAF8AUwB0AGEAcgB0AEYAYQBkAGUAVwBpAHQAaABFAHYAZQBuAHQABwUBAQwAAAB2AGEAcgBpAGEAYgBsAGUATwB1AHQAcwAvAgAAAAEaAAAAUwB5AHMAdABlAG0ALgBCAG8AbwBsAGUAYQBuAFsAXQAsACAAbQBzAGMAbwByAGwAaQBiAAMAAAAIAgAAAAEAAAAAAAUBAQ0AAAB2AGEAcgBpAGEAYgBsAGUAVAB5AHAAZQBzAC8DAAAAARcAAABTAHkAcwB0AGUAbQAuAFQAeQBwAGUAWwBdACwAIABtAHMAYwBvAHIAbABpAGIABAAAAAYCAAAAAAAAAAIvBAAAAAEcAAAAUwB5AHMAdABlAG0ALgBSAHUAbgB0AGkAbQBlAFQAeQBwAGUALAAgAG0AcwBjAG8AcgBsAGkAYgAFAAAAKAEXAAAAUwB5AHMAdABlAG0ALgBTAHQAcgBpAG4AZwAsACAAbQBzAGMAbwByAGwAaQBiAAUCMAQAAAAGAAAAKAEgAAAAVgBSAEMALgBVAGQAbwBuAC4AVQBkAG8AbgBCAGUAaABhAHYAaQBvAHUAcgAsACAAVgBSAEMALgBVAGQAbwBuAAUHBQU=
+            unityObjects: []
+        - isVariable: 1
+          name: onFadeInEvent
+          variableID: 22615c6b-ae57-4186-9bdf-b086739bb6bc
+          data:
+            objEncoded: Ai8AAAAAATEAAABDAHkAYQBuAC4AQwBUAC4AQwB5AGEAbgBUAHIAaQBnAGcAZQByAEUAdgBlAG4AdABBAHIAZwBEAGEAdABhACwAIABDAHkAYQBuAC4AQwB5AGEAbgBUAHIAaQBnAGcAZQByAAAAAAAnAQkAAABlAHYAZQBuAHQATgBhAG0AZQABEwAAAF8AUwB0AGEAcgB0AEYAYQBkAGUAVwBpAHQAaABFAHYAZQBuAHQAAQENAAAAdgBhAHIAaQBhAGIAbABlAE4AYQBtAGUAcwAvAQAAAAEZAAAAUwB5AHMAdABlAG0ALgBTAHQAcgBpAG4AZwBbAF0ALAAgAG0AcwBjAG8AcgBsAGkAYgABAAAABgAAAAAAAAAABwUJAREAAAB2AGEAcgBpAGEAYgBsAGUAVQBkAG8AbgBOAGEAbQBlAHMAAQAAAAEBDAAAAHYAYQByAGkAYQBiAGwAZQBPAHUAdABzAC8CAAAAARoAAABTAHkAcwB0AGUAbQAuAEIAbwBvAGwAZQBhAG4AWwBdACwAIABtAHMAYwBvAHIAbABpAGIAAgAAAAgAAAAAAQAAAAUBAQ0AAAB2AGEAcgBpAGEAYgBsAGUAVAB5AHAAZQBzAC8DAAAAARcAAABTAHkAcwB0AGUAbQAuAFQAeQBwAGUAWwBdACwAIABtAHMAYwBvAHIAbABpAGIAAwAAAAYAAAAAAAAAAAcFBQ==
+            unityObjects: []
+        - isVariable: 1
+          name: This UdonBehaviour
+          variableID: _this_udonbehaviour
+          data:
+            objEncoded: Ai8AAAAAATEAAABDAHkAYQBuAC4AQwBUAC4AQwB5AGEAbgBUAHIAaQBnAGcAZQByAEUAdgBlAG4AdABBAHIAZwBEAGEAdABhACwAIABDAHkAYQBuAC4AQwB5AGEAbgBUAHIAaQBnAGcAZQByAAAAAAAnAQkAAABlAHYAZQBuAHQATgBhAG0AZQABEwAAAF8AUwB0AGEAcgB0AEYAYQBkAGUAVwBpAHQAaABFAHYAZQBuAHQAAQENAAAAdgBhAHIAaQBhAGIAbABlAE4AYQBtAGUAcwAvAQAAAAEZAAAAUwB5AHMAdABlAG0ALgBTAHQAcgBpAG4AZwBbAF0ALAAgAG0AcwBjAG8AcgBsAGkAYgABAAAABgAAAAAAAAAABwUJAREAAAB2AGEAcgBpAGEAYgBsAGUAVQBkAG8AbgBOAGEAbQBlAHMAAQAAAAEBDAAAAHYAYQByAGkAYQBiAGwAZQBPAHUAdABzAC8CAAAAARoAAABTAHkAcwB0AGUAbQAuAEIAbwBvAGwAZQBhAG4AWwBdACwAIABtAHMAYwBvAHIAbABpAGIAAgAAAAgAAAAAAQAAAAUBAQ0AAAB2AGEAcgBpAGEAYgBsAGUAVAB5AHAAZQBzAC8DAAAAARcAAABTAHkAcwB0AGUAbQAuAFQAeQBwAGUAWwBdACwAIABtAHMAYwBvAHIAbABpAGIAAwAAAAYAAAAAAAAAAAcFBQ==
+            unityObjects: []
+        multiInput:
+        - isVariable: 1
+          name: fadeController
+          variableID: 0856eaa0-55fa-47e0-b5ca-f7322e9ad7a7
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        expanded: 0
+        comment:
+          comment: 
+      eventOptions:
+        userGate: 0
+        userGateExtraData: []
+        broadcast: 0
+        delay: 0
+        replay: 0
+      expanded: 0
+    - name: _StartFadeWithEventAndDuration
+      eventId: 627124b5-ae7d-4996-a179-1db7dc2e6cfd
+      eventInstance:
+        actionType:
+          directEvent: Event_Custom
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: 
+          variableID: 
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        multiInput:
+        - isVariable: 1
+          name: onFadeInEvent
+          variableID: 8b8d165f-c4e9-4e06-ba88-ee43c8b2cf8b
+          data:
+            objEncoded: Ai8AAAAAARwAAABTAHkAcwB0AGUAbQAuAFIAdQBuAHQAaQBtAGUAVAB5AHAAZQAsACAAbQBzAGMAbwByAGwAaQBiAAAAAAAoARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIABQ==
+            unityObjects: []
+        - isVariable: 1
+          name: fadeInDuration
+          variableID: 0e9471c2-abd3-423e-8ff9-66a955f984ff
+          data:
+            objEncoded: Ai8AAAAAARwAAABTAHkAcwB0AGUAbQAuAFIAdQBuAHQAaQBtAGUAVAB5AHAAZQAsACAAbQBzAGMAbwByAGwAaQBiAAAAAAAoARcAAABTAHkAcwB0AGUAbQAuAFMAaQBuAGcAbABlACwAIABtAHMAYwBvAHIAbABpAGIABQ==
+            unityObjects: []
+        expanded: 1
+        comment:
+          comment: 
+      actionInstances:
+      - actionType:
+          directEvent: VRCUdonCommonInterfacesIUdonEventReceiver.__SendCustomEvent__SystemString__SystemVoid
+          guid: 
+        inputs:
+        - isVariable: 0
+          name: 
+          variableID: 
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        - isVariable: 0
+          name: 
+          variableID: 
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBEgAAAF8ARwBlAHQARgBhAGQAZQBDAG8AbgB0AHIAbwBsAGwAZQByAAU=
+            unityObjects: []
+        - isVariable: 0
+          name: 
+          variableID: 
+          data:
+            objEncoded: Ai8AAAAAATEAAABDAHkAYQBuAC4AQwBUAC4AQwB5AGEAbgBUAHIAaQBnAGcAZQByAEUAdgBlAG4AdABBAHIAZwBEAGEAdABhACwAIABDAHkAYQBuAC4AQwB5AGEAbgBUAHIAaQBnAGcAZQByAAAAAAAnAQkAAABlAHYAZQBuAHQATgBhAG0AZQABEgAAAF8ARwBlAHQARgBhAGQAZQBDAG8AbgB0AHIAbwBsAGwAZQByAAEBDQAAAHYAYQByAGkAYQBiAGwAZQBOAGEAbQBlAHMALwEAAAABGQAAAFMAeQBzAHQAZQBtAC4AUwB0AHIAaQBuAGcAWwBdACwAIABtAHMAYwBvAHIAbABpAGIAAQAAAAYAAAAAAAAAAAcFAQERAAAAdgBhAHIAaQBhAGIAbABlAFUAZABvAG4ATgBhAG0AZQBzADABAAAAAgAAAAYAAAAAAAAAAAcFAQEMAAAAdgBhAHIAaQBhAGIAbABlAE8AdQB0AHMALwIAAAABGgAAAFMAeQBzAHQAZQBtAC4AQgBvAG8AbABlAGEAbgBbAF0ALAAgAG0AcwBjAG8AcgBsAGkAYgADAAAACAAAAAABAAAABQEBDQAAAHYAYQByAGkAYQBiAGwAZQBUAHkAcABlAHMALwMAAAABFwAAAFMAeQBzAHQAZQBtAC4AVAB5AHAAZQBbAF0ALAAgAG0AcwBjAG8AcgBsAGkAYgAEAAAABgAAAAAAAAAABwUF
+            unityObjects: []
+        multiInput:
+        - isVariable: 1
+          name: This UdonBehaviour
+          variableID: _this_udonbehaviour
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: VRCUdonCommonInterfacesIUdonEventReceiver.__SendCustomEvent__SystemString__SystemVoid
+          guid: 
+        inputs:
+        - isVariable: 0
+          name: 
+          variableID: 
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        - isVariable: 0
+          name: 
+          variableID: 
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBHgAAAF8AUwB0AGEAcgB0AEYAYQBkAGUAVwBpAHQAaABFAHYAZQBuAHQAQQBuAGQARAB1AHIAYQB0AGkAbwBuAAU=
+            unityObjects: []
+        - isVariable: 0
+          name: 
+          variableID: 
+          data:
+            objEncoded: Ai8AAAAAATEAAABDAHkAYQBuAC4AQwBUAC4AQwB5AGEAbgBUAHIAaQBnAGcAZQByAEUAdgBlAG4AdABBAHIAZwBEAGEAdABhACwAIABDAHkAYQBuAC4AQwB5AGEAbgBUAHIAaQBnAGcAZQByAAAAAAAnAQkAAABlAHYAZQBuAHQATgBhAG0AZQABHgAAAF8AUwB0AGEAcgB0AEYAYQBkAGUAVwBpAHQAaABFAHYAZQBuAHQAQQBuAGQARAB1AHIAYQB0AGkAbwBuAAEBDQAAAHYAYQByAGkAYQBiAGwAZQBOAGEAbQBlAHMALwEAAAABGQAAAFMAeQBzAHQAZQBtAC4AUwB0AHIAaQBuAGcAWwBdACwAIABtAHMAYwBvAHIAbABpAGIAAQAAAAYDAAAAAAAAACgBDQAAAG8AbgBGAGEAZABlAEkAbgBFAHYAZQBuAHQAKAEOAAAAZgBhAGQAZQBJAG4ARAB1AHIAYQB0AGkAbwBuACgBBAAAAHUAZABvAG4ABwUBAREAAAB2AGEAcgBpAGEAYgBsAGUAVQBkAG8AbgBOAGEAbQBlAHMAMAEAAAACAAAABgMAAAAAAAAAKAEmAAAAXwBhAHIAZwBfAG8AbgBGAGEAZABlAEkAbgBFAHYAZQBuAHQAXwBfAFMAdABhAHIAdABGAGEAZABlAFcAaQB0AGgARQB2AGUAbgB0ACgBMgAAAF8AYQByAGcAXwBmAGEAZABlAEkAbgBEAHUAcgBhAHQAaQBvAG4AXwBfAFMAdABhAHIAdABGAGEAZABlAFcAaQB0AGgARQB2AGUAbgB0AEEAbgBkAEQAdQByAGEAdABpAG8AbgAoASgAAABfAGEAcgBnAF8AdQBkAG8AbgBfAF8AUwB0AGEAcgB0AEYAYQBkAGUAVwBpAHQAaABFAHYAZQBuAHQAQQBuAGQARAB1AHIAYQB0AGkAbwBuAAcFAQEMAAAAdgBhAHIAaQBhAGIAbABlAE8AdQB0AHMALwIAAAABGgAAAFMAeQBzAHQAZQBtAC4AQgBvAG8AbABlAGEAbgBbAF0ALAAgAG0AcwBjAG8AcgBsAGkAYgADAAAACAMAAAABAAAAAAAABQEBDQAAAHYAYQByAGkAYQBiAGwAZQBUAHkAcABlAHMALwMAAAABFwAAAFMAeQBzAHQAZQBtAC4AVAB5AHAAZQBbAF0ALAAgAG0AcwBjAG8AcgBsAGkAYgAEAAAABgMAAAAAAAAAAi8EAAAAARwAAABTAHkAcwB0AGUAbQAuAFIAdQBuAHQAaQBtAGUAVAB5AHAAZQAsACAAbQBzAGMAbwByAGwAaQBiAAUAAAAoARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIABQIwBAAAAAYAAAAoARcAAABTAHkAcwB0AGUAbQAuAFMAaQBuAGcAbABlACwAIABtAHMAYwBvAHIAbABpAGIABQIwBAAAAAcAAAAoASAAAABWAFIAQwAuAFUAZABvAG4ALgBVAGQAbwBuAEIAZQBoAGEAdgBpAG8AdQByACwAIABWAFIAQwAuAFUAZABvAG4ABQcFBQ==
+            unityObjects: []
+        - isVariable: 1
+          name: onFadeInEvent
+          variableID: 8b8d165f-c4e9-4e06-ba88-ee43c8b2cf8b
+          data:
+            objEncoded: Ai8AAAAAATEAAABDAHkAYQBuAC4AQwBUAC4AQwB5AGEAbgBUAHIAaQBnAGcAZQByAEUAdgBlAG4AdABBAHIAZwBEAGEAdABhACwAIABDAHkAYQBuAC4AQwB5AGEAbgBUAHIAaQBnAGcAZQByAAAAAAAnAQkAAABlAHYAZQBuAHQATgBhAG0AZQABEwAAAF8AUwB0AGEAcgB0AEYAYQBkAGUAVwBpAHQAaABFAHYAZQBuAHQAAQENAAAAdgBhAHIAaQBhAGIAbABlAE4AYQBtAGUAcwAvAQAAAAEZAAAAUwB5AHMAdABlAG0ALgBTAHQAcgBpAG4AZwBbAF0ALAAgAG0AcwBjAG8AcgBsAGkAYgABAAAABgAAAAAAAAAABwUJAREAAAB2AGEAcgBpAGEAYgBsAGUAVQBkAG8AbgBOAGEAbQBlAHMAAQAAAAEBDAAAAHYAYQByAGkAYQBiAGwAZQBPAHUAdABzAC8CAAAAARoAAABTAHkAcwB0AGUAbQAuAEIAbwBvAGwAZQBhAG4AWwBdACwAIABtAHMAYwBvAHIAbABpAGIAAgAAAAgAAAAAAQAAAAUBAQ0AAAB2AGEAcgBpAGEAYgBsAGUAVAB5AHAAZQBzAC8DAAAAARcAAABTAHkAcwB0AGUAbQAuAFQAeQBwAGUAWwBdACwAIABtAHMAYwBvAHIAbABpAGIAAwAAAAYAAAAAAAAAAAcFBQ==
+            unityObjects: []
+        - isVariable: 1
+          name: fadeInDuration
+          variableID: 0e9471c2-abd3-423e-8ff9-66a955f984ff
+          data:
+            objEncoded: Ai8AAAAAATEAAABDAHkAYQBuAC4AQwBUAC4AQwB5AGEAbgBUAHIAaQBnAGcAZQByAEUAdgBlAG4AdABBAHIAZwBEAGEAdABhACwAIABDAHkAYQBuAC4AQwB5AGEAbgBUAHIAaQBnAGcAZQByAAAAAAAnAQkAAABlAHYAZQBuAHQATgBhAG0AZQABEwAAAF8AUwB0AGEAcgB0AEYAYQBkAGUAVwBpAHQAaABFAHYAZQBuAHQAAQENAAAAdgBhAHIAaQBhAGIAbABlAE4AYQBtAGUAcwAvAQAAAAEZAAAAUwB5AHMAdABlAG0ALgBTAHQAcgBpAG4AZwBbAF0ALAAgAG0AcwBjAG8AcgBsAGkAYgABAAAABgAAAAAAAAAABwUJAREAAAB2AGEAcgBpAGEAYgBsAGUAVQBkAG8AbgBOAGEAbQBlAHMAAQAAAAEBDAAAAHYAYQByAGkAYQBiAGwAZQBPAHUAdABzAC8CAAAAARoAAABTAHkAcwB0AGUAbQAuAEIAbwBvAGwAZQBhAG4AWwBdACwAIABtAHMAYwBvAHIAbABpAGIAAgAAAAgAAAAAAQAAAAUBAQ0AAAB2AGEAcgBpAGEAYgBsAGUAVAB5AHAAZQBzAC8DAAAAARcAAABTAHkAcwB0AGUAbQAuAFQAeQBwAGUAWwBdACwAIABtAHMAYwBvAHIAbABpAGIAAwAAAAYAAAAAAAAAAAcFBQ==
+            unityObjects: []
+        - isVariable: 1
+          name: This UdonBehaviour
+          variableID: _this_udonbehaviour
+          data:
+            objEncoded: Ai8AAAAAATEAAABDAHkAYQBuAC4AQwBUAC4AQwB5AGEAbgBUAHIAaQBnAGcAZQByAEUAdgBlAG4AdABBAHIAZwBEAGEAdABhACwAIABDAHkAYQBuAC4AQwB5AGEAbgBUAHIAaQBnAGcAZQByAAAAAAAnAQkAAABlAHYAZQBuAHQATgBhAG0AZQABEwAAAF8AUwB0AGEAcgB0AEYAYQBkAGUAVwBpAHQAaABFAHYAZQBuAHQAAQENAAAAdgBhAHIAaQBhAGIAbABlAE4AYQBtAGUAcwAvAQAAAAEZAAAAUwB5AHMAdABlAG0ALgBTAHQAcgBpAG4AZwBbAF0ALAAgAG0AcwBjAG8AcgBsAGkAYgABAAAABgAAAAAAAAAABwUJAREAAAB2AGEAcgBpAGEAYgBsAGUAVQBkAG8AbgBOAGEAbQBlAHMAAQAAAAEBDAAAAHYAYQByAGkAYQBiAGwAZQBPAHUAdABzAC8CAAAAARoAAABTAHkAcwB0AGUAbQAuAEIAbwBvAGwAZQBhAG4AWwBdACwAIABtAHMAYwBvAHIAbABpAGIAAgAAAAgAAAAAAQAAAAUBAQ0AAAB2AGEAcgBpAGEAYgBsAGUAVAB5AHAAZQBzAC8DAAAAARcAAABTAHkAcwB0AGUAbQAuAFQAeQBwAGUAWwBdACwAIABtAHMAYwBvAHIAbABpAGIAAwAAAAYAAAAAAAAAAAcFBQ==
+            unityObjects: []
+        multiInput:
+        - isVariable: 1
+          name: fadeController
+          variableID: 0856eaa0-55fa-47e0-b5ca-f7322e9ad7a7
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        expanded: 1
+        comment:
+          comment: 
+      eventOptions:
+        userGate: 0
+        userGateExtraData: []
+        broadcast: 0
+        delay: 0
+        replay: 0
+      expanded: 0
+    - name: _EndFadeWithEvent
+      eventId: c0b60f42-b81c-42bc-8ca6-a54decdcc7c1
+      eventInstance:
+        actionType:
+          directEvent: Event_Custom
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: 
+          variableID: 
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        multiInput:
+        - isVariable: 1
+          name: onFadeOutEvent
+          variableID: ce31749a-4c19-481c-abc6-dd3f5ab180a3
+          data:
+            objEncoded: Ai8AAAAAARwAAABTAHkAcwB0AGUAbQAuAFIAdQBuAHQAaQBtAGUAVAB5AHAAZQAsACAAbQBzAGMAbwByAGwAaQBiAAAAAAAoARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIABQ==
+            unityObjects: []
+        expanded: 1
+        comment:
+          comment: 
+      actionInstances:
+      - actionType:
+          directEvent: VRCUdonCommonInterfacesIUdonEventReceiver.__SendCustomEvent__SystemString__SystemVoid
+          guid: 
+        inputs:
+        - isVariable: 0
+          name: 
+          variableID: 
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        - isVariable: 0
+          name: 
+          variableID: 
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBEgAAAF8ARwBlAHQARgBhAGQAZQBDAG8AbgB0AHIAbwBsAGwAZQByAAU=
+            unityObjects: []
+        - isVariable: 0
+          name: 
+          variableID: 
+          data:
+            objEncoded: Ai8AAAAAATEAAABDAHkAYQBuAC4AQwBUAC4AQwB5AGEAbgBUAHIAaQBnAGcAZQByAEUAdgBlAG4AdABBAHIAZwBEAGEAdABhACwAIABDAHkAYQBuAC4AQwB5AGEAbgBUAHIAaQBnAGcAZQByAAAAAAAnAQkAAABlAHYAZQBuAHQATgBhAG0AZQABEgAAAF8ARwBlAHQARgBhAGQAZQBDAG8AbgB0AHIAbwBsAGwAZQByAAEBDQAAAHYAYQByAGkAYQBiAGwAZQBOAGEAbQBlAHMALwEAAAABGQAAAFMAeQBzAHQAZQBtAC4AUwB0AHIAaQBuAGcAWwBdACwAIABtAHMAYwBvAHIAbABpAGIAAQAAAAYAAAAAAAAAAAcFAQERAAAAdgBhAHIAaQBhAGIAbABlAFUAZABvAG4ATgBhAG0AZQBzADABAAAAAgAAAAYAAAAAAAAAAAcFAQEMAAAAdgBhAHIAaQBhAGIAbABlAE8AdQB0AHMALwIAAAABGgAAAFMAeQBzAHQAZQBtAC4AQgBvAG8AbABlAGEAbgBbAF0ALAAgAG0AcwBjAG8AcgBsAGkAYgADAAAACAAAAAABAAAABQEBDQAAAHYAYQByAGkAYQBiAGwAZQBUAHkAcABlAHMALwMAAAABFwAAAFMAeQBzAHQAZQBtAC4AVAB5AHAAZQBbAF0ALAAgAG0AcwBjAG8AcgBsAGkAYgAEAAAABgAAAAAAAAAABwUF
+            unityObjects: []
+        multiInput:
+        - isVariable: 1
+          name: This UdonBehaviour
+          variableID: _this_udonbehaviour
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: VRCUdonCommonInterfacesIUdonEventReceiver.__SendCustomEvent__SystemString__SystemVoid
+          guid: 
+        inputs:
+        - isVariable: 0
+          name: 
+          variableID: 
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        - isVariable: 0
+          name: 
+          variableID: 
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBEQAAAF8ARQBuAGQARgBhAGQAZQBXAGkAdABoAEUAdgBlAG4AdAAF
+            unityObjects: []
+        - isVariable: 0
+          name: 
+          variableID: 
+          data:
+            objEncoded: Ai8AAAAAATEAAABDAHkAYQBuAC4AQwBUAC4AQwB5AGEAbgBUAHIAaQBnAGcAZQByAEUAdgBlAG4AdABBAHIAZwBEAGEAdABhACwAIABDAHkAYQBuAC4AQwB5AGEAbgBUAHIAaQBnAGcAZQByAAAAAAAnAQkAAABlAHYAZQBuAHQATgBhAG0AZQABEQAAAF8ARQBuAGQARgBhAGQAZQBXAGkAdABoAEUAdgBlAG4AdAABAQ0AAAB2AGEAcgBpAGEAYgBsAGUATgBhAG0AZQBzAC8BAAAAARkAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnAFsAXQAsACAAbQBzAGMAbwByAGwAaQBiAAEAAAAGAgAAAAAAAAAoAQ4AAABvAG4ARgBhAGQAZQBFAG4AZABFAHYAZQBuAHQAKAEEAAAAdQBkAG8AbgAHBQEBEQAAAHYAYQByAGkAYQBiAGwAZQBVAGQAbwBuAE4AYQBtAGUAcwAwAQAAAAIAAAAGAgAAAAAAAAAoASUAAABfAGEAcgBnAF8AbwBuAEYAYQBkAGUARQBuAGQARQB2AGUAbgB0AF8AXwBFAG4AZABGAGEAZABlAFcAaQB0AGgARQB2AGUAbgB0ACgBGwAAAF8AYQByAGcAXwB1AGQAbwBuAF8AXwBFAG4AZABGAGEAZABlAFcAaQB0AGgARQB2AGUAbgB0AAcFAQEMAAAAdgBhAHIAaQBhAGIAbABlAE8AdQB0AHMALwIAAAABGgAAAFMAeQBzAHQAZQBtAC4AQgBvAG8AbABlAGEAbgBbAF0ALAAgAG0AcwBjAG8AcgBsAGkAYgADAAAACAIAAAABAAAAAAAFAQENAAAAdgBhAHIAaQBhAGIAbABlAFQAeQBwAGUAcwAvAwAAAAEXAAAAUwB5AHMAdABlAG0ALgBUAHkAcABlAFsAXQAsACAAbQBzAGMAbwByAGwAaQBiAAQAAAAGAgAAAAAAAAACLwQAAAABHAAAAFMAeQBzAHQAZQBtAC4AUgB1AG4AdABpAG0AZQBUAHkAcABlACwAIABtAHMAYwBvAHIAbABpAGIABQAAACgBFwAAAFMAeQBzAHQAZQBtAC4AUwB0AHIAaQBuAGcALAAgAG0AcwBjAG8AcgBsAGkAYgAFAjAEAAAABgAAACgBIAAAAFYAUgBDAC4AVQBkAG8AbgAuAFUAZABvAG4AQgBlAGgAYQB2AGkAbwB1AHIALAAgAFYAUgBDAC4AVQBkAG8AbgAFBwUF
+            unityObjects: []
+        - isVariable: 1
+          name: onFadeOutEvent
+          variableID: ce31749a-4c19-481c-abc6-dd3f5ab180a3
+          data:
+            objEncoded: Ai8AAAAAATEAAABDAHkAYQBuAC4AQwBUAC4AQwB5AGEAbgBUAHIAaQBnAGcAZQByAEUAdgBlAG4AdABBAHIAZwBEAGEAdABhACwAIABDAHkAYQBuAC4AQwB5AGEAbgBUAHIAaQBnAGcAZQByAAAAAAAnAQkAAABlAHYAZQBuAHQATgBhAG0AZQABEwAAAF8AUwB0AGEAcgB0AEYAYQBkAGUAVwBpAHQAaABFAHYAZQBuAHQAAQENAAAAdgBhAHIAaQBhAGIAbABlAE4AYQBtAGUAcwAvAQAAAAEZAAAAUwB5AHMAdABlAG0ALgBTAHQAcgBpAG4AZwBbAF0ALAAgAG0AcwBjAG8AcgBsAGkAYgABAAAABgAAAAAAAAAABwUJAREAAAB2AGEAcgBpAGEAYgBsAGUAVQBkAG8AbgBOAGEAbQBlAHMAAQAAAAEBDAAAAHYAYQByAGkAYQBiAGwAZQBPAHUAdABzAC8CAAAAARoAAABTAHkAcwB0AGUAbQAuAEIAbwBvAGwAZQBhAG4AWwBdACwAIABtAHMAYwBvAHIAbABpAGIAAgAAAAgAAAAAAQAAAAUBAQ0AAAB2AGEAcgBpAGEAYgBsAGUAVAB5AHAAZQBzAC8DAAAAARcAAABTAHkAcwB0AGUAbQAuAFQAeQBwAGUAWwBdACwAIABtAHMAYwBvAHIAbABpAGIAAwAAAAYAAAAAAAAAAAcFBQ==
+            unityObjects: []
+        - isVariable: 1
+          name: This UdonBehaviour
+          variableID: _this_udonbehaviour
+          data:
+            objEncoded: Ai8AAAAAATEAAABDAHkAYQBuAC4AQwBUAC4AQwB5AGEAbgBUAHIAaQBnAGcAZQByAEUAdgBlAG4AdABBAHIAZwBEAGEAdABhACwAIABDAHkAYQBuAC4AQwB5AGEAbgBUAHIAaQBnAGcAZQByAAAAAAAnAQkAAABlAHYAZQBuAHQATgBhAG0AZQABEwAAAF8AUwB0AGEAcgB0AEYAYQBkAGUAVwBpAHQAaABFAHYAZQBuAHQAAQENAAAAdgBhAHIAaQBhAGIAbABlAE4AYQBtAGUAcwAvAQAAAAEZAAAAUwB5AHMAdABlAG0ALgBTAHQAcgBpAG4AZwBbAF0ALAAgAG0AcwBjAG8AcgBsAGkAYgABAAAABgAAAAAAAAAABwUJAREAAAB2AGEAcgBpAGEAYgBsAGUAVQBkAG8AbgBOAGEAbQBlAHMAAQAAAAEBDAAAAHYAYQByAGkAYQBiAGwAZQBPAHUAdABzAC8CAAAAARoAAABTAHkAcwB0AGUAbQAuAEIAbwBvAGwAZQBhAG4AWwBdACwAIABtAHMAYwBvAHIAbABpAGIAAgAAAAgAAAAAAQAAAAUBAQ0AAAB2AGEAcgBpAGEAYgBsAGUAVAB5AHAAZQBzAC8DAAAAARcAAABTAHkAcwB0AGUAbQAuAFQAeQBwAGUAWwBdACwAIABtAHMAYwBvAHIAbABpAGIAAwAAAAYAAAAAAAAAAAcFBQ==
+            unityObjects: []
+        multiInput:
+        - isVariable: 1
+          name: fadeController
+          variableID: 0856eaa0-55fa-47e0-b5ca-f7322e9ad7a7
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        expanded: 1
+        comment:
+          comment: 
+      eventOptions:
+        userGate: 0
+        userGateExtraData: []
+        broadcast: 0
+        delay: 0
+        replay: 0
+      expanded: 0
+    - name: _EndFadeWithEventAndDuration
+      eventId: 26defe03-ca7f-467e-9464-5a3fcc6225ee
+      eventInstance:
+        actionType:
+          directEvent: Event_Custom
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: 
+          variableID: 
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        multiInput:
+        - isVariable: 1
+          name: onFadeEndEvent
+          variableID: 6ba06e2e-70f6-44e7-bea8-02447c488b58
+          data:
+            objEncoded: Ai8AAAAAARwAAABTAHkAcwB0AGUAbQAuAFIAdQBuAHQAaQBtAGUAVAB5AHAAZQAsACAAbQBzAGMAbwByAGwAaQBiAAAAAAAoARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIABQ==
+            unityObjects: []
+        - isVariable: 1
+          name: fadeEndDuration
+          variableID: f42d04a8-df81-41e4-96e1-c02047dd1134
+          data:
+            objEncoded: Ai8AAAAAARwAAABTAHkAcwB0AGUAbQAuAFIAdQBuAHQAaQBtAGUAVAB5AHAAZQAsACAAbQBzAGMAbwByAGwAaQBiAAAAAAAoARcAAABTAHkAcwB0AGUAbQAuAFMAaQBuAGcAbABlACwAIABtAHMAYwBvAHIAbABpAGIABQ==
+            unityObjects: []
+        expanded: 1
+        comment:
+          comment: 
+      actionInstances:
+      - actionType:
+          directEvent: VRCUdonCommonInterfacesIUdonEventReceiver.__SendCustomEvent__SystemString__SystemVoid
+          guid: 
+        inputs:
+        - isVariable: 0
+          name: 
+          variableID: 
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        - isVariable: 0
+          name: 
+          variableID: 
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBEgAAAF8ARwBlAHQARgBhAGQAZQBDAG8AbgB0AHIAbwBsAGwAZQByAAU=
+            unityObjects: []
+        - isVariable: 0
+          name: 
+          variableID: 
+          data:
+            objEncoded: Ai8AAAAAATEAAABDAHkAYQBuAC4AQwBUAC4AQwB5AGEAbgBUAHIAaQBnAGcAZQByAEUAdgBlAG4AdABBAHIAZwBEAGEAdABhACwAIABDAHkAYQBuAC4AQwB5AGEAbgBUAHIAaQBnAGcAZQByAAAAAAAnAQkAAABlAHYAZQBuAHQATgBhAG0AZQABEgAAAF8ARwBlAHQARgBhAGQAZQBDAG8AbgB0AHIAbwBsAGwAZQByAAEBDQAAAHYAYQByAGkAYQBiAGwAZQBOAGEAbQBlAHMALwEAAAABGQAAAFMAeQBzAHQAZQBtAC4AUwB0AHIAaQBuAGcAWwBdACwAIABtAHMAYwBvAHIAbABpAGIAAQAAAAYAAAAAAAAAAAcFAQERAAAAdgBhAHIAaQBhAGIAbABlAFUAZABvAG4ATgBhAG0AZQBzADABAAAAAgAAAAYAAAAAAAAAAAcFAQEMAAAAdgBhAHIAaQBhAGIAbABlAE8AdQB0AHMALwIAAAABGgAAAFMAeQBzAHQAZQBtAC4AQgBvAG8AbABlAGEAbgBbAF0ALAAgAG0AcwBjAG8AcgBsAGkAYgADAAAACAAAAAABAAAABQEBDQAAAHYAYQByAGkAYQBiAGwAZQBUAHkAcABlAHMALwMAAAABFwAAAFMAeQBzAHQAZQBtAC4AVAB5AHAAZQBbAF0ALAAgAG0AcwBjAG8AcgBsAGkAYgAEAAAABgAAAAAAAAAABwUF
+            unityObjects: []
+        multiInput:
+        - isVariable: 1
+          name: This UdonBehaviour
+          variableID: _this_udonbehaviour
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: VRCUdonCommonInterfacesIUdonEventReceiver.__SendCustomEvent__SystemString__SystemVoid
+          guid: 
+        inputs:
+        - isVariable: 0
+          name: 
+          variableID: 
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        - isVariable: 0
+          name: 
+          variableID: 
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBHAAAAF8ARQBuAGQARgBhAGQAZQBXAGkAdABoAEUAdgBlAG4AdABBAG4AZABEAHUAcgBhAHQAaQBvAG4ABQ==
+            unityObjects: []
+        - isVariable: 0
+          name: 
+          variableID: 
+          data:
+            objEncoded: Ai8AAAAAATEAAABDAHkAYQBuAC4AQwBUAC4AQwB5AGEAbgBUAHIAaQBnAGcAZQByAEUAdgBlAG4AdABBAHIAZwBEAGEAdABhACwAIABDAHkAYQBuAC4AQwB5AGEAbgBUAHIAaQBnAGcAZQByAAAAAAAnAQkAAABlAHYAZQBuAHQATgBhAG0AZQABHAAAAF8ARQBuAGQARgBhAGQAZQBXAGkAdABoAEUAdgBlAG4AdABBAG4AZABEAHUAcgBhAHQAaQBvAG4AAQENAAAAdgBhAHIAaQBhAGIAbABlAE4AYQBtAGUAcwAvAQAAAAEZAAAAUwB5AHMAdABlAG0ALgBTAHQAcgBpAG4AZwBbAF0ALAAgAG0AcwBjAG8AcgBsAGkAYgABAAAABgMAAAAAAAAAKAEOAAAAbwBuAEYAYQBkAGUARQBuAGQARQB2AGUAbgB0ACgBDwAAAGYAYQBkAGUARQBuAGQARAB1AHIAYQB0AGkAbwBuACgBBAAAAHUAZABvAG4ABwUBAREAAAB2AGEAcgBpAGEAYgBsAGUAVQBkAG8AbgBOAGEAbQBlAHMAMAEAAAACAAAABgMAAAAAAAAAKAEwAAAAXwBhAHIAZwBfAG8AbgBGAGEAZABlAEUAbgBkAEUAdgBlAG4AdABfAF8ARQBuAGQARgBhAGQAZQBXAGkAdABoAEUAdgBlAG4AdABBAG4AZABEAHUAcgBhAHQAaQBvAG4AKAExAAAAXwBhAHIAZwBfAGYAYQBkAGUARQBuAGQARAB1AHIAYQB0AGkAbwBuAF8AXwBFAG4AZABGAGEAZABlAFcAaQB0AGgARQB2AGUAbgB0AEEAbgBkAEQAdQByAGEAdABpAG8AbgAoASYAAABfAGEAcgBnAF8AdQBkAG8AbgBfAF8ARQBuAGQARgBhAGQAZQBXAGkAdABoAEUAdgBlAG4AdABBAG4AZABEAHUAcgBhAHQAaQBvAG4ABwUBAQwAAAB2AGEAcgBpAGEAYgBsAGUATwB1AHQAcwAvAgAAAAEaAAAAUwB5AHMAdABlAG0ALgBCAG8AbwBsAGUAYQBuAFsAXQAsACAAbQBzAGMAbwByAGwAaQBiAAMAAAAIAwAAAAEAAAAAAAAFAQENAAAAdgBhAHIAaQBhAGIAbABlAFQAeQBwAGUAcwAvAwAAAAEXAAAAUwB5AHMAdABlAG0ALgBUAHkAcABlAFsAXQAsACAAbQBzAGMAbwByAGwAaQBiAAQAAAAGAwAAAAAAAAACLwQAAAABHAAAAFMAeQBzAHQAZQBtAC4AUgB1AG4AdABpAG0AZQBUAHkAcABlACwAIABtAHMAYwBvAHIAbABpAGIABQAAACgBFwAAAFMAeQBzAHQAZQBtAC4AUwB0AHIAaQBuAGcALAAgAG0AcwBjAG8AcgBsAGkAYgAFAjAEAAAABgAAACgBFwAAAFMAeQBzAHQAZQBtAC4AUwBpAG4AZwBsAGUALAAgAG0AcwBjAG8AcgBsAGkAYgAFAjAEAAAABwAAACgBIAAAAFYAUgBDAC4AVQBkAG8AbgAuAFUAZABvAG4AQgBlAGgAYQB2AGkAbwB1AHIALAAgAFYAUgBDAC4AVQBkAG8AbgAFBwUF
+            unityObjects: []
+        - isVariable: 1
+          name: onFadeEndEvent
+          variableID: 6ba06e2e-70f6-44e7-bea8-02447c488b58
+          data:
+            objEncoded: Ai8AAAAAATEAAABDAHkAYQBuAC4AQwBUAC4AQwB5AGEAbgBUAHIAaQBnAGcAZQByAEUAdgBlAG4AdABBAHIAZwBEAGEAdABhACwAIABDAHkAYQBuAC4AQwB5AGEAbgBUAHIAaQBnAGcAZQByAAAAAAAnAQkAAABlAHYAZQBuAHQATgBhAG0AZQABEwAAAF8AUwB0AGEAcgB0AEYAYQBkAGUAVwBpAHQAaABFAHYAZQBuAHQAAQENAAAAdgBhAHIAaQBhAGIAbABlAE4AYQBtAGUAcwAvAQAAAAEZAAAAUwB5AHMAdABlAG0ALgBTAHQAcgBpAG4AZwBbAF0ALAAgAG0AcwBjAG8AcgBsAGkAYgABAAAABgAAAAAAAAAABwUJAREAAAB2AGEAcgBpAGEAYgBsAGUAVQBkAG8AbgBOAGEAbQBlAHMAAQAAAAEBDAAAAHYAYQByAGkAYQBiAGwAZQBPAHUAdABzAC8CAAAAARoAAABTAHkAcwB0AGUAbQAuAEIAbwBvAGwAZQBhAG4AWwBdACwAIABtAHMAYwBvAHIAbABpAGIAAgAAAAgAAAAAAQAAAAUBAQ0AAAB2AGEAcgBpAGEAYgBsAGUAVAB5AHAAZQBzAC8DAAAAARcAAABTAHkAcwB0AGUAbQAuAFQAeQBwAGUAWwBdACwAIABtAHMAYwBvAHIAbABpAGIAAwAAAAYAAAAAAAAAAAcFBQ==
+            unityObjects: []
+        - isVariable: 1
+          name: fadeEndDuration
+          variableID: f42d04a8-df81-41e4-96e1-c02047dd1134
+          data:
+            objEncoded: Ai8AAAAAATEAAABDAHkAYQBuAC4AQwBUAC4AQwB5AGEAbgBUAHIAaQBnAGcAZQByAEUAdgBlAG4AdABBAHIAZwBEAGEAdABhACwAIABDAHkAYQBuAC4AQwB5AGEAbgBUAHIAaQBnAGcAZQByAAAAAAAnAQkAAABlAHYAZQBuAHQATgBhAG0AZQABEwAAAF8AUwB0AGEAcgB0AEYAYQBkAGUAVwBpAHQAaABFAHYAZQBuAHQAAQENAAAAdgBhAHIAaQBhAGIAbABlAE4AYQBtAGUAcwAvAQAAAAEZAAAAUwB5AHMAdABlAG0ALgBTAHQAcgBpAG4AZwBbAF0ALAAgAG0AcwBjAG8AcgBsAGkAYgABAAAABgAAAAAAAAAABwUJAREAAAB2AGEAcgBpAGEAYgBsAGUAVQBkAG8AbgBOAGEAbQBlAHMAAQAAAAEBDAAAAHYAYQByAGkAYQBiAGwAZQBPAHUAdABzAC8CAAAAARoAAABTAHkAcwB0AGUAbQAuAEIAbwBvAGwAZQBhAG4AWwBdACwAIABtAHMAYwBvAHIAbABpAGIAAgAAAAgAAAAAAQAAAAUBAQ0AAAB2AGEAcgBpAGEAYgBsAGUAVAB5AHAAZQBzAC8DAAAAARcAAABTAHkAcwB0AGUAbQAuAFQAeQBwAGUAWwBdACwAIABtAHMAYwBvAHIAbABpAGIAAwAAAAYAAAAAAAAAAAcFBQ==
+            unityObjects: []
+        - isVariable: 1
+          name: This UdonBehaviour
+          variableID: _this_udonbehaviour
+          data:
+            objEncoded: Ai8AAAAAATEAAABDAHkAYQBuAC4AQwBUAC4AQwB5AGEAbgBUAHIAaQBnAGcAZQByAEUAdgBlAG4AdABBAHIAZwBEAGEAdABhACwAIABDAHkAYQBuAC4AQwB5AGEAbgBUAHIAaQBnAGcAZQByAAAAAAAnAQkAAABlAHYAZQBuAHQATgBhAG0AZQABEwAAAF8AUwB0AGEAcgB0AEYAYQBkAGUAVwBpAHQAaABFAHYAZQBuAHQAAQENAAAAdgBhAHIAaQBhAGIAbABlAE4AYQBtAGUAcwAvAQAAAAEZAAAAUwB5AHMAdABlAG0ALgBTAHQAcgBpAG4AZwBbAF0ALAAgAG0AcwBjAG8AcgBsAGkAYgABAAAABgAAAAAAAAAABwUJAREAAAB2AGEAcgBpAGEAYgBsAGUAVQBkAG8AbgBOAGEAbQBlAHMAAQAAAAEBDAAAAHYAYQByAGkAYQBiAGwAZQBPAHUAdABzAC8CAAAAARoAAABTAHkAcwB0AGUAbQAuAEIAbwBvAGwAZQBhAG4AWwBdACwAIABtAHMAYwBvAHIAbABpAGIAAgAAAAgAAAAAAQAAAAUBAQ0AAAB2AGEAcgBpAGEAYgBsAGUAVAB5AHAAZQBzAC8DAAAAARcAAABTAHkAcwB0AGUAbQAuAFQAeQBwAGUAWwBdACwAIABtAHMAYwBvAHIAbABpAGIAAwAAAAYAAAAAAAAAAAcFBQ==
+            unityObjects: []
+        multiInput:
+        - isVariable: 1
+          name: fadeController
+          variableID: 0856eaa0-55fa-47e0-b5ca-f7322e9ad7a7
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        expanded: 0
+        comment:
+          comment: 
+      eventOptions:
+        userGate: 0
+        userGateExtraData: []
+        broadcast: 0
+        delay: 0
+        replay: 0
+      expanded: 0
+    - name: _FadeInAndOutWithEvents
+      eventId: cb5925d4-8c2a-4fec-a86a-99a8bc7dcdbe
+      eventInstance:
+        actionType:
+          directEvent: Event_Custom
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: 
+          variableID: 
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        multiInput:
+        - isVariable: 1
+          name: onFadeInEvent
+          variableID: b66611a2-ea51-40ee-89ff-8b3429aab54d
+          data:
+            objEncoded: Ai8AAAAAARwAAABTAHkAcwB0AGUAbQAuAFIAdQBuAHQAaQBtAGUAVAB5AHAAZQAsACAAbQBzAGMAbwByAGwAaQBiAAAAAAAoARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIABQ==
+            unityObjects: []
+        - isVariable: 1
+          name: onFadeEndEvent
+          variableID: d79462be-be63-4491-bd8d-a86285f61be0
+          data:
+            objEncoded: Ai8AAAAAARwAAABTAHkAcwB0AGUAbQAuAFIAdQBuAHQAaQBtAGUAVAB5AHAAZQAsACAAbQBzAGMAbwByAGwAaQBiAAAAAAAoARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIABQ==
+            unityObjects: []
+        expanded: 1
+        comment:
+          comment: 
+      actionInstances:
+      - actionType:
+          directEvent: VRCUdonCommonInterfacesIUdonEventReceiver.__SendCustomEvent__SystemString__SystemVoid
+          guid: 
+        inputs:
+        - isVariable: 0
+          name: 
+          variableID: 
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        - isVariable: 0
+          name: 
+          variableID: 
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBEgAAAF8ARwBlAHQARgBhAGQAZQBDAG8AbgB0AHIAbwBsAGwAZQByAAU=
+            unityObjects: []
+        - isVariable: 0
+          name: 
+          variableID: 
+          data:
+            objEncoded: Ai8AAAAAATEAAABDAHkAYQBuAC4AQwBUAC4AQwB5AGEAbgBUAHIAaQBnAGcAZQByAEUAdgBlAG4AdABBAHIAZwBEAGEAdABhACwAIABDAHkAYQBuAC4AQwB5AGEAbgBUAHIAaQBnAGcAZQByAAAAAAAnAQkAAABlAHYAZQBuAHQATgBhAG0AZQABEgAAAF8ARwBlAHQARgBhAGQAZQBDAG8AbgB0AHIAbwBsAGwAZQByAAEBDQAAAHYAYQByAGkAYQBiAGwAZQBOAGEAbQBlAHMALwEAAAABGQAAAFMAeQBzAHQAZQBtAC4AUwB0AHIAaQBuAGcAWwBdACwAIABtAHMAYwBvAHIAbABpAGIAAQAAAAYAAAAAAAAAAAcFAQERAAAAdgBhAHIAaQBhAGIAbABlAFUAZABvAG4ATgBhAG0AZQBzADABAAAAAgAAAAYAAAAAAAAAAAcFAQEMAAAAdgBhAHIAaQBhAGIAbABlAE8AdQB0AHMALwIAAAABGgAAAFMAeQBzAHQAZQBtAC4AQgBvAG8AbABlAGEAbgBbAF0ALAAgAG0AcwBjAG8AcgBsAGkAYgADAAAACAAAAAABAAAABQEBDQAAAHYAYQByAGkAYQBiAGwAZQBUAHkAcABlAHMALwMAAAABFwAAAFMAeQBzAHQAZQBtAC4AVAB5AHAAZQBbAF0ALAAgAG0AcwBjAG8AcgBsAGkAYgAEAAAABgAAAAAAAAAABwUF
+            unityObjects: []
+        multiInput:
+        - isVariable: 1
+          name: This UdonBehaviour
+          variableID: _this_udonbehaviour
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: VRCUdonCommonInterfacesIUdonEventReceiver.__SendCustomEvent__SystemString__SystemVoid
+          guid: 
+        inputs:
+        - isVariable: 0
+          name: 
+          variableID: 
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        - isVariable: 0
+          name: 
+          variableID: 
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBFwAAAF8ARgBhAGQAZQBJAG4AQQBuAGQATwB1AHQAVwBpAHQAaABFAHYAZQBuAHQAcwAF
+            unityObjects: []
+        - isVariable: 0
+          name: 
+          variableID: 
+          data:
+            objEncoded: Ai8AAAAAATEAAABDAHkAYQBuAC4AQwBUAC4AQwB5AGEAbgBUAHIAaQBnAGcAZQByAEUAdgBlAG4AdABBAHIAZwBEAGEAdABhACwAIABDAHkAYQBuAC4AQwB5AGEAbgBUAHIAaQBnAGcAZQByAAAAAAAnAQkAAABlAHYAZQBuAHQATgBhAG0AZQABFwAAAF8ARgBhAGQAZQBJAG4AQQBuAGQATwB1AHQAVwBpAHQAaABFAHYAZQBuAHQAcwABAQ0AAAB2AGEAcgBpAGEAYgBsAGUATgBhAG0AZQBzAC8BAAAAARkAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnAFsAXQAsACAAbQBzAGMAbwByAGwAaQBiAAEAAAAGAwAAAAAAAAAoAQ0AAABvAG4ARgBhAGQAZQBJAG4ARQB2AGUAbgB0ACgBDgAAAG8AbgBGAGEAZABlAE8AdQB0AEUAdgBlAG4AdAAoAQQAAAB1AGQAbwBuAAcFAQERAAAAdgBhAHIAaQBhAGIAbABlAFUAZABvAG4ATgBhAG0AZQBzADABAAAAAgAAAAYDAAAAAAAAACgBKgAAAF8AYQByAGcAXwBvAG4ARgBhAGQAZQBJAG4ARQB2AGUAbgB0AF8AXwBGAGEAZABlAEkAbgBBAG4AZABPAHUAdABXAGkAdABoAEUAdgBlAG4AdABzACgBKwAAAF8AYQByAGcAXwBvAG4ARgBhAGQAZQBPAHUAdABFAHYAZQBuAHQAXwBfAEYAYQBkAGUASQBuAEEAbgBkAE8AdQB0AFcAaQB0AGgARQB2AGUAbgB0AHMAKAEhAAAAXwBhAHIAZwBfAHUAZABvAG4AXwBfAEYAYQBkAGUASQBuAEEAbgBkAE8AdQB0AFcAaQB0AGgARQB2AGUAbgB0AHMABwUBAQwAAAB2AGEAcgBpAGEAYgBsAGUATwB1AHQAcwAvAgAAAAEaAAAAUwB5AHMAdABlAG0ALgBCAG8AbwBsAGUAYQBuAFsAXQAsACAAbQBzAGMAbwByAGwAaQBiAAMAAAAIAwAAAAEAAAAAAAAFAQENAAAAdgBhAHIAaQBhAGIAbABlAFQAeQBwAGUAcwAvAwAAAAEXAAAAUwB5AHMAdABlAG0ALgBUAHkAcABlAFsAXQAsACAAbQBzAGMAbwByAGwAaQBiAAQAAAAGAwAAAAAAAAACLwQAAAABHAAAAFMAeQBzAHQAZQBtAC4AUgB1AG4AdABpAG0AZQBUAHkAcABlACwAIABtAHMAYwBvAHIAbABpAGIABQAAACgBFwAAAFMAeQBzAHQAZQBtAC4AUwB0AHIAaQBuAGcALAAgAG0AcwBjAG8AcgBsAGkAYgAFCgUAAAACMAQAAAAGAAAAKAEgAAAAVgBSAEMALgBVAGQAbwBuAC4AVQBkAG8AbgBCAGUAaABhAHYAaQBvAHUAcgAsACAAVgBSAEMALgBVAGQAbwBuAAUHBQU=
+            unityObjects: []
+        - isVariable: 1
+          name: onFadeInEvent
+          variableID: b66611a2-ea51-40ee-89ff-8b3429aab54d
+          data:
+            objEncoded: Ai8AAAAAATEAAABDAHkAYQBuAC4AQwBUAC4AQwB5AGEAbgBUAHIAaQBnAGcAZQByAEUAdgBlAG4AdABBAHIAZwBEAGEAdABhACwAIABDAHkAYQBuAC4AQwB5AGEAbgBUAHIAaQBnAGcAZQByAAAAAAAnAQkAAABlAHYAZQBuAHQATgBhAG0AZQABEwAAAF8AUwB0AGEAcgB0AEYAYQBkAGUAVwBpAHQAaABFAHYAZQBuAHQAAQENAAAAdgBhAHIAaQBhAGIAbABlAE4AYQBtAGUAcwAvAQAAAAEZAAAAUwB5AHMAdABlAG0ALgBTAHQAcgBpAG4AZwBbAF0ALAAgAG0AcwBjAG8AcgBsAGkAYgABAAAABgAAAAAAAAAABwUJAREAAAB2AGEAcgBpAGEAYgBsAGUAVQBkAG8AbgBOAGEAbQBlAHMAAQAAAAEBDAAAAHYAYQByAGkAYQBiAGwAZQBPAHUAdABzAC8CAAAAARoAAABTAHkAcwB0AGUAbQAuAEIAbwBvAGwAZQBhAG4AWwBdACwAIABtAHMAYwBvAHIAbABpAGIAAgAAAAgAAAAAAQAAAAUBAQ0AAAB2AGEAcgBpAGEAYgBsAGUAVAB5AHAAZQBzAC8DAAAAARcAAABTAHkAcwB0AGUAbQAuAFQAeQBwAGUAWwBdACwAIABtAHMAYwBvAHIAbABpAGIAAwAAAAYAAAAAAAAAAAcFBQ==
+            unityObjects: []
+        - isVariable: 1
+          name: onFadeEndEvent
+          variableID: d79462be-be63-4491-bd8d-a86285f61be0
+          data:
+            objEncoded: Ai8AAAAAATEAAABDAHkAYQBuAC4AQwBUAC4AQwB5AGEAbgBUAHIAaQBnAGcAZQByAEUAdgBlAG4AdABBAHIAZwBEAGEAdABhACwAIABDAHkAYQBuAC4AQwB5AGEAbgBUAHIAaQBnAGcAZQByAAAAAAAnAQkAAABlAHYAZQBuAHQATgBhAG0AZQABEwAAAF8AUwB0AGEAcgB0AEYAYQBkAGUAVwBpAHQAaABFAHYAZQBuAHQAAQENAAAAdgBhAHIAaQBhAGIAbABlAE4AYQBtAGUAcwAvAQAAAAEZAAAAUwB5AHMAdABlAG0ALgBTAHQAcgBpAG4AZwBbAF0ALAAgAG0AcwBjAG8AcgBsAGkAYgABAAAABgAAAAAAAAAABwUJAREAAAB2AGEAcgBpAGEAYgBsAGUAVQBkAG8AbgBOAGEAbQBlAHMAAQAAAAEBDAAAAHYAYQByAGkAYQBiAGwAZQBPAHUAdABzAC8CAAAAARoAAABTAHkAcwB0AGUAbQAuAEIAbwBvAGwAZQBhAG4AWwBdACwAIABtAHMAYwBvAHIAbABpAGIAAgAAAAgAAAAAAQAAAAUBAQ0AAAB2AGEAcgBpAGEAYgBsAGUAVAB5AHAAZQBzAC8DAAAAARcAAABTAHkAcwB0AGUAbQAuAFQAeQBwAGUAWwBdACwAIABtAHMAYwBvAHIAbABpAGIAAwAAAAYAAAAAAAAAAAcFBQ==
+            unityObjects: []
+        - isVariable: 1
+          name: This UdonBehaviour
+          variableID: _this_udonbehaviour
+          data:
+            objEncoded: Ai8AAAAAATEAAABDAHkAYQBuAC4AQwBUAC4AQwB5AGEAbgBUAHIAaQBnAGcAZQByAEUAdgBlAG4AdABBAHIAZwBEAGEAdABhACwAIABDAHkAYQBuAC4AQwB5AGEAbgBUAHIAaQBnAGcAZQByAAAAAAAnAQkAAABlAHYAZQBuAHQATgBhAG0AZQABEwAAAF8AUwB0AGEAcgB0AEYAYQBkAGUAVwBpAHQAaABFAHYAZQBuAHQAAQENAAAAdgBhAHIAaQBhAGIAbABlAE4AYQBtAGUAcwAvAQAAAAEZAAAAUwB5AHMAdABlAG0ALgBTAHQAcgBpAG4AZwBbAF0ALAAgAG0AcwBjAG8AcgBsAGkAYgABAAAABgAAAAAAAAAABwUJAREAAAB2AGEAcgBpAGEAYgBsAGUAVQBkAG8AbgBOAGEAbQBlAHMAAQAAAAEBDAAAAHYAYQByAGkAYQBiAGwAZQBPAHUAdABzAC8CAAAAARoAAABTAHkAcwB0AGUAbQAuAEIAbwBvAGwAZQBhAG4AWwBdACwAIABtAHMAYwBvAHIAbABpAGIAAgAAAAgAAAAAAQAAAAUBAQ0AAAB2AGEAcgBpAGEAYgBsAGUAVAB5AHAAZQBzAC8DAAAAARcAAABTAHkAcwB0AGUAbQAuAFQAeQBwAGUAWwBdACwAIABtAHMAYwBvAHIAbABpAGIAAwAAAAYAAAAAAAAAAAcFBQ==
+            unityObjects: []
+        multiInput:
+        - isVariable: 1
+          name: fadeController
+          variableID: 0856eaa0-55fa-47e0-b5ca-f7322e9ad7a7
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        expanded: 1
+        comment:
+          comment: 
+      eventOptions:
+        userGate: 0
+        userGateExtraData: []
+        broadcast: 0
+        delay: 0
+        replay: 0
+      expanded: 0
+    - name: _FadeInAndOutWithEventsAndDurations
+      eventId: 8e9f4d39-5be7-4c78-b8c1-308d32acf309
+      eventInstance:
+        actionType:
+          directEvent: Event_Custom
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: 
+          variableID: 
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        multiInput:
+        - isVariable: 1
+          name: onFadeInEvent
+          variableID: c049dc6b-0d21-4e9f-8c72-b9fc1df0f052
+          data:
+            objEncoded: Ai8AAAAAARwAAABTAHkAcwB0AGUAbQAuAFIAdQBuAHQAaQBtAGUAVAB5AHAAZQAsACAAbQBzAGMAbwByAGwAaQBiAAAAAAAoARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIABQ==
+            unityObjects: []
+        - isVariable: 1
+          name: fadeInDuration
+          variableID: 6c9d9772-9839-479a-b1d4-29b532daef4c
+          data:
+            objEncoded: Ai8AAAAAARwAAABTAHkAcwB0AGUAbQAuAFIAdQBuAHQAaQBtAGUAVAB5AHAAZQAsACAAbQBzAGMAbwByAGwAaQBiAAAAAAAoARcAAABTAHkAcwB0AGUAbQAuAFMAaQBuAGcAbABlACwAIABtAHMAYwBvAHIAbABpAGIABQ==
+            unityObjects: []
+        - isVariable: 1
+          name: onFadeEndEvent
+          variableID: e59b4f67-1923-49ff-ad5b-f6461535dab8
+          data:
+            objEncoded: Ai8AAAAAARwAAABTAHkAcwB0AGUAbQAuAFIAdQBuAHQAaQBtAGUAVAB5AHAAZQAsACAAbQBzAGMAbwByAGwAaQBiAAAAAAAoARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIABQ==
+            unityObjects: []
+        - isVariable: 1
+          name: fadeEndDuration
+          variableID: 5706bfcd-5bf7-497f-8eb0-0f9161fc7619
+          data:
+            objEncoded: Ai8AAAAAARwAAABTAHkAcwB0AGUAbQAuAFIAdQBuAHQAaQBtAGUAVAB5AHAAZQAsACAAbQBzAGMAbwByAGwAaQBiAAAAAAAoARcAAABTAHkAcwB0AGUAbQAuAFMAaQBuAGcAbABlACwAIABtAHMAYwBvAHIAbABpAGIABQ==
+            unityObjects: []
+        expanded: 1
+        comment:
+          comment: 
+      actionInstances:
+      - actionType:
+          directEvent: VRCUdonCommonInterfacesIUdonEventReceiver.__SendCustomEvent__SystemString__SystemVoid
+          guid: 
+        inputs:
+        - isVariable: 0
+          name: 
+          variableID: 
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        - isVariable: 0
+          name: 
+          variableID: 
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBEgAAAF8ARwBlAHQARgBhAGQAZQBDAG8AbgB0AHIAbwBsAGwAZQByAAU=
+            unityObjects: []
+        - isVariable: 0
+          name: 
+          variableID: 
+          data:
+            objEncoded: Ai8AAAAAATEAAABDAHkAYQBuAC4AQwBUAC4AQwB5AGEAbgBUAHIAaQBnAGcAZQByAEUAdgBlAG4AdABBAHIAZwBEAGEAdABhACwAIABDAHkAYQBuAC4AQwB5AGEAbgBUAHIAaQBnAGcAZQByAAAAAAAnAQkAAABlAHYAZQBuAHQATgBhAG0AZQABEgAAAF8ARwBlAHQARgBhAGQAZQBDAG8AbgB0AHIAbwBsAGwAZQByAAEBDQAAAHYAYQByAGkAYQBiAGwAZQBOAGEAbQBlAHMALwEAAAABGQAAAFMAeQBzAHQAZQBtAC4AUwB0AHIAaQBuAGcAWwBdACwAIABtAHMAYwBvAHIAbABpAGIAAQAAAAYAAAAAAAAAAAcFAQERAAAAdgBhAHIAaQBhAGIAbABlAFUAZABvAG4ATgBhAG0AZQBzADABAAAAAgAAAAYAAAAAAAAAAAcFAQEMAAAAdgBhAHIAaQBhAGIAbABlAE8AdQB0AHMALwIAAAABGgAAAFMAeQBzAHQAZQBtAC4AQgBvAG8AbABlAGEAbgBbAF0ALAAgAG0AcwBjAG8AcgBsAGkAYgADAAAACAAAAAABAAAABQEBDQAAAHYAYQByAGkAYQBiAGwAZQBUAHkAcABlAHMALwMAAAABFwAAAFMAeQBzAHQAZQBtAC4AVAB5AHAAZQBbAF0ALAAgAG0AcwBjAG8AcgBsAGkAYgAEAAAABgAAAAAAAAAABwUF
+            unityObjects: []
+        multiInput:
+        - isVariable: 1
+          name: This UdonBehaviour
+          variableID: _this_udonbehaviour
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: VRCUdonCommonInterfacesIUdonEventReceiver.__SendCustomEvent__SystemString__SystemVoid
+          guid: 
+        inputs:
+        - isVariable: 0
+          name: 
+          variableID: 
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        - isVariable: 0
+          name: 
+          variableID: 
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBIwAAAF8ARgBhAGQAZQBJAG4AQQBuAGQATwB1AHQAVwBpAHQAaABFAHYAZQBuAHQAcwBBAG4AZABEAHUAcgBhAHQAaQBvAG4AcwAF
+            unityObjects: []
+        - isVariable: 0
+          name: 
+          variableID: 
+          data:
+            objEncoded: Ai8AAAAAATEAAABDAHkAYQBuAC4AQwBUAC4AQwB5AGEAbgBUAHIAaQBnAGcAZQByAEUAdgBlAG4AdABBAHIAZwBEAGEAdABhACwAIABDAHkAYQBuAC4AQwB5AGEAbgBUAHIAaQBnAGcAZQByAAAAAAAnAQkAAABlAHYAZQBuAHQATgBhAG0AZQABIwAAAF8ARgBhAGQAZQBJAG4AQQBuAGQATwB1AHQAVwBpAHQAaABFAHYAZQBuAHQAcwBBAG4AZABEAHUAcgBhAHQAaQBvAG4AcwABAQ0AAAB2AGEAcgBpAGEAYgBsAGUATgBhAG0AZQBzAC8BAAAAARkAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnAFsAXQAsACAAbQBzAGMAbwByAGwAaQBiAAEAAAAGBQAAAAAAAAAoAQ0AAABvAG4ARgBhAGQAZQBJAG4ARQB2AGUAbgB0ACgBDgAAAGYAYQBkAGUASQBuAEQAdQByAGEAdABpAG8AbgAoAQ4AAABvAG4ARgBhAGQAZQBPAHUAdABFAHYAZQBuAHQAKAEPAAAAZgBhAGQAZQBFAG4AZABEAHUAcgBhAHQAaQBvAG4AKAEEAAAAdQBkAG8AbgAHBQEBEQAAAHYAYQByAGkAYQBiAGwAZQBVAGQAbwBuAE4AYQBtAGUAcwAwAQAAAAIAAAAGBQAAAAAAAAAoATYAAABfAGEAcgBnAF8AbwBuAEYAYQBkAGUASQBuAEUAdgBlAG4AdABfAF8ARgBhAGQAZQBJAG4AQQBuAGQATwB1AHQAVwBpAHQAaABFAHYAZQBuAHQAcwBBAG4AZABEAHUAcgBhAHQAaQBvAG4AcwAoATcAAABfAGEAcgBnAF8AZgBhAGQAZQBJAG4ARAB1AHIAYQB0AGkAbwBuAF8AXwBGAGEAZABlAEkAbgBBAG4AZABPAHUAdABXAGkAdABoAEUAdgBlAG4AdABzAEEAbgBkAEQAdQByAGEAdABpAG8AbgBzACgBNwAAAF8AYQByAGcAXwBvAG4ARgBhAGQAZQBPAHUAdABFAHYAZQBuAHQAXwBfAEYAYQBkAGUASQBuAEEAbgBkAE8AdQB0AFcAaQB0AGgARQB2AGUAbgB0AHMAQQBuAGQARAB1AHIAYQB0AGkAbwBuAHMAKAE4AAAAXwBhAHIAZwBfAGYAYQBkAGUARQBuAGQARAB1AHIAYQB0AGkAbwBuAF8AXwBGAGEAZABlAEkAbgBBAG4AZABPAHUAdABXAGkAdABoAEUAdgBlAG4AdABzAEEAbgBkAEQAdQByAGEAdABpAG8AbgBzACgBLQAAAF8AYQByAGcAXwB1AGQAbwBuAF8AXwBGAGEAZABlAEkAbgBBAG4AZABPAHUAdABXAGkAdABoAEUAdgBlAG4AdABzAEEAbgBkAEQAdQByAGEAdABpAG8AbgBzAAcFAQEMAAAAdgBhAHIAaQBhAGIAbABlAE8AdQB0AHMALwIAAAABGgAAAFMAeQBzAHQAZQBtAC4AQgBvAG8AbABlAGEAbgBbAF0ALAAgAG0AcwBjAG8AcgBsAGkAYgADAAAACAUAAAABAAAAAAAAAAAFAQENAAAAdgBhAHIAaQBhAGIAbABlAFQAeQBwAGUAcwAvAwAAAAEXAAAAUwB5AHMAdABlAG0ALgBUAHkAcABlAFsAXQAsACAAbQBzAGMAbwByAGwAaQBiAAQAAAAGBQAAAAAAAAACLwQAAAABHAAAAFMAeQBzAHQAZQBtAC4AUgB1AG4AdABpAG0AZQBUAHkAcABlACwAIABtAHMAYwBvAHIAbABpAGIABQAAACgBFwAAAFMAeQBzAHQAZQBtAC4AUwB0AHIAaQBuAGcALAAgAG0AcwBjAG8AcgBsAGkAYgAFAjAEAAAABgAAACgBFwAAAFMAeQBzAHQAZQBtAC4AUwBpAG4AZwBsAGUALAAgAG0AcwBjAG8AcgBsAGkAYgAFCgUAAAAKBgAAAAIwBAAAAAcAAAAoASAAAABWAFIAQwAuAFUAZABvAG4ALgBVAGQAbwBuAEIAZQBoAGEAdgBpAG8AdQByACwAIABWAFIAQwAuAFUAZABvAG4ABQcFBQ==
+            unityObjects: []
+        - isVariable: 1
+          name: onFadeInEvent
+          variableID: c049dc6b-0d21-4e9f-8c72-b9fc1df0f052
+          data:
+            objEncoded: Ai8AAAAAATEAAABDAHkAYQBuAC4AQwBUAC4AQwB5AGEAbgBUAHIAaQBnAGcAZQByAEUAdgBlAG4AdABBAHIAZwBEAGEAdABhACwAIABDAHkAYQBuAC4AQwB5AGEAbgBUAHIAaQBnAGcAZQByAAAAAAAnAQkAAABlAHYAZQBuAHQATgBhAG0AZQABEwAAAF8AUwB0AGEAcgB0AEYAYQBkAGUAVwBpAHQAaABFAHYAZQBuAHQAAQENAAAAdgBhAHIAaQBhAGIAbABlAE4AYQBtAGUAcwAvAQAAAAEZAAAAUwB5AHMAdABlAG0ALgBTAHQAcgBpAG4AZwBbAF0ALAAgAG0AcwBjAG8AcgBsAGkAYgABAAAABgAAAAAAAAAABwUJAREAAAB2AGEAcgBpAGEAYgBsAGUAVQBkAG8AbgBOAGEAbQBlAHMAAQAAAAEBDAAAAHYAYQByAGkAYQBiAGwAZQBPAHUAdABzAC8CAAAAARoAAABTAHkAcwB0AGUAbQAuAEIAbwBvAGwAZQBhAG4AWwBdACwAIABtAHMAYwBvAHIAbABpAGIAAgAAAAgAAAAAAQAAAAUBAQ0AAAB2AGEAcgBpAGEAYgBsAGUAVAB5AHAAZQBzAC8DAAAAARcAAABTAHkAcwB0AGUAbQAuAFQAeQBwAGUAWwBdACwAIABtAHMAYwBvAHIAbABpAGIAAwAAAAYAAAAAAAAAAAcFBQ==
+            unityObjects: []
+        - isVariable: 1
+          name: fadeInDuration
+          variableID: 6c9d9772-9839-479a-b1d4-29b532daef4c
+          data:
+            objEncoded: Ai8AAAAAATEAAABDAHkAYQBuAC4AQwBUAC4AQwB5AGEAbgBUAHIAaQBnAGcAZQByAEUAdgBlAG4AdABBAHIAZwBEAGEAdABhACwAIABDAHkAYQBuAC4AQwB5AGEAbgBUAHIAaQBnAGcAZQByAAAAAAAnAQkAAABlAHYAZQBuAHQATgBhAG0AZQABEwAAAF8AUwB0AGEAcgB0AEYAYQBkAGUAVwBpAHQAaABFAHYAZQBuAHQAAQENAAAAdgBhAHIAaQBhAGIAbABlAE4AYQBtAGUAcwAvAQAAAAEZAAAAUwB5AHMAdABlAG0ALgBTAHQAcgBpAG4AZwBbAF0ALAAgAG0AcwBjAG8AcgBsAGkAYgABAAAABgAAAAAAAAAABwUJAREAAAB2AGEAcgBpAGEAYgBsAGUAVQBkAG8AbgBOAGEAbQBlAHMAAQAAAAEBDAAAAHYAYQByAGkAYQBiAGwAZQBPAHUAdABzAC8CAAAAARoAAABTAHkAcwB0AGUAbQAuAEIAbwBvAGwAZQBhAG4AWwBdACwAIABtAHMAYwBvAHIAbABpAGIAAgAAAAgAAAAAAQAAAAUBAQ0AAAB2AGEAcgBpAGEAYgBsAGUAVAB5AHAAZQBzAC8DAAAAARcAAABTAHkAcwB0AGUAbQAuAFQAeQBwAGUAWwBdACwAIABtAHMAYwBvAHIAbABpAGIAAwAAAAYAAAAAAAAAAAcFBQ==
+            unityObjects: []
+        - isVariable: 1
+          name: onFadeEndEvent
+          variableID: e59b4f67-1923-49ff-ad5b-f6461535dab8
+          data:
+            objEncoded: Ai8AAAAAATEAAABDAHkAYQBuAC4AQwBUAC4AQwB5AGEAbgBUAHIAaQBnAGcAZQByAEUAdgBlAG4AdABBAHIAZwBEAGEAdABhACwAIABDAHkAYQBuAC4AQwB5AGEAbgBUAHIAaQBnAGcAZQByAAAAAAAnAQkAAABlAHYAZQBuAHQATgBhAG0AZQABEwAAAF8AUwB0AGEAcgB0AEYAYQBkAGUAVwBpAHQAaABFAHYAZQBuAHQAAQENAAAAdgBhAHIAaQBhAGIAbABlAE4AYQBtAGUAcwAvAQAAAAEZAAAAUwB5AHMAdABlAG0ALgBTAHQAcgBpAG4AZwBbAF0ALAAgAG0AcwBjAG8AcgBsAGkAYgABAAAABgAAAAAAAAAABwUJAREAAAB2AGEAcgBpAGEAYgBsAGUAVQBkAG8AbgBOAGEAbQBlAHMAAQAAAAEBDAAAAHYAYQByAGkAYQBiAGwAZQBPAHUAdABzAC8CAAAAARoAAABTAHkAcwB0AGUAbQAuAEIAbwBvAGwAZQBhAG4AWwBdACwAIABtAHMAYwBvAHIAbABpAGIAAgAAAAgAAAAAAQAAAAUBAQ0AAAB2AGEAcgBpAGEAYgBsAGUAVAB5AHAAZQBzAC8DAAAAARcAAABTAHkAcwB0AGUAbQAuAFQAeQBwAGUAWwBdACwAIABtAHMAYwBvAHIAbABpAGIAAwAAAAYAAAAAAAAAAAcFBQ==
+            unityObjects: []
+        - isVariable: 1
+          name: fadeEndDuration
+          variableID: 5706bfcd-5bf7-497f-8eb0-0f9161fc7619
+          data:
+            objEncoded: Ai8AAAAAATEAAABDAHkAYQBuAC4AQwBUAC4AQwB5AGEAbgBUAHIAaQBnAGcAZQByAEUAdgBlAG4AdABBAHIAZwBEAGEAdABhACwAIABDAHkAYQBuAC4AQwB5AGEAbgBUAHIAaQBnAGcAZQByAAAAAAAnAQkAAABlAHYAZQBuAHQATgBhAG0AZQABEwAAAF8AUwB0AGEAcgB0AEYAYQBkAGUAVwBpAHQAaABFAHYAZQBuAHQAAQENAAAAdgBhAHIAaQBhAGIAbABlAE4AYQBtAGUAcwAvAQAAAAEZAAAAUwB5AHMAdABlAG0ALgBTAHQAcgBpAG4AZwBbAF0ALAAgAG0AcwBjAG8AcgBsAGkAYgABAAAABgAAAAAAAAAABwUJAREAAAB2AGEAcgBpAGEAYgBsAGUAVQBkAG8AbgBOAGEAbQBlAHMAAQAAAAEBDAAAAHYAYQByAGkAYQBiAGwAZQBPAHUAdABzAC8CAAAAARoAAABTAHkAcwB0AGUAbQAuAEIAbwBvAGwAZQBhAG4AWwBdACwAIABtAHMAYwBvAHIAbABpAGIAAgAAAAgAAAAAAQAAAAUBAQ0AAAB2AGEAcgBpAGEAYgBsAGUAVAB5AHAAZQBzAC8DAAAAARcAAABTAHkAcwB0AGUAbQAuAFQAeQBwAGUAWwBdACwAIABtAHMAYwBvAHIAbABpAGIAAwAAAAYAAAAAAAAAAAcFBQ==
+            unityObjects: []
+        - isVariable: 1
+          name: This UdonBehaviour
+          variableID: _this_udonbehaviour
+          data:
+            objEncoded: Ai8AAAAAATEAAABDAHkAYQBuAC4AQwBUAC4AQwB5AGEAbgBUAHIAaQBnAGcAZQByAEUAdgBlAG4AdABBAHIAZwBEAGEAdABhACwAIABDAHkAYQBuAC4AQwB5AGEAbgBUAHIAaQBnAGcAZQByAAAAAAAnAQkAAABlAHYAZQBuAHQATgBhAG0AZQABEwAAAF8AUwB0AGEAcgB0AEYAYQBkAGUAVwBpAHQAaABFAHYAZQBuAHQAAQENAAAAdgBhAHIAaQBhAGIAbABlAE4AYQBtAGUAcwAvAQAAAAEZAAAAUwB5AHMAdABlAG0ALgBTAHQAcgBpAG4AZwBbAF0ALAAgAG0AcwBjAG8AcgBsAGkAYgABAAAABgAAAAAAAAAABwUJAREAAAB2AGEAcgBpAGEAYgBsAGUAVQBkAG8AbgBOAGEAbQBlAHMAAQAAAAEBDAAAAHYAYQByAGkAYQBiAGwAZQBPAHUAdABzAC8CAAAAARoAAABTAHkAcwB0AGUAbQAuAEIAbwBvAGwAZQBhAG4AWwBdACwAIABtAHMAYwBvAHIAbABpAGIAAgAAAAgAAAAAAQAAAAUBAQ0AAAB2AGEAcgBpAGEAYgBsAGUAVAB5AHAAZQBzAC8DAAAAARcAAABTAHkAcwB0AGUAbQAuAFQAeQBwAGUAWwBdACwAIABtAHMAYwBvAHIAbABpAGIAAwAAAAYAAAAAAAAAAAcFBQ==
+            unityObjects: []
+        multiInput:
+        - isVariable: 1
+          name: fadeController
+          variableID: 0856eaa0-55fa-47e0-b5ca-f7322e9ad7a7
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        expanded: 1
+        comment:
+          comment: 
+      eventOptions:
+        userGate: 0
+        userGateExtraData: []
+        broadcast: 0
+        delay: 0
+        replay: 0
+      expanded: 0
+    - name: _FadeInAndOutWithEventsDurationsAndHold
+      eventId: 2b171d3f-ce47-4ee0-8a4e-aa239aed58b1
+      eventInstance:
+        actionType:
+          directEvent: Event_Custom
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: 
+          variableID: 
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        multiInput:
+        - isVariable: 1
+          name: onFadeInEvent
+          variableID: 2b7509fd-80d7-495f-9aea-3d45a5727982
+          data:
+            objEncoded: Ai8AAAAAARwAAABTAHkAcwB0AGUAbQAuAFIAdQBuAHQAaQBtAGUAVAB5AHAAZQAsACAAbQBzAGMAbwByAGwAaQBiAAAAAAAoARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIABQ==
+            unityObjects: []
+        - isVariable: 1
+          name: fadeInDuration
+          variableID: e3c7f564-b935-4cf5-81a6-91d95d085b84
+          data:
+            objEncoded: Ai8AAAAAARwAAABTAHkAcwB0AGUAbQAuAFIAdQBuAHQAaQBtAGUAVAB5AHAAZQAsACAAbQBzAGMAbwByAGwAaQBiAAAAAAAoARcAAABTAHkAcwB0AGUAbQAuAFMAaQBuAGcAbABlACwAIABtAHMAYwBvAHIAbABpAGIABQ==
+            unityObjects: []
+        - isVariable: 1
+          name: onFadeHoldEvent
+          variableID: fc0204d8-1b25-4268-b9ac-b6874ca639af
+          data:
+            objEncoded: Ai8AAAAAARwAAABTAHkAcwB0AGUAbQAuAFIAdQBuAHQAaQBtAGUAVAB5AHAAZQAsACAAbQBzAGMAbwByAGwAaQBiAAAAAAAoARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIABQ==
+            unityObjects: []
+        - isVariable: 1
+          name: fadeHoldDuration
+          variableID: d0c9a863-9ac0-4fb4-ba1c-1b5f73749624
+          data:
+            objEncoded: Ai8AAAAAARwAAABTAHkAcwB0AGUAbQAuAFIAdQBuAHQAaQBtAGUAVAB5AHAAZQAsACAAbQBzAGMAbwByAGwAaQBiAAAAAAAoARcAAABTAHkAcwB0AGUAbQAuAFMAaQBuAGcAbABlACwAIABtAHMAYwBvAHIAbABpAGIABQ==
+            unityObjects: []
+        - isVariable: 1
+          name: onFadeEndEvent
+          variableID: ce2646b8-3aca-4cbd-aa49-8edc783f337b
+          data:
+            objEncoded: Ai8AAAAAARwAAABTAHkAcwB0AGUAbQAuAFIAdQBuAHQAaQBtAGUAVAB5AHAAZQAsACAAbQBzAGMAbwByAGwAaQBiAAAAAAAoARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIABQ==
+            unityObjects: []
+        - isVariable: 1
+          name: fadeEndDuration
+          variableID: c6bbd994-9574-4cf1-bfd2-ca463cc0e687
+          data:
+            objEncoded: Ai8AAAAAARwAAABTAHkAcwB0AGUAbQAuAFIAdQBuAHQAaQBtAGUAVAB5AHAAZQAsACAAbQBzAGMAbwByAGwAaQBiAAAAAAAoARcAAABTAHkAcwB0AGUAbQAuAFMAaQBuAGcAbABlACwAIABtAHMAYwBvAHIAbABpAGIABQ==
+            unityObjects: []
+        expanded: 1
+        comment:
+          comment: 
+      actionInstances:
+      - actionType:
+          directEvent: VRCUdonCommonInterfacesIUdonEventReceiver.__SendCustomEvent__SystemString__SystemVoid
+          guid: 
+        inputs:
+        - isVariable: 0
+          name: 
+          variableID: 
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        - isVariable: 0
+          name: 
+          variableID: 
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBEgAAAF8ARwBlAHQARgBhAGQAZQBDAG8AbgB0AHIAbwBsAGwAZQByAAU=
+            unityObjects: []
+        - isVariable: 0
+          name: 
+          variableID: 
+          data:
+            objEncoded: Ai8AAAAAATEAAABDAHkAYQBuAC4AQwBUAC4AQwB5AGEAbgBUAHIAaQBnAGcAZQByAEUAdgBlAG4AdABBAHIAZwBEAGEAdABhACwAIABDAHkAYQBuAC4AQwB5AGEAbgBUAHIAaQBnAGcAZQByAAAAAAAnAQkAAABlAHYAZQBuAHQATgBhAG0AZQABEgAAAF8ARwBlAHQARgBhAGQAZQBDAG8AbgB0AHIAbwBsAGwAZQByAAEBDQAAAHYAYQByAGkAYQBiAGwAZQBOAGEAbQBlAHMALwEAAAABGQAAAFMAeQBzAHQAZQBtAC4AUwB0AHIAaQBuAGcAWwBdACwAIABtAHMAYwBvAHIAbABpAGIAAQAAAAYAAAAAAAAAAAcFAQERAAAAdgBhAHIAaQBhAGIAbABlAFUAZABvAG4ATgBhAG0AZQBzADABAAAAAgAAAAYAAAAAAAAAAAcFAQEMAAAAdgBhAHIAaQBhAGIAbABlAE8AdQB0AHMALwIAAAABGgAAAFMAeQBzAHQAZQBtAC4AQgBvAG8AbABlAGEAbgBbAF0ALAAgAG0AcwBjAG8AcgBsAGkAYgADAAAACAAAAAABAAAABQEBDQAAAHYAYQByAGkAYQBiAGwAZQBUAHkAcABlAHMALwMAAAABFwAAAFMAeQBzAHQAZQBtAC4AVAB5AHAAZQBbAF0ALAAgAG0AcwBjAG8AcgBsAGkAYgAEAAAABgAAAAAAAAAABwUF
+            unityObjects: []
+        multiInput:
+        - isVariable: 1
+          name: This UdonBehaviour
+          variableID: _this_udonbehaviour
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: VRCUdonCommonInterfacesIUdonEventReceiver.__SendCustomEvent__SystemString__SystemVoid
+          guid: 
+        inputs:
+        - isVariable: 0
+          name: 
+          variableID: 
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        - isVariable: 0
+          name: 
+          variableID: 
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBJwAAAF8ARgBhAGQAZQBJAG4AQQBuAGQATwB1AHQAVwBpAHQAaABFAHYAZQBuAHQAcwBEAHUAcgBhAHQAaQBvAG4AcwBBAG4AZABIAG8AbABkAAU=
+            unityObjects: []
+        - isVariable: 0
+          name: 
+          variableID: 
+          data:
+            objEncoded: Ai8AAAAAATEAAABDAHkAYQBuAC4AQwBUAC4AQwB5AGEAbgBUAHIAaQBnAGcAZQByAEUAdgBlAG4AdABBAHIAZwBEAGEAdABhACwAIABDAHkAYQBuAC4AQwB5AGEAbgBUAHIAaQBnAGcAZQByAAAAAAAnAQkAAABlAHYAZQBuAHQATgBhAG0AZQABJwAAAF8ARgBhAGQAZQBJAG4AQQBuAGQATwB1AHQAVwBpAHQAaABFAHYAZQBuAHQAcwBEAHUAcgBhAHQAaQBvAG4AcwBBAG4AZABIAG8AbABkAAEBDQAAAHYAYQByAGkAYQBiAGwAZQBOAGEAbQBlAHMALwEAAAABGQAAAFMAeQBzAHQAZQBtAC4AUwB0AHIAaQBuAGcAWwBdACwAIABtAHMAYwBvAHIAbABpAGIAAQAAAAYHAAAAAAAAACgBDQAAAG8AbgBGAGEAZABlAEkAbgBFAHYAZQBuAHQAKAEOAAAAZgBhAGQAZQBJAG4ARAB1AHIAYQB0AGkAbwBuACgBDwAAAG8AbgBGAGEAZABlAEgAbwBsAGQARQB2AGUAbgB0ACgBEAAAAGYAYQBkAGUASABvAGwAZABEAHUAcgBhAHQAaQBvAG4AKAEOAAAAbwBuAEYAYQBkAGUARQBuAGQARQB2AGUAbgB0ACgBDwAAAGYAYQBkAGUARQBuAGQARAB1AHIAYQB0AGkAbwBuACgBBAAAAHUAZABvAG4ABwUBAREAAAB2AGEAcgBpAGEAYgBsAGUAVQBkAG8AbgBOAGEAbQBlAHMAMAEAAAACAAAABgcAAAAAAAAAKAE6AAAAXwBhAHIAZwBfAG8AbgBGAGEAZABlAEkAbgBFAHYAZQBuAHQAXwBfAEYAYQBkAGUASQBuAEEAbgBkAE8AdQB0AFcAaQB0AGgARQB2AGUAbgB0AHMARAB1AHIAYQB0AGkAbwBuAHMAQQBuAGQASABvAGwAZAAoATsAAABfAGEAcgBnAF8AZgBhAGQAZQBJAG4ARAB1AHIAYQB0AGkAbwBuAF8AXwBGAGEAZABlAEkAbgBBAG4AZABPAHUAdABXAGkAdABoAEUAdgBlAG4AdABzAEQAdQByAGEAdABpAG8AbgBzAEEAbgBkAEgAbwBsAGQAKAE8AAAAXwBhAHIAZwBfAG8AbgBGAGEAZABlAEgAbwBsAGQARQB2AGUAbgB0AF8AXwBGAGEAZABlAEkAbgBBAG4AZABPAHUAdABXAGkAdABoAEUAdgBlAG4AdABzAEQAdQByAGEAdABpAG8AbgBzAEEAbgBkAEgAbwBsAGQAKAE9AAAAXwBhAHIAZwBfAGYAYQBkAGUASABvAGwAZABEAHUAcgBhAHQAaQBvAG4AXwBfAEYAYQBkAGUASQBuAEEAbgBkAE8AdQB0AFcAaQB0AGgARQB2AGUAbgB0AHMARAB1AHIAYQB0AGkAbwBuAHMAQQBuAGQASABvAGwAZAAoATsAAABfAGEAcgBnAF8AbwBuAEYAYQBkAGUARQBuAGQARQB2AGUAbgB0AF8AXwBGAGEAZABlAEkAbgBBAG4AZABPAHUAdABXAGkAdABoAEUAdgBlAG4AdABzAEQAdQByAGEAdABpAG8AbgBzAEEAbgBkAEgAbwBsAGQAKAE8AAAAXwBhAHIAZwBfAGYAYQBkAGUARQBuAGQARAB1AHIAYQB0AGkAbwBuAF8AXwBGAGEAZABlAEkAbgBBAG4AZABPAHUAdABXAGkAdABoAEUAdgBlAG4AdABzAEQAdQByAGEAdABpAG8AbgBzAEEAbgBkAEgAbwBsAGQAKAExAAAAXwBhAHIAZwBfAHUAZABvAG4AXwBfAEYAYQBkAGUASQBuAEEAbgBkAE8AdQB0AFcAaQB0AGgARQB2AGUAbgB0AHMARAB1AHIAYQB0AGkAbwBuAHMAQQBuAGQASABvAGwAZAAHBQEBDAAAAHYAYQByAGkAYQBiAGwAZQBPAHUAdABzAC8CAAAAARoAAABTAHkAcwB0AGUAbQAuAEIAbwBvAGwAZQBhAG4AWwBdACwAIABtAHMAYwBvAHIAbABpAGIAAwAAAAgHAAAAAQAAAAAAAAAAAAAFAQENAAAAdgBhAHIAaQBhAGIAbABlAFQAeQBwAGUAcwAvAwAAAAEXAAAAUwB5AHMAdABlAG0ALgBUAHkAcABlAFsAXQAsACAAbQBzAGMAbwByAGwAaQBiAAQAAAAGBwAAAAAAAAACLwQAAAABHAAAAFMAeQBzAHQAZQBtAC4AUgB1AG4AdABpAG0AZQBUAHkAcABlACwAIABtAHMAYwBvAHIAbABpAGIABQAAACgBFwAAAFMAeQBzAHQAZQBtAC4AUwB0AHIAaQBuAGcALAAgAG0AcwBjAG8AcgBsAGkAYgAFAjAEAAAABgAAACgBFwAAAFMAeQBzAHQAZQBtAC4AUwBpAG4AZwBsAGUALAAgAG0AcwBjAG8AcgBsAGkAYgAFCgUAAAAKBgAAAAoFAAAACgYAAAACMAQAAAAHAAAAKAEgAAAAVgBSAEMALgBVAGQAbwBuAC4AVQBkAG8AbgBCAGUAaABhAHYAaQBvAHUAcgAsACAAVgBSAEMALgBVAGQAbwBuAAUHBQU=
+            unityObjects: []
+        - isVariable: 1
+          name: onFadeInEvent
+          variableID: 2b7509fd-80d7-495f-9aea-3d45a5727982
+          data:
+            objEncoded: Ai8AAAAAATEAAABDAHkAYQBuAC4AQwBUAC4AQwB5AGEAbgBUAHIAaQBnAGcAZQByAEUAdgBlAG4AdABBAHIAZwBEAGEAdABhACwAIABDAHkAYQBuAC4AQwB5AGEAbgBUAHIAaQBnAGcAZQByAAAAAAAnAQkAAABlAHYAZQBuAHQATgBhAG0AZQABEwAAAF8AUwB0AGEAcgB0AEYAYQBkAGUAVwBpAHQAaABFAHYAZQBuAHQAAQENAAAAdgBhAHIAaQBhAGIAbABlAE4AYQBtAGUAcwAvAQAAAAEZAAAAUwB5AHMAdABlAG0ALgBTAHQAcgBpAG4AZwBbAF0ALAAgAG0AcwBjAG8AcgBsAGkAYgABAAAABgAAAAAAAAAABwUJAREAAAB2AGEAcgBpAGEAYgBsAGUAVQBkAG8AbgBOAGEAbQBlAHMAAQAAAAEBDAAAAHYAYQByAGkAYQBiAGwAZQBPAHUAdABzAC8CAAAAARoAAABTAHkAcwB0AGUAbQAuAEIAbwBvAGwAZQBhAG4AWwBdACwAIABtAHMAYwBvAHIAbABpAGIAAgAAAAgAAAAAAQAAAAUBAQ0AAAB2AGEAcgBpAGEAYgBsAGUAVAB5AHAAZQBzAC8DAAAAARcAAABTAHkAcwB0AGUAbQAuAFQAeQBwAGUAWwBdACwAIABtAHMAYwBvAHIAbABpAGIAAwAAAAYAAAAAAAAAAAcFBQ==
+            unityObjects: []
+        - isVariable: 1
+          name: fadeInDuration
+          variableID: e3c7f564-b935-4cf5-81a6-91d95d085b84
+          data:
+            objEncoded: Ai8AAAAAATEAAABDAHkAYQBuAC4AQwBUAC4AQwB5AGEAbgBUAHIAaQBnAGcAZQByAEUAdgBlAG4AdABBAHIAZwBEAGEAdABhACwAIABDAHkAYQBuAC4AQwB5AGEAbgBUAHIAaQBnAGcAZQByAAAAAAAnAQkAAABlAHYAZQBuAHQATgBhAG0AZQABEwAAAF8AUwB0AGEAcgB0AEYAYQBkAGUAVwBpAHQAaABFAHYAZQBuAHQAAQENAAAAdgBhAHIAaQBhAGIAbABlAE4AYQBtAGUAcwAvAQAAAAEZAAAAUwB5AHMAdABlAG0ALgBTAHQAcgBpAG4AZwBbAF0ALAAgAG0AcwBjAG8AcgBsAGkAYgABAAAABgAAAAAAAAAABwUJAREAAAB2AGEAcgBpAGEAYgBsAGUAVQBkAG8AbgBOAGEAbQBlAHMAAQAAAAEBDAAAAHYAYQByAGkAYQBiAGwAZQBPAHUAdABzAC8CAAAAARoAAABTAHkAcwB0AGUAbQAuAEIAbwBvAGwAZQBhAG4AWwBdACwAIABtAHMAYwBvAHIAbABpAGIAAgAAAAgAAAAAAQAAAAUBAQ0AAAB2AGEAcgBpAGEAYgBsAGUAVAB5AHAAZQBzAC8DAAAAARcAAABTAHkAcwB0AGUAbQAuAFQAeQBwAGUAWwBdACwAIABtAHMAYwBvAHIAbABpAGIAAwAAAAYAAAAAAAAAAAcFBQ==
+            unityObjects: []
+        - isVariable: 1
+          name: onFadeHoldEvent
+          variableID: fc0204d8-1b25-4268-b9ac-b6874ca639af
+          data:
+            objEncoded: Ai8AAAAAATEAAABDAHkAYQBuAC4AQwBUAC4AQwB5AGEAbgBUAHIAaQBnAGcAZQByAEUAdgBlAG4AdABBAHIAZwBEAGEAdABhACwAIABDAHkAYQBuAC4AQwB5AGEAbgBUAHIAaQBnAGcAZQByAAAAAAAnAQkAAABlAHYAZQBuAHQATgBhAG0AZQABEwAAAF8AUwB0AGEAcgB0AEYAYQBkAGUAVwBpAHQAaABFAHYAZQBuAHQAAQENAAAAdgBhAHIAaQBhAGIAbABlAE4AYQBtAGUAcwAvAQAAAAEZAAAAUwB5AHMAdABlAG0ALgBTAHQAcgBpAG4AZwBbAF0ALAAgAG0AcwBjAG8AcgBsAGkAYgABAAAABgAAAAAAAAAABwUJAREAAAB2AGEAcgBpAGEAYgBsAGUAVQBkAG8AbgBOAGEAbQBlAHMAAQAAAAEBDAAAAHYAYQByAGkAYQBiAGwAZQBPAHUAdABzAC8CAAAAARoAAABTAHkAcwB0AGUAbQAuAEIAbwBvAGwAZQBhAG4AWwBdACwAIABtAHMAYwBvAHIAbABpAGIAAgAAAAgAAAAAAQAAAAUBAQ0AAAB2AGEAcgBpAGEAYgBsAGUAVAB5AHAAZQBzAC8DAAAAARcAAABTAHkAcwB0AGUAbQAuAFQAeQBwAGUAWwBdACwAIABtAHMAYwBvAHIAbABpAGIAAwAAAAYAAAAAAAAAAAcFBQ==
+            unityObjects: []
+        - isVariable: 1
+          name: fadeHoldDuration
+          variableID: d0c9a863-9ac0-4fb4-ba1c-1b5f73749624
+          data:
+            objEncoded: Ai8AAAAAATEAAABDAHkAYQBuAC4AQwBUAC4AQwB5AGEAbgBUAHIAaQBnAGcAZQByAEUAdgBlAG4AdABBAHIAZwBEAGEAdABhACwAIABDAHkAYQBuAC4AQwB5AGEAbgBUAHIAaQBnAGcAZQByAAAAAAAnAQkAAABlAHYAZQBuAHQATgBhAG0AZQABEwAAAF8AUwB0AGEAcgB0AEYAYQBkAGUAVwBpAHQAaABFAHYAZQBuAHQAAQENAAAAdgBhAHIAaQBhAGIAbABlAE4AYQBtAGUAcwAvAQAAAAEZAAAAUwB5AHMAdABlAG0ALgBTAHQAcgBpAG4AZwBbAF0ALAAgAG0AcwBjAG8AcgBsAGkAYgABAAAABgAAAAAAAAAABwUJAREAAAB2AGEAcgBpAGEAYgBsAGUAVQBkAG8AbgBOAGEAbQBlAHMAAQAAAAEBDAAAAHYAYQByAGkAYQBiAGwAZQBPAHUAdABzAC8CAAAAARoAAABTAHkAcwB0AGUAbQAuAEIAbwBvAGwAZQBhAG4AWwBdACwAIABtAHMAYwBvAHIAbABpAGIAAgAAAAgAAAAAAQAAAAUBAQ0AAAB2AGEAcgBpAGEAYgBsAGUAVAB5AHAAZQBzAC8DAAAAARcAAABTAHkAcwB0AGUAbQAuAFQAeQBwAGUAWwBdACwAIABtAHMAYwBvAHIAbABpAGIAAwAAAAYAAAAAAAAAAAcFBQ==
+            unityObjects: []
+        - isVariable: 1
+          name: onFadeEndEvent
+          variableID: ce2646b8-3aca-4cbd-aa49-8edc783f337b
+          data:
+            objEncoded: Ai8AAAAAATEAAABDAHkAYQBuAC4AQwBUAC4AQwB5AGEAbgBUAHIAaQBnAGcAZQByAEUAdgBlAG4AdABBAHIAZwBEAGEAdABhACwAIABDAHkAYQBuAC4AQwB5AGEAbgBUAHIAaQBnAGcAZQByAAAAAAAnAQkAAABlAHYAZQBuAHQATgBhAG0AZQABEwAAAF8AUwB0AGEAcgB0AEYAYQBkAGUAVwBpAHQAaABFAHYAZQBuAHQAAQENAAAAdgBhAHIAaQBhAGIAbABlAE4AYQBtAGUAcwAvAQAAAAEZAAAAUwB5AHMAdABlAG0ALgBTAHQAcgBpAG4AZwBbAF0ALAAgAG0AcwBjAG8AcgBsAGkAYgABAAAABgAAAAAAAAAABwUJAREAAAB2AGEAcgBpAGEAYgBsAGUAVQBkAG8AbgBOAGEAbQBlAHMAAQAAAAEBDAAAAHYAYQByAGkAYQBiAGwAZQBPAHUAdABzAC8CAAAAARoAAABTAHkAcwB0AGUAbQAuAEIAbwBvAGwAZQBhAG4AWwBdACwAIABtAHMAYwBvAHIAbABpAGIAAgAAAAgAAAAAAQAAAAUBAQ0AAAB2AGEAcgBpAGEAYgBsAGUAVAB5AHAAZQBzAC8DAAAAARcAAABTAHkAcwB0AGUAbQAuAFQAeQBwAGUAWwBdACwAIABtAHMAYwBvAHIAbABpAGIAAwAAAAYAAAAAAAAAAAcFBQ==
+            unityObjects: []
+        - isVariable: 1
+          name: fadeEndDuration
+          variableID: c6bbd994-9574-4cf1-bfd2-ca463cc0e687
+          data:
+            objEncoded: Ai8AAAAAATEAAABDAHkAYQBuAC4AQwBUAC4AQwB5AGEAbgBUAHIAaQBnAGcAZQByAEUAdgBlAG4AdABBAHIAZwBEAGEAdABhACwAIABDAHkAYQBuAC4AQwB5AGEAbgBUAHIAaQBnAGcAZQByAAAAAAAnAQkAAABlAHYAZQBuAHQATgBhAG0AZQABEwAAAF8AUwB0AGEAcgB0AEYAYQBkAGUAVwBpAHQAaABFAHYAZQBuAHQAAQENAAAAdgBhAHIAaQBhAGIAbABlAE4AYQBtAGUAcwAvAQAAAAEZAAAAUwB5AHMAdABlAG0ALgBTAHQAcgBpAG4AZwBbAF0ALAAgAG0AcwBjAG8AcgBsAGkAYgABAAAABgAAAAAAAAAABwUJAREAAAB2AGEAcgBpAGEAYgBsAGUAVQBkAG8AbgBOAGEAbQBlAHMAAQAAAAEBDAAAAHYAYQByAGkAYQBiAGwAZQBPAHUAdABzAC8CAAAAARoAAABTAHkAcwB0AGUAbQAuAEIAbwBvAGwAZQBhAG4AWwBdACwAIABtAHMAYwBvAHIAbABpAGIAAgAAAAgAAAAAAQAAAAUBAQ0AAAB2AGEAcgBpAGEAYgBsAGUAVAB5AHAAZQBzAC8DAAAAARcAAABTAHkAcwB0AGUAbQAuAFQAeQBwAGUAWwBdACwAIABtAHMAYwBvAHIAbABpAGIAAwAAAAYAAAAAAAAAAAcFBQ==
+            unityObjects: []
+        - isVariable: 1
+          name: This UdonBehaviour
+          variableID: _this_udonbehaviour
+          data:
+            objEncoded: Ai8AAAAAATEAAABDAHkAYQBuAC4AQwBUAC4AQwB5AGEAbgBUAHIAaQBnAGcAZQByAEUAdgBlAG4AdABBAHIAZwBEAGEAdABhACwAIABDAHkAYQBuAC4AQwB5AGEAbgBUAHIAaQBnAGcAZQByAAAAAAAnAQkAAABlAHYAZQBuAHQATgBhAG0AZQABEwAAAF8AUwB0AGEAcgB0AEYAYQBkAGUAVwBpAHQAaABFAHYAZQBuAHQAAQENAAAAdgBhAHIAaQBhAGIAbABlAE4AYQBtAGUAcwAvAQAAAAEZAAAAUwB5AHMAdABlAG0ALgBTAHQAcgBpAG4AZwBbAF0ALAAgAG0AcwBjAG8AcgBsAGkAYgABAAAABgAAAAAAAAAABwUJAREAAAB2AGEAcgBpAGEAYgBsAGUAVQBkAG8AbgBOAGEAbQBlAHMAAQAAAAEBDAAAAHYAYQByAGkAYQBiAGwAZQBPAHUAdABzAC8CAAAAARoAAABTAHkAcwB0AGUAbQAuAEIAbwBvAGwAZQBhAG4AWwBdACwAIABtAHMAYwBvAHIAbABpAGIAAgAAAAgAAAAAAQAAAAUBAQ0AAAB2AGEAcgBpAGEAYgBsAGUAVAB5AHAAZQBzAC8DAAAAARcAAABTAHkAcwB0AGUAbQAuAFQAeQBwAGUAWwBdACwAIABtAHMAYwBvAHIAbABpAGIAAwAAAAYAAAAAAAAAAAcFBQ==
+            unityObjects: []
+        multiInput:
+        - isVariable: 1
+          name: fadeController
+          variableID: 0856eaa0-55fa-47e0-b5ca-f7322e9ad7a7
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        expanded: 0
+        comment:
+          comment: 
+      eventOptions:
+        userGate: 0
+        userGateExtraData: []
+        broadcast: 0
+        delay: 0
+        replay: 0
+      expanded: 0
+    - name: _IsFading
+      eventId: 007dfe5e-e376-4537-8ac9-12dc0df7b22d
+      eventInstance:
+        actionType:
+          directEvent: Event_Custom
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: 
+          variableID: 
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        multiInput:
+        - isVariable: 0
+          name: isFading
+          variableID: 6609fd94-abc3-4dbd-80da-48631d37e30c
+          data:
+            objEncoded: Ai8AAAAAARwAAABTAHkAcwB0AGUAbQAuAFIAdQBuAHQAaQBtAGUAVAB5AHAAZQAsACAAbQBzAGMAbwByAGwAaQBiAAAAAAAoARgAAABTAHkAcwB0AGUAbQAuAEIAbwBvAGwAZQBhAG4ALAAgAG0AcwBjAG8AcgBsAGkAYgAF
+            unityObjects: []
+        expanded: 1
+        comment:
+          comment: 
+      actionInstances:
+      - actionType:
+          directEvent: VRCUdonCommonInterfacesIUdonEventReceiver.__SendCustomEvent__SystemString__SystemVoid
+          guid: 
+        inputs:
+        - isVariable: 0
+          name: 
+          variableID: 
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        - isVariable: 0
+          name: 
+          variableID: 
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBEgAAAF8ARwBlAHQARgBhAGQAZQBDAG8AbgB0AHIAbwBsAGwAZQByAAU=
+            unityObjects: []
+        - isVariable: 0
+          name: 
+          variableID: 
+          data:
+            objEncoded: Ai8AAAAAATEAAABDAHkAYQBuAC4AQwBUAC4AQwB5AGEAbgBUAHIAaQBnAGcAZQByAEUAdgBlAG4AdABBAHIAZwBEAGEAdABhACwAIABDAHkAYQBuAC4AQwB5AGEAbgBUAHIAaQBnAGcAZQByAAAAAAAnAQkAAABlAHYAZQBuAHQATgBhAG0AZQABEgAAAF8ARwBlAHQARgBhAGQAZQBDAG8AbgB0AHIAbwBsAGwAZQByAAEBDQAAAHYAYQByAGkAYQBiAGwAZQBOAGEAbQBlAHMALwEAAAABGQAAAFMAeQBzAHQAZQBtAC4AUwB0AHIAaQBuAGcAWwBdACwAIABtAHMAYwBvAHIAbABpAGIAAQAAAAYAAAAAAAAAAAcFAQERAAAAdgBhAHIAaQBhAGIAbABlAFUAZABvAG4ATgBhAG0AZQBzADABAAAAAgAAAAYAAAAAAAAAAAcFAQEMAAAAdgBhAHIAaQBhAGIAbABlAE8AdQB0AHMALwIAAAABGgAAAFMAeQBzAHQAZQBtAC4AQgBvAG8AbABlAGEAbgBbAF0ALAAgAG0AcwBjAG8AcgBsAGkAYgADAAAACAAAAAABAAAABQEBDQAAAHYAYQByAGkAYQBiAGwAZQBUAHkAcABlAHMALwMAAAABFwAAAFMAeQBzAHQAZQBtAC4AVAB5AHAAZQBbAF0ALAAgAG0AcwBjAG8AcgBsAGkAYgAEAAAABgAAAAAAAAAABwUF
+            unityObjects: []
+        multiInput:
+        - isVariable: 1
+          name: This UdonBehaviour
+          variableID: _this_udonbehaviour
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: VRCUdonCommonInterfacesIUdonEventReceiver.__SendCustomEvent__SystemString__SystemVoid
+          guid: 
+        inputs:
+        - isVariable: 0
+          name: 
+          variableID: 
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        - isVariable: 0
+          name: 
+          variableID: 
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBCQAAAF8ASQBzAEYAYQBkAGkAbgBnAAU=
+            unityObjects: []
+        - isVariable: 0
+          name: 
+          variableID: 
+          data:
+            objEncoded: Ai8AAAAAATEAAABDAHkAYQBuAC4AQwBUAC4AQwB5AGEAbgBUAHIAaQBnAGcAZQByAEUAdgBlAG4AdABBAHIAZwBEAGEAdABhACwAIABDAHkAYQBuAC4AQwB5AGEAbgBUAHIAaQBnAGcAZQByAAAAAAAnAQkAAABlAHYAZQBuAHQATgBhAG0AZQABCQAAAF8ASQBzAEYAYQBkAGkAbgBnAAEBDQAAAHYAYQByAGkAYQBiAGwAZQBOAGEAbQBlAHMALwEAAAABGQAAAFMAeQBzAHQAZQBtAC4AUwB0AHIAaQBuAGcAWwBdACwAIABtAHMAYwBvAHIAbABpAGIAAQAAAAYBAAAAAAAAACgBCAAAAGkAcwBGAGEAZABpAG4AZwAHBQEBEQAAAHYAYQByAGkAYQBiAGwAZQBVAGQAbwBuAE4AYQBtAGUAcwAwAQAAAAIAAAAGAQAAAAAAAAAoARcAAABfAGEAcgBnAF8AaQBzAEYAYQBkAGkAbgBnAF8AXwBJAHMARgBhAGQAaQBuAGcABwUBAQwAAAB2AGEAcgBpAGEAYgBsAGUATwB1AHQAcwAvAgAAAAEaAAAAUwB5AHMAdABlAG0ALgBCAG8AbwBsAGUAYQBuAFsAXQAsACAAbQBzAGMAbwByAGwAaQBiAAMAAAAIAQAAAAEAAAABBQEBDQAAAHYAYQByAGkAYQBiAGwAZQBUAHkAcABlAHMALwMAAAABFwAAAFMAeQBzAHQAZQBtAC4AVAB5AHAAZQBbAF0ALAAgAG0AcwBjAG8AcgBsAGkAYgAEAAAABgEAAAAAAAAAAi8EAAAAARwAAABTAHkAcwB0AGUAbQAuAFIAdQBuAHQAaQBtAGUAVAB5AHAAZQAsACAAbQBzAGMAbwByAGwAaQBiAAUAAAAoARgAAABTAHkAcwB0AGUAbQAuAEIAbwBvAGwAZQBhAG4ALAAgAG0AcwBjAG8AcgBsAGkAYgAFBwUF
+            unityObjects: []
+        - isVariable: 1
+          name: isFading
+          variableID: 6609fd94-abc3-4dbd-80da-48631d37e30c
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        multiInput:
+        - isVariable: 1
+          name: fadeController
+          variableID: 0856eaa0-55fa-47e0-b5ca-f7322e9ad7a7
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        expanded: 0
+        comment:
+          comment: 
+      eventOptions:
+        userGate: 0
+        userGateExtraData: []
+        broadcast: 0
+        delay: 0
+        replay: 0
+      expanded: 0
+    variables:
+    - isVariable: 0
+      name: fadeController
+      variableID: 0856eaa0-55fa-47e0-b5ca-f7322e9ad7a7
+      data:
+        objEncoded: Lg==
+        unityObjects: []
+      type:
+        typeDef: VRC.Udon.UdonBehaviour, VRC.Udon, Version=0.0.0.0, Culture=neutral,
+          PublicKeyToken=null
+      sync: 0
+      showInInspector: 1
+      typeInfo: 0
+      comment:
+        comment: 
+    comment:
+      comment: 
+    expandVariables: 1
+    expandOtherSettings: 1
+    expandSyncSection: 0
+    ignoreEventWarnings: 0
+  publicVariableReferences:
+    actionDataIndices: []
+    userVariableNames:
+    - fadeController
+    userVariableTypes:
+    - typeDef: VRC.Udon.UdonBehaviour, VRC.Udon, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+  ignoreOdinData: 1
+  serializationDataOdin:
+    SerializedFormat: 0
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes: []
+  allowEditingInInspector: 0
+  expandInInspector: 0
+  isLocked: 0

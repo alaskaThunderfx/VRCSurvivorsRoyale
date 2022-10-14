@@ -1,0 +1,157 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 61d0ad128b95568438c70898dc9e600c, type: 3}
+  m_Name: InputDropValueHandActions
+  m_EditorClassIdentifier: 
+  autoAddPriority: 0
+  exposedActions:
+  - guid: a98f6b39-5125-453f-82af-ff56e841e8c7
+    actionNamespace: InputDrop
+    actionVariantName: ValueHand
+    description: Fires when the Drop Input action matches the input value and input
+      hand
+    variables:
+    - type:
+        typeDef: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      udonName: value
+      displayName: value
+      description: 
+      defaultValue:
+        objEncoded: Ai8AAAAAARgAAABTAHkAcwB0AGUAbQAuAEIAbwBvAGwAZQBhAG4ALAAgAG0AcwBjAG8AcgBsAGkAYgAAAAAALAEF
+        unityObjects: []
+      variableType: 3
+    - type:
+        typeDef: VRC.Udon.Common.HandType, VRC.Udon.Common, Version=1.0.0.0, Culture=neutral,
+          PublicKeyToken=null
+      udonName: hand
+      displayName: hand
+      description: 
+      defaultValue:
+        objEncoded: Ai8AAAAAASkAAABWAFIAQwAuAFUAZABvAG4ALgBDAG8AbQBtAG8AbgAuAEgAYQBuAGQAVAB5AHAAZQAsACAAVgBSAEMALgBVAGQAbwBuAC4AQwBvAG0AbQBvAG4AAAAAAB4AAAAAAAAAAAU=
+        unityObjects: []
+      variableType: 3
+    baseEventName: Event_InputDrop
+    eventEntry: _inputDrop
+    autoAdd: 0
+  - guid: b0747297-8627-4a02-921e-582168025f32
+    actionNamespace: InputDrop
+    actionVariantName: RightPressed
+    description: Fires when the Drop Input action is pressed for the right hand
+    variables:
+    - type:
+        typeDef: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      udonName: value
+      displayName: value
+      description: 
+      defaultValue:
+        objEncoded: Ai8AAAAAARgAAABTAHkAcwB0AGUAbQAuAEIAbwBvAGwAZQBhAG4ALAAgAG0AcwBjAG8AcgBsAGkAYgAAAAAALAEF
+        unityObjects: []
+      variableType: 9
+    - type:
+        typeDef: VRC.Udon.Common.HandType, VRC.Udon.Common, Version=1.0.0.0, Culture=neutral,
+          PublicKeyToken=null
+      udonName: hand
+      displayName: hand
+      description: 
+      defaultValue:
+        objEncoded: Ai8AAAAAASkAAABWAFIAQwAuAFUAZABvAG4ALgBDAG8AbQBtAG8AbgAuAEgAYQBuAGQAVAB5AHAAZQAsACAAVgBSAEMALgBVAGQAbwBuAC4AQwBvAG0AbQBvAG4AAAAAAB4AAAAAAAAAAAU=
+        unityObjects: []
+      variableType: 9
+    baseEventName: Event_InputDrop
+    eventEntry: _inputDrop
+    autoAdd: 0
+  - guid: 590e1fd6-8d67-4b5c-a748-95fd8b699561
+    actionNamespace: InputDrop
+    actionVariantName: RightReleased
+    description: Fires when the Drop Input action is released for the right hand
+    variables:
+    - type:
+        typeDef: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      udonName: value
+      displayName: value
+      description: 
+      defaultValue:
+        objEncoded: Ai8AAAAAARgAAABTAHkAcwB0AGUAbQAuAEIAbwBvAGwAZQBhAG4ALAAgAG0AcwBjAG8AcgBsAGkAYgAAAAAALAAF
+        unityObjects: []
+      variableType: 9
+    - type:
+        typeDef: VRC.Udon.Common.HandType, VRC.Udon.Common, Version=1.0.0.0, Culture=neutral,
+          PublicKeyToken=null
+      udonName: hand
+      displayName: hand
+      description: 
+      defaultValue:
+        objEncoded: Ai8AAAAAASkAAABWAFIAQwAuAFUAZABvAG4ALgBDAG8AbQBtAG8AbgAuAEgAYQBuAGQAVAB5AHAAZQAsACAAVgBSAEMALgBVAGQAbwBuAC4AQwBvAG0AbQBvAG4AAAAAAB4AAAAAAAAAAAU=
+        unityObjects: []
+      variableType: 9
+    baseEventName: Event_InputDrop
+    eventEntry: _inputDrop
+    autoAdd: 0
+  - guid: 0cacadcc-211c-482b-bbec-8c095a16d679
+    actionNamespace: InputDrop
+    actionVariantName: LeftPressed
+    description: Fires when the Drop Input action is pressed for the left hand
+    variables:
+    - type:
+        typeDef: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      udonName: value
+      displayName: value
+      description: 
+      defaultValue:
+        objEncoded: Ai8AAAAAARgAAABTAHkAcwB0AGUAbQAuAEIAbwBvAGwAZQBhAG4ALAAgAG0AcwBjAG8AcgBsAGkAYgAAAAAALAEF
+        unityObjects: []
+      variableType: 9
+    - type:
+        typeDef: VRC.Udon.Common.HandType, VRC.Udon.Common, Version=1.0.0.0, Culture=neutral,
+          PublicKeyToken=null
+      udonName: hand
+      displayName: hand
+      description: 
+      defaultValue:
+        objEncoded: Ai8AAAAAASkAAABWAFIAQwAuAFUAZABvAG4ALgBDAG8AbQBtAG8AbgAuAEgAYQBuAGQAVAB5AHAAZQAsACAAVgBSAEMALgBVAGQAbwBuAC4AQwBvAG0AbQBvAG4AAAAAAB4BAAAAAAAAAAU=
+        unityObjects: []
+      variableType: 9
+    baseEventName: Event_InputDrop
+    eventEntry: _inputDrop
+    autoAdd: 0
+  - guid: 1001b962-ad8a-447c-831b-a206d3d6b313
+    actionNamespace: InputDrop
+    actionVariantName: LeftReleased
+    description: Fires when the Drop Input action is released for the left hand
+    variables:
+    - type:
+        typeDef: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      udonName: value
+      displayName: value
+      description: 
+      defaultValue:
+        objEncoded: Ai8AAAAAARgAAABTAHkAcwB0AGUAbQAuAEIAbwBvAGwAZQBhAG4ALAAgAG0AcwBjAG8AcgBsAGkAYgAAAAAALAAF
+        unityObjects: []
+      variableType: 9
+    - type:
+        typeDef: VRC.Udon.Common.HandType, VRC.Udon.Common, Version=1.0.0.0, Culture=neutral,
+          PublicKeyToken=null
+      udonName: hand
+      displayName: hand
+      description: 
+      defaultValue:
+        objEncoded: Ai8AAAAAASkAAABWAFIAQwAuAFUAZABvAG4ALgBDAG8AbQBtAG8AbgAuAEgAYQBuAGQAVAB5AHAAZQAsACAAVgBSAEMALgBVAGQAbwBuAC4AQwBvAG0AbQBvAG4AAAAAAB4BAAAAAAAAAAU=
+        unityObjects: []
+      variableType: 9
+    baseEventName: Event_InputDrop
+    eventEntry: _inputDrop
+    autoAdd: 0
+  isMultiInstance: 0
+  defaultNamespace: InputDrop
+  udonProgramAsset: {fileID: 11400000, guid: 608730f44d5e7174e8841cb109915939, type: 2}
+  assetGuid: 608730f44d5e7174e8841cb109915939
+  thisGuid: 1738ce714a7ad5749bc76e5085f01a4f

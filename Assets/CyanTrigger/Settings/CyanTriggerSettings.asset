@@ -1,0 +1,63 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8de4fe64f56193b4bb51f9edd8eb26f0, type: 3}
+  m_Name: CyanTriggerSettings
+  m_EditorClassIdentifier: 
+  compileSceneTriggersOnSave: 1
+  compileSceneTriggersOnPlay: 1
+  compileSceneTriggersOnBuild: 1
+  compileAssetTriggersOnBuild: 0
+  compileAssetTriggersOnEdit: 1
+  compileAssetTriggersOnClose: 1
+  actionDetailedView: 1
+  useColorThemes: 1
+  colorThemeDark:
+    specialActions: {r: 0.424, g: 0.584, b: 0.922, a: 1}
+    udonTypeName: {r: 0.757, g: 0.569, b: 1, a: 1}
+    customActionName: {r: 0.61, g: 0.57, b: 1, a: 1}
+    actionName: {r: 0.224, g: 0.8, b: 0.561, a: 1}
+    outputIndicator: {r: 0.9568627, g: 0.5960785, b: 0.0627451, a: 1}
+    variableIndicator: {r: 0.4, g: 0.765, b: 0.8, a: 1}
+    variableName: {r: 0.8, g: 0.8, b: 0.8, a: 1}
+    punctuation: {r: 0.8, g: 0.8, b: 0.8, a: 1}
+    warning: {r: 0.957, g: 0.4, b: 0, a: 1}
+    error: {r: 1, g: 0.337, b: 0.278, a: 1}
+    comment: {r: 0.5215687, g: 0.7686275, b: 0.4235294, a: 1}
+    background: {r: 0.157, g: 0.157, b: 0.157, a: 1}
+    border: {r: 0.251, g: 0.251, b: 0.251, a: 1}
+    selection: {r: 0.031, g: 0.2, b: 0.369, a: 1}
+    nullLiteral: {r: 0.957, g: 0.4, b: 0, a: 1}
+    stringLiteral: {r: 0.788, g: 0.635, b: 0.427, a: 1}
+    unityObjectLiteral: {r: 0.75, g: 0.82, b: 0.5, a: 1}
+    valueLiteral: {r: 0.929, g: 0.58, b: 0.753, a: 1}
+  colorThemeLight:
+    specialActions: {r: 0.059, g: 0.329, b: 0.839, a: 1}
+    udonTypeName: {r: 0.42, g: 0.184, b: 0.729, a: 1}
+    customActionName: {r: 0.23, g: 0.18, b: 0.73, a: 1}
+    actionName: {r: 0, g: 0.522, b: 0.373, a: 1}
+    outputIndicator: {r: 0.957, g: 0.596, b: 0.063, a: 1}
+    variableIndicator: {r: 0, g: 0.576, b: 0.631, a: 1}
+    variableName: {r: 0.22, g: 0.22, b: 0.22, a: 1}
+    punctuation: {r: 0.22, g: 0.22, b: 0.22, a: 1}
+    warning: {r: 0.957, g: 0.596, b: 0.063, a: 1}
+    error: {r: 0.851, g: 0.078, b: 0, a: 1}
+    comment: {r: 0.02352941, g: 0.5294118, b: 0, a: 1}
+    background: {r: 0.95, g: 0.95, b: 0.95, a: 1}
+    border: {r: 0.8, g: 0.8, b: 0.8, a: 1}
+    selection: {r: 0.722, g: 0.851, b: 1, a: 1}
+    nullLiteral: {r: 0.957, g: 0.4, b: 0, a: 1}
+    stringLiteral: {r: 0.549, g: 0.424, b: 0.255, a: 1}
+    unityObjectLiteral: {r: 0.37, g: 0.52, b: 0, a: 1}
+    valueLiteral: {r: 0.671, g: 0.184, b: 0.42, a: 1}
+  directoryPath: {fileID: 102900000, guid: 1349772a13f54304897696ab6b5405a4, type: 3}
+  lastMigratedDataVersion: 6
+  lastExampleVersionImported: 

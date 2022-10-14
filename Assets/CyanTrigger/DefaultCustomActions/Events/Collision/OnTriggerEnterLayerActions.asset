@@ -1,0 +1,40 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 61d0ad128b95568438c70898dc9e600c, type: 3}
+  m_Name: OnTriggerEnterLayerActions
+  m_EditorClassIdentifier: 
+  autoAddPriority: 0
+  exposedActions:
+  - guid: d127beb3-8a30-4284-aca0-71c6236724b4
+    actionNamespace: OnTriggerEnter
+    actionVariantName: LayerMask
+    description: Fires when any GameObject on a layer specified in the LayerMask
+      enters the trigger colliders on this GameObject
+    variables:
+    - type:
+        typeDef: UnityEngine.LayerMask, UnityEngine.CoreModule, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
+      udonName: CollisionMask
+      displayName: LayerMask
+      description: 
+      defaultValue:
+        objEncoded: Ai8AAAAAAS0AAABVAG4AaQB0AHkARQBuAGcAaQBuAGUALgBMAGEAeQBlAHIATQBhAHMAawAsACAAVQBuAGkAdAB5AEUAbgBnAGkAbgBlAC4AQwBvAHIAZQBNAG8AZAB1AGwAZQAAAAAAGAEAAAAF
+        unityObjects: []
+      variableType: 3
+    baseEventName: Event_OnTriggerEnter
+    eventEntry: _onTriggerEnter
+    autoAdd: 0
+  isMultiInstance: 0
+  defaultNamespace: 
+  udonProgramAsset: {fileID: 11400000, guid: 9ac6bff6480643f48a92f38663ab3a1d, type: 2}
+  assetGuid: 9ac6bff6480643f48a92f38663ab3a1d
+  thisGuid: c5c01393ca15108428c7027646e23348

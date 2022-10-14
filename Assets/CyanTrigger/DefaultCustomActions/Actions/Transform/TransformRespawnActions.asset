@@ -1,0 +1,38 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 61d0ad128b95568438c70898dc9e600c, type: 3}
+  m_Name: TransformRespawnActions
+  m_EditorClassIdentifier: 
+  autoAddPriority: 0
+  exposedActions:
+  - guid: c1abe3b4-dac6-459f-879a-7e7b6387a500
+    actionNamespace: Transform
+    actionVariantName: SavePosition
+    description: 
+    variables: []
+    baseEventName: Event_Start
+    eventEntry: _start
+    autoAdd: 1
+  - guid: 27c57960-34bb-4101-845f-d4563679c79d
+    actionNamespace: Transform
+    actionVariantName: Respawn
+    description: Respawn this Transform to its original position set at world start.
+      Note that synced objects should use VRCObjectSync.Respawn instead
+    variables: []
+    baseEventName: Event_Custom
+    eventEntry: _Respawn
+    autoAdd: 0
+  isMultiInstance: 0
+  defaultNamespace: 
+  udonProgramAsset: {fileID: 11400000, guid: fb752bf59ff44984199b4de6e9896268, type: 2}
+  assetGuid: fb752bf59ff44984199b4de6e9896268
+  thisGuid: af460215e01382c4391d73e70ff4790e

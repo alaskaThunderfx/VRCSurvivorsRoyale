@@ -1,0 +1,47 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 61d0ad128b95568438c70898dc9e600c, type: 3}
+  m_Name: DataCacheBoolSetActions
+  m_EditorClassIdentifier: 
+  autoAddPriority: 0
+  exposedActions:
+  - guid: d2b7d642-36a1-401c-91cf-67cb9e15cf88
+    actionNamespace: DataCache
+    actionVariantName: BoolSet
+    description: Set a Bool value for a given key that can be retrieved on any CyanTrigger
+    variables:
+    - type:
+        typeDef: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      udonName: key
+      displayName: key
+      description: 
+      defaultValue:
+        objEncoded: 
+        unityObjects: []
+      variableType: 3
+    - type:
+        typeDef: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      udonName: value
+      displayName: value
+      description: 
+      defaultValue:
+        objEncoded: Ai8AAAAAARgAAABTAHkAcwB0AGUAbQAuAEIAbwBvAGwAZQBhAG4ALAAgAG0AcwBjAG8AcgBsAGkAYgAAAAAALAAF
+        unityObjects: []
+      variableType: 3
+    baseEventName: Event_Custom
+    eventEntry: _Set
+    autoAdd: 0
+  isMultiInstance: 0
+  defaultNamespace: DataCache
+  udonProgramAsset: {fileID: 11400000, guid: 740178d18fc4ec5498e543bdb9850f6c, type: 2}
+  assetGuid: 740178d18fc4ec5498e543bdb9850f6c
+  thisGuid: 3aba5110c3abf4b48acca3a2c1410892

@@ -1,0 +1,71 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 61d0ad128b95568438c70898dc9e600c, type: 3}
+  m_Name: RandomActions
+  m_EditorClassIdentifier: 
+  autoAddPriority: 0
+  exposedActions:
+  - guid: b3d80ef5-8965-4225-9935-5b5564b9bf87
+    actionNamespace: UdonBehaviour
+    actionVariantName: RandomEvent
+    description: Given a list of probabilities and event names, pick one at random
+      to execute on the provided UdonBehaviour.
+    variables:
+    - type:
+        typeDef: VRC.Udon.UdonBehaviour, VRC.Udon, Version=0.0.0.0, Culture=neutral,
+          PublicKeyToken=null
+      udonName: udon
+      displayName: udon
+      description: The UdonBehaviour to execute the selected random event.
+      defaultValue:
+        objEncoded: Lg==
+        unityObjects: []
+      variableType: 3
+    - type:
+        typeDef: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      udonName: normalizeProbabilities
+      displayName: normalizeProbabilities
+      description: Should the probabilities array be normalized so that the sum is
+        equal to 1?
+      defaultValue:
+        objEncoded: Ai8AAAAAARgAAABTAHkAcwB0AGUAbQAuAEIAbwBvAGwAZQBhAG4ALAAgAG0AcwBjAG8AcgBsAGkAYgAAAAAALAAF
+        unityObjects: []
+      variableType: 3
+    - type:
+        typeDef: System.Single[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      udonName: probabilities
+      displayName: probabilities
+      description: 'The probability of picking each event. This should sum at most
+        1.0. Anything over 1 will be ignored. '
+      defaultValue:
+        objEncoded: Ai8AAAAAARkAAABTAHkAcwB0AGUAbQAuAFMAaQBuAGcAbABlAFsAXQAsACAAbQBzAGMAbwByAGwAaQBiAAAAAAAIAAAAAAQAAAAF
+        unityObjects: []
+      variableType: 3
+    - type:
+        typeDef: System.String[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      udonName: events
+      displayName: events
+      description: The possible events that can be randomly selected to be executed
+        by the provided udon. This should be the same length as the probabilities
+        array.
+      defaultValue:
+        objEncoded: Ai8AAAAAARkAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnAFsAXQAsACAAbQBzAGMAbwByAGwAaQBiAAAAAAAGAAAAAAAAAAAHBQ==
+        unityObjects: []
+      variableType: 3
+    baseEventName: Event_Custom
+    eventEntry: _Random
+    autoAdd: 0
+  isMultiInstance: 0
+  defaultNamespace: 
+  udonProgramAsset: {fileID: 11400000, guid: a936568509df5124c82fca46dd45e4d1, type: 2}
+  assetGuid: a936568509df5124c82fca46dd45e4d1
+  thisGuid: f1c665e39e428ce4dae86a4394f97ea1

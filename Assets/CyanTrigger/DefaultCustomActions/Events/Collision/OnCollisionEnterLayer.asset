@@ -1,0 +1,355 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a31a3a978bd0448580d4ef9f3d6d95bf, type: 3}
+  m_Name: OnCollisionEnterLayer
+  m_EditorClassIdentifier: 
+  serializedUdonProgramAsset: {fileID: 11400000, guid: 137176199269d0342829d31ffc59280e,
+    type: 2}
+  udonAssembly: ".data_start\r\n  .export __CyanTrigger_ProgramName_SystemString\r\n 
+    .export CollisionMask\r\n  __CyanTrigger_ProgramName_SystemString: %SystemString,
+    null\r\n  __CyanTrigger_ProgramHash_SystemString: %SystemString, null\r\n  __0_ra_SystemUInt32:
+    %SystemUInt32, null\r\n  __1_ea_SystemUInt32: %SystemUInt32, null\r\n  __null:
+    %SystemObject, null\r\n  _this_udonbehaviour: %VRCUdonUdonBehaviour, this\r\n 
+    onCollisionEnterOther: %UnityEngineCollision, null\r\n  CollisionMask: %UnityEngineLayerMask,
+    null\r\n  __11_local_var_UnityEngineGameObject: %UnityEngineGameObject, null\r\n 
+    __12_local_var_SystemInt32: %SystemInt32, null\r\n  __13_local_var_SystemInt32:
+    %SystemInt32, null\r\n  __14_ref_SystemInt32: %SystemInt32, null\r\n  __15_local_var_SystemInt32:
+    %SystemInt32, null\r\n  __16_local_var_SystemInt32: %SystemInt32, null\r\n  __17_local_var_SystemBoolean:
+    %SystemBoolean, null\r\n  __18_const_SystemBoolean: %SystemBoolean, null\r\n 
+    __19_ref_SystemInt32: %SystemInt32, null\r\n  __20_ref_SystemString: %SystemString,
+    null\r\n.data_end\r\n\n.code_start\r\n  .export _onCollisionEnter\r\n  _onCollisionEnter:\r\n   
+    PUSH, __1_ea_SystemUInt32\r\n    PUSH, __null\r\n    PUSH, __11_local_var_UnityEngineGameObject\r\n   
+    COPY\r\n    PUSH, onCollisionEnterOther\r\n    PUSH, __11_local_var_UnityEngineGameObject\r\n   
+    EXTERN, \"UnityEngineCollision.__get_gameObject__UnityEngineGameObject\"\r\n   
+    PUSH, __11_local_var_UnityEngineGameObject\r\n    PUSH, __12_local_var_SystemInt32\r\n   
+    EXTERN, \"UnityEngineGameObject.__get_layer__SystemInt32\"\r\n    PUSH, __14_ref_SystemInt32\r\n   
+    PUSH, __12_local_var_SystemInt32\r\n    PUSH, __13_local_var_SystemInt32\r\n   
+    EXTERN, \"SystemInt32.__op_LeftShift__SystemInt32_SystemInt32__SystemInt32\"\r\n   
+    PUSH, CollisionMask\r\n    PUSH, __15_local_var_SystemInt32\r\n    EXTERN, \"UnityEngineLayerMask.__get_value__SystemInt32\"\r\n   
+    PUSH, __15_local_var_SystemInt32\r\n    PUSH, __13_local_var_SystemInt32\r\n   
+    PUSH, __16_local_var_SystemInt32\r\n    EXTERN, \"SystemInt32.__op_LogicalAnd__SystemInt32_SystemInt32__SystemInt32\"\r\n   
+    PUSH, __18_const_SystemBoolean\r\n    PUSH, __17_local_var_SystemBoolean\r\n   
+    COPY\r\n    PUSH, __16_local_var_SystemInt32\r\n    PUSH, __19_ref_SystemInt32\r\n   
+    PUSH, __17_local_var_SystemBoolean\r\n    EXTERN, \"SystemInt32.__op_Inequality__SystemInt32_SystemInt32__SystemBoolean\"\r\n   
+    PUSH, __17_local_var_SystemBoolean\r\n    JUMP_IF_FALSE, 0x00000100\r\n    PUSH,
+    _this_udonbehaviour\r\n    PUSH, __20_ref_SystemString\r\n    EXTERN, \"VRCUdonCommonInterfacesIUdonEventReceiver.__SendCustomEvent__SystemString__SystemVoid\"\r\n   
+    PUSH, __0_ra_SystemUInt32\r\n    COPY\r\n    JUMP_INDIRECT, __0_ra_SystemUInt32\r\n\r\n.code_end\r\n"
+  assemblyError: 
+  triggerHash: D2B3EC3F6AE949E5FB03D271B1844C2E
+  shouldBeNetworked: 0
+  warningMessages: []
+  errorMessages: []
+  ctDataInstance:
+    version: 6
+    updateOrder: 0
+    autoSetSyncMode: 1
+    programSyncMode: 2
+    programName: 
+    events:
+    - name: _Unnamed
+      eventId: a34e7414-a8ec-4019-8e32-34fc8d2c2aea
+      eventInstance:
+        actionType:
+          directEvent: Event_OnCollisionEnter
+          guid: 
+        inputs: []
+        multiInput: []
+        expanded: 1
+        comment:
+          comment: 
+      actionInstances:
+      - actionType:
+          directEvent: UnityEngineGameObject__.Set__UnityEngineGameObject__UnityEngineGameObject
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: null
+          variableID: __null
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        - isVariable: 1
+          name: 
+          variableID: 423a89d7-e6b0-4628-8085-19cad73a117b
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBCgAAAGcAYQBtAGUATwBiAGoAZQBjAHQABQ==
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: UnityEngineCollision.__get_gameObject__UnityEngineGameObject
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: onCollisionEnterOther
+          variableID: 
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        - isVariable: 1
+          name: gameObject
+          variableID: 423a89d7-e6b0-4628-8085-19cad73a117b
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBAAAAAAU=
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: UnityEngineGameObject.__get_layer__SystemInt32
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: gameObject
+          variableID: 423a89d7-e6b0-4628-8085-19cad73a117b
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        - isVariable: 1
+          name: 
+          variableID: 4efff2ec-f5db-4044-99b9-97c76e9b90c2
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBCAAAAG8AYgBqAEwAYQB5AGUAcgAF
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: SystemInt32.__op_LeftShift__SystemInt32_SystemInt32__SystemInt32
+          guid: 
+        inputs:
+        - isVariable: 0
+          name: 
+          variableID: 
+          data:
+            objEncoded: Ai8AAAAAARYAAABTAHkAcwB0AGUAbQAuAEkAbgB0ADMAMgAsACAAbQBzAGMAbwByAGwAaQBiAAAAAAAYAQAAAAU=
+            unityObjects: []
+        - isVariable: 1
+          name: objLayer
+          variableID: 4efff2ec-f5db-4044-99b9-97c76e9b90c2
+          data:
+            objEncoded: Ai8AAAAAARYAAABTAHkAcwB0AGUAbQAuAEkAbgB0ADMAMgAsACAAbQBzAGMAbwByAGwAaQBiAAAAAAAYAAAAAAU=
+            unityObjects: []
+        - isVariable: 1
+          name: 
+          variableID: 335c418b-17fd-4f33-9db9-19c0e4b78265
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBDAAAAG8AYgBqAEwAYQB5AGUAcgBNAGEAcwBrAAU=
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: UnityEngineLayerMask.__get_value__SystemInt32
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: CollisionMask
+          variableID: 94b4a118-e3f1-43f3-963b-99dda0007080
+          data:
+            objEncoded: Ai8AAAAAAS0AAABVAG4AaQB0AHkARQBuAGcAaQBuAGUALgBMAGEAeQBlAHIATQBhAHMAawAsACAAVQBuAGkAdAB5AEUAbgBnAGkAbgBlAC4AQwBvAHIAZQBNAG8AZAB1AGwAZQAAAAAAGAAAAAAF
+            unityObjects: []
+        - isVariable: 1
+          name: 
+          variableID: f95e33e4-1210-40d3-9d27-1ed5a691dd75
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBCQAAAG0AYQBzAGsAVgBhAGwAdQBlAAU=
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: SystemInt32.__op_LogicalAnd__SystemInt32_SystemInt32__SystemInt32
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: maskValue
+          variableID: f95e33e4-1210-40d3-9d27-1ed5a691dd75
+          data:
+            objEncoded: Ai8AAAAAARYAAABTAHkAcwB0AGUAbQAuAEkAbgB0ADMAMgAsACAAbQBzAGMAbwByAGwAaQBiAAAAAAAYAAAAAAU=
+            unityObjects: []
+        - isVariable: 1
+          name: objLayerMask
+          variableID: 335c418b-17fd-4f33-9db9-19c0e4b78265
+          data:
+            objEncoded: Ai8AAAAAARYAAABTAHkAcwB0AGUAbQAuAEkAbgB0ADMAMgAsACAAbQBzAGMAbwByAGwAaQBiAAAAAAAYAAAAAAU=
+            unityObjects: []
+        - isVariable: 1
+          name: 
+          variableID: ffb5db3f-409b-4bdc-8c2f-1ecc3f49d5b4
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBBwAAAG0AYQBzAGsAQQBuAGQABQ==
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: CyanTriggerSpecial_If
+          guid: 
+        inputs: []
+        multiInput: []
+        expanded: 1
+        comment:
+          comment: 
+      - actionType:
+          directEvent: CyanTriggerSpecial_Condition
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: 
+          variableID: 5d6b82d0-46f5-45a4-bc78-561eb78ba97b
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBCwAAAGwAYQB5AGUAcgBJAG4ATQBhAHMAawAF
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: SystemInt32.__op_Inequality__SystemInt32_SystemInt32__SystemBoolean
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: maskAnd
+          variableID: ffb5db3f-409b-4bdc-8c2f-1ecc3f49d5b4
+          data:
+            objEncoded: Ai8AAAAAARYAAABTAHkAcwB0AGUAbQAuAEkAbgB0ADMAMgAsACAAbQBzAGMAbwByAGwAaQBiAAAAAAAYAAAAAAU=
+            unityObjects: []
+        - isVariable: 0
+          name: 
+          variableID: 
+          data:
+            objEncoded: Ai8AAAAAARYAAABTAHkAcwB0AGUAbQAuAEkAbgB0ADMAMgAsACAAbQBzAGMAbwByAGwAaQBiAAAAAAAYAAAAAAU=
+            unityObjects: []
+        - isVariable: 1
+          name: layerInMask
+          variableID: 5d6b82d0-46f5-45a4-bc78-561eb78ba97b
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: CyanTriggerSpecial_BlockEnd
+          guid: 
+        inputs: []
+        multiInput: []
+        expanded: 1
+        comment:
+          comment: 
+      - actionType:
+          directEvent: CyanTriggerSpecial_ConditionBody
+          guid: 
+        inputs: []
+        multiInput: []
+        expanded: 1
+        comment:
+          comment: 
+      - actionType:
+          directEvent: VRCUdonCommonInterfacesIUdonEventReceiver.__SendCustomEvent__SystemString__SystemVoid
+          guid: 
+        inputs:
+        - isVariable: 0
+          name: 
+          variableID: 
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        - isVariable: 0
+          name: 
+          variableID: 
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBAAAAAAU=
+            unityObjects: []
+        multiInput:
+        - isVariable: 1
+          name: This UdonBehaviour
+          variableID: _this_udonbehaviour
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: CyanTriggerSpecial_BlockEnd
+          guid: 
+        inputs: []
+        multiInput: []
+        expanded: 1
+        comment:
+          comment: 
+      - actionType:
+          directEvent: CyanTriggerSpecial_BlockEnd
+          guid: 
+        inputs: []
+        multiInput: []
+        expanded: 1
+        comment:
+          comment: 
+      eventOptions:
+        userGate: 0
+        userGateExtraData: []
+        broadcast: 0
+        delay: 0
+        replay: 0
+      expanded: 1
+    variables:
+    - isVariable: 0
+      name: CollisionMask
+      variableID: 94b4a118-e3f1-43f3-963b-99dda0007080
+      data:
+        objEncoded: Ai8AAAAAAS0AAABVAG4AaQB0AHkARQBuAGcAaQBuAGUALgBMAGEAeQBlAHIATQBhAHMAawAsACAAVQBuAGkAdAB5AEUAbgBnAGkAbgBlAC4AQwBvAHIAZQBNAG8AZAB1AGwAZQAAAAAAGAAAAAAF
+        unityObjects: []
+      type:
+        typeDef: UnityEngine.LayerMask, UnityEngine.CoreModule, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
+      sync: 0
+      showInInspector: 1
+      typeInfo: 0
+      comment:
+        comment: 
+    comment:
+      comment: 
+    expandVariables: 1
+    expandOtherSettings: 1
+    expandSyncSection: 0
+    ignoreEventWarnings: 1
+  publicVariableReferences:
+    actionDataIndices: []
+    userVariableNames:
+    - CollisionMask
+    userVariableTypes:
+    - typeDef: UnityEngine.LayerMask, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+  ignoreOdinData: 1
+  serializationDataOdin:
+    SerializedFormat: 0
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes: []
+  allowEditingInInspector: 0
+  expandInInspector: 0
+  isLocked: 1

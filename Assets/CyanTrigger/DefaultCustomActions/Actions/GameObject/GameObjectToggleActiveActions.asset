@@ -1,0 +1,39 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 61d0ad128b95568438c70898dc9e600c, type: 3}
+  m_Name: GameObjectToggleActiveActions
+  m_EditorClassIdentifier: 
+  autoAddPriority: 0
+  exposedActions:
+  - guid: 653c3be4-2bad-4ad8-bf02-fd32dc735be0
+    actionNamespace: GameObject
+    actionVariantName: ToggleActive
+    description: 'Toggles a GameObject''s active state. '
+    variables:
+    - type:
+        typeDef: UnityEngine.GameObject, UnityEngine.CoreModule, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
+      udonName: gameObject
+      displayName: GameObjects
+      description: 
+      defaultValue:
+        objEncoded: Lg==
+        unityObjects: []
+      variableType: 19
+    baseEventName: Event_Custom
+    eventEntry: _SetGameObjectActiveToggle
+    autoAdd: 0
+  isMultiInstance: 0
+  defaultNamespace: 
+  udonProgramAsset: {fileID: 11400000, guid: 5dd00cea8ec61de43b0879764922c1d7, type: 2}
+  assetGuid: 5dd00cea8ec61de43b0879764922c1d7
+  thisGuid: d25e0e4844b3a86428fc5c39e87fb6eb

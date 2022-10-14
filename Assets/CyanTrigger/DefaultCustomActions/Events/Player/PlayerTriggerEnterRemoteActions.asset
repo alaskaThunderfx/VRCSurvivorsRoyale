@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 61d0ad128b95568438c70898dc9e600c, type: 3}
+  m_Name: PlayerTriggerEnterRemoteActions
+  m_EditorClassIdentifier: 
+  autoAddPriority: 0
+  exposedActions:
+  - guid: 3c018c34-ce09-41c0-8e32-f847da3bd0f2
+    actionNamespace: OnPlayerTriggerEnter
+    actionVariantName: Remote Player
+    description: Fires when any remote player enters the trigger colliders on this
+      GameObject
+    variables: []
+    baseEventName: Event_OnPlayerTriggerEnter
+    eventEntry: _onPlayerTriggerEnter
+    autoAdd: 0
+  isMultiInstance: 0
+  defaultNamespace: 
+  udonProgramAsset: {fileID: 11400000, guid: 2a6784e132e233f4b94bb4e9d5621500, type: 2}
+  assetGuid: 2a6784e132e233f4b94bb4e9d5621500
+  thisGuid: e6c2e50ab61acd44da0185ebe1335b3b

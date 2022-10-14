@@ -1,0 +1,351 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 61d0ad128b95568438c70898dc9e600c, type: 3}
+  m_Name: FadeControllerActions
+  m_EditorClassIdentifier: 
+  autoAddPriority: 0
+  exposedActions:
+  - guid: 5436f8d4-d32c-4980-b64e-006d3988175f
+    actionNamespace: FadeController
+    actionVariantName: SetColor
+    description: 
+    variables:
+    - type:
+        typeDef: UnityEngine.Color, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
+          PublicKeyToken=null
+      udonName: _arg_color__SetColor
+      displayName: color
+      description: 
+      defaultValue:
+        objEncoded: Ai8AAAAAASkAAABVAG4AaQB0AHkARQBuAGcAaQBuAGUALgBDAG8AbABvAHIALAAgAFUAbgBpAHQAeQBFAG4AZwBpAG4AZQAuAEMAbwByAGUATQBvAGQAdQBsAGUAAAAAACAAAIA/IAAAgD8gAACAPyAAAIA/BQ==
+        unityObjects: []
+      variableType: 3
+    baseEventName: Event_Custom
+    eventEntry: _SetColor
+    autoAdd: 0
+  - guid: e6f5c890-6e57-4452-a9bc-6d0458e01ea0
+    actionNamespace: FadeController
+    actionVariantName: SetImmobilizePlayer
+    description: 
+    variables:
+    - type:
+        typeDef: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      udonName: _arg_immobilizePlayer__SetImmobilizePlayer
+      displayName: immobilizePlayer
+      description: 
+      defaultValue:
+        objEncoded: Ai8AAAAAARgAAABTAHkAcwB0AGUAbQAuAEIAbwBvAGwAZQBhAG4ALAAgAG0AcwBjAG8AcgBsAGkAYgAAAAAALAEF
+        unityObjects: []
+      variableType: 3
+    baseEventName: Event_Custom
+    eventEntry: _SetImmobilizePlayer
+    autoAdd: 0
+  - guid: ec94162e-8abf-41a1-a8da-c34953807a98
+    actionNamespace: FadeController
+    actionVariantName: StartFade
+    description: 
+    variables:
+    - type:
+        typeDef: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      udonName: _arg_onFadeInEvent__StartFadeWithEvent
+      displayName: _
+      description: 
+      defaultValue:
+        objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBAAAAAAU=
+        unityObjects: []
+      variableType: 9
+    baseEventName: Event_Custom
+    eventEntry: _StartFadeWithEvent
+    autoAdd: 0
+  - guid: cab87421-441d-4734-baf9-b215f5dc99be
+    actionNamespace: FadeController
+    actionVariantName: StartFade
+    description: 
+    variables:
+    - type:
+        typeDef: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      udonName: _arg_onFadeInEvent__StartFadeWithEvent
+      displayName: On Fade In Event
+      description: 
+      defaultValue:
+        objEncoded: Lg==
+        unityObjects: []
+      variableType: 3
+    baseEventName: Event_Custom
+    eventEntry: _StartFadeWithEvent
+    autoAdd: 0
+  - guid: a8a820d8-3607-4793-bdaa-f4008112f883
+    actionNamespace: FadeController
+    actionVariantName: StartFade
+    description: 
+    variables:
+    - type:
+        typeDef: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      udonName: _arg_onFadeInEvent__StartFadeWithEventAndDuration
+      displayName: On Fade In Event
+      description: 
+      defaultValue:
+        objEncoded: Lg==
+        unityObjects: []
+      variableType: 3
+    - type:
+        typeDef: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      udonName: _arg_fadeInDuration__StartFadeWithEventAndDuration
+      displayName: Fade In Duration
+      description: 
+      defaultValue:
+        objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAaQBuAGcAbABlACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACAAAIA/BQ==
+        unityObjects: []
+      variableType: 3
+    baseEventName: Event_Custom
+    eventEntry: _StartFadeWithEventAndDuration
+    autoAdd: 0
+  - guid: 5fb28611-d421-4061-87de-0395ed5ab5e4
+    actionNamespace: FadeController
+    actionVariantName: EndFade
+    description: 
+    variables:
+    - type:
+        typeDef: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      udonName: _arg_onFadeOutEvent__EndFadeWithEvent
+      displayName: _
+      description: 
+      defaultValue:
+        objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBAAAAAAU=
+        unityObjects: []
+      variableType: 9
+    baseEventName: Event_Custom
+    eventEntry: _EndFadeWithEvent
+    autoAdd: 0
+  - guid: e700c742-19ee-4069-aad8-249439a46712
+    actionNamespace: FadeController
+    actionVariantName: EndFade
+    description: 
+    variables:
+    - type:
+        typeDef: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      udonName: _arg_onFadeOutEvent__EndFadeWithEvent
+      displayName: On Fade Out Event
+      description: 
+      defaultValue:
+        objEncoded: Lg==
+        unityObjects: []
+      variableType: 3
+    baseEventName: Event_Custom
+    eventEntry: _EndFadeWithEvent
+    autoAdd: 0
+  - guid: 182111e3-2847-4854-91c9-29b8866bcf7e
+    actionNamespace: FadeController
+    actionVariantName: EndFade
+    description: 
+    variables:
+    - type:
+        typeDef: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      udonName: _arg_onFadeEndEvent__EndFadeWithEventAndDuration
+      displayName: On Fade End Event
+      description: 
+      defaultValue:
+        objEncoded: Lg==
+        unityObjects: []
+      variableType: 3
+    - type:
+        typeDef: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      udonName: _arg_fadeEndDuration__EndFadeWithEventAndDuration
+      displayName: Fade End Duration
+      description: 
+      defaultValue:
+        objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAaQBuAGcAbABlACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACAAAIA/BQ==
+        unityObjects: []
+      variableType: 3
+    baseEventName: Event_Custom
+    eventEntry: _EndFadeWithEventAndDuration
+    autoAdd: 0
+  - guid: 0c7c7c98-edce-48c6-bcdf-0f6893d0f877
+    actionNamespace: FadeController
+    actionVariantName: FadeInAndOut
+    description: 
+    variables:
+    - type:
+        typeDef: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      udonName: _arg_onFadeInEvent__FadeInAndOutWithEvents
+      displayName: _
+      description: 
+      defaultValue:
+        objEncoded: Lg==
+        unityObjects: []
+      variableType: 9
+    - type:
+        typeDef: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      udonName: _arg_onFadeEndEvent__FadeInAndOutWithEvents
+      displayName: _
+      description: 
+      defaultValue:
+        objEncoded: Lg==
+        unityObjects: []
+      variableType: 9
+    baseEventName: Event_Custom
+    eventEntry: _FadeInAndOutWithEvents
+    autoAdd: 0
+  - guid: ebd8f220-fcae-4c00-97cc-88d629dfe327
+    actionNamespace: FadeController
+    actionVariantName: FadeInAndOut
+    description: 
+    variables:
+    - type:
+        typeDef: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      udonName: _arg_onFadeInEvent__FadeInAndOutWithEvents
+      displayName: On Fade In Event
+      description: 
+      defaultValue:
+        objEncoded: Lg==
+        unityObjects: []
+      variableType: 3
+    - type:
+        typeDef: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      udonName: _arg_onFadeEndEvent__FadeInAndOutWithEvents
+      displayName: On Fade End Event
+      description: 
+      defaultValue:
+        objEncoded: Lg==
+        unityObjects: []
+      variableType: 3
+    baseEventName: Event_Custom
+    eventEntry: _FadeInAndOutWithEvents
+    autoAdd: 0
+  - guid: 8322f212-1ca5-456f-902c-2760fbb64cf3
+    actionNamespace: FadeController
+    actionVariantName: FadeInAndOut
+    description: 
+    variables:
+    - type:
+        typeDef: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      udonName: _arg_onFadeInEvent__FadeInAndOutWithEventsAndDurations
+      displayName: On Fade In Event
+      description: 
+      defaultValue:
+        objEncoded: Lg==
+        unityObjects: []
+      variableType: 3
+    - type:
+        typeDef: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      udonName: _arg_fadeInDuration__FadeInAndOutWithEventsAndDurations
+      displayName: Fade In Duration
+      description: 
+      defaultValue:
+        objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAaQBuAGcAbABlACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACAAAIA/BQ==
+        unityObjects: []
+      variableType: 3
+    - type:
+        typeDef: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      udonName: _arg_onFadeEndEvent__FadeInAndOutWithEventsAndDurations
+      displayName: On Fade End Event
+      description: 
+      defaultValue:
+        objEncoded: Lg==
+        unityObjects: []
+      variableType: 3
+    - type:
+        typeDef: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      udonName: _arg_fadeEndDuration__FadeInAndOutWithEventsAndDurations
+      displayName: Fade End Duration
+      description: 
+      defaultValue:
+        objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAaQBuAGcAbABlACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACAAAIA/BQ==
+        unityObjects: []
+      variableType: 3
+    baseEventName: Event_Custom
+    eventEntry: _FadeInAndOutWithEventsAndDurations
+    autoAdd: 0
+  - guid: 42697ab8-207d-4612-b129-22cd3d9cef6d
+    actionNamespace: FadeController
+    actionVariantName: FadeInAndOut
+    description: 
+    variables:
+    - type:
+        typeDef: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      udonName: _arg_onFadeInEvent__FadeInAndOutWithEventsDurationsAndHold
+      displayName: On Fade In Event
+      description: 
+      defaultValue:
+        objEncoded: Lg==
+        unityObjects: []
+      variableType: 3
+    - type:
+        typeDef: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      udonName: _arg_fadeInDuration__FadeInAndOutWithEventsDurationsAndHold
+      displayName: Fade In Duration
+      description: 
+      defaultValue:
+        objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAaQBuAGcAbABlACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACAAAIA/BQ==
+        unityObjects: []
+      variableType: 3
+    - type:
+        typeDef: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      udonName: _arg_onFadeHoldEvent__FadeInAndOutWithEventsDurationsAndHold
+      displayName: On Fade Hold Event
+      description: 
+      defaultValue:
+        objEncoded: Lg==
+        unityObjects: []
+      variableType: 3
+    - type:
+        typeDef: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      udonName: _arg_fadeHoldDuration__FadeInAndOutWithEventsDurationsAndHold
+      displayName: Fade Hold Duration
+      description: 
+      defaultValue:
+        objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAaQBuAGcAbABlACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACAAAIA/BQ==
+        unityObjects: []
+      variableType: 3
+    - type:
+        typeDef: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      udonName: _arg_onFadeEndEvent__FadeInAndOutWithEventsDurationsAndHold
+      displayName: On Fade End Event
+      description: 
+      defaultValue:
+        objEncoded: Lg==
+        unityObjects: []
+      variableType: 3
+    - type:
+        typeDef: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      udonName: _arg_fadeEndDuration__FadeInAndOutWithEventsDurationsAndHold
+      displayName: Fade End Duration
+      description: 
+      defaultValue:
+        objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAaQBuAGcAbABlACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACAAAIA/BQ==
+        unityObjects: []
+      variableType: 3
+    baseEventName: Event_Custom
+    eventEntry: _FadeInAndOutWithEventsDurationsAndHold
+    autoAdd: 0
+  - guid: f300b70c-90eb-4fe4-9061-e97d5d03b497
+    actionNamespace: FadeController
+    actionVariantName: IsFading
+    description: 
+    variables:
+    - type:
+        typeDef: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      udonName: _arg_isFading__IsFading
+      displayName: Is Fading
+      description: 
+      defaultValue:
+        objEncoded: Ai8AAAAAARgAAABTAHkAcwB0AGUAbQAuAEIAbwBvAGwAZQBhAG4ALAAgAG0AcwBjAG8AcgBsAGkAYgAAAAAALAAF
+        unityObjects: []
+      variableType: 6
+    baseEventName: Event_Custom
+    eventEntry: _IsFading
+    autoAdd: 0
+  isMultiInstance: 0
+  defaultNamespace: FadeController
+  udonProgramAsset: {fileID: 11400000, guid: 17f1f7cd232e450458f1a455e6753df9, type: 2}
+  assetGuid: 17f1f7cd232e450458f1a455e6753df9
+  thisGuid: 70a4bf912f3a40c459a03be14efbc738

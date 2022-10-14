@@ -1,0 +1,176 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a31a3a978bd0448580d4ef9f3d6d95bf, type: 3}
+  m_Name: HealPlayer
+  m_EditorClassIdentifier: 
+  serializedUdonProgramAsset: {fileID: 11400000, guid: 3ea2e4c20c8960c4d9caaf2a73306602,
+    type: 2}
+  udonAssembly: ".data_start\r\n  .export __CyanTrigger_ProgramName_SystemString\r\n 
+    .export Damage\r\n  __CyanTrigger_ProgramName_SystemString: %SystemString, null\r\n 
+    __CyanTrigger_ProgramHash_SystemString: %SystemString, null\r\n  __0_ra_SystemUInt32:
+    %SystemUInt32, null\r\n  __1_ea_SystemUInt32: %SystemUInt32, null\r\n  _this_local_player:
+    %VRCSDKBaseVRCPlayerApi, null\r\n  Damage: %SystemSingle, null\r\n  __10_local_var_SystemSingle:
+    %SystemSingle, null\r\n  __11_lp_init_SystemBoolean_ct_intern: %SystemBoolean,
+    null\r\n  __12_const_SystemBoolean: %SystemBoolean, null\r\n.data_end\r\n\n.code_start\r\n 
+    .export _HealPlayer\r\n  _HealPlayer:\r\n    PUSH, __1_ea_SystemUInt32\r\n   
+    PUSH, __11_lp_init_SystemBoolean_ct_intern\r\n    JUMP_IF_FALSE, 0x0000003C\r\n   
+    PUSH, __12_const_SystemBoolean\r\n    PUSH, __11_lp_init_SystemBoolean_ct_intern\r\n   
+    COPY\r\n    PUSH, _this_local_player\r\n    EXTERN, \"VRCSDKBaseNetworking.__get_LocalPlayer__VRCSDKBaseVRCPlayerApi\"\r\n   
+    PUSH, _this_local_player\r\n    PUSH, __10_local_var_SystemSingle\r\n    EXTERN,
+    \"VRCSDKBaseVRCPlayerApi.__CombatGetCurrentHitpoints__SystemSingle\"\r\n    PUSH,
+    __10_local_var_SystemSingle\r\n    PUSH, Damage\r\n    PUSH, __10_local_var_SystemSingle\r\n   
+    EXTERN, \"SystemSingle.__op_Addition__SystemSingle_SystemSingle__SystemSingle\"\r\n   
+    PUSH, _this_local_player\r\n    PUSH, __10_local_var_SystemSingle\r\n    EXTERN,
+    \"VRCSDKBaseVRCPlayerApi.__CombatSetCurrentHitpoints__SystemSingle__SystemVoid\"\r\n   
+    PUSH, __0_ra_SystemUInt32\r\n    COPY\r\n    JUMP_INDIRECT, __0_ra_SystemUInt32\r\n\r\n.code_end\r\n"
+  assemblyError: 
+  triggerHash: 2E7511C0B90D0C46613CA86EE85187C8
+  shouldBeNetworked: 0
+  warningMessages: []
+  errorMessages: []
+  ctDataInstance:
+    version: 6
+    updateOrder: 0
+    autoSetSyncMode: 1
+    programSyncMode: 2
+    programName: 
+    events:
+    - name: _HealPlayer
+      eventId: cd2f9792-83e8-494e-9cb2-5309d17e56e2
+      eventInstance:
+        actionType:
+          directEvent: Event_Custom
+          guid: 
+        inputs: []
+        multiInput: []
+        expanded: 1
+        comment:
+          comment: 
+      actionInstances:
+      - actionType:
+          directEvent: VRCSDKBaseVRCPlayerApi.__CombatGetCurrentHitpoints__SystemSingle
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: Local Player
+          variableID: _this_local_player
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        - isVariable: 1
+          name: 
+          variableID: 9fec46da-cda8-442c-b812-827cb03ad18e
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBBgAAAGgAZQBhAGwAdABoAAU=
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: SystemSingle.__op_Addition__SystemSingle_SystemSingle__SystemSingle
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: health
+          variableID: 9fec46da-cda8-442c-b812-827cb03ad18e
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAaQBuAGcAbABlACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACAAAAAABQ==
+            unityObjects: []
+        - isVariable: 1
+          name: Damage
+          variableID: d8b8ac30-ce8d-46c0-ab30-e21767a41540
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAaQBuAGcAbABlACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACAAAAAABQ==
+            unityObjects: []
+        - isVariable: 1
+          name: health
+          variableID: 9fec46da-cda8-442c-b812-827cb03ad18e
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: VRCSDKBaseVRCPlayerApi.__CombatSetCurrentHitpoints__SystemSingle__SystemVoid
+          guid: 
+        inputs:
+        - isVariable: 0
+          name: 
+          variableID: 
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        - isVariable: 1
+          name: health
+          variableID: 9fec46da-cda8-442c-b812-827cb03ad18e
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAaQBuAGcAbABlACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACAAAAAABQ==
+            unityObjects: []
+        multiInput:
+        - isVariable: 1
+          name: Local Player
+          variableID: _this_local_player
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        expanded: 0
+        comment:
+          comment: 
+      eventOptions:
+        userGate: 0
+        userGateExtraData: []
+        broadcast: 0
+        delay: 0
+        replay: 0
+      expanded: 1
+    variables:
+    - isVariable: 0
+      name: Damage
+      variableID: d8b8ac30-ce8d-46c0-ab30-e21767a41540
+      data:
+        objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAaQBuAGcAbABlACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACAAAAAABQ==
+        unityObjects: []
+      type:
+        typeDef: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      sync: 0
+      showInInspector: 1
+      typeInfo: 0
+      comment:
+        comment: 
+    comment:
+      comment: 
+    expandVariables: 1
+    expandOtherSettings: 1
+    expandSyncSection: 0
+    ignoreEventWarnings: 1
+  publicVariableReferences:
+    actionDataIndices: []
+    userVariableNames:
+    - Damage
+    userVariableTypes:
+    - typeDef: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+  ignoreOdinData: 1
+  serializationDataOdin:
+    SerializedFormat: 0
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes: []
+  allowEditingInInspector: 0
+  expandInInspector: 0
+  isLocked: 1

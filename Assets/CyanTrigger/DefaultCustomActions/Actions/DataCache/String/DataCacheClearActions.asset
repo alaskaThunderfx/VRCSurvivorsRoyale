@@ -1,0 +1,203 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 61d0ad128b95568438c70898dc9e600c, type: 3}
+  m_Name: DataCacheClearActions
+  m_EditorClassIdentifier: 
+  autoAddPriority: 0
+  exposedActions:
+  - guid: bce6903b-4a4c-41b6-9219-4bf311585738
+    actionNamespace: DataCache
+    actionVariantName: Clear
+    description: Clear the value for the given key and cache type
+    variables:
+    - type:
+        typeDef: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      udonName: key
+      displayName: key
+      description: 
+      defaultValue:
+        objEncoded: 
+        unityObjects: []
+      variableType: 3
+    - type:
+        typeDef: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      udonName: cacheType
+      displayName: cacheType
+      description: 
+      defaultValue:
+        objEncoded: 
+        unityObjects: []
+      variableType: 3
+    baseEventName: Event_Custom
+    eventEntry: _Clear
+    autoAdd: 0
+  - guid: 8ed6986e-10d8-4937-b7f7-1dcd3cceda92
+    actionNamespace: DataCache
+    actionVariantName: StringClear
+    description: Clear the String value for the given key
+    variables:
+    - type:
+        typeDef: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      udonName: key
+      displayName: key
+      description: 
+      defaultValue:
+        objEncoded: 
+        unityObjects: []
+      variableType: 3
+    - type:
+        typeDef: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      udonName: cacheType
+      displayName: cacheType
+      description: 
+      defaultValue:
+        objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBBwAAAHMAdAByAGkAbgBnAC4ABQ==
+        unityObjects: []
+      variableType: 9
+    baseEventName: Event_Custom
+    eventEntry: _Clear
+    autoAdd: 0
+  - guid: 5ecc9cbb-e8c9-465a-a23c-ee1524090824
+    actionNamespace: DataCache
+    actionVariantName: BoolClear
+    description: Clear the Bool value for the given key
+    variables:
+    - type:
+        typeDef: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      udonName: key
+      displayName: key
+      description: 
+      defaultValue:
+        objEncoded: 
+        unityObjects: []
+      variableType: 3
+    - type:
+        typeDef: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      udonName: cacheType
+      displayName: cacheType
+      description: 
+      defaultValue:
+        objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBBQAAAGIAbwBvAGwALgAF
+        unityObjects: []
+      variableType: 9
+    baseEventName: Event_Custom
+    eventEntry: _Clear
+    autoAdd: 0
+  - guid: f6f2dbd1-3067-438e-8519-a913ddb1605e
+    actionNamespace: DataCache
+    actionVariantName: IntClear
+    description: Clear the Int value for the given key
+    variables:
+    - type:
+        typeDef: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      udonName: key
+      displayName: key
+      description: 
+      defaultValue:
+        objEncoded: 
+        unityObjects: []
+      variableType: 3
+    - type:
+        typeDef: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      udonName: cacheType
+      displayName: cacheType
+      description: 
+      defaultValue:
+        objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBBAAAAGkAbgB0AC4ABQ==
+        unityObjects: []
+      variableType: 9
+    baseEventName: Event_Custom
+    eventEntry: _Clear
+    autoAdd: 0
+  - guid: 619f3eca-e39b-4f69-935a-d1efc8e1b03c
+    actionNamespace: DataCache
+    actionVariantName: FloatClear
+    description: Clear the Float value for the given key
+    variables:
+    - type:
+        typeDef: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      udonName: key
+      displayName: key
+      description: 
+      defaultValue:
+        objEncoded: 
+        unityObjects: []
+      variableType: 3
+    - type:
+        typeDef: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      udonName: cacheType
+      displayName: cacheType
+      description: 
+      defaultValue:
+        objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBBgAAAGYAbABvAGEAdAAuAAU=
+        unityObjects: []
+      variableType: 9
+    baseEventName: Event_Custom
+    eventEntry: _Clear
+    autoAdd: 0
+  - guid: c307236f-8e47-470c-b1ad-12ac7b9a0f44
+    actionNamespace: DataCache
+    actionVariantName: PlayerClear
+    description: Clear the Player value for the given key
+    variables:
+    - type:
+        typeDef: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      udonName: key
+      displayName: key
+      description: 
+      defaultValue:
+        objEncoded: 
+        unityObjects: []
+      variableType: 3
+    - type:
+        typeDef: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      udonName: cacheType
+      displayName: cacheType
+      description: 
+      defaultValue:
+        objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBBwAAAHAAbABhAHkAZQByAC4ABQ==
+        unityObjects: []
+      variableType: 9
+    baseEventName: Event_Custom
+    eventEntry: _Clear
+    autoAdd: 0
+  - guid: 7caf35aa-a335-4065-97a6-735a68855d04
+    actionNamespace: DataCache
+    actionVariantName: GameObjectClear
+    description: Clear the GameObject value for the given key
+    variables:
+    - type:
+        typeDef: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      udonName: key
+      displayName: key
+      description: 
+      defaultValue:
+        objEncoded: 
+        unityObjects: []
+      variableType: 3
+    - type:
+        typeDef: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      udonName: cacheType
+      displayName: cacheType
+      description: 
+      defaultValue:
+        objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBCwAAAGcAYQBtAGUAbwBiAGoAZQBjAHQALgAF
+        unityObjects: []
+      variableType: 9
+    baseEventName: Event_Custom
+    eventEntry: _Clear
+    autoAdd: 0
+  isMultiInstance: 0
+  defaultNamespace: DataCache
+  udonProgramAsset: {fileID: 11400000, guid: 4bd5f30052df54c4484180824cbb0537, type: 2}
+  assetGuid: 4bd5f30052df54c4484180824cbb0537
+  thisGuid: b5ed7b94c79b3f64c8bd3acc48930725

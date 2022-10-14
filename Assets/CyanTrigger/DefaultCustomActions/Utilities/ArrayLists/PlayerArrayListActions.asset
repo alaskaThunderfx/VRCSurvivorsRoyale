@@ -1,0 +1,285 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 61d0ad128b95568438c70898dc9e600c, type: 3}
+  m_Name: PlayerArrayListActions
+  m_EditorClassIdentifier: 
+  autoAddPriority: 0
+  exposedActions:
+  - guid: e9b3c7b3-2c39-4768-af44-00ee8f6219b9
+    actionNamespace: PlayerArrayList
+    actionVariantName: SetIndex
+    description: 
+    variables:
+    - type:
+        typeDef: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      udonName: _arg_index__SetIndex
+      displayName: index
+      description: 
+      defaultValue:
+        objEncoded: Ai8AAAAAARYAAABTAHkAcwB0AGUAbQAuAEkAbgB0ADMAMgAsACAAbQBzAGMAbwByAGwAaQBiAAAAAAAYAAAAAAU=
+        unityObjects: []
+      variableType: 3
+    - type:
+        typeDef: VRC.SDKBase.VRCPlayerApi, VRCSDKBase, Version=0.0.0.0, Culture=neutral,
+          PublicKeyToken=null
+      udonName: _arg_item__SetIndex
+      displayName: item
+      description: 
+      defaultValue:
+        objEncoded: Lg==
+        unityObjects: []
+      variableType: 3
+    baseEventName: Event_Custom
+    eventEntry: _SetIndex
+    autoAdd: 0
+  - guid: 0cd0c3c8-8d61-47c4-a94d-c35620aa5966
+    actionNamespace: PlayerArrayList
+    actionVariantName: GetIndex
+    description: 
+    variables:
+    - type:
+        typeDef: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      udonName: _arg_index__GetIndex
+      displayName: index
+      description: 
+      defaultValue:
+        objEncoded: Lg==
+        unityObjects: []
+      variableType: 3
+    - type:
+        typeDef: VRC.SDKBase.VRCPlayerApi, VRCSDKBase, Version=0.0.0.0, Culture=neutral,
+          PublicKeyToken=null
+      udonName: _arg_item__GetIndex
+      displayName: item
+      description: 
+      defaultValue:
+        objEncoded: Lg==
+        unityObjects: []
+      variableType: 6
+    baseEventName: Event_Custom
+    eventEntry: _GetIndex
+    autoAdd: 0
+  - guid: a8d4fd00-8122-48cf-bb54-70dec889e6c0
+    actionNamespace: PlayerArrayList
+    actionVariantName: Clear
+    description: 
+    variables: []
+    baseEventName: Event_Custom
+    eventEntry: _Clear
+    autoAdd: 0
+  - guid: a2192671-942b-44e3-9e59-679c1b4a5a62
+    actionNamespace: PlayerArrayList
+    actionVariantName: AddLast
+    description: 
+    variables:
+    - type:
+        typeDef: VRC.SDKBase.VRCPlayerApi, VRCSDKBase, Version=0.0.0.0, Culture=neutral,
+          PublicKeyToken=null
+      udonName: _arg_item__Add
+      displayName: item
+      description: 
+      defaultValue:
+        objEncoded: Lg==
+        unityObjects: []
+      variableType: 3
+    baseEventName: Event_Custom
+    eventEntry: _Add
+    autoAdd: 0
+  - guid: 139b57c3-cbac-49db-93e8-04c098cda1ad
+    actionNamespace: PlayerArrayList
+    actionVariantName: Insert
+    description: 
+    variables:
+    - type:
+        typeDef: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      udonName: _arg_index__Insert
+      displayName: index
+      description: 
+      defaultValue:
+        objEncoded: Ai8AAAAAARYAAABTAHkAcwB0AGUAbQAuAEkAbgB0ADMAMgAsACAAbQBzAGMAbwByAGwAaQBiAAAAAAAYAAAAAAU=
+        unityObjects: []
+      variableType: 3
+    - type:
+        typeDef: VRC.SDKBase.VRCPlayerApi, VRCSDKBase, Version=0.0.0.0, Culture=neutral,
+          PublicKeyToken=null
+      udonName: _arg_item__Insert
+      displayName: item
+      description: 
+      defaultValue:
+        objEncoded: Lg==
+        unityObjects: []
+      variableType: 3
+    baseEventName: Event_Custom
+    eventEntry: _Insert
+    autoAdd: 0
+  - guid: edfc5189-4e36-4d23-8ece-5323008a57be
+    actionNamespace: PlayerArrayList
+    actionVariantName: RemoveAt
+    description: 
+    variables:
+    - type:
+        typeDef: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      udonName: _arg_index__RemoveAt
+      displayName: index
+      description: 
+      defaultValue:
+        objEncoded: Lg==
+        unityObjects: []
+      variableType: 3
+    baseEventName: Event_Custom
+    eventEntry: _RemoveAt
+    autoAdd: 0
+  - guid: 196168a1-beb5-4cc1-a55c-a0911fe70264
+    actionNamespace: PlayerArrayList
+    actionVariantName: RemoveLast
+    description: 
+    variables: []
+    baseEventName: Event_Custom
+    eventEntry: _RemoveLast
+    autoAdd: 0
+  - guid: 4bb4e44b-51a4-4321-a892-5434b894f2a0
+    actionNamespace: PlayerArrayList
+    actionVariantName: RemoveAtUnordered
+    description: 
+    variables:
+    - type:
+        typeDef: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      udonName: _arg_index__RemoveAtUnordered
+      displayName: index
+      description: 
+      defaultValue:
+        objEncoded: Ai8AAAAAARYAAABTAHkAcwB0AGUAbQAuAEkAbgB0ADMAMgAsACAAbQBzAGMAbwByAGwAaQBiAAAAAAAYAAAAAAU=
+        unityObjects: []
+      variableType: 3
+    baseEventName: Event_Custom
+    eventEntry: _RemoveAtUnordered
+    autoAdd: 0
+  - guid: a389748f-fabc-44a5-8109-d36846821340
+    actionNamespace: PlayerArrayList
+    actionVariantName: Swap
+    description: 
+    variables:
+    - type:
+        typeDef: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      udonName: _arg_index1__Swap
+      displayName: index1
+      description: 
+      defaultValue:
+        objEncoded: Ai8AAAAAARYAAABTAHkAcwB0AGUAbQAuAEkAbgB0ADMAMgAsACAAbQBzAGMAbwByAGwAaQBiAAAAAAAYAAAAAAU=
+        unityObjects: []
+      variableType: 3
+    - type:
+        typeDef: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      udonName: _arg_index2__Swap
+      displayName: index2
+      description: 
+      defaultValue:
+        objEncoded: Ai8AAAAAARYAAABTAHkAcwB0AGUAbQAuAEkAbgB0ADMAMgAsACAAbQBzAGMAbwByAGwAaQBiAAAAAAAYAAAAAAU=
+        unityObjects: []
+      variableType: 3
+    baseEventName: Event_Custom
+    eventEntry: _Swap
+    autoAdd: 0
+  - guid: 6010833a-7173-41d1-8249-d7e52c850ae2
+    actionNamespace: PlayerArrayList
+    actionVariantName: Get Length
+    description: 
+    variables:
+    - type:
+        typeDef: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      udonName: length
+      displayName: length
+      description: 
+      defaultValue:
+        objEncoded: Ai8AAAAAARYAAABTAHkAcwB0AGUAbQAuAEkAbgB0ADMAMgAsACAAbQBzAGMAbwByAGwAaQBiAAAAAAAYAAAAAAU=
+        unityObjects: []
+      variableType: 6
+    baseEventName: Event_Custom
+    eventEntry: __EmptyEntryEvent
+    autoAdd: 0
+  - guid: b15d6a4c-a39d-479f-bb83-1779bc31f151
+    actionNamespace: PlayerArrayList
+    actionVariantName: GetBackingArray
+    description: 
+    variables:
+    - type:
+        typeDef: VRC.SDKBase.VRCPlayerApi[], VRCSDKBase, Version=0.0.0.0, Culture=neutral,
+          PublicKeyToken=null
+      udonName: itemArray
+      displayName: itemArray
+      description: 
+      defaultValue:
+        objEncoded: Ai8AAAAAASYAAABWAFIAQwAuAFMARABLAEIAYQBzAGUALgBWAFIAQwBQAGwAYQB5AGUAcgBBAHAAaQBbAF0ALAAgAFYAUgBDAFMARABLAEIAYQBzAGUAAAAAAAYAAAAAAAAAAAcF
+        unityObjects: []
+      variableType: 6
+    baseEventName: Event_Custom
+    eventEntry: __EmptyEntryEvent
+    autoAdd: 0
+  - guid: 678d80c5-af82-4683-b541-969cff25b02f
+    actionNamespace: PlayerArrayList
+    actionVariantName: Remove
+    description: 
+    variables:
+    - type:
+        typeDef: VRC.SDKBase.VRCPlayerApi, VRCSDKBase, Version=0.0.0.0, Culture=neutral,
+          PublicKeyToken=null
+      udonName: _arg_item__RemoveValue
+      displayName: item
+      description: 
+      defaultValue:
+        objEncoded: 
+        unityObjects: []
+      variableType: 3
+    - type:
+        typeDef: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      udonName: _arg_removeAll__RemoveValue
+      displayName: removeAll
+      description: 
+      defaultValue:
+        objEncoded: Ai8AAAAAARgAAABTAHkAcwB0AGUAbQAuAEIAbwBvAGwAZQBhAG4ALAAgAG0AcwBjAG8AcgBsAGkAYgAAAAAALAAF
+        unityObjects: []
+      variableType: 9
+    baseEventName: Event_Custom
+    eventEntry: _RemoveValue
+    autoAdd: 0
+  - guid: 29aaa2f3-b846-4b07-8558-d4c7242cae78
+    actionNamespace: PlayerArrayList
+    actionVariantName: RemoveAll
+    description: 
+    variables:
+    - type:
+        typeDef: VRC.SDKBase.VRCPlayerApi, VRCSDKBase, Version=0.0.0.0, Culture=neutral,
+          PublicKeyToken=null
+      udonName: _arg_item__RemoveValue
+      displayName: item
+      description: 
+      defaultValue:
+        objEncoded: 
+        unityObjects: []
+      variableType: 3
+    - type:
+        typeDef: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      udonName: _arg_removeAll__RemoveValue
+      displayName: removeAll
+      description: 
+      defaultValue:
+        objEncoded: Ai8AAAAAARgAAABTAHkAcwB0AGUAbQAuAEIAbwBvAGwAZQBhAG4ALAAgAG0AcwBjAG8AcgBsAGkAYgAAAAAALAEF
+        unityObjects: []
+      variableType: 9
+    baseEventName: Event_Custom
+    eventEntry: _RemoveValue
+    autoAdd: 0
+  isMultiInstance: 1
+  defaultNamespace: PlayerArrayList
+  udonProgramAsset: {fileID: 11400000, guid: f85657939b2bd93499ea0b15e705535a, type: 2}
+  assetGuid: f85657939b2bd93499ea0b15e705535a
+  thisGuid: 2ed710dfc208fb740a0003b67ff4aa47

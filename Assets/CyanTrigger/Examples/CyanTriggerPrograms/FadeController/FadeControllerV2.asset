@@ -1,0 +1,4242 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a31a3a978bd0448580d4ef9f3d6d95bf, type: 3}
+  m_Name: FadeControllerV2
+  m_EditorClassIdentifier: 
+  serializedUdonProgramAsset: {fileID: 11400000, guid: dd57aadf139a3494096aa2fd9f85a083,
+    type: 2}
+  udonAssembly: ".data_start\r\n  .export __CyanTrigger_ProgramName_SystemString\r\n 
+    .export fadeInTime\r\n  .export fadeOutTime\r\n  .export fadeColor\r\n  .export
+    immobilizePlayer\r\n  __CyanTrigger_ProgramName_SystemString: %SystemString,
+    null\r\n  __CyanTrigger_ProgramHash_SystemString: %SystemString, null\r\n  __0_ra_SystemUInt32:
+    %SystemUInt32, null\r\n  __1_ea_SystemUInt32: %SystemUInt32, null\r\n  __null:
+    %SystemObject, null\r\n  _this_gameobject: %UnityEngineGameObject, this\r\n 
+    _this_transform: %UnityEngineTransform, this\r\n  _this_udonbehaviour: %VRCUdonUdonBehaviour,
+    this\r\n  _this_local_player: %VRCSDKBaseVRCPlayerApi, null\r\n  fadeInTime:
+    %SystemSingle, null\r\n  fadeOutTime: %SystemSingle, null\r\n  fadeColor: %UnityEngineColor,
+    null\r\n  immobilizePlayer: %SystemBoolean, null\r\n  _callerUdon: %VRCUdonUdonBehaviour,
+    null\r\n  _fadeStartTime: %SystemSingle, null\r\n  _fadeCubeTransform: %UnityEngineTransform,
+    null\r\n  _fadeCube: %UnityEngineGameObject, null\r\n  _fadeRenderer: %UnityEngineRenderer,
+    null\r\n  _fadeState: %SystemInt32, null\r\n  _fadePropertyBlock: %UnityEngineMaterialPropertyBlock,
+    null\r\n  _onFadeInFinishedEvent: %SystemString, null\r\n  _onFadeHoldFinishedEvent:
+    %SystemString, null\r\n  _onFadeOutFinishedEvent: %SystemString, null\r\n  _fadeInDuration:
+    %SystemSingle, null\r\n  _fadeHoldDuration: %SystemSingle, null\r\n  _fadeOutDuration:
+    %SystemSingle, null\r\n  _arg_eventName__CallEvent: %SystemString, null\r\n 
+    _arg_onFadeInEvent__StartFadeWithEvent: %SystemString, null\r\n  _arg_udon__StartFadeWithEvent:
+    %VRCUdonUdonBehaviour, null\r\n  _arg_onFadeInEvent__StartFadeWithEventAndDuration:
+    %SystemString, null\r\n  _arg_fadeInDuration__StartFadeWithEventAndDuration:
+    %SystemSingle, null\r\n  _arg_udon__StartFadeWithEventAndDuration: %VRCUdonUdonBehaviour,
+    null\r\n  _arg_onFadeEndEvent__EndFadeWithEvent: %SystemString, null\r\n  _arg_udon__EndFadeWithEvent:
+    %VRCUdonUdonBehaviour, null\r\n  _arg_onFadeEndEvent__EndFadeWithEventAndDuration:
+    %SystemString, null\r\n  _arg_fadeEndDuration__EndFadeWithEventAndDuration: %SystemSingle,
+    null\r\n  _arg_udon__EndFadeWithEventAndDuration: %VRCUdonUdonBehaviour, null\r\n 
+    _arg_onFadeInEvent__FadeInAndOutWithEventsDurationsAndHold: %SystemString, null\r\n 
+    _arg_fadeInDuration__FadeInAndOutWithEventsDurationsAndHold: %SystemSingle, null\r\n 
+    _arg_onFadeHoldEvent__FadeInAndOutWithEventsDurationsAndHold: %SystemString,
+    null\r\n  _arg_fadeHoldDuration__FadeInAndOutWithEventsDurationsAndHold: %SystemSingle,
+    null\r\n  _arg_onFadeEndEvent__FadeInAndOutWithEventsDurationsAndHold: %SystemString,
+    null\r\n  _arg_fadeEndDuration__FadeInAndOutWithEventsDurationsAndHold: %SystemSingle,
+    null\r\n  _arg_udon__FadeInAndOutWithEventsDurationsAndHold: %VRCUdonUdonBehaviour,
+    null\r\n  _arg_onFadeInEvent__FadeInAndOutWithEventsAndDurations: %SystemString,
+    null\r\n  _arg_fadeInDuration__FadeInAndOutWithEventsAndDurations: %SystemSingle,
+    null\r\n  _arg_onFadeOutEvent__FadeInAndOutWithEventsAndDurations: %SystemString,
+    null\r\n  _arg_fadeEndDuration__FadeInAndOutWithEventsAndDurations: %SystemSingle,
+    null\r\n  _arg_udon__FadeInAndOutWithEventsAndDurations: %VRCUdonUdonBehaviour,
+    null\r\n  _arg_onFadeInEvent__FadeInAndOutWithEvents: %SystemString, null\r\n 
+    _arg_onFadeOutEvent__FadeInAndOutWithEvents: %SystemString, null\r\n  _arg_udon__FadeInAndOutWithEvents:
+    %VRCUdonUdonBehaviour, null\r\n  _arg_isFading__IsFading: %SystemBoolean, null\r\n 
+    __ag_0_0_UnityEngineTransform: %UnityEngineTransform, null\r\n  __ag_0_1_SystemString:
+    %SystemString, null\r\n  __ag_0_2_SystemBoolean: %SystemBoolean, null\r\n  __ag_0_3___jump_return_SystemUInt32:
+    %SystemUInt32, null\r\n  __ag_0_4_SystemString: %SystemString, null\r\n  __ag_0_5_SystemBoolean:
+    %SystemBoolean, null\r\n  __ag_0_6_SystemString: %SystemString, null\r\n  __ag_0_7_SystemBoolean:
+    %SystemBoolean, null\r\n  __ag_0_8_SystemString: %SystemString, null\r\n  __ag_0_9_SystemBoolean:
+    %SystemBoolean, null\r\n  __ag_0_10_SystemBoolean: %SystemBoolean, null\r\n 
+    __ag_0_11_SystemString: %SystemString, null\r\n  __ag_0_12_SystemBoolean: %SystemBoolean,
+    null\r\n  __ag_0_13_SystemString: %SystemString, null\r\n  __ag_0_14_SystemBoolean:
+    %SystemBoolean, null\r\n  __ag_0_15_SystemBoolean: %SystemBoolean, null\r\n 
+    __ag_0_16_SystemBoolean: %SystemBoolean, null\r\n  __ag_0_17_SystemString: %SystemString,
+    null\r\n  __ag_0_18_SystemString: %SystemString, null\r\n  __ag_0_19_SystemString:
+    %SystemString, null\r\n  __ag_0_20_SystemType: %SystemType, null\r\n  __ag_0_21_SystemString:
+    %SystemString, null\r\n  __ag_0_22_SystemBoolean: %SystemBoolean, null\r\n  __ag_0_23_SystemString:
+    %SystemString, null\r\n  __ag_0_24_SystemString: %SystemString, null\r\n  __ag_0_25_SystemString:
+    %SystemString, null\r\n  __ag_0_26_SystemBoolean: %SystemBoolean, null\r\n  __ag_0_27_SystemString:
+    %SystemString, null\r\n  __ag_0_28_UnityEngineGameObject: %UnityEngineGameObject,
+    null\r\n  __ag_0_29_SystemString: %SystemString, null\r\n  __ag_0_30_SystemBoolean:
+    %SystemBoolean, null\r\n  __ag_0_31_UnityEngineGameObject: %UnityEngineGameObject,
+    null\r\n  __ag_0_32_SystemString: %SystemString, null\r\n  __ag_0_33_SystemInt32:
+    %SystemInt32, null\r\n  __ag_0_34_SystemString: %SystemString, null\r\n  __ag_0_35_SystemString:
+    %SystemString, null\r\n  __ag_0_36___jump_return_SystemUInt32: %SystemUInt32,
+    null\r\n  __ag_0_37_SystemInt32: %SystemInt32, null\r\n  __ag_0_38___jump_return_SystemUInt32:
+    %SystemUInt32, null\r\n  __ag_0_39_SystemString: %SystemString, null\r\n  __ag_0_40_SystemBoolean:
+    %SystemBoolean, null\r\n  __ag_0_41_SystemString: %SystemString, null\r\n  __ag_0_42_SystemString:
+    %SystemString, null\r\n  __ag_0_43_SystemString: %SystemString, null\r\n  __ag_0_44_SystemString:
+    %SystemString, null\r\n  __ag_0_45_SystemString: %SystemString, null\r\n  __ag_0_46_SystemObject:
+    %SystemObject, null\r\n  __ag_0_47_SystemBoolean: %SystemBoolean, null\r\n  __ag_0_48_SystemBoolean:
+    %SystemBoolean, null\r\n  __ag_0_49_SystemBoolean: %SystemBoolean, null\r\n 
+    __ag_0_50_SystemString: %SystemString, null\r\n  __ag_0_51_UnityEngineComponent:
+    %UnityEngineComponent, null\r\n  __ag_0_52_SystemString: %SystemString, null\r\n 
+    __ag_0_53_SystemString: %SystemString, null\r\n  __ag_0_54_UnityEngineComponent[]:
+    %UnityEngineComponentArray, null\r\n  __ag_0_55_SystemString: %SystemString,
+    null\r\n  __ag_0_56_SystemString: %SystemString, null\r\n  __ag_0_57_SystemString:
+    %SystemString, null\r\n  __ag_0_58_SystemType: %SystemType, null\r\n  __ag_0_59___jump_return_SystemUInt32:
+    %SystemUInt32, null\r\n  __ag_0_60_SystemString: %SystemString, null\r\n  __ag_0_61___jump_return_SystemUInt32:
+    %SystemUInt32, null\r\n  __ag_0_62_SystemString: %SystemString, null\r\n  __ag_0_63_SystemBoolean:
+    %SystemBoolean, null\r\n  __ag_0_64_SystemInt32: %SystemInt32, null\r\n  __ag_0_65_SystemString:
+    %SystemString, null\r\n  __ag_0_66_SystemType: %SystemType, null\r\n  __ag_0_67_SystemInt32:
+    %SystemInt32, null\r\n  __ag_0_68_SystemString: %SystemString, null\r\n  __ag_0_69_SystemString:
+    %SystemString, null\r\n  __ag_0_70_SystemString: %SystemString, null\r\n  __ag_0_71_SystemString:
+    %SystemString, null\r\n  __ag_0_72_VRCUdonUdonBehaviour: %VRCUdonUdonBehaviour,
+    null\r\n  __ag_0_73_SystemString: %SystemString, null\r\n  __ag_0_74_SystemType:
+    %SystemType, null\r\n  __ag_0_75_SystemString: %SystemString, null\r\n  __ag_0_76_SystemType:
+    %SystemType, null\r\n  __ag_0_77_SystemString: %SystemString, null\r\n  __ag_0_78_SystemString:
+    %SystemString, null\r\n  __ag_0_79___jump_return_SystemUInt32: %SystemUInt32,
+    null\r\n  __ag_0_80_SystemType: %SystemType, null\r\n  __ag_0_81_SystemString:
+    %SystemString, null\r\n  __ag_0_82_SystemString: %SystemString, null\r\n  __136_lp_init_SystemBoolean_ct_intern:
+    %SystemBoolean, null\r\n  __ag_0_83_SystemInt32: %SystemInt32, null\r\n  __ag_0_84_SystemBoolean:
+    %SystemBoolean, null\r\n  __ag_0_85_SystemString: %SystemString, null\r\n  __ag_0_86___jump_return_SystemUInt32:
+    %SystemUInt32, null\r\n  __ag_0_87_SystemInt32: %SystemInt32, null\r\n  __ag_0_88_SystemBoolean:
+    %SystemBoolean, null\r\n  __ag_0_89_SystemString: %SystemString, null\r\n  __ag_0_90_SystemString:
+    %SystemString, null\r\n  __ag_0_91_SystemBoolean: %SystemBoolean, null\r\n  __ag_1_0_SystemString:
+    %SystemString, null\r\n  __ag_2_0_UnityEngineQuaternion: %UnityEngineQuaternion,
+    null\r\n  __ag_2_1_UnityEngineVector3: %UnityEngineVector3, null\r\n  __ag_2_2_VRCSDKBaseVRCPlayerApi_TrackingData:
+    %VRCSDKBaseVRCPlayerApiTrackingData, null\r\n  __ag_2_3_VRCSDKBaseVRCPlayerApi_TrackingDataType:
+    %VRCSDKBaseVRCPlayerApiTrackingDataType, null\r\n  __ag_2_4_VRCSDKBaseVRCPlayerApi:
+    %VRCSDKBaseVRCPlayerApi, null\r\n  __152_ref_SystemString: %SystemString, null\r\n 
+    __153___jump_return_7_SystemUInt32: %SystemUInt32, null\r\n  __154_ref_SystemBoolean:
+    %SystemBoolean, null\r\n  __155_ref_SystemInt32: %SystemInt32, null\r\n  __156_local_var_SystemType:
+    %SystemType, null\r\n  __157_const_SystemType: %SystemType, null\r\n  __158_ref_SystemString:
+    %SystemString, null\r\n  __159___jump_return_8_SystemUInt32: %SystemUInt32, null\r\n 
+    __160_local_var_SystemBoolean: %SystemBoolean, null\r\n  __161_const_SystemBoolean:
+    %SystemBoolean, null\r\n  __162_ref_SystemInt32: %SystemInt32, null\r\n  __163_ref_SystemInt32:
+    %SystemInt32, null\r\n  __164_ref_SystemBoolean: %SystemBoolean, null\r\n  __165_ref_SystemString:
+    %SystemString, null\r\n  __166_ref_SystemSingle: %SystemSingle, null\r\n  __167_ref_SystemString:
+    %SystemString, null\r\n  __168_ref_SystemBoolean: %SystemBoolean, null\r\n  __169_local_var_SystemBoolean:
+    %SystemBoolean, null\r\n  __170_ref_SystemBoolean: %SystemBoolean, null\r\n 
+    __171_ref_SystemSingle: %SystemSingle, null\r\n  __172_local_var_SystemBoolean:
+    %SystemBoolean, null\r\n  __173_ref_SystemInt32: %SystemInt32, null\r\n  __174_ref_SystemInt32:
+    %SystemInt32, null\r\n  __175_temp_SystemBoolean: %SystemBoolean, null\r\n  __176_local_var_SystemBoolean:
+    %SystemBoolean, null\r\n  __177_ref_SystemInt32: %SystemInt32, null\r\n  __178_local_var_SystemSingle:
+    %SystemSingle, null\r\n  __179_local_var_SystemSingle: %SystemSingle, null\r\n 
+    __180_local_var_SystemSingle: %SystemSingle, null\r\n  __181_ref_SystemSingle:
+    %SystemSingle, null\r\n  __182_local_var_SystemBoolean: %SystemBoolean, null\r\n 
+    __183_ref_SystemInt32: %SystemInt32, null\r\n  __184_local_var_SystemBoolean:
+    %SystemBoolean, null\r\n  __185_ref_SystemSingle: %SystemSingle, null\r\n  __186_ref_SystemString:
+    %SystemString, null\r\n  __187___jump_return_9_SystemUInt32: %SystemUInt32, null\r\n 
+    __188_local_var_SystemBoolean: %SystemBoolean, null\r\n  __189_ref_SystemInt32:
+    %SystemInt32, null\r\n  __190_ref_SystemSingle: %SystemSingle, null\r\n  __191_ref_SystemSingle:
+    %SystemSingle, null\r\n  __192_local_var_SystemBoolean: %SystemBoolean, null\r\n 
+    __193_ref_SystemSingle: %SystemSingle, null\r\n  __194_ref_SystemString: %SystemString,
+    null\r\n  __195___jump_return_10_SystemUInt32: %SystemUInt32, null\r\n  __196_ref_SystemString:
+    %SystemString, null\r\n  __197_ref_SystemString: %SystemString, null\r\n  __198_local_var_UnityEngineVector3:
+    %UnityEngineVector3, null\r\n  __199_local_var_UnityEngineQuaternion: %UnityEngineQuaternion,
+    null\r\n  __200_ref_VRCSDKBaseVRCPlayerApi_TrackingDataType: %VRCSDKBaseVRCPlayerApiTrackingDataType,
+    null\r\n  __201___jump_return_11_SystemUInt32: %SystemUInt32, null\r\n  __202_ref_SystemInt32:
+    %SystemInt32, null\r\n  __203_ref_SystemString: %SystemString, null\r\n  __204___jump_return_12_SystemUInt32:
+    %SystemUInt32, null\r\n  __205_local_var_SystemBoolean: %SystemBoolean, null\r\n 
+    __206_ref_SystemSingle: %SystemSingle, null\r\n  __207_ref_SystemString: %SystemString,
+    null\r\n  __208_ref_VRCUdonCommonEnumsEventTiming: %VRCUdonCommonEnumsEventTiming,
+    null\r\n  __209_ref_SystemInt32: %SystemInt32, null\r\n  __210_ref_SystemString:
+    %SystemString, null\r\n  __211___jump_return_13_SystemUInt32: %SystemUInt32,
+    null\r\n  __212_ref_SystemInt32: %SystemInt32, null\r\n  __213_ref_SystemBoolean:
+    %SystemBoolean, null\r\n  __214_ref_SystemBoolean: %SystemBoolean, null\r\n 
+    __215_local_var_SystemBoolean: %SystemBoolean, null\r\n  __216_ref_SystemBoolean:
+    %SystemBoolean, null\r\n  __217_ref_SystemString: %SystemString, null\r\n  __218___jump_return_14_SystemUInt32:
+    %SystemUInt32, null\r\n  __219_local_var_SystemBoolean: %SystemBoolean, null\r\n 
+    __220_local_var_SystemBoolean: %SystemBoolean, null\r\n  __221_ref_SystemString:
+    %SystemString, null\r\n  __222___jump_return_15_SystemUInt32: %SystemUInt32,
+    null\r\n  __223_ref_SystemString: %SystemString, null\r\n  __224___jump_return_16_SystemUInt32:
+    %SystemUInt32, null\r\n  __225_ref_SystemSingle: %SystemSingle, null\r\n  __226_ref_SystemString:
+    %SystemString, null\r\n  __227___jump_return_17_SystemUInt32: %SystemUInt32,
+    null\r\n  __228_ref_SystemString: %SystemString, null\r\n  __229___jump_return_18_SystemUInt32:
+    %SystemUInt32, null\r\n  __230_ref_SystemString: %SystemString, null\r\n  __231___jump_return_19_SystemUInt32:
+    %SystemUInt32, null\r\n  __232_ref_SystemString: %SystemString, null\r\n  __233_ref_SystemString:
+    %SystemString, null\r\n  __234_ref_SystemSingle: %SystemSingle, null\r\n  __235___jump_return_20_SystemUInt32:
+    %SystemUInt32, null\r\n  __236_ref_SystemString: %SystemString, null\r\n  __237_ref_SystemString:
+    %SystemString, null\r\n  __238_ref_SystemSingle: %SystemSingle, null\r\n  __239___jump_return_21_SystemUInt32:
+    %SystemUInt32, null\r\n  __240_ref_SystemInt32: %SystemInt32, null\r\n.data_end\r\n\n.code_start\r\n 
+    .export __ag_0_0\r\n  __ag_0_0:\r\n    PUSH, __1_ea_SystemUInt32\r\n    PUSH,
+    __136_lp_init_SystemBoolean_ct_intern\r\n    JUMP_IF_FALSE, 0x0000003C\r\n   
+    PUSH, __ag_0_63_SystemBoolean\r\n    PUSH, __136_lp_init_SystemBoolean_ct_intern\r\n   
+    COPY\r\n    PUSH, _this_local_player\r\n    EXTERN, \"VRCSDKBaseNetworking.__get_LocalPlayer__VRCSDKBaseVRCPlayerApi\"\r\n   
+    PUSH, __ag_0_68_SystemString\r\n    PUSH, __ag_0_50_SystemString\r\n    PUSH,
+    __ag_0_13_SystemString\r\n    PUSH, __ag_0_82_SystemString\r\n    EXTERN, \"SystemString.__Concat__SystemString_SystemString_SystemString__SystemString\"\r\n   
+    PUSH, _this_local_player\r\n    PUSH, __ag_0_82_SystemString\r\n    PUSH, __ag_0_77_SystemString\r\n   
+    EXTERN, \"VRCSDKBaseVRCPlayerApi.__GetPlayerTag__SystemString__SystemString\"\r\n   
+    PUSH, __ag_0_77_SystemString\r\n    PUSH, __ag_0_14_SystemBoolean\r\n    EXTERN,
+    \"SystemString.__IsNullOrEmpty__SystemString__SystemBoolean\"\r\n    PUSH, __ag_0_14_SystemBoolean\r\n   
+    PUSH, __ag_0_14_SystemBoolean\r\n    EXTERN, \"SystemBoolean.__op_UnaryNegation__SystemBoolean__SystemBoolean\"\r\n   
+    PUSH, __0_ra_SystemUInt32\r\n    COPY\r\n    JUMP_INDIRECT, __0_ra_SystemUInt32\r\n\r\n 
+    .export __ag_0_1\r\n  __ag_0_1:\r\n    PUSH, __1_ea_SystemUInt32\r\n    PUSH,
+    __136_lp_init_SystemBoolean_ct_intern\r\n    JUMP_IF_FALSE, 0x00000104\r\n   
+    PUSH, __ag_0_49_SystemBoolean\r\n    PUSH, __136_lp_init_SystemBoolean_ct_intern\r\n   
+    COPY\r\n    PUSH, _this_local_player\r\n    EXTERN, \"VRCSDKBaseNetworking.__get_LocalPlayer__VRCSDKBaseVRCPlayerApi\"\r\n   
+    PUSH, __ag_0_73_SystemString\r\n    PUSH, __ag_0_29_SystemString\r\n    PUSH,
+    __ag_0_69_SystemString\r\n    PUSH, __ag_0_71_SystemString\r\n    EXTERN, \"SystemString.__Concat__SystemString_SystemString_SystemString__SystemString\"\r\n   
+    PUSH, _this_local_player\r\n    PUSH, __ag_0_71_SystemString\r\n    PUSH, __ag_0_44_SystemString\r\n   
+    EXTERN, \"VRCSDKBaseVRCPlayerApi.__SetPlayerTag__SystemString_SystemString__SystemVoid\"\r\n   
+    PUSH, __0_ra_SystemUInt32\r\n    COPY\r\n    JUMP_INDIRECT, __0_ra_SystemUInt32\r\n\r\n 
+    .export __ag_0_2\r\n  __ag_0_2:\r\n    PUSH, __1_ea_SystemUInt32\r\n    PUSH,
+    __ag_0_48_SystemBoolean\r\n    PUSH, __ag_0_22_SystemBoolean\r\n    COPY\r\n   
+    PUSH, __ag_0_74_SystemType\r\n    PUSH, __ag_0_91_SystemBoolean\r\n    EXTERN,
+    \"VRCSDKBaseUtilities.__IsValid__SystemObject__SystemBoolean\"\r\n    PUSH, __ag_0_91_SystemBoolean\r\n   
+    PUSH, __ag_0_22_SystemBoolean\r\n    EXTERN, \"SystemBoolean.__op_UnaryNegation__SystemBoolean__SystemBoolean\"\r\n   
+    PUSH, __ag_0_22_SystemBoolean\r\n    JUMP_IF_FALSE, 0x000001D0\r\n    PUSH, __ag_0_76_SystemType\r\n   
+    PUSH, __ag_0_74_SystemType\r\n    COPY\r\n    PUSH, __ag_0_74_SystemType\r\n   
+    PUSH, __ag_0_75_SystemString\r\n    EXTERN, \"SystemType.__get_Name__SystemString\"\r\n   
+    PUSH, __ag_0_57_SystemString\r\n    PUSH, __ag_0_69_SystemString\r\n    COPY\r\n   
+    PUSH, __ag_0_75_SystemString\r\n    PUSH, __ag_0_29_SystemString\r\n    COPY\r\n   
+    PUSH, __ag_0_36___jump_return_SystemUInt32\r\n    JUMP, 0x000000D0\r\n    PUSH,
+    __ag_0_75_SystemString\r\n    PUSH, __ag_0_60_SystemString\r\n    PUSH, __ag_0_85_SystemString\r\n   
+    EXTERN, \"SystemString.__Concat__SystemString_SystemString__SystemString\"\r\n   
+    PUSH, __ag_0_57_SystemString\r\n    PUSH, __ag_0_69_SystemString\r\n    COPY\r\n   
+    PUSH, __ag_0_85_SystemString\r\n    PUSH, __ag_0_29_SystemString\r\n    COPY\r\n   
+    PUSH, __ag_0_61___jump_return_SystemUInt32\r\n    JUMP, 0x000000D0\r\n    PUSH,
+    __0_ra_SystemUInt32\r\n    COPY\r\n    JUMP_INDIRECT, __0_ra_SystemUInt32\r\n\r\n 
+    .export __ag_0_3\r\n  __ag_0_3:\r\n    PUSH, __1_ea_SystemUInt32\r\n    PUSH,
+    __136_lp_init_SystemBoolean_ct_intern\r\n    JUMP_IF_FALSE, 0x000002C8\r\n   
+    PUSH, __ag_0_12_SystemBoolean\r\n    PUSH, __136_lp_init_SystemBoolean_ct_intern\r\n   
+    COPY\r\n    PUSH, _this_local_player\r\n    EXTERN, \"VRCSDKBaseNetworking.__get_LocalPlayer__VRCSDKBaseVRCPlayerApi\"\r\n   
+    PUSH, __ag_0_55_SystemString\r\n    PUSH, __ag_0_39_SystemString\r\n    PUSH,
+    __ag_0_8_SystemString\r\n    PUSH, __ag_0_4_SystemString\r\n    EXTERN, \"SystemString.__Concat__SystemString_SystemString_SystemString__SystemString\"\r\n   
+    PUSH, _this_local_player\r\n    PUSH, __ag_0_4_SystemString\r\n    PUSH, __ag_0_27_SystemString\r\n   
+    EXTERN, \"VRCSDKBaseVRCPlayerApi.__GetPlayerTag__SystemString__SystemString\"\r\n   
+    PUSH, __ag_0_12_SystemBoolean\r\n    PUSH, __ag_0_30_SystemBoolean\r\n    COPY\r\n   
+    PUSH, __ag_0_27_SystemString\r\n    PUSH, __ag_0_88_SystemBoolean\r\n    EXTERN,
+    \"SystemString.__IsNullOrEmpty__SystemString__SystemBoolean\"\r\n    PUSH, __ag_0_88_SystemBoolean\r\n   
+    PUSH, __ag_0_30_SystemBoolean\r\n    EXTERN, \"SystemBoolean.__op_UnaryNegation__SystemBoolean__SystemBoolean\"\r\n   
+    PUSH, __ag_0_30_SystemBoolean\r\n    JUMP_IF_FALSE, 0x000003CC\r\n    PUSH, __ag_0_39_SystemString\r\n   
+    PUSH, __ag_0_8_SystemString\r\n    PUSH, __ag_0_21_SystemString\r\n    EXTERN,
+    \"SystemString.__Concat__SystemString_SystemString__SystemString\"\r\n    PUSH,
+    __ag_0_78_SystemString\r\n    PUSH, __ag_0_21_SystemString\r\n    PUSH, __ag_0_24_SystemString\r\n   
+    PUSH, __ag_0_27_SystemString\r\n    PUSH, __ag_0_52_SystemString\r\n    EXTERN,
+    \"SystemString.__Concat__SystemString_SystemString_SystemString_SystemString__SystemString\"\r\n   
+    PUSH, __ag_0_52_SystemString\r\n    PUSH, _this_gameobject\r\n    EXTERN, \"UnityEngineDebug.__LogWarning__SystemObject_UnityEngineObject__SystemVoid\"\r\n   
+    PUSH, _this_local_player\r\n    PUSH, __ag_0_4_SystemString\r\n    PUSH, __ag_0_25_SystemString\r\n   
+    EXTERN, \"VRCSDKBaseVRCPlayerApi.__SetPlayerTag__SystemString_SystemString__SystemVoid\"\r\n   
+    PUSH, __0_ra_SystemUInt32\r\n    COPY\r\n    JUMP_INDIRECT, __0_ra_SystemUInt32\r\n\r\n 
+    .export __ag_0_4\r\n  __ag_0_4:\r\n    PUSH, __1_ea_SystemUInt32\r\n    PUSH,
+    __ag_0_5_SystemBoolean\r\n    PUSH, __ag_0_2_SystemBoolean\r\n    COPY\r\n   
+    PUSH, __ag_0_20_SystemType\r\n    PUSH, __ag_0_7_SystemBoolean\r\n    EXTERN,
+    \"VRCSDKBaseUtilities.__IsValid__SystemObject__SystemBoolean\"\r\n    PUSH, __ag_0_7_SystemBoolean\r\n   
+    PUSH, __ag_0_2_SystemBoolean\r\n    EXTERN, \"SystemBoolean.__op_UnaryNegation__SystemBoolean__SystemBoolean\"\r\n   
+    PUSH, __ag_0_2_SystemBoolean\r\n    JUMP_IF_FALSE, 0x00000470\r\n    PUSH, __ag_0_66_SystemType\r\n   
+    PUSH, __ag_0_20_SystemType\r\n    COPY\r\n    PUSH, __ag_0_20_SystemType\r\n   
+    PUSH, __ag_0_53_SystemString\r\n    EXTERN, \"SystemType.__get_Name__SystemString\"\r\n   
+    PUSH, __ag_0_5_SystemBoolean\r\n    PUSH, __ag_0_26_SystemBoolean\r\n    COPY\r\n   
+    PUSH, __ag_0_17_SystemString\r\n    PUSH, __ag_0_13_SystemString\r\n    COPY\r\n   
+    PUSH, __ag_0_53_SystemString\r\n    PUSH, __ag_0_50_SystemString\r\n    COPY\r\n   
+    PUSH, __ag_0_18_SystemString\r\n    PUSH, __ag_0_77_SystemString\r\n    COPY\r\n   
+    PUSH, __ag_0_26_SystemBoolean\r\n    PUSH, __ag_0_14_SystemBoolean\r\n    COPY\r\n   
+    PUSH, __ag_0_86___jump_return_SystemUInt32\r\n    JUMP, 0x00000008\r\n    PUSH,
+    __ag_0_77_SystemString\r\n    PUSH, __ag_0_18_SystemString\r\n    COPY\r\n   
+    PUSH, __ag_0_14_SystemBoolean\r\n    PUSH, __ag_0_26_SystemBoolean\r\n    COPY\r\n   
+    PUSH, __ag_0_26_SystemBoolean\r\n    JUMP_IF_FALSE, 0x0000059C\r\n    PUSH, __ag_0_34_SystemString\r\n   
+    PUSH, __ag_0_53_SystemString\r\n    PUSH, __ag_0_70_SystemString\r\n    PUSH,
+    __ag_0_6_SystemString\r\n    EXTERN, \"SystemString.__Concat__SystemString_SystemString_SystemString__SystemString\"\r\n   
+    PUSH, __ag_0_6_SystemString\r\n    PUSH, __ag_0_56_SystemString\r\n    PUSH,
+    __ag_0_17_SystemString\r\n    PUSH, __ag_0_90_SystemString\r\n    EXTERN, \"SystemString.__Concat__SystemString_SystemString_SystemString__SystemString\"\r\n   
+    PUSH, __ag_0_90_SystemString\r\n    PUSH, _this_gameobject\r\n    EXTERN, \"UnityEngineDebug.__LogWarning__SystemObject_UnityEngineObject__SystemVoid\"\r\n   
+    PUSH, __ag_0_5_SystemBoolean\r\n    PUSH, __ag_0_9_SystemBoolean\r\n    COPY\r\n   
+    PUSH, __ag_0_51_UnityEngineComponent\r\n    PUSH, __ag_0_16_SystemBoolean\r\n   
+    EXTERN, \"VRCSDKBaseUtilities.__IsValid__SystemObject__SystemBoolean\"\r\n   
+    PUSH, __ag_0_16_SystemBoolean\r\n    PUSH, __ag_0_9_SystemBoolean\r\n    EXTERN,
+    \"SystemBoolean.__op_UnaryNegation__SystemBoolean__SystemBoolean\"\r\n    PUSH,
+    __ag_0_9_SystemBoolean\r\n    JUMP_IF_FALSE, 0x00000630\r\n    PUSH, __ag_0_17_SystemString\r\n   
+    PUSH, __ag_0_57_SystemString\r\n    COPY\r\n    PUSH, __ag_0_20_SystemType\r\n   
+    PUSH, __ag_0_74_SystemType\r\n    COPY\r\n    PUSH, __ag_0_79___jump_return_SystemUInt32\r\n   
+    JUMP, 0x00000168\r\n    JUMP, 0x00000A78\r\n    PUSH, __ag_0_51_UnityEngineComponent\r\n   
+    PUSH, __ag_0_31_UnityEngineGameObject\r\n    EXTERN, \"UnityEngineComponent.__get_gameObject__UnityEngineGameObject\"\r\n   
+    PUSH, __ag_0_51_UnityEngineComponent\r\n    PUSH, __ag_0_0_UnityEngineTransform\r\n   
+    EXTERN, \"UnityEngineComponent.__get_transform__UnityEngineTransform\"\r\n   
+    PUSH, __ag_0_0_UnityEngineTransform\r\n    PUSH, __ag_0_41_SystemString\r\n   
+    EXTERN, \"UnityEngineTransform.__get_name__SystemString\"\r\n    PUSH, __ag_0_0_UnityEngineTransform\r\n   
+    PUSH, __ag_0_0_UnityEngineTransform\r\n    EXTERN, \"UnityEngineTransform.__get_parent__UnityEngineTransform\"\r\n   
+    PUSH, __ag_0_5_SystemBoolean\r\n    PUSH, __ag_0_84_SystemBoolean\r\n    COPY\r\n   
+    PUSH, __ag_0_0_UnityEngineTransform\r\n    PUSH, __null\r\n    PUSH, __ag_0_84_SystemBoolean\r\n   
+    EXTERN, \"UnityEngineTransform.__op_Inequality__UnityEngineObject_UnityEngineObject__SystemBoolean\"\r\n   
+    PUSH, __ag_0_84_SystemBoolean\r\n    JUMP_IF_FALSE, 0x00000734\r\n    PUSH, __ag_0_0_UnityEngineTransform\r\n   
+    PUSH, __ag_0_62_SystemString\r\n    EXTERN, \"UnityEngineTransform.__get_name__SystemString\"\r\n   
+    PUSH, __ag_0_62_SystemString\r\n    PUSH, __ag_0_65_SystemString\r\n    PUSH,
+    __ag_0_41_SystemString\r\n    PUSH, __ag_0_41_SystemString\r\n    EXTERN, \"SystemString.__Concat__SystemString_SystemString_SystemString__SystemString\"\r\n   
+    PUSH, __ag_0_0_UnityEngineTransform\r\n    PUSH, __ag_0_0_UnityEngineTransform\r\n   
+    EXTERN, \"UnityEngineTransform.__get_parent__UnityEngineTransform\"\r\n    JUMP,
+    0x00000690\r\n    PUSH, __ag_0_5_SystemBoolean\r\n    PUSH, __ag_0_10_SystemBoolean\r\n   
+    COPY\r\n    PUSH, __ag_0_41_SystemString\r\n    PUSH, __ag_0_28_UnityEngineGameObject\r\n   
+    EXTERN, \"UnityEngineGameObject.__Find__SystemString__UnityEngineGameObject\"\r\n   
+    PUSH, __ag_0_31_UnityEngineGameObject\r\n    PUSH, __ag_0_28_UnityEngineGameObject\r\n   
+    PUSH, __ag_0_10_SystemBoolean\r\n    EXTERN, \"UnityEngineGameObject.__op_Inequality__UnityEngineObject_UnityEngineObject__SystemBoolean\"\r\n   
+    PUSH, __ag_0_10_SystemBoolean\r\n    JUMP_IF_FALSE, 0x00000828\r\n    PUSH, __ag_0_35_SystemString\r\n   
+    PUSH, __ag_0_53_SystemString\r\n    PUSH, __ag_0_43_SystemString\r\n    PUSH,
+    __ag_0_32_SystemString\r\n    EXTERN, \"SystemString.__Concat__SystemString_SystemString_SystemString__SystemString\"\r\n   
+    PUSH, __ag_0_32_SystemString\r\n    PUSH, __ag_0_11_SystemString\r\n    PUSH,
+    __ag_0_17_SystemString\r\n    PUSH, __ag_0_89_SystemString\r\n    EXTERN, \"SystemString.__Concat__SystemString_SystemString_SystemString__SystemString\"\r\n   
+    PUSH, __ag_0_89_SystemString\r\n    PUSH, __ag_0_23_SystemString\r\n    PUSH,
+    __ag_0_17_SystemString\r\n    PUSH, __ag_0_81_SystemString\r\n    EXTERN, \"SystemString.__Concat__SystemString_SystemString_SystemString__SystemString\"\r\n   
+    PUSH, __ag_0_81_SystemString\r\n    PUSH, _this_gameobject\r\n    EXTERN, \"UnityEngineDebug.__LogError__SystemObject_UnityEngineObject__SystemVoid\"\r\n   
+    JUMP, 0x00000A78\r\n    PUSH, __ag_0_17_SystemString\r\n    PUSH, __ag_0_8_SystemString\r\n   
+    COPY\r\n    PUSH, __ag_0_53_SystemString\r\n    PUSH, __ag_0_39_SystemString\r\n   
+    COPY\r\n    PUSH, __ag_0_41_SystemString\r\n    PUSH, __ag_0_25_SystemString\r\n   
+    COPY\r\n    PUSH, __ag_0_59___jump_return_SystemUInt32\r\n    JUMP, 0x00000294\r\n   
+    PUSH, __ag_0_31_UnityEngineGameObject\r\n    PUSH, __ag_0_20_SystemType\r\n   
+    PUSH, __ag_0_54_UnityEngineComponent[]\r\n    EXTERN, \"UnityEngineGameObject.__GetComponents__SystemType__UnityEngineComponentArray\"\r\n   
+    PUSH, __ag_0_54_UnityEngineComponent[]\r\n    PUSH, __ag_0_67_SystemInt32\r\n   
+    EXTERN, \"SystemArray.__get_Length__SystemInt32\"\r\n    PUSH, __ag_0_64_SystemInt32\r\n   
+    PUSH, __ag_0_87_SystemInt32\r\n    COPY\r\n    PUSH, __ag_0_67_SystemInt32\r\n   
+    PUSH, __ag_0_83_SystemInt32\r\n    COPY\r\n    PUSH, __ag_0_33_SystemInt32\r\n   
+    PUSH, __ag_0_37_SystemInt32\r\n    COPY\r\n    PUSH, __ag_0_37_SystemInt32\r\n   
+    PUSH, __ag_0_64_SystemInt32\r\n    PUSH, __ag_0_15_SystemBoolean\r\n    EXTERN,
+    \"SystemInt32.__op_GreaterThanOrEqual__SystemInt32_SystemInt32__SystemBoolean\"\r\n   
+    JUMP, 0x00000930\r\n    PUSH, __ag_0_87_SystemInt32\r\n    PUSH, __ag_0_37_SystemInt32\r\n   
+    PUSH, __ag_0_87_SystemInt32\r\n    EXTERN, \"SystemInt32.__op_Addition__SystemInt32_SystemInt32__SystemInt32\"\r\n   
+    PUSH, __ag_0_87_SystemInt32\r\n    PUSH, __ag_0_83_SystemInt32\r\n    PUSH, __ag_0_47_SystemBoolean\r\n   
+    PUSH, __ag_0_15_SystemBoolean\r\n    JUMP_IF_FALSE, 0x00000968\r\n    EXTERN,
+    \"SystemInt32.__op_LessThan__SystemInt32_SystemInt32__SystemBoolean\"\r\n   
+    JUMP, 0x00000970\r\n    EXTERN, \"SystemInt32.__op_GreaterThan__SystemInt32_SystemInt32__SystemBoolean\"\r\n   
+    PUSH, __ag_0_47_SystemBoolean\r\n    JUMP_IF_FALSE, 0x00000A78\r\n    PUSH, __ag_0_54_UnityEngineComponent[]\r\n   
+    PUSH, __ag_0_87_SystemInt32\r\n    PUSH, __ag_0_46_SystemObject\r\n    EXTERN,
+    \"SystemArray.__GetValue__SystemInt32__SystemObject\"\r\n    PUSH, __ag_0_5_SystemBoolean\r\n   
+    PUSH, __ag_0_40_SystemBoolean\r\n    COPY\r\n    PUSH, __ag_0_51_UnityEngineComponent\r\n   
+    PUSH, __ag_0_46_SystemObject\r\n    PUSH, __ag_0_40_SystemBoolean\r\n    EXTERN,
+    \"UnityEngineComponent.__op_Equality__UnityEngineObject_UnityEngineObject__SystemBoolean\"\r\n   
+    PUSH, __ag_0_40_SystemBoolean\r\n    JUMP_IF_FALSE, 0x00000A70\r\n    PUSH, __ag_0_87_SystemInt32\r\n   
+    PUSH, __ag_0_1_SystemString\r\n    EXTERN, \"SystemInt32.__ToString__SystemString\"\r\n   
+    PUSH, __ag_0_53_SystemString\r\n    PUSH, __ag_0_45_SystemString\r\n    PUSH,
+    __ag_0_42_SystemString\r\n    EXTERN, \"SystemString.__Concat__SystemString_SystemString__SystemString\"\r\n   
+    PUSH, __ag_0_17_SystemString\r\n    PUSH, __ag_0_8_SystemString\r\n    COPY\r\n   
+    PUSH, __ag_0_42_SystemString\r\n    PUSH, __ag_0_39_SystemString\r\n    COPY\r\n   
+    PUSH, __ag_0_1_SystemString\r\n    PUSH, __ag_0_25_SystemString\r\n    COPY\r\n   
+    PUSH, __ag_0_3___jump_return_SystemUInt32\r\n    JUMP, 0x00000294\r\n    JUMP,
+    0x00000A78\r\n    JUMP, 0x00000910\r\n    PUSH, __0_ra_SystemUInt32\r\n    COPY\r\n   
+    JUMP_INDIRECT, __0_ra_SystemUInt32\r\n\r\n  .export __ag_0_5\r\n  __ag_0_5:\r\n   
+    PUSH, __1_ea_SystemUInt32\r\n    PUSH, __ag_0_80_SystemType\r\n    PUSH, __ag_0_58_SystemType\r\n   
+    COPY\r\n    PUSH, __ag_0_19_SystemString\r\n    PUSH, __ag_0_17_SystemString\r\n   
+    COPY\r\n    PUSH, __ag_0_58_SystemType\r\n    PUSH, __ag_0_20_SystemType\r\n   
+    COPY\r\n    PUSH, __ag_0_72_VRCUdonUdonBehaviour\r\n    PUSH, __ag_0_51_UnityEngineComponent\r\n   
+    COPY\r\n    PUSH, __ag_0_38___jump_return_SystemUInt32\r\n    JUMP, 0x00000408\r\n   
+    PUSH, __0_ra_SystemUInt32\r\n    COPY\r\n    JUMP_INDIRECT, __0_ra_SystemUInt32\r\n\r\n 
+    .export __ag_1_0\r\n  __ag_1_0:\r\n    PUSH, __1_ea_SystemUInt32\r\n    PUSH,
+    __ag_1_0_SystemString\r\n    PUSH, _this_gameobject\r\n    EXTERN, \"UnityEngineDebug.__Log__SystemObject_UnityEngineObject__SystemVoid\"\r\n   
+    PUSH, __0_ra_SystemUInt32\r\n    COPY\r\n    JUMP_INDIRECT, __0_ra_SystemUInt32\r\n\r\n 
+    .export __ag_2_0\r\n  __ag_2_0:\r\n    PUSH, __1_ea_SystemUInt32\r\n    PUSH,
+    __ag_2_4_VRCSDKBaseVRCPlayerApi\r\n    PUSH, __ag_2_3_VRCSDKBaseVRCPlayerApi_TrackingDataType\r\n   
+    PUSH, __ag_2_2_VRCSDKBaseVRCPlayerApi_TrackingData\r\n    EXTERN, \"VRCSDKBaseVRCPlayerApi.__GetTrackingData__VRCSDKBaseVRCPlayerApiTrackingDataType__VRCSDKBaseVRCPlayerApiTrackingData\"\r\n   
+    PUSH, __ag_2_2_VRCSDKBaseVRCPlayerApi_TrackingData\r\n    PUSH, __ag_2_1_UnityEngineVector3\r\n   
+    EXTERN, \"VRCSDKBaseVRCPlayerApiTrackingData.__get_position__UnityEngineVector3\"\r\n   
+    PUSH, __ag_2_2_VRCSDKBaseVRCPlayerApi_TrackingData\r\n    PUSH, __ag_2_0_UnityEngineQuaternion\r\n   
+    EXTERN, \"VRCSDKBaseVRCPlayerApiTrackingData.__get_rotation__UnityEngineQuaternion\"\r\n   
+    PUSH, __0_ra_SystemUInt32\r\n    COPY\r\n    JUMP_INDIRECT, __0_ra_SystemUInt32\r\n\r\n 
+    .export _start\r\n  _start:\r\n    PUSH, __1_ea_SystemUInt32\r\n    PUSH, __152_ref_SystemString\r\n   
+    PUSH, __ag_0_19_SystemString\r\n    COPY\r\n    PUSH, _this_udonbehaviour\r\n   
+    PUSH, __ag_0_72_VRCUdonUdonBehaviour\r\n    COPY\r\n    PUSH, __153___jump_return_7_SystemUInt32\r\n   
+    JUMP, 0x00000A94\r\n    PUSH, _this_udonbehaviour\r\n    PUSH, __154_ref_SystemBoolean\r\n   
+    EXTERN, \"VRCUdonCommonInterfacesIUdonEventReceiver.__set_enabled__SystemBoolean__SystemVoid\"\r\n   
+    PUSH, _this_transform\r\n    PUSH, __155_ref_SystemInt32\r\n    PUSH, _fadeCubeTransform\r\n   
+    EXTERN, \"UnityEngineTransform.__GetChild__SystemInt32__UnityEngineTransform\"\r\n   
+    PUSH, _fadeCubeTransform\r\n    PUSH, _fadeCube\r\n    EXTERN, \"UnityEngineTransform.__get_gameObject__UnityEngineGameObject\"\r\n   
+    PUSH, __157_const_SystemType\r\n    PUSH, __156_local_var_SystemType\r\n    COPY\r\n   
+    PUSH, _fadeCube\r\n    PUSH, __156_local_var_SystemType\r\n    PUSH, _fadeRenderer\r\n   
+    EXTERN, \"UnityEngineGameObject.__GetComponent__SystemType__UnityEngineComponent\"\r\n   
+    PUSH, _fadePropertyBlock\r\n    EXTERN, \"UnityEngineMaterialPropertyBlock.__ctor____UnityEngineMaterialPropertyBlock\"\r\n   
+    PUSH, _fadeRenderer\r\n    PUSH, _fadePropertyBlock\r\n    EXTERN, \"UnityEngineRenderer.__GetPropertyBlock__UnityEngineMaterialPropertyBlock__SystemVoid\"\r\n   
+    PUSH, __158_ref_SystemString\r\n    PUSH, __ag_1_0_SystemString\r\n    COPY\r\n   
+    PUSH, __159___jump_return_8_SystemUInt32\r\n    JUMP, 0x00000B10\r\n    PUSH,
+    __0_ra_SystemUInt32\r\n    COPY\r\n    JUMP_INDIRECT, __0_ra_SystemUInt32\r\n\r\n 
+    .export _StartFade\r\n  _StartFade:\r\n    PUSH, __1_ea_SystemUInt32\r\n    PUSH,
+    __136_lp_init_SystemBoolean_ct_intern\r\n    JUMP_IF_FALSE, 0x00000D08\r\n   
+    PUSH, __161_const_SystemBoolean\r\n    PUSH, __136_lp_init_SystemBoolean_ct_intern\r\n   
+    COPY\r\n    PUSH, _this_local_player\r\n    EXTERN, \"VRCSDKBaseNetworking.__get_LocalPlayer__VRCSDKBaseVRCPlayerApi\"\r\n   
+    PUSH, __161_const_SystemBoolean\r\n    PUSH, __160_local_var_SystemBoolean\r\n   
+    COPY\r\n    PUSH, _this_udonbehaviour\r\n    PUSH, __160_local_var_SystemBoolean\r\n   
+    EXTERN, \"VRCUdonCommonInterfacesIUdonEventReceiver.__get_enabled__SystemBoolean\"\r\n   
+    PUSH, _fadeState\r\n    PUSH, __162_ref_SystemInt32\r\n    PUSH, __160_local_var_SystemBoolean\r\n   
+    EXTERN, \"SystemInt32.__op_Inequality__SystemInt32_SystemInt32__SystemBoolean\"\r\n   
+    PUSH, __160_local_var_SystemBoolean\r\n    JUMP_IF_FALSE, 0x00000D6C\r\n    JUMP,
+    0x00000E90\r\n    PUSH, _fadeStartTime\r\n    EXTERN, \"UnityEngineTime.__get_timeSinceLevelLoad__SystemSingle\"\r\n   
+    PUSH, __163_ref_SystemInt32\r\n    PUSH, _fadeState\r\n    COPY\r\n    PUSH,
+    _fadeCube\r\n    PUSH, __164_ref_SystemBoolean\r\n    EXTERN, \"UnityEngineGameObject.__SetActive__SystemBoolean__SystemVoid\"\r\n   
+    PUSH, _fadePropertyBlock\r\n    PUSH, __165_ref_SystemString\r\n    PUSH, __166_ref_SystemSingle\r\n   
+    EXTERN, \"UnityEngineMaterialPropertyBlock.__SetFloat__SystemString_SystemSingle__SystemVoid\"\r\n   
+    PUSH, _fadePropertyBlock\r\n    PUSH, __167_ref_SystemString\r\n    PUSH, fadeColor\r\n   
+    EXTERN, \"UnityEngineMaterialPropertyBlock.__SetColor__SystemString_UnityEngineColor__SystemVoid\"\r\n   
+    PUSH, _fadeRenderer\r\n    PUSH, _fadePropertyBlock\r\n    EXTERN, \"UnityEngineRenderer.__SetPropertyBlock__UnityEngineMaterialPropertyBlock__SystemVoid\"\r\n   
+    PUSH, _this_udonbehaviour\r\n    PUSH, __168_ref_SystemBoolean\r\n    EXTERN,
+    \"VRCUdonCommonInterfacesIUdonEventReceiver.__set_enabled__SystemBoolean__SystemVoid\"\r\n   
+    PUSH, __161_const_SystemBoolean\r\n    PUSH, __169_local_var_SystemBoolean\r\n   
+    COPY\r\n    PUSH, immobilizePlayer\r\n    PUSH, __169_local_var_SystemBoolean\r\n   
+    COPY\r\n    PUSH, __169_local_var_SystemBoolean\r\n    JUMP_IF_FALSE, 0x00000E68\r\n   
+    PUSH, _this_local_player\r\n    PUSH, __170_ref_SystemBoolean\r\n    EXTERN,
+    \"VRCSDKBaseVRCPlayerApi.__Immobilize__SystemBoolean__SystemVoid\"\r\n    PUSH,
+    fadeInTime\r\n    PUSH, _fadeInDuration\r\n    COPY\r\n    PUSH, __171_ref_SystemSingle\r\n   
+    PUSH, _fadeHoldDuration\r\n    COPY\r\n    PUSH, __0_ra_SystemUInt32\r\n    COPY\r\n   
+    JUMP_INDIRECT, __0_ra_SystemUInt32\r\n\r\n  .export _EndFade\r\n  _EndFade:\r\n   
+    PUSH, __1_ea_SystemUInt32\r\n    PUSH, __161_const_SystemBoolean\r\n    PUSH,
+    __172_local_var_SystemBoolean\r\n    COPY\r\n    PUSH, _fadeState\r\n    PUSH,
+    __173_ref_SystemInt32\r\n    PUSH, __172_local_var_SystemBoolean\r\n    EXTERN,
+    \"SystemInt32.__op_Equality__SystemInt32_SystemInt32__SystemBoolean\"\r\n   
+    PUSH, __172_local_var_SystemBoolean\r\n    JUMP_IF_FALSE, 0x00000EF8\r\n    JUMP,
+    0x00000F30\r\n    PUSH, _fadeStartTime\r\n    EXTERN, \"UnityEngineTime.__get_timeSinceLevelLoad__SystemSingle\"\r\n   
+    PUSH, __174_ref_SystemInt32\r\n    PUSH, _fadeState\r\n    COPY\r\n    PUSH,
+    fadeOutTime\r\n    PUSH, _fadeOutDuration\r\n    COPY\r\n    PUSH, __0_ra_SystemUInt32\r\n   
+    COPY\r\n    JUMP_INDIRECT, __0_ra_SystemUInt32\r\n\r\n  .export _postLateUpdate\r\n 
+    _postLateUpdate:\r\n    PUSH, __1_ea_SystemUInt32\r\n    PUSH, __136_lp_init_SystemBoolean_ct_intern\r\n   
+    JUMP_IF_FALSE, 0x00000F80\r\n    PUSH, __161_const_SystemBoolean\r\n    PUSH,
+    __136_lp_init_SystemBoolean_ct_intern\r\n    COPY\r\n    PUSH, _this_local_player\r\n   
+    EXTERN, \"VRCSDKBaseNetworking.__get_LocalPlayer__VRCSDKBaseVRCPlayerApi\"\r\n   
+    PUSH, _this_gameobject\r\n    PUSH, __175_temp_SystemBoolean\r\n    EXTERN, \"UnityEngineGameObject.__get_activeInHierarchy__SystemBoolean\"\r\n   
+    PUSH, __175_temp_SystemBoolean\r\n    JUMP_IF_FALSE, 0x0000132C\r\n    PUSH,
+    _this_udonbehaviour\r\n    PUSH, __175_temp_SystemBoolean\r\n    EXTERN, \"VRCUdonCommonInterfacesIUdonEventReceiver.__get_enabled__SystemBoolean\"\r\n   
+    PUSH, __175_temp_SystemBoolean\r\n    JUMP_IF_FALSE, 0x0000132C\r\n    PUSH,
+    __161_const_SystemBoolean\r\n    PUSH, __176_local_var_SystemBoolean\r\n    COPY\r\n   
+    PUSH, _fadeState\r\n    PUSH, __177_ref_SystemInt32\r\n    PUSH, __176_local_var_SystemBoolean\r\n   
+    EXTERN, \"SystemInt32.__op_Equality__SystemInt32_SystemInt32__SystemBoolean\"\r\n   
+    PUSH, __176_local_var_SystemBoolean\r\n    JUMP_IF_FALSE, 0x0000101C\r\n    JUMP,
+    0x0000132C\r\n    PUSH, __178_local_var_SystemSingle\r\n    EXTERN, \"UnityEngineTime.__get_timeSinceLevelLoad__SystemSingle\"\r\n   
+    PUSH, __178_local_var_SystemSingle\r\n    PUSH, _fadeStartTime\r\n    PUSH, __179_local_var_SystemSingle\r\n   
+    EXTERN, \"SystemSingle.__op_Subtraction__SystemSingle_SystemSingle__SystemSingle\"\r\n   
+    PUSH, __181_ref_SystemSingle\r\n    PUSH, __180_local_var_SystemSingle\r\n   
+    COPY\r\n    PUSH, __161_const_SystemBoolean\r\n    PUSH, __182_local_var_SystemBoolean\r\n   
+    COPY\r\n    PUSH, _fadeState\r\n    PUSH, __183_ref_SystemInt32\r\n    PUSH,
+    __182_local_var_SystemBoolean\r\n    EXTERN, \"SystemInt32.__op_Equality__SystemInt32_SystemInt32__SystemBoolean\"\r\n   
+    PUSH, __182_local_var_SystemBoolean\r\n    JUMP_IF_FALSE, 0x00001120\r\n    PUSH,
+    __179_local_var_SystemSingle\r\n    PUSH, _fadeInDuration\r\n    PUSH, __180_local_var_SystemSingle\r\n   
+    EXTERN, \"SystemSingle.__op_Division__SystemSingle_SystemSingle__SystemSingle\"\r\n   
+    PUSH, __161_const_SystemBoolean\r\n    PUSH, __184_local_var_SystemBoolean\r\n   
+    COPY\r\n    PUSH, __180_local_var_SystemSingle\r\n    PUSH, __185_ref_SystemSingle\r\n   
+    PUSH, __184_local_var_SystemBoolean\r\n    EXTERN, \"SystemSingle.__op_GreaterThanOrEqual__SystemSingle_SystemSingle__SystemBoolean\"\r\n   
+    PUSH, __184_local_var_SystemBoolean\r\n    JUMP_IF_FALSE, 0x00001118\r\n    PUSH,
+    __187___jump_return_9_SystemUInt32\r\n    JUMP, 0x00001348\r\n    JUMP, 0x00001178\r\n   
+    PUSH, __161_const_SystemBoolean\r\n    PUSH, __188_local_var_SystemBoolean\r\n   
+    COPY\r\n    PUSH, _fadeState\r\n    PUSH, __189_ref_SystemInt32\r\n    PUSH,
+    __188_local_var_SystemBoolean\r\n    EXTERN, \"SystemInt32.__op_Equality__SystemInt32_SystemInt32__SystemBoolean\"\r\n   
+    PUSH, __188_local_var_SystemBoolean\r\n    JUMP_IF_FALSE, 0x00001180\r\n    PUSH,
+    __190_ref_SystemSingle\r\n    PUSH, __180_local_var_SystemSingle\r\n    COPY\r\n   
+    JUMP, 0x00001214\r\n    PUSH, __179_local_var_SystemSingle\r\n    PUSH, _fadeOutDuration\r\n   
+    PUSH, __180_local_var_SystemSingle\r\n    EXTERN, \"SystemSingle.__op_Division__SystemSingle_SystemSingle__SystemSingle\"\r\n   
+    PUSH, __191_ref_SystemSingle\r\n    PUSH, __180_local_var_SystemSingle\r\n   
+    PUSH, __180_local_var_SystemSingle\r\n    EXTERN, \"SystemSingle.__op_Subtraction__SystemSingle_SystemSingle__SystemSingle\"\r\n   
+    PUSH, __161_const_SystemBoolean\r\n    PUSH, __192_local_var_SystemBoolean\r\n   
+    COPY\r\n    PUSH, __180_local_var_SystemSingle\r\n    PUSH, __193_ref_SystemSingle\r\n   
+    PUSH, __192_local_var_SystemBoolean\r\n    EXTERN, \"SystemSingle.__op_LessThan__SystemSingle_SystemSingle__SystemBoolean\"\r\n   
+    PUSH, __192_local_var_SystemBoolean\r\n    JUMP_IF_FALSE, 0x00001214\r\n    PUSH,
+    __195___jump_return_10_SystemUInt32\r\n    JUMP, 0x0000146C\r\n    PUSH, __180_local_var_SystemSingle\r\n   
+    PUSH, __180_local_var_SystemSingle\r\n    EXTERN, \"UnityEngineMathf.__Clamp01__SystemSingle__SystemSingle\"\r\n   
+    PUSH, _fadePropertyBlock\r\n    PUSH, __196_ref_SystemString\r\n    PUSH, __180_local_var_SystemSingle\r\n   
+    EXTERN, \"UnityEngineMaterialPropertyBlock.__SetFloat__SystemString_SystemSingle__SystemVoid\"\r\n   
+    PUSH, _fadePropertyBlock\r\n    PUSH, __197_ref_SystemString\r\n    PUSH, fadeColor\r\n   
+    EXTERN, \"UnityEngineMaterialPropertyBlock.__SetColor__SystemString_UnityEngineColor__SystemVoid\"\r\n   
+    PUSH, _fadeRenderer\r\n    PUSH, _fadePropertyBlock\r\n    EXTERN, \"UnityEngineRenderer.__SetPropertyBlock__UnityEngineMaterialPropertyBlock__SystemVoid\"\r\n   
+    PUSH, _this_local_player\r\n    PUSH, __ag_2_4_VRCSDKBaseVRCPlayerApi\r\n   
+    COPY\r\n    PUSH, __200_ref_VRCSDKBaseVRCPlayerApi_TrackingDataType\r\n    PUSH,
+    __ag_2_3_VRCSDKBaseVRCPlayerApi_TrackingDataType\r\n    COPY\r\n    PUSH, __198_local_var_UnityEngineVector3\r\n   
+    PUSH, __ag_2_1_UnityEngineVector3\r\n    COPY\r\n    PUSH, __199_local_var_UnityEngineQuaternion\r\n   
+    PUSH, __ag_2_0_UnityEngineQuaternion\r\n    COPY\r\n    PUSH, __201___jump_return_11_SystemUInt32\r\n   
+    JUMP, 0x00000B44\r\n    PUSH, __ag_2_1_UnityEngineVector3\r\n    PUSH, __198_local_var_UnityEngineVector3\r\n   
+    COPY\r\n    PUSH, __ag_2_0_UnityEngineQuaternion\r\n    PUSH, __199_local_var_UnityEngineQuaternion\r\n   
+    COPY\r\n    PUSH, _fadeCubeTransform\r\n    PUSH, __198_local_var_UnityEngineVector3\r\n   
+    PUSH, __199_local_var_UnityEngineQuaternion\r\n    EXTERN, \"UnityEngineTransform.__SetPositionAndRotation__UnityEngineVector3_UnityEngineQuaternion__SystemVoid\"\r\n   
+    PUSH, __0_ra_SystemUInt32\r\n    COPY\r\n    JUMP_INDIRECT, __0_ra_SystemUInt32\r\n\r\n 
+    .export _FadeInFinished\r\n  _FadeInFinished:\r\n    PUSH, __1_ea_SystemUInt32\r\n   
+    PUSH, __202_ref_SystemInt32\r\n    PUSH, _fadeState\r\n    COPY\r\n    PUSH,
+    _onFadeInFinishedEvent\r\n    PUSH, _arg_eventName__CallEvent\r\n    COPY\r\n   
+    PUSH, __204___jump_return_12_SystemUInt32\r\n    JUMP, 0x00001588\r\n    PUSH,
+    __161_const_SystemBoolean\r\n    PUSH, __205_local_var_SystemBoolean\r\n    COPY\r\n   
+    PUSH, _fadeHoldDuration\r\n    PUSH, __206_ref_SystemSingle\r\n    PUSH, __205_local_var_SystemBoolean\r\n   
+    EXTERN, \"SystemSingle.__op_GreaterThanOrEqual__SystemSingle_SystemSingle__SystemBoolean\"\r\n   
+    PUSH, __205_local_var_SystemBoolean\r\n    JUMP_IF_FALSE, 0x000013EC\r\n    PUSH,
+    _this_udonbehaviour\r\n    PUSH, __207_ref_SystemString\r\n    PUSH, _fadeHoldDuration\r\n   
+    PUSH, __208_ref_VRCUdonCommonEnumsEventTiming\r\n    EXTERN, \"VRCUdonCommonInterfacesIUdonEventReceiver.__SendCustomEventDelayedSeconds__SystemString_SystemSingle_VRCUdonCommonEnumsEventTiming__SystemVoid\"\r\n   
+    PUSH, __0_ra_SystemUInt32\r\n    COPY\r\n    JUMP_INDIRECT, __0_ra_SystemUInt32\r\n\r\n 
+    .export _FadeHoldFinished\r\n  _FadeHoldFinished:\r\n    PUSH, __1_ea_SystemUInt32\r\n   
+    PUSH, _fadeStartTime\r\n    EXTERN, \"UnityEngineTime.__get_timeSinceLevelLoad__SystemSingle\"\r\n   
+    PUSH, __209_ref_SystemInt32\r\n    PUSH, _fadeState\r\n    COPY\r\n    PUSH,
+    _onFadeHoldFinishedEvent\r\n    PUSH, _arg_eventName__CallEvent\r\n    COPY\r\n   
+    PUSH, __211___jump_return_13_SystemUInt32\r\n    JUMP, 0x00001588\r\n    PUSH,
+    __0_ra_SystemUInt32\r\n    COPY\r\n    JUMP_INDIRECT, __0_ra_SystemUInt32\r\n\r\n 
+    .export _FadeOutFinished\r\n  _FadeOutFinished:\r\n    PUSH, __1_ea_SystemUInt32\r\n   
+    PUSH, __136_lp_init_SystemBoolean_ct_intern\r\n    JUMP_IF_FALSE, 0x000014A0\r\n   
+    PUSH, __161_const_SystemBoolean\r\n    PUSH, __136_lp_init_SystemBoolean_ct_intern\r\n   
+    COPY\r\n    PUSH, _this_local_player\r\n    EXTERN, \"VRCSDKBaseNetworking.__get_LocalPlayer__VRCSDKBaseVRCPlayerApi\"\r\n   
+    PUSH, __212_ref_SystemInt32\r\n    PUSH, _fadeState\r\n    COPY\r\n    PUSH,
+    _this_udonbehaviour\r\n    PUSH, __213_ref_SystemBoolean\r\n    EXTERN, \"VRCUdonCommonInterfacesIUdonEventReceiver.__set_enabled__SystemBoolean__SystemVoid\"\r\n   
+    PUSH, _fadeCube\r\n    PUSH, __214_ref_SystemBoolean\r\n    EXTERN, \"UnityEngineGameObject.__SetActive__SystemBoolean__SystemVoid\"\r\n   
+    PUSH, __161_const_SystemBoolean\r\n    PUSH, __215_local_var_SystemBoolean\r\n   
+    COPY\r\n    PUSH, immobilizePlayer\r\n    PUSH, __215_local_var_SystemBoolean\r\n   
+    COPY\r\n    PUSH, __215_local_var_SystemBoolean\r\n    JUMP_IF_FALSE, 0x00001534\r\n   
+    PUSH, _this_local_player\r\n    PUSH, __216_ref_SystemBoolean\r\n    EXTERN,
+    \"VRCSDKBaseVRCPlayerApi.__Immobilize__SystemBoolean__SystemVoid\"\r\n    PUSH,
+    _onFadeOutFinishedEvent\r\n    PUSH, _arg_eventName__CallEvent\r\n    COPY\r\n   
+    PUSH, __218___jump_return_14_SystemUInt32\r\n    JUMP, 0x00001588\r\n    PUSH,
+    __null\r\n    PUSH, _callerUdon\r\n    COPY\r\n    PUSH, __0_ra_SystemUInt32\r\n   
+    COPY\r\n    JUMP_INDIRECT, __0_ra_SystemUInt32\r\n\r\n  .export _CallEvent\r\n 
+    _CallEvent:\r\n    PUSH, __1_ea_SystemUInt32\r\n    PUSH, __161_const_SystemBoolean\r\n   
+    PUSH, __219_local_var_SystemBoolean\r\n    COPY\r\n    PUSH, _callerUdon\r\n   
+    PUSH, __219_local_var_SystemBoolean\r\n    EXTERN, \"VRCSDKBaseUtilities.__IsValid__SystemObject__SystemBoolean\"\r\n   
+    PUSH, __161_const_SystemBoolean\r\n    PUSH, __219_local_var_SystemBoolean\r\n   
+    JUMP_IF_FALSE, 0x00001608\r\n    POP\r\n    PUSH, _arg_eventName__CallEvent\r\n   
+    PUSH, __220_local_var_SystemBoolean\r\n    EXTERN, \"SystemString.__IsNullOrEmpty__SystemString__SystemBoolean\"\r\n   
+    PUSH, __220_local_var_SystemBoolean\r\n    PUSH, __219_local_var_SystemBoolean\r\n   
+    EXTERN, \"SystemBoolean.__op_UnaryNegation__SystemBoolean__SystemBoolean\"\r\n   
+    PUSH, __219_local_var_SystemBoolean\r\n    JUMP_IF_FALSE, 0x00001628\r\n    PUSH,
+    _callerUdon\r\n    PUSH, _arg_eventName__CallEvent\r\n    EXTERN, \"VRCUdonCommonInterfacesIUdonEventReceiver.__SendCustomEvent__SystemString__SystemVoid\"\r\n   
+    PUSH, __0_ra_SystemUInt32\r\n    COPY\r\n    JUMP_INDIRECT, __0_ra_SystemUInt32\r\n\r\n 
+    .export _StartFadeWithEvent\r\n  _StartFadeWithEvent:\r\n    PUSH, __1_ea_SystemUInt32\r\n   
+    PUSH, _arg_onFadeInEvent__StartFadeWithEvent\r\n    PUSH, _arg_onFadeInEvent__StartFadeWithEventAndDuration\r\n   
+    COPY\r\n    PUSH, fadeInTime\r\n    PUSH, _arg_fadeInDuration__StartFadeWithEventAndDuration\r\n   
+    COPY\r\n    PUSH, _arg_udon__StartFadeWithEvent\r\n    PUSH, _arg_udon__StartFadeWithEventAndDuration\r\n   
+    COPY\r\n    PUSH, __222___jump_return_15_SystemUInt32\r\n    JUMP, 0x000016AC\r\n   
+    PUSH, __0_ra_SystemUInt32\r\n    COPY\r\n    JUMP_INDIRECT, __0_ra_SystemUInt32\r\n\r\n 
+    .export _StartFadeWithEventAndDuration\r\n  _StartFadeWithEventAndDuration:\r\n   
+    PUSH, __1_ea_SystemUInt32\r\n    PUSH, __224___jump_return_16_SystemUInt32\r\n   
+    JUMP, 0x00000CD4\r\n    PUSH, _arg_fadeInDuration__StartFadeWithEventAndDuration\r\n   
+    PUSH, _fadeInDuration\r\n    COPY\r\n    PUSH, __225_ref_SystemSingle\r\n   
+    PUSH, _fadeHoldDuration\r\n    COPY\r\n    PUSH, _arg_onFadeInEvent__StartFadeWithEventAndDuration\r\n   
+    PUSH, _onFadeInFinishedEvent\r\n    COPY\r\n    PUSH, _arg_udon__StartFadeWithEventAndDuration\r\n   
+    PUSH, _callerUdon\r\n    COPY\r\n    PUSH, __0_ra_SystemUInt32\r\n    COPY\r\n   
+    JUMP_INDIRECT, __0_ra_SystemUInt32\r\n\r\n  .export _EndFadeWithEvent\r\n  _EndFadeWithEvent:\r\n   
+    PUSH, __1_ea_SystemUInt32\r\n    PUSH, _arg_onFadeEndEvent__EndFadeWithEvent\r\n   
+    PUSH, _arg_onFadeEndEvent__EndFadeWithEventAndDuration\r\n    COPY\r\n    PUSH,
+    fadeOutTime\r\n    PUSH, _arg_fadeEndDuration__EndFadeWithEventAndDuration\r\n   
+    COPY\r\n    PUSH, _arg_udon__EndFadeWithEvent\r\n    PUSH, _arg_udon__EndFadeWithEventAndDuration\r\n   
+    COPY\r\n    PUSH, __227___jump_return_17_SystemUInt32\r\n    JUMP, 0x00001790\r\n   
+    PUSH, __0_ra_SystemUInt32\r\n    COPY\r\n    JUMP_INDIRECT, __0_ra_SystemUInt32\r\n\r\n 
+    .export _EndFadeWithEventAndDuration\r\n  _EndFadeWithEventAndDuration:\r\n   
+    PUSH, __1_ea_SystemUInt32\r\n    PUSH, __229___jump_return_18_SystemUInt32\r\n   
+    JUMP, 0x00000EAC\r\n    PUSH, _arg_fadeEndDuration__EndFadeWithEventAndDuration\r\n   
+    PUSH, _fadeOutDuration\r\n    COPY\r\n    PUSH, _arg_onFadeEndEvent__EndFadeWithEventAndDuration\r\n   
+    PUSH, _onFadeOutFinishedEvent\r\n    COPY\r\n    PUSH, _arg_udon__EndFadeWithEventAndDuration\r\n   
+    PUSH, _callerUdon\r\n    COPY\r\n    PUSH, __0_ra_SystemUInt32\r\n    COPY\r\n   
+    JUMP_INDIRECT, __0_ra_SystemUInt32\r\n\r\n  .export _FadeInAndOutWithEventsDurationsAndHold\r\n 
+    _FadeInAndOutWithEventsDurationsAndHold:\r\n    PUSH, __1_ea_SystemUInt32\r\n   
+    PUSH, __231___jump_return_19_SystemUInt32\r\n    JUMP, 0x00000CD4\r\n    PUSH,
+    _arg_fadeInDuration__FadeInAndOutWithEventsDurationsAndHold\r\n    PUSH, _fadeInDuration\r\n   
+    COPY\r\n    PUSH, _arg_fadeHoldDuration__FadeInAndOutWithEventsDurationsAndHold\r\n   
+    PUSH, _fadeHoldDuration\r\n    COPY\r\n    PUSH, _arg_fadeEndDuration__FadeInAndOutWithEventsDurationsAndHold\r\n   
+    PUSH, _fadeOutDuration\r\n    COPY\r\n    PUSH, _arg_onFadeInEvent__FadeInAndOutWithEventsDurationsAndHold\r\n   
+    PUSH, _onFadeInFinishedEvent\r\n    COPY\r\n    PUSH, _arg_onFadeHoldEvent__FadeInAndOutWithEventsDurationsAndHold\r\n   
+    PUSH, _onFadeHoldFinishedEvent\r\n    COPY\r\n    PUSH, _arg_onFadeEndEvent__FadeInAndOutWithEventsDurationsAndHold\r\n   
+    PUSH, _onFadeOutFinishedEvent\r\n    COPY\r\n    PUSH, _arg_udon__FadeInAndOutWithEventsDurationsAndHold\r\n   
+    PUSH, _callerUdon\r\n    COPY\r\n    PUSH, __0_ra_SystemUInt32\r\n    COPY\r\n   
+    JUMP_INDIRECT, __0_ra_SystemUInt32\r\n\r\n  .export _FadeInAndOutWithEventsAndDurations\r\n 
+    _FadeInAndOutWithEventsAndDurations:\r\n    PUSH, __1_ea_SystemUInt32\r\n   
+    PUSH, _arg_onFadeInEvent__FadeInAndOutWithEventsAndDurations\r\n    PUSH, _arg_onFadeInEvent__FadeInAndOutWithEventsDurationsAndHold\r\n   
+    COPY\r\n    PUSH, _arg_fadeInDuration__FadeInAndOutWithEventsAndDurations\r\n   
+    PUSH, _arg_fadeInDuration__FadeInAndOutWithEventsDurationsAndHold\r\n    COPY\r\n   
+    PUSH, __233_ref_SystemString\r\n    PUSH, _arg_onFadeHoldEvent__FadeInAndOutWithEventsDurationsAndHold\r\n   
+    COPY\r\n    PUSH, __234_ref_SystemSingle\r\n    PUSH, _arg_fadeHoldDuration__FadeInAndOutWithEventsDurationsAndHold\r\n   
+    COPY\r\n    PUSH, _arg_onFadeOutEvent__FadeInAndOutWithEventsAndDurations\r\n   
+    PUSH, _arg_onFadeEndEvent__FadeInAndOutWithEventsDurationsAndHold\r\n    COPY\r\n   
+    PUSH, _arg_fadeEndDuration__FadeInAndOutWithEventsAndDurations\r\n    PUSH, _arg_fadeEndDuration__FadeInAndOutWithEventsDurationsAndHold\r\n   
+    COPY\r\n    PUSH, _arg_udon__FadeInAndOutWithEventsAndDurations\r\n    PUSH,
+    _arg_udon__FadeInAndOutWithEventsDurationsAndHold\r\n    COPY\r\n    PUSH, __235___jump_return_20_SystemUInt32\r\n   
+    JUMP, 0x000017F8\r\n    PUSH, __0_ra_SystemUInt32\r\n    COPY\r\n    JUMP_INDIRECT,
+    __0_ra_SystemUInt32\r\n\r\n  .export _FadeInAndOutWithEvents\r\n  _FadeInAndOutWithEvents:\r\n   
+    PUSH, __1_ea_SystemUInt32\r\n    PUSH, _arg_onFadeInEvent__FadeInAndOutWithEvents\r\n   
+    PUSH, _arg_onFadeInEvent__FadeInAndOutWithEventsDurationsAndHold\r\n    COPY\r\n   
+    PUSH, fadeInTime\r\n    PUSH, _arg_fadeInDuration__FadeInAndOutWithEventsDurationsAndHold\r\n   
+    COPY\r\n    PUSH, __237_ref_SystemString\r\n    PUSH, _arg_onFadeHoldEvent__FadeInAndOutWithEventsDurationsAndHold\r\n   
+    COPY\r\n    PUSH, __238_ref_SystemSingle\r\n    PUSH, _arg_fadeHoldDuration__FadeInAndOutWithEventsDurationsAndHold\r\n   
+    COPY\r\n    PUSH, _arg_onFadeOutEvent__FadeInAndOutWithEvents\r\n    PUSH, _arg_onFadeEndEvent__FadeInAndOutWithEventsDurationsAndHold\r\n   
+    COPY\r\n    PUSH, fadeOutTime\r\n    PUSH, _arg_fadeEndDuration__FadeInAndOutWithEventsDurationsAndHold\r\n   
+    COPY\r\n    PUSH, _arg_udon__FadeInAndOutWithEvents\r\n    PUSH, _arg_udon__FadeInAndOutWithEventsDurationsAndHold\r\n   
+    COPY\r\n    PUSH, __239___jump_return_21_SystemUInt32\r\n    JUMP, 0x000017F8\r\n   
+    PUSH, __0_ra_SystemUInt32\r\n    COPY\r\n    JUMP_INDIRECT, __0_ra_SystemUInt32\r\n\r\n 
+    .export _IsFading\r\n  _IsFading:\r\n    PUSH, __1_ea_SystemUInt32\r\n    PUSH,
+    _fadeState\r\n    PUSH, __240_ref_SystemInt32\r\n    PUSH, _arg_isFading__IsFading\r\n   
+    EXTERN, \"SystemInt32.__op_Inequality__SystemInt32_SystemInt32__SystemBoolean\"\r\n   
+    PUSH, __0_ra_SystemUInt32\r\n    COPY\r\n    JUMP_INDIRECT, __0_ra_SystemUInt32\r\n\r\n.code_end\r\n"
+  assemblyError: 
+  triggerHash: E289485EEA6C4B643EEB38224A84ACC9
+  shouldBeNetworked: 0
+  warningMessages: []
+  errorMessages: []
+  ctDataInstance:
+    version: 6
+    updateOrder: 0
+    autoSetSyncMode: 1
+    programSyncMode: 2
+    programName: 
+    events:
+    - name: _Unnamed
+      eventId: 5e608490-89fb-46fb-826a-278d538e8dc5
+      eventInstance:
+        actionType:
+          directEvent: Event_Start
+          guid: 
+        inputs: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      actionInstances:
+      - actionType:
+          directEvent: 
+          guid: 1abca34c-bde2-48c4-beda-7705a2330aad
+        inputs:
+        - isVariable: 0
+          name: 
+          variableID: 
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBGwAAAEMAeQBhAG4ALgBQAGwAYQB5AGUAcgBGAGEAZABlAEMAbwBuAHQAcgBvAGwAbABlAHIAVgAyAAU=
+            unityObjects: []
+        - isVariable: 1
+          name: This UdonBehaviour
+          variableID: _this_udonbehaviour
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: Set the fade controller in the DataCache so that customActions
+            can easily get and call events on this.
+      - actionType:
+          directEvent: VRCUdonCommonInterfacesIUdonEventReceiver.__set_enabled__SystemBoolean__SystemVoid
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: null
+          variableID: __null
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        - isVariable: 0
+          name: 
+          variableID: 
+          data:
+            objEncoded: Ai8AAAAAARgAAABTAHkAcwB0AGUAbQAuAEIAbwBvAGwAZQBhAG4ALAAgAG0AcwBjAG8AcgBsAGkAYgAAAAAALAAF
+            unityObjects: []
+        multiInput:
+        - isVariable: 1
+          name: This UdonBehaviour
+          variableID: _this_udonbehaviour
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        expanded: 0
+        comment:
+          comment: Disable self at start
+      - actionType:
+          directEvent: UnityEngineTransform.__GetChild__SystemInt32__UnityEngineTransform
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: This Transform
+          variableID: _this_transform
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        - isVariable: 0
+          name: 
+          variableID: 
+          data:
+            objEncoded: Ai8AAAAAARYAAABTAHkAcwB0AGUAbQAuAEkAbgB0ADMAMgAsACAAbQBzAGMAbwByAGwAaQBiAAAAAAAYAAAAAAU=
+            unityObjects: []
+        - isVariable: 1
+          name: _fadeCubeTransform
+          variableID: befb7485-a71c-444f-9b43-e04dfcf5b9fe
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBEQAAAGYAYQBkAGUAQwB1AGIAZQBUAHIAYQBuAHMAZgBvAHIAbQAF
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: Get child object to place on top of the user's head
+      - actionType:
+          directEvent: UnityEngineTransform.__get_gameObject__UnityEngineGameObject
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: _fadeCubeTransform
+          variableID: befb7485-a71c-444f-9b43-e04dfcf5b9fe
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        - isVariable: 1
+          name: _fadeCube
+          variableID: ecd80ff9-67b6-4747-8ce1-1c9ffb6f6f07
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBAAAAAAU=
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: Type_UnityEngineRenderer
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: 
+          variableID: 05b4d9f3-a12e-4903-8ad5-dd7a616691b9
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBDAAAAHIAZQBuAGQAZQByAGUAcgBUAHkAcABlAAU=
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: UnityEngineGameObject.__GetComponent__SystemType__UnityEngineComponent
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: _fadeCube
+          variableID: ecd80ff9-67b6-4747-8ce1-1c9ffb6f6f07
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        - isVariable: 1
+          name: rendererType
+          variableID: 05b4d9f3-a12e-4903-8ad5-dd7a616691b9
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        - isVariable: 1
+          name: _fadeRenderer
+          variableID: 37fccccf-a919-4e39-acec-fe43acd387ca
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBAAAAAAU=
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: Get fade box's renderer to be able to update the color
+      - actionType:
+          directEvent: UnityEngineMaterialPropertyBlock.__ctor____UnityEngineMaterialPropertyBlock
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: _fadePropertyBlock
+          variableID: 9954828c-72b1-4c61-841f-86a5ec7c84a4
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: Create a new property block
+      - actionType:
+          directEvent: UnityEngineRenderer.__GetPropertyBlock__UnityEngineMaterialPropertyBlock__SystemVoid
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: null
+          variableID: __null
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        - isVariable: 1
+          name: _fadePropertyBlock
+          variableID: 9954828c-72b1-4c61-841f-86a5ec7c84a4
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        multiInput:
+        - isVariable: 1
+          name: _fadeRenderer
+          variableID: 37fccccf-a919-4e39-acec-fe43acd387ca
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        expanded: 0
+        comment:
+          comment: Copy the data from fade renderer into the property block.
+      - actionType:
+          directEvent: 
+          guid: 501e9c14-809a-4749-a2e3-934197af210b
+        inputs:
+        - isVariable: 0
+          name: 
+          variableID: 
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBGwAAAEkAbgBpAHQAaQBhAGwAaQB6AGUAZAAgAEYAYQBkAGUAIABDAG8AbgB0AHIAbwBsAGwAZQByAAU=
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      eventOptions:
+        userGate: 0
+        userGateExtraData: []
+        broadcast: 0
+        delay: 0
+        replay: 0
+      expanded: 0
+    - name: _StartFade
+      eventId: 3d9f6e4d-a715-4f71-8eac-29cd921aa001
+      eventInstance:
+        actionType:
+          directEvent: Event_Custom
+          guid: 
+        inputs: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      actionInstances:
+      - actionType:
+          directEvent: CyanTriggerSpecial_If
+          guid: 
+        inputs: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: If currently fading, ignore fade start request.
+      - actionType:
+          directEvent: CyanTriggerSpecial_Condition
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: 
+          variableID: f1ccb98f-5978-4caa-8c20-0d4549ad727a
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBCgAAAEYAYQBkAGUAQQBjAHQAaQB2AGUABQ==
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: VRCUdonCommonInterfacesIUdonEventReceiver.__get_enabled__SystemBoolean
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: This UdonBehaviour
+          variableID: _this_udonbehaviour
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        - isVariable: 1
+          name: FadeActive
+          variableID: f1ccb98f-5978-4caa-8c20-0d4549ad727a
+          data:
+            objEncoded: Ai8AAAAAARgAAABTAHkAcwB0AGUAbQAuAEIAbwBvAGwAZQBhAG4ALAAgAG0AcwBjAG8AcgBsAGkAYgAAAAAALAAF
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: SystemInt32.__op_Inequality__SystemInt32_SystemInt32__SystemBoolean
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: _fadeState
+          variableID: a0ba6b65-f85d-49d0-96f6-5cc0c00a18e9
+          data:
+            objEncoded: Ai8AAAAAARYAAABTAHkAcwB0AGUAbQAuAEkAbgB0ADMAMgAsACAAbQBzAGMAbwByAGwAaQBiAAAAAAAYAAAAAAU=
+            unityObjects: []
+        - isVariable: 0
+          name: 
+          variableID: 
+          data:
+            objEncoded: Ai8AAAAAARYAAABTAHkAcwB0AGUAbQAuAEkAbgB0ADMAMgAsACAAbQBzAGMAbwByAGwAaQBiAAAAAAAYAAAAAAU=
+            unityObjects: []
+        - isVariable: 1
+          name: FadeActive
+          variableID: f1ccb98f-5978-4caa-8c20-0d4549ad727a
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBAAAAAAU=
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: CyanTriggerSpecial_BlockEnd
+          guid: 
+        inputs: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: CyanTriggerSpecial_ConditionBody
+          guid: 
+        inputs: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: CyanTriggerSpecial_Return
+          guid: 
+        inputs: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: CyanTriggerSpecial_BlockEnd
+          guid: 
+        inputs: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: CyanTriggerSpecial_BlockEnd
+          guid: 
+        inputs: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: UnityEngineTime.__get_timeSinceLevelLoad__SystemSingle
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: _fadeStartTime
+          variableID: 9878e4c4-b26e-40a0-8f48-b7b6d5b9c365
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBAAAAAAU=
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: Get current time as fade start time
+      - actionType:
+          directEvent: SystemInt32__.Set__SystemInt32__SystemInt32
+          guid: 
+        inputs:
+        - isVariable: 0
+          name: 
+          variableID: 
+          data:
+            objEncoded: Ai8AAAAAARYAAABTAHkAcwB0AGUAbQAuAEkAbgB0ADMAMgAsACAAbQBzAGMAbwByAGwAaQBiAAAAAAAYAQAAAAU=
+            unityObjects: []
+        - isVariable: 1
+          name: _fadeState
+          variableID: a0ba6b65-f85d-49d0-96f6-5cc0c00a18e9
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBAAAAAAU=
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: Start fade in
+      - actionType:
+          directEvent: UnityEngineGameObject.__SetActive__SystemBoolean__SystemVoid
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: null
+          variableID: __null
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        - isVariable: 0
+          name: 
+          variableID: 
+          data:
+            objEncoded: Ai8AAAAAARgAAABTAHkAcwB0AGUAbQAuAEIAbwBvAGwAZQBhAG4ALAAgAG0AcwBjAG8AcgBsAGkAYgAAAAAALAEF
+            unityObjects: []
+        multiInput:
+        - isVariable: 1
+          name: _fadeCube
+          variableID: ecd80ff9-67b6-4747-8ce1-1c9ffb6f6f07
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        expanded: 0
+        comment:
+          comment: Enable the player tracker so the fade will follow the player's
+            vision.
+      - actionType:
+          directEvent: UnityEngineMaterialPropertyBlock.__SetFloat__SystemString_SystemSingle__SystemVoid
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: null
+          variableID: __null
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        - isVariable: 0
+          name: 
+          variableID: 
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBBgAAAF8AQQBsAHAAaABhAAU=
+            unityObjects: []
+        - isVariable: 0
+          name: 
+          variableID: 
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAaQBuAGcAbABlACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACAAAAAABQ==
+            unityObjects: []
+        multiInput:
+        - isVariable: 1
+          name: _fadePropertyBlock
+          variableID: 9954828c-72b1-4c61-841f-86a5ec7c84a4
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        expanded: 0
+        comment:
+          comment: Set initial alpha to 0 to ensure always off.
+      - actionType:
+          directEvent: UnityEngineMaterialPropertyBlock.__SetColor__SystemString_UnityEngineColor__SystemVoid
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: null
+          variableID: __null
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        - isVariable: 0
+          name: 
+          variableID: 
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBBgAAAF8AQwBvAGwAbwByAAU=
+            unityObjects: []
+        - isVariable: 1
+          name: fadeColor
+          variableID: 5da373a8-a810-42ef-9aa4-619eb3c34933
+          data:
+            objEncoded: Ai8AAAAAASkAAABVAG4AaQB0AHkARQBuAGcAaQBuAGUALgBDAG8AbABvAHIALAAgAFUAbgBpAHQAeQBFAG4AZwBpAG4AZQAuAEMAbwByAGUATQBvAGQAdQBsAGUAAAAAACAAAAAAIAAAAAAgAAAAACAAAAAABQ==
+            unityObjects: []
+        multiInput:
+        - isVariable: 1
+          name: _fadePropertyBlock
+          variableID: 9954828c-72b1-4c61-841f-86a5ec7c84a4
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        expanded: 0
+        comment:
+          comment: Set the fade color
+      - actionType:
+          directEvent: UnityEngineRenderer.__SetPropertyBlock__UnityEngineMaterialPropertyBlock__SystemVoid
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: null
+          variableID: __null
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        - isVariable: 1
+          name: _fadePropertyBlock
+          variableID: 9954828c-72b1-4c61-841f-86a5ec7c84a4
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        multiInput:
+        - isVariable: 1
+          name: _fadeRenderer
+          variableID: 37fccccf-a919-4e39-acec-fe43acd387ca
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        expanded: 0
+        comment:
+          comment: Set the propertyblock to ensure fade is off.
+      - actionType:
+          directEvent: VRCUdonCommonInterfacesIUdonEventReceiver.__set_enabled__SystemBoolean__SystemVoid
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: null
+          variableID: __null
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        - isVariable: 0
+          name: 
+          variableID: 
+          data:
+            objEncoded: Ai8AAAAAARgAAABTAHkAcwB0AGUAbQAuAEIAbwBvAGwAZQBhAG4ALAAgAG0AcwBjAG8AcgBsAGkAYgAAAAAALAEF
+            unityObjects: []
+        multiInput:
+        - isVariable: 1
+          name: This UdonBehaviour
+          variableID: _this_udonbehaviour
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        expanded: 0
+        comment:
+          comment: Enable self to start fade
+      - actionType:
+          directEvent: CyanTriggerSpecial_If
+          guid: 
+        inputs: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: If the player should be immobilized during fade, set them immobile.
+      - actionType:
+          directEvent: CyanTriggerSpecial_Condition
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: 
+          variableID: ab96a2b6-a93e-4ede-b650-fea78939a59d
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBFgAAAFMAaABvAHUAbABkAEkAbQBtAG8AYgBpAGwAaQB6AGUAUABsAGEAeQBlAHIABQ==
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: SystemBoolean__.Set__SystemBoolean__SystemBoolean
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: immobilizePlayer
+          variableID: 041d35f7-1271-4462-856b-4b2ecb602566
+          data:
+            objEncoded: Ai8AAAAAARgAAABTAHkAcwB0AGUAbQAuAEIAbwBvAGwAZQBhAG4ALAAgAG0AcwBjAG8AcgBsAGkAYgAAAAAALAEF
+            unityObjects: []
+        - isVariable: 1
+          name: ShouldImmobilizePlayer
+          variableID: ab96a2b6-a93e-4ede-b650-fea78939a59d
+          data:
+            objEncoded: Ai8AAAAAARgAAABTAHkAcwB0AGUAbQAuAEIAbwBvAGwAZQBhAG4ALAAgAG0AcwBjAG8AcgBsAGkAYgAAAAAALAAF
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: CyanTriggerSpecial_BlockEnd
+          guid: 
+        inputs: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: CyanTriggerSpecial_ConditionBody
+          guid: 
+        inputs: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: VRCSDKBaseVRCPlayerApi.__Immobilize__SystemBoolean__SystemVoid
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: null
+          variableID: __null
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        - isVariable: 0
+          name: immobilizePlayer
+          variableID: 041d35f7-1271-4462-856b-4b2ecb602566
+          data:
+            objEncoded: Ai8AAAAAARgAAABTAHkAcwB0AGUAbQAuAEIAbwBvAGwAZQBhAG4ALAAgAG0AcwBjAG8AcgBsAGkAYgAAAAAALAEF
+            unityObjects: []
+        multiInput:
+        - isVariable: 1
+          name: Local Player
+          variableID: _this_local_player
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: CyanTriggerSpecial_BlockEnd
+          guid: 
+        inputs: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: CyanTriggerSpecial_BlockEnd
+          guid: 
+        inputs: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: SystemSingle__.Set__SystemSingle__SystemSingle
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: fadeInTime
+          variableID: 5522add4-6114-4ca3-95a2-3fe33082bfde
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAaQBuAGcAbABlACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACAAAAAABQ==
+            unityObjects: []
+        - isVariable: 1
+          name: _fadeInDuration
+          variableID: 961bfee7-76f6-4994-9260-8dc67edcc633
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBCAAAAGYAbABvAGEAdABWAGEAcgAF
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: Set default Fade in duration
+      - actionType:
+          directEvent: SystemSingle__.Set__SystemSingle__SystemSingle
+          guid: 
+        inputs:
+        - isVariable: 0
+          name: fadeInTime
+          variableID: 5522add4-6114-4ca3-95a2-3fe33082bfde
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAaQBuAGcAbABlACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACAAAIC/BQ==
+            unityObjects: []
+        - isVariable: 1
+          name: _fadeHoldDuration
+          variableID: dc613809-d8af-4c4c-b806-a4e98d37bd78
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBCAAAAGYAbABvAGEAdABWAGEAcgAF
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: Set default Fade hold duration
+      eventOptions:
+        userGate: 0
+        userGateExtraData: []
+        broadcast: 0
+        delay: 0
+        replay: 0
+      expanded: 0
+    - name: _EndFade
+      eventId: a8e5b92e-2c7d-429d-a2c3-a5afc2e07639
+      eventInstance:
+        actionType:
+          directEvent: Event_Custom
+          guid: 
+        inputs: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      actionInstances:
+      - actionType:
+          directEvent: CyanTriggerSpecial_If
+          guid: 
+        inputs: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: If not currently fading, ignore fade end request.
+      - actionType:
+          directEvent: CyanTriggerSpecial_Condition
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: 
+          variableID: 53848349-7c24-4f7c-bb6c-20130be4c778
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBDAAAAEYAYQBkAGUASQBuAGEAYwB0AGkAdgBlAAU=
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: SystemInt32.__op_Equality__SystemInt32_SystemInt32__SystemBoolean
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: _fadeState
+          variableID: a0ba6b65-f85d-49d0-96f6-5cc0c00a18e9
+          data:
+            objEncoded: Ai8AAAAAARYAAABTAHkAcwB0AGUAbQAuAEkAbgB0ADMAMgAsACAAbQBzAGMAbwByAGwAaQBiAAAAAAAYAAAAAAU=
+            unityObjects: []
+        - isVariable: 0
+          name: 
+          variableID: 
+          data:
+            objEncoded: Ai8AAAAAARYAAABTAHkAcwB0AGUAbQAuAEkAbgB0ADMAMgAsACAAbQBzAGMAbwByAGwAaQBiAAAAAAAYAAAAAAU=
+            unityObjects: []
+        - isVariable: 1
+          name: FadeInactive
+          variableID: 53848349-7c24-4f7c-bb6c-20130be4c778
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBAAAAAAU=
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: CyanTriggerSpecial_BlockEnd
+          guid: 
+        inputs: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: CyanTriggerSpecial_ConditionBody
+          guid: 
+        inputs: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: CyanTriggerSpecial_Return
+          guid: 
+        inputs: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: CyanTriggerSpecial_BlockEnd
+          guid: 
+        inputs: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: CyanTriggerSpecial_BlockEnd
+          guid: 
+        inputs: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: UnityEngineTime.__get_timeSinceLevelLoad__SystemSingle
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: _fadeStartTime
+          variableID: 9878e4c4-b26e-40a0-8f48-b7b6d5b9c365
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBAAAAAAU=
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: Get current time as fade start time
+      - actionType:
+          directEvent: SystemInt32__.Set__SystemInt32__SystemInt32
+          guid: 
+        inputs:
+        - isVariable: 0
+          name: 
+          variableID: 
+          data:
+            objEncoded: Ai8AAAAAARYAAABTAHkAcwB0AGUAbQAuAEkAbgB0ADMAMgAsACAAbQBzAGMAbwByAGwAaQBiAAAAAAAYAwAAAAU=
+            unityObjects: []
+        - isVariable: 1
+          name: _fadeState
+          variableID: a0ba6b65-f85d-49d0-96f6-5cc0c00a18e9
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBAAAAAAU=
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: Start fade out
+      - actionType:
+          directEvent: SystemSingle__.Set__SystemSingle__SystemSingle
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: fadeOutTime
+          variableID: 96375d19-1fcf-402e-9f17-ebd0ab191526
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAaQBuAGcAbABlACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACAAAAAABQ==
+            unityObjects: []
+        - isVariable: 1
+          name: _fadeOutDuration
+          variableID: e102b539-2d00-46e4-bb7d-54f6cc04dd9a
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBCAAAAGYAbABvAGEAdABWAGEAcgAF
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: Set default Fade out duration
+      eventOptions:
+        userGate: 0
+        userGateExtraData: []
+        broadcast: 0
+        delay: 0
+        replay: 0
+      expanded: 0
+    - name: _Unnamed
+      eventId: b5667af0-6a12-49d6-9159-30d4bc113bcc
+      eventInstance:
+        actionType:
+          directEvent: Event_PostLateUpdate
+          guid: 
+        inputs: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      actionInstances:
+      - actionType:
+          directEvent: CyanTriggerSpecial_ReturnIfDisabled
+          guid: 
+        inputs: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: Do nothing if this object is disabled.
+      - actionType:
+          directEvent: CyanTriggerSpecial_If
+          guid: 
+        inputs: []
+        multiInput: []
+        expanded: 1
+        comment:
+          comment: 
+      - actionType:
+          directEvent: CyanTriggerSpecial_Condition
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: 
+          variableID: aaa51258-150e-4470-a283-9df13efef903
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBCQAAAE4AbwB0AEYAYQBkAGkAbgBnAAU=
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: SystemInt32.__op_Equality__SystemInt32_SystemInt32__SystemBoolean
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: _fadeState
+          variableID: a0ba6b65-f85d-49d0-96f6-5cc0c00a18e9
+          data:
+            objEncoded: Ai8AAAAAARYAAABTAHkAcwB0AGUAbQAuAEkAbgB0ADMAMgAsACAAbQBzAGMAbwByAGwAaQBiAAAAAAAYAAAAAAU=
+            unityObjects: []
+        - isVariable: 0
+          name: 
+          variableID: 
+          data:
+            objEncoded: Ai8AAAAAARYAAABTAHkAcwB0AGUAbQAuAEkAbgB0ADMAMgAsACAAbQBzAGMAbwByAGwAaQBiAAAAAAAYAAAAAAU=
+            unityObjects: []
+        - isVariable: 1
+          name: NotFading
+          variableID: aaa51258-150e-4470-a283-9df13efef903
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBAAAAAAU=
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: CyanTriggerSpecial_BlockEnd
+          guid: 
+        inputs: []
+        multiInput: []
+        expanded: 1
+        comment:
+          comment: 
+      - actionType:
+          directEvent: CyanTriggerSpecial_ConditionBody
+          guid: 
+        inputs: []
+        multiInput: []
+        expanded: 1
+        comment:
+          comment: 
+      - actionType:
+          directEvent: CyanTriggerSpecial_Return
+          guid: 
+        inputs: []
+        multiInput: []
+        expanded: 1
+        comment:
+          comment: 
+      - actionType:
+          directEvent: CyanTriggerSpecial_BlockEnd
+          guid: 
+        inputs: []
+        multiInput: []
+        expanded: 1
+        comment:
+          comment: 
+      - actionType:
+          directEvent: CyanTriggerSpecial_BlockEnd
+          guid: 
+        inputs: []
+        multiInput: []
+        expanded: 1
+        comment:
+          comment: 
+      - actionType:
+          directEvent: UnityEngineTime.__get_timeSinceLevelLoad__SystemSingle
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: 
+          variableID: 0a5e6910-fe7e-442e-b3ab-63ac9552c1e3
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBCwAAAGMAdQByAHIAZQBuAHQAVABpAG0AZQAF
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: Get current time to compare with start time
+      - actionType:
+          directEvent: SystemSingle.__op_Subtraction__SystemSingle_SystemSingle__SystemSingle
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: currentTime
+          variableID: 0a5e6910-fe7e-442e-b3ab-63ac9552c1e3
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAaQBuAGcAbABlACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACAAAAAABQ==
+            unityObjects: []
+        - isVariable: 1
+          name: _fadeStartTime
+          variableID: 9878e4c4-b26e-40a0-8f48-b7b6d5b9c365
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAaQBuAGcAbABlACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACAAAAAABQ==
+            unityObjects: []
+        - isVariable: 1
+          name: 
+          variableID: 1d87301d-3c3a-4c18-a31a-2d76f19f79c7
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBCQAAAHQAaQBtAGUARABlAGwAdABhAAU=
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: Calculate how long has passed since fade start.
+      - actionType:
+          directEvent: SystemSingle__.Set__SystemSingle__SystemSingle
+          guid: 
+        inputs:
+        - isVariable: 0
+          name: 
+          variableID: 
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAaQBuAGcAbABlACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACAAAAAABQ==
+            unityObjects: []
+        - isVariable: 1
+          name: 
+          variableID: 24df0e40-47d4-4661-be83-b133b1e8d5dd
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBCQAAAGYAYQBkAGUAUgBhAG4AZwBlAAU=
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: Create a local variable for setting the percentage of fade that
+            will be used to set the alpha on the overlay cube.
+      - actionType:
+          directEvent: CyanTriggerSpecial_If
+          guid: 
+        inputs: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: If we are currently fading in to the color, calculate percentage
+            based on fade in time.
+      - actionType:
+          directEvent: CyanTriggerSpecial_Condition
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: 
+          variableID: b896cb35-16f6-4a7d-8ee7-91ab2e3b3dbb
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBCAAAAGkAcwBGAGEAZABlAEkAbgAF
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: SystemInt32.__op_Equality__SystemInt32_SystemInt32__SystemBoolean
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: _fadeState
+          variableID: a0ba6b65-f85d-49d0-96f6-5cc0c00a18e9
+          data:
+            objEncoded: Ai8AAAAAARYAAABTAHkAcwB0AGUAbQAuAEkAbgB0ADMAMgAsACAAbQBzAGMAbwByAGwAaQBiAAAAAAAYAAAAAAU=
+            unityObjects: []
+        - isVariable: 0
+          name: 
+          variableID: 
+          data:
+            objEncoded: Ai8AAAAAARYAAABTAHkAcwB0AGUAbQAuAEkAbgB0ADMAMgAsACAAbQBzAGMAbwByAGwAaQBiAAAAAAAYAQAAAAU=
+            unityObjects: []
+        - isVariable: 1
+          name: isFadeIn
+          variableID: b896cb35-16f6-4a7d-8ee7-91ab2e3b3dbb
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBAAAAAAU=
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: CyanTriggerSpecial_BlockEnd
+          guid: 
+        inputs: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: CyanTriggerSpecial_ConditionBody
+          guid: 
+        inputs: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: SystemSingle.__op_Division__SystemSingle_SystemSingle__SystemSingle
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: timeDelta
+          variableID: 1d87301d-3c3a-4c18-a31a-2d76f19f79c7
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAaQBuAGcAbABlACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACAAAAAABQ==
+            unityObjects: []
+        - isVariable: 1
+          name: _fadeInDuration
+          variableID: 961bfee7-76f6-4994-9260-8dc67edcc633
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAaQBuAGcAbABlACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACAAAAAABQ==
+            unityObjects: []
+        - isVariable: 1
+          name: fadeRange
+          variableID: 24df0e40-47d4-4661-be83-b133b1e8d5dd
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAaQBuAGcAbABlACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACAAAAAABQ==
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: CyanTriggerSpecial_If
+          guid: 
+        inputs: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: Check if our range is past 1 to start fade out.
+      - actionType:
+          directEvent: CyanTriggerSpecial_Condition
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: 
+          variableID: cf252a6b-45f4-4ac1-9992-2a7adafb1e57
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBDgAAAEcAcgBlAGEAdABlAHIAVABoAGEAbgBPAG4AZQAF
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: SystemSingle.__op_GreaterThanOrEqual__SystemSingle_SystemSingle__SystemBoolean
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: fadeRange
+          variableID: 24df0e40-47d4-4661-be83-b133b1e8d5dd
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAaQBuAGcAbABlACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACAAAAAABQ==
+            unityObjects: []
+        - isVariable: 0
+          name: 
+          variableID: 
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAaQBuAGcAbABlACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACAAAIA/BQ==
+            unityObjects: []
+        - isVariable: 1
+          name: GreaterThanOne
+          variableID: cf252a6b-45f4-4ac1-9992-2a7adafb1e57
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: CyanTriggerSpecial_BlockEnd
+          guid: 
+        inputs: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: CyanTriggerSpecial_ConditionBody
+          guid: 
+        inputs: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: VRCUdonCommonInterfacesIUdonEventReceiver.__SendCustomEvent__SystemString__SystemVoid
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: null
+          variableID: __null
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        - isVariable: 0
+          name: 
+          variableID: 
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBDwAAAF8ARgBhAGQAZQBJAG4ARgBpAG4AaQBzAGgAZQBkAAU=
+            unityObjects: []
+        multiInput:
+        - isVariable: 1
+          name: This UdonBehaviour
+          variableID: _this_udonbehaviour
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: CyanTriggerSpecial_BlockEnd
+          guid: 
+        inputs: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: CyanTriggerSpecial_BlockEnd
+          guid: 
+        inputs: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: CyanTriggerSpecial_BlockEnd
+          guid: 
+        inputs: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: CyanTriggerSpecial_BlockEnd
+          guid: 
+        inputs: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: CyanTriggerSpecial_ElseIf
+          guid: 
+        inputs: []
+        multiInput: []
+        expanded: 1
+        comment:
+          comment: If we are curently holding the fade, set range to 1 to keep full
+            fade color
+      - actionType:
+          directEvent: CyanTriggerSpecial_Condition
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: 
+          variableID: 8848e9ff-9068-4b9d-a7c3-ab530c0a2501
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBCgAAAGkAcwBGAGEAZABlAEgAbwBsAGQABQ==
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: SystemInt32.__op_Equality__SystemInt32_SystemInt32__SystemBoolean
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: _fadeState
+          variableID: a0ba6b65-f85d-49d0-96f6-5cc0c00a18e9
+          data:
+            objEncoded: Ai8AAAAAARYAAABTAHkAcwB0AGUAbQAuAEkAbgB0ADMAMgAsACAAbQBzAGMAbwByAGwAaQBiAAAAAAAYAAAAAAU=
+            unityObjects: []
+        - isVariable: 0
+          name: 
+          variableID: 
+          data:
+            objEncoded: Ai8AAAAAARYAAABTAHkAcwB0AGUAbQAuAEkAbgB0ADMAMgAsACAAbQBzAGMAbwByAGwAaQBiAAAAAAAYAgAAAAU=
+            unityObjects: []
+        - isVariable: 1
+          name: isFadeHold
+          variableID: 8848e9ff-9068-4b9d-a7c3-ab530c0a2501
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBAAAAAAU=
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: CyanTriggerSpecial_BlockEnd
+          guid: 
+        inputs: []
+        multiInput: []
+        expanded: 1
+        comment:
+          comment: 
+      - actionType:
+          directEvent: CyanTriggerSpecial_ConditionBody
+          guid: 
+        inputs: []
+        multiInput: []
+        expanded: 1
+        comment:
+          comment: 
+      - actionType:
+          directEvent: SystemSingle__.Set__SystemSingle__SystemSingle
+          guid: 
+        inputs:
+        - isVariable: 0
+          name: 
+          variableID: 
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAaQBuAGcAbABlACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACAAAIA/BQ==
+            unityObjects: []
+        - isVariable: 1
+          name: fadeRange
+          variableID: 24df0e40-47d4-4661-be83-b133b1e8d5dd
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBAAAAAAU=
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: CyanTriggerSpecial_BlockEnd
+          guid: 
+        inputs: []
+        multiInput: []
+        expanded: 1
+        comment:
+          comment: 
+      - actionType:
+          directEvent: CyanTriggerSpecial_BlockEnd
+          guid: 
+        inputs: []
+        multiInput: []
+        expanded: 1
+        comment:
+          comment: 
+      - actionType:
+          directEvent: CyanTriggerSpecial_Else
+          guid: 
+        inputs: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: If we are currently fading out of the color, calculate percentage
+            based on fade out time.
+      - actionType:
+          directEvent: SystemSingle.__op_Division__SystemSingle_SystemSingle__SystemSingle
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: timeDelta
+          variableID: 1d87301d-3c3a-4c18-a31a-2d76f19f79c7
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAaQBuAGcAbABlACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACAAAAAABQ==
+            unityObjects: []
+        - isVariable: 1
+          name: _fadeOutDuration
+          variableID: e102b539-2d00-46e4-bb7d-54f6cc04dd9a
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAaQBuAGcAbABlACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACAAAAAABQ==
+            unityObjects: []
+        - isVariable: 1
+          name: fadeRange
+          variableID: 24df0e40-47d4-4661-be83-b133b1e8d5dd
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAaQBuAGcAbABlACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACAAAAAABQ==
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: SystemSingle.__op_Subtraction__SystemSingle_SystemSingle__SystemSingle
+          guid: 
+        inputs:
+        - isVariable: 0
+          name: 
+          variableID: 
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAaQBuAGcAbABlACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACAAAIA/BQ==
+            unityObjects: []
+        - isVariable: 1
+          name: fadeRange
+          variableID: 24df0e40-47d4-4661-be83-b133b1e8d5dd
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAaQBuAGcAbABlACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACAAAAAABQ==
+            unityObjects: []
+        - isVariable: 1
+          name: fadeRange
+          variableID: 24df0e40-47d4-4661-be83-b133b1e8d5dd
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAaQBuAGcAbABlACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACAAAAAABQ==
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: CyanTriggerSpecial_If
+          guid: 
+        inputs: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: Check if our range is less than 0 to stop fading completely.
+      - actionType:
+          directEvent: CyanTriggerSpecial_Condition
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: 
+          variableID: a1a99d57-427f-4c80-815d-500f07be8dfb
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBDAAAAEwAZQBzAHMAVABoAGEAbgBaAGUAcgBvAAU=
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: SystemSingle.__op_LessThan__SystemSingle_SystemSingle__SystemBoolean
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: fadeRange
+          variableID: 24df0e40-47d4-4661-be83-b133b1e8d5dd
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAaQBuAGcAbABlACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACAAAAAABQ==
+            unityObjects: []
+        - isVariable: 0
+          name: 
+          variableID: 
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAaQBuAGcAbABlACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACAAAAAABQ==
+            unityObjects: []
+        - isVariable: 1
+          name: LessThanZero
+          variableID: a1a99d57-427f-4c80-815d-500f07be8dfb
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: CyanTriggerSpecial_BlockEnd
+          guid: 
+        inputs: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: CyanTriggerSpecial_ConditionBody
+          guid: 
+        inputs: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: VRCUdonCommonInterfacesIUdonEventReceiver.__SendCustomEvent__SystemString__SystemVoid
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: null
+          variableID: __null
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        - isVariable: 0
+          name: 
+          variableID: 
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBEAAAAF8ARgBhAGQAZQBPAHUAdABGAGkAbgBpAHMAaABlAGQABQ==
+            unityObjects: []
+        multiInput:
+        - isVariable: 1
+          name: This UdonBehaviour
+          variableID: _this_udonbehaviour
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: CyanTriggerSpecial_BlockEnd
+          guid: 
+        inputs: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: CyanTriggerSpecial_BlockEnd
+          guid: 
+        inputs: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: CyanTriggerSpecial_BlockEnd
+          guid: 
+        inputs: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: UnityEngineMathf.__Clamp01__SystemSingle__SystemSingle
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: fadeRange
+          variableID: 24df0e40-47d4-4661-be83-b133b1e8d5dd
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAaQBuAGcAbABlACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACAAAAAABQ==
+            unityObjects: []
+        - isVariable: 1
+          name: fadeRange
+          variableID: 24df0e40-47d4-4661-be83-b133b1e8d5dd
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAaQBuAGcAbABlACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACAAAAAABQ==
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: Ensure fade is between 0 and 1
+      - actionType:
+          directEvent: UnityEngineMaterialPropertyBlock.__SetFloat__SystemString_SystemSingle__SystemVoid
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: null
+          variableID: __null
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        - isVariable: 0
+          name: 
+          variableID: 
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBBgAAAF8AQQBsAHAAaABhAAU=
+            unityObjects: []
+        - isVariable: 1
+          name: fadeRange
+          variableID: 24df0e40-47d4-4661-be83-b133b1e8d5dd
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAaQBuAGcAbABlACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACAAAAAABQ==
+            unityObjects: []
+        multiInput:
+        - isVariable: 1
+          name: _fadePropertyBlock
+          variableID: 9954828c-72b1-4c61-841f-86a5ec7c84a4
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: UnityEngineMaterialPropertyBlock.__SetColor__SystemString_UnityEngineColor__SystemVoid
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: null
+          variableID: __null
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        - isVariable: 0
+          name: 
+          variableID: 
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBBgAAAF8AQwBvAGwAbwByAAU=
+            unityObjects: []
+        - isVariable: 1
+          name: fadeColor
+          variableID: 5da373a8-a810-42ef-9aa4-619eb3c34933
+          data:
+            objEncoded: Ai8AAAAAASkAAABVAG4AaQB0AHkARQBuAGcAaQBuAGUALgBDAG8AbABvAHIALAAgAFUAbgBpAHQAeQBFAG4AZwBpAG4AZQAuAEMAbwByAGUATQBvAGQAdQBsAGUAAAAAACAAAAAAIAAAAAAgAAAAACAAAAAABQ==
+            unityObjects: []
+        multiInput:
+        - isVariable: 1
+          name: _fadePropertyBlock
+          variableID: 9954828c-72b1-4c61-841f-86a5ec7c84a4
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        expanded: 0
+        comment:
+          comment: Set the fade color
+      - actionType:
+          directEvent: UnityEngineRenderer.__SetPropertyBlock__UnityEngineMaterialPropertyBlock__SystemVoid
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: null
+          variableID: __null
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        - isVariable: 1
+          name: _fadePropertyBlock
+          variableID: 9954828c-72b1-4c61-841f-86a5ec7c84a4
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        multiInput:
+        - isVariable: 1
+          name: _fadeRenderer
+          variableID: 37fccccf-a919-4e39-acec-fe43acd387ca
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        expanded: 0
+        comment:
+          comment: Update fade box rendering
+      - actionType:
+          directEvent: 
+          guid: c14de8a3-cbd8-4ceb-9710-f70be4a8259c
+        inputs:
+        - isVariable: 1
+          name: Local Player
+          variableID: _this_local_player
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        - isVariable: 0
+          name: 
+          variableID: 
+          data:
+            objEncoded: Ai8AAAAAATUAAABWAFIAQwAuAFMARABLAEIAYQBzAGUALgBWAFIAQwBQAGwAYQB5AGUAcgBBAHAAaQArAFQAcgBhAGMAawBpAG4AZwBEAGEAdABhAFQAeQBwAGUALAAgAFYAUgBDAFMARABLAEIAYQBzAGUAAAAAAB4AAAAAAAAAAAU=
+            unityObjects: []
+        - isVariable: 1
+          name: 
+          variableID: d9d8b6b9-a486-44df-a5c7-6839fa93ba1e
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBDAAAAGgAZQBhAGQAUABvAHMAaQB0AGkAbwBuAAU=
+            unityObjects: []
+        - isVariable: 1
+          name: 
+          variableID: 9c8b008b-1f50-48f2-ae36-aa299858531f
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBDAAAAGgAZQBhAGQAUgBvAHQAYQB0AGkAbwBuAAU=
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: Get the player's head location
+      - actionType:
+          directEvent: UnityEngineTransform.__SetPositionAndRotation__UnityEngineVector3_UnityEngineQuaternion__SystemVoid
+          guid: 
+        inputs:
+        - isVariable: 0
+          name: 
+          variableID: 
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        - isVariable: 1
+          name: headPosition
+          variableID: d9d8b6b9-a486-44df-a5c7-6839fa93ba1e
+          data:
+            objEncoded: Ai8AAAAAASsAAABVAG4AaQB0AHkARQBuAGcAaQBuAGUALgBWAGUAYwB0AG8AcgAzACwAIABVAG4AaQB0AHkARQBuAGcAaQBuAGUALgBDAG8AcgBlAE0AbwBkAHUAbABlAAAAAAAgAAAAACAAAAAAIAAAAAAF
+            unityObjects: []
+        - isVariable: 1
+          name: headRotation
+          variableID: 9c8b008b-1f50-48f2-ae36-aa299858531f
+          data:
+            objEncoded: Ai8AAAAAAS4AAABVAG4AaQB0AHkARQBuAGcAaQBuAGUALgBRAHUAYQB0AGUAcgBuAGkAbwBuACwAIABVAG4AaQB0AHkARQBuAGcAaQBuAGUALgBDAG8AcgBlAE0AbwBkAHUAbABlAAAAAAAgAAAAACAAAAAAIAAAAAAgAAAAAAU=
+            unityObjects: []
+        multiInput:
+        - isVariable: 1
+          name: _fadeCubeTransform
+          variableID: befb7485-a71c-444f-9b43-e04dfcf5b9fe
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        expanded: 0
+        comment:
+          comment: Move the fade box to the player's head
+      eventOptions:
+        userGate: 0
+        userGateExtraData: []
+        broadcast: 0
+        delay: 0
+        replay: 0
+      expanded: 0
+    - name: _FadeInFinished
+      eventId: 9b108a9b-51f0-4171-80b6-f955a32bff4e
+      eventInstance:
+        actionType:
+          directEvent: Event_Custom
+          guid: 
+        inputs: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      actionInstances:
+      - actionType:
+          directEvent: SystemInt32__.Set__SystemInt32__SystemInt32
+          guid: 
+        inputs:
+        - isVariable: 0
+          name: 
+          variableID: 
+          data:
+            objEncoded: Ai8AAAAAARYAAABTAHkAcwB0AGUAbQAuAEkAbgB0ADMAMgAsACAAbQBzAGMAbwByAGwAaQBiAAAAAAAYAgAAAAU=
+            unityObjects: []
+        - isVariable: 1
+          name: _fadeState
+          variableID: a0ba6b65-f85d-49d0-96f6-5cc0c00a18e9
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBAAAAAAU=
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: Set fade status to fade hold
+      - actionType:
+          directEvent: VRCUdonCommonInterfacesIUdonEventReceiver.__SendCustomEvent__SystemString__SystemVoid
+          guid: 
+        inputs:
+        - isVariable: 0
+          name: 
+          variableID: 
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        - isVariable: 0
+          name: 
+          variableID: 
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBCgAAAF8AQwBhAGwAbABFAHYAZQBuAHQABQ==
+            unityObjects: []
+        - isVariable: 0
+          name: 
+          variableID: 
+          data:
+            objEncoded: Ai8AAAAAATEAAABDAHkAYQBuAC4AQwBUAC4AQwB5AGEAbgBUAHIAaQBnAGcAZQByAEUAdgBlAG4AdABBAHIAZwBEAGEAdABhACwAIABDAHkAYQBuAC4AQwB5AGEAbgBUAHIAaQBnAGcAZQByAAAAAAAnAQkAAABlAHYAZQBuAHQATgBhAG0AZQABCgAAAF8AQwBhAGwAbABFAHYAZQBuAHQAAQENAAAAdgBhAHIAaQBhAGIAbABlAE4AYQBtAGUAcwAvAQAAAAEZAAAAUwB5AHMAdABlAG0ALgBTAHQAcgBpAG4AZwBbAF0ALAAgAG0AcwBjAG8AcgBsAGkAYgABAAAABgEAAAAAAAAAKAEJAAAAZQB2AGUAbgB0AE4AYQBtAGUABwUBAREAAAB2AGEAcgBpAGEAYgBsAGUAVQBkAG8AbgBOAGEAbQBlAHMAMAEAAAACAAAABgEAAAAAAAAAKAEZAAAAXwBhAHIAZwBfAGUAdgBlAG4AdABOAGEAbQBlAF8AXwBDAGEAbABsAEUAdgBlAG4AdAAHBQEBDAAAAHYAYQByAGkAYQBiAGwAZQBPAHUAdABzAC8CAAAAARoAAABTAHkAcwB0AGUAbQAuAEIAbwBvAGwAZQBhAG4AWwBdACwAIABtAHMAYwBvAHIAbABpAGIAAwAAAAgBAAAAAQAAAAAFAQENAAAAdgBhAHIAaQBhAGIAbABlAFQAeQBwAGUAcwAvAwAAAAEXAAAAUwB5AHMAdABlAG0ALgBUAHkAcABlAFsAXQAsACAAbQBzAGMAbwByAGwAaQBiAAQAAAAGAQAAAAAAAAACLwQAAAABHAAAAFMAeQBzAHQAZQBtAC4AUgB1AG4AdABpAG0AZQBUAHkAcABlACwAIABtAHMAYwBvAHIAbABpAGIABQAAACgBFwAAAFMAeQBzAHQAZQBtAC4AUwB0AHIAaQBuAGcALAAgAG0AcwBjAG8AcgBsAGkAYgAFBwUF
+            unityObjects: []
+        - isVariable: 1
+          name: _onFadeInFinishedEvent
+          variableID: 0746741a-f10a-49c0-a398-8ae23a737afe
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        multiInput:
+        - isVariable: 1
+          name: This UdonBehaviour
+          variableID: _this_udonbehaviour
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        expanded: 0
+        comment:
+          comment: Notify that fade in has finished
+      - actionType:
+          directEvent: CyanTriggerSpecial_If
+          guid: 
+        inputs: []
+        multiInput: []
+        expanded: 1
+        comment:
+          comment: 
+      - actionType:
+          directEvent: CyanTriggerSpecial_Condition
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: 
+          variableID: cb9e3b20-4eec-4ce7-98a1-028ffb1f52cf
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBDgAAAFMAaABvAHUAbABkAEgAbwBsAGQARgBhAGQAZQAF
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: SystemSingle.__op_GreaterThanOrEqual__SystemSingle_SystemSingle__SystemBoolean
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: _fadeHoldDuration
+          variableID: dc613809-d8af-4c4c-b806-a4e98d37bd78
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAaQBuAGcAbABlACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACAAAAAABQ==
+            unityObjects: []
+        - isVariable: 0
+          name: 
+          variableID: 
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAaQBuAGcAbABlACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACAAAAAABQ==
+            unityObjects: []
+        - isVariable: 1
+          name: ShouldHoldFade
+          variableID: cb9e3b20-4eec-4ce7-98a1-028ffb1f52cf
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBAAAAAAU=
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: CyanTriggerSpecial_BlockEnd
+          guid: 
+        inputs: []
+        multiInput: []
+        expanded: 1
+        comment:
+          comment: 
+      - actionType:
+          directEvent: CyanTriggerSpecial_ConditionBody
+          guid: 
+        inputs: []
+        multiInput: []
+        expanded: 1
+        comment:
+          comment: 
+      - actionType:
+          directEvent: VRCUdonCommonInterfacesIUdonEventReceiver.__SendCustomEventDelayedSeconds__SystemString_SystemSingle_VRCUdonCommonEnumsEventTiming__SystemVoid
+          guid: 
+        inputs:
+        - isVariable: 0
+          name: 
+          variableID: 
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        - isVariable: 0
+          name: 
+          variableID: 
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBEQAAAF8ARgBhAGQAZQBIAG8AbABkAEYAaQBuAGkAcwBoAGUAZAAF
+            unityObjects: []
+        - isVariable: 1
+          name: _fadeHoldDuration
+          variableID: dc613809-d8af-4c4c-b806-a4e98d37bd78
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAaQBuAGcAbABlACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACAAAAAABQ==
+            unityObjects: []
+        - isVariable: 0
+          name: 
+          variableID: 
+          data:
+            objEncoded: Ai8AAAAAATIAAABWAFIAQwAuAFUAZABvAG4ALgBDAG8AbQBtAG8AbgAuAEUAbgB1AG0AcwAuAEUAdgBlAG4AdABUAGkAbQBpAG4AZwAsACAAVgBSAEMALgBVAGQAbwBuAC4AQwBvAG0AbQBvAG4AAAAAAB4AAAAAAAAAAAU=
+            unityObjects: []
+        multiInput:
+        - isVariable: 1
+          name: This UdonBehaviour
+          variableID: _this_udonbehaviour
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: CyanTriggerSpecial_BlockEnd
+          guid: 
+        inputs: []
+        multiInput: []
+        expanded: 1
+        comment:
+          comment: 
+      - actionType:
+          directEvent: CyanTriggerSpecial_BlockEnd
+          guid: 
+        inputs: []
+        multiInput: []
+        expanded: 1
+        comment:
+          comment: 
+      eventOptions:
+        userGate: 0
+        userGateExtraData: []
+        broadcast: 0
+        delay: 0
+        replay: 0
+      expanded: 0
+    - name: _FadeHoldFinished
+      eventId: 4e33954f-9be2-40bb-8cf4-cfc24e1c1bf0
+      eventInstance:
+        actionType:
+          directEvent: Event_Custom
+          guid: 
+        inputs: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      actionInstances:
+      - actionType:
+          directEvent: UnityEngineTime.__get_timeSinceLevelLoad__SystemSingle
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: _fadeStartTime
+          variableID: 9878e4c4-b26e-40a0-8f48-b7b6d5b9c365
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBAAAAAAU=
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: SystemInt32__.Set__SystemInt32__SystemInt32
+          guid: 
+        inputs:
+        - isVariable: 0
+          name: 
+          variableID: 
+          data:
+            objEncoded: Ai8AAAAAARYAAABTAHkAcwB0AGUAbQAuAEkAbgB0ADMAMgAsACAAbQBzAGMAbwByAGwAaQBiAAAAAAAYAwAAAAU=
+            unityObjects: []
+        - isVariable: 1
+          name: _fadeState
+          variableID: a0ba6b65-f85d-49d0-96f6-5cc0c00a18e9
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBAAAAAAU=
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: Set fade status to end fade
+      - actionType:
+          directEvent: VRCUdonCommonInterfacesIUdonEventReceiver.__SendCustomEvent__SystemString__SystemVoid
+          guid: 
+        inputs:
+        - isVariable: 0
+          name: 
+          variableID: 
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        - isVariable: 0
+          name: 
+          variableID: 
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBCgAAAF8AQwBhAGwAbABFAHYAZQBuAHQABQ==
+            unityObjects: []
+        - isVariable: 0
+          name: 
+          variableID: 
+          data:
+            objEncoded: Ai8AAAAAATEAAABDAHkAYQBuAC4AQwBUAC4AQwB5AGEAbgBUAHIAaQBnAGcAZQByAEUAdgBlAG4AdABBAHIAZwBEAGEAdABhACwAIABDAHkAYQBuAC4AQwB5AGEAbgBUAHIAaQBnAGcAZQByAAAAAAAnAQkAAABlAHYAZQBuAHQATgBhAG0AZQABCgAAAF8AQwBhAGwAbABFAHYAZQBuAHQAAQENAAAAdgBhAHIAaQBhAGIAbABlAE4AYQBtAGUAcwAvAQAAAAEZAAAAUwB5AHMAdABlAG0ALgBTAHQAcgBpAG4AZwBbAF0ALAAgAG0AcwBjAG8AcgBsAGkAYgABAAAABgEAAAAAAAAAKAEJAAAAZQB2AGUAbgB0AE4AYQBtAGUABwUBAREAAAB2AGEAcgBpAGEAYgBsAGUAVQBkAG8AbgBOAGEAbQBlAHMAMAEAAAACAAAABgEAAAAAAAAAKAEZAAAAXwBhAHIAZwBfAGUAdgBlAG4AdABOAGEAbQBlAF8AXwBDAGEAbABsAEUAdgBlAG4AdAAHBQEBDAAAAHYAYQByAGkAYQBiAGwAZQBPAHUAdABzAC8CAAAAARoAAABTAHkAcwB0AGUAbQAuAEIAbwBvAGwAZQBhAG4AWwBdACwAIABtAHMAYwBvAHIAbABpAGIAAwAAAAgBAAAAAQAAAAAFAQENAAAAdgBhAHIAaQBhAGIAbABlAFQAeQBwAGUAcwAvAwAAAAEXAAAAUwB5AHMAdABlAG0ALgBUAHkAcABlAFsAXQAsACAAbQBzAGMAbwByAGwAaQBiAAQAAAAGAQAAAAAAAAACLwQAAAABHAAAAFMAeQBzAHQAZQBtAC4AUgB1AG4AdABpAG0AZQBUAHkAcABlACwAIABtAHMAYwBvAHIAbABpAGIABQAAACgBFwAAAFMAeQBzAHQAZQBtAC4AUwB0AHIAaQBuAGcALAAgAG0AcwBjAG8AcgBsAGkAYgAFBwUF
+            unityObjects: []
+        - isVariable: 1
+          name: _onFadeHoldFinishedEvent
+          variableID: 8a7dc3f7-7859-4ba3-a0cd-bf5ac802f38e
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        multiInput:
+        - isVariable: 1
+          name: This UdonBehaviour
+          variableID: _this_udonbehaviour
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        expanded: 0
+        comment:
+          comment: Notify that fade out has finished
+      eventOptions:
+        userGate: 0
+        userGateExtraData: []
+        broadcast: 0
+        delay: 0
+        replay: 0
+      expanded: 0
+    - name: _FadeOutFinished
+      eventId: 48cf0752-c3b2-41a1-b003-a0e057a56f84
+      eventInstance:
+        actionType:
+          directEvent: Event_Custom
+          guid: 
+        inputs: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      actionInstances:
+      - actionType:
+          directEvent: SystemInt32__.Set__SystemInt32__SystemInt32
+          guid: 
+        inputs:
+        - isVariable: 0
+          name: 
+          variableID: 
+          data:
+            objEncoded: Ai8AAAAAARYAAABTAHkAcwB0AGUAbQAuAEkAbgB0ADMAMgAsACAAbQBzAGMAbwByAGwAaQBiAAAAAAAYAAAAAAU=
+            unityObjects: []
+        - isVariable: 1
+          name: _fadeState
+          variableID: a0ba6b65-f85d-49d0-96f6-5cc0c00a18e9
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBAAAAAAU=
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: Set fade status to not fading
+      - actionType:
+          directEvent: VRCUdonCommonInterfacesIUdonEventReceiver.__set_enabled__SystemBoolean__SystemVoid
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: null
+          variableID: __null
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        - isVariable: 0
+          name: 
+          variableID: 
+          data:
+            objEncoded: Ai8AAAAAARgAAABTAHkAcwB0AGUAbQAuAEIAbwBvAGwAZQBhAG4ALAAgAG0AcwBjAG8AcgBsAGkAYgAAAAAALAAF
+            unityObjects: []
+        multiInput:
+        - isVariable: 1
+          name: This UdonBehaviour
+          variableID: _this_udonbehaviour
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        expanded: 0
+        comment:
+          comment: Disable self at start
+      - actionType:
+          directEvent: UnityEngineGameObject.__SetActive__SystemBoolean__SystemVoid
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: null
+          variableID: __null
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        - isVariable: 0
+          name: 
+          variableID: 
+          data:
+            objEncoded: Ai8AAAAAARgAAABTAHkAcwB0AGUAbQAuAEIAbwBvAGwAZQBhAG4ALAAgAG0AcwBjAG8AcgBsAGkAYgAAAAAALAAF
+            unityObjects: []
+        multiInput:
+        - isVariable: 1
+          name: _fadeCube
+          variableID: ecd80ff9-67b6-4747-8ce1-1c9ffb6f6f07
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: CyanTriggerSpecial_If
+          guid: 
+        inputs: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: If the player was immobilized, set them back to mobile again.
+      - actionType:
+          directEvent: CyanTriggerSpecial_Condition
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: 
+          variableID: 2e398f2a-95d2-4245-af63-77186f0ebb43
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBFgAAAFMAaABvAHUAbABkAEkAbQBtAG8AYgBpAGwAaQB6AGUAUABsAGEAeQBlAHIABQ==
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: SystemBoolean__.Set__SystemBoolean__SystemBoolean
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: immobilizePlayer
+          variableID: 041d35f7-1271-4462-856b-4b2ecb602566
+          data:
+            objEncoded: Ai8AAAAAARgAAABTAHkAcwB0AGUAbQAuAEIAbwBvAGwAZQBhAG4ALAAgAG0AcwBjAG8AcgBsAGkAYgAAAAAALAEF
+            unityObjects: []
+        - isVariable: 1
+          name: ShouldImmobilizePlayer
+          variableID: 2e398f2a-95d2-4245-af63-77186f0ebb43
+          data:
+            objEncoded: Ai8AAAAAARgAAABTAHkAcwB0AGUAbQAuAEIAbwBvAGwAZQBhAG4ALAAgAG0AcwBjAG8AcgBsAGkAYgAAAAAALAAF
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: CyanTriggerSpecial_BlockEnd
+          guid: 
+        inputs: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: CyanTriggerSpecial_ConditionBody
+          guid: 
+        inputs: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: VRCSDKBaseVRCPlayerApi.__Immobilize__SystemBoolean__SystemVoid
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: null
+          variableID: __null
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        - isVariable: 0
+          name: immobilizePlayer
+          variableID: 041d35f7-1271-4462-856b-4b2ecb602566
+          data:
+            objEncoded: Ai8AAAAAARgAAABTAHkAcwB0AGUAbQAuAEIAbwBvAGwAZQBhAG4ALAAgAG0AcwBjAG8AcgBsAGkAYgAAAAAALAAF
+            unityObjects: []
+        multiInput:
+        - isVariable: 1
+          name: Local Player
+          variableID: _this_local_player
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: CyanTriggerSpecial_BlockEnd
+          guid: 
+        inputs: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: CyanTriggerSpecial_BlockEnd
+          guid: 
+        inputs: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: VRCUdonCommonInterfacesIUdonEventReceiver.__SendCustomEvent__SystemString__SystemVoid
+          guid: 
+        inputs:
+        - isVariable: 0
+          name: 
+          variableID: 
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        - isVariable: 0
+          name: 
+          variableID: 
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBCgAAAF8AQwBhAGwAbABFAHYAZQBuAHQABQ==
+            unityObjects: []
+        - isVariable: 0
+          name: 
+          variableID: 
+          data:
+            objEncoded: Ai8AAAAAATEAAABDAHkAYQBuAC4AQwBUAC4AQwB5AGEAbgBUAHIAaQBnAGcAZQByAEUAdgBlAG4AdABBAHIAZwBEAGEAdABhACwAIABDAHkAYQBuAC4AQwB5AGEAbgBUAHIAaQBnAGcAZQByAAAAAAAnAQkAAABlAHYAZQBuAHQATgBhAG0AZQABCgAAAF8AQwBhAGwAbABFAHYAZQBuAHQAAQENAAAAdgBhAHIAaQBhAGIAbABlAE4AYQBtAGUAcwAvAQAAAAEZAAAAUwB5AHMAdABlAG0ALgBTAHQAcgBpAG4AZwBbAF0ALAAgAG0AcwBjAG8AcgBsAGkAYgABAAAABgEAAAAAAAAAKAEJAAAAZQB2AGUAbgB0AE4AYQBtAGUABwUBAREAAAB2AGEAcgBpAGEAYgBsAGUAVQBkAG8AbgBOAGEAbQBlAHMAMAEAAAACAAAABgEAAAAAAAAAKAEZAAAAXwBhAHIAZwBfAGUAdgBlAG4AdABOAGEAbQBlAF8AXwBDAGEAbABsAEUAdgBlAG4AdAAHBQEBDAAAAHYAYQByAGkAYQBiAGwAZQBPAHUAdABzAC8CAAAAARoAAABTAHkAcwB0AGUAbQAuAEIAbwBvAGwAZQBhAG4AWwBdACwAIABtAHMAYwBvAHIAbABpAGIAAwAAAAgBAAAAAQAAAAAFAQENAAAAdgBhAHIAaQBhAGIAbABlAFQAeQBwAGUAcwAvAwAAAAEXAAAAUwB5AHMAdABlAG0ALgBUAHkAcABlAFsAXQAsACAAbQBzAGMAbwByAGwAaQBiAAQAAAAGAQAAAAAAAAACLwQAAAABHAAAAFMAeQBzAHQAZQBtAC4AUgB1AG4AdABpAG0AZQBUAHkAcABlACwAIABtAHMAYwBvAHIAbABpAGIABQAAACgBFwAAAFMAeQBzAHQAZQBtAC4AUwB0AHIAaQBuAGcALAAgAG0AcwBjAG8AcgBsAGkAYgAFBwUF
+            unityObjects: []
+        - isVariable: 1
+          name: _onFadeOutFinishedEvent
+          variableID: fbbbbece-73e1-4687-a6d7-f13680e16111
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        multiInput:
+        - isVariable: 1
+          name: This UdonBehaviour
+          variableID: _this_udonbehaviour
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        expanded: 0
+        comment:
+          comment: Notify that fade out has finished
+      - actionType:
+          directEvent: VRCUdonCommonInterfacesIUdonEventReceiver__.Set__VRCUdonCommonInterfacesIUdonEventReceiver__VRCUdonCommonInterfacesIUdonEventReceiver
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: null
+          variableID: __null
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        - isVariable: 1
+          name: _callerUdon
+          variableID: b8eb2eae-b24e-46ef-8b7a-fac1d4cf7251
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: Set the callerUdon to null to prevent trying to call it again.
+      eventOptions:
+        userGate: 0
+        userGateExtraData: []
+        broadcast: 0
+        delay: 0
+        replay: 0
+      expanded: 0
+    - name: _CallEvent
+      eventId: 9ce03c3e-1038-45e1-8e85-a5b041de55af
+      eventInstance:
+        actionType:
+          directEvent: Event_Custom
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: 
+          variableID: 
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        multiInput:
+        - isVariable: 1
+          name: eventName
+          variableID: 800b69a8-c70b-4096-8ce4-a913604bb230
+          data:
+            objEncoded: Ai8AAAAAARwAAABTAHkAcwB0AGUAbQAuAFIAdQBuAHQAaQBtAGUAVAB5AHAAZQAsACAAbQBzAGMAbwByAGwAaQBiAAAAAAAoARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIABQ==
+            unityObjects: []
+        expanded: 1
+        comment:
+          comment: 
+      actionInstances:
+      - actionType:
+          directEvent: CyanTriggerSpecial_If
+          guid: 
+        inputs: []
+        multiInput: []
+        expanded: 1
+        comment:
+          comment: 
+      - actionType:
+          directEvent: CyanTriggerSpecial_Condition
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: 
+          variableID: a6b3a9ba-33f8-466d-bde6-d7968c2e5b82
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBBwAAAGkAcwBWAGEAbABpAGQABQ==
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: VRCSDKBaseUtilities.__IsValid__SystemObject__SystemBoolean
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: _callerUdon
+          variableID: b8eb2eae-b24e-46ef-8b7a-fac1d4cf7251
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        - isVariable: 1
+          name: isValid
+          variableID: a6b3a9ba-33f8-466d-bde6-d7968c2e5b82
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBAAAAAAU=
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: CyanTriggerSpecial_ConditionFailIfFalse
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: isValid
+          variableID: a6b3a9ba-33f8-466d-bde6-d7968c2e5b82
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: SystemString.__IsNullOrEmpty__SystemString__SystemBoolean
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: eventName
+          variableID: 800b69a8-c70b-4096-8ce4-a913604bb230
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBAAAAAAU=
+            unityObjects: []
+        - isVariable: 1
+          name: 
+          variableID: 53a3d356-2eb9-409c-a723-2e327ca024e7
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBBwAAAGkAcwBFAG0AcAB0AHkABQ==
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: SystemBoolean.__op_UnaryNegation__SystemBoolean__SystemBoolean
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: isEmpty
+          variableID: 53a3d356-2eb9-409c-a723-2e327ca024e7
+          data:
+            objEncoded: Ai8AAAAAARgAAABTAHkAcwB0AGUAbQAuAEIAbwBvAGwAZQBhAG4ALAAgAG0AcwBjAG8AcgBsAGkAYgAAAAAALAAF
+            unityObjects: []
+        - isVariable: 1
+          name: isValid
+          variableID: a6b3a9ba-33f8-466d-bde6-d7968c2e5b82
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBAAAAAAU=
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: CyanTriggerSpecial_BlockEnd
+          guid: 
+        inputs: []
+        multiInput: []
+        expanded: 1
+        comment:
+          comment: 
+      - actionType:
+          directEvent: CyanTriggerSpecial_ConditionBody
+          guid: 
+        inputs: []
+        multiInput: []
+        expanded: 1
+        comment:
+          comment: 
+      - actionType:
+          directEvent: VRCUdonCommonInterfacesIUdonEventReceiver.__SendCustomEvent__SystemString__SystemVoid
+          guid: 
+        inputs:
+        - isVariable: 0
+          name: 
+          variableID: 
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        - isVariable: 1
+          name: eventName
+          variableID: 800b69a8-c70b-4096-8ce4-a913604bb230
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        multiInput:
+        - isVariable: 1
+          name: _callerUdon
+          variableID: b8eb2eae-b24e-46ef-8b7a-fac1d4cf7251
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: CyanTriggerSpecial_BlockEnd
+          guid: 
+        inputs: []
+        multiInput: []
+        expanded: 1
+        comment:
+          comment: 
+      - actionType:
+          directEvent: CyanTriggerSpecial_BlockEnd
+          guid: 
+        inputs: []
+        multiInput: []
+        expanded: 1
+        comment:
+          comment: 
+      eventOptions:
+        userGate: 0
+        userGateExtraData: []
+        broadcast: 0
+        delay: 0
+        replay: 0
+      expanded: 0
+    - name: _StartFadeWithEvent
+      eventId: f93a56c5-6ed5-43d3-8561-e9521ebb4ebb
+      eventInstance:
+        actionType:
+          directEvent: Event_Custom
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: 
+          variableID: 
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        multiInput:
+        - isVariable: 1
+          name: onFadeInEvent
+          variableID: 7555630a-dd0a-4714-8acb-579087b5c899
+          data:
+            objEncoded: Ai8AAAAAARwAAABTAHkAcwB0AGUAbQAuAFIAdQBuAHQAaQBtAGUAVAB5AHAAZQAsACAAbQBzAGMAbwByAGwAaQBiAAAAAAAoARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIABQ==
+            unityObjects: []
+        - isVariable: 1
+          name: udon
+          variableID: c92d0896-f030-42a8-ab84-62019d168f8d
+          data:
+            objEncoded: Ai8AAAAAARwAAABTAHkAcwB0AGUAbQAuAFIAdQBuAHQAaQBtAGUAVAB5AHAAZQAsACAAbQBzAGMAbwByAGwAaQBiAAAAAAAoASAAAABWAFIAQwAuAFUAZABvAG4ALgBVAGQAbwBuAEIAZQBoAGEAdgBpAG8AdQByACwAIABWAFIAQwAuAFUAZABvAG4ABQ==
+            unityObjects: []
+        expanded: 1
+        comment:
+          comment: 
+      actionInstances:
+      - actionType:
+          directEvent: VRCUdonCommonInterfacesIUdonEventReceiver.__SendCustomEvent__SystemString__SystemVoid
+          guid: 
+        inputs:
+        - isVariable: 0
+          name: 
+          variableID: 
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        - isVariable: 0
+          name: 
+          variableID: 
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBHgAAAF8AUwB0AGEAcgB0AEYAYQBkAGUAVwBpAHQAaABFAHYAZQBuAHQAQQBuAGQARAB1AHIAYQB0AGkAbwBuAAU=
+            unityObjects: []
+        - isVariable: 0
+          name: 
+          variableID: 
+          data:
+            objEncoded: Ai8AAAAAATEAAABDAHkAYQBuAC4AQwBUAC4AQwB5AGEAbgBUAHIAaQBnAGcAZQByAEUAdgBlAG4AdABBAHIAZwBEAGEAdABhACwAIABDAHkAYQBuAC4AQwB5AGEAbgBUAHIAaQBnAGcAZQByAAAAAAAnAQkAAABlAHYAZQBuAHQATgBhAG0AZQABHgAAAF8AUwB0AGEAcgB0AEYAYQBkAGUAVwBpAHQAaABFAHYAZQBuAHQAQQBuAGQARAB1AHIAYQB0AGkAbwBuAAEBDQAAAHYAYQByAGkAYQBiAGwAZQBOAGEAbQBlAHMALwEAAAABGQAAAFMAeQBzAHQAZQBtAC4AUwB0AHIAaQBuAGcAWwBdACwAIABtAHMAYwBvAHIAbABpAGIAAQAAAAYDAAAAAAAAACgBDQAAAG8AbgBGAGEAZABlAEkAbgBFAHYAZQBuAHQAKAEOAAAAZgBhAGQAZQBJAG4ARAB1AHIAYQB0AGkAbwBuACgBBAAAAHUAZABvAG4ABwUBAREAAAB2AGEAcgBpAGEAYgBsAGUAVQBkAG8AbgBOAGEAbQBlAHMAMAEAAAACAAAABgMAAAAAAAAAKAExAAAAXwBhAHIAZwBfAG8AbgBGAGEAZABlAEkAbgBFAHYAZQBuAHQAXwBfAFMAdABhAHIAdABGAGEAZABlAFcAaQB0AGgARQB2AGUAbgB0AEEAbgBkAEQAdQByAGEAdABpAG8AbgAoATIAAABfAGEAcgBnAF8AZgBhAGQAZQBJAG4ARAB1AHIAYQB0AGkAbwBuAF8AXwBTAHQAYQByAHQARgBhAGQAZQBXAGkAdABoAEUAdgBlAG4AdABBAG4AZABEAHUAcgBhAHQAaQBvAG4AKAEoAAAAXwBhAHIAZwBfAHUAZABvAG4AXwBfAFMAdABhAHIAdABGAGEAZABlAFcAaQB0AGgARQB2AGUAbgB0AEEAbgBkAEQAdQByAGEAdABpAG8AbgAHBQEBDAAAAHYAYQByAGkAYQBiAGwAZQBPAHUAdABzAC8CAAAAARoAAABTAHkAcwB0AGUAbQAuAEIAbwBvAGwAZQBhAG4AWwBdACwAIABtAHMAYwBvAHIAbABpAGIAAwAAAAgDAAAAAQAAAAAAAAUBAQ0AAAB2AGEAcgBpAGEAYgBsAGUAVAB5AHAAZQBzAC8DAAAAARcAAABTAHkAcwB0AGUAbQAuAFQAeQBwAGUAWwBdACwAIABtAHMAYwBvAHIAbABpAGIABAAAAAYDAAAAAAAAAAIvBAAAAAEcAAAAUwB5AHMAdABlAG0ALgBSAHUAbgB0AGkAbQBlAFQAeQBwAGUALAAgAG0AcwBjAG8AcgBsAGkAYgAFAAAAKAEXAAAAUwB5AHMAdABlAG0ALgBTAHQAcgBpAG4AZwAsACAAbQBzAGMAbwByAGwAaQBiAAUCMAQAAAAGAAAAKAEXAAAAUwB5AHMAdABlAG0ALgBTAGkAbgBnAGwAZQAsACAAbQBzAGMAbwByAGwAaQBiAAUCMAQAAAAHAAAAKAEgAAAAVgBSAEMALgBVAGQAbwBuAC4AVQBkAG8AbgBCAGUAaABhAHYAaQBvAHUAcgAsACAAVgBSAEMALgBVAGQAbwBuAAUHBQU=
+            unityObjects: []
+        - isVariable: 1
+          name: onFadeInEvent
+          variableID: 7555630a-dd0a-4714-8acb-579087b5c899
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        - isVariable: 1
+          name: fadeInTime
+          variableID: 5522add4-6114-4ca3-95a2-3fe33082bfde
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAaQBuAGcAbABlACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACAAAAAABQ==
+            unityObjects: []
+        - isVariable: 1
+          name: udon
+          variableID: c92d0896-f030-42a8-ab84-62019d168f8d
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        multiInput:
+        - isVariable: 1
+          name: This UdonBehaviour
+          variableID: _this_udonbehaviour
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        expanded: 0
+        comment:
+          comment: 
+      eventOptions:
+        userGate: 0
+        userGateExtraData: []
+        broadcast: 0
+        delay: 0
+        replay: 0
+      expanded: 0
+    - name: _StartFadeWithEventAndDuration
+      eventId: 666af0cb-176d-4e2b-b773-0596ebe86d6d
+      eventInstance:
+        actionType:
+          directEvent: Event_Custom
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: 
+          variableID: 
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        multiInput:
+        - isVariable: 1
+          name: onFadeInEvent
+          variableID: efe58ecb-e507-4dd9-b51f-de81d733932f
+          data:
+            objEncoded: Ai8AAAAAARwAAABTAHkAcwB0AGUAbQAuAFIAdQBuAHQAaQBtAGUAVAB5AHAAZQAsACAAbQBzAGMAbwByAGwAaQBiAAAAAAAoARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIABQ==
+            unityObjects: []
+        - isVariable: 1
+          name: fadeInDuration
+          variableID: e19eb8eb-1593-42a3-a58d-23420eab74e2
+          data:
+            objEncoded: Ai8AAAAAARwAAABTAHkAcwB0AGUAbQAuAFIAdQBuAHQAaQBtAGUAVAB5AHAAZQAsACAAbQBzAGMAbwByAGwAaQBiAAAAAAAoARcAAABTAHkAcwB0AGUAbQAuAFMAaQBuAGcAbABlACwAIABtAHMAYwBvAHIAbABpAGIABQ==
+            unityObjects: []
+        - isVariable: 1
+          name: udon
+          variableID: 1daec0e3-6692-4b5e-b1a7-4aa13ae770e6
+          data:
+            objEncoded: Ai8AAAAAARwAAABTAHkAcwB0AGUAbQAuAFIAdQBuAHQAaQBtAGUAVAB5AHAAZQAsACAAbQBzAGMAbwByAGwAaQBiAAAAAAAoASAAAABWAFIAQwAuAFUAZABvAG4ALgBVAGQAbwBuAEIAZQBoAGEAdgBpAG8AdQByACwAIABWAFIAQwAuAFUAZABvAG4ABQ==
+            unityObjects: []
+        expanded: 1
+        comment:
+          comment: 
+      actionInstances:
+      - actionType:
+          directEvent: VRCUdonCommonInterfacesIUdonEventReceiver.__SendCustomEvent__SystemString__SystemVoid
+          guid: 
+        inputs:
+        - isVariable: 0
+          name: 
+          variableID: 
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        - isVariable: 0
+          name: 
+          variableID: 
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBCgAAAF8AUwB0AGEAcgB0AEYAYQBkAGUABQ==
+            unityObjects: []
+        - isVariable: 0
+          name: 
+          variableID: 
+          data:
+            objEncoded: Ai8AAAAAATEAAABDAHkAYQBuAC4AQwBUAC4AQwB5AGEAbgBUAHIAaQBnAGcAZQByAEUAdgBlAG4AdABBAHIAZwBEAGEAdABhACwAIABDAHkAYQBuAC4AQwB5AGEAbgBUAHIAaQBnAGcAZQByAAAAAAAnAQkAAABlAHYAZQBuAHQATgBhAG0AZQABCgAAAF8AUwB0AGEAcgB0AEYAYQBkAGUAAQENAAAAdgBhAHIAaQBhAGIAbABlAE4AYQBtAGUAcwAvAQAAAAEZAAAAUwB5AHMAdABlAG0ALgBTAHQAcgBpAG4AZwBbAF0ALAAgAG0AcwBjAG8AcgBsAGkAYgABAAAABgAAAAAAAAAABwUBAREAAAB2AGEAcgBpAGEAYgBsAGUAVQBkAG8AbgBOAGEAbQBlAHMAMAEAAAACAAAABgAAAAAAAAAABwUBAQwAAAB2AGEAcgBpAGEAYgBsAGUATwB1AHQAcwAvAgAAAAEaAAAAUwB5AHMAdABlAG0ALgBCAG8AbwBsAGUAYQBuAFsAXQAsACAAbQBzAGMAbwByAGwAaQBiAAMAAAAIAAAAAAEAAAAFAQENAAAAdgBhAHIAaQBhAGIAbABlAFQAeQBwAGUAcwAvAwAAAAEXAAAAUwB5AHMAdABlAG0ALgBUAHkAcABlAFsAXQAsACAAbQBzAGMAbwByAGwAaQBiAAQAAAAGAAAAAAAAAAAHBQU=
+            unityObjects: []
+        multiInput:
+        - isVariable: 1
+          name: This UdonBehaviour
+          variableID: _this_udonbehaviour
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: SystemSingle__.Set__SystemSingle__SystemSingle
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: fadeInDuration
+          variableID: e19eb8eb-1593-42a3-a58d-23420eab74e2
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAaQBuAGcAbABlACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACAAAIC/BQ==
+            unityObjects: []
+        - isVariable: 1
+          name: _fadeInDuration
+          variableID: 961bfee7-76f6-4994-9260-8dc67edcc633
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBAAAAAAU=
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: SystemSingle__.Set__SystemSingle__SystemSingle
+          guid: 
+        inputs:
+        - isVariable: 0
+          name: 
+          variableID: 
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAaQBuAGcAbABlACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACAAAIC/BQ==
+            unityObjects: []
+        - isVariable: 1
+          name: _fadeHoldDuration
+          variableID: dc613809-d8af-4c4c-b806-a4e98d37bd78
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBAAAAAAU=
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: SystemString__.Set__SystemString__SystemString
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: onFadeInEvent
+          variableID: efe58ecb-e507-4dd9-b51f-de81d733932f
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBAAAAAAU=
+            unityObjects: []
+        - isVariable: 1
+          name: _onFadeInFinishedEvent
+          variableID: 0746741a-f10a-49c0-a398-8ae23a737afe
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBAAAAAAU=
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: VRCUdonCommonInterfacesIUdonEventReceiver__.Set__VRCUdonCommonInterfacesIUdonEventReceiver__VRCUdonCommonInterfacesIUdonEventReceiver
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: udon
+          variableID: 1daec0e3-6692-4b5e-b1a7-4aa13ae770e6
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        - isVariable: 1
+          name: _callerUdon
+          variableID: b8eb2eae-b24e-46ef-8b7a-fac1d4cf7251
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBAAAAAAU=
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      eventOptions:
+        userGate: 0
+        userGateExtraData: []
+        broadcast: 0
+        delay: 0
+        replay: 0
+      expanded: 0
+    - name: _EndFadeWithEvent
+      eventId: bb17e917-d344-43d6-842c-7b68dd91a729
+      eventInstance:
+        actionType:
+          directEvent: Event_Custom
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: 
+          variableID: 
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        multiInput:
+        - isVariable: 1
+          name: onFadeEndEvent
+          variableID: 25a61a04-eb55-449a-b809-f2d56f4b44cc
+          data:
+            objEncoded: Ai8AAAAAARwAAABTAHkAcwB0AGUAbQAuAFIAdQBuAHQAaQBtAGUAVAB5AHAAZQAsACAAbQBzAGMAbwByAGwAaQBiAAAAAAAoARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIABQ==
+            unityObjects: []
+        - isVariable: 1
+          name: udon
+          variableID: 55edd22c-b0d6-4c5e-bee5-8c0768b522b8
+          data:
+            objEncoded: Ai8AAAAAARwAAABTAHkAcwB0AGUAbQAuAFIAdQBuAHQAaQBtAGUAVAB5AHAAZQAsACAAbQBzAGMAbwByAGwAaQBiAAAAAAAoASAAAABWAFIAQwAuAFUAZABvAG4ALgBVAGQAbwBuAEIAZQBoAGEAdgBpAG8AdQByACwAIABWAFIAQwAuAFUAZABvAG4ABQ==
+            unityObjects: []
+        expanded: 1
+        comment:
+          comment: 
+      actionInstances:
+      - actionType:
+          directEvent: VRCUdonCommonInterfacesIUdonEventReceiver.__SendCustomEvent__SystemString__SystemVoid
+          guid: 
+        inputs:
+        - isVariable: 0
+          name: 
+          variableID: 
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        - isVariable: 0
+          name: 
+          variableID: 
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBHAAAAF8ARQBuAGQARgBhAGQAZQBXAGkAdABoAEUAdgBlAG4AdABBAG4AZABEAHUAcgBhAHQAaQBvAG4ABQ==
+            unityObjects: []
+        - isVariable: 0
+          name: 
+          variableID: 
+          data:
+            objEncoded: Ai8AAAAAATEAAABDAHkAYQBuAC4AQwBUAC4AQwB5AGEAbgBUAHIAaQBnAGcAZQByAEUAdgBlAG4AdABBAHIAZwBEAGEAdABhACwAIABDAHkAYQBuAC4AQwB5AGEAbgBUAHIAaQBnAGcAZQByAAAAAAAnAQkAAABlAHYAZQBuAHQATgBhAG0AZQABHAAAAF8ARQBuAGQARgBhAGQAZQBXAGkAdABoAEUAdgBlAG4AdABBAG4AZABEAHUAcgBhAHQAaQBvAG4AAQENAAAAdgBhAHIAaQBhAGIAbABlAE4AYQBtAGUAcwAvAQAAAAEZAAAAUwB5AHMAdABlAG0ALgBTAHQAcgBpAG4AZwBbAF0ALAAgAG0AcwBjAG8AcgBsAGkAYgABAAAABgMAAAAAAAAAKAEOAAAAbwBuAEYAYQBkAGUARQBuAGQARQB2AGUAbgB0ACgBDwAAAGYAYQBkAGUARQBuAGQARAB1AHIAYQB0AGkAbwBuACgBBAAAAHUAZABvAG4ABwUBAREAAAB2AGEAcgBpAGEAYgBsAGUAVQBkAG8AbgBOAGEAbQBlAHMAMAEAAAACAAAABgMAAAAAAAAAKAEwAAAAXwBhAHIAZwBfAG8AbgBGAGEAZABlAEUAbgBkAEUAdgBlAG4AdABfAF8ARQBuAGQARgBhAGQAZQBXAGkAdABoAEUAdgBlAG4AdABBAG4AZABEAHUAcgBhAHQAaQBvAG4AKAExAAAAXwBhAHIAZwBfAGYAYQBkAGUARQBuAGQARAB1AHIAYQB0AGkAbwBuAF8AXwBFAG4AZABGAGEAZABlAFcAaQB0AGgARQB2AGUAbgB0AEEAbgBkAEQAdQByAGEAdABpAG8AbgAoASYAAABfAGEAcgBnAF8AdQBkAG8AbgBfAF8ARQBuAGQARgBhAGQAZQBXAGkAdABoAEUAdgBlAG4AdABBAG4AZABEAHUAcgBhAHQAaQBvAG4ABwUBAQwAAAB2AGEAcgBpAGEAYgBsAGUATwB1AHQAcwAvAgAAAAEaAAAAUwB5AHMAdABlAG0ALgBCAG8AbwBsAGUAYQBuAFsAXQAsACAAbQBzAGMAbwByAGwAaQBiAAMAAAAIAwAAAAEAAAAAAAAFAQENAAAAdgBhAHIAaQBhAGIAbABlAFQAeQBwAGUAcwAvAwAAAAEXAAAAUwB5AHMAdABlAG0ALgBUAHkAcABlAFsAXQAsACAAbQBzAGMAbwByAGwAaQBiAAQAAAAGAwAAAAAAAAACLwQAAAABHAAAAFMAeQBzAHQAZQBtAC4AUgB1AG4AdABpAG0AZQBUAHkAcABlACwAIABtAHMAYwBvAHIAbABpAGIABQAAACgBFwAAAFMAeQBzAHQAZQBtAC4AUwB0AHIAaQBuAGcALAAgAG0AcwBjAG8AcgBsAGkAYgAFAjAEAAAABgAAACgBFwAAAFMAeQBzAHQAZQBtAC4AUwBpAG4AZwBsAGUALAAgAG0AcwBjAG8AcgBsAGkAYgAFAjAEAAAABwAAACgBIAAAAFYAUgBDAC4AVQBkAG8AbgAuAFUAZABvAG4AQgBlAGgAYQB2AGkAbwB1AHIALAAgAFYAUgBDAC4AVQBkAG8AbgAFBwUF
+            unityObjects: []
+        - isVariable: 1
+          name: onFadeEndEvent
+          variableID: 25a61a04-eb55-449a-b809-f2d56f4b44cc
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        - isVariable: 1
+          name: fadeOutTime
+          variableID: 96375d19-1fcf-402e-9f17-ebd0ab191526
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAaQBuAGcAbABlACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACAAAAAABQ==
+            unityObjects: []
+        - isVariable: 1
+          name: udon
+          variableID: 55edd22c-b0d6-4c5e-bee5-8c0768b522b8
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        multiInput:
+        - isVariable: 1
+          name: This UdonBehaviour
+          variableID: _this_udonbehaviour
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        expanded: 0
+        comment:
+          comment: 
+      eventOptions:
+        userGate: 0
+        userGateExtraData: []
+        broadcast: 0
+        delay: 0
+        replay: 0
+      expanded: 0
+    - name: _EndFadeWithEventAndDuration
+      eventId: 4778203e-7378-4bf7-b8e1-231d9958f63b
+      eventInstance:
+        actionType:
+          directEvent: Event_Custom
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: 
+          variableID: 
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        multiInput:
+        - isVariable: 1
+          name: onFadeEndEvent
+          variableID: 6813e7e7-7229-4002-82fc-1f55365c36a0
+          data:
+            objEncoded: Ai8AAAAAARwAAABTAHkAcwB0AGUAbQAuAFIAdQBuAHQAaQBtAGUAVAB5AHAAZQAsACAAbQBzAGMAbwByAGwAaQBiAAAAAAAoARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIABQ==
+            unityObjects: []
+        - isVariable: 1
+          name: fadeEndDuration
+          variableID: 43ebfe31-f8cd-47a4-b592-21b75489ad90
+          data:
+            objEncoded: Ai8AAAAAARwAAABTAHkAcwB0AGUAbQAuAFIAdQBuAHQAaQBtAGUAVAB5AHAAZQAsACAAbQBzAGMAbwByAGwAaQBiAAAAAAAoARcAAABTAHkAcwB0AGUAbQAuAFMAaQBuAGcAbABlACwAIABtAHMAYwBvAHIAbABpAGIABQ==
+            unityObjects: []
+        - isVariable: 1
+          name: udon
+          variableID: 7da6520b-593e-44bb-9234-21e75d01a316
+          data:
+            objEncoded: Ai8AAAAAARwAAABTAHkAcwB0AGUAbQAuAFIAdQBuAHQAaQBtAGUAVAB5AHAAZQAsACAAbQBzAGMAbwByAGwAaQBiAAAAAAAoASAAAABWAFIAQwAuAFUAZABvAG4ALgBVAGQAbwBuAEIAZQBoAGEAdgBpAG8AdQByACwAIABWAFIAQwAuAFUAZABvAG4ABQ==
+            unityObjects: []
+        expanded: 1
+        comment:
+          comment: 
+      actionInstances:
+      - actionType:
+          directEvent: VRCUdonCommonInterfacesIUdonEventReceiver.__SendCustomEvent__SystemString__SystemVoid
+          guid: 
+        inputs:
+        - isVariable: 0
+          name: 
+          variableID: 
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        - isVariable: 0
+          name: 
+          variableID: 
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBCAAAAF8ARQBuAGQARgBhAGQAZQAF
+            unityObjects: []
+        - isVariable: 0
+          name: 
+          variableID: 
+          data:
+            objEncoded: Ai8AAAAAATEAAABDAHkAYQBuAC4AQwBUAC4AQwB5AGEAbgBUAHIAaQBnAGcAZQByAEUAdgBlAG4AdABBAHIAZwBEAGEAdABhACwAIABDAHkAYQBuAC4AQwB5AGEAbgBUAHIAaQBnAGcAZQByAAAAAAAnAQkAAABlAHYAZQBuAHQATgBhAG0AZQABCAAAAF8ARQBuAGQARgBhAGQAZQABAQ0AAAB2AGEAcgBpAGEAYgBsAGUATgBhAG0AZQBzAC8BAAAAARkAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnAFsAXQAsACAAbQBzAGMAbwByAGwAaQBiAAEAAAAGAAAAAAAAAAAHBQEBEQAAAHYAYQByAGkAYQBiAGwAZQBVAGQAbwBuAE4AYQBtAGUAcwAwAQAAAAIAAAAGAAAAAAAAAAAHBQEBDAAAAHYAYQByAGkAYQBiAGwAZQBPAHUAdABzAC8CAAAAARoAAABTAHkAcwB0AGUAbQAuAEIAbwBvAGwAZQBhAG4AWwBdACwAIABtAHMAYwBvAHIAbABpAGIAAwAAAAgAAAAAAQAAAAUBAQ0AAAB2AGEAcgBpAGEAYgBsAGUAVAB5AHAAZQBzAC8DAAAAARcAAABTAHkAcwB0AGUAbQAuAFQAeQBwAGUAWwBdACwAIABtAHMAYwBvAHIAbABpAGIABAAAAAYAAAAAAAAAAAcFBQ==
+            unityObjects: []
+        multiInput:
+        - isVariable: 1
+          name: This UdonBehaviour
+          variableID: _this_udonbehaviour
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: SystemSingle__.Set__SystemSingle__SystemSingle
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: duration
+          variableID: 43ebfe31-f8cd-47a4-b592-21b75489ad90
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAaQBuAGcAbABlACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACAAAIC/BQ==
+            unityObjects: []
+        - isVariable: 1
+          name: _fadeOutDuration
+          variableID: e102b539-2d00-46e4-bb7d-54f6cc04dd9a
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBAAAAAAU=
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: SystemString__.Set__SystemString__SystemString
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: onFadeEndEvent
+          variableID: 6813e7e7-7229-4002-82fc-1f55365c36a0
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBAAAAAAU=
+            unityObjects: []
+        - isVariable: 1
+          name: _onFadeOutFinishedEvent
+          variableID: fbbbbece-73e1-4687-a6d7-f13680e16111
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBAAAAAAU=
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: VRCUdonCommonInterfacesIUdonEventReceiver__.Set__VRCUdonCommonInterfacesIUdonEventReceiver__VRCUdonCommonInterfacesIUdonEventReceiver
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: udon
+          variableID: 7da6520b-593e-44bb-9234-21e75d01a316
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        - isVariable: 1
+          name: _callerUdon
+          variableID: b8eb2eae-b24e-46ef-8b7a-fac1d4cf7251
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBAAAAAAU=
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      eventOptions:
+        userGate: 0
+        userGateExtraData: []
+        broadcast: 0
+        delay: 0
+        replay: 0
+      expanded: 0
+    - name: _FadeInAndOutWithEventsDurationsAndHold
+      eventId: 6e9dea5a-637f-40f6-89d8-9d125a54a213
+      eventInstance:
+        actionType:
+          directEvent: Event_Custom
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: 
+          variableID: 
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        multiInput:
+        - isVariable: 1
+          name: onFadeInEvent
+          variableID: ca17502e-e3fd-4611-9fb4-6a3918dd3936
+          data:
+            objEncoded: Ai8AAAAAARwAAABTAHkAcwB0AGUAbQAuAFIAdQBuAHQAaQBtAGUAVAB5AHAAZQAsACAAbQBzAGMAbwByAGwAaQBiAAAAAAAoARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIABQ==
+            unityObjects: []
+        - isVariable: 1
+          name: fadeInDuration
+          variableID: f8af53ac-6ec3-4ca0-9e17-a027ca504872
+          data:
+            objEncoded: Ai8AAAAAARwAAABTAHkAcwB0AGUAbQAuAFIAdQBuAHQAaQBtAGUAVAB5AHAAZQAsACAAbQBzAGMAbwByAGwAaQBiAAAAAAAoARcAAABTAHkAcwB0AGUAbQAuAFMAaQBuAGcAbABlACwAIABtAHMAYwBvAHIAbABpAGIABQ==
+            unityObjects: []
+        - isVariable: 1
+          name: onFadeHoldEvent
+          variableID: 17645951-9d7c-4c1e-b48a-8a71ee6e243b
+          data:
+            objEncoded: Ai8AAAAAARwAAABTAHkAcwB0AGUAbQAuAFIAdQBuAHQAaQBtAGUAVAB5AHAAZQAsACAAbQBzAGMAbwByAGwAaQBiAAAAAAAoARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIABQ==
+            unityObjects: []
+        - isVariable: 1
+          name: fadeHoldDuration
+          variableID: 210ba0ff-2b35-460d-9ce7-5cb80c98caa6
+          data:
+            objEncoded: Ai8AAAAAARwAAABTAHkAcwB0AGUAbQAuAFIAdQBuAHQAaQBtAGUAVAB5AHAAZQAsACAAbQBzAGMAbwByAGwAaQBiAAAAAAAoARcAAABTAHkAcwB0AGUAbQAuAFMAaQBuAGcAbABlACwAIABtAHMAYwBvAHIAbABpAGIABQ==
+            unityObjects: []
+        - isVariable: 1
+          name: onFadeEndEvent
+          variableID: c138c167-d5c2-4c7d-a7fd-86f9d8d8a36c
+          data:
+            objEncoded: Ai8AAAAAARwAAABTAHkAcwB0AGUAbQAuAFIAdQBuAHQAaQBtAGUAVAB5AHAAZQAsACAAbQBzAGMAbwByAGwAaQBiAAAAAAAoARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIABQ==
+            unityObjects: []
+        - isVariable: 1
+          name: fadeEndDuration
+          variableID: e2dfc098-1396-4e9f-a3f6-c08a802ea30a
+          data:
+            objEncoded: Ai8AAAAAARwAAABTAHkAcwB0AGUAbQAuAFIAdQBuAHQAaQBtAGUAVAB5AHAAZQAsACAAbQBzAGMAbwByAGwAaQBiAAAAAAAoARcAAABTAHkAcwB0AGUAbQAuAFMAaQBuAGcAbABlACwAIABtAHMAYwBvAHIAbABpAGIABQ==
+            unityObjects: []
+        - isVariable: 1
+          name: udon
+          variableID: 7977520b-3c2b-428e-bf3a-d1731ddd4c90
+          data:
+            objEncoded: Ai8AAAAAARwAAABTAHkAcwB0AGUAbQAuAFIAdQBuAHQAaQBtAGUAVAB5AHAAZQAsACAAbQBzAGMAbwByAGwAaQBiAAAAAAAoASAAAABWAFIAQwAuAFUAZABvAG4ALgBVAGQAbwBuAEIAZQBoAGEAdgBpAG8AdQByACwAIABWAFIAQwAuAFUAZABvAG4ABQ==
+            unityObjects: []
+        expanded: 1
+        comment:
+          comment: 
+      actionInstances:
+      - actionType:
+          directEvent: VRCUdonCommonInterfacesIUdonEventReceiver.__SendCustomEvent__SystemString__SystemVoid
+          guid: 
+        inputs:
+        - isVariable: 0
+          name: 
+          variableID: 
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        - isVariable: 0
+          name: 
+          variableID: 
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBCgAAAF8AUwB0AGEAcgB0AEYAYQBkAGUABQ==
+            unityObjects: []
+        - isVariable: 0
+          name: 
+          variableID: 
+          data:
+            objEncoded: Ai8AAAAAATEAAABDAHkAYQBuAC4AQwBUAC4AQwB5AGEAbgBUAHIAaQBnAGcAZQByAEUAdgBlAG4AdABBAHIAZwBEAGEAdABhACwAIABDAHkAYQBuAC4AQwB5AGEAbgBUAHIAaQBnAGcAZQByAAAAAAAnAQkAAABlAHYAZQBuAHQATgBhAG0AZQABCgAAAF8AUwB0AGEAcgB0AEYAYQBkAGUAAQENAAAAdgBhAHIAaQBhAGIAbABlAE4AYQBtAGUAcwAvAQAAAAEZAAAAUwB5AHMAdABlAG0ALgBTAHQAcgBpAG4AZwBbAF0ALAAgAG0AcwBjAG8AcgBsAGkAYgABAAAABgAAAAAAAAAABwUBAREAAAB2AGEAcgBpAGEAYgBsAGUAVQBkAG8AbgBOAGEAbQBlAHMAMAEAAAACAAAABgAAAAAAAAAABwUBAQwAAAB2AGEAcgBpAGEAYgBsAGUATwB1AHQAcwAvAgAAAAEaAAAAUwB5AHMAdABlAG0ALgBCAG8AbwBsAGUAYQBuAFsAXQAsACAAbQBzAGMAbwByAGwAaQBiAAMAAAAIAAAAAAEAAAAFAQENAAAAdgBhAHIAaQBhAGIAbABlAFQAeQBwAGUAcwAvAwAAAAEXAAAAUwB5AHMAdABlAG0ALgBUAHkAcABlAFsAXQAsACAAbQBzAGMAbwByAGwAaQBiAAQAAAAGAAAAAAAAAAAHBQU=
+            unityObjects: []
+        multiInput:
+        - isVariable: 1
+          name: This UdonBehaviour
+          variableID: _this_udonbehaviour
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: SystemSingle__.Set__SystemSingle__SystemSingle
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: fadeInDuration
+          variableID: f8af53ac-6ec3-4ca0-9e17-a027ca504872
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAaQBuAGcAbABlACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACAAAIC/BQ==
+            unityObjects: []
+        - isVariable: 1
+          name: _fadeInDuration
+          variableID: 961bfee7-76f6-4994-9260-8dc67edcc633
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBAAAAAAU=
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: SystemSingle__.Set__SystemSingle__SystemSingle
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: fadeHoldDuration
+          variableID: 210ba0ff-2b35-460d-9ce7-5cb80c98caa6
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAaQBuAGcAbABlACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACAAAIC/BQ==
+            unityObjects: []
+        - isVariable: 1
+          name: _fadeHoldDuration
+          variableID: dc613809-d8af-4c4c-b806-a4e98d37bd78
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBAAAAAAU=
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: SystemSingle__.Set__SystemSingle__SystemSingle
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: fadeEndDuration
+          variableID: e2dfc098-1396-4e9f-a3f6-c08a802ea30a
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAaQBuAGcAbABlACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACAAAIC/BQ==
+            unityObjects: []
+        - isVariable: 1
+          name: _fadeOutDuration
+          variableID: e102b539-2d00-46e4-bb7d-54f6cc04dd9a
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBAAAAAAU=
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: SystemString__.Set__SystemString__SystemString
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: onFadeInEvent
+          variableID: ca17502e-e3fd-4611-9fb4-6a3918dd3936
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBAAAAAAU=
+            unityObjects: []
+        - isVariable: 1
+          name: _onFadeInFinishedEvent
+          variableID: 0746741a-f10a-49c0-a398-8ae23a737afe
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBAAAAAAU=
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: SystemString__.Set__SystemString__SystemString
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: onFadeHoldEvent
+          variableID: 17645951-9d7c-4c1e-b48a-8a71ee6e243b
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBAAAAAAU=
+            unityObjects: []
+        - isVariable: 1
+          name: _onFadeHoldFinishedEvent
+          variableID: 8a7dc3f7-7859-4ba3-a0cd-bf5ac802f38e
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBAAAAAAU=
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: SystemString__.Set__SystemString__SystemString
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: onFadeEndEvent
+          variableID: c138c167-d5c2-4c7d-a7fd-86f9d8d8a36c
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBAAAAAAU=
+            unityObjects: []
+        - isVariable: 1
+          name: _onFadeOutFinishedEvent
+          variableID: fbbbbece-73e1-4687-a6d7-f13680e16111
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBAAAAAAU=
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: VRCUdonCommonInterfacesIUdonEventReceiver__.Set__VRCUdonCommonInterfacesIUdonEventReceiver__VRCUdonCommonInterfacesIUdonEventReceiver
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: udon
+          variableID: 7977520b-3c2b-428e-bf3a-d1731ddd4c90
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        - isVariable: 1
+          name: _callerUdon
+          variableID: b8eb2eae-b24e-46ef-8b7a-fac1d4cf7251
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBAAAAAAU=
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      eventOptions:
+        userGate: 0
+        userGateExtraData: []
+        broadcast: 0
+        delay: 0
+        replay: 0
+      expanded: 0
+    - name: _FadeInAndOutWithEventsAndDurations
+      eventId: 7adf6c58-5e2f-44c2-a88f-8903473d71d3
+      eventInstance:
+        actionType:
+          directEvent: Event_Custom
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: 
+          variableID: 
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        multiInput:
+        - isVariable: 1
+          name: onFadeInEvent
+          variableID: da4a571f-91c0-46ee-9dde-06a5b9757505
+          data:
+            objEncoded: Ai8AAAAAARwAAABTAHkAcwB0AGUAbQAuAFIAdQBuAHQAaQBtAGUAVAB5AHAAZQAsACAAbQBzAGMAbwByAGwAaQBiAAAAAAAoARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIABQ==
+            unityObjects: []
+        - isVariable: 1
+          name: fadeInDuration
+          variableID: 755a151c-efae-49d8-807d-b3d7cb1dbc27
+          data:
+            objEncoded: Ai8AAAAAARwAAABTAHkAcwB0AGUAbQAuAFIAdQBuAHQAaQBtAGUAVAB5AHAAZQAsACAAbQBzAGMAbwByAGwAaQBiAAAAAAAoARcAAABTAHkAcwB0AGUAbQAuAFMAaQBuAGcAbABlACwAIABtAHMAYwBvAHIAbABpAGIABQ==
+            unityObjects: []
+        - isVariable: 1
+          name: onFadeOutEvent
+          variableID: 12484372-1d73-43bd-b394-aa08fc5f1946
+          data:
+            objEncoded: Ai8AAAAAARwAAABTAHkAcwB0AGUAbQAuAFIAdQBuAHQAaQBtAGUAVAB5AHAAZQAsACAAbQBzAGMAbwByAGwAaQBiAAAAAAAoARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIABQ==
+            unityObjects: []
+        - isVariable: 1
+          name: fadeEndDuration
+          variableID: 29f7c733-9a49-472a-9edf-82ea7d3442af
+          data:
+            objEncoded: Ai8AAAAAARwAAABTAHkAcwB0AGUAbQAuAFIAdQBuAHQAaQBtAGUAVAB5AHAAZQAsACAAbQBzAGMAbwByAGwAaQBiAAAAAAAoARcAAABTAHkAcwB0AGUAbQAuAFMAaQBuAGcAbABlACwAIABtAHMAYwBvAHIAbABpAGIABQ==
+            unityObjects: []
+        - isVariable: 1
+          name: udon
+          variableID: 7599dfef-9873-405f-b68f-90789012ebf0
+          data:
+            objEncoded: Ai8AAAAAARwAAABTAHkAcwB0AGUAbQAuAFIAdQBuAHQAaQBtAGUAVAB5AHAAZQAsACAAbQBzAGMAbwByAGwAaQBiAAAAAAAoASAAAABWAFIAQwAuAFUAZABvAG4ALgBVAGQAbwBuAEIAZQBoAGEAdgBpAG8AdQByACwAIABWAFIAQwAuAFUAZABvAG4ABQ==
+            unityObjects: []
+        expanded: 1
+        comment:
+          comment: 
+      actionInstances:
+      - actionType:
+          directEvent: VRCUdonCommonInterfacesIUdonEventReceiver.__SendCustomEvent__SystemString__SystemVoid
+          guid: 
+        inputs:
+        - isVariable: 0
+          name: 
+          variableID: 
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        - isVariable: 0
+          name: 
+          variableID: 
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBJwAAAF8ARgBhAGQAZQBJAG4AQQBuAGQATwB1AHQAVwBpAHQAaABFAHYAZQBuAHQAcwBEAHUAcgBhAHQAaQBvAG4AcwBBAG4AZABIAG8AbABkAAU=
+            unityObjects: []
+        - isVariable: 0
+          name: 
+          variableID: 
+          data:
+            objEncoded: Ai8AAAAAATEAAABDAHkAYQBuAC4AQwBUAC4AQwB5AGEAbgBUAHIAaQBnAGcAZQByAEUAdgBlAG4AdABBAHIAZwBEAGEAdABhACwAIABDAHkAYQBuAC4AQwB5AGEAbgBUAHIAaQBnAGcAZQByAAAAAAAnAQkAAABlAHYAZQBuAHQATgBhAG0AZQABJwAAAF8ARgBhAGQAZQBJAG4AQQBuAGQATwB1AHQAVwBpAHQAaABFAHYAZQBuAHQAcwBEAHUAcgBhAHQAaQBvAG4AcwBBAG4AZABIAG8AbABkAAEBDQAAAHYAYQByAGkAYQBiAGwAZQBOAGEAbQBlAHMALwEAAAABGQAAAFMAeQBzAHQAZQBtAC4AUwB0AHIAaQBuAGcAWwBdACwAIABtAHMAYwBvAHIAbABpAGIAAQAAAAYHAAAAAAAAACgBDQAAAG8AbgBGAGEAZABlAEkAbgBFAHYAZQBuAHQAKAEOAAAAZgBhAGQAZQBJAG4ARAB1AHIAYQB0AGkAbwBuACgBDwAAAG8AbgBGAGEAZABlAEgAbwBsAGQARQB2AGUAbgB0ACgBEAAAAGYAYQBkAGUASABvAGwAZABEAHUAcgBhAHQAaQBvAG4AKAEOAAAAbwBuAEYAYQBkAGUARQBuAGQARQB2AGUAbgB0ACgBDwAAAGYAYQBkAGUARQBuAGQARAB1AHIAYQB0AGkAbwBuACgBBAAAAHUAZABvAG4ABwUBAREAAAB2AGEAcgBpAGEAYgBsAGUAVQBkAG8AbgBOAGEAbQBlAHMAMAEAAAACAAAABgcAAAAAAAAAKAE6AAAAXwBhAHIAZwBfAG8AbgBGAGEAZABlAEkAbgBFAHYAZQBuAHQAXwBfAEYAYQBkAGUASQBuAEEAbgBkAE8AdQB0AFcAaQB0AGgARQB2AGUAbgB0AHMARAB1AHIAYQB0AGkAbwBuAHMAQQBuAGQASABvAGwAZAAoATsAAABfAGEAcgBnAF8AZgBhAGQAZQBJAG4ARAB1AHIAYQB0AGkAbwBuAF8AXwBGAGEAZABlAEkAbgBBAG4AZABPAHUAdABXAGkAdABoAEUAdgBlAG4AdABzAEQAdQByAGEAdABpAG8AbgBzAEEAbgBkAEgAbwBsAGQAKAE8AAAAXwBhAHIAZwBfAG8AbgBGAGEAZABlAEgAbwBsAGQARQB2AGUAbgB0AF8AXwBGAGEAZABlAEkAbgBBAG4AZABPAHUAdABXAGkAdABoAEUAdgBlAG4AdABzAEQAdQByAGEAdABpAG8AbgBzAEEAbgBkAEgAbwBsAGQAKAE9AAAAXwBhAHIAZwBfAGYAYQBkAGUASABvAGwAZABEAHUAcgBhAHQAaQBvAG4AXwBfAEYAYQBkAGUASQBuAEEAbgBkAE8AdQB0AFcAaQB0AGgARQB2AGUAbgB0AHMARAB1AHIAYQB0AGkAbwBuAHMAQQBuAGQASABvAGwAZAAoATsAAABfAGEAcgBnAF8AbwBuAEYAYQBkAGUARQBuAGQARQB2AGUAbgB0AF8AXwBGAGEAZABlAEkAbgBBAG4AZABPAHUAdABXAGkAdABoAEUAdgBlAG4AdABzAEQAdQByAGEAdABpAG8AbgBzAEEAbgBkAEgAbwBsAGQAKAE8AAAAXwBhAHIAZwBfAGYAYQBkAGUARQBuAGQARAB1AHIAYQB0AGkAbwBuAF8AXwBGAGEAZABlAEkAbgBBAG4AZABPAHUAdABXAGkAdABoAEUAdgBlAG4AdABzAEQAdQByAGEAdABpAG8AbgBzAEEAbgBkAEgAbwBsAGQAKAExAAAAXwBhAHIAZwBfAHUAZABvAG4AXwBfAEYAYQBkAGUASQBuAEEAbgBkAE8AdQB0AFcAaQB0AGgARQB2AGUAbgB0AHMARAB1AHIAYQB0AGkAbwBuAHMAQQBuAGQASABvAGwAZAAHBQEBDAAAAHYAYQByAGkAYQBiAGwAZQBPAHUAdABzAC8CAAAAARoAAABTAHkAcwB0AGUAbQAuAEIAbwBvAGwAZQBhAG4AWwBdACwAIABtAHMAYwBvAHIAbABpAGIAAwAAAAgHAAAAAQAAAAAAAAAAAAAFAQENAAAAdgBhAHIAaQBhAGIAbABlAFQAeQBwAGUAcwAvAwAAAAEXAAAAUwB5AHMAdABlAG0ALgBUAHkAcABlAFsAXQAsACAAbQBzAGMAbwByAGwAaQBiAAQAAAAGBwAAAAAAAAACLwQAAAABHAAAAFMAeQBzAHQAZQBtAC4AUgB1AG4AdABpAG0AZQBUAHkAcABlACwAIABtAHMAYwBvAHIAbABpAGIABQAAACgBFwAAAFMAeQBzAHQAZQBtAC4AUwB0AHIAaQBuAGcALAAgAG0AcwBjAG8AcgBsAGkAYgAFAjAEAAAABgAAACgBFwAAAFMAeQBzAHQAZQBtAC4AUwBpAG4AZwBsAGUALAAgAG0AcwBjAG8AcgBsAGkAYgAFCgUAAAAKBgAAAAoFAAAACgYAAAACMAQAAAAHAAAAKAEgAAAAVgBSAEMALgBVAGQAbwBuAC4AVQBkAG8AbgBCAGUAaABhAHYAaQBvAHUAcgAsACAAVgBSAEMALgBVAGQAbwBuAAUHBQU=
+            unityObjects: []
+        - isVariable: 1
+          name: onFadeInEvent
+          variableID: da4a571f-91c0-46ee-9dde-06a5b9757505
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        - isVariable: 1
+          name: fadeInDuration
+          variableID: 755a151c-efae-49d8-807d-b3d7cb1dbc27
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAaQBuAGcAbABlACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACAAAAAABQ==
+            unityObjects: []
+        - isVariable: 0
+          name: 
+          variableID: 
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBAAAAAAU=
+            unityObjects: []
+        - isVariable: 0
+          name: 
+          variableID: 
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAaQBuAGcAbABlACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACAAAAAABQ==
+            unityObjects: []
+        - isVariable: 1
+          name: onFadeOutEvent
+          variableID: 12484372-1d73-43bd-b394-aa08fc5f1946
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        - isVariable: 1
+          name: fadeEndDuration
+          variableID: 29f7c733-9a49-472a-9edf-82ea7d3442af
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAaQBuAGcAbABlACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACAAAAAABQ==
+            unityObjects: []
+        - isVariable: 1
+          name: udon
+          variableID: 7599dfef-9873-405f-b68f-90789012ebf0
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        multiInput:
+        - isVariable: 1
+          name: This UdonBehaviour
+          variableID: _this_udonbehaviour
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        expanded: 0
+        comment:
+          comment: 
+      eventOptions:
+        userGate: 0
+        userGateExtraData: []
+        broadcast: 0
+        delay: 0
+        replay: 0
+      expanded: 0
+    - name: _FadeInAndOutWithEvents
+      eventId: 20aed74d-2150-4ae2-b704-994af944b1ef
+      eventInstance:
+        actionType:
+          directEvent: Event_Custom
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: 
+          variableID: 
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        multiInput:
+        - isVariable: 1
+          name: onFadeInEvent
+          variableID: 4a45c9ca-dd4b-4460-8629-54393de9b27e
+          data:
+            objEncoded: Ai8AAAAAARwAAABTAHkAcwB0AGUAbQAuAFIAdQBuAHQAaQBtAGUAVAB5AHAAZQAsACAAbQBzAGMAbwByAGwAaQBiAAAAAAAoARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIABQ==
+            unityObjects: []
+        - isVariable: 1
+          name: onFadeOutEvent
+          variableID: aeee513b-205d-4ae9-8da2-95a9c7e95066
+          data:
+            objEncoded: Ai8AAAAAARwAAABTAHkAcwB0AGUAbQAuAFIAdQBuAHQAaQBtAGUAVAB5AHAAZQAsACAAbQBzAGMAbwByAGwAaQBiAAAAAAAoARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIABQ==
+            unityObjects: []
+        - isVariable: 1
+          name: udon
+          variableID: 43294418-7a8c-4e23-be7f-09bbd581adbc
+          data:
+            objEncoded: Ai8AAAAAARwAAABTAHkAcwB0AGUAbQAuAFIAdQBuAHQAaQBtAGUAVAB5AHAAZQAsACAAbQBzAGMAbwByAGwAaQBiAAAAAAAoASAAAABWAFIAQwAuAFUAZABvAG4ALgBVAGQAbwBuAEIAZQBoAGEAdgBpAG8AdQByACwAIABWAFIAQwAuAFUAZABvAG4ABQ==
+            unityObjects: []
+        expanded: 1
+        comment:
+          comment: 
+      actionInstances:
+      - actionType:
+          directEvent: VRCUdonCommonInterfacesIUdonEventReceiver.__SendCustomEvent__SystemString__SystemVoid
+          guid: 
+        inputs:
+        - isVariable: 0
+          name: 
+          variableID: 
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        - isVariable: 0
+          name: 
+          variableID: 
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBJwAAAF8ARgBhAGQAZQBJAG4AQQBuAGQATwB1AHQAVwBpAHQAaABFAHYAZQBuAHQAcwBEAHUAcgBhAHQAaQBvAG4AcwBBAG4AZABIAG8AbABkAAU=
+            unityObjects: []
+        - isVariable: 0
+          name: 
+          variableID: 
+          data:
+            objEncoded: Ai8AAAAAATEAAABDAHkAYQBuAC4AQwBUAC4AQwB5AGEAbgBUAHIAaQBnAGcAZQByAEUAdgBlAG4AdABBAHIAZwBEAGEAdABhACwAIABDAHkAYQBuAC4AQwB5AGEAbgBUAHIAaQBnAGcAZQByAAAAAAAnAQkAAABlAHYAZQBuAHQATgBhAG0AZQABJwAAAF8ARgBhAGQAZQBJAG4AQQBuAGQATwB1AHQAVwBpAHQAaABFAHYAZQBuAHQAcwBEAHUAcgBhAHQAaQBvAG4AcwBBAG4AZABIAG8AbABkAAEBDQAAAHYAYQByAGkAYQBiAGwAZQBOAGEAbQBlAHMALwEAAAABGQAAAFMAeQBzAHQAZQBtAC4AUwB0AHIAaQBuAGcAWwBdACwAIABtAHMAYwBvAHIAbABpAGIAAQAAAAYHAAAAAAAAACgBDQAAAG8AbgBGAGEAZABlAEkAbgBFAHYAZQBuAHQAKAEOAAAAZgBhAGQAZQBJAG4ARAB1AHIAYQB0AGkAbwBuACgBDwAAAG8AbgBGAGEAZABlAEgAbwBsAGQARQB2AGUAbgB0ACgBEAAAAGYAYQBkAGUASABvAGwAZABEAHUAcgBhAHQAaQBvAG4AKAEOAAAAbwBuAEYAYQBkAGUARQBuAGQARQB2AGUAbgB0ACgBDwAAAGYAYQBkAGUARQBuAGQARAB1AHIAYQB0AGkAbwBuACgBBAAAAHUAZABvAG4ABwUBAREAAAB2AGEAcgBpAGEAYgBsAGUAVQBkAG8AbgBOAGEAbQBlAHMAMAEAAAACAAAABgcAAAAAAAAAKAE6AAAAXwBhAHIAZwBfAG8AbgBGAGEAZABlAEkAbgBFAHYAZQBuAHQAXwBfAEYAYQBkAGUASQBuAEEAbgBkAE8AdQB0AFcAaQB0AGgARQB2AGUAbgB0AHMARAB1AHIAYQB0AGkAbwBuAHMAQQBuAGQASABvAGwAZAAoATsAAABfAGEAcgBnAF8AZgBhAGQAZQBJAG4ARAB1AHIAYQB0AGkAbwBuAF8AXwBGAGEAZABlAEkAbgBBAG4AZABPAHUAdABXAGkAdABoAEUAdgBlAG4AdABzAEQAdQByAGEAdABpAG8AbgBzAEEAbgBkAEgAbwBsAGQAKAE8AAAAXwBhAHIAZwBfAG8AbgBGAGEAZABlAEgAbwBsAGQARQB2AGUAbgB0AF8AXwBGAGEAZABlAEkAbgBBAG4AZABPAHUAdABXAGkAdABoAEUAdgBlAG4AdABzAEQAdQByAGEAdABpAG8AbgBzAEEAbgBkAEgAbwBsAGQAKAE9AAAAXwBhAHIAZwBfAGYAYQBkAGUASABvAGwAZABEAHUAcgBhAHQAaQBvAG4AXwBfAEYAYQBkAGUASQBuAEEAbgBkAE8AdQB0AFcAaQB0AGgARQB2AGUAbgB0AHMARAB1AHIAYQB0AGkAbwBuAHMAQQBuAGQASABvAGwAZAAoATsAAABfAGEAcgBnAF8AbwBuAEYAYQBkAGUARQBuAGQARQB2AGUAbgB0AF8AXwBGAGEAZABlAEkAbgBBAG4AZABPAHUAdABXAGkAdABoAEUAdgBlAG4AdABzAEQAdQByAGEAdABpAG8AbgBzAEEAbgBkAEgAbwBsAGQAKAE8AAAAXwBhAHIAZwBfAGYAYQBkAGUARQBuAGQARAB1AHIAYQB0AGkAbwBuAF8AXwBGAGEAZABlAEkAbgBBAG4AZABPAHUAdABXAGkAdABoAEUAdgBlAG4AdABzAEQAdQByAGEAdABpAG8AbgBzAEEAbgBkAEgAbwBsAGQAKAExAAAAXwBhAHIAZwBfAHUAZABvAG4AXwBfAEYAYQBkAGUASQBuAEEAbgBkAE8AdQB0AFcAaQB0AGgARQB2AGUAbgB0AHMARAB1AHIAYQB0AGkAbwBuAHMAQQBuAGQASABvAGwAZAAHBQEBDAAAAHYAYQByAGkAYQBiAGwAZQBPAHUAdABzAC8CAAAAARoAAABTAHkAcwB0AGUAbQAuAEIAbwBvAGwAZQBhAG4AWwBdACwAIABtAHMAYwBvAHIAbABpAGIAAwAAAAgHAAAAAQAAAAAAAAAAAAAFAQENAAAAdgBhAHIAaQBhAGIAbABlAFQAeQBwAGUAcwAvAwAAAAEXAAAAUwB5AHMAdABlAG0ALgBUAHkAcABlAFsAXQAsACAAbQBzAGMAbwByAGwAaQBiAAQAAAAGBwAAAAAAAAACLwQAAAABHAAAAFMAeQBzAHQAZQBtAC4AUgB1AG4AdABpAG0AZQBUAHkAcABlACwAIABtAHMAYwBvAHIAbABpAGIABQAAACgBFwAAAFMAeQBzAHQAZQBtAC4AUwB0AHIAaQBuAGcALAAgAG0AcwBjAG8AcgBsAGkAYgAFAjAEAAAABgAAACgBFwAAAFMAeQBzAHQAZQBtAC4AUwBpAG4AZwBsAGUALAAgAG0AcwBjAG8AcgBsAGkAYgAFCgUAAAAKBgAAAAoFAAAACgYAAAACMAQAAAAHAAAAKAEgAAAAVgBSAEMALgBVAGQAbwBuAC4AVQBkAG8AbgBCAGUAaABhAHYAaQBvAHUAcgAsACAAVgBSAEMALgBVAGQAbwBuAAUHBQU=
+            unityObjects: []
+        - isVariable: 1
+          name: onFadeInEvent
+          variableID: 4a45c9ca-dd4b-4460-8629-54393de9b27e
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        - isVariable: 1
+          name: fadeInTime
+          variableID: 5522add4-6114-4ca3-95a2-3fe33082bfde
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAaQBuAGcAbABlACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACAAAAAABQ==
+            unityObjects: []
+        - isVariable: 0
+          name: 
+          variableID: 
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBAAAAAAU=
+            unityObjects: []
+        - isVariable: 0
+          name: 
+          variableID: 
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAaQBuAGcAbABlACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACAAAAAABQ==
+            unityObjects: []
+        - isVariable: 1
+          name: onFadeOutEvent
+          variableID: aeee513b-205d-4ae9-8da2-95a9c7e95066
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        - isVariable: 1
+          name: fadeOutTime
+          variableID: 96375d19-1fcf-402e-9f17-ebd0ab191526
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAaQBuAGcAbABlACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACAAAAAABQ==
+            unityObjects: []
+        - isVariable: 1
+          name: udon
+          variableID: 43294418-7a8c-4e23-be7f-09bbd581adbc
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        multiInput:
+        - isVariable: 1
+          name: This UdonBehaviour
+          variableID: _this_udonbehaviour
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        expanded: 0
+        comment:
+          comment: 
+      eventOptions:
+        userGate: 0
+        userGateExtraData: []
+        broadcast: 0
+        delay: 0
+        replay: 0
+      expanded: 0
+    - name: _IsFading
+      eventId: 8b74b9c3-0a00-4bcb-9368-f48e2c0e02d1
+      eventInstance:
+        actionType:
+          directEvent: Event_Custom
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: 
+          variableID: 
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        multiInput:
+        - isVariable: 0
+          name: isFading
+          variableID: c5306d2c-1f3b-4b6c-b822-00416c6ef037
+          data:
+            objEncoded: Ai8AAAAAARwAAABTAHkAcwB0AGUAbQAuAFIAdQBuAHQAaQBtAGUAVAB5AHAAZQAsACAAbQBzAGMAbwByAGwAaQBiAAAAAAAoARgAAABTAHkAcwB0AGUAbQAuAEIAbwBvAGwAZQBhAG4ALAAgAG0AcwBjAG8AcgBsAGkAYgAF
+            unityObjects: []
+        expanded: 1
+        comment:
+          comment: 
+      actionInstances:
+      - actionType:
+          directEvent: SystemInt32.__op_Inequality__SystemInt32_SystemInt32__SystemBoolean
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: _fadeState
+          variableID: a0ba6b65-f85d-49d0-96f6-5cc0c00a18e9
+          data:
+            objEncoded: Ai8AAAAAARYAAABTAHkAcwB0AGUAbQAuAEkAbgB0ADMAMgAsACAAbQBzAGMAbwByAGwAaQBiAAAAAAAYAAAAAAU=
+            unityObjects: []
+        - isVariable: 0
+          name: 
+          variableID: 
+          data:
+            objEncoded: Ai8AAAAAARYAAABTAHkAcwB0AGUAbQAuAEkAbgB0ADMAMgAsACAAbQBzAGMAbwByAGwAaQBiAAAAAAAYAAAAAAU=
+            unityObjects: []
+        - isVariable: 1
+          name: isFading
+          variableID: c5306d2c-1f3b-4b6c-b822-00416c6ef037
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBAAAAAAU=
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      eventOptions:
+        userGate: 0
+        userGateExtraData: []
+        broadcast: 0
+        delay: 0
+        replay: 0
+      expanded: 0
+    variables:
+    - isVariable: 0
+      name: fadeInTime
+      variableID: 5522add4-6114-4ca3-95a2-3fe33082bfde
+      data:
+        objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAaQBuAGcAbABlACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACAAAIA/BQ==
+        unityObjects: []
+      type:
+        typeDef: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      sync: 0
+      showInInspector: 1
+      typeInfo: 0
+      comment:
+        comment: How long it takes to go from no color to full color when fading
+          in.
+    - isVariable: 0
+      name: fadeOutTime
+      variableID: 96375d19-1fcf-402e-9f17-ebd0ab191526
+      data:
+        objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAaQBuAGcAbABlACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACAAAIA/BQ==
+        unityObjects: []
+      type:
+        typeDef: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      sync: 0
+      showInInspector: 1
+      typeInfo: 0
+      comment:
+        comment: How long it takes to go from full color to no color when fading
+          out.
+    - isVariable: 0
+      name: fadeColor
+      variableID: 5da373a8-a810-42ef-9aa4-619eb3c34933
+      data:
+        objEncoded: Ai8AAAAAASkAAABVAG4AaQB0AHkARQBuAGcAaQBuAGUALgBDAG8AbABvAHIALAAgAFUAbgBpAHQAeQBFAG4AZwBpAG4AZQAuAEMAbwByAGUATQBvAGQAdQBsAGUAAAAAACAAAAAAIAAAAAAgAAAAACAAAIA/BQ==
+        unityObjects: []
+      type:
+        typeDef: UnityEngine.Color, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
+          PublicKeyToken=null
+      sync: 0
+      showInInspector: 1
+      typeInfo: 0
+      comment:
+        comment: Color of the fade on the player's screen. This can be changed mid
+          fade.
+    - isVariable: 0
+      name: immobilizePlayer
+      variableID: 041d35f7-1271-4462-856b-4b2ecb602566
+      data:
+        objEncoded: Ai8AAAAAARgAAABTAHkAcwB0AGUAbQAuAEIAbwBvAGwAZQBhAG4ALAAgAG0AcwBjAG8AcgBsAGkAYgAAAAAALAEF
+        unityObjects: []
+      type:
+        typeDef: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      sync: 0
+      showInInspector: 1
+      typeInfo: 0
+      comment:
+        comment: Should the player be stuck in place during fade.
+    - isVariable: 0
+      name: __Internal Data
+      variableID: d9cb6ec0-9c96-4d25-9772-d932fda0ee3d
+      data:
+        objEncoded: Ai8AAAAAARgAAABTAHkAcwB0AGUAbQAuAEIAbwBvAGwAZQBhAG4ALAAgAG0AcwBjAG8AcgBsAGkAYgAAAAAALAAF
+        unityObjects: []
+      type:
+        typeDef: System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      sync: 0
+      showInInspector: 1
+      typeInfo: 2
+      comment:
+        comment: 
+    - isVariable: 0
+      name: _callerUdon
+      variableID: b8eb2eae-b24e-46ef-8b7a-fac1d4cf7251
+      data:
+        objEncoded: Lg==
+        unityObjects: []
+      type:
+        typeDef: VRC.Udon.UdonBehaviour, VRC.Udon, Version=0.0.0.0, Culture=neutral,
+          PublicKeyToken=null
+      sync: 0
+      showInInspector: 1
+      typeInfo: 0
+      comment:
+        comment: 
+    - isVariable: 0
+      name: _fadeStartTime
+      variableID: 9878e4c4-b26e-40a0-8f48-b7b6d5b9c365
+      data:
+        objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAaQBuAGcAbABlACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACAAAAAABQ==
+        unityObjects: []
+      type:
+        typeDef: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      sync: 0
+      showInInspector: 1
+      typeInfo: 0
+      comment:
+        comment: 
+    - isVariable: 0
+      name: _fadeCubeTransform
+      variableID: befb7485-a71c-444f-9b43-e04dfcf5b9fe
+      data:
+        objEncoded: Lg==
+        unityObjects: []
+      type:
+        typeDef: UnityEngine.Transform, UnityEngine.CoreModule, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
+      sync: 0
+      showInInspector: 1
+      typeInfo: 0
+      comment:
+        comment: 
+    - isVariable: 0
+      name: _fadeCube
+      variableID: ecd80ff9-67b6-4747-8ce1-1c9ffb6f6f07
+      data:
+        objEncoded: Lg==
+        unityObjects: []
+      type:
+        typeDef: UnityEngine.GameObject, UnityEngine.CoreModule, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
+      sync: 0
+      showInInspector: 1
+      typeInfo: 0
+      comment:
+        comment: 
+    - isVariable: 0
+      name: _fadeRenderer
+      variableID: 37fccccf-a919-4e39-acec-fe43acd387ca
+      data:
+        objEncoded: Lg==
+        unityObjects: []
+      type:
+        typeDef: UnityEngine.Renderer, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
+          PublicKeyToken=null
+      sync: 0
+      showInInspector: 1
+      typeInfo: 0
+      comment:
+        comment: 
+    - isVariable: 0
+      name: _fadeState
+      variableID: a0ba6b65-f85d-49d0-96f6-5cc0c00a18e9
+      data:
+        objEncoded: Ai8AAAAAARYAAABTAHkAcwB0AGUAbQAuAEkAbgB0ADMAMgAsACAAbQBzAGMAbwByAGwAaQBiAAAAAAAYAAAAAAU=
+        unityObjects: []
+      type:
+        typeDef: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      sync: 0
+      showInInspector: 1
+      typeInfo: 0
+      comment:
+        comment: 
+    - isVariable: 0
+      name: _fadePropertyBlock
+      variableID: 9954828c-72b1-4c61-841f-86a5ec7c84a4
+      data:
+        objEncoded: Lg==
+        unityObjects: []
+      type:
+        typeDef: UnityEngine.MaterialPropertyBlock, UnityEngine.CoreModule, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
+      sync: 0
+      showInInspector: 1
+      typeInfo: 0
+      comment:
+        comment: 
+    - isVariable: 0
+      name: _onFadeInFinishedEvent
+      variableID: 0746741a-f10a-49c0-a398-8ae23a737afe
+      data:
+        objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBAAAAAAU=
+        unityObjects: []
+      type:
+        typeDef: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      sync: 0
+      showInInspector: 1
+      typeInfo: 0
+      comment:
+        comment: 
+    - isVariable: 0
+      name: _onFadeHoldFinishedEvent
+      variableID: 8a7dc3f7-7859-4ba3-a0cd-bf5ac802f38e
+      data:
+        objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBAAAAAAU=
+        unityObjects: []
+      type:
+        typeDef: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      sync: 0
+      showInInspector: 1
+      typeInfo: 0
+      comment:
+        comment: 
+    - isVariable: 0
+      name: _onFadeOutFinishedEvent
+      variableID: fbbbbece-73e1-4687-a6d7-f13680e16111
+      data:
+        objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBAAAAAAU=
+        unityObjects: []
+      type:
+        typeDef: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      sync: 0
+      showInInspector: 1
+      typeInfo: 0
+      comment:
+        comment: 
+    - isVariable: 0
+      name: _fadeInDuration
+      variableID: 961bfee7-76f6-4994-9260-8dc67edcc633
+      data:
+        objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAaQBuAGcAbABlACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACAAAIC/BQ==
+        unityObjects: []
+      type:
+        typeDef: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      sync: 0
+      showInInspector: 1
+      typeInfo: 0
+      comment:
+        comment: 
+    - isVariable: 0
+      name: _fadeHoldDuration
+      variableID: dc613809-d8af-4c4c-b806-a4e98d37bd78
+      data:
+        objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAaQBuAGcAbABlACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACAAAIC/BQ==
+        unityObjects: []
+      type:
+        typeDef: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      sync: 0
+      showInInspector: 1
+      typeInfo: 0
+      comment:
+        comment: 
+    - isVariable: 0
+      name: _fadeOutDuration
+      variableID: e102b539-2d00-46e4-bb7d-54f6cc04dd9a
+      data:
+        objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAaQBuAGcAbABlACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACAAAIC/BQ==
+        unityObjects: []
+      type:
+        typeDef: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      sync: 0
+      showInInspector: 1
+      typeInfo: 0
+      comment:
+        comment: 
+    - isVariable: 0
+      name: Variable Group End
+      variableID: 9a5762be-d2d4-4148-835e-f7cf273f26ed
+      data:
+        objEncoded: Lg==
+        unityObjects: []
+      type:
+        typeDef: System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      sync: 0
+      showInInspector: 0
+      typeInfo: 3
+      comment:
+        comment: 
+    comment:
+      comment: "A prefab used to fade the player's screen to a solid color. Default
+        fade in time, fade out time, and fade color can be configured. \r\n\nTo use,
+        add prefab into your scene, and call the FadeController custom actions:\r\n-
+        FadeController.SetColor\r\n   - Set's the color of the fade displayed on
+        the user's screen.\r\n\n- FadeController.StartFade\r\n   - Start fading,
+        but hold until EndFade is called. See options for on fade callback and fade
+        duration.\r\n\n- FadeController.EndFade\r\n   - End current fade. See options
+        for on fade end callback and fade duration.\r\n\n- FadeController.FadeInAndOut\r\n  
+        - Start fade, hold, and end fade after some duration. See options for fade
+        in, hold, and end callbacks, and durations for fade in, fade hold, and fade
+        out. "
+    expandVariables: 0
+    expandOtherSettings: 1
+    expandSyncSection: 0
+    ignoreEventWarnings: 0
+  publicVariableReferences:
+    actionDataIndices: []
+    userVariableNames:
+    - fadeInTime
+    - fadeOutTime
+    - fadeColor
+    - immobilizePlayer
+    userVariableTypes:
+    - typeDef: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+    - typeDef: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+    - typeDef: UnityEngine.Color, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+    - typeDef: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+  ignoreOdinData: 1
+  serializationDataOdin:
+    SerializedFormat: 0
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes: []
+  allowEditingInInspector: 0
+  expandInInspector: 0
+  isLocked: 0

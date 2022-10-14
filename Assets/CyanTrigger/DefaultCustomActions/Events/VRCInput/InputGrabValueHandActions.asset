@@ -1,0 +1,157 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 61d0ad128b95568438c70898dc9e600c, type: 3}
+  m_Name: InputGrabValueHandActions
+  m_EditorClassIdentifier: 
+  autoAddPriority: 0
+  exposedActions:
+  - guid: 36e12dc6-3140-4132-a7b5-156983d94aa8
+    actionNamespace: InputGrab
+    actionVariantName: ValueHand
+    description: Fires when the Grab Input action matches the input value and input
+      hand
+    variables:
+    - type:
+        typeDef: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      udonName: value
+      displayName: value
+      description: 
+      defaultValue:
+        objEncoded: Ai8AAAAAARgAAABTAHkAcwB0AGUAbQAuAEIAbwBvAGwAZQBhAG4ALAAgAG0AcwBjAG8AcgBsAGkAYgAAAAAALAEF
+        unityObjects: []
+      variableType: 3
+    - type:
+        typeDef: VRC.Udon.Common.HandType, VRC.Udon.Common, Version=1.0.0.0, Culture=neutral,
+          PublicKeyToken=null
+      udonName: hand
+      displayName: hand
+      description: 
+      defaultValue:
+        objEncoded: Ai8AAAAAASkAAABWAFIAQwAuAFUAZABvAG4ALgBDAG8AbQBtAG8AbgAuAEgAYQBuAGQAVAB5AHAAZQAsACAAVgBSAEMALgBVAGQAbwBuAC4AQwBvAG0AbQBvAG4AAAAAAB4AAAAAAAAAAAU=
+        unityObjects: []
+      variableType: 3
+    baseEventName: Event_InputGrab
+    eventEntry: _inputGrab
+    autoAdd: 0
+  - guid: ba096c3c-5679-4d96-8c04-8ad734f59d03
+    actionNamespace: InputGrab
+    actionVariantName: RightPressed
+    description: Fires when the Grab Input action is pressed for the right hand
+    variables:
+    - type:
+        typeDef: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      udonName: value
+      displayName: value
+      description: 
+      defaultValue:
+        objEncoded: Ai8AAAAAARgAAABTAHkAcwB0AGUAbQAuAEIAbwBvAGwAZQBhAG4ALAAgAG0AcwBjAG8AcgBsAGkAYgAAAAAALAEF
+        unityObjects: []
+      variableType: 9
+    - type:
+        typeDef: VRC.Udon.Common.HandType, VRC.Udon.Common, Version=1.0.0.0, Culture=neutral,
+          PublicKeyToken=null
+      udonName: hand
+      displayName: hand
+      description: 
+      defaultValue:
+        objEncoded: Ai8AAAAAASkAAABWAFIAQwAuAFUAZABvAG4ALgBDAG8AbQBtAG8AbgAuAEgAYQBuAGQAVAB5AHAAZQAsACAAVgBSAEMALgBVAGQAbwBuAC4AQwBvAG0AbQBvAG4AAAAAAB4AAAAAAAAAAAU=
+        unityObjects: []
+      variableType: 9
+    baseEventName: Event_InputGrab
+    eventEntry: _inputGrab
+    autoAdd: 0
+  - guid: 2b0b7543-d01b-463d-a4a5-b9186a14b8ba
+    actionNamespace: InputGrab
+    actionVariantName: RightReleased
+    description: Fires when the Grab Input action is released for the right hand
+    variables:
+    - type:
+        typeDef: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      udonName: value
+      displayName: value
+      description: 
+      defaultValue:
+        objEncoded: Ai8AAAAAARgAAABTAHkAcwB0AGUAbQAuAEIAbwBvAGwAZQBhAG4ALAAgAG0AcwBjAG8AcgBsAGkAYgAAAAAALAAF
+        unityObjects: []
+      variableType: 9
+    - type:
+        typeDef: VRC.Udon.Common.HandType, VRC.Udon.Common, Version=1.0.0.0, Culture=neutral,
+          PublicKeyToken=null
+      udonName: hand
+      displayName: hand
+      description: 
+      defaultValue:
+        objEncoded: Ai8AAAAAASkAAABWAFIAQwAuAFUAZABvAG4ALgBDAG8AbQBtAG8AbgAuAEgAYQBuAGQAVAB5AHAAZQAsACAAVgBSAEMALgBVAGQAbwBuAC4AQwBvAG0AbQBvAG4AAAAAAB4AAAAAAAAAAAU=
+        unityObjects: []
+      variableType: 9
+    baseEventName: Event_InputGrab
+    eventEntry: _inputGrab
+    autoAdd: 0
+  - guid: 6efb3cbd-2b71-4829-b7be-8cef9369776e
+    actionNamespace: InputGrab
+    actionVariantName: LeftPressed
+    description: Fires when the Grab Input action is pressed for the left hand
+    variables:
+    - type:
+        typeDef: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      udonName: value
+      displayName: value
+      description: 
+      defaultValue:
+        objEncoded: Ai8AAAAAARgAAABTAHkAcwB0AGUAbQAuAEIAbwBvAGwAZQBhAG4ALAAgAG0AcwBjAG8AcgBsAGkAYgAAAAAALAEF
+        unityObjects: []
+      variableType: 9
+    - type:
+        typeDef: VRC.Udon.Common.HandType, VRC.Udon.Common, Version=1.0.0.0, Culture=neutral,
+          PublicKeyToken=null
+      udonName: hand
+      displayName: hand
+      description: 
+      defaultValue:
+        objEncoded: Ai8AAAAAASkAAABWAFIAQwAuAFUAZABvAG4ALgBDAG8AbQBtAG8AbgAuAEgAYQBuAGQAVAB5AHAAZQAsACAAVgBSAEMALgBVAGQAbwBuAC4AQwBvAG0AbQBvAG4AAAAAAB4BAAAAAAAAAAU=
+        unityObjects: []
+      variableType: 9
+    baseEventName: Event_InputGrab
+    eventEntry: _inputGrab
+    autoAdd: 0
+  - guid: 8aa24398-35b7-4547-965b-5410b9f7fe67
+    actionNamespace: InputGrab
+    actionVariantName: LeftReleased
+    description: Fires when the Grab Input action is released for the left hand
+    variables:
+    - type:
+        typeDef: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      udonName: value
+      displayName: value
+      description: 
+      defaultValue:
+        objEncoded: Ai8AAAAAARgAAABTAHkAcwB0AGUAbQAuAEIAbwBvAGwAZQBhAG4ALAAgAG0AcwBjAG8AcgBsAGkAYgAAAAAALAAF
+        unityObjects: []
+      variableType: 9
+    - type:
+        typeDef: VRC.Udon.Common.HandType, VRC.Udon.Common, Version=1.0.0.0, Culture=neutral,
+          PublicKeyToken=null
+      udonName: hand
+      displayName: hand
+      description: 
+      defaultValue:
+        objEncoded: Ai8AAAAAASkAAABWAFIAQwAuAFUAZABvAG4ALgBDAG8AbQBtAG8AbgAuAEgAYQBuAGQAVAB5AHAAZQAsACAAVgBSAEMALgBVAGQAbwBuAC4AQwBvAG0AbQBvAG4AAAAAAB4BAAAAAAAAAAU=
+        unityObjects: []
+      variableType: 9
+    baseEventName: Event_InputGrab
+    eventEntry: _inputGrab
+    autoAdd: 0
+  isMultiInstance: 0
+  defaultNamespace: InputGrab
+  udonProgramAsset: {fileID: 11400000, guid: 21f3a0b7cfd24d141a64f1e980723398, type: 2}
+  assetGuid: 21f3a0b7cfd24d141a64f1e980723398
+  thisGuid: ed5139db75e38f044a5883c2fe4ef98f

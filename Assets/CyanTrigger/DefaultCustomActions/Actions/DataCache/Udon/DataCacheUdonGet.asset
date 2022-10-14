@@ -1,0 +1,301 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a31a3a978bd0448580d4ef9f3d6d95bf, type: 3}
+  m_Name: DataCacheUdonGet
+  m_EditorClassIdentifier: 
+  serializedUdonProgramAsset: {fileID: 11400000, guid: a999c15b7026a604a991d7380bf2257b,
+    type: 2}
+  udonAssembly: ".data_start\r\n  .export __CyanTrigger_ProgramName_SystemString\r\n 
+    .export key\r\n  .export udon\r\n  .export hasValue\r\n  __CyanTrigger_ProgramName_SystemString:
+    %SystemString, null\r\n  __CyanTrigger_ProgramHash_SystemString: %SystemString,
+    null\r\n  __0_ra_SystemUInt32: %SystemUInt32, null\r\n  __1_ea_SystemUInt32:
+    %SystemUInt32, null\r\n  __null: %SystemObject, null\r\n  _this_gameobject: %UnityEngineGameObject,
+    this\r\n  _this_local_player: %VRCSDKBaseVRCPlayerApi, null\r\n  key: %SystemString,
+    null\r\n  udon: %VRCUdonUdonBehaviour, null\r\n  hasValue: %SystemBoolean, null\r\n 
+    __ag_0_0_SystemString: %SystemString, null\r\n  __ag_0_1_SystemString: %SystemString,
+    null\r\n  __ag_0_2_SystemString: %SystemString, null\r\n  __ag_0_3_SystemBoolean:
+    %SystemBoolean, null\r\n  __ag_0_4_SystemBoolean: %SystemBoolean, null\r\n  __ag_0_5_SystemBoolean:
+    %SystemBoolean, null\r\n  __ag_0_6_SystemString: %SystemString, null\r\n  __ag_0_7_SystemString:
+    %SystemString, null\r\n  __ag_0_8_SystemBoolean: %SystemBoolean, null\r\n  __ag_0_9_SystemBoolean:
+    %SystemBoolean, null\r\n  __ag_0_10_SystemString: %SystemString, null\r\n  __ag_0_11_SystemInt32:
+    %SystemInt32, null\r\n  __ag_0_12_SystemBoolean: %SystemBoolean, null\r\n  __ag_0_13_SystemString:
+    %SystemString, null\r\n  __ag_0_14___jump_return_SystemUInt32: %SystemUInt32,
+    null\r\n  __ag_0_15_SystemString: %SystemString, null\r\n  __ag_0_16_SystemBoolean:
+    %SystemBoolean, null\r\n  __ag_0_17_SystemString: %SystemString, null\r\n  __ag_0_18_SystemInt32:
+    %SystemInt32, null\r\n  __ag_0_19_SystemString: %SystemString, null\r\n  __ag_0_20_SystemType:
+    %SystemType, null\r\n  __ag_0_21_SystemString: %SystemString, null\r\n  __ag_0_22_SystemString:
+    %SystemString, null\r\n  __ag_0_23_SystemString: %SystemString, null\r\n  __ag_0_24___jump_return_SystemUInt32:
+    %SystemUInt32, null\r\n  __ag_0_25_SystemString: %SystemString, null\r\n  __ag_0_26_SystemString:
+    %SystemString, null\r\n  __ag_0_27_SystemString: %SystemString, null\r\n  __ag_0_28_SystemBoolean:
+    %SystemBoolean, null\r\n  __ag_0_29_SystemString: %SystemString, null\r\n  __ag_0_30_SystemString:
+    %SystemString, null\r\n  __ag_0_31_SystemString: %SystemString, null\r\n  __ag_0_32_SystemString:
+    %SystemString, null\r\n  __ag_0_33_SystemBoolean: %SystemBoolean, null\r\n  __ag_0_34_SystemString:
+    %SystemString, null\r\n  __ag_0_35_SystemBoolean: %SystemBoolean, null\r\n  __ag_0_36_SystemInt32:
+    %SystemInt32, null\r\n  __ag_0_37_SystemBoolean: %SystemBoolean, null\r\n  __ag_0_38_SystemBoolean:
+    %SystemBoolean, null\r\n  __ag_0_39_SystemBoolean: %SystemBoolean, null\r\n 
+    __ag_0_40_UnityEngineGameObject: %UnityEngineGameObject, null\r\n  __ag_0_41_SystemBoolean:
+    %SystemBoolean, null\r\n  __ag_0_42_SystemString: %SystemString, null\r\n  __ag_0_43_SystemBoolean:
+    %SystemBoolean, null\r\n  __ag_0_44_SystemBoolean: %SystemBoolean, null\r\n 
+    __ag_0_45_SystemString: %SystemString, null\r\n  __ag_0_46_SystemBoolean: %SystemBoolean,
+    null\r\n  __ag_0_47_SystemBoolean: %SystemBoolean, null\r\n  __ag_0_48_SystemType:
+    %SystemType, null\r\n  __ag_0_49_SystemString: %SystemString, null\r\n  __ag_0_50_SystemString:
+    %SystemString, null\r\n  __63_lp_init_SystemBoolean_ct_intern: %SystemBoolean,
+    null\r\n  __ag_0_51_SystemString: %SystemString, null\r\n  __ag_0_52_UnityEngineComponent:
+    %UnityEngineComponent, null\r\n  __ag_0_53_UnityEngineComponent[]: %UnityEngineComponentArray,
+    null\r\n  __67_local_var_SystemType: %SystemType, null\r\n  __68_const_SystemType:
+    %SystemType, null\r\n  __69___jump_return_2_SystemUInt32: %SystemUInt32, null\r\n.data_end\r\n\n.code_start\r\n 
+    .export __ag_0_0\r\n  __ag_0_0:\r\n    PUSH, __1_ea_SystemUInt32\r\n    PUSH,
+    __63_lp_init_SystemBoolean_ct_intern\r\n    JUMP_IF_FALSE, 0x0000003C\r\n   
+    PUSH, __ag_0_38_SystemBoolean\r\n    PUSH, __63_lp_init_SystemBoolean_ct_intern\r\n   
+    COPY\r\n    PUSH, _this_local_player\r\n    EXTERN, \"VRCSDKBaseNetworking.__get_LocalPlayer__VRCSDKBaseVRCPlayerApi\"\r\n   
+    PUSH, __ag_0_6_SystemString\r\n    PUSH, __ag_0_26_SystemString\r\n    PUSH,
+    __ag_0_45_SystemString\r\n    PUSH, __ag_0_2_SystemString\r\n    EXTERN, \"SystemString.__Concat__SystemString_SystemString_SystemString__SystemString\"\r\n   
+    PUSH, _this_local_player\r\n    PUSH, __ag_0_2_SystemString\r\n    PUSH, __ag_0_30_SystemString\r\n   
+    EXTERN, \"VRCSDKBaseVRCPlayerApi.__GetPlayerTag__SystemString__SystemString\"\r\n   
+    PUSH, __ag_0_30_SystemString\r\n    PUSH, __ag_0_43_SystemBoolean\r\n    EXTERN,
+    \"SystemString.__IsNullOrEmpty__SystemString__SystemBoolean\"\r\n    PUSH, __ag_0_43_SystemBoolean\r\n   
+    PUSH, __ag_0_43_SystemBoolean\r\n    EXTERN, \"SystemBoolean.__op_UnaryNegation__SystemBoolean__SystemBoolean\"\r\n   
+    PUSH, __0_ra_SystemUInt32\r\n    COPY\r\n    JUMP_INDIRECT, __0_ra_SystemUInt32\r\n\r\n 
+    .export __ag_0_1\r\n  __ag_0_1:\r\n    PUSH, __1_ea_SystemUInt32\r\n    PUSH,
+    __ag_0_33_SystemBoolean\r\n    PUSH, __ag_0_12_SystemBoolean\r\n    COPY\r\n   
+    PUSH, __ag_0_48_SystemType\r\n    PUSH, __ag_0_16_SystemBoolean\r\n    EXTERN,
+    \"VRCSDKBaseUtilities.__IsValid__SystemObject__SystemBoolean\"\r\n    PUSH, __ag_0_16_SystemBoolean\r\n   
+    PUSH, __ag_0_12_SystemBoolean\r\n    EXTERN, \"SystemBoolean.__op_UnaryNegation__SystemBoolean__SystemBoolean\"\r\n   
+    PUSH, __ag_0_12_SystemBoolean\r\n    JUMP_IF_FALSE, 0x00000138\r\n    PUSH, __ag_0_20_SystemType\r\n   
+    PUSH, __ag_0_48_SystemType\r\n    COPY\r\n    PUSH, __ag_0_48_SystemType\r\n   
+    PUSH, __ag_0_0_SystemString\r\n    EXTERN, \"SystemType.__get_Name__SystemString\"\r\n   
+    PUSH, __ag_0_15_SystemString\r\n    PUSH, __ag_0_45_SystemString\r\n    COPY\r\n   
+    PUSH, __ag_0_0_SystemString\r\n    PUSH, __ag_0_26_SystemString\r\n    COPY\r\n   
+    PUSH, __ag_0_50_SystemString\r\n    PUSH, __ag_0_30_SystemString\r\n    COPY\r\n   
+    PUSH, __ag_0_39_SystemBoolean\r\n    PUSH, __ag_0_43_SystemBoolean\r\n    COPY\r\n   
+    PUSH, __ag_0_14___jump_return_SystemUInt32\r\n    JUMP, 0x00000008\r\n    PUSH,
+    __ag_0_30_SystemString\r\n    PUSH, __ag_0_50_SystemString\r\n    COPY\r\n   
+    PUSH, __ag_0_43_SystemBoolean\r\n    PUSH, __ag_0_39_SystemBoolean\r\n    COPY\r\n   
+    PUSH, __ag_0_33_SystemBoolean\r\n    PUSH, __ag_0_35_SystemBoolean\r\n    COPY\r\n   
+    PUSH, __ag_0_39_SystemBoolean\r\n    PUSH, __ag_0_35_SystemBoolean\r\n    EXTERN,
+    \"SystemBoolean.__op_UnaryNegation__SystemBoolean__SystemBoolean\"\r\n    PUSH,
+    __ag_0_35_SystemBoolean\r\n    JUMP_IF_FALSE, 0x000002AC\r\n    PUSH, __ag_0_23_SystemString\r\n   
+    PUSH, __ag_0_0_SystemString\r\n    PUSH, __ag_0_42_SystemString\r\n    PUSH,
+    __ag_0_19_SystemString\r\n    EXTERN, \"SystemString.__Concat__SystemString_SystemString_SystemString__SystemString\"\r\n   
+    PUSH, __ag_0_19_SystemString\r\n    PUSH, __ag_0_1_SystemString\r\n    PUSH,
+    __ag_0_15_SystemString\r\n    PUSH, __ag_0_21_SystemString\r\n    EXTERN, \"SystemString.__Concat__SystemString_SystemString_SystemString__SystemString\"\r\n   
+    PUSH, __ag_0_21_SystemString\r\n    PUSH, _this_gameobject\r\n    EXTERN, \"UnityEngineDebug.__LogError__SystemObject_UnityEngineObject__SystemVoid\"\r\n   
+    PUSH, __null\r\n    PUSH, __ag_0_52_UnityEngineComponent\r\n    COPY\r\n    PUSH,
+    __ag_0_47_SystemBoolean\r\n    PUSH, __ag_0_46_SystemBoolean\r\n    COPY\r\n   
+    JUMP, 0x0000063C\r\n    PUSH, __ag_0_50_SystemString\r\n    PUSH, __ag_0_40_UnityEngineGameObject\r\n   
+    EXTERN, \"UnityEngineGameObject.__Find__SystemString__UnityEngineGameObject\"\r\n   
+    PUSH, __ag_0_33_SystemBoolean\r\n    PUSH, __ag_0_3_SystemBoolean\r\n    COPY\r\n   
+    PUSH, __ag_0_40_UnityEngineGameObject\r\n    PUSH, __ag_0_5_SystemBoolean\r\n   
+    EXTERN, \"VRCSDKBaseUtilities.__IsValid__SystemObject__SystemBoolean\"\r\n   
+    PUSH, __ag_0_5_SystemBoolean\r\n    PUSH, __ag_0_3_SystemBoolean\r\n    EXTERN,
+    \"SystemBoolean.__op_UnaryNegation__SystemBoolean__SystemBoolean\"\r\n    PUSH,
+    __ag_0_3_SystemBoolean\r\n    JUMP_IF_FALSE, 0x000003B0\r\n    PUSH, __ag_0_17_SystemString\r\n   
+    PUSH, __ag_0_0_SystemString\r\n    PUSH, __ag_0_10_SystemString\r\n    PUSH,
+    __ag_0_31_SystemString\r\n    EXTERN, \"SystemString.__Concat__SystemString_SystemString_SystemString__SystemString\"\r\n   
+    PUSH, __ag_0_31_SystemString\r\n    PUSH, __ag_0_51_SystemString\r\n    PUSH,
+    __ag_0_15_SystemString\r\n    PUSH, __ag_0_13_SystemString\r\n    EXTERN, \"SystemString.__Concat__SystemString_SystemString_SystemString__SystemString\"\r\n   
+    PUSH, __ag_0_13_SystemString\r\n    PUSH, _this_gameobject\r\n    EXTERN, \"UnityEngineDebug.__LogError__SystemObject_UnityEngineObject__SystemVoid\"\r\n   
+    PUSH, __null\r\n    PUSH, __ag_0_52_UnityEngineComponent\r\n    COPY\r\n    PUSH,
+    __ag_0_44_SystemBoolean\r\n    PUSH, __ag_0_46_SystemBoolean\r\n    COPY\r\n   
+    JUMP, 0x0000063C\r\n    PUSH, __null\r\n    PUSH, __ag_0_52_UnityEngineComponent\r\n   
+    COPY\r\n    PUSH, __ag_0_40_UnityEngineGameObject\r\n    PUSH, __ag_0_48_SystemType\r\n   
+    PUSH, __ag_0_53_UnityEngineComponent[]\r\n    EXTERN, \"UnityEngineGameObject.__GetComponents__SystemType__UnityEngineComponentArray\"\r\n   
+    PUSH, __ag_0_36_SystemInt32\r\n    PUSH, __ag_0_11_SystemInt32\r\n    COPY\r\n   
+    PUSH, __ag_0_0_SystemString\r\n    PUSH, __ag_0_7_SystemString\r\n    PUSH, __ag_0_27_SystemString\r\n   
+    EXTERN, \"SystemString.__Concat__SystemString_SystemString__SystemString\"\r\n   
+    PUSH, __ag_0_15_SystemString\r\n    PUSH, __ag_0_45_SystemString\r\n    COPY\r\n   
+    PUSH, __ag_0_27_SystemString\r\n    PUSH, __ag_0_26_SystemString\r\n    COPY\r\n   
+    PUSH, __ag_0_49_SystemString\r\n    PUSH, __ag_0_30_SystemString\r\n    COPY\r\n   
+    PUSH, __ag_0_4_SystemBoolean\r\n    PUSH, __ag_0_43_SystemBoolean\r\n    COPY\r\n   
+    PUSH, __ag_0_24___jump_return_SystemUInt32\r\n    JUMP, 0x00000008\r\n    PUSH,
+    __ag_0_30_SystemString\r\n    PUSH, __ag_0_49_SystemString\r\n    COPY\r\n   
+    PUSH, __ag_0_43_SystemBoolean\r\n    PUSH, __ag_0_4_SystemBoolean\r\n    COPY\r\n   
+    PUSH, __ag_0_4_SystemBoolean\r\n    JUMP_IF_FALSE, 0x000004D0\r\n    PUSH, __ag_0_49_SystemString\r\n   
+    PUSH, __ag_0_11_SystemInt32\r\n    PUSH, __ag_0_8_SystemBoolean\r\n    EXTERN,
+    \"SystemInt32.__TryParse__SystemString_SystemInt32Ref__SystemBoolean\"\r\n   
+    PUSH, __ag_0_33_SystemBoolean\r\n    PUSH, __ag_0_37_SystemBoolean\r\n    COPY\r\n   
+    PUSH, __ag_0_53_UnityEngineComponent[]\r\n    PUSH, __ag_0_18_SystemInt32\r\n   
+    EXTERN, \"UnityEngineComponentArray.__get_Length__SystemInt32\"\r\n    PUSH,
+    __ag_0_11_SystemInt32\r\n    PUSH, __ag_0_18_SystemInt32\r\n    PUSH, __ag_0_37_SystemBoolean\r\n   
+    EXTERN, \"SystemInt32.__op_LessThan__SystemInt32_SystemInt32__SystemBoolean\"\r\n   
+    PUSH, __ag_0_37_SystemBoolean\r\n    JUMP_IF_FALSE, 0x0000054C\r\n    PUSH, __ag_0_53_UnityEngineComponent[]\r\n   
+    PUSH, __ag_0_11_SystemInt32\r\n    PUSH, __ag_0_52_UnityEngineComponent\r\n   
+    EXTERN, \"UnityEngineComponentArray.__Get__SystemInt32__UnityEngineComponent\"\r\n   
+    PUSH, __ag_0_33_SystemBoolean\r\n    PUSH, __ag_0_28_SystemBoolean\r\n    COPY\r\n   
+    PUSH, __ag_0_52_UnityEngineComponent\r\n    PUSH, __null\r\n    PUSH, __ag_0_28_SystemBoolean\r\n   
+    EXTERN, \"UnityEngineComponent.__op_Equality__UnityEngineObject_UnityEngineObject__SystemBoolean\"\r\n   
+    PUSH, __ag_0_28_SystemBoolean\r\n    JUMP_IF_FALSE, 0x00000628\r\n    PUSH, __ag_0_32_SystemString\r\n   
+    PUSH, __ag_0_0_SystemString\r\n    PUSH, __ag_0_25_SystemString\r\n    PUSH,
+    __ag_0_22_SystemString\r\n    EXTERN, \"SystemString.__Concat__SystemString_SystemString_SystemString__SystemString\"\r\n   
+    PUSH, __ag_0_22_SystemString\r\n    PUSH, __ag_0_29_SystemString\r\n    PUSH,
+    __ag_0_15_SystemString\r\n    PUSH, __ag_0_34_SystemString\r\n    EXTERN, \"SystemString.__Concat__SystemString_SystemString_SystemString__SystemString\"\r\n   
+    PUSH, __ag_0_34_SystemString\r\n    PUSH, _this_gameobject\r\n    EXTERN, \"UnityEngineDebug.__LogError__SystemObject_UnityEngineObject__SystemVoid\"\r\n   
+    PUSH, __null\r\n    PUSH, __ag_0_52_UnityEngineComponent\r\n    COPY\r\n    PUSH,
+    __ag_0_41_SystemBoolean\r\n    PUSH, __ag_0_46_SystemBoolean\r\n    COPY\r\n   
+    JUMP, 0x0000063C\r\n    PUSH, __ag_0_9_SystemBoolean\r\n    PUSH, __ag_0_46_SystemBoolean\r\n   
+    COPY\r\n    PUSH, __0_ra_SystemUInt32\r\n    COPY\r\n    JUMP_INDIRECT, __0_ra_SystemUInt32\r\n\r\n 
+    .export _Get\r\n  _Get:\r\n    PUSH, __1_ea_SystemUInt32\r\n    PUSH, __68_const_SystemType\r\n   
+    PUSH, __67_local_var_SystemType\r\n    COPY\r\n    PUSH, key\r\n    PUSH, __ag_0_15_SystemString\r\n   
+    COPY\r\n    PUSH, __67_local_var_SystemType\r\n    PUSH, __ag_0_48_SystemType\r\n   
+    COPY\r\n    PUSH, udon\r\n    PUSH, __ag_0_52_UnityEngineComponent\r\n    COPY\r\n   
+    PUSH, hasValue\r\n    PUSH, __ag_0_46_SystemBoolean\r\n    COPY\r\n    PUSH,
+    __69___jump_return_2_SystemUInt32\r\n    JUMP, 0x000000D0\r\n    PUSH, __ag_0_52_UnityEngineComponent\r\n   
+    PUSH, udon\r\n    COPY\r\n    PUSH, __ag_0_46_SystemBoolean\r\n    PUSH, hasValue\r\n   
+    COPY\r\n    PUSH, __0_ra_SystemUInt32\r\n    COPY\r\n    JUMP_INDIRECT, __0_ra_SystemUInt32\r\n\r\n.code_end\r\n"
+  assemblyError: 
+  triggerHash: 4BA07A9717C7BCA315288AA00C595126
+  shouldBeNetworked: 0
+  warningMessages: []
+  errorMessages: []
+  ctDataInstance:
+    version: 6
+    updateOrder: 0
+    autoSetSyncMode: 1
+    programSyncMode: 2
+    programName: 
+    events:
+    - name: _Get
+      eventId: 58d4c62b-f213-4025-974f-b2a96a228b22
+      eventInstance:
+        actionType:
+          directEvent: Event_Custom
+          guid: 
+        inputs: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      actionInstances:
+      - actionType:
+          directEvent: Type_VRCUdonCommonInterfacesIUdonEventReceiver
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: 
+          variableID: bb27ce7e-3f34-44f5-98b2-0008de908d5c
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBEQAAAHUAZABvAG4AQgBlAGgAYQB2AGkAbwB1AHIAVAB5AHAAZQAF
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: 
+          guid: 1cb3cf0f-9eea-4bc7-8a38-bfc0a6d5fe9f
+        inputs:
+        - isVariable: 1
+          name: key
+          variableID: f9624e6f-219c-4fb6-aab9-0bfb5e2f5f0f
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBAAAAAAU=
+            unityObjects: []
+        - isVariable: 1
+          name: udonBehaviourType
+          variableID: bb27ce7e-3f34-44f5-98b2-0008de908d5c
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        - isVariable: 1
+          name: udon
+          variableID: 630daf3b-a515-44c1-a7a9-230f83ff3130
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBCQAAAGMAbwBtAHAAbwBuAGUAbgB0AAU=
+            unityObjects: []
+        - isVariable: 1
+          name: hasValue
+          variableID: 66a3ca1d-31e2-4671-81ec-f5e79cbd9f2b
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBCAAAAGgAYQBzAFYAYQBsAHUAZQAF
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      eventOptions:
+        userGate: 0
+        userGateExtraData: []
+        broadcast: 0
+        delay: 0
+        replay: 0
+      expanded: 1
+    variables:
+    - isVariable: 0
+      name: key
+      variableID: f9624e6f-219c-4fb6-aab9-0bfb5e2f5f0f
+      data:
+        objEncoded: Lg==
+        unityObjects: []
+      type:
+        typeDef: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      sync: 0
+      showInInspector: 1
+      typeInfo: 0
+      comment:
+        comment: 
+    - isVariable: 0
+      name: udon
+      variableID: 630daf3b-a515-44c1-a7a9-230f83ff3130
+      data:
+        objEncoded: Lg==
+        unityObjects: []
+      type:
+        typeDef: VRC.Udon.UdonBehaviour, VRC.Udon, Version=0.0.0.0, Culture=neutral,
+          PublicKeyToken=null
+      sync: 0
+      showInInspector: 1
+      typeInfo: 0
+      comment:
+        comment: 
+    - isVariable: 0
+      name: hasValue
+      variableID: 66a3ca1d-31e2-4671-81ec-f5e79cbd9f2b
+      data:
+        objEncoded: Ai8AAAAAARgAAABTAHkAcwB0AGUAbQAuAEIAbwBvAGwAZQBhAG4ALAAgAG0AcwBjAG8AcgBsAGkAYgAAAAAALAAF
+        unityObjects: []
+      type:
+        typeDef: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      sync: 0
+      showInInspector: 1
+      typeInfo: 0
+      comment:
+        comment: 
+    comment:
+      comment: 
+    expandVariables: 1
+    expandOtherSettings: 0
+    expandSyncSection: 0
+    ignoreEventWarnings: 1
+  publicVariableReferences:
+    actionDataIndices: []
+    userVariableNames:
+    - key
+    - udon
+    - hasValue
+    userVariableTypes:
+    - typeDef: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+    - typeDef: VRC.Udon.UdonBehaviour, VRC.Udon, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+    - typeDef: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+  ignoreOdinData: 1
+  serializationDataOdin:
+    SerializedFormat: 0
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes: []
+  allowEditingInInspector: 0
+  expandInInspector: 0
+  isLocked: 1

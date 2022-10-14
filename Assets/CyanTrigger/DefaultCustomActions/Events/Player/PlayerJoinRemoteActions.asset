@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 61d0ad128b95568438c70898dc9e600c, type: 3}
+  m_Name: PlayerJoinRemoteActions
+  m_EditorClassIdentifier: 
+  autoAddPriority: 0
+  exposedActions:
+  - guid: f4e952a1-7376-461b-acd0-738fa18cf4db
+    actionNamespace: OnPlayerJoined
+    actionVariantName: Remote Player
+    description: Fires when any remote player joins the instance
+    variables: []
+    baseEventName: Event_OnPlayerJoined
+    eventEntry: _onPlayerJoined
+    autoAdd: 0
+  isMultiInstance: 0
+  defaultNamespace: 
+  udonProgramAsset: {fileID: 11400000, guid: 7cb75e3d94584f14fa5bd32748175ab5, type: 2}
+  assetGuid: 7cb75e3d94584f14fa5bd32748175ab5
+  thisGuid: b8dfe695c9b7eca4f8c112cd3212ded1

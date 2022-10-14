@@ -1,0 +1,40 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 61d0ad128b95568438c70898dc9e600c, type: 3}
+  m_Name: OnCollisionStayGameObjectActions
+  m_EditorClassIdentifier: 
+  autoAddPriority: 0
+  exposedActions:
+  - guid: 353caca9-88cf-42c3-8555-d08269a59fd4
+    actionNamespace: OnCollisionStay
+    actionVariantName: GameObject
+    description: Fires for every Fixed Update frame while any of the specified GameObjects
+      are colliding with a collider on this GameObject
+    variables:
+    - type:
+        typeDef: UnityEngine.GameObject, UnityEngine.CoreModule, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
+      udonName: gameObject
+      displayName: GameObject
+      description: 
+      defaultValue:
+        objEncoded: Lg==
+        unityObjects: []
+      variableType: 19
+    baseEventName: Event_OnCollisionStay
+    eventEntry: _onCollisionStay
+    autoAdd: 0
+  isMultiInstance: 0
+  defaultNamespace: 
+  udonProgramAsset: {fileID: 11400000, guid: dab040aad68ffe74fbeddf25bac825bb, type: 2}
+  assetGuid: dab040aad68ffe74fbeddf25bac825bb
+  thisGuid: e310920c82228694a9b8247f132a3ae1

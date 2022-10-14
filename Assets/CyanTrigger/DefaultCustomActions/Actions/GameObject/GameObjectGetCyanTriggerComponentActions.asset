@@ -1,0 +1,171 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 61d0ad128b95568438c70898dc9e600c, type: 3}
+  m_Name: GameObjectGetCyanTriggerComponentActions
+  m_EditorClassIdentifier: 
+  autoAddPriority: 0
+  exposedActions:
+  - guid: 8bbf797e-034e-4e7d-b313-b613bfa7714a
+    actionNamespace: GameObject
+    actionVariantName: GetCyanTriggerComponent
+    description: Get the first CyanTrigger or CyanTriggerAsset with the specified
+      program name on the provided GameObject
+    variables:
+    - type:
+        typeDef: UnityEngine.GameObject, UnityEngine.CoreModule, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
+      udonName: _arg_gameObject__GetCyanTriggerComponent
+      displayName: gameObject
+      description: 
+      defaultValue:
+        objEncoded: 
+        unityObjects: []
+      variableType: 3
+    - type:
+        typeDef: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      udonName: _arg_expectedProgramName__GetCyanTriggerComponent
+      displayName: expectedProgramName
+      description: 
+      defaultValue:
+        objEncoded: 
+        unityObjects: []
+      variableType: 3
+    - type:
+        typeDef: VRC.Udon.UdonBehaviour, VRC.Udon, Version=0.0.0.0, Culture=neutral,
+          PublicKeyToken=null
+      udonName: _arg_cyanTrigger__GetCyanTriggerComponent
+      displayName: cyanTrigger
+      description: 
+      defaultValue:
+        objEncoded: 
+        unityObjects: []
+      variableType: 6
+    baseEventName: Event_Custom
+    eventEntry: _GetCyanTriggerComponent
+    autoAdd: 0
+  - guid: dc32a202-c0a3-44e0-b82d-624bbafbbbd2
+    actionNamespace: GameObject
+    actionVariantName: GetCyanTriggerComponent
+    description: Get the first CyanTrigger or CyanTriggerAsset on the provided GameObject
+    variables:
+    - type:
+        typeDef: UnityEngine.GameObject, UnityEngine.CoreModule, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
+      udonName: _arg_gameObject__GetCyanTriggerComponent
+      displayName: gameObject
+      description: 
+      defaultValue:
+        objEncoded: 
+        unityObjects: []
+      variableType: 3
+    - type:
+        typeDef: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      udonName: _arg_expectedProgramName__GetCyanTriggerComponent
+      displayName: expectedProgramName
+      description: 
+      defaultValue:
+        objEncoded: 
+        unityObjects: []
+      variableType: 9
+    - type:
+        typeDef: VRC.Udon.UdonBehaviour, VRC.Udon, Version=0.0.0.0, Culture=neutral,
+          PublicKeyToken=null
+      udonName: _arg_cyanTrigger__GetCyanTriggerComponent
+      displayName: cyanTrigger
+      description: 
+      defaultValue:
+        objEncoded: 
+        unityObjects: []
+      variableType: 6
+    baseEventName: Event_Custom
+    eventEntry: _GetCyanTriggerComponent
+    autoAdd: 0
+  - guid: 42942ea3-5760-458c-b363-13dcfe56eee5
+    actionNamespace: Component
+    actionVariantName: GetCyanTriggerComponent
+    description: Get the first CyanTrigger or CyanTriggerAsset with the specified
+      program name on the provided GameObject
+    variables:
+    - type:
+        typeDef: UnityEngine.Component, UnityEngine.CoreModule, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
+      udonName: _arg_component__ComponentGetCyanTriggerComponent
+      displayName: component
+      description: 
+      defaultValue:
+        objEncoded: 
+        unityObjects: []
+      variableType: 3
+    - type:
+        typeDef: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      udonName: _arg_expectedProgramName__ComponentGetCyanTriggerComponent
+      displayName: expectedProgramName
+      description: 
+      defaultValue:
+        objEncoded: 
+        unityObjects: []
+      variableType: 3
+    - type:
+        typeDef: VRC.Udon.UdonBehaviour, VRC.Udon, Version=0.0.0.0, Culture=neutral,
+          PublicKeyToken=null
+      udonName: _arg_cyanTrigger__ComponentGetCyanTriggerComponent
+      displayName: cyanTrigger
+      description: 
+      defaultValue:
+        objEncoded: 
+        unityObjects: []
+      variableType: 6
+    baseEventName: Event_Custom
+    eventEntry: _ComponentGetCyanTriggerComponent
+    autoAdd: 0
+  - guid: d1e5212b-5177-4634-a6dc-cf90dc25c8f4
+    actionNamespace: Component
+    actionVariantName: GetCyanTriggerComponent
+    description: Get the first CyanTrigger or CyanTriggerAsset on the provided GameObject
+    variables:
+    - type:
+        typeDef: UnityEngine.Component, UnityEngine.CoreModule, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
+      udonName: _arg_component__ComponentGetCyanTriggerComponent
+      displayName: component
+      description: 
+      defaultValue:
+        objEncoded: 
+        unityObjects: []
+      variableType: 3
+    - type:
+        typeDef: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      udonName: _arg_expectedProgramName__ComponentGetCyanTriggerComponent
+      displayName: expectedProgramName
+      description: 
+      defaultValue:
+        objEncoded: 
+        unityObjects: []
+      variableType: 9
+    - type:
+        typeDef: VRC.Udon.UdonBehaviour, VRC.Udon, Version=0.0.0.0, Culture=neutral,
+          PublicKeyToken=null
+      udonName: _arg_cyanTrigger__ComponentGetCyanTriggerComponent
+      displayName: cyanTrigger
+      description: 
+      defaultValue:
+        objEncoded: 
+        unityObjects: []
+      variableType: 6
+    baseEventName: Event_Custom
+    eventEntry: _ComponentGetCyanTriggerComponent
+    autoAdd: 0
+  isMultiInstance: 0
+  defaultNamespace: GameObject
+  udonProgramAsset: {fileID: 11400000, guid: 1f6625b01a5c6f7488e8599618e931a1, type: 2}
+  assetGuid: 1f6625b01a5c6f7488e8599618e931a1
+  thisGuid: ce1fc51c8bf5ac440a6bf0ad2498a3e0

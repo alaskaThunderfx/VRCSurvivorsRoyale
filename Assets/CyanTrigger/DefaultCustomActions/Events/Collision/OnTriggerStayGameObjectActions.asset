@@ -1,0 +1,40 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 61d0ad128b95568438c70898dc9e600c, type: 3}
+  m_Name: OnTriggerStayGameObjectActions
+  m_EditorClassIdentifier: 
+  autoAddPriority: 0
+  exposedActions:
+  - guid: f9b26b3e-ec73-420d-b7dd-f06dea56d965
+    actionNamespace: OnTriggerStay
+    actionVariantName: GameObject
+    description: Fires for every Fixed Update frame while any of the specified GameObjects
+      exists inside the trigger colliders on this GameObject
+    variables:
+    - type:
+        typeDef: UnityEngine.GameObject, UnityEngine.CoreModule, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
+      udonName: gameObject
+      displayName: GameObject
+      description: 
+      defaultValue:
+        objEncoded: Lg==
+        unityObjects: []
+      variableType: 19
+    baseEventName: Event_OnTriggerStay
+    eventEntry: _onTriggerStay
+    autoAdd: 0
+  isMultiInstance: 0
+  defaultNamespace: 
+  udonProgramAsset: {fileID: 11400000, guid: 3ffbfb5960fbd684da73194c047782be, type: 2}
+  assetGuid: 3ffbfb5960fbd684da73194c047782be
+  thisGuid: baa293c68a3781741bed2a8378f58abd

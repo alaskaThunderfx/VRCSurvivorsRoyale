@@ -1,0 +1,60 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 61d0ad128b95568438c70898dc9e600c, type: 3}
+  m_Name: GetPlayerBonePositionRotationTransformActions
+  m_EditorClassIdentifier: 
+  autoAddPriority: 0
+  exposedActions:
+  - guid: d3bcf945-ad1e-44cf-8b65-bb8f16bf043b
+    actionNamespace: VRCPlayerApi
+    actionVariantName: GetBonePositionAndRotation
+    description: Set the provided Transform to the position and rotation of the specified
+      player bone
+    variables:
+    - type:
+        typeDef: VRC.SDKBase.VRCPlayerApi, VRCSDKBase, Version=0.0.0.0, Culture=neutral,
+          PublicKeyToken=null
+      udonName: player
+      displayName: player
+      description: 
+      defaultValue:
+        objEncoded: Lg==
+        unityObjects: []
+      variableType: 3
+    - type:
+        typeDef: UnityEngine.HumanBodyBones, UnityEngine.AnimationModule, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
+      udonName: bone
+      displayName: bone
+      description: 
+      defaultValue:
+        objEncoded: Ai8AAAAAATcAAABVAG4AaQB0AHkARQBuAGcAaQBuAGUALgBIAHUAbQBhAG4AQgBvAGQAeQBCAG8AbgBlAHMALAAgAFUAbgBpAHQAeQBFAG4AZwBpAG4AZQAuAEEAbgBpAG0AYQB0AGkAbwBuAE0AbwBkAHUAbABlAAAAAAAeAAAAAAAAAAAF
+        unityObjects: []
+      variableType: 3
+    - type:
+        typeDef: UnityEngine.Transform, UnityEngine.CoreModule, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
+      udonName: transform
+      displayName: transform
+      description: 
+      defaultValue:
+        objEncoded: Lg==
+        unityObjects: []
+      variableType: 3
+    baseEventName: Event_Custom
+    eventEntry: _GetBonePositionAndRotation
+    autoAdd: 0
+  isMultiInstance: 0
+  defaultNamespace: 
+  udonProgramAsset: {fileID: 11400000, guid: 94b01fcd892846847a2aacd9cb713f24, type: 2}
+  assetGuid: 94b01fcd892846847a2aacd9cb713f24
+  thisGuid: 01bfd6dc070b965438ce98d28f19bb91

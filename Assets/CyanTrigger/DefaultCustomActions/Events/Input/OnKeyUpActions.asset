@@ -1,0 +1,39 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 61d0ad128b95568438c70898dc9e600c, type: 3}
+  m_Name: OnKeyUpActions
+  m_EditorClassIdentifier: 
+  autoAddPriority: 0
+  exposedActions:
+  - guid: df678039-d6c9-4259-a449-e96b3e3f595c
+    actionNamespace: Input
+    actionVariantName: OnKeyUp
+    description: Fires on the frame when the specified key has been released
+    variables:
+    - type:
+        typeDef: UnityEngine.KeyCode, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
+          PublicKeyToken=null
+      udonName: KeyCode
+      displayName: KeyCode
+      description: 
+      defaultValue:
+        objEncoded: Ai8AAAAAASsAAABVAG4AaQB0AHkARQBuAGcAaQBuAGUALgBLAGUAeQBDAG8AZABlACwAIABVAG4AaQB0AHkARQBuAGcAaQBuAGUALgBDAG8AcgBlAE0AbwBkAHUAbABlAAAAAAAeAAAAAAAAAAAF
+        unityObjects: []
+      variableType: 3
+    baseEventName: Event_Update
+    eventEntry: _update
+    autoAdd: 0
+  isMultiInstance: 0
+  defaultNamespace: 
+  udonProgramAsset: {fileID: 11400000, guid: 608ec00628979da4687a7d785fdc25da, type: 2}
+  assetGuid: 608ec00628979da4687a7d785fdc25da
+  thisGuid: b894b90af6daebc4eab4235e22f4140b

@@ -1,0 +1,95 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 61d0ad128b95568438c70898dc9e600c, type: 3}
+  m_Name: GameObjectSetCyanTriggerComponentActiveActions
+  m_EditorClassIdentifier: 
+  autoAddPriority: 0
+  exposedActions:
+  - guid: ce67b591-c486-4c90-9693-529d60a796df
+    actionNamespace: GameObject
+    actionVariantName: SetCyanTriggerComponentActive
+    description: Set the active state for all CyanTrigger and CyanTriggerAsset with
+      the specified program name on the provided GameObject
+    variables:
+    - type:
+        typeDef: UnityEngine.GameObject, UnityEngine.CoreModule, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
+      udonName: _arg_gameObject__SetCyanTriggerComponentActive
+      displayName: gameObject
+      description: 
+      defaultValue:
+        objEncoded: 
+        unityObjects: []
+      variableType: 19
+    - type:
+        typeDef: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      udonName: _arg_expectedProgramName__SetCyanTriggerComponentActive
+      displayName: expectedProgramName
+      description: 
+      defaultValue:
+        objEncoded: 
+        unityObjects: []
+      variableType: 3
+    - type:
+        typeDef: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      udonName: _arg_enable__SetCyanTriggerComponentActive
+      displayName: enable
+      description: 
+      defaultValue:
+        objEncoded: Ai8AAAAAARgAAABTAHkAcwB0AGUAbQAuAEIAbwBvAGwAZQBhAG4ALAAgAG0AcwBjAG8AcgBsAGkAYgAAAAAALAAF
+        unityObjects: []
+      variableType: 3
+    baseEventName: Event_Custom
+    eventEntry: _SetCyanTriggerComponentActive
+    autoAdd: 0
+  - guid: ae552bec-ccb7-4968-9918-11ea598684bb
+    actionNamespace: GameObject
+    actionVariantName: SetCyanTriggerComponentActive
+    description: Set the active state for all CyanTrigger and CyanTriggerAsset on
+      the provided GameObject
+    variables:
+    - type:
+        typeDef: UnityEngine.GameObject, UnityEngine.CoreModule, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
+      udonName: _arg_gameObject__SetCyanTriggerComponentActive
+      displayName: gameObject
+      description: 
+      defaultValue:
+        objEncoded: 
+        unityObjects: []
+      variableType: 19
+    - type:
+        typeDef: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      udonName: _arg_expectedProgramName__SetCyanTriggerComponentActive
+      displayName: expectedProgramName
+      description: 
+      defaultValue:
+        objEncoded: 
+        unityObjects: []
+      variableType: 9
+    - type:
+        typeDef: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      udonName: _arg_enable__SetCyanTriggerComponentActive
+      displayName: enable
+      description: 
+      defaultValue:
+        objEncoded: 
+        unityObjects: []
+      variableType: 3
+    baseEventName: Event_Custom
+    eventEntry: _SetCyanTriggerComponentActive
+    autoAdd: 0
+  isMultiInstance: 0
+  defaultNamespace: GameObject
+  udonProgramAsset: {fileID: 11400000, guid: 8de0281dad67ab04cbb543ec8e8271a9, type: 2}
+  assetGuid: 8de0281dad67ab04cbb543ec8e8271a9
+  thisGuid: ad0f8607ee0071c4899937c9aa976660

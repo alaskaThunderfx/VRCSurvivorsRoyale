@@ -1,0 +1,59 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 61d0ad128b95568438c70898dc9e600c, type: 3}
+  m_Name: TeleportPlayerWithOptionsActions
+  m_EditorClassIdentifier: 
+  autoAddPriority: 0
+  exposedActions:
+  - guid: c8aff3da-acfd-416b-bb83-02e7a7129c07
+    actionNamespace: VRCPlayerApi
+    actionVariantName: TeleportTo
+    description: Teleport the player to the current position and rotation of the
+      provided Transform
+    variables:
+    - type:
+        typeDef: UnityEngine.Transform, UnityEngine.CoreModule, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
+      udonName: target
+      displayName: Target
+      description: 
+      defaultValue:
+        objEncoded: Lg==
+        unityObjects: []
+      variableType: 3
+    - type:
+        typeDef: VRC.SDKBase.VRC_SceneDescriptor+SpawnOrientation, VRCSDKBase, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
+      udonName: orientation
+      displayName: Orientation
+      description: 
+      defaultValue:
+        objEncoded: Ai8AAAAAATwAAABWAFIAQwAuAFMARABLAEIAYQBzAGUALgBWAFIAQwBfAFMAYwBlAG4AZQBEAGUAcwBjAHIAaQBwAHQAbwByACsAUwBwAGEAdwBuAE8AcgBpAGUAbgB0AGEAdABpAG8AbgAsACAAVgBSAEMAUwBEAEsAQgBhAHMAZQAAAAAAHgAAAAAAAAAABQ==
+        unityObjects: []
+      variableType: 3
+    - type:
+        typeDef: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      udonName: lerpOnRemote
+      displayName: Lerp On Remote
+      description: 
+      defaultValue:
+        objEncoded: Ai8AAAAAARgAAABTAHkAcwB0AGUAbQAuAEIAbwBvAGwAZQBhAG4ALAAgAG0AcwBjAG8AcgBsAGkAYgAAAAAALAAF
+        unityObjects: []
+      variableType: 3
+    baseEventName: Event_Custom
+    eventEntry: _TeleportTo
+    autoAdd: 0
+  isMultiInstance: 0
+  defaultNamespace: 
+  udonProgramAsset: {fileID: 11400000, guid: 73246177e8a7cfc4db1e21b34e30ae12, type: 2}
+  assetGuid: 73246177e8a7cfc4db1e21b34e30ae12
+  thisGuid: e666c5bc733579a42a759230f73a3f18

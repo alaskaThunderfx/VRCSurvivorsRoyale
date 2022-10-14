@@ -1,0 +1,3151 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a31a3a978bd0448580d4ef9f3d6d95bf, type: 3}
+  m_Name: Vector3ArrayList
+  m_EditorClassIdentifier: 
+  serializedUdonProgramAsset: {fileID: 11400000, guid: 9281411c62a669c4085c5947e014414c,
+    type: 2}
+  udonAssembly: ".data_start\r\n  .export __CyanTrigger_ProgramName_SystemString\r\n 
+    .export itemArray\r\n  .export length\r\n  __CyanTrigger_ProgramName_SystemString:
+    %SystemString, null\r\n  __CyanTrigger_ProgramHash_SystemString: %SystemString,
+    null\r\n  __0_ra_SystemUInt32: %SystemUInt32, null\r\n  __1_ea_SystemUInt32:
+    %SystemUInt32, null\r\n  __null: %SystemObject, null\r\n  itemArray: %UnityEngineVector3Array,
+    null\r\n  length: %SystemInt32, null\r\n  _arg_index__SetIndex: %SystemInt32,
+    null\r\n  _arg_item__SetIndex: %UnityEngineVector3, null\r\n  _arg_index__GetIndex:
+    %SystemInt32, null\r\n  _arg_item__GetIndex: %UnityEngineVector3, null\r\n  _arg_item__Add:
+    %UnityEngineVector3, null\r\n  _arg_index__Insert: %SystemInt32, null\r\n  _arg_item__Insert:
+    %UnityEngineVector3, null\r\n  _arg_index1__Swap: %SystemInt32, null\r\n  _arg_index2__Swap:
+    %SystemInt32, null\r\n  _arg_index__RemoveAt: %SystemInt32, null\r\n  _arg_index__RemoveAtUnordered:
+    %SystemInt32, null\r\n  _arg_item__RemoveValue: %UnityEngineVector3, null\r\n 
+    _arg_removeAll__RemoveValue: %SystemBoolean, null\r\n  __24_local_var_SystemBoolean:
+    %SystemBoolean, null\r\n  __25_const_SystemBoolean: %SystemBoolean, null\r\n 
+    __26_ref_SystemInt32: %SystemInt32, null\r\n  __27_local_var_SystemBoolean: %SystemBoolean,
+    null\r\n  __28_ref_SystemInt32: %SystemInt32, null\r\n  __29_local_var_SystemInt32:
+    %SystemInt32, null\r\n  __30_ref_SystemInt32: %SystemInt32, null\r\n  __31_ref_SystemInt32:
+    %SystemInt32, null\r\n  __32_temp_SystemInt32: %SystemInt32, null\r\n  __33_temp_SystemInt32:
+    %SystemInt32, null\r\n  __34_temp_SystemBoolean: %SystemBoolean, null\r\n  __35_temp_SystemBoolean:
+    %SystemBoolean, null\r\n  __36_const_SystemInt32: %SystemInt32, null\r\n  __37_ref_SystemInt32:
+    %SystemInt32, null\r\n  __38_ref_SystemString: %SystemString, null\r\n  __39___jump_return_0_SystemUInt32:
+    %SystemUInt32, null\r\n  __40_ref_SystemInt32: %SystemInt32, null\r\n  __41_local_var_SystemBoolean:
+    %SystemBoolean, null\r\n  __42_ref_SystemInt32: %SystemInt32, null\r\n  __43_temp_SystemBoolean:
+    %SystemBoolean, null\r\n  __44_const_SystemBoolean: %SystemBoolean, null\r\n 
+    __45_ref_SystemString: %SystemString, null\r\n  __46___jump_return_1_SystemUInt32:
+    %SystemUInt32, null\r\n  __47_local_var_SystemInt32: %SystemInt32, null\r\n 
+    __48_ref_SystemInt32: %SystemInt32, null\r\n  __49_temp_SystemInt32: %SystemInt32,
+    null\r\n  __50_temp_SystemInt32: %SystemInt32, null\r\n  __51_temp_SystemBoolean:
+    %SystemBoolean, null\r\n  __52_local_var_SystemInt32: %SystemInt32, null\r\n 
+    __53_ref_SystemInt32: %SystemInt32, null\r\n  __54_local_var_UnityEngineVector3:
+    %UnityEngineVector3, null\r\n  __55_ref_SystemInt32: %SystemInt32, null\r\n 
+    __56_local_var_SystemInt32: %SystemInt32, null\r\n  __57_local_var_SystemBoolean:
+    %SystemBoolean, null\r\n  __58_ref_SystemInt32: %SystemInt32, null\r\n  __59_ref_SystemInt32:
+    %SystemInt32, null\r\n  __60_local_var_UnityEngineVector3[]: %UnityEngineVector3Array,
+    null\r\n  __61_ref_SystemInt32: %SystemInt32, null\r\n  __62_local_var_SystemBoolean:
+    %SystemBoolean, null\r\n  __63_ref_SystemInt32: %SystemInt32, null\r\n  __64_temp_SystemBoolean:
+    %SystemBoolean, null\r\n  __65_ref_SystemInt32: %SystemInt32, null\r\n  __66_local_var_UnityEngineVector3:
+    %UnityEngineVector3, null\r\n  __67_local_var_UnityEngineVector3: %UnityEngineVector3,
+    null\r\n  __68_local_var_SystemBoolean: %SystemBoolean, null\r\n  __69_ref_SystemInt32:
+    %SystemInt32, null\r\n  __70_ref_SystemInt32: %SystemInt32, null\r\n  __71_local_var_SystemInt32:
+    %SystemInt32, null\r\n  __72_ref_SystemInt32: %SystemInt32, null\r\n  __73_temp_SystemInt32:
+    %SystemInt32, null\r\n  __74_temp_SystemInt32: %SystemInt32, null\r\n  __75_temp_SystemBoolean:
+    %SystemBoolean, null\r\n  __76_local_var_SystemInt32: %SystemInt32, null\r\n 
+    __77_ref_SystemInt32: %SystemInt32, null\r\n  __78_local_var_UnityEngineVector3:
+    %UnityEngineVector3, null\r\n  __79_local_var_SystemInt32: %SystemInt32, null\r\n 
+    __80_ref_SystemInt32: %SystemInt32, null\r\n  __81_ref_SystemString: %SystemString,
+    null\r\n  __82___jump_return_2_SystemUInt32: %SystemUInt32, null\r\n  __83_local_var_SystemBoolean:
+    %SystemBoolean, null\r\n  __84_ref_SystemInt32: %SystemInt32, null\r\n  __85_temp_SystemBoolean:
+    %SystemBoolean, null\r\n  __86_local_var_SystemInt32: %SystemInt32, null\r\n 
+    __87_ref_SystemInt32: %SystemInt32, null\r\n  __88_ref_SystemString: %SystemString,
+    null\r\n  __89___jump_return_3_SystemUInt32: %SystemUInt32, null\r\n  __90_ref_SystemString:
+    %SystemString, null\r\n  __91___jump_return_4_SystemUInt32: %SystemUInt32, null\r\n 
+    __92_local_var_SystemBoolean: %SystemBoolean, null\r\n  __93_local_var_SystemInt32:
+    %SystemInt32, null\r\n  __94_ref_SystemInt32: %SystemInt32, null\r\n  __95_local_var_SystemBoolean:
+    %SystemBoolean, null\r\n  __96_ref_SystemBoolean: %SystemBoolean, null\r\n  __97_local_var_SystemBoolean:
+    %SystemBoolean, null\r\n  __98_ref_SystemBoolean: %SystemBoolean, null\r\n  __99_local_var_SystemInt32:
+    %SystemInt32, null\r\n  __100_ref_SystemInt32: %SystemInt32, null\r\n  __101_ref_SystemInt32:
+    %SystemInt32, null\r\n  __102_temp_SystemInt32: %SystemInt32, null\r\n  __103_temp_SystemInt32:
+    %SystemInt32, null\r\n  __104_temp_SystemBoolean: %SystemBoolean, null\r\n  __105_local_var_UnityEngineVector3:
+    %UnityEngineVector3, null\r\n  __106_local_var_SystemBoolean: %SystemBoolean,
+    null\r\n  __107_ref_SystemBoolean: %SystemBoolean, null\r\n  __108_ref_SystemBoolean:
+    %SystemBoolean, null\r\n  __109_ref_SystemInt32: %SystemInt32, null\r\n.data_end\r\n\n.code_start\r\n 
+    .export _SetIndex\r\n  _SetIndex:\r\n    PUSH, __1_ea_SystemUInt32\r\n    PUSH,
+    __25_const_SystemBoolean\r\n    PUSH, __24_local_var_SystemBoolean\r\n    COPY\r\n   
+    PUSH, _arg_index__SetIndex\r\n    PUSH, __26_ref_SystemInt32\r\n    PUSH, __24_local_var_SystemBoolean\r\n   
+    EXTERN, \"SystemInt32.__op_GreaterThanOrEqual__SystemInt32_SystemInt32__SystemBoolean\"\r\n   
+    PUSH, __25_const_SystemBoolean\r\n    PUSH, __24_local_var_SystemBoolean\r\n   
+    JUMP_IF_FALSE, 0x00000080\r\n    POP\r\n    PUSH, _arg_index__SetIndex\r\n   
+    PUSH, length\r\n    PUSH, __24_local_var_SystemBoolean\r\n    EXTERN, \"SystemInt32.__op_LessThan__SystemInt32_SystemInt32__SystemBoolean\"\r\n   
+    PUSH, __24_local_var_SystemBoolean\r\n    JUMP_IF_FALSE, 0x000000A8\r\n    PUSH,
+    itemArray\r\n    PUSH, _arg_index__SetIndex\r\n    PUSH, _arg_item__SetIndex\r\n   
+    EXTERN, \"UnityEngineVector3Array.__Set__SystemInt32_UnityEngineVector3__SystemVoid\"\r\n   
+    PUSH, __0_ra_SystemUInt32\r\n    COPY\r\n    JUMP_INDIRECT, __0_ra_SystemUInt32\r\n\r\n 
+    .export _GetIndex\r\n  _GetIndex:\r\n    PUSH, __1_ea_SystemUInt32\r\n    PUSH,
+    __25_const_SystemBoolean\r\n    PUSH, __27_local_var_SystemBoolean\r\n    COPY\r\n   
+    PUSH, _arg_index__GetIndex\r\n    PUSH, __28_ref_SystemInt32\r\n    PUSH, __27_local_var_SystemBoolean\r\n   
+    EXTERN, \"SystemInt32.__op_GreaterThanOrEqual__SystemInt32_SystemInt32__SystemBoolean\"\r\n   
+    PUSH, __25_const_SystemBoolean\r\n    PUSH, __27_local_var_SystemBoolean\r\n   
+    JUMP_IF_FALSE, 0x0000013C\r\n    POP\r\n    PUSH, _arg_index__GetIndex\r\n   
+    PUSH, length\r\n    PUSH, __27_local_var_SystemBoolean\r\n    EXTERN, \"SystemInt32.__op_LessThan__SystemInt32_SystemInt32__SystemBoolean\"\r\n   
+    PUSH, __27_local_var_SystemBoolean\r\n    JUMP_IF_FALSE, 0x0000016C\r\n    PUSH,
+    itemArray\r\n    PUSH, _arg_index__GetIndex\r\n    PUSH, _arg_item__GetIndex\r\n   
+    EXTERN, \"UnityEngineVector3Array.__Get__SystemInt32__UnityEngineVector3\"\r\n   
+    JUMP, 0x00000180\r\n    PUSH, __null\r\n    PUSH, _arg_item__GetIndex\r\n   
+    COPY\r\n    PUSH, __0_ra_SystemUInt32\r\n    COPY\r\n    JUMP_INDIRECT, __0_ra_SystemUInt32\r\n\r\n 
+    .export _Clear\r\n  _Clear:\r\n    PUSH, __1_ea_SystemUInt32\r\n    PUSH, __30_ref_SystemInt32\r\n   
+    PUSH, __29_local_var_SystemInt32\r\n    COPY\r\n    PUSH, length\r\n    PUSH,
+    __33_temp_SystemInt32\r\n    COPY\r\n    PUSH, __31_ref_SystemInt32\r\n    PUSH,
+    __32_temp_SystemInt32\r\n    COPY\r\n    PUSH, __32_temp_SystemInt32\r\n    PUSH,
+    __36_const_SystemInt32\r\n    PUSH, __34_temp_SystemBoolean\r\n    EXTERN, \"SystemInt32.__op_GreaterThanOrEqual__SystemInt32_SystemInt32__SystemBoolean\"\r\n   
+    JUMP, 0x00000220\r\n    PUSH, __29_local_var_SystemInt32\r\n    PUSH, __32_temp_SystemInt32\r\n   
+    PUSH, __29_local_var_SystemInt32\r\n    EXTERN, \"SystemInt32.__op_Addition__SystemInt32_SystemInt32__SystemInt32\"\r\n   
+    PUSH, __29_local_var_SystemInt32\r\n    PUSH, __33_temp_SystemInt32\r\n    PUSH,
+    __35_temp_SystemBoolean\r\n    PUSH, __34_temp_SystemBoolean\r\n    JUMP_IF_FALSE,
+    0x00000258\r\n    EXTERN, \"SystemInt32.__op_LessThan__SystemInt32_SystemInt32__SystemBoolean\"\r\n   
+    JUMP, 0x00000260\r\n    EXTERN, \"SystemInt32.__op_GreaterThan__SystemInt32_SystemInt32__SystemBoolean\"\r\n   
+    PUSH, __35_temp_SystemBoolean\r\n    JUMP_IF_FALSE, 0x00000298\r\n    PUSH, itemArray\r\n   
+    PUSH, __29_local_var_SystemInt32\r\n    PUSH, __null\r\n    EXTERN, \"UnityEngineVector3Array.__Set__SystemInt32_UnityEngineVector3__SystemVoid\"\r\n   
+    JUMP, 0x00000200\r\n    PUSH, __37_ref_SystemInt32\r\n    PUSH, length\r\n   
+    COPY\r\n    PUSH, __0_ra_SystemUInt32\r\n    COPY\r\n    JUMP_INDIRECT, __0_ra_SystemUInt32\r\n\r\n 
+    .export _Add\r\n  _Add:\r\n    PUSH, __1_ea_SystemUInt32\r\n    PUSH, __39___jump_return_0_SystemUInt32\r\n   
+    JUMP, 0x0000057C\r\n    PUSH, itemArray\r\n    PUSH, length\r\n    PUSH, _arg_item__Add\r\n   
+    EXTERN, \"UnityEngineVector3Array.__Set__SystemInt32_UnityEngineVector3__SystemVoid\"\r\n   
+    PUSH, length\r\n    PUSH, __40_ref_SystemInt32\r\n    PUSH, length\r\n    EXTERN,
+    \"SystemInt32.__op_Addition__SystemInt32_SystemInt32__SystemInt32\"\r\n    PUSH,
+    __0_ra_SystemUInt32\r\n    COPY\r\n    JUMP_INDIRECT, __0_ra_SystemUInt32\r\n\r\n 
+    .export _Insert\r\n  _Insert:\r\n    PUSH, __1_ea_SystemUInt32\r\n    PUSH, __25_const_SystemBoolean\r\n   
+    PUSH, __41_local_var_SystemBoolean\r\n    COPY\r\n    PUSH, _arg_index__Insert\r\n   
+    PUSH, __42_ref_SystemInt32\r\n    PUSH, __41_local_var_SystemBoolean\r\n    EXTERN,
+    \"SystemInt32.__op_LessThan__SystemInt32_SystemInt32__SystemBoolean\"\r\n   
+    PUSH, __41_local_var_SystemBoolean\r\n    PUSH, __43_temp_SystemBoolean\r\n   
+    EXTERN, \"SystemBoolean.__op_UnaryNegation__SystemBoolean__SystemBoolean\"\r\n   
+    PUSH, __44_const_SystemBoolean\r\n    PUSH, __43_temp_SystemBoolean\r\n    JUMP_IF_FALSE,
+    0x000003C4\r\n    POP\r\n    PUSH, _arg_index__Insert\r\n    PUSH, length\r\n   
+    PUSH, __41_local_var_SystemBoolean\r\n    EXTERN, \"SystemInt32.__op_GreaterThan__SystemInt32_SystemInt32__SystemBoolean\"\r\n   
+    PUSH, __41_local_var_SystemBoolean\r\n    JUMP_IF_FALSE, 0x000003D4\r\n    JUMP,
+    0x00000560\r\n    PUSH, __46___jump_return_1_SystemUInt32\r\n    JUMP, 0x0000057C\r\n   
+    PUSH, length\r\n    PUSH, __47_local_var_SystemInt32\r\n    COPY\r\n    PUSH,
+    _arg_index__Insert\r\n    PUSH, __50_temp_SystemInt32\r\n    COPY\r\n    PUSH,
+    __48_ref_SystemInt32\r\n    PUSH, __49_temp_SystemInt32\r\n    COPY\r\n    PUSH,
+    __49_temp_SystemInt32\r\n    PUSH, __36_const_SystemInt32\r\n    PUSH, __43_temp_SystemBoolean\r\n   
+    EXTERN, \"SystemInt32.__op_GreaterThanOrEqual__SystemInt32_SystemInt32__SystemBoolean\"\r\n   
+    JUMP, 0x00000468\r\n    PUSH, __47_local_var_SystemInt32\r\n    PUSH, __49_temp_SystemInt32\r\n   
+    PUSH, __47_local_var_SystemInt32\r\n    EXTERN, \"SystemInt32.__op_Addition__SystemInt32_SystemInt32__SystemInt32\"\r\n   
+    PUSH, __47_local_var_SystemInt32\r\n    PUSH, __50_temp_SystemInt32\r\n    PUSH,
+    __51_temp_SystemBoolean\r\n    PUSH, __43_temp_SystemBoolean\r\n    JUMP_IF_FALSE,
+    0x000004A0\r\n    EXTERN, \"SystemInt32.__op_LessThan__SystemInt32_SystemInt32__SystemBoolean\"\r\n   
+    JUMP, 0x000004A8\r\n    EXTERN, \"SystemInt32.__op_GreaterThan__SystemInt32_SystemInt32__SystemBoolean\"\r\n   
+    PUSH, __51_temp_SystemBoolean\r\n    JUMP_IF_FALSE, 0x00000520\r\n    PUSH, __47_local_var_SystemInt32\r\n   
+    PUSH, __53_ref_SystemInt32\r\n    PUSH, __52_local_var_SystemInt32\r\n    EXTERN,
+    \"SystemInt32.__op_Subtraction__SystemInt32_SystemInt32__SystemInt32\"\r\n   
+    PUSH, itemArray\r\n    PUSH, __52_local_var_SystemInt32\r\n    PUSH, __54_local_var_UnityEngineVector3\r\n   
+    EXTERN, \"UnityEngineVector3Array.__Get__SystemInt32__UnityEngineVector3\"\r\n   
+    PUSH, itemArray\r\n    PUSH, __47_local_var_SystemInt32\r\n    PUSH, __54_local_var_UnityEngineVector3\r\n   
+    EXTERN, \"UnityEngineVector3Array.__Set__SystemInt32_UnityEngineVector3__SystemVoid\"\r\n   
+    JUMP, 0x00000448\r\n    PUSH, itemArray\r\n    PUSH, _arg_index__Insert\r\n   
+    PUSH, _arg_item__Insert\r\n    EXTERN, \"UnityEngineVector3Array.__Set__SystemInt32_UnityEngineVector3__SystemVoid\"\r\n   
+    PUSH, length\r\n    PUSH, __55_ref_SystemInt32\r\n    PUSH, length\r\n    EXTERN,
+    \"SystemInt32.__op_Addition__SystemInt32_SystemInt32__SystemInt32\"\r\n    PUSH,
+    __0_ra_SystemUInt32\r\n    COPY\r\n    JUMP_INDIRECT, __0_ra_SystemUInt32\r\n\r\n 
+    .export _CheckSize\r\n  _CheckSize:\r\n    PUSH, __1_ea_SystemUInt32\r\n    PUSH,
+    itemArray\r\n    PUSH, __56_local_var_SystemInt32\r\n    EXTERN, \"UnityEngineVector3Array.__get_Length__SystemInt32\"\r\n   
+    PUSH, __25_const_SystemBoolean\r\n    PUSH, __57_local_var_SystemBoolean\r\n   
+    COPY\r\n    PUSH, __56_local_var_SystemInt32\r\n    PUSH, length\r\n    PUSH,
+    __57_local_var_SystemBoolean\r\n    EXTERN, \"SystemInt32.__op_Equality__SystemInt32_SystemInt32__SystemBoolean\"\r\n   
+    PUSH, __57_local_var_SystemBoolean\r\n    JUMP_IF_FALSE, 0x00000664\r\n    PUSH,
+    __56_local_var_SystemInt32\r\n    PUSH, __58_ref_SystemInt32\r\n    PUSH, __56_local_var_SystemInt32\r\n   
+    EXTERN, \"SystemInt32.__op_Multiplication__SystemInt32_SystemInt32__SystemInt32\"\r\n   
+    PUSH, __59_ref_SystemInt32\r\n    PUSH, __56_local_var_SystemInt32\r\n    PUSH,
+    __56_local_var_SystemInt32\r\n    EXTERN, \"UnityEngineMathf.__Max__SystemInt32_SystemInt32__SystemInt32\"\r\n   
+    PUSH, __56_local_var_SystemInt32\r\n    PUSH, __60_local_var_UnityEngineVector3[]\r\n   
+    EXTERN, \"UnityEngineVector3Array.__ctor__SystemInt32__UnityEngineVector3Array\"\r\n   
+    PUSH, itemArray\r\n    PUSH, __60_local_var_UnityEngineVector3[]\r\n    PUSH,
+    __61_ref_SystemInt32\r\n    EXTERN, \"UnityEngineVector3Array.__CopyTo__SystemArray_SystemInt32__SystemVoid\"\r\n   
+    PUSH, __60_local_var_UnityEngineVector3[]\r\n    PUSH, itemArray\r\n    COPY\r\n   
+    PUSH, __0_ra_SystemUInt32\r\n    COPY\r\n    JUMP_INDIRECT, __0_ra_SystemUInt32\r\n\r\n 
+    .export _Swap\r\n  _Swap:\r\n    PUSH, __1_ea_SystemUInt32\r\n    PUSH, __25_const_SystemBoolean\r\n   
+    PUSH, __62_local_var_SystemBoolean\r\n    COPY\r\n    PUSH, _arg_index1__Swap\r\n   
+    PUSH, __63_ref_SystemInt32\r\n    PUSH, __62_local_var_SystemBoolean\r\n    EXTERN,
+    \"SystemInt32.__op_LessThan__SystemInt32_SystemInt32__SystemBoolean\"\r\n   
+    PUSH, __62_local_var_SystemBoolean\r\n    PUSH, __64_temp_SystemBoolean\r\n   
+    EXTERN, \"SystemBoolean.__op_UnaryNegation__SystemBoolean__SystemBoolean\"\r\n   
+    PUSH, __44_const_SystemBoolean\r\n    PUSH, __64_temp_SystemBoolean\r\n    JUMP_IF_FALSE,
+    0x000007B8\r\n    POP\r\n    PUSH, _arg_index1__Swap\r\n    PUSH, length\r\n   
+    PUSH, __62_local_var_SystemBoolean\r\n    EXTERN, \"SystemInt32.__op_GreaterThanOrEqual__SystemInt32_SystemInt32__SystemBoolean\"\r\n   
+    PUSH, __62_local_var_SystemBoolean\r\n    PUSH, __64_temp_SystemBoolean\r\n   
+    EXTERN, \"SystemBoolean.__op_UnaryNegation__SystemBoolean__SystemBoolean\"\r\n   
+    PUSH, __44_const_SystemBoolean\r\n    PUSH, __64_temp_SystemBoolean\r\n    JUMP_IF_FALSE,
+    0x000007B8\r\n    POP\r\n    PUSH, _arg_index2__Swap\r\n    PUSH, __65_ref_SystemInt32\r\n   
+    PUSH, __62_local_var_SystemBoolean\r\n    EXTERN, \"SystemInt32.__op_LessThan__SystemInt32_SystemInt32__SystemBoolean\"\r\n   
+    PUSH, __62_local_var_SystemBoolean\r\n    PUSH, __64_temp_SystemBoolean\r\n   
+    EXTERN, \"SystemBoolean.__op_UnaryNegation__SystemBoolean__SystemBoolean\"\r\n   
+    PUSH, __44_const_SystemBoolean\r\n    PUSH, __64_temp_SystemBoolean\r\n    JUMP_IF_FALSE,
+    0x000007B8\r\n    POP\r\n    PUSH, _arg_index2__Swap\r\n    PUSH, length\r\n   
+    PUSH, __62_local_var_SystemBoolean\r\n    EXTERN, \"SystemInt32.__op_GreaterThanOrEqual__SystemInt32_SystemInt32__SystemBoolean\"\r\n   
+    PUSH, __62_local_var_SystemBoolean\r\n    JUMP_IF_FALSE, 0x000007C8\r\n    JUMP,
+    0x00000848\r\n    PUSH, itemArray\r\n    PUSH, _arg_index1__Swap\r\n    PUSH,
+    __66_local_var_UnityEngineVector3\r\n    EXTERN, \"UnityEngineVector3Array.__Get__SystemInt32__UnityEngineVector3\"\r\n   
+    PUSH, itemArray\r\n    PUSH, _arg_index2__Swap\r\n    PUSH, __67_local_var_UnityEngineVector3\r\n   
+    EXTERN, \"UnityEngineVector3Array.__Get__SystemInt32__UnityEngineVector3\"\r\n   
+    PUSH, itemArray\r\n    PUSH, _arg_index1__Swap\r\n    PUSH, __67_local_var_UnityEngineVector3\r\n   
+    EXTERN, \"UnityEngineVector3Array.__Set__SystemInt32_UnityEngineVector3__SystemVoid\"\r\n   
+    PUSH, itemArray\r\n    PUSH, _arg_index2__Swap\r\n    PUSH, __66_local_var_UnityEngineVector3\r\n   
+    EXTERN, \"UnityEngineVector3Array.__Set__SystemInt32_UnityEngineVector3__SystemVoid\"\r\n   
+    PUSH, __0_ra_SystemUInt32\r\n    COPY\r\n    JUMP_INDIRECT, __0_ra_SystemUInt32\r\n\r\n 
+    .export _RemoveAt\r\n  _RemoveAt:\r\n    PUSH, __1_ea_SystemUInt32\r\n    PUSH,
+    __25_const_SystemBoolean\r\n    PUSH, __68_local_var_SystemBoolean\r\n    COPY\r\n   
+    PUSH, _arg_index__RemoveAt\r\n    PUSH, __69_ref_SystemInt32\r\n    PUSH, __68_local_var_SystemBoolean\r\n   
+    EXTERN, \"SystemInt32.__op_LessThan__SystemInt32_SystemInt32__SystemBoolean\"\r\n   
+    PUSH, __68_local_var_SystemBoolean\r\n    PUSH, __64_temp_SystemBoolean\r\n   
+    EXTERN, \"SystemBoolean.__op_UnaryNegation__SystemBoolean__SystemBoolean\"\r\n   
+    PUSH, __44_const_SystemBoolean\r\n    PUSH, __64_temp_SystemBoolean\r\n    JUMP_IF_FALSE,
+    0x000008F4\r\n    POP\r\n    PUSH, _arg_index__RemoveAt\r\n    PUSH, length\r\n   
+    PUSH, __68_local_var_SystemBoolean\r\n    EXTERN, \"SystemInt32.__op_GreaterThanOrEqual__SystemInt32_SystemInt32__SystemBoolean\"\r\n   
+    PUSH, __68_local_var_SystemBoolean\r\n    JUMP_IF_FALSE, 0x00000904\r\n    JUMP,
+    0x00000A80\r\n    PUSH, length\r\n    PUSH, __70_ref_SystemInt32\r\n    PUSH,
+    length\r\n    EXTERN, \"SystemInt32.__op_Subtraction__SystemInt32_SystemInt32__SystemInt32\"\r\n   
+    PUSH, _arg_index__RemoveAt\r\n    PUSH, __71_local_var_SystemInt32\r\n    COPY\r\n   
+    PUSH, length\r\n    PUSH, __74_temp_SystemInt32\r\n    COPY\r\n    PUSH, __72_ref_SystemInt32\r\n   
+    PUSH, __73_temp_SystemInt32\r\n    COPY\r\n    PUSH, __73_temp_SystemInt32\r\n   
+    PUSH, __36_const_SystemInt32\r\n    PUSH, __64_temp_SystemBoolean\r\n    EXTERN,
+    \"SystemInt32.__op_GreaterThanOrEqual__SystemInt32_SystemInt32__SystemBoolean\"\r\n   
+    JUMP, 0x000009A8\r\n    PUSH, __71_local_var_SystemInt32\r\n    PUSH, __73_temp_SystemInt32\r\n   
+    PUSH, __71_local_var_SystemInt32\r\n    EXTERN, \"SystemInt32.__op_Addition__SystemInt32_SystemInt32__SystemInt32\"\r\n   
+    PUSH, __71_local_var_SystemInt32\r\n    PUSH, __74_temp_SystemInt32\r\n    PUSH,
+    __75_temp_SystemBoolean\r\n    PUSH, __64_temp_SystemBoolean\r\n    JUMP_IF_FALSE,
+    0x000009E0\r\n    EXTERN, \"SystemInt32.__op_LessThan__SystemInt32_SystemInt32__SystemBoolean\"\r\n   
+    JUMP, 0x000009E8\r\n    EXTERN, \"SystemInt32.__op_GreaterThan__SystemInt32_SystemInt32__SystemBoolean\"\r\n   
+    PUSH, __75_temp_SystemBoolean\r\n    JUMP_IF_FALSE, 0x00000A60\r\n    PUSH, __71_local_var_SystemInt32\r\n   
+    PUSH, __77_ref_SystemInt32\r\n    PUSH, __76_local_var_SystemInt32\r\n    EXTERN,
+    \"SystemInt32.__op_Addition__SystemInt32_SystemInt32__SystemInt32\"\r\n    PUSH,
+    itemArray\r\n    PUSH, __76_local_var_SystemInt32\r\n    PUSH, __78_local_var_UnityEngineVector3\r\n   
+    EXTERN, \"UnityEngineVector3Array.__Get__SystemInt32__UnityEngineVector3\"\r\n   
+    PUSH, itemArray\r\n    PUSH, __71_local_var_SystemInt32\r\n    PUSH, __78_local_var_UnityEngineVector3\r\n   
+    EXTERN, \"UnityEngineVector3Array.__Set__SystemInt32_UnityEngineVector3__SystemVoid\"\r\n   
+    JUMP, 0x00000988\r\n    PUSH, itemArray\r\n    PUSH, length\r\n    PUSH, __null\r\n   
+    EXTERN, \"UnityEngineVector3Array.__Set__SystemInt32_UnityEngineVector3__SystemVoid\"\r\n   
+    PUSH, __0_ra_SystemUInt32\r\n    COPY\r\n    JUMP_INDIRECT, __0_ra_SystemUInt32\r\n\r\n 
+    .export _RemoveLast\r\n  _RemoveLast:\r\n    PUSH, __1_ea_SystemUInt32\r\n   
+    PUSH, length\r\n    PUSH, __80_ref_SystemInt32\r\n    PUSH, __79_local_var_SystemInt32\r\n   
+    EXTERN, \"SystemInt32.__op_Subtraction__SystemInt32_SystemInt32__SystemInt32\"\r\n   
+    PUSH, __79_local_var_SystemInt32\r\n    PUSH, _arg_index__RemoveAt\r\n    COPY\r\n   
+    PUSH, __82___jump_return_2_SystemUInt32\r\n    JUMP, 0x00000864\r\n    PUSH,
+    __0_ra_SystemUInt32\r\n    COPY\r\n    JUMP_INDIRECT, __0_ra_SystemUInt32\r\n\r\n 
+    .export _RemoveAtUnordered\r\n  _RemoveAtUnordered:\r\n    PUSH, __1_ea_SystemUInt32\r\n   
+    PUSH, __25_const_SystemBoolean\r\n    PUSH, __83_local_var_SystemBoolean\r\n   
+    COPY\r\n    PUSH, _arg_index__RemoveAtUnordered\r\n    PUSH, __84_ref_SystemInt32\r\n   
+    PUSH, __83_local_var_SystemBoolean\r\n    EXTERN, \"SystemInt32.__op_LessThan__SystemInt32_SystemInt32__SystemBoolean\"\r\n   
+    PUSH, __83_local_var_SystemBoolean\r\n    PUSH, __85_temp_SystemBoolean\r\n   
+    EXTERN, \"SystemBoolean.__op_UnaryNegation__SystemBoolean__SystemBoolean\"\r\n   
+    PUSH, __44_const_SystemBoolean\r\n    PUSH, __85_temp_SystemBoolean\r\n    JUMP_IF_FALSE,
+    0x00000B8C\r\n    POP\r\n    PUSH, _arg_index__RemoveAtUnordered\r\n    PUSH,
+    length\r\n    PUSH, __83_local_var_SystemBoolean\r\n    EXTERN, \"SystemInt32.__op_GreaterThanOrEqual__SystemInt32_SystemInt32__SystemBoolean\"\r\n   
+    PUSH, __83_local_var_SystemBoolean\r\n    JUMP_IF_FALSE, 0x00000B9C\r\n    JUMP,
+    0x00000C18\r\n    PUSH, length\r\n    PUSH, __87_ref_SystemInt32\r\n    PUSH,
+    __86_local_var_SystemInt32\r\n    EXTERN, \"SystemInt32.__op_Subtraction__SystemInt32_SystemInt32__SystemInt32\"\r\n   
+    PUSH, _arg_index__RemoveAtUnordered\r\n    PUSH, _arg_index1__Swap\r\n    COPY\r\n   
+    PUSH, __86_local_var_SystemInt32\r\n    PUSH, _arg_index2__Swap\r\n    COPY\r\n   
+    PUSH, __89___jump_return_3_SystemUInt32\r\n    JUMP, 0x00000680\r\n    PUSH,
+    __86_local_var_SystemInt32\r\n    PUSH, _arg_index__RemoveAt\r\n    COPY\r\n   
+    PUSH, __91___jump_return_4_SystemUInt32\r\n    JUMP, 0x00000864\r\n    PUSH,
+    __0_ra_SystemUInt32\r\n    COPY\r\n    JUMP_INDIRECT, __0_ra_SystemUInt32\r\n\r\n 
+    .export _RemoveValue\r\n  _RemoveValue:\r\n    PUSH, __1_ea_SystemUInt32\r\n   
+    PUSH, _arg_removeAll__RemoveValue\r\n    PUSH, __92_local_var_SystemBoolean\r\n   
+    EXTERN, \"SystemBoolean.__op_UnaryNegation__SystemBoolean__SystemBoolean\"\r\n   
+    PUSH, __94_ref_SystemInt32\r\n    PUSH, __93_local_var_SystemInt32\r\n    COPY\r\n   
+    PUSH, __96_ref_SystemBoolean\r\n    PUSH, __95_local_var_SystemBoolean\r\n   
+    COPY\r\n    PUSH, __98_ref_SystemBoolean\r\n    PUSH, __97_local_var_SystemBoolean\r\n   
+    COPY\r\n    PUSH, __100_ref_SystemInt32\r\n    PUSH, __99_local_var_SystemInt32\r\n   
+    COPY\r\n    PUSH, length\r\n    PUSH, __103_temp_SystemInt32\r\n    COPY\r\n   
+    PUSH, __101_ref_SystemInt32\r\n    PUSH, __102_temp_SystemInt32\r\n    COPY\r\n   
+    PUSH, __102_temp_SystemInt32\r\n    PUSH, __36_const_SystemInt32\r\n    PUSH,
+    __85_temp_SystemBoolean\r\n    EXTERN, \"SystemInt32.__op_GreaterThanOrEqual__SystemInt32_SystemInt32__SystemBoolean\"\r\n   
+    JUMP, 0x00000D0C\r\n    PUSH, __99_local_var_SystemInt32\r\n    PUSH, __102_temp_SystemInt32\r\n   
+    PUSH, __99_local_var_SystemInt32\r\n    EXTERN, \"SystemInt32.__op_Addition__SystemInt32_SystemInt32__SystemInt32\"\r\n   
+    PUSH, __99_local_var_SystemInt32\r\n    PUSH, __103_temp_SystemInt32\r\n    PUSH,
+    __104_temp_SystemBoolean\r\n    PUSH, __85_temp_SystemBoolean\r\n    JUMP_IF_FALSE,
+    0x00000D44\r\n    EXTERN, \"SystemInt32.__op_LessThan__SystemInt32_SystemInt32__SystemBoolean\"\r\n   
+    JUMP, 0x00000D4C\r\n    EXTERN, \"SystemInt32.__op_GreaterThan__SystemInt32_SystemInt32__SystemBoolean\"\r\n   
+    PUSH, __104_temp_SystemBoolean\r\n    JUMP_IF_FALSE, 0x00000E9C\r\n    PUSH,
+    itemArray\r\n    PUSH, __99_local_var_SystemInt32\r\n    PUSH, __105_local_var_UnityEngineVector3\r\n   
+    EXTERN, \"UnityEngineVector3Array.__Get__SystemInt32__UnityEngineVector3\"\r\n   
+    PUSH, __25_const_SystemBoolean\r\n    PUSH, __106_local_var_SystemBoolean\r\n   
+    COPY\r\n    PUSH, __25_const_SystemBoolean\r\n    PUSH, __95_local_var_SystemBoolean\r\n   
+    JUMP_IF_FALSE, 0x00000DD4\r\n    POP\r\n    PUSH, _arg_item__RemoveValue\r\n   
+    PUSH, __105_local_var_UnityEngineVector3\r\n    PUSH, __106_local_var_SystemBoolean\r\n   
+    EXTERN, \"UnityEngineVector3.__op_Equality__UnityEngineVector3_UnityEngineVector3__SystemBoolean\"\r\n   
+    PUSH, __106_local_var_SystemBoolean\r\n    JUMP_IF_FALSE, 0x00000E44\r\n    PUSH,
+    itemArray\r\n    PUSH, __99_local_var_SystemInt32\r\n    PUSH, __null\r\n   
+    EXTERN, \"UnityEngineVector3Array.__Set__SystemInt32_UnityEngineVector3__SystemVoid\"\r\n   
+    PUSH, __107_ref_SystemBoolean\r\n    PUSH, __97_local_var_SystemBoolean\r\n   
+    COPY\r\n    PUSH, __92_local_var_SystemBoolean\r\n    JUMP_IF_FALSE, 0x00000E34\r\n   
+    PUSH, __108_ref_SystemBoolean\r\n    PUSH, __95_local_var_SystemBoolean\r\n   
+    COPY\r\n    JUMP, 0x00000CEC\r\n    JUMP, 0x00000E74\r\n    PUSH, __97_local_var_SystemBoolean\r\n   
+    JUMP_IF_FALSE, 0x00000E74\r\n    PUSH, itemArray\r\n    PUSH, __93_local_var_SystemInt32\r\n   
+    PUSH, __105_local_var_UnityEngineVector3\r\n    EXTERN, \"UnityEngineVector3Array.__Set__SystemInt32_UnityEngineVector3__SystemVoid\"\r\n   
+    PUSH, __93_local_var_SystemInt32\r\n    PUSH, __109_ref_SystemInt32\r\n    PUSH,
+    __93_local_var_SystemInt32\r\n    EXTERN, \"SystemInt32.__op_Addition__SystemInt32_SystemInt32__SystemInt32\"\r\n   
+    JUMP, 0x00000CEC\r\n    PUSH, __93_local_var_SystemInt32\r\n    PUSH, length\r\n   
+    COPY\r\n    PUSH, __0_ra_SystemUInt32\r\n    COPY\r\n    JUMP_INDIRECT, __0_ra_SystemUInt32\r\n\r\n.code_end\r\n"
+  assemblyError: 
+  triggerHash: 3ACC44574537BA61A7302EBA137F5763
+  shouldBeNetworked: 0
+  warningMessages: []
+  errorMessages: []
+  ctDataInstance:
+    version: 6
+    updateOrder: 0
+    autoSetSyncMode: 1
+    programSyncMode: 2
+    programName: 
+    events:
+    - name: _SetIndex
+      eventId: 5dabea94-a198-4038-b6d8-0abdf98860e0
+      eventInstance:
+        actionType:
+          directEvent: Event_Custom
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: 
+          variableID: 
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        multiInput:
+        - isVariable: 1
+          name: index
+          variableID: 7e1061ca-39c7-4142-ace3-d6ff690be3ac
+          data:
+            objEncoded: Ai8AAAAAARwAAABTAHkAcwB0AGUAbQAuAFIAdQBuAHQAaQBtAGUAVAB5AHAAZQAsACAAbQBzAGMAbwByAGwAaQBiAAAAAAAoARYAAABTAHkAcwB0AGUAbQAuAEkAbgB0ADMAMgAsACAAbQBzAGMAbwByAGwAaQBiAAU=
+            unityObjects: []
+        - isVariable: 1
+          name: item
+          variableID: 1b0f8a93-ec12-47a0-8bb1-d4d1680ef804
+          data:
+            objEncoded: Ai8AAAAAARwAAABTAHkAcwB0AGUAbQAuAFIAdQBuAHQAaQBtAGUAVAB5AHAAZQAsACAAbQBzAGMAbwByAGwAaQBiAAAAAAAoASsAAABVAG4AaQB0AHkARQBuAGcAaQBuAGUALgBWAGUAYwB0AG8AcgAzACwAIABVAG4AaQB0AHkARQBuAGcAaQBuAGUALgBDAG8AcgBlAE0AbwBkAHUAbABlAAU=
+            unityObjects: []
+        expanded: 1
+        comment:
+          comment: Set the element at the given index, replacing the value.
+      actionInstances:
+      - actionType:
+          directEvent: CyanTriggerSpecial_If
+          guid: 
+        inputs: []
+        multiInput: []
+        expanded: 1
+        comment:
+          comment: 
+      - actionType:
+          directEvent: CyanTriggerSpecial_Condition
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: 
+          variableID: 0848a987-1d30-4906-b47c-d224287f1c5e
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBBwAAAGkAbgBSAGEAbgBnAGUABQ==
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: SystemInt32.__op_GreaterThanOrEqual__SystemInt32_SystemInt32__SystemBoolean
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: index
+          variableID: 7e1061ca-39c7-4142-ace3-d6ff690be3ac
+          data:
+            objEncoded: Ai8AAAAAARYAAABTAHkAcwB0AGUAbQAuAEkAbgB0ADMAMgAsACAAbQBzAGMAbwByAGwAaQBiAAAAAAAYAAAAAAU=
+            unityObjects: []
+        - isVariable: 0
+          name: 
+          variableID: 
+          data:
+            objEncoded: Ai8AAAAAARYAAABTAHkAcwB0AGUAbQAuAEkAbgB0ADMAMgAsACAAbQBzAGMAbwByAGwAaQBiAAAAAAAYAAAAAAU=
+            unityObjects: []
+        - isVariable: 1
+          name: inRange
+          variableID: 0848a987-1d30-4906-b47c-d224287f1c5e
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: CyanTriggerSpecial_ConditionFailIfFalse
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: inRange
+          variableID: 0848a987-1d30-4906-b47c-d224287f1c5e
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: SystemInt32.__op_LessThan__SystemInt32_SystemInt32__SystemBoolean
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: index
+          variableID: 7e1061ca-39c7-4142-ace3-d6ff690be3ac
+          data:
+            objEncoded: Ai8AAAAAARYAAABTAHkAcwB0AGUAbQAuAEkAbgB0ADMAMgAsACAAbQBzAGMAbwByAGwAaQBiAAAAAAAYAAAAAAU=
+            unityObjects: []
+        - isVariable: 1
+          name: length
+          variableID: 463865f6-a572-446a-9898-7f84cfa2d24b
+          data:
+            objEncoded: Ai8AAAAAARYAAABTAHkAcwB0AGUAbQAuAEkAbgB0ADMAMgAsACAAbQBzAGMAbwByAGwAaQBiAAAAAAAYAAAAAAU=
+            unityObjects: []
+        - isVariable: 1
+          name: inRange
+          variableID: 0848a987-1d30-4906-b47c-d224287f1c5e
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: CyanTriggerSpecial_BlockEnd
+          guid: 
+        inputs: []
+        multiInput: []
+        expanded: 1
+        comment:
+          comment: 
+      - actionType:
+          directEvent: CyanTriggerSpecial_ConditionBody
+          guid: 
+        inputs: []
+        multiInput: []
+        expanded: 1
+        comment:
+          comment: 
+      - actionType:
+          directEvent: UnityEngineVector3Array.__Set__SystemInt32_UnityEngineVector3__SystemVoid
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: itemArray
+          variableID: cc478c96-03fd-444a-878c-01f157407e01
+          data:
+            objEncoded: Ai8AAAAAAUAAAABWAFIAQwAuAFUAZABvAG4ALgBDAG8AbQBtAG8AbgAuAEkAbgB0AGUAcgBmAGEAYwBlAHMALgBJAFUAZABvAG4ARQB2AGUAbgB0AFIAZQBjAGUAaQB2AGUAcgBbAF0ALAAgAFYAUgBDAC4AVQBkAG8AbgAuAEMAbwBtAG0AbwBuAAAAAAAGAAAAAAAAAAAHBQ==
+            unityObjects: []
+        - isVariable: 1
+          name: index
+          variableID: 7e1061ca-39c7-4142-ace3-d6ff690be3ac
+          data:
+            objEncoded: Ai8AAAAAARYAAABTAHkAcwB0AGUAbQAuAEkAbgB0ADMAMgAsACAAbQBzAGMAbwByAGwAaQBiAAAAAAAYAAAAAAU=
+            unityObjects: []
+        - isVariable: 1
+          name: item
+          variableID: 1b0f8a93-ec12-47a0-8bb1-d4d1680ef804
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: CyanTriggerSpecial_BlockEnd
+          guid: 
+        inputs: []
+        multiInput: []
+        expanded: 1
+        comment:
+          comment: 
+      - actionType:
+          directEvent: CyanTriggerSpecial_BlockEnd
+          guid: 
+        inputs: []
+        multiInput: []
+        expanded: 1
+        comment:
+          comment: 
+      eventOptions:
+        userGate: 0
+        userGateExtraData: []
+        broadcast: 0
+        delay: 0
+        replay: 0
+      expanded: 0
+    - name: _GetIndex
+      eventId: c6ff271b-7e11-4941-a878-6854efe77e78
+      eventInstance:
+        actionType:
+          directEvent: Event_Custom
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: 
+          variableID: 
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        multiInput:
+        - isVariable: 1
+          name: index
+          variableID: 046d28a8-774d-4fa0-ae8b-726aabb7e7c2
+          data:
+            objEncoded: Ai8AAAAAARwAAABTAHkAcwB0AGUAbQAuAFIAdQBuAHQAaQBtAGUAVAB5AHAAZQAsACAAbQBzAGMAbwByAGwAaQBiAAAAAAAoARYAAABTAHkAcwB0AGUAbQAuAEkAbgB0ADMAMgAsACAAbQBzAGMAbwByAGwAaQBiAAU=
+            unityObjects: []
+        - isVariable: 0
+          name: item
+          variableID: 84d43720-e6c7-4745-a394-6ca246611755
+          data:
+            objEncoded: Ai8AAAAAARwAAABTAHkAcwB0AGUAbQAuAFIAdQBuAHQAaQBtAGUAVAB5AHAAZQAsACAAbQBzAGMAbwByAGwAaQBiAAAAAAAoASsAAABVAG4AaQB0AHkARQBuAGcAaQBuAGUALgBWAGUAYwB0AG8AcgAzACwAIABVAG4AaQB0AHkARQBuAGcAaQBuAGUALgBDAG8AcgBlAE0AbwBkAHUAbABlAAU=
+            unityObjects: []
+        expanded: 1
+        comment:
+          comment: Get an element from a specific index.
+      actionInstances:
+      - actionType:
+          directEvent: CyanTriggerSpecial_If
+          guid: 
+        inputs: []
+        multiInput: []
+        expanded: 1
+        comment:
+          comment: 
+      - actionType:
+          directEvent: CyanTriggerSpecial_Condition
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: 
+          variableID: 48c49b43-54dc-41e6-a5dd-da7c7d1995e6
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBBwAAAGkAbgBSAGEAbgBnAGUABQ==
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: SystemInt32.__op_GreaterThanOrEqual__SystemInt32_SystemInt32__SystemBoolean
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: index
+          variableID: 046d28a8-774d-4fa0-ae8b-726aabb7e7c2
+          data:
+            objEncoded: Ai8AAAAAARYAAABTAHkAcwB0AGUAbQAuAEkAbgB0ADMAMgAsACAAbQBzAGMAbwByAGwAaQBiAAAAAAAYAAAAAAU=
+            unityObjects: []
+        - isVariable: 0
+          name: 
+          variableID: 
+          data:
+            objEncoded: Ai8AAAAAARYAAABTAHkAcwB0AGUAbQAuAEkAbgB0ADMAMgAsACAAbQBzAGMAbwByAGwAaQBiAAAAAAAYAAAAAAU=
+            unityObjects: []
+        - isVariable: 1
+          name: inRange
+          variableID: 48c49b43-54dc-41e6-a5dd-da7c7d1995e6
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: CyanTriggerSpecial_ConditionFailIfFalse
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: inRange
+          variableID: 48c49b43-54dc-41e6-a5dd-da7c7d1995e6
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: SystemInt32.__op_LessThan__SystemInt32_SystemInt32__SystemBoolean
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: index
+          variableID: 046d28a8-774d-4fa0-ae8b-726aabb7e7c2
+          data:
+            objEncoded: Ai8AAAAAARYAAABTAHkAcwB0AGUAbQAuAEkAbgB0ADMAMgAsACAAbQBzAGMAbwByAGwAaQBiAAAAAAAYAAAAAAU=
+            unityObjects: []
+        - isVariable: 1
+          name: length
+          variableID: 463865f6-a572-446a-9898-7f84cfa2d24b
+          data:
+            objEncoded: Ai8AAAAAARYAAABTAHkAcwB0AGUAbQAuAEkAbgB0ADMAMgAsACAAbQBzAGMAbwByAGwAaQBiAAAAAAAYAAAAAAU=
+            unityObjects: []
+        - isVariable: 1
+          name: inRange
+          variableID: 48c49b43-54dc-41e6-a5dd-da7c7d1995e6
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: CyanTriggerSpecial_BlockEnd
+          guid: 
+        inputs: []
+        multiInput: []
+        expanded: 1
+        comment:
+          comment: 
+      - actionType:
+          directEvent: CyanTriggerSpecial_ConditionBody
+          guid: 
+        inputs: []
+        multiInput: []
+        expanded: 1
+        comment:
+          comment: 
+      - actionType:
+          directEvent: UnityEngineVector3Array.__Get__SystemInt32__UnityEngineVector3
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: itemArray
+          variableID: cc478c96-03fd-444a-878c-01f157407e01
+          data:
+            objEncoded: Ai8AAAAAAUAAAABWAFIAQwAuAFUAZABvAG4ALgBDAG8AbQBtAG8AbgAuAEkAbgB0AGUAcgBmAGEAYwBlAHMALgBJAFUAZABvAG4ARQB2AGUAbgB0AFIAZQBjAGUAaQB2AGUAcgBbAF0ALAAgAFYAUgBDAC4AVQBkAG8AbgAuAEMAbwBtAG0AbwBuAAAAAAAGAAAAAAAAAAAHBQ==
+            unityObjects: []
+        - isVariable: 1
+          name: index
+          variableID: 046d28a8-774d-4fa0-ae8b-726aabb7e7c2
+          data:
+            objEncoded: Ai8AAAAAARYAAABTAHkAcwB0AGUAbQAuAEkAbgB0ADMAMgAsACAAbQBzAGMAbwByAGwAaQBiAAAAAAAYAAAAAAU=
+            unityObjects: []
+        - isVariable: 1
+          name: item
+          variableID: 84d43720-e6c7-4745-a394-6ca246611755
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: CyanTriggerSpecial_Return
+          guid: 
+        inputs: []
+        multiInput: []
+        expanded: 1
+        comment:
+          comment: 
+      - actionType:
+          directEvent: CyanTriggerSpecial_BlockEnd
+          guid: 
+        inputs: []
+        multiInput: []
+        expanded: 1
+        comment:
+          comment: 
+      - actionType:
+          directEvent: CyanTriggerSpecial_BlockEnd
+          guid: 
+        inputs: []
+        multiInput: []
+        expanded: 1
+        comment:
+          comment: 
+      - actionType:
+          directEvent: UnityEngineVector3__.Set__UnityEngineVector3__UnityEngineVector3
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: null
+          variableID: __null
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        - isVariable: 1
+          name: item
+          variableID: 84d43720-e6c7-4745-a394-6ca246611755
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBEAAAAHUAZABvAG4AQgBlAGgAYQB2AGkAbwB1AHIAVgBhAHIABQ==
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      eventOptions:
+        userGate: 0
+        userGateExtraData: []
+        broadcast: 0
+        delay: 0
+        replay: 0
+      expanded: 0
+    - name: _Clear
+      eventId: 1d705b42-ebc0-4ab7-bb1b-398e0b101231
+      eventInstance:
+        actionType:
+          directEvent: Event_Custom
+          guid: 
+        inputs: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: Remove all elements from this list.
+      actionInstances:
+      - actionType:
+          directEvent: CyanTriggerSpecial_For
+          guid: 
+        inputs:
+        - isVariable: 0
+          name: 
+          variableID: 
+          data:
+            objEncoded: Ai8AAAAAARYAAABTAHkAcwB0AGUAbQAuAEkAbgB0ADMAMgAsACAAbQBzAGMAbwByAGwAaQBiAAAAAAAYAAAAAAU=
+            unityObjects: []
+        - isVariable: 1
+          name: length
+          variableID: 463865f6-a572-446a-9898-7f84cfa2d24b
+          data:
+            objEncoded: Ai8AAAAAARYAAABTAHkAcwB0AGUAbQAuAEkAbgB0ADMAMgAsACAAbQBzAGMAbwByAGwAaQBiAAAAAAAYAAAAAAU=
+            unityObjects: []
+        - isVariable: 0
+          name: 
+          variableID: 
+          data:
+            objEncoded: Ai8AAAAAARYAAABTAHkAcwB0AGUAbQAuAEkAbgB0ADMAMgAsACAAbQBzAGMAbwByAGwAaQBiAAAAAAAYAQAAAAU=
+            unityObjects: []
+        - isVariable: 1
+          name: 
+          variableID: d598f7d7-984d-4f90-bfbc-e4a593c4f388
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBCQAAAGkAbgBkAGUAeABfAGkAbgB0AAU=
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: UnityEngineVector3Array.__Set__SystemInt32_UnityEngineVector3__SystemVoid
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: itemArray
+          variableID: cc478c96-03fd-444a-878c-01f157407e01
+          data:
+            objEncoded: Ai8AAAAAAUAAAABWAFIAQwAuAFUAZABvAG4ALgBDAG8AbQBtAG8AbgAuAEkAbgB0AGUAcgBmAGEAYwBlAHMALgBJAFUAZABvAG4ARQB2AGUAbgB0AFIAZQBjAGUAaQB2AGUAcgBbAF0ALAAgAFYAUgBDAC4AVQBkAG8AbgAuAEMAbwBtAG0AbwBuAAAAAAAGAAAAAAAAAAAHBQ==
+            unityObjects: []
+        - isVariable: 1
+          name: index_int
+          variableID: d598f7d7-984d-4f90-bfbc-e4a593c4f388
+          data:
+            objEncoded: Ai8AAAAAARYAAABTAHkAcwB0AGUAbQAuAEkAbgB0ADMAMgAsACAAbQBzAGMAbwByAGwAaQBiAAAAAAAYAAAAAAU=
+            unityObjects: []
+        - isVariable: 1
+          name: null
+          variableID: __null
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: CyanTriggerSpecial_BlockEnd
+          guid: 
+        inputs: []
+        multiInput: []
+        expanded: 1
+        comment:
+          comment: 
+      - actionType:
+          directEvent: SystemInt32__.Set__SystemInt32__SystemInt32
+          guid: 
+        inputs:
+        - isVariable: 0
+          name: 
+          variableID: 
+          data:
+            objEncoded: Ai8AAAAAARYAAABTAHkAcwB0AGUAbQAuAEkAbgB0ADMAMgAsACAAbQBzAGMAbwByAGwAaQBiAAAAAAAYAAAAAAU=
+            unityObjects: []
+        - isVariable: 1
+          name: length
+          variableID: 463865f6-a572-446a-9898-7f84cfa2d24b
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBBgAAAGkAbgB0AFYAYQByAAU=
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      eventOptions:
+        userGate: 0
+        userGateExtraData: []
+        broadcast: 0
+        delay: 0
+        replay: 0
+      expanded: 0
+    - name: _Add
+      eventId: 2953737c-c46f-429d-a949-de52a381c56f
+      eventInstance:
+        actionType:
+          directEvent: Event_Custom
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: 
+          variableID: 
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        multiInput:
+        - isVariable: 1
+          name: item
+          variableID: 94f26fe0-1d06-4d17-a5d9-5c57c8cdcecd
+          data:
+            objEncoded: Ai8AAAAAARwAAABTAHkAcwB0AGUAbQAuAFIAdQBuAHQAaQBtAGUAVAB5AHAAZQAsACAAbQBzAGMAbwByAGwAaQBiAAAAAAAoASsAAABVAG4AaQB0AHkARQBuAGcAaQBuAGUALgBWAGUAYwB0AG8AcgAzACwAIABVAG4AaQB0AHkARQBuAGcAaQBuAGUALgBDAG8AcgBlAE0AbwBkAHUAbABlAAU=
+            unityObjects: []
+        expanded: 1
+        comment:
+          comment: Add a new element to the end of the list.
+      actionInstances:
+      - actionType:
+          directEvent: VRCUdonCommonInterfacesIUdonEventReceiver.__SendCustomEvent__SystemString__SystemVoid
+          guid: 
+        inputs:
+        - isVariable: 0
+          name: 
+          variableID: 
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        - isVariable: 0
+          name: 
+          variableID: 
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBCgAAAF8AQwBoAGUAYwBrAFMAaQB6AGUABQ==
+            unityObjects: []
+        - isVariable: 0
+          name: 
+          variableID: 
+          data:
+            objEncoded: Ai8AAAAAATEAAABDAHkAYQBuAC4AQwBUAC4AQwB5AGEAbgBUAHIAaQBnAGcAZQByAEUAdgBlAG4AdABBAHIAZwBEAGEAdABhACwAIABDAHkAYQBuAC4AQwB5AGEAbgBUAHIAaQBnAGcAZQByAAAAAAAnAQkAAABlAHYAZQBuAHQATgBhAG0AZQABCgAAAF8AQwBoAGUAYwBrAFMAaQB6AGUAAQENAAAAdgBhAHIAaQBhAGIAbABlAE4AYQBtAGUAcwAvAQAAAAEZAAAAUwB5AHMAdABlAG0ALgBTAHQAcgBpAG4AZwBbAF0ALAAgAG0AcwBjAG8AcgBsAGkAYgABAAAABgAAAAAAAAAABwUBAREAAAB2AGEAcgBpAGEAYgBsAGUAVQBkAG8AbgBOAGEAbQBlAHMAMAEAAAACAAAABgAAAAAAAAAABwUBAQwAAAB2AGEAcgBpAGEAYgBsAGUATwB1AHQAcwAvAgAAAAEaAAAAUwB5AHMAdABlAG0ALgBCAG8AbwBsAGUAYQBuAFsAXQAsACAAbQBzAGMAbwByAGwAaQBiAAMAAAAIAAAAAAEAAAAFAQENAAAAdgBhAHIAaQBhAGIAbABlAFQAeQBwAGUAcwAvAwAAAAEXAAAAUwB5AHMAdABlAG0ALgBUAHkAcABlAFsAXQAsACAAbQBzAGMAbwByAGwAaQBiAAQAAAAGAAAAAAAAAAAHBQU=
+            unityObjects: []
+        multiInput:
+        - isVariable: 1
+          name: This UdonBehaviour
+          variableID: _this_udonbehaviour
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        expanded: 0
+        comment:
+          comment: Ensure there is enough space to add the new element.
+      - actionType:
+          directEvent: UnityEngineVector3Array.__Set__SystemInt32_UnityEngineVector3__SystemVoid
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: itemArray
+          variableID: cc478c96-03fd-444a-878c-01f157407e01
+          data:
+            objEncoded: Ai8AAAAAAUAAAABWAFIAQwAuAFUAZABvAG4ALgBDAG8AbQBtAG8AbgAuAEkAbgB0AGUAcgBmAGEAYwBlAHMALgBJAFUAZABvAG4ARQB2AGUAbgB0AFIAZQBjAGUAaQB2AGUAcgBbAF0ALAAgAFYAUgBDAC4AVQBkAG8AbgAuAEMAbwBtAG0AbwBuAAAAAAAGAAAAAAAAAAAHBQ==
+            unityObjects: []
+        - isVariable: 1
+          name: length
+          variableID: 463865f6-a572-446a-9898-7f84cfa2d24b
+          data:
+            objEncoded: Ai8AAAAAARYAAABTAHkAcwB0AGUAbQAuAEkAbgB0ADMAMgAsACAAbQBzAGMAbwByAGwAaQBiAAAAAAAYAAAAAAU=
+            unityObjects: []
+        - isVariable: 1
+          name: item
+          variableID: 94f26fe0-1d06-4d17-a5d9-5c57c8cdcecd
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: SystemInt32.__op_Addition__SystemInt32_SystemInt32__SystemInt32
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: length
+          variableID: 463865f6-a572-446a-9898-7f84cfa2d24b
+          data:
+            objEncoded: Ai8AAAAAARYAAABTAHkAcwB0AGUAbQAuAEkAbgB0ADMAMgAsACAAbQBzAGMAbwByAGwAaQBiAAAAAAAYAAAAAAU=
+            unityObjects: []
+        - isVariable: 0
+          name: 
+          variableID: 
+          data:
+            objEncoded: Ai8AAAAAARYAAABTAHkAcwB0AGUAbQAuAEkAbgB0ADMAMgAsACAAbQBzAGMAbwByAGwAaQBiAAAAAAAYAQAAAAU=
+            unityObjects: []
+        - isVariable: 1
+          name: length
+          variableID: 463865f6-a572-446a-9898-7f84cfa2d24b
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      eventOptions:
+        userGate: 0
+        userGateExtraData: []
+        broadcast: 0
+        delay: 0
+        replay: 0
+      expanded: 0
+    - name: _Insert
+      eventId: a0dcefc8-535a-412e-8666-a2302def5796
+      eventInstance:
+        actionType:
+          directEvent: Event_Custom
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: 
+          variableID: 
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        multiInput:
+        - isVariable: 1
+          name: index
+          variableID: d50799f6-9658-4b87-beca-0915b005757c
+          data:
+            objEncoded: Ai8AAAAAARwAAABTAHkAcwB0AGUAbQAuAFIAdQBuAHQAaQBtAGUAVAB5AHAAZQAsACAAbQBzAGMAbwByAGwAaQBiAAAAAAAoARYAAABTAHkAcwB0AGUAbQAuAEkAbgB0ADMAMgAsACAAbQBzAGMAbwByAGwAaQBiAAU=
+            unityObjects: []
+        - isVariable: 1
+          name: item
+          variableID: 4f73e852-8b30-4bd4-adb8-cd48936c2609
+          data:
+            objEncoded: Ai8AAAAAARwAAABTAHkAcwB0AGUAbQAuAFIAdQBuAHQAaQBtAGUAVAB5AHAAZQAsACAAbQBzAGMAbwByAGwAaQBiAAAAAAAoASsAAABVAG4AaQB0AHkARQBuAGcAaQBuAGUALgBWAGUAYwB0AG8AcgAzACwAIABVAG4AaQB0AHkARQBuAGcAaQBuAGUALgBDAG8AcgBlAE0AbwBkAHUAbABlAAU=
+            unityObjects: []
+        expanded: 1
+        comment:
+          comment: Insert and add a new element at the given index. All elements
+            after the index are shifted down to make room for it.
+      actionInstances:
+      - actionType:
+          directEvent: CyanTriggerSpecial_If
+          guid: 
+        inputs: []
+        multiInput: []
+        expanded: 1
+        comment:
+          comment: Check if the given index is within range of the array.
+      - actionType:
+          directEvent: CyanTriggerSpecial_Condition
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: 
+          variableID: e0082fa2-9c49-4426-8e02-ecbfd43eb6d6
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBCgAAAG8AdQB0AE8AZgBSAGEAbgBnAGUABQ==
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: SystemInt32.__op_LessThan__SystemInt32_SystemInt32__SystemBoolean
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: index
+          variableID: d50799f6-9658-4b87-beca-0915b005757c
+          data:
+            objEncoded: Ai8AAAAAARYAAABTAHkAcwB0AGUAbQAuAEkAbgB0ADMAMgAsACAAbQBzAGMAbwByAGwAaQBiAAAAAAAYAAAAAAU=
+            unityObjects: []
+        - isVariable: 0
+          name: 
+          variableID: 
+          data:
+            objEncoded: Ai8AAAAAARYAAABTAHkAcwB0AGUAbQAuAEkAbgB0ADMAMgAsACAAbQBzAGMAbwByAGwAaQBiAAAAAAAYAAAAAAU=
+            unityObjects: []
+        - isVariable: 1
+          name: outOfRange
+          variableID: e0082fa2-9c49-4426-8e02-ecbfd43eb6d6
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: CyanTriggerSpecial_ConditionPassIfTrue
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: outOfRange
+          variableID: e0082fa2-9c49-4426-8e02-ecbfd43eb6d6
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: SystemInt32.__op_GreaterThan__SystemInt32_SystemInt32__SystemBoolean
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: index
+          variableID: d50799f6-9658-4b87-beca-0915b005757c
+          data:
+            objEncoded: Ai8AAAAAARYAAABTAHkAcwB0AGUAbQAuAEkAbgB0ADMAMgAsACAAbQBzAGMAbwByAGwAaQBiAAAAAAAYAAAAAAU=
+            unityObjects: []
+        - isVariable: 1
+          name: length
+          variableID: 463865f6-a572-446a-9898-7f84cfa2d24b
+          data:
+            objEncoded: Ai8AAAAAARYAAABTAHkAcwB0AGUAbQAuAEkAbgB0ADMAMgAsACAAbQBzAGMAbwByAGwAaQBiAAAAAAAYAAAAAAU=
+            unityObjects: []
+        - isVariable: 1
+          name: outOfRange
+          variableID: e0082fa2-9c49-4426-8e02-ecbfd43eb6d6
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: CyanTriggerSpecial_BlockEnd
+          guid: 
+        inputs: []
+        multiInput: []
+        expanded: 1
+        comment:
+          comment: 
+      - actionType:
+          directEvent: CyanTriggerSpecial_ConditionBody
+          guid: 
+        inputs: []
+        multiInput: []
+        expanded: 1
+        comment:
+          comment: 
+      - actionType:
+          directEvent: CyanTriggerSpecial_Return
+          guid: 
+        inputs: []
+        multiInput: []
+        expanded: 1
+        comment:
+          comment: 
+      - actionType:
+          directEvent: CyanTriggerSpecial_BlockEnd
+          guid: 
+        inputs: []
+        multiInput: []
+        expanded: 1
+        comment:
+          comment: 
+      - actionType:
+          directEvent: CyanTriggerSpecial_BlockEnd
+          guid: 
+        inputs: []
+        multiInput: []
+        expanded: 1
+        comment:
+          comment: 
+      - actionType:
+          directEvent: VRCUdonCommonInterfacesIUdonEventReceiver.__SendCustomEvent__SystemString__SystemVoid
+          guid: 
+        inputs:
+        - isVariable: 0
+          name: 
+          variableID: 
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        - isVariable: 0
+          name: 
+          variableID: 
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBCgAAAF8AQwBoAGUAYwBrAFMAaQB6AGUABQ==
+            unityObjects: []
+        - isVariable: 0
+          name: 
+          variableID: 
+          data:
+            objEncoded: Ai8AAAAAATEAAABDAHkAYQBuAC4AQwBUAC4AQwB5AGEAbgBUAHIAaQBnAGcAZQByAEUAdgBlAG4AdABBAHIAZwBEAGEAdABhACwAIABDAHkAYQBuAC4AQwB5AGEAbgBUAHIAaQBnAGcAZQByAAAAAAAnAQkAAABlAHYAZQBuAHQATgBhAG0AZQABCgAAAF8AQwBoAGUAYwBrAFMAaQB6AGUAAQENAAAAdgBhAHIAaQBhAGIAbABlAE4AYQBtAGUAcwAvAQAAAAEZAAAAUwB5AHMAdABlAG0ALgBTAHQAcgBpAG4AZwBbAF0ALAAgAG0AcwBjAG8AcgBsAGkAYgABAAAABgAAAAAAAAAABwUBAREAAAB2AGEAcgBpAGEAYgBsAGUAVQBkAG8AbgBOAGEAbQBlAHMAMAEAAAACAAAABgAAAAAAAAAABwUBAQwAAAB2AGEAcgBpAGEAYgBsAGUATwB1AHQAcwAvAgAAAAEaAAAAUwB5AHMAdABlAG0ALgBCAG8AbwBsAGUAYQBuAFsAXQAsACAAbQBzAGMAbwByAGwAaQBiAAMAAAAIAAAAAAEAAAAFAQENAAAAdgBhAHIAaQBhAGIAbABlAFQAeQBwAGUAcwAvAwAAAAEXAAAAUwB5AHMAdABlAG0ALgBUAHkAcABlAFsAXQAsACAAbQBzAGMAbwByAGwAaQBiAAQAAAAGAAAAAAAAAAAHBQU=
+            unityObjects: []
+        multiInput:
+        - isVariable: 1
+          name: This UdonBehaviour
+          variableID: _this_udonbehaviour
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        expanded: 0
+        comment:
+          comment: Ensure there is enough space to add the new element.
+      - actionType:
+          directEvent: CyanTriggerSpecial_For
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: length
+          variableID: 463865f6-a572-446a-9898-7f84cfa2d24b
+          data:
+            objEncoded: Ai8AAAAAARYAAABTAHkAcwB0AGUAbQAuAEkAbgB0ADMAMgAsACAAbQBzAGMAbwByAGwAaQBiAAAAAAAYAAAAAAU=
+            unityObjects: []
+        - isVariable: 1
+          name: index
+          variableID: d50799f6-9658-4b87-beca-0915b005757c
+          data:
+            objEncoded: Ai8AAAAAARYAAABTAHkAcwB0AGUAbQAuAEkAbgB0ADMAMgAsACAAbQBzAGMAbwByAGwAaQBiAAAAAAAYAAAAAAU=
+            unityObjects: []
+        - isVariable: 0
+          name: 
+          variableID: 
+          data:
+            objEncoded: Ai8AAAAAARYAAABTAHkAcwB0AGUAbQAuAEkAbgB0ADMAMgAsACAAbQBzAGMAbwByAGwAaQBiAAAAAAAY/////wU=
+            unityObjects: []
+        - isVariable: 1
+          name: 
+          variableID: 1dd8f237-ecd8-49d6-94e6-b5b80f55ceba
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBCQAAAGkAbgBkAGUAeABfAGkAbgB0AAU=
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: Shift all elements over 1 to make room for the new element.
+      - actionType:
+          directEvent: SystemInt32.__op_Subtraction__SystemInt32_SystemInt32__SystemInt32
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: index_int
+          variableID: 1dd8f237-ecd8-49d6-94e6-b5b80f55ceba
+          data:
+            objEncoded: Ai8AAAAAARYAAABTAHkAcwB0AGUAbQAuAEkAbgB0ADMAMgAsACAAbQBzAGMAbwByAGwAaQBiAAAAAAAYAAAAAAU=
+            unityObjects: []
+        - isVariable: 0
+          name: 
+          variableID: 
+          data:
+            objEncoded: Ai8AAAAAARYAAABTAHkAcwB0AGUAbQAuAEkAbgB0ADMAMgAsACAAbQBzAGMAbwByAGwAaQBiAAAAAAAYAQAAAAU=
+            unityObjects: []
+        - isVariable: 1
+          name: 
+          variableID: cbe438a2-8c61-49e7-a733-6211fa800d1d
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBCQAAAHAAcgBlAHYASQBuAGQAZQB4AAU=
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: UnityEngineVector3Array.__Get__SystemInt32__UnityEngineVector3
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: itemArray
+          variableID: cc478c96-03fd-444a-878c-01f157407e01
+          data:
+            objEncoded: Ai8AAAAAAUAAAABWAFIAQwAuAFUAZABvAG4ALgBDAG8AbQBtAG8AbgAuAEkAbgB0AGUAcgBmAGEAYwBlAHMALgBJAFUAZABvAG4ARQB2AGUAbgB0AFIAZQBjAGUAaQB2AGUAcgBbAF0ALAAgAFYAUgBDAC4AVQBkAG8AbgAuAEMAbwBtAG0AbwBuAAAAAAAGAAAAAAAAAAAHBQ==
+            unityObjects: []
+        - isVariable: 1
+          name: prevIndex
+          variableID: cbe438a2-8c61-49e7-a733-6211fa800d1d
+          data:
+            objEncoded: Ai8AAAAAARYAAABTAHkAcwB0AGUAbQAuAEkAbgB0ADMAMgAsACAAbQBzAGMAbwByAGwAaQBiAAAAAAAYAAAAAAU=
+            unityObjects: []
+        - isVariable: 1
+          name: 
+          variableID: 218ef394-1917-4f4a-b7cb-658155c7ba16
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBBwAAAGMAdQByAEkAdABlAG0ABQ==
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: UnityEngineVector3Array.__Set__SystemInt32_UnityEngineVector3__SystemVoid
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: itemArray
+          variableID: cc478c96-03fd-444a-878c-01f157407e01
+          data:
+            objEncoded: Ai8AAAAAAUAAAABWAFIAQwAuAFUAZABvAG4ALgBDAG8AbQBtAG8AbgAuAEkAbgB0AGUAcgBmAGEAYwBlAHMALgBJAFUAZABvAG4ARQB2AGUAbgB0AFIAZQBjAGUAaQB2AGUAcgBbAF0ALAAgAFYAUgBDAC4AVQBkAG8AbgAuAEMAbwBtAG0AbwBuAAAAAAAGAAAAAAAAAAAHBQ==
+            unityObjects: []
+        - isVariable: 1
+          name: index_int
+          variableID: 1dd8f237-ecd8-49d6-94e6-b5b80f55ceba
+          data:
+            objEncoded: Ai8AAAAAARYAAABTAHkAcwB0AGUAbQAuAEkAbgB0ADMAMgAsACAAbQBzAGMAbwByAGwAaQBiAAAAAAAYAAAAAAU=
+            unityObjects: []
+        - isVariable: 1
+          name: curItem
+          variableID: 218ef394-1917-4f4a-b7cb-658155c7ba16
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: CyanTriggerSpecial_BlockEnd
+          guid: 
+        inputs: []
+        multiInput: []
+        expanded: 1
+        comment:
+          comment: 
+      - actionType:
+          directEvent: UnityEngineVector3Array.__Set__SystemInt32_UnityEngineVector3__SystemVoid
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: itemArray
+          variableID: cc478c96-03fd-444a-878c-01f157407e01
+          data:
+            objEncoded: Ai8AAAAAAUAAAABWAFIAQwAuAFUAZABvAG4ALgBDAG8AbQBtAG8AbgAuAEkAbgB0AGUAcgBmAGEAYwBlAHMALgBJAFUAZABvAG4ARQB2AGUAbgB0AFIAZQBjAGUAaQB2AGUAcgBbAF0ALAAgAFYAUgBDAC4AVQBkAG8AbgAuAEMAbwBtAG0AbwBuAAAAAAAGAAAAAAAAAAAHBQ==
+            unityObjects: []
+        - isVariable: 1
+          name: index
+          variableID: d50799f6-9658-4b87-beca-0915b005757c
+          data:
+            objEncoded: Ai8AAAAAARYAAABTAHkAcwB0AGUAbQAuAEkAbgB0ADMAMgAsACAAbQBzAGMAbwByAGwAaQBiAAAAAAAYAAAAAAU=
+            unityObjects: []
+        - isVariable: 1
+          name: item
+          variableID: 4f73e852-8b30-4bd4-adb8-cd48936c2609
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: Set the new element at the given index
+      - actionType:
+          directEvent: SystemInt32.__op_Addition__SystemInt32_SystemInt32__SystemInt32
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: length
+          variableID: 463865f6-a572-446a-9898-7f84cfa2d24b
+          data:
+            objEncoded: Ai8AAAAAARYAAABTAHkAcwB0AGUAbQAuAEkAbgB0ADMAMgAsACAAbQBzAGMAbwByAGwAaQBiAAAAAAAYAAAAAAU=
+            unityObjects: []
+        - isVariable: 0
+          name: 
+          variableID: 
+          data:
+            objEncoded: Ai8AAAAAARYAAABTAHkAcwB0AGUAbQAuAEkAbgB0ADMAMgAsACAAbQBzAGMAbwByAGwAaQBiAAAAAAAYAQAAAAU=
+            unityObjects: []
+        - isVariable: 1
+          name: length
+          variableID: 463865f6-a572-446a-9898-7f84cfa2d24b
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: Increment the size of the array.
+      eventOptions:
+        userGate: 0
+        userGateExtraData: []
+        broadcast: 0
+        delay: 0
+        replay: 0
+      expanded: 0
+    - name: _CheckSize
+      eventId: e3002929-63a9-42ae-96a9-a63a9e020a85
+      eventInstance:
+        actionType:
+          directEvent: Event_Custom
+          guid: 
+        inputs: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: If the Array is full, increase the size to allow for more elements.
+      actionInstances:
+      - actionType:
+          directEvent: UnityEngineVector3Array.__get_Length__SystemInt32
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: itemArray
+          variableID: cc478c96-03fd-444a-878c-01f157407e01
+          data:
+            objEncoded: Ai8AAAAAAUAAAABWAFIAQwAuAFUAZABvAG4ALgBDAG8AbQBtAG8AbgAuAEkAbgB0AGUAcgBmAGEAYwBlAHMALgBJAFUAZABvAG4ARQB2AGUAbgB0AFIAZQBjAGUAaQB2AGUAcgBbAF0ALAAgAFYAUgBDAC4AVQBkAG8AbgAuAEMAbwBtAG0AbwBuAAAAAAAGAAAAAAAAAAAHBQ==
+            unityObjects: []
+        - isVariable: 1
+          name: 
+          variableID: 10d71d71-d0ba-44fd-8b68-6062ac84b6e3
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBDAAAAGEAYwB0AHUAYQBsAEwAZQBuAGcAdABoAAU=
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: CyanTriggerSpecial_If
+          guid: 
+        inputs: []
+        multiInput: []
+        expanded: 1
+        comment:
+          comment: Check if the current array is full. If so, increase the size so
+            we can add more elements.
+      - actionType:
+          directEvent: CyanTriggerSpecial_Condition
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: 
+          variableID: 497da5d1-04fb-4c80-ab63-3c5e00fd1dc4
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBBgAAAGkAcwBGAHUAbABsAAU=
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: SystemInt32.__op_Equality__SystemInt32_SystemInt32__SystemBoolean
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: actualLength
+          variableID: 10d71d71-d0ba-44fd-8b68-6062ac84b6e3
+          data:
+            objEncoded: Ai8AAAAAARYAAABTAHkAcwB0AGUAbQAuAEkAbgB0ADMAMgAsACAAbQBzAGMAbwByAGwAaQBiAAAAAAAYAAAAAAU=
+            unityObjects: []
+        - isVariable: 1
+          name: length
+          variableID: 463865f6-a572-446a-9898-7f84cfa2d24b
+          data:
+            objEncoded: Ai8AAAAAARYAAABTAHkAcwB0AGUAbQAuAEkAbgB0ADMAMgAsACAAbQBzAGMAbwByAGwAaQBiAAAAAAAYAAAAAAU=
+            unityObjects: []
+        - isVariable: 1
+          name: isFull
+          variableID: 497da5d1-04fb-4c80-ab63-3c5e00fd1dc4
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: CyanTriggerSpecial_BlockEnd
+          guid: 
+        inputs: []
+        multiInput: []
+        expanded: 1
+        comment:
+          comment: 
+      - actionType:
+          directEvent: CyanTriggerSpecial_ConditionBody
+          guid: 
+        inputs: []
+        multiInput: []
+        expanded: 1
+        comment:
+          comment: 
+      - actionType:
+          directEvent: SystemInt32.__op_Multiplication__SystemInt32_SystemInt32__SystemInt32
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: actualLength
+          variableID: 10d71d71-d0ba-44fd-8b68-6062ac84b6e3
+          data:
+            objEncoded: Ai8AAAAAARYAAABTAHkAcwB0AGUAbQAuAEkAbgB0ADMAMgAsACAAbQBzAGMAbwByAGwAaQBiAAAAAAAYAAAAAAU=
+            unityObjects: []
+        - isVariable: 0
+          name: 
+          variableID: 
+          data:
+            objEncoded: Ai8AAAAAARYAAABTAHkAcwB0AGUAbQAuAEkAbgB0ADMAMgAsACAAbQBzAGMAbwByAGwAaQBiAAAAAAAYAgAAAAU=
+            unityObjects: []
+        - isVariable: 1
+          name: actualLength
+          variableID: 10d71d71-d0ba-44fd-8b68-6062ac84b6e3
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: Increase the length of the array by 2.
+      - actionType:
+          directEvent: UnityEngineMathf.__Max__SystemInt32_SystemInt32__SystemInt32
+          guid: 
+        inputs:
+        - isVariable: 0
+          name: 
+          variableID: 
+          data:
+            objEncoded: Ai8AAAAAARYAAABTAHkAcwB0AGUAbQAuAEkAbgB0ADMAMgAsACAAbQBzAGMAbwByAGwAaQBiAAAAAAAYAgAAAAU=
+            unityObjects: []
+        - isVariable: 1
+          name: actualLength
+          variableID: 10d71d71-d0ba-44fd-8b68-6062ac84b6e3
+          data:
+            objEncoded: Ai8AAAAAARYAAABTAHkAcwB0AGUAbQAuAEkAbgB0ADMAMgAsACAAbQBzAGMAbwByAGwAaQBiAAAAAAAYAAAAAAU=
+            unityObjects: []
+        - isVariable: 1
+          name: actualLength
+          variableID: 10d71d71-d0ba-44fd-8b68-6062ac84b6e3
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: Verify that the minimum size is at least 2. If uninitialized,
+            2 times 0 is still 0.
+      - actionType:
+          directEvent: UnityEngineVector3Array.__ctor__SystemInt32__UnityEngineVector3Array
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: actualLength
+          variableID: 10d71d71-d0ba-44fd-8b68-6062ac84b6e3
+          data:
+            objEncoded: Ai8AAAAAARYAAABTAHkAcwB0AGUAbQAuAEkAbgB0ADMAMgAsACAAbQBzAGMAbwByAGwAaQBiAAAAAAAYAAAAAAU=
+            unityObjects: []
+        - isVariable: 1
+          name: 
+          variableID: a456dbbb-6c7b-4c57-9158-98f307b169ff
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBCAAAAG4AZQB3AEEAcgByAGEAeQAF
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: Create a new array with the new size.
+      - actionType:
+          directEvent: UnityEngineVector3Array.__CopyTo__SystemArray_SystemInt32__SystemVoid
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: itemArray
+          variableID: cc478c96-03fd-444a-878c-01f157407e01
+          data:
+            objEncoded: Ai8AAAAAAUAAAABWAFIAQwAuAFUAZABvAG4ALgBDAG8AbQBtAG8AbgAuAEkAbgB0AGUAcgBmAGEAYwBlAHMALgBJAFUAZABvAG4ARQB2AGUAbgB0AFIAZQBjAGUAaQB2AGUAcgBbAF0ALAAgAFYAUgBDAC4AVQBkAG8AbgAuAEMAbwBtAG0AbwBuAAAAAAAGAAAAAAAAAAAHBQ==
+            unityObjects: []
+        - isVariable: 1
+          name: newArray
+          variableID: a456dbbb-6c7b-4c57-9158-98f307b169ff
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        - isVariable: 0
+          name: 
+          variableID: 
+          data:
+            objEncoded: Ai8AAAAAARYAAABTAHkAcwB0AGUAbQAuAEkAbgB0ADMAMgAsACAAbQBzAGMAbwByAGwAaQBiAAAAAAAYAAAAAAU=
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: Copy over the old elements into the new array.
+      - actionType:
+          directEvent: UnityEngineVector3Array__.Set__UnityEngineVector3Array__UnityEngineVector3Array
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: newArray
+          variableID: a456dbbb-6c7b-4c57-9158-98f307b169ff
+          data:
+            objEncoded: Ai8AAAAAAUAAAABWAFIAQwAuAFUAZABvAG4ALgBDAG8AbQBtAG8AbgAuAEkAbgB0AGUAcgBmAGEAYwBlAHMALgBJAFUAZABvAG4ARQB2AGUAbgB0AFIAZQBjAGUAaQB2AGUAcgBbAF0ALAAgAFYAUgBDAC4AVQBkAG8AbgAuAEMAbwBtAG0AbwBuAAAAAAAGAAAAAAAAAAAHBQ==
+            unityObjects: []
+        - isVariable: 1
+          name: itemArray
+          variableID: cc478c96-03fd-444a-878c-01f157407e01
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBFQAAAHUAZABvAG4AQgBlAGgAYQB2AGkAbwB1AHIAQQByAHIAYQB5AFYAYQByAAU=
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: Put the new array in the old array variable.
+      - actionType:
+          directEvent: CyanTriggerSpecial_BlockEnd
+          guid: 
+        inputs: []
+        multiInput: []
+        expanded: 1
+        comment:
+          comment: 
+      - actionType:
+          directEvent: CyanTriggerSpecial_BlockEnd
+          guid: 
+        inputs: []
+        multiInput: []
+        expanded: 1
+        comment:
+          comment: 
+      eventOptions:
+        userGate: 0
+        userGateExtraData: []
+        broadcast: 0
+        delay: 0
+        replay: 0
+      expanded: 0
+    - name: _Swap
+      eventId: 08654c1d-c253-4144-8f04-f35fd9a68397
+      eventInstance:
+        actionType:
+          directEvent: Event_Custom
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: 
+          variableID: 
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        multiInput:
+        - isVariable: 1
+          name: index1
+          variableID: 2007bf99-5774-47a5-8c4e-a7e5dd177c23
+          data:
+            objEncoded: Ai8AAAAAARwAAABTAHkAcwB0AGUAbQAuAFIAdQBuAHQAaQBtAGUAVAB5AHAAZQAsACAAbQBzAGMAbwByAGwAaQBiAAAAAAAoARYAAABTAHkAcwB0AGUAbQAuAEkAbgB0ADMAMgAsACAAbQBzAGMAbwByAGwAaQBiAAU=
+            unityObjects: []
+        - isVariable: 1
+          name: index2
+          variableID: 7f72ba77-14c3-48bf-8426-0e5e67c7377a
+          data:
+            objEncoded: Ai8AAAAAARwAAABTAHkAcwB0AGUAbQAuAFIAdQBuAHQAaQBtAGUAVAB5AHAAZQAsACAAbQBzAGMAbwByAGwAaQBiAAAAAAAoARYAAABTAHkAcwB0AGUAbQAuAEkAbgB0ADMAMgAsACAAbQBzAGMAbwByAGwAaQBiAAU=
+            unityObjects: []
+        expanded: 1
+        comment:
+          comment: Swap the elements at the given indices.
+      actionInstances:
+      - actionType:
+          directEvent: CyanTriggerSpecial_If
+          guid: 
+        inputs: []
+        multiInput: []
+        expanded: 1
+        comment:
+          comment: Check if either index is outside the range of the array and return
+            early.
+      - actionType:
+          directEvent: CyanTriggerSpecial_Condition
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: 
+          variableID: 5bf433e3-a54d-4c6f-8a4d-5e10e83de5d3
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBCgAAAG8AdQB0AE8AZgBSAGEAbgBnAGUABQ==
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: SystemInt32.__op_LessThan__SystemInt32_SystemInt32__SystemBoolean
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: index1
+          variableID: 2007bf99-5774-47a5-8c4e-a7e5dd177c23
+          data:
+            objEncoded: Ai8AAAAAARYAAABTAHkAcwB0AGUAbQAuAEkAbgB0ADMAMgAsACAAbQBzAGMAbwByAGwAaQBiAAAAAAAYAAAAAAU=
+            unityObjects: []
+        - isVariable: 0
+          name: 
+          variableID: 
+          data:
+            objEncoded: Ai8AAAAAARYAAABTAHkAcwB0AGUAbQAuAEkAbgB0ADMAMgAsACAAbQBzAGMAbwByAGwAaQBiAAAAAAAYAAAAAAU=
+            unityObjects: []
+        - isVariable: 1
+          name: outOfRange
+          variableID: 5bf433e3-a54d-4c6f-8a4d-5e10e83de5d3
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: CyanTriggerSpecial_ConditionPassIfTrue
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: outOfRange
+          variableID: 5bf433e3-a54d-4c6f-8a4d-5e10e83de5d3
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: SystemInt32.__op_GreaterThanOrEqual__SystemInt32_SystemInt32__SystemBoolean
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: index1
+          variableID: 2007bf99-5774-47a5-8c4e-a7e5dd177c23
+          data:
+            objEncoded: Ai8AAAAAARYAAABTAHkAcwB0AGUAbQAuAEkAbgB0ADMAMgAsACAAbQBzAGMAbwByAGwAaQBiAAAAAAAYAAAAAAU=
+            unityObjects: []
+        - isVariable: 1
+          name: length
+          variableID: 463865f6-a572-446a-9898-7f84cfa2d24b
+          data:
+            objEncoded: Ai8AAAAAARYAAABTAHkAcwB0AGUAbQAuAEkAbgB0ADMAMgAsACAAbQBzAGMAbwByAGwAaQBiAAAAAAAYAAAAAAU=
+            unityObjects: []
+        - isVariable: 1
+          name: outOfRange
+          variableID: 5bf433e3-a54d-4c6f-8a4d-5e10e83de5d3
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: CyanTriggerSpecial_ConditionPassIfTrue
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: outOfRange
+          variableID: 5bf433e3-a54d-4c6f-8a4d-5e10e83de5d3
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: SystemInt32.__op_LessThan__SystemInt32_SystemInt32__SystemBoolean
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: index2
+          variableID: 7f72ba77-14c3-48bf-8426-0e5e67c7377a
+          data:
+            objEncoded: Ai8AAAAAARYAAABTAHkAcwB0AGUAbQAuAEkAbgB0ADMAMgAsACAAbQBzAGMAbwByAGwAaQBiAAAAAAAYAAAAAAU=
+            unityObjects: []
+        - isVariable: 0
+          name: 
+          variableID: 
+          data:
+            objEncoded: Ai8AAAAAARYAAABTAHkAcwB0AGUAbQAuAEkAbgB0ADMAMgAsACAAbQBzAGMAbwByAGwAaQBiAAAAAAAYAAAAAAU=
+            unityObjects: []
+        - isVariable: 1
+          name: outOfRange
+          variableID: 5bf433e3-a54d-4c6f-8a4d-5e10e83de5d3
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: CyanTriggerSpecial_ConditionPassIfTrue
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: outOfRange
+          variableID: 5bf433e3-a54d-4c6f-8a4d-5e10e83de5d3
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: SystemInt32.__op_GreaterThanOrEqual__SystemInt32_SystemInt32__SystemBoolean
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: index2
+          variableID: 7f72ba77-14c3-48bf-8426-0e5e67c7377a
+          data:
+            objEncoded: Ai8AAAAAARYAAABTAHkAcwB0AGUAbQAuAEkAbgB0ADMAMgAsACAAbQBzAGMAbwByAGwAaQBiAAAAAAAYAAAAAAU=
+            unityObjects: []
+        - isVariable: 1
+          name: length
+          variableID: 463865f6-a572-446a-9898-7f84cfa2d24b
+          data:
+            objEncoded: Ai8AAAAAARYAAABTAHkAcwB0AGUAbQAuAEkAbgB0ADMAMgAsACAAbQBzAGMAbwByAGwAaQBiAAAAAAAYAAAAAAU=
+            unityObjects: []
+        - isVariable: 1
+          name: outOfRange
+          variableID: 5bf433e3-a54d-4c6f-8a4d-5e10e83de5d3
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: CyanTriggerSpecial_BlockEnd
+          guid: 
+        inputs: []
+        multiInput: []
+        expanded: 1
+        comment:
+          comment: 
+      - actionType:
+          directEvent: CyanTriggerSpecial_ConditionBody
+          guid: 
+        inputs: []
+        multiInput: []
+        expanded: 1
+        comment:
+          comment: 
+      - actionType:
+          directEvent: CyanTriggerSpecial_Return
+          guid: 
+        inputs: []
+        multiInput: []
+        expanded: 1
+        comment:
+          comment: 
+      - actionType:
+          directEvent: CyanTriggerSpecial_BlockEnd
+          guid: 
+        inputs: []
+        multiInput: []
+        expanded: 1
+        comment:
+          comment: 
+      - actionType:
+          directEvent: CyanTriggerSpecial_BlockEnd
+          guid: 
+        inputs: []
+        multiInput: []
+        expanded: 1
+        comment:
+          comment: 
+      - actionType:
+          directEvent: UnityEngineVector3Array.__Get__SystemInt32__UnityEngineVector3
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: itemArray
+          variableID: cc478c96-03fd-444a-878c-01f157407e01
+          data:
+            objEncoded: Ai8AAAAAAUAAAABWAFIAQwAuAFUAZABvAG4ALgBDAG8AbQBtAG8AbgAuAEkAbgB0AGUAcgBmAGEAYwBlAHMALgBJAFUAZABvAG4ARQB2AGUAbgB0AFIAZQBjAGUAaQB2AGUAcgBbAF0ALAAgAFYAUgBDAC4AVQBkAG8AbgAuAEMAbwBtAG0AbwBuAAAAAAAGAAAAAAAAAAAHBQ==
+            unityObjects: []
+        - isVariable: 1
+          name: index1
+          variableID: 2007bf99-5774-47a5-8c4e-a7e5dd177c23
+          data:
+            objEncoded: Ai8AAAAAARYAAABTAHkAcwB0AGUAbQAuAEkAbgB0ADMAMgAsACAAbQBzAGMAbwByAGwAaQBiAAAAAAAYAAAAAAU=
+            unityObjects: []
+        - isVariable: 1
+          name: 
+          variableID: f77c89bf-cbd4-4006-a134-2b591a73c840
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBBQAAAGkAdABlAG0AMQAF
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: UnityEngineVector3Array.__Get__SystemInt32__UnityEngineVector3
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: itemArray
+          variableID: cc478c96-03fd-444a-878c-01f157407e01
+          data:
+            objEncoded: Ai8AAAAAAUAAAABWAFIAQwAuAFUAZABvAG4ALgBDAG8AbQBtAG8AbgAuAEkAbgB0AGUAcgBmAGEAYwBlAHMALgBJAFUAZABvAG4ARQB2AGUAbgB0AFIAZQBjAGUAaQB2AGUAcgBbAF0ALAAgAFYAUgBDAC4AVQBkAG8AbgAuAEMAbwBtAG0AbwBuAAAAAAAGAAAAAAAAAAAHBQ==
+            unityObjects: []
+        - isVariable: 1
+          name: index2
+          variableID: 7f72ba77-14c3-48bf-8426-0e5e67c7377a
+          data:
+            objEncoded: Ai8AAAAAARYAAABTAHkAcwB0AGUAbQAuAEkAbgB0ADMAMgAsACAAbQBzAGMAbwByAGwAaQBiAAAAAAAYAAAAAAU=
+            unityObjects: []
+        - isVariable: 1
+          name: 
+          variableID: c4a2b189-d801-4ec2-8075-c34c14d6f4ac
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBBQAAAGkAdABlAG0AMgAF
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: UnityEngineVector3Array.__Set__SystemInt32_UnityEngineVector3__SystemVoid
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: itemArray
+          variableID: cc478c96-03fd-444a-878c-01f157407e01
+          data:
+            objEncoded: Ai8AAAAAAUAAAABWAFIAQwAuAFUAZABvAG4ALgBDAG8AbQBtAG8AbgAuAEkAbgB0AGUAcgBmAGEAYwBlAHMALgBJAFUAZABvAG4ARQB2AGUAbgB0AFIAZQBjAGUAaQB2AGUAcgBbAF0ALAAgAFYAUgBDAC4AVQBkAG8AbgAuAEMAbwBtAG0AbwBuAAAAAAAGAAAAAAAAAAAHBQ==
+            unityObjects: []
+        - isVariable: 1
+          name: index1
+          variableID: 2007bf99-5774-47a5-8c4e-a7e5dd177c23
+          data:
+            objEncoded: Ai8AAAAAARYAAABTAHkAcwB0AGUAbQAuAEkAbgB0ADMAMgAsACAAbQBzAGMAbwByAGwAaQBiAAAAAAAYAAAAAAU=
+            unityObjects: []
+        - isVariable: 1
+          name: item2
+          variableID: c4a2b189-d801-4ec2-8075-c34c14d6f4ac
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: UnityEngineVector3Array.__Set__SystemInt32_UnityEngineVector3__SystemVoid
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: itemArray
+          variableID: cc478c96-03fd-444a-878c-01f157407e01
+          data:
+            objEncoded: Ai8AAAAAAUAAAABWAFIAQwAuAFUAZABvAG4ALgBDAG8AbQBtAG8AbgAuAEkAbgB0AGUAcgBmAGEAYwBlAHMALgBJAFUAZABvAG4ARQB2AGUAbgB0AFIAZQBjAGUAaQB2AGUAcgBbAF0ALAAgAFYAUgBDAC4AVQBkAG8AbgAuAEMAbwBtAG0AbwBuAAAAAAAGAAAAAAAAAAAHBQ==
+            unityObjects: []
+        - isVariable: 1
+          name: index2
+          variableID: 7f72ba77-14c3-48bf-8426-0e5e67c7377a
+          data:
+            objEncoded: Ai8AAAAAARYAAABTAHkAcwB0AGUAbQAuAEkAbgB0ADMAMgAsACAAbQBzAGMAbwByAGwAaQBiAAAAAAAYAAAAAAU=
+            unityObjects: []
+        - isVariable: 1
+          name: item1
+          variableID: f77c89bf-cbd4-4006-a134-2b591a73c840
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      eventOptions:
+        userGate: 0
+        userGateExtraData: []
+        broadcast: 0
+        delay: 0
+        replay: 0
+      expanded: 0
+    - name: _RemoveAt
+      eventId: cff51262-9aaa-4969-9f52-19ba4cdb7907
+      eventInstance:
+        actionType:
+          directEvent: Event_Custom
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: 
+          variableID: 
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        multiInput:
+        - isVariable: 1
+          name: index
+          variableID: 9a63d081-7315-4cfc-ac2d-2830398da0f4
+          data:
+            objEncoded: Ai8AAAAAARwAAABTAHkAcwB0AGUAbQAuAFIAdQBuAHQAaQBtAGUAVAB5AHAAZQAsACAAbQBzAGMAbwByAGwAaQBiAAAAAAAoARYAAABTAHkAcwB0AGUAbQAuAEkAbgB0ADMAMgAsACAAbQBzAGMAbwByAGwAaQBiAAU=
+            unityObjects: []
+        expanded: 1
+        comment:
+          comment: Remove the element at the given index. All elements are shifted
+            down.
+      actionInstances:
+      - actionType:
+          directEvent: CyanTriggerSpecial_If
+          guid: 
+        inputs: []
+        multiInput: []
+        expanded: 1
+        comment:
+          comment: Check if the index is outside the range of the array and return
+            early.
+      - actionType:
+          directEvent: CyanTriggerSpecial_Condition
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: 
+          variableID: b505ec6e-90ac-4a82-a3a7-aab949f5dd7f
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBCgAAAG8AdQB0AE8AZgBSAGEAbgBnAGUABQ==
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: SystemInt32.__op_LessThan__SystemInt32_SystemInt32__SystemBoolean
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: index
+          variableID: 9a63d081-7315-4cfc-ac2d-2830398da0f4
+          data:
+            objEncoded: Ai8AAAAAARYAAABTAHkAcwB0AGUAbQAuAEkAbgB0ADMAMgAsACAAbQBzAGMAbwByAGwAaQBiAAAAAAAYAAAAAAU=
+            unityObjects: []
+        - isVariable: 0
+          name: 
+          variableID: 
+          data:
+            objEncoded: Ai8AAAAAARYAAABTAHkAcwB0AGUAbQAuAEkAbgB0ADMAMgAsACAAbQBzAGMAbwByAGwAaQBiAAAAAAAYAAAAAAU=
+            unityObjects: []
+        - isVariable: 1
+          name: outOfRange
+          variableID: b505ec6e-90ac-4a82-a3a7-aab949f5dd7f
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: CyanTriggerSpecial_ConditionPassIfTrue
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: outOfRange
+          variableID: b505ec6e-90ac-4a82-a3a7-aab949f5dd7f
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: SystemInt32.__op_GreaterThanOrEqual__SystemInt32_SystemInt32__SystemBoolean
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: index
+          variableID: 9a63d081-7315-4cfc-ac2d-2830398da0f4
+          data:
+            objEncoded: Ai8AAAAAARYAAABTAHkAcwB0AGUAbQAuAEkAbgB0ADMAMgAsACAAbQBzAGMAbwByAGwAaQBiAAAAAAAYAAAAAAU=
+            unityObjects: []
+        - isVariable: 1
+          name: length
+          variableID: 463865f6-a572-446a-9898-7f84cfa2d24b
+          data:
+            objEncoded: Ai8AAAAAARYAAABTAHkAcwB0AGUAbQAuAEkAbgB0ADMAMgAsACAAbQBzAGMAbwByAGwAaQBiAAAAAAAYAAAAAAU=
+            unityObjects: []
+        - isVariable: 1
+          name: outOfRange
+          variableID: b505ec6e-90ac-4a82-a3a7-aab949f5dd7f
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: CyanTriggerSpecial_BlockEnd
+          guid: 
+        inputs: []
+        multiInput: []
+        expanded: 1
+        comment:
+          comment: 
+      - actionType:
+          directEvent: CyanTriggerSpecial_ConditionBody
+          guid: 
+        inputs: []
+        multiInput: []
+        expanded: 1
+        comment:
+          comment: 
+      - actionType:
+          directEvent: CyanTriggerSpecial_Return
+          guid: 
+        inputs: []
+        multiInput: []
+        expanded: 1
+        comment:
+          comment: 
+      - actionType:
+          directEvent: CyanTriggerSpecial_BlockEnd
+          guid: 
+        inputs: []
+        multiInput: []
+        expanded: 1
+        comment:
+          comment: 
+      - actionType:
+          directEvent: CyanTriggerSpecial_BlockEnd
+          guid: 
+        inputs: []
+        multiInput: []
+        expanded: 1
+        comment:
+          comment: 
+      - actionType:
+          directEvent: SystemInt32.__op_Subtraction__SystemInt32_SystemInt32__SystemInt32
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: length
+          variableID: 463865f6-a572-446a-9898-7f84cfa2d24b
+          data:
+            objEncoded: Ai8AAAAAARYAAABTAHkAcwB0AGUAbQAuAEkAbgB0ADMAMgAsACAAbQBzAGMAbwByAGwAaQBiAAAAAAAYAAAAAAU=
+            unityObjects: []
+        - isVariable: 0
+          name: 
+          variableID: 
+          data:
+            objEncoded: Ai8AAAAAARYAAABTAHkAcwB0AGUAbQAuAEkAbgB0ADMAMgAsACAAbQBzAGMAbwByAGwAaQBiAAAAAAAYAQAAAAU=
+            unityObjects: []
+        - isVariable: 1
+          name: length
+          variableID: 463865f6-a572-446a-9898-7f84cfa2d24b
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: Decrement the length to remove the element.
+      - actionType:
+          directEvent: CyanTriggerSpecial_For
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: index
+          variableID: 9a63d081-7315-4cfc-ac2d-2830398da0f4
+          data:
+            objEncoded: Ai8AAAAAARYAAABTAHkAcwB0AGUAbQAuAEkAbgB0ADMAMgAsACAAbQBzAGMAbwByAGwAaQBiAAAAAAAYAAAAAAU=
+            unityObjects: []
+        - isVariable: 1
+          name: length
+          variableID: 463865f6-a572-446a-9898-7f84cfa2d24b
+          data:
+            objEncoded: Ai8AAAAAARYAAABTAHkAcwB0AGUAbQAuAEkAbgB0ADMAMgAsACAAbQBzAGMAbwByAGwAaQBiAAAAAAAYAAAAAAU=
+            unityObjects: []
+        - isVariable: 0
+          name: 
+          variableID: 
+          data:
+            objEncoded: Ai8AAAAAARYAAABTAHkAcwB0AGUAbQAuAEkAbgB0ADMAMgAsACAAbQBzAGMAbwByAGwAaQBiAAAAAAAYAQAAAAU=
+            unityObjects: []
+        - isVariable: 1
+          name: 
+          variableID: 6f6f56a9-fba5-4dbb-a98c-cccbd63b842e
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBCQAAAGkAbgBkAGUAeABfAGkAbgB0AAU=
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: Go through and shift all elements down to replace the removed
+            item.
+      - actionType:
+          directEvent: SystemInt32.__op_Addition__SystemInt32_SystemInt32__SystemInt32
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: index_int
+          variableID: 6f6f56a9-fba5-4dbb-a98c-cccbd63b842e
+          data:
+            objEncoded: Ai8AAAAAARYAAABTAHkAcwB0AGUAbQAuAEkAbgB0ADMAMgAsACAAbQBzAGMAbwByAGwAaQBiAAAAAAAYAAAAAAU=
+            unityObjects: []
+        - isVariable: 0
+          name: 
+          variableID: 
+          data:
+            objEncoded: Ai8AAAAAARYAAABTAHkAcwB0AGUAbQAuAEkAbgB0ADMAMgAsACAAbQBzAGMAbwByAGwAaQBiAAAAAAAYAQAAAAU=
+            unityObjects: []
+        - isVariable: 1
+          name: 
+          variableID: 3d5e3977-ad25-4de3-a406-f2ed93b049b6
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBCwAAAG4AZQB4AHQARQBsAGUAbQBlAG4AdAAF
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: UnityEngineVector3Array.__Get__SystemInt32__UnityEngineVector3
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: itemArray
+          variableID: cc478c96-03fd-444a-878c-01f157407e01
+          data:
+            objEncoded: Ai8AAAAAAUAAAABWAFIAQwAuAFUAZABvAG4ALgBDAG8AbQBtAG8AbgAuAEkAbgB0AGUAcgBmAGEAYwBlAHMALgBJAFUAZABvAG4ARQB2AGUAbgB0AFIAZQBjAGUAaQB2AGUAcgBbAF0ALAAgAFYAUgBDAC4AVQBkAG8AbgAuAEMAbwBtAG0AbwBuAAAAAAAGAAAAAAAAAAAHBQ==
+            unityObjects: []
+        - isVariable: 1
+          name: nextElement
+          variableID: 3d5e3977-ad25-4de3-a406-f2ed93b049b6
+          data:
+            objEncoded: Ai8AAAAAARYAAABTAHkAcwB0AGUAbQAuAEkAbgB0ADMAMgAsACAAbQBzAGMAbwByAGwAaQBiAAAAAAAYAAAAAAU=
+            unityObjects: []
+        - isVariable: 1
+          name: 
+          variableID: 52974f25-9728-41a5-a5d9-900ab2fe0545
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBBwAAAGMAdQByAEkAdABlAG0ABQ==
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: UnityEngineVector3Array.__Set__SystemInt32_UnityEngineVector3__SystemVoid
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: itemArray
+          variableID: cc478c96-03fd-444a-878c-01f157407e01
+          data:
+            objEncoded: Ai8AAAAAAUAAAABWAFIAQwAuAFUAZABvAG4ALgBDAG8AbQBtAG8AbgAuAEkAbgB0AGUAcgBmAGEAYwBlAHMALgBJAFUAZABvAG4ARQB2AGUAbgB0AFIAZQBjAGUAaQB2AGUAcgBbAF0ALAAgAFYAUgBDAC4AVQBkAG8AbgAuAEMAbwBtAG0AbwBuAAAAAAAGAAAAAAAAAAAHBQ==
+            unityObjects: []
+        - isVariable: 1
+          name: index_int
+          variableID: 6f6f56a9-fba5-4dbb-a98c-cccbd63b842e
+          data:
+            objEncoded: Ai8AAAAAARYAAABTAHkAcwB0AGUAbQAuAEkAbgB0ADMAMgAsACAAbQBzAGMAbwByAGwAaQBiAAAAAAAYAAAAAAU=
+            unityObjects: []
+        - isVariable: 1
+          name: curItem
+          variableID: 52974f25-9728-41a5-a5d9-900ab2fe0545
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: CyanTriggerSpecial_BlockEnd
+          guid: 
+        inputs: []
+        multiInput: []
+        expanded: 1
+        comment:
+          comment: 
+      - actionType:
+          directEvent: UnityEngineVector3Array.__Set__SystemInt32_UnityEngineVector3__SystemVoid
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: itemArray
+          variableID: cc478c96-03fd-444a-878c-01f157407e01
+          data:
+            objEncoded: Ai8AAAAAAUAAAABWAFIAQwAuAFUAZABvAG4ALgBDAG8AbQBtAG8AbgAuAEkAbgB0AGUAcgBmAGEAYwBlAHMALgBJAFUAZABvAG4ARQB2AGUAbgB0AFIAZQBjAGUAaQB2AGUAcgBbAF0ALAAgAFYAUgBDAC4AVQBkAG8AbgAuAEMAbwBtAG0AbwBuAAAAAAAGAAAAAAAAAAAHBQ==
+            unityObjects: []
+        - isVariable: 1
+          name: length
+          variableID: 463865f6-a572-446a-9898-7f84cfa2d24b
+          data:
+            objEncoded: Ai8AAAAAARYAAABTAHkAcwB0AGUAbQAuAEkAbgB0ADMAMgAsACAAbQBzAGMAbwByAGwAaQBiAAAAAAAYAAAAAAU=
+            unityObjects: []
+        - isVariable: 1
+          name: null
+          variableID: __null
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: Clear the final element.
+      eventOptions:
+        userGate: 0
+        userGateExtraData: []
+        broadcast: 0
+        delay: 0
+        replay: 0
+      expanded: 0
+    - name: _RemoveLast
+      eventId: ec15b29c-5c74-43ed-a92c-b6028c333cf3
+      eventInstance:
+        actionType:
+          directEvent: Event_Custom
+          guid: 
+        inputs: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 'Remove the last element in the list. '
+      actionInstances:
+      - actionType:
+          directEvent: SystemInt32.__op_Subtraction__SystemInt32_SystemInt32__SystemInt32
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: length
+          variableID: 463865f6-a572-446a-9898-7f84cfa2d24b
+          data:
+            objEncoded: Ai8AAAAAARYAAABTAHkAcwB0AGUAbQAuAEkAbgB0ADMAMgAsACAAbQBzAGMAbwByAGwAaQBiAAAAAAAYAAAAAAU=
+            unityObjects: []
+        - isVariable: 0
+          name: 
+          variableID: 
+          data:
+            objEncoded: Ai8AAAAAARYAAABTAHkAcwB0AGUAbQAuAEkAbgB0ADMAMgAsACAAbQBzAGMAbwByAGwAaQBiAAAAAAAYAQAAAAU=
+            unityObjects: []
+        - isVariable: 1
+          name: 
+          variableID: bdd99eb4-95a5-4ca1-aa16-090a72f1361b
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBCwAAAGwAYQBzAHQARQBsAGUAbQBlAG4AdAAF
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: VRCUdonCommonInterfacesIUdonEventReceiver.__SendCustomEvent__SystemString__SystemVoid
+          guid: 
+        inputs:
+        - isVariable: 0
+          name: 
+          variableID: 
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        - isVariable: 0
+          name: 
+          variableID: 
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBCQAAAF8AUgBlAG0AbwB2AGUAQQB0AAU=
+            unityObjects: []
+        - isVariable: 0
+          name: 
+          variableID: 
+          data:
+            objEncoded: Ai8AAAAAATEAAABDAHkAYQBuAC4AQwBUAC4AQwB5AGEAbgBUAHIAaQBnAGcAZQByAEUAdgBlAG4AdABBAHIAZwBEAGEAdABhACwAIABDAHkAYQBuAC4AQwB5AGEAbgBUAHIAaQBnAGcAZQByAAAAAAAnAQkAAABlAHYAZQBuAHQATgBhAG0AZQABCQAAAF8AUgBlAG0AbwB2AGUAQQB0AAEBDQAAAHYAYQByAGkAYQBiAGwAZQBOAGEAbQBlAHMALwEAAAABGQAAAFMAeQBzAHQAZQBtAC4AUwB0AHIAaQBuAGcAWwBdACwAIABtAHMAYwBvAHIAbABpAGIAAQAAAAYBAAAAAAAAACgBBQAAAGkAbgBkAGUAeAAHBQEBEQAAAHYAYQByAGkAYQBiAGwAZQBVAGQAbwBuAE4AYQBtAGUAcwAwAQAAAAIAAAAGAQAAAAAAAAAoARQAAABfAGEAcgBnAF8AaQBuAGQAZQB4AF8AXwBSAGUAbQBvAHYAZQBBAHQABwUBAQwAAAB2AGEAcgBpAGEAYgBsAGUATwB1AHQAcwAvAgAAAAEaAAAAUwB5AHMAdABlAG0ALgBCAG8AbwBsAGUAYQBuAFsAXQAsACAAbQBzAGMAbwByAGwAaQBiAAMAAAAIAQAAAAEAAAAABQEBDQAAAHYAYQByAGkAYQBiAGwAZQBUAHkAcABlAHMALwMAAAABFwAAAFMAeQBzAHQAZQBtAC4AVAB5AHAAZQBbAF0ALAAgAG0AcwBjAG8AcgBsAGkAYgAEAAAABgEAAAAAAAAAAi8EAAAAARwAAABTAHkAcwB0AGUAbQAuAFIAdQBuAHQAaQBtAGUAVAB5AHAAZQAsACAAbQBzAGMAbwByAGwAaQBiAAUAAAAoARYAAABTAHkAcwB0AGUAbQAuAEkAbgB0ADMAMgAsACAAbQBzAGMAbwByAGwAaQBiAAUHBQU=
+            unityObjects: []
+        - isVariable: 1
+          name: lastElement
+          variableID: bdd99eb4-95a5-4ca1-aa16-090a72f1361b
+          data:
+            objEncoded: Ai8AAAAAARYAAABTAHkAcwB0AGUAbQAuAEkAbgB0ADMAMgAsACAAbQBzAGMAbwByAGwAaQBiAAAAAAAYAAAAAAU=
+            unityObjects: []
+        multiInput:
+        - isVariable: 1
+          name: This UdonBehaviour
+          variableID: _this_udonbehaviour
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        expanded: 0
+        comment:
+          comment: 
+      eventOptions:
+        userGate: 0
+        userGateExtraData: []
+        broadcast: 0
+        delay: 0
+        replay: 0
+      expanded: 0
+    - name: _RemoveAtUnordered
+      eventId: 0bd530a4-2bb8-40f2-b9e6-f5923e5a06f2
+      eventInstance:
+        actionType:
+          directEvent: Event_Custom
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: 
+          variableID: 
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        multiInput:
+        - isVariable: 1
+          name: index
+          variableID: 3bd26574-0f6a-4252-8923-6314db32b758
+          data:
+            objEncoded: Ai8AAAAAARwAAABTAHkAcwB0AGUAbQAuAFIAdQBuAHQAaQBtAGUAVAB5AHAAZQAsACAAbQBzAGMAbwByAGwAaQBiAAAAAAAoARYAAABTAHkAcwB0AGUAbQAuAEkAbgB0ADMAMgAsACAAbQBzAGMAbwByAGwAaQBiAAU=
+            unityObjects: []
+        expanded: 1
+        comment:
+          comment: Removes the element at the given index. Element order is not kept
+            as it will swap with the last item and remove last.
+      actionInstances:
+      - actionType:
+          directEvent: CyanTriggerSpecial_If
+          guid: 
+        inputs: []
+        multiInput: []
+        expanded: 1
+        comment:
+          comment: Check if the index is outside the range of the array and return
+            early.
+      - actionType:
+          directEvent: CyanTriggerSpecial_Condition
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: 
+          variableID: afa8d474-fc49-4294-9dae-41581af049d0
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBCgAAAG8AdQB0AE8AZgBSAGEAbgBnAGUABQ==
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: SystemInt32.__op_LessThan__SystemInt32_SystemInt32__SystemBoolean
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: index
+          variableID: 3bd26574-0f6a-4252-8923-6314db32b758
+          data:
+            objEncoded: Ai8AAAAAARYAAABTAHkAcwB0AGUAbQAuAEkAbgB0ADMAMgAsACAAbQBzAGMAbwByAGwAaQBiAAAAAAAYAAAAAAU=
+            unityObjects: []
+        - isVariable: 0
+          name: 
+          variableID: 
+          data:
+            objEncoded: Ai8AAAAAARYAAABTAHkAcwB0AGUAbQAuAEkAbgB0ADMAMgAsACAAbQBzAGMAbwByAGwAaQBiAAAAAAAYAAAAAAU=
+            unityObjects: []
+        - isVariable: 1
+          name: outOfRange
+          variableID: afa8d474-fc49-4294-9dae-41581af049d0
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: CyanTriggerSpecial_ConditionPassIfTrue
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: outOfRange
+          variableID: afa8d474-fc49-4294-9dae-41581af049d0
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: SystemInt32.__op_GreaterThanOrEqual__SystemInt32_SystemInt32__SystemBoolean
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: index
+          variableID: 3bd26574-0f6a-4252-8923-6314db32b758
+          data:
+            objEncoded: Ai8AAAAAARYAAABTAHkAcwB0AGUAbQAuAEkAbgB0ADMAMgAsACAAbQBzAGMAbwByAGwAaQBiAAAAAAAYAAAAAAU=
+            unityObjects: []
+        - isVariable: 1
+          name: length
+          variableID: 463865f6-a572-446a-9898-7f84cfa2d24b
+          data:
+            objEncoded: Ai8AAAAAARYAAABTAHkAcwB0AGUAbQAuAEkAbgB0ADMAMgAsACAAbQBzAGMAbwByAGwAaQBiAAAAAAAYAAAAAAU=
+            unityObjects: []
+        - isVariable: 1
+          name: outOfRange
+          variableID: afa8d474-fc49-4294-9dae-41581af049d0
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: CyanTriggerSpecial_BlockEnd
+          guid: 
+        inputs: []
+        multiInput: []
+        expanded: 1
+        comment:
+          comment: 
+      - actionType:
+          directEvent: CyanTriggerSpecial_ConditionBody
+          guid: 
+        inputs: []
+        multiInput: []
+        expanded: 1
+        comment:
+          comment: 
+      - actionType:
+          directEvent: CyanTriggerSpecial_Return
+          guid: 
+        inputs: []
+        multiInput: []
+        expanded: 1
+        comment:
+          comment: 
+      - actionType:
+          directEvent: CyanTriggerSpecial_BlockEnd
+          guid: 
+        inputs: []
+        multiInput: []
+        expanded: 1
+        comment:
+          comment: 
+      - actionType:
+          directEvent: CyanTriggerSpecial_BlockEnd
+          guid: 
+        inputs: []
+        multiInput: []
+        expanded: 1
+        comment:
+          comment: 
+      - actionType:
+          directEvent: SystemInt32.__op_Subtraction__SystemInt32_SystemInt32__SystemInt32
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: length
+          variableID: 463865f6-a572-446a-9898-7f84cfa2d24b
+          data:
+            objEncoded: Ai8AAAAAARYAAABTAHkAcwB0AGUAbQAuAEkAbgB0ADMAMgAsACAAbQBzAGMAbwByAGwAaQBiAAAAAAAYAAAAAAU=
+            unityObjects: []
+        - isVariable: 0
+          name: 
+          variableID: 
+          data:
+            objEncoded: Ai8AAAAAARYAAABTAHkAcwB0AGUAbQAuAEkAbgB0ADMAMgAsACAAbQBzAGMAbwByAGwAaQBiAAAAAAAYAQAAAAU=
+            unityObjects: []
+        - isVariable: 1
+          name: 
+          variableID: fde8a37f-9965-4466-8927-58730737af1a
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBCwAAAGwAYQBzAHQARQBsAGUAbQBlAG4AdAAF
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: VRCUdonCommonInterfacesIUdonEventReceiver.__SendCustomEvent__SystemString__SystemVoid
+          guid: 
+        inputs:
+        - isVariable: 0
+          name: 
+          variableID: 
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        - isVariable: 0
+          name: 
+          variableID: 
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBBQAAAF8AUwB3AGEAcAAF
+            unityObjects: []
+        - isVariable: 0
+          name: 
+          variableID: 
+          data:
+            objEncoded: Ai8AAAAAATEAAABDAHkAYQBuAC4AQwBUAC4AQwB5AGEAbgBUAHIAaQBnAGcAZQByAEUAdgBlAG4AdABBAHIAZwBEAGEAdABhACwAIABDAHkAYQBuAC4AQwB5AGEAbgBUAHIAaQBnAGcAZQByAAAAAAAnAQkAAABlAHYAZQBuAHQATgBhAG0AZQABBQAAAF8AUwB3AGEAcAABAQ0AAAB2AGEAcgBpAGEAYgBsAGUATgBhAG0AZQBzAC8BAAAAARkAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnAFsAXQAsACAAbQBzAGMAbwByAGwAaQBiAAEAAAAGAgAAAAAAAAAoAQYAAABpAG4AZABlAHgAMQAoAQYAAABpAG4AZABlAHgAMgAHBQEBEQAAAHYAYQByAGkAYQBiAGwAZQBVAGQAbwBuAE4AYQBtAGUAcwAwAQAAAAIAAAAGAgAAAAAAAAAoAREAAABfAGEAcgBnAF8AaQBuAGQAZQB4ADEAXwBfAFMAdwBhAHAAKAERAAAAXwBhAHIAZwBfAGkAbgBkAGUAeAAyAF8AXwBTAHcAYQBwAAcFAQEMAAAAdgBhAHIAaQBhAGIAbABlAE8AdQB0AHMALwIAAAABGgAAAFMAeQBzAHQAZQBtAC4AQgBvAG8AbABlAGEAbgBbAF0ALAAgAG0AcwBjAG8AcgBsAGkAYgADAAAACAIAAAABAAAAAAAFAQENAAAAdgBhAHIAaQBhAGIAbABlAFQAeQBwAGUAcwAvAwAAAAEXAAAAUwB5AHMAdABlAG0ALgBUAHkAcABlAFsAXQAsACAAbQBzAGMAbwByAGwAaQBiAAQAAAAGAgAAAAAAAAACLwQAAAABHAAAAFMAeQBzAHQAZQBtAC4AUgB1AG4AdABpAG0AZQBUAHkAcABlACwAIABtAHMAYwBvAHIAbABpAGIABQAAACgBFgAAAFMAeQBzAHQAZQBtAC4ASQBuAHQAMwAyACwAIABtAHMAYwBvAHIAbABpAGIABQoFAAAABwUF
+            unityObjects: []
+        - isVariable: 1
+          name: index
+          variableID: 3bd26574-0f6a-4252-8923-6314db32b758
+          data:
+            objEncoded: Ai8AAAAAARYAAABTAHkAcwB0AGUAbQAuAEkAbgB0ADMAMgAsACAAbQBzAGMAbwByAGwAaQBiAAAAAAAYAAAAAAU=
+            unityObjects: []
+        - isVariable: 1
+          name: lastElement
+          variableID: fde8a37f-9965-4466-8927-58730737af1a
+          data:
+            objEncoded: Ai8AAAAAARYAAABTAHkAcwB0AGUAbQAuAEkAbgB0ADMAMgAsACAAbQBzAGMAbwByAGwAaQBiAAAAAAAYAAAAAAU=
+            unityObjects: []
+        multiInput:
+        - isVariable: 1
+          name: This UdonBehaviour
+          variableID: _this_udonbehaviour
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: VRCUdonCommonInterfacesIUdonEventReceiver.__SendCustomEvent__SystemString__SystemVoid
+          guid: 
+        inputs:
+        - isVariable: 0
+          name: 
+          variableID: 
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        - isVariable: 0
+          name: 
+          variableID: 
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBCQAAAF8AUgBlAG0AbwB2AGUAQQB0AAU=
+            unityObjects: []
+        - isVariable: 0
+          name: 
+          variableID: 
+          data:
+            objEncoded: Ai8AAAAAATEAAABDAHkAYQBuAC4AQwBUAC4AQwB5AGEAbgBUAHIAaQBnAGcAZQByAEUAdgBlAG4AdABBAHIAZwBEAGEAdABhACwAIABDAHkAYQBuAC4AQwB5AGEAbgBUAHIAaQBnAGcAZQByAAAAAAAnAQkAAABlAHYAZQBuAHQATgBhAG0AZQABCQAAAF8AUgBlAG0AbwB2AGUAQQB0AAEBDQAAAHYAYQByAGkAYQBiAGwAZQBOAGEAbQBlAHMALwEAAAABGQAAAFMAeQBzAHQAZQBtAC4AUwB0AHIAaQBuAGcAWwBdACwAIABtAHMAYwBvAHIAbABpAGIAAQAAAAYBAAAAAAAAACgBBQAAAGkAbgBkAGUAeAAHBQEBEQAAAHYAYQByAGkAYQBiAGwAZQBVAGQAbwBuAE4AYQBtAGUAcwAwAQAAAAIAAAAGAQAAAAAAAAAoARQAAABfAGEAcgBnAF8AaQBuAGQAZQB4AF8AXwBSAGUAbQBvAHYAZQBBAHQABwUBAQwAAAB2AGEAcgBpAGEAYgBsAGUATwB1AHQAcwAvAgAAAAEaAAAAUwB5AHMAdABlAG0ALgBCAG8AbwBsAGUAYQBuAFsAXQAsACAAbQBzAGMAbwByAGwAaQBiAAMAAAAIAQAAAAEAAAAABQEBDQAAAHYAYQByAGkAYQBiAGwAZQBUAHkAcABlAHMALwMAAAABFwAAAFMAeQBzAHQAZQBtAC4AVAB5AHAAZQBbAF0ALAAgAG0AcwBjAG8AcgBsAGkAYgAEAAAABgEAAAAAAAAAAi8EAAAAARwAAABTAHkAcwB0AGUAbQAuAFIAdQBuAHQAaQBtAGUAVAB5AHAAZQAsACAAbQBzAGMAbwByAGwAaQBiAAUAAAAoARYAAABTAHkAcwB0AGUAbQAuAEkAbgB0ADMAMgAsACAAbQBzAGMAbwByAGwAaQBiAAUHBQU=
+            unityObjects: []
+        - isVariable: 1
+          name: lastElement
+          variableID: fde8a37f-9965-4466-8927-58730737af1a
+          data:
+            objEncoded: Ai8AAAAAARYAAABTAHkAcwB0AGUAbQAuAEkAbgB0ADMAMgAsACAAbQBzAGMAbwByAGwAaQBiAAAAAAAYAAAAAAU=
+            unityObjects: []
+        multiInput:
+        - isVariable: 1
+          name: This UdonBehaviour
+          variableID: _this_udonbehaviour
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        expanded: 0
+        comment:
+          comment: 
+      eventOptions:
+        userGate: 0
+        userGateExtraData: []
+        broadcast: 0
+        delay: 0
+        replay: 0
+      expanded: 0
+    - name: _RemoveValue
+      eventId: 40f485d9-55d7-4550-a31e-85319455a3c1
+      eventInstance:
+        actionType:
+          directEvent: Event_Custom
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: 
+          variableID: 
+          data:
+            objEncoded: 
+            unityObjects: []
+        multiInput:
+        - isVariable: 1
+          name: item
+          variableID: 3ffd320a-133f-49b2-a0c8-d1c89359acca
+          data:
+            objEncoded: Ai8AAAAAARwAAABTAHkAcwB0AGUAbQAuAFIAdQBuAHQAaQBtAGUAVAB5AHAAZQAsACAAbQBzAGMAbwByAGwAaQBiAAAAAAAoASsAAABVAG4AaQB0AHkARQBuAGcAaQBuAGUALgBWAGUAYwB0AG8AcgAzACwAIABVAG4AaQB0AHkARQBuAGcAaQBuAGUALgBDAG8AcgBlAE0AbwBkAHUAbABlAAU=
+            unityObjects: []
+        - isVariable: 1
+          name: removeAll
+          variableID: e30b7ee6-9256-44ba-9f41-0310362df56d
+          data:
+            objEncoded: Ai8AAAAAARwAAABTAHkAcwB0AGUAbQAuAFIAdQBuAHQAaQBtAGUAVAB5AHAAZQAsACAAbQBzAGMAbwByAGwAaQBiAAAAAAAoARgAAABTAHkAcwB0AGUAbQAuAEIAbwBvAGwAZQBhAG4ALAAgAG0AcwBjAG8AcgBsAGkAYgAF
+            unityObjects: []
+        expanded: 1
+        comment:
+          comment: 'Removes all elements that match the input. If removeAll is false,
+            then only the first occurence is removed. '
+      actionInstances:
+      - actionType:
+          directEvent: SystemBoolean.__op_UnaryNegation__SystemBoolean__SystemBoolean
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: removeAll
+          variableID: e30b7ee6-9256-44ba-9f41-0310362df56d
+          data:
+            objEncoded: Ai8AAAAAARgAAABTAHkAcwB0AGUAbQAuAEIAbwBvAGwAZQBhAG4ALAAgAG0AcwBjAG8AcgBsAGkAYgAAAAAALAAF
+            unityObjects: []
+        - isVariable: 1
+          name: 
+          variableID: b716d5d8-4979-4fec-a149-a40dc26a92e3
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBCgAAAHIAZQBtAG8AdgBlAE8AbgBjAGUABQ==
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: SystemInt32__.Set__SystemInt32__SystemInt32
+          guid: 
+        inputs:
+        - isVariable: 0
+          name: 
+          variableID: 
+          data:
+            objEncoded: Ai8AAAAAARYAAABTAHkAcwB0AGUAbQAuAEkAbgB0ADMAMgAsACAAbQBzAGMAbwByAGwAaQBiAAAAAAAYAAAAAAU=
+            unityObjects: []
+        - isVariable: 1
+          name: 
+          variableID: 0730e319-eb3f-45e9-8821-1c9e14c4a884
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBDwAAAHYAYQBsAGkAZABJAHQAZQBtAHMASQBuAGQAZQB4AAU=
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: SystemBoolean__.Set__SystemBoolean__SystemBoolean
+          guid: 
+        inputs:
+        - isVariable: 0
+          name: 
+          variableID: 
+          data:
+            objEncoded: Ai8AAAAAARgAAABTAHkAcwB0AGUAbQAuAEIAbwBvAGwAZQBhAG4ALAAgAG0AcwBjAG8AcgBsAGkAYgAAAAAALAEF
+            unityObjects: []
+        - isVariable: 1
+          name: 
+          variableID: 8e046545-6892-4c88-9bf5-5b47a015ee68
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBDgAAAGMAbwBuAHQAaQBuAHUAZQBTAGUAYQByAGMAaAAF
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: SystemBoolean__.Set__SystemBoolean__SystemBoolean
+          guid: 
+        inputs:
+        - isVariable: 0
+          name: 
+          variableID: 
+          data:
+            objEncoded: Ai8AAAAAARgAAABTAHkAcwB0AGUAbQAuAEIAbwBvAGwAZQBhAG4ALAAgAG0AcwBjAG8AcgBsAGkAYgAAAAAALAAF
+            unityObjects: []
+        - isVariable: 1
+          name: 
+          variableID: 96c79a33-ca2c-46f4-a909-14ba34de6cd9
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBCgAAAHIAZQBtAG8AdgBlAGQATwBuAGUABQ==
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: CyanTriggerSpecial_For
+          guid: 
+        inputs:
+        - isVariable: 0
+          name: 
+          variableID: 
+          data:
+            objEncoded: Ai8AAAAAARYAAABTAHkAcwB0AGUAbQAuAEkAbgB0ADMAMgAsACAAbQBzAGMAbwByAGwAaQBiAAAAAAAYAAAAAAU=
+            unityObjects: []
+        - isVariable: 1
+          name: length
+          variableID: 463865f6-a572-446a-9898-7f84cfa2d24b
+          data:
+            objEncoded: Ai8AAAAAARYAAABTAHkAcwB0AGUAbQAuAEkAbgB0ADMAMgAsACAAbQBzAGMAbwByAGwAaQBiAAAAAAAYAAAAAAU=
+            unityObjects: []
+        - isVariable: 0
+          name: 
+          variableID: 
+          data:
+            objEncoded: Ai8AAAAAARYAAABTAHkAcwB0AGUAbQAuAEkAbgB0ADMAMgAsACAAbQBzAGMAbwByAGwAaQBiAAAAAAAYAQAAAAU=
+            unityObjects: []
+        - isVariable: 1
+          name: 
+          variableID: 3a42b48d-81ff-42d1-8723-6dc7890c900a
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBBQAAAGkAbgBkAGUAeAAF
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: UnityEngineVector3Array.__Get__SystemInt32__UnityEngineVector3
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: itemArray
+          variableID: cc478c96-03fd-444a-878c-01f157407e01
+          data:
+            objEncoded: Ai8AAAAAAUAAAABWAFIAQwAuAFUAZABvAG4ALgBDAG8AbQBtAG8AbgAuAEkAbgB0AGUAcgBmAGEAYwBlAHMALgBJAFUAZABvAG4ARQB2AGUAbgB0AFIAZQBjAGUAaQB2AGUAcgBbAF0ALAAgAFYAUgBDAC4AVQBkAG8AbgAuAEMAbwBtAG0AbwBuAAAAAAAGAAAAAAAAAAAHBQ==
+            unityObjects: []
+        - isVariable: 1
+          name: index
+          variableID: 3a42b48d-81ff-42d1-8723-6dc7890c900a
+          data:
+            objEncoded: Ai8AAAAAARYAAABTAHkAcwB0AGUAbQAuAEkAbgB0ADMAMgAsACAAbQBzAGMAbwByAGwAaQBiAAAAAAAYAAAAAAU=
+            unityObjects: []
+        - isVariable: 1
+          name: 
+          variableID: 8ef64943-977c-4ffd-bf1b-2cb8b0915082
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBBwAAAGMAdQByAEkAdABlAG0ABQ==
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: CyanTriggerSpecial_If
+          guid: 
+        inputs: []
+        multiInput: []
+        expanded: 1
+        comment:
+          comment: If found the element, set it to null and continue.
+      - actionType:
+          directEvent: CyanTriggerSpecial_Condition
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: 
+          variableID: 8bbddffc-beb1-4cba-925f-03509b0d9e4f
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBBwAAAGkAcwBFAHEAdQBhAGwABQ==
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: CyanTriggerSpecial_ConditionFailIfFalse
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: continueSearch
+          variableID: 8e046545-6892-4c88-9bf5-5b47a015ee68
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: UnityEngineVector3.__op_Equality__UnityEngineVector3_UnityEngineVector3__SystemBoolean
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: item
+          variableID: 3ffd320a-133f-49b2-a0c8-d1c89359acca
+          data:
+            objEncoded: Ai8AAAAAASsAAABVAG4AaQB0AHkARQBuAGcAaQBuAGUALgBWAGUAYwB0AG8AcgAzACwAIABVAG4AaQB0AHkARQBuAGcAaQBuAGUALgBDAG8AcgBlAE0AbwBkAHUAbABlAAAAAAAgAAAAACAAAAAAIAAAAAAF
+            unityObjects: []
+        - isVariable: 1
+          name: curItem
+          variableID: 8ef64943-977c-4ffd-bf1b-2cb8b0915082
+          data:
+            objEncoded: Ai8AAAAAASsAAABVAG4AaQB0AHkARQBuAGcAaQBuAGUALgBWAGUAYwB0AG8AcgAzACwAIABVAG4AaQB0AHkARQBuAGcAaQBuAGUALgBDAG8AcgBlAE0AbwBkAHUAbABlAAAAAAAgAAAAACAAAAAAIAAAAAAF
+            unityObjects: []
+        - isVariable: 1
+          name: isEqual
+          variableID: 8bbddffc-beb1-4cba-925f-03509b0d9e4f
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: CyanTriggerSpecial_BlockEnd
+          guid: 
+        inputs: []
+        multiInput: []
+        expanded: 1
+        comment:
+          comment: 
+      - actionType:
+          directEvent: CyanTriggerSpecial_ConditionBody
+          guid: 
+        inputs: []
+        multiInput: []
+        expanded: 1
+        comment:
+          comment: 
+      - actionType:
+          directEvent: UnityEngineVector3Array.__Set__SystemInt32_UnityEngineVector3__SystemVoid
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: itemArray
+          variableID: cc478c96-03fd-444a-878c-01f157407e01
+          data:
+            objEncoded: Ai8AAAAAAUAAAABWAFIAQwAuAFUAZABvAG4ALgBDAG8AbQBtAG8AbgAuAEkAbgB0AGUAcgBmAGEAYwBlAHMALgBJAFUAZABvAG4ARQB2AGUAbgB0AFIAZQBjAGUAaQB2AGUAcgBbAF0ALAAgAFYAUgBDAC4AVQBkAG8AbgAuAEMAbwBtAG0AbwBuAAAAAAAGAAAAAAAAAAAHBQ==
+            unityObjects: []
+        - isVariable: 1
+          name: index
+          variableID: 3a42b48d-81ff-42d1-8723-6dc7890c900a
+          data:
+            objEncoded: Ai8AAAAAARYAAABTAHkAcwB0AGUAbQAuAEkAbgB0ADMAMgAsACAAbQBzAGMAbwByAGwAaQBiAAAAAAAYAAAAAAU=
+            unityObjects: []
+        - isVariable: 1
+          name: null
+          variableID: __null
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: Clear the array location
+      - actionType:
+          directEvent: SystemBoolean__.Set__SystemBoolean__SystemBoolean
+          guid: 
+        inputs:
+        - isVariable: 0
+          name: 
+          variableID: 
+          data:
+            objEncoded: Ai8AAAAAARgAAABTAHkAcwB0AGUAbQAuAEIAbwBvAGwAZQBhAG4ALAAgAG0AcwBjAG8AcgBsAGkAYgAAAAAALAEF
+            unityObjects: []
+        - isVariable: 1
+          name: removedOne
+          variableID: 96c79a33-ca2c-46f4-a909-14ba34de6cd9
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBBwAAAGIAbwBvAGwAVgBhAHIABQ==
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: CyanTriggerSpecial_If
+          guid: 
+        inputs: []
+        multiInput: []
+        expanded: 1
+        comment:
+          comment: 
+      - actionType:
+          directEvent: CyanTriggerSpecial_Condition
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: removeOnce
+          variableID: b716d5d8-4979-4fec-a149-a40dc26a92e3
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBDgAAAGMAbwBuAGQAaQB0AGkAbwBuAF8AYgBvAG8AbAAF
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: CyanTriggerSpecial_BlockEnd
+          guid: 
+        inputs: []
+        multiInput: []
+        expanded: 1
+        comment:
+          comment: 
+      - actionType:
+          directEvent: CyanTriggerSpecial_ConditionBody
+          guid: 
+        inputs: []
+        multiInput: []
+        expanded: 1
+        comment:
+          comment: 
+      - actionType:
+          directEvent: SystemBoolean__.Set__SystemBoolean__SystemBoolean
+          guid: 
+        inputs:
+        - isVariable: 0
+          name: 
+          variableID: 
+          data:
+            objEncoded: Ai8AAAAAARgAAABTAHkAcwB0AGUAbQAuAEIAbwBvAGwAZQBhAG4ALAAgAG0AcwBjAG8AcgBsAGkAYgAAAAAALAAF
+            unityObjects: []
+        - isVariable: 1
+          name: continueSearch
+          variableID: 8e046545-6892-4c88-9bf5-5b47a015ee68
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBBwAAAGIAbwBvAGwAVgBhAHIABQ==
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: CyanTriggerSpecial_BlockEnd
+          guid: 
+        inputs: []
+        multiInput: []
+        expanded: 1
+        comment:
+          comment: 
+      - actionType:
+          directEvent: CyanTriggerSpecial_BlockEnd
+          guid: 
+        inputs: []
+        multiInput: []
+        expanded: 1
+        comment:
+          comment: 
+      - actionType:
+          directEvent: CyanTriggerSpecial_Continue
+          guid: 
+        inputs: []
+        multiInput: []
+        expanded: 1
+        comment:
+          comment: Prevent incrementing "validItemsIndex"
+      - actionType:
+          directEvent: CyanTriggerSpecial_BlockEnd
+          guid: 
+        inputs: []
+        multiInput: []
+        expanded: 1
+        comment:
+          comment: 
+      - actionType:
+          directEvent: CyanTriggerSpecial_BlockEnd
+          guid: 
+        inputs: []
+        multiInput: []
+        expanded: 1
+        comment:
+          comment: 
+      - actionType:
+          directEvent: CyanTriggerSpecial_ElseIf
+          guid: 
+        inputs: []
+        multiInput: []
+        expanded: 1
+        comment:
+          comment: If any removed, shift current element down.
+      - actionType:
+          directEvent: CyanTriggerSpecial_Condition
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: removedOne
+          variableID: 96c79a33-ca2c-46f4-a909-14ba34de6cd9
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBDgAAAGMAbwBuAGQAaQB0AGkAbwBuAF8AYgBvAG8AbAAF
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: CyanTriggerSpecial_BlockEnd
+          guid: 
+        inputs: []
+        multiInput: []
+        expanded: 1
+        comment:
+          comment: 
+      - actionType:
+          directEvent: CyanTriggerSpecial_ConditionBody
+          guid: 
+        inputs: []
+        multiInput: []
+        expanded: 1
+        comment:
+          comment: 
+      - actionType:
+          directEvent: UnityEngineVector3Array.__Set__SystemInt32_UnityEngineVector3__SystemVoid
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: itemArray
+          variableID: cc478c96-03fd-444a-878c-01f157407e01
+          data:
+            objEncoded: Ai8AAAAAAUAAAABWAFIAQwAuAFUAZABvAG4ALgBDAG8AbQBtAG8AbgAuAEkAbgB0AGUAcgBmAGEAYwBlAHMALgBJAFUAZABvAG4ARQB2AGUAbgB0AFIAZQBjAGUAaQB2AGUAcgBbAF0ALAAgAFYAUgBDAC4AVQBkAG8AbgAuAEMAbwBtAG0AbwBuAAAAAAAGAAAAAAAAAAAHBQ==
+            unityObjects: []
+        - isVariable: 1
+          name: validItemsIndex
+          variableID: 0730e319-eb3f-45e9-8821-1c9e14c4a884
+          data:
+            objEncoded: Ai8AAAAAARYAAABTAHkAcwB0AGUAbQAuAEkAbgB0ADMAMgAsACAAbQBzAGMAbwByAGwAaQBiAAAAAAAYAAAAAAU=
+            unityObjects: []
+        - isVariable: 1
+          name: curItem
+          variableID: 8ef64943-977c-4ffd-bf1b-2cb8b0915082
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: CyanTriggerSpecial_BlockEnd
+          guid: 
+        inputs: []
+        multiInput: []
+        expanded: 1
+        comment:
+          comment: 
+      - actionType:
+          directEvent: CyanTriggerSpecial_BlockEnd
+          guid: 
+        inputs: []
+        multiInput: []
+        expanded: 1
+        comment:
+          comment: 
+      - actionType:
+          directEvent: SystemInt32.__op_Addition__SystemInt32_SystemInt32__SystemInt32
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: validItemsIndex
+          variableID: 0730e319-eb3f-45e9-8821-1c9e14c4a884
+          data:
+            objEncoded: Ai8AAAAAARYAAABTAHkAcwB0AGUAbQAuAEkAbgB0ADMAMgAsACAAbQBzAGMAbwByAGwAaQBiAAAAAAAYAAAAAAU=
+            unityObjects: []
+        - isVariable: 0
+          name: 
+          variableID: 
+          data:
+            objEncoded: Ai8AAAAAARYAAABTAHkAcwB0AGUAbQAuAEkAbgB0ADMAMgAsACAAbQBzAGMAbwByAGwAaQBiAAAAAAAYAQAAAAU=
+            unityObjects: []
+        - isVariable: 1
+          name: validItemsIndex
+          variableID: 0730e319-eb3f-45e9-8821-1c9e14c4a884
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: CyanTriggerSpecial_BlockEnd
+          guid: 
+        inputs: []
+        multiInput: []
+        expanded: 1
+        comment:
+          comment: 
+      - actionType:
+          directEvent: SystemInt32__.Set__SystemInt32__SystemInt32
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: validItemsIndex
+          variableID: 0730e319-eb3f-45e9-8821-1c9e14c4a884
+          data:
+            objEncoded: Ai8AAAAAARYAAABTAHkAcwB0AGUAbQAuAEkAbgB0ADMAMgAsACAAbQBzAGMAbwByAGwAaQBiAAAAAAAYAAAAAAU=
+            unityObjects: []
+        - isVariable: 1
+          name: length
+          variableID: 463865f6-a572-446a-9898-7f84cfa2d24b
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBBgAAAGkAbgB0AFYAYQByAAU=
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: Update the new length after all removes
+      eventOptions:
+        userGate: 0
+        userGateExtraData: []
+        broadcast: 0
+        delay: 0
+        replay: 0
+      expanded: 0
+    variables:
+    - isVariable: 0
+      name: itemArray
+      variableID: cc478c96-03fd-444a-878c-01f157407e01
+      data:
+        objEncoded: Ai8AAAAAAS0AAABVAG4AaQB0AHkARQBuAGcAaQBuAGUALgBWAGUAYwB0AG8AcgAzAFsAXQAsACAAVQBuAGkAdAB5AEUAbgBnAGkAbgBlAC4AQwBvAHIAZQBNAG8AZAB1AGwAZQAAAAAABgAAAAAAAAAABwU=
+        unityObjects: []
+      type:
+        typeDef: UnityEngine.Vector3[], UnityEngine.CoreModule, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
+      sync: 0
+      showInInspector: 1
+      typeInfo: 0
+      comment:
+        comment: 
+    - isVariable: 0
+      name: length
+      variableID: 463865f6-a572-446a-9898-7f84cfa2d24b
+      data:
+        objEncoded: Ai8AAAAAARYAAABTAHkAcwB0AGUAbQAuAEkAbgB0ADMAMgAsACAAbQBzAGMAbwByAGwAaQBiAAAAAAAYAAAAAAU=
+        unityObjects: []
+      type:
+        typeDef: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      sync: 0
+      showInInspector: 1
+      typeInfo: 0
+      comment:
+        comment: 
+    comment:
+      comment: 
+    expandVariables: 1
+    expandOtherSettings: 1
+    expandSyncSection: 0
+    ignoreEventWarnings: 1
+  publicVariableReferences:
+    actionDataIndices: []
+    userVariableNames:
+    - itemArray
+    - length
+    userVariableTypes:
+    - typeDef: UnityEngine.Vector3[], UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+    - typeDef: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+  ignoreOdinData: 1
+  serializationDataOdin:
+    SerializedFormat: 0
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes: []
+  allowEditingInInspector: 0
+  expandInInspector: 0
+  isLocked: 1

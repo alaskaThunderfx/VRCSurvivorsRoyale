@@ -1,0 +1,1590 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a31a3a978bd0448580d4ef9f3d6d95bf, type: 3}
+  m_Name: HealthSystem
+  m_EditorClassIdentifier: 
+  serializedUdonProgramAsset: {fileID: 11400000, guid: 595dd18a60e10d0499cd7ae7bf3bb788,
+    type: 2}
+  udonAssembly: ".data_start\r\n  .export __CyanTrigger_ProgramName_SystemString\r\n 
+    .export health\r\n  .export maxHealth\r\n  .export onHealedEvent\r\n  .export
+    onDamagedEvent\r\n  .export onDeathEvent\r\n  .export minDurationBetweenDamage\r\n 
+    .export _lastDamageTime\r\n  __CyanTrigger_ProgramName_SystemString: %SystemString,
+    null\r\n  __CyanTrigger_ProgramHash_SystemString: %SystemString, null\r\n  __0_ra_SystemUInt32:
+    %SystemUInt32, null\r\n  __1_ea_SystemUInt32: %SystemUInt32, null\r\n  _this_udonbehaviour:
+    %VRCUdonUdonBehaviour, this\r\n  health: %SystemInt32, null\r\n  maxHealth: %SystemInt32,
+    null\r\n  onHealedEvent: %SystemString, null\r\n  onDamagedEvent: %SystemString,
+    null\r\n  onDeathEvent: %SystemString, null\r\n  minDurationBetweenDamage: %SystemSingle,
+    null\r\n  _lastDamageTime: %SystemSingle, null\r\n  _arg_newHealth__SetHealth:
+    %SystemInt32, null\r\n  _arg_newMax__SetMaxHealth: %SystemInt32, null\r\n  _arg_addedHealth__AddHealth:
+    %SystemInt32, null\r\n  _arg_addedDamage__AddDamage: %SystemInt32, null\r\n 
+    _arg_updateAmount__UpdateHealth: %SystemInt32, null\r\n  _arg_healthPercent__GetCurrentHealthPercent:
+    %SystemSingle, null\r\n  _arg_isDead__IsDead: %SystemBoolean, null\r\n  __23_local_var_SystemInt32:
+    %SystemInt32, null\r\n  __24_ref_SystemString: %SystemString, null\r\n  __25___jump_return_0_SystemUInt32:
+    %SystemUInt32, null\r\n  __26_ref_SystemString: %SystemString, null\r\n  __27___jump_return_1_SystemUInt32:
+    %SystemUInt32, null\r\n  __28_local_var_SystemBoolean: %SystemBoolean, null\r\n 
+    __29_const_SystemBoolean: %SystemBoolean, null\r\n  __30_ref_SystemInt32: %SystemInt32,
+    null\r\n  __31_local_var_SystemSingle: %SystemSingle, null\r\n  __32_local_var_SystemBoolean:
+    %SystemBoolean, null\r\n  __33_local_var_SystemSingle: %SystemSingle, null\r\n 
+    __34_local_var_SystemBoolean: %SystemBoolean, null\r\n  __35_ref_SystemInt32:
+    %SystemInt32, null\r\n  __36_ref_SystemInt32: %SystemInt32, null\r\n  __37_ref_SystemInt32:
+    %SystemInt32, null\r\n  __38_local_var_SystemBoolean: %SystemBoolean, null\r\n 
+    __39_ref_SystemInt32: %SystemInt32, null\r\n  __40_local_var_SystemBoolean: %SystemBoolean,
+    null\r\n  __41_ref_SystemInt32: %SystemInt32, null\r\n  __42_ref_SystemString:
+    %SystemString, null\r\n  __43___jump_return_2_SystemUInt32: %SystemUInt32, null\r\n 
+    __44_local_var_SystemInt32: %SystemInt32, null\r\n  __45_ref_SystemInt32: %SystemInt32,
+    null\r\n  __46_ref_SystemString: %SystemString, null\r\n  __47___jump_return_3_SystemUInt32:
+    %SystemUInt32, null\r\n  __48_local_var_SystemSingle: %SystemSingle, null\r\n 
+    __49_local_var_SystemSingle: %SystemSingle, null\r\n  __50_ref_SystemInt32: %SystemInt32,
+    null\r\n.data_end\r\n\n.code_start\r\n  .export _SetHealth\r\n  _SetHealth:\r\n   
+    PUSH, __1_ea_SystemUInt32\r\n    PUSH, _arg_newHealth__SetHealth\r\n    PUSH,
+    health\r\n    PUSH, __23_local_var_SystemInt32\r\n    EXTERN, \"SystemInt32.__op_Subtraction__SystemInt32_SystemInt32__SystemInt32\"\r\n   
+    PUSH, __23_local_var_SystemInt32\r\n    PUSH, _arg_updateAmount__UpdateHealth\r\n   
+    COPY\r\n    PUSH, __25___jump_return_0_SystemUInt32\r\n    JUMP, 0x000003CC\r\n   
+    PUSH, __0_ra_SystemUInt32\r\n    COPY\r\n    JUMP_INDIRECT, __0_ra_SystemUInt32\r\n\r\n 
+    .export _ApplyMaxHealth\r\n  _ApplyMaxHealth:\r\n    PUSH, __1_ea_SystemUInt32\r\n   
+    PUSH, maxHealth\r\n    PUSH, _arg_newHealth__SetHealth\r\n    COPY\r\n    PUSH,
+    __27___jump_return_1_SystemUInt32\r\n    JUMP, 0x00000008\r\n    PUSH, __0_ra_SystemUInt32\r\n   
+    COPY\r\n    JUMP_INDIRECT, __0_ra_SystemUInt32\r\n\r\n  .export _SetMaxHealth\r\n 
+    _SetMaxHealth:\r\n    PUSH, __1_ea_SystemUInt32\r\n    PUSH, _arg_newMax__SetMaxHealth\r\n   
+    PUSH, maxHealth\r\n    COPY\r\n    PUSH, health\r\n    PUSH, maxHealth\r\n   
+    PUSH, health\r\n    EXTERN, \"UnityEngineMathf.__Min__SystemInt32_SystemInt32__SystemInt32\"\r\n   
+    PUSH, __0_ra_SystemUInt32\r\n    COPY\r\n    JUMP_INDIRECT, __0_ra_SystemUInt32\r\n\r\n 
+    .export _AddHealth\r\n  _AddHealth:\r\n    PUSH, __1_ea_SystemUInt32\r\n    PUSH,
+    __29_const_SystemBoolean\r\n    PUSH, __28_local_var_SystemBoolean\r\n    COPY\r\n   
+    PUSH, health\r\n    PUSH, maxHealth\r\n    PUSH, __28_local_var_SystemBoolean\r\n   
+    EXTERN, \"SystemInt32.__op_LessThan__SystemInt32_SystemInt32__SystemBoolean\"\r\n   
+    PUSH, __29_const_SystemBoolean\r\n    PUSH, __28_local_var_SystemBoolean\r\n   
+    JUMP_IF_FALSE, 0x00000170\r\n    POP\r\n    PUSH, _arg_addedHealth__AddHealth\r\n   
+    PUSH, __30_ref_SystemInt32\r\n    PUSH, __28_local_var_SystemBoolean\r\n    EXTERN,
+    \"SystemInt32.__op_GreaterThan__SystemInt32_SystemInt32__SystemBoolean\"\r\n   
+    PUSH, __28_local_var_SystemBoolean\r\n    JUMP_IF_FALSE, 0x000001D0\r\n    PUSH,
+    health\r\n    PUSH, _arg_addedHealth__AddHealth\r\n    PUSH, health\r\n    EXTERN,
+    \"SystemInt32.__op_Addition__SystemInt32_SystemInt32__SystemInt32\"\r\n    PUSH,
+    health\r\n    PUSH, maxHealth\r\n    PUSH, health\r\n    EXTERN, \"UnityEngineMathf.__Min__SystemInt32_SystemInt32__SystemInt32\"\r\n   
+    PUSH, _this_udonbehaviour\r\n    PUSH, onHealedEvent\r\n    EXTERN, \"VRCUdonCommonInterfacesIUdonEventReceiver.__SendCustomEvent__SystemString__SystemVoid\"\r\n   
+    PUSH, __0_ra_SystemUInt32\r\n    COPY\r\n    JUMP_INDIRECT, __0_ra_SystemUInt32\r\n\r\n 
+    .export _AddDamage\r\n  _AddDamage:\r\n    PUSH, __1_ea_SystemUInt32\r\n    PUSH,
+    __31_local_var_SystemSingle\r\n    EXTERN, \"UnityEngineTime.__get_timeSinceLevelLoad__SystemSingle\"\r\n   
+    PUSH, __29_const_SystemBoolean\r\n    PUSH, __32_local_var_SystemBoolean\r\n   
+    COPY\r\n    PUSH, _lastDamageTime\r\n    PUSH, minDurationBetweenDamage\r\n   
+    PUSH, __33_local_var_SystemSingle\r\n    EXTERN, \"SystemSingle.__op_Addition__SystemSingle_SystemSingle__SystemSingle\"\r\n   
+    PUSH, __33_local_var_SystemSingle\r\n    PUSH, __31_local_var_SystemSingle\r\n   
+    PUSH, __32_local_var_SystemBoolean\r\n    EXTERN, \"SystemSingle.__op_GreaterThanOrEqual__SystemSingle_SystemSingle__SystemBoolean\"\r\n   
+    PUSH, __32_local_var_SystemBoolean\r\n    JUMP_IF_FALSE, 0x00000268\r\n    JUMP,
+    0x000003B0\r\n    PUSH, __31_local_var_SystemSingle\r\n    PUSH, _lastDamageTime\r\n   
+    COPY\r\n    PUSH, __29_const_SystemBoolean\r\n    PUSH, __34_local_var_SystemBoolean\r\n   
+    COPY\r\n    PUSH, health\r\n    PUSH, __35_ref_SystemInt32\r\n    PUSH, __34_local_var_SystemBoolean\r\n   
+    EXTERN, \"SystemInt32.__op_GreaterThan__SystemInt32_SystemInt32__SystemBoolean\"\r\n   
+    PUSH, __29_const_SystemBoolean\r\n    PUSH, __34_local_var_SystemBoolean\r\n   
+    JUMP_IF_FALSE, 0x000002F4\r\n    POP\r\n    PUSH, _arg_addedDamage__AddDamage\r\n   
+    PUSH, __36_ref_SystemInt32\r\n    PUSH, __34_local_var_SystemBoolean\r\n    EXTERN,
+    \"SystemInt32.__op_GreaterThan__SystemInt32_SystemInt32__SystemBoolean\"\r\n   
+    PUSH, __34_local_var_SystemBoolean\r\n    JUMP_IF_FALSE, 0x000003B0\r\n    PUSH,
+    health\r\n    PUSH, _arg_addedDamage__AddDamage\r\n    PUSH, health\r\n    EXTERN,
+    \"SystemInt32.__op_Subtraction__SystemInt32_SystemInt32__SystemInt32\"\r\n   
+    PUSH, health\r\n    PUSH, __37_ref_SystemInt32\r\n    PUSH, health\r\n    EXTERN,
+    \"UnityEngineMathf.__Max__SystemInt32_SystemInt32__SystemInt32\"\r\n    PUSH,
+    _this_udonbehaviour\r\n    PUSH, onDamagedEvent\r\n    EXTERN, \"VRCUdonCommonInterfacesIUdonEventReceiver.__SendCustomEvent__SystemString__SystemVoid\"\r\n   
+    PUSH, __29_const_SystemBoolean\r\n    PUSH, __38_local_var_SystemBoolean\r\n   
+    COPY\r\n    PUSH, health\r\n    PUSH, __39_ref_SystemInt32\r\n    PUSH, __38_local_var_SystemBoolean\r\n   
+    EXTERN, \"SystemInt32.__op_LessThanOrEqual__SystemInt32_SystemInt32__SystemBoolean\"\r\n   
+    PUSH, __38_local_var_SystemBoolean\r\n    JUMP_IF_FALSE, 0x000003B0\r\n    PUSH,
+    _this_udonbehaviour\r\n    PUSH, onDeathEvent\r\n    EXTERN, \"VRCUdonCommonInterfacesIUdonEventReceiver.__SendCustomEvent__SystemString__SystemVoid\"\r\n   
+    PUSH, __0_ra_SystemUInt32\r\n    COPY\r\n    JUMP_INDIRECT, __0_ra_SystemUInt32\r\n\r\n 
+    .export _UpdateHealth\r\n  _UpdateHealth:\r\n    PUSH, __1_ea_SystemUInt32\r\n   
+    PUSH, __29_const_SystemBoolean\r\n    PUSH, __40_local_var_SystemBoolean\r\n   
+    COPY\r\n    PUSH, _arg_updateAmount__UpdateHealth\r\n    PUSH, __41_ref_SystemInt32\r\n   
+    PUSH, __40_local_var_SystemBoolean\r\n    EXTERN, \"SystemInt32.__op_GreaterThan__SystemInt32_SystemInt32__SystemBoolean\"\r\n   
+    PUSH, __40_local_var_SystemBoolean\r\n    JUMP_IF_FALSE, 0x0000043C\r\n    PUSH,
+    _arg_updateAmount__UpdateHealth\r\n    PUSH, _arg_addedHealth__AddHealth\r\n   
+    COPY\r\n    PUSH, __43___jump_return_2_SystemUInt32\r\n    JUMP, 0x000000F8\r\n   
+    JUMP, 0x00000480\r\n    PUSH, _arg_updateAmount__UpdateHealth\r\n    PUSH, __45_ref_SystemInt32\r\n   
+    PUSH, __44_local_var_SystemInt32\r\n    EXTERN, \"SystemInt32.__op_Multiplication__SystemInt32_SystemInt32__SystemInt32\"\r\n   
+    PUSH, _arg_updateAmount__UpdateHealth\r\n    PUSH, _arg_addedDamage__AddDamage\r\n   
+    COPY\r\n    PUSH, __47___jump_return_3_SystemUInt32\r\n    JUMP, 0x000001EC\r\n   
+    PUSH, __0_ra_SystemUInt32\r\n    COPY\r\n    JUMP_INDIRECT, __0_ra_SystemUInt32\r\n\r\n 
+    .export _GetCurrentHealthPercent\r\n  _GetCurrentHealthPercent:\r\n    PUSH,
+    __1_ea_SystemUInt32\r\n    PUSH, health\r\n    PUSH, __48_local_var_SystemSingle\r\n   
+    EXTERN, \"SystemConvert.__ToSingle__SystemInt32__SystemSingle\"\r\n    PUSH,
+    maxHealth\r\n    PUSH, __49_local_var_SystemSingle\r\n    EXTERN, \"SystemConvert.__ToSingle__SystemInt32__SystemSingle\"\r\n   
+    PUSH, __48_local_var_SystemSingle\r\n    PUSH, __49_local_var_SystemSingle\r\n   
+    PUSH, _arg_healthPercent__GetCurrentHealthPercent\r\n    EXTERN, \"SystemSingle.__op_Division__SystemSingle_SystemSingle__SystemSingle\"\r\n   
+    PUSH, __0_ra_SystemUInt32\r\n    COPY\r\n    JUMP_INDIRECT, __0_ra_SystemUInt32\r\n\r\n 
+    .export _IsDead\r\n  _IsDead:\r\n    PUSH, __1_ea_SystemUInt32\r\n    PUSH, health\r\n   
+    PUSH, __50_ref_SystemInt32\r\n    PUSH, _arg_isDead__IsDead\r\n    EXTERN, \"SystemInt32.__op_LessThanOrEqual__SystemInt32_SystemInt32__SystemBoolean\"\r\n   
+    PUSH, __0_ra_SystemUInt32\r\n    COPY\r\n    JUMP_INDIRECT, __0_ra_SystemUInt32\r\n\r\n.code_end\r\n"
+  assemblyError: 
+  triggerHash: 6AC236FFF3293626FCD49AFC325063AB
+  shouldBeNetworked: 0
+  warningMessages: []
+  errorMessages: []
+  ctDataInstance:
+    version: 6
+    updateOrder: 0
+    autoSetSyncMode: 1
+    programSyncMode: 0
+    programName: 
+    events:
+    - name: _SetHealth
+      eventId: 84beaa48-3822-409f-bcd3-9d0795ea1b27
+      eventInstance:
+        actionType:
+          directEvent: Event_Custom
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: 
+          variableID: 
+          data:
+            objEncoded: 
+            unityObjects: []
+        multiInput:
+        - isVariable: 1
+          name: newHealth
+          variableID: 5836e22c-b108-4d92-a2b7-eeb30ded4dac
+          data:
+            objEncoded: Ai8AAAAAARwAAABTAHkAcwB0AGUAbQAuAFIAdQBuAHQAaQBtAGUAVAB5AHAAZQAsACAAbQBzAGMAbwByAGwAaQBiAAAAAAAoARYAAABTAHkAcwB0AGUAbQAuAEkAbgB0ADMAMgAsACAAbQBzAGMAbwByAGwAaQBiAAU=
+            unityObjects: []
+        expanded: 1
+        comment:
+          comment: 
+      actionInstances:
+      - actionType:
+          directEvent: SystemInt32.__op_Subtraction__SystemInt32_SystemInt32__SystemInt32
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: newHealth
+          variableID: 5836e22c-b108-4d92-a2b7-eeb30ded4dac
+          data:
+            objEncoded: Ai8AAAAAARYAAABTAHkAcwB0AGUAbQAuAEkAbgB0ADMAMgAsACAAbQBzAGMAbwByAGwAaQBiAAAAAAAYAAAAAAU=
+            unityObjects: []
+        - isVariable: 1
+          name: health
+          variableID: 3e4f0ad3-e039-4dff-9f21-0880e64ac52c
+          data:
+            objEncoded: Ai8AAAAAARYAAABTAHkAcwB0AGUAbQAuAEkAbgB0ADMAMgAsACAAbQBzAGMAbwByAGwAaQBiAAAAAAAYAAAAAAU=
+            unityObjects: []
+        - isVariable: 1
+          name: 
+          variableID: be7b5259-d518-42ad-ac5a-66cb34e4a3e7
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBCgAAAGgAZQBhAGwAdABoAEQAaQBmAGYABQ==
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: VRCUdonCommonInterfacesIUdonEventReceiver.__SendCustomEvent__SystemString__SystemVoid
+          guid: 
+        inputs:
+        - isVariable: 0
+          name: 
+          variableID: 
+          data:
+            objEncoded: 
+            unityObjects: []
+        - isVariable: 0
+          name: 
+          variableID: 
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBDQAAAF8AVQBwAGQAYQB0AGUASABlAGEAbAB0AGgABQ==
+            unityObjects: []
+        - isVariable: 0
+          name: 
+          variableID: 
+          data:
+            objEncoded: Ai8AAAAAATEAAABDAHkAYQBuAC4AQwBUAC4AQwB5AGEAbgBUAHIAaQBnAGcAZQByAEUAdgBlAG4AdABBAHIAZwBEAGEAdABhACwAIABDAHkAYQBuAC4AQwB5AGEAbgBUAHIAaQBnAGcAZQByAAAAAAAnAQkAAABlAHYAZQBuAHQATgBhAG0AZQABDQAAAF8AVQBwAGQAYQB0AGUASABlAGEAbAB0AGgAAQENAAAAdgBhAHIAaQBhAGIAbABlAE4AYQBtAGUAcwAvAQAAAAEZAAAAUwB5AHMAdABlAG0ALgBTAHQAcgBpAG4AZwBbAF0ALAAgAG0AcwBjAG8AcgBsAGkAYgABAAAABgEAAAAAAAAAKAEMAAAAdQBwAGQAYQB0AGUAQQBtAG8AdQBuAHQABwUBAREAAAB2AGEAcgBpAGEAYgBsAGUAVQBkAG8AbgBOAGEAbQBlAHMAMAEAAAACAAAABgEAAAAAAAAAKAEfAAAAXwBhAHIAZwBfAHUAcABkAGEAdABlAEEAbQBvAHUAbgB0AF8AXwBVAHAAZABhAHQAZQBIAGUAYQBsAHQAaAAHBQEBDAAAAHYAYQByAGkAYQBiAGwAZQBPAHUAdABzAC8CAAAAARoAAABTAHkAcwB0AGUAbQAuAEIAbwBvAGwAZQBhAG4AWwBdACwAIABtAHMAYwBvAHIAbABpAGIAAwAAAAgBAAAAAQAAAAAFAQENAAAAdgBhAHIAaQBhAGIAbABlAFQAeQBwAGUAcwAvAwAAAAEXAAAAUwB5AHMAdABlAG0ALgBUAHkAcABlAFsAXQAsACAAbQBzAGMAbwByAGwAaQBiAAQAAAAGAQAAAAAAAAACLwQAAAABHAAAAFMAeQBzAHQAZQBtAC4AUgB1AG4AdABpAG0AZQBUAHkAcABlACwAIABtAHMAYwBvAHIAbABpAGIABQAAACgBFgAAAFMAeQBzAHQAZQBtAC4ASQBuAHQAMwAyACwAIABtAHMAYwBvAHIAbABpAGIABQcFBQ==
+            unityObjects: []
+        - isVariable: 1
+          name: healthDiff
+          variableID: be7b5259-d518-42ad-ac5a-66cb34e4a3e7
+          data:
+            objEncoded: Ai8AAAAAARYAAABTAHkAcwB0AGUAbQAuAEkAbgB0ADMAMgAsACAAbQBzAGMAbwByAGwAaQBiAAAAAAAYAAAAAAU=
+            unityObjects: []
+        multiInput:
+        - isVariable: 1
+          name: This UdonBehaviour
+          variableID: _this_udonbehaviour
+          data:
+            objEncoded: 
+            unityObjects: []
+        expanded: 0
+        comment:
+          comment: 
+      eventOptions:
+        userGate: 0
+        userGateExtraData: []
+        broadcast: 0
+        delay: 0
+        replay: 0
+      expanded: 1
+    - name: _ApplyMaxHealth
+      eventId: bacd8c33-ca5f-4cef-9686-7c7928a03452
+      eventInstance:
+        actionType:
+          directEvent: Event_Custom
+          guid: 
+        inputs: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      actionInstances:
+      - actionType:
+          directEvent: VRCUdonCommonInterfacesIUdonEventReceiver.__SendCustomEvent__SystemString__SystemVoid
+          guid: 
+        inputs:
+        - isVariable: 0
+          name: 
+          variableID: 
+          data:
+            objEncoded: 
+            unityObjects: []
+        - isVariable: 0
+          name: 
+          variableID: 
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBCgAAAF8AUwBlAHQASABlAGEAbAB0AGgABQ==
+            unityObjects: []
+        - isVariable: 0
+          name: 
+          variableID: 
+          data:
+            objEncoded: Ai8AAAAAATEAAABDAHkAYQBuAC4AQwBUAC4AQwB5AGEAbgBUAHIAaQBnAGcAZQByAEUAdgBlAG4AdABBAHIAZwBEAGEAdABhACwAIABDAHkAYQBuAC4AQwB5AGEAbgBUAHIAaQBnAGcAZQByAAAAAAAnAQkAAABlAHYAZQBuAHQATgBhAG0AZQABCgAAAF8AUwBlAHQASABlAGEAbAB0AGgAAQENAAAAdgBhAHIAaQBhAGIAbABlAE4AYQBtAGUAcwAvAQAAAAEZAAAAUwB5AHMAdABlAG0ALgBTAHQAcgBpAG4AZwBbAF0ALAAgAG0AcwBjAG8AcgBsAGkAYgABAAAABgEAAAAAAAAAKAEJAAAAbgBlAHcASABlAGEAbAB0AGgABwUBAREAAAB2AGEAcgBpAGEAYgBsAGUAVQBkAG8AbgBOAGEAbQBlAHMAMAEAAAACAAAABgEAAAAAAAAAKAEZAAAAXwBhAHIAZwBfAG4AZQB3AEgAZQBhAGwAdABoAF8AXwBTAGUAdABIAGUAYQBsAHQAaAAHBQEBDAAAAHYAYQByAGkAYQBiAGwAZQBPAHUAdABzAC8CAAAAARoAAABTAHkAcwB0AGUAbQAuAEIAbwBvAGwAZQBhAG4AWwBdACwAIABtAHMAYwBvAHIAbABpAGIAAwAAAAgBAAAAAQAAAAAFAQENAAAAdgBhAHIAaQBhAGIAbABlAFQAeQBwAGUAcwAvAwAAAAEXAAAAUwB5AHMAdABlAG0ALgBUAHkAcABlAFsAXQAsACAAbQBzAGMAbwByAGwAaQBiAAQAAAAGAQAAAAAAAAACLwQAAAABHAAAAFMAeQBzAHQAZQBtAC4AUgB1AG4AdABpAG0AZQBUAHkAcABlACwAIABtAHMAYwBvAHIAbABpAGIABQAAACgBFgAAAFMAeQBzAHQAZQBtAC4ASQBuAHQAMwAyACwAIABtAHMAYwBvAHIAbABpAGIABQcFBQ==
+            unityObjects: []
+        - isVariable: 1
+          name: maxHealth
+          variableID: 1b9a2f8d-3bb1-4625-a1c5-e8a0bb66fe1b
+          data:
+            objEncoded: Ai8AAAAAARYAAABTAHkAcwB0AGUAbQAuAEkAbgB0ADMAMgAsACAAbQBzAGMAbwByAGwAaQBiAAAAAAAYAAAAAAU=
+            unityObjects: []
+        multiInput:
+        - isVariable: 1
+          name: This UdonBehaviour
+          variableID: _this_udonbehaviour
+          data:
+            objEncoded: 
+            unityObjects: []
+        expanded: 0
+        comment:
+          comment: 
+      eventOptions:
+        userGate: 0
+        userGateExtraData: []
+        broadcast: 0
+        delay: 0
+        replay: 0
+      expanded: 1
+    - name: _SetMaxHealth
+      eventId: 2c3e25bf-0482-4ad9-b2f3-5a1802b8869d
+      eventInstance:
+        actionType:
+          directEvent: Event_Custom
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: 
+          variableID: 
+          data:
+            objEncoded: 
+            unityObjects: []
+        multiInput:
+        - isVariable: 1
+          name: newMax
+          variableID: e7ad4f7a-2219-428d-bc51-29d4160b76a7
+          data:
+            objEncoded: Ai8AAAAAARwAAABTAHkAcwB0AGUAbQAuAFIAdQBuAHQAaQBtAGUAVAB5AHAAZQAsACAAbQBzAGMAbwByAGwAaQBiAAAAAAAoARYAAABTAHkAcwB0AGUAbQAuAEkAbgB0ADMAMgAsACAAbQBzAGMAbwByAGwAaQBiAAU=
+            unityObjects: []
+        expanded: 1
+        comment:
+          comment: 
+      actionInstances:
+      - actionType:
+          directEvent: SystemInt32__.Set__SystemInt32__SystemInt32
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: newMax
+          variableID: e7ad4f7a-2219-428d-bc51-29d4160b76a7
+          data:
+            objEncoded: Ai8AAAAAARYAAABTAHkAcwB0AGUAbQAuAEkAbgB0ADMAMgAsACAAbQBzAGMAbwByAGwAaQBiAAAAAAAYAAAAAAU=
+            unityObjects: []
+        - isVariable: 1
+          name: maxHealth
+          variableID: 1b9a2f8d-3bb1-4625-a1c5-e8a0bb66fe1b
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: UnityEngineMathf.__Min__SystemInt32_SystemInt32__SystemInt32
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: health
+          variableID: 3e4f0ad3-e039-4dff-9f21-0880e64ac52c
+          data:
+            objEncoded: Ai8AAAAAARYAAABTAHkAcwB0AGUAbQAuAEkAbgB0ADMAMgAsACAAbQBzAGMAbwByAGwAaQBiAAAAAAAYAAAAAAU=
+            unityObjects: []
+        - isVariable: 1
+          name: maxHealth
+          variableID: 1b9a2f8d-3bb1-4625-a1c5-e8a0bb66fe1b
+          data:
+            objEncoded: Ai8AAAAAARYAAABTAHkAcwB0AGUAbQAuAEkAbgB0ADMAMgAsACAAbQBzAGMAbwByAGwAaQBiAAAAAAAYAAAAAAU=
+            unityObjects: []
+        - isVariable: 1
+          name: health
+          variableID: 3e4f0ad3-e039-4dff-9f21-0880e64ac52c
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      eventOptions:
+        userGate: 0
+        userGateExtraData: []
+        broadcast: 0
+        delay: 0
+        replay: 0
+      expanded: 1
+    - name: _AddHealth
+      eventId: 5e6567a2-a18f-42d1-9915-4639a5a34530
+      eventInstance:
+        actionType:
+          directEvent: Event_Custom
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: 
+          variableID: 
+          data:
+            objEncoded: 
+            unityObjects: []
+        multiInput:
+        - isVariable: 1
+          name: addedHealth
+          variableID: f6aff366-916f-41d1-a44c-597c236466fa
+          data:
+            objEncoded: Ai8AAAAAARwAAABTAHkAcwB0AGUAbQAuAFIAdQBuAHQAaQBtAGUAVAB5AHAAZQAsACAAbQBzAGMAbwByAGwAaQBiAAAAAAAoARYAAABTAHkAcwB0AGUAbQAuAEkAbgB0ADMAMgAsACAAbQBzAGMAbwByAGwAaQBiAAU=
+            unityObjects: []
+        expanded: 1
+        comment:
+          comment: 
+      actionInstances:
+      - actionType:
+          directEvent: CyanTriggerSpecial_If
+          guid: 
+        inputs: []
+        multiInput: []
+        expanded: 1
+        comment:
+          comment: 
+      - actionType:
+          directEvent: CyanTriggerSpecial_Condition
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: 
+          variableID: a6fda8ad-8ed6-4428-8890-db9ee887ee46
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBEQAAAGgAZQBhAGwAdABoAEwAZQBzAHMAVABoAGEAbgBNAGEAeAAF
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: SystemInt32.__op_LessThan__SystemInt32_SystemInt32__SystemBoolean
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: health
+          variableID: 3e4f0ad3-e039-4dff-9f21-0880e64ac52c
+          data:
+            objEncoded: Ai8AAAAAARYAAABTAHkAcwB0AGUAbQAuAEkAbgB0ADMAMgAsACAAbQBzAGMAbwByAGwAaQBiAAAAAAAYAAAAAAU=
+            unityObjects: []
+        - isVariable: 1
+          name: maxHealth
+          variableID: 1b9a2f8d-3bb1-4625-a1c5-e8a0bb66fe1b
+          data:
+            objEncoded: Ai8AAAAAARYAAABTAHkAcwB0AGUAbQAuAEkAbgB0ADMAMgAsACAAbQBzAGMAbwByAGwAaQBiAAAAAAAYAAAAAAU=
+            unityObjects: []
+        - isVariable: 1
+          name: healthLessThanmax
+          variableID: a6fda8ad-8ed6-4428-8890-db9ee887ee46
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: CyanTriggerSpecial_ConditionFailIfFalse
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: healthLessThanMax
+          variableID: a6fda8ad-8ed6-4428-8890-db9ee887ee46
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: SystemInt32.__op_GreaterThan__SystemInt32_SystemInt32__SystemBoolean
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: addedHealth
+          variableID: f6aff366-916f-41d1-a44c-597c236466fa
+          data:
+            objEncoded: Ai8AAAAAARYAAABTAHkAcwB0AGUAbQAuAEkAbgB0ADMAMgAsACAAbQBzAGMAbwByAGwAaQBiAAAAAAAYAAAAAAU=
+            unityObjects: []
+        - isVariable: 0
+          name: 
+          variableID: 
+          data:
+            objEncoded: Ai8AAAAAARYAAABTAHkAcwB0AGUAbQAuAEkAbgB0ADMAMgAsACAAbQBzAGMAbwByAGwAaQBiAAAAAAAYAAAAAAU=
+            unityObjects: []
+        - isVariable: 1
+          name: healthLessThanMax
+          variableID: a6fda8ad-8ed6-4428-8890-db9ee887ee46
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: CyanTriggerSpecial_BlockEnd
+          guid: 
+        inputs: []
+        multiInput: []
+        expanded: 1
+        comment:
+          comment: 
+      - actionType:
+          directEvent: CyanTriggerSpecial_ConditionBody
+          guid: 
+        inputs: []
+        multiInput: []
+        expanded: 1
+        comment:
+          comment: 
+      - actionType:
+          directEvent: SystemInt32.__op_Addition__SystemInt32_SystemInt32__SystemInt32
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: health
+          variableID: 3e4f0ad3-e039-4dff-9f21-0880e64ac52c
+          data:
+            objEncoded: Ai8AAAAAARYAAABTAHkAcwB0AGUAbQAuAEkAbgB0ADMAMgAsACAAbQBzAGMAbwByAGwAaQBiAAAAAAAYAAAAAAU=
+            unityObjects: []
+        - isVariable: 1
+          name: addedHealth
+          variableID: f6aff366-916f-41d1-a44c-597c236466fa
+          data:
+            objEncoded: Ai8AAAAAARYAAABTAHkAcwB0AGUAbQAuAEkAbgB0ADMAMgAsACAAbQBzAGMAbwByAGwAaQBiAAAAAAAYAAAAAAU=
+            unityObjects: []
+        - isVariable: 1
+          name: health
+          variableID: 3e4f0ad3-e039-4dff-9f21-0880e64ac52c
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: UnityEngineMathf.__Min__SystemInt32_SystemInt32__SystemInt32
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: health
+          variableID: 3e4f0ad3-e039-4dff-9f21-0880e64ac52c
+          data:
+            objEncoded: Ai8AAAAAARYAAABTAHkAcwB0AGUAbQAuAEkAbgB0ADMAMgAsACAAbQBzAGMAbwByAGwAaQBiAAAAAAAYAAAAAAU=
+            unityObjects: []
+        - isVariable: 1
+          name: maxHealth
+          variableID: 1b9a2f8d-3bb1-4625-a1c5-e8a0bb66fe1b
+          data:
+            objEncoded: Ai8AAAAAARYAAABTAHkAcwB0AGUAbQAuAEkAbgB0ADMAMgAsACAAbQBzAGMAbwByAGwAaQBiAAAAAAAYAAAAAAU=
+            unityObjects: []
+        - isVariable: 1
+          name: health
+          variableID: 3e4f0ad3-e039-4dff-9f21-0880e64ac52c
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: VRCUdonCommonInterfacesIUdonEventReceiver.__SendCustomEvent__SystemString__SystemVoid
+          guid: 
+        inputs:
+        - isVariable: 0
+          name: 
+          variableID: 
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        - isVariable: 1
+          name: onHealedEvent
+          variableID: 1e99cd1d-9d99-4044-ac5e-ea7fa8dda809
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBAAAAAAU=
+            unityObjects: []
+        multiInput:
+        - isVariable: 1
+          name: This UdonBehaviour
+          variableID: _this_udonbehaviour
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: CyanTriggerSpecial_BlockEnd
+          guid: 
+        inputs: []
+        multiInput: []
+        expanded: 1
+        comment:
+          comment: 
+      - actionType:
+          directEvent: CyanTriggerSpecial_BlockEnd
+          guid: 
+        inputs: []
+        multiInput: []
+        expanded: 1
+        comment:
+          comment: 
+      eventOptions:
+        userGate: 0
+        userGateExtraData: []
+        broadcast: 0
+        delay: 0
+        replay: 0
+      expanded: 1
+    - name: _AddDamage
+      eventId: d5e8e83d-6182-4965-a6e8-8b130333364b
+      eventInstance:
+        actionType:
+          directEvent: Event_Custom
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: 
+          variableID: 
+          data:
+            objEncoded: 
+            unityObjects: []
+        multiInput:
+        - isVariable: 1
+          name: addedDamage
+          variableID: 3efff143-133c-4213-9b28-3c4825787d5b
+          data:
+            objEncoded: Ai8AAAAAARwAAABTAHkAcwB0AGUAbQAuAFIAdQBuAHQAaQBtAGUAVAB5AHAAZQAsACAAbQBzAGMAbwByAGwAaQBiAAAAAAAoARYAAABTAHkAcwB0AGUAbQAuAEkAbgB0ADMAMgAsACAAbQBzAGMAbwByAGwAaQBiAAU=
+            unityObjects: []
+        expanded: 1
+        comment:
+          comment: 
+      actionInstances:
+      - actionType:
+          directEvent: UnityEngineTime.__get_timeSinceLevelLoad__SystemSingle
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: 
+          variableID: a68c0b08-43e0-4128-8fd0-2732bbee532f
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBBwAAAGMAdQByAFQAaQBtAGUABQ==
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: CyanTriggerSpecial_If
+          guid: 
+        inputs: []
+        multiInput: []
+        expanded: 1
+        comment:
+          comment: If the last damage time added to the minium damage time is greater
+            than the current time, then ignore damage.
+      - actionType:
+          directEvent: CyanTriggerSpecial_Condition
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: 
+          variableID: e8386593-bc8e-47a6-b173-d50ca82654f3
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBFAAAAHcAaQB0AGgAaQBuAEwAYQBzAHQARABhAG0AYQBnAGUAVABpAG0AZQAF
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: SystemSingle.__op_Addition__SystemSingle_SystemSingle__SystemSingle
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: _lastDamageTime
+          variableID: 8c030fe7-f199-424c-9e96-5086c598086c
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAaQBuAGcAbABlACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACAAAAAABQ==
+            unityObjects: []
+        - isVariable: 1
+          name: minDurationBetweenDamage
+          variableID: ffc4bb5f-c1c6-46d5-bc40-ac67cac4ced7
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAaQBuAGcAbABlACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACAAAAAABQ==
+            unityObjects: []
+        - isVariable: 1
+          name: 
+          variableID: e7dd69d4-a6f3-4aad-8df4-a9db1c0092f9
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBDQAAAGMAYQBuAEQAYQBtAGEAZwBlAFQAaQBtAGUABQ==
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: SystemSingle.__op_GreaterThanOrEqual__SystemSingle_SystemSingle__SystemBoolean
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: canDamageTime
+          variableID: e7dd69d4-a6f3-4aad-8df4-a9db1c0092f9
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAaQBuAGcAbABlACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACAAAAAABQ==
+            unityObjects: []
+        - isVariable: 1
+          name: curTime
+          variableID: a68c0b08-43e0-4128-8fd0-2732bbee532f
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAaQBuAGcAbABlACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACAAAAAABQ==
+            unityObjects: []
+        - isVariable: 1
+          name: withinLastDamageTime
+          variableID: e8386593-bc8e-47a6-b173-d50ca82654f3
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: CyanTriggerSpecial_BlockEnd
+          guid: 
+        inputs: []
+        multiInput: []
+        expanded: 1
+        comment:
+          comment: 
+      - actionType:
+          directEvent: CyanTriggerSpecial_ConditionBody
+          guid: 
+        inputs: []
+        multiInput: []
+        expanded: 1
+        comment:
+          comment: 
+      - actionType:
+          directEvent: CyanTriggerSpecial_Return
+          guid: 
+        inputs: []
+        multiInput: []
+        expanded: 1
+        comment:
+          comment: 
+      - actionType:
+          directEvent: CyanTriggerSpecial_BlockEnd
+          guid: 
+        inputs: []
+        multiInput: []
+        expanded: 1
+        comment:
+          comment: 
+      - actionType:
+          directEvent: CyanTriggerSpecial_BlockEnd
+          guid: 
+        inputs: []
+        multiInput: []
+        expanded: 1
+        comment:
+          comment: 
+      - actionType:
+          directEvent: SystemSingle__.Set__SystemSingle__SystemSingle
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: curTime
+          variableID: a68c0b08-43e0-4128-8fd0-2732bbee532f
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAaQBuAGcAbABlACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACAAAAAABQ==
+            unityObjects: []
+        - isVariable: 1
+          name: _lastDamageTime
+          variableID: 8c030fe7-f199-424c-9e96-5086c598086c
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBCAAAAGYAbABvAGEAdABWAGEAcgAF
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: CyanTriggerSpecial_If
+          guid: 
+        inputs: []
+        multiInput: []
+        expanded: 1
+        comment:
+          comment: 
+      - actionType:
+          directEvent: CyanTriggerSpecial_Condition
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: 
+          variableID: 4f98a7b7-5d00-4cc8-bd71-cf774ec768fa
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBFQAAAGgAZQBhAGwAdABoAEcAcgBlAGEAdABlAHIAVABoAGEAbgBaAGUAcgBvAAU=
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: SystemInt32.__op_GreaterThan__SystemInt32_SystemInt32__SystemBoolean
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: health
+          variableID: 3e4f0ad3-e039-4dff-9f21-0880e64ac52c
+          data:
+            objEncoded: Ai8AAAAAARYAAABTAHkAcwB0AGUAbQAuAEkAbgB0ADMAMgAsACAAbQBzAGMAbwByAGwAaQBiAAAAAAAYAAAAAAU=
+            unityObjects: []
+        - isVariable: 0
+          name: 
+          variableID: 
+          data:
+            objEncoded: Ai8AAAAAARYAAABTAHkAcwB0AGUAbQAuAEkAbgB0ADMAMgAsACAAbQBzAGMAbwByAGwAaQBiAAAAAAAYAAAAAAU=
+            unityObjects: []
+        - isVariable: 1
+          name: healthGreaterThanZero
+          variableID: 4f98a7b7-5d00-4cc8-bd71-cf774ec768fa
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: CyanTriggerSpecial_ConditionFailIfFalse
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: healthGreaterThanZero
+          variableID: 4f98a7b7-5d00-4cc8-bd71-cf774ec768fa
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: SystemInt32.__op_GreaterThan__SystemInt32_SystemInt32__SystemBoolean
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: addedDamage
+          variableID: 3efff143-133c-4213-9b28-3c4825787d5b
+          data:
+            objEncoded: Ai8AAAAAARYAAABTAHkAcwB0AGUAbQAuAEkAbgB0ADMAMgAsACAAbQBzAGMAbwByAGwAaQBiAAAAAAAYAAAAAAU=
+            unityObjects: []
+        - isVariable: 0
+          name: 
+          variableID: 
+          data:
+            objEncoded: Ai8AAAAAARYAAABTAHkAcwB0AGUAbQAuAEkAbgB0ADMAMgAsACAAbQBzAGMAbwByAGwAaQBiAAAAAAAYAAAAAAU=
+            unityObjects: []
+        - isVariable: 1
+          name: healthGreaterThanZero
+          variableID: 4f98a7b7-5d00-4cc8-bd71-cf774ec768fa
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: CyanTriggerSpecial_BlockEnd
+          guid: 
+        inputs: []
+        multiInput: []
+        expanded: 1
+        comment:
+          comment: 
+      - actionType:
+          directEvent: CyanTriggerSpecial_ConditionBody
+          guid: 
+        inputs: []
+        multiInput: []
+        expanded: 1
+        comment:
+          comment: 
+      - actionType:
+          directEvent: SystemInt32.__op_Subtraction__SystemInt32_SystemInt32__SystemInt32
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: health
+          variableID: 3e4f0ad3-e039-4dff-9f21-0880e64ac52c
+          data:
+            objEncoded: Ai8AAAAAARYAAABTAHkAcwB0AGUAbQAuAEkAbgB0ADMAMgAsACAAbQBzAGMAbwByAGwAaQBiAAAAAAAYAAAAAAU=
+            unityObjects: []
+        - isVariable: 1
+          name: addedDamage
+          variableID: 3efff143-133c-4213-9b28-3c4825787d5b
+          data:
+            objEncoded: Ai8AAAAAARYAAABTAHkAcwB0AGUAbQAuAEkAbgB0ADMAMgAsACAAbQBzAGMAbwByAGwAaQBiAAAAAAAYAAAAAAU=
+            unityObjects: []
+        - isVariable: 1
+          name: health
+          variableID: 3e4f0ad3-e039-4dff-9f21-0880e64ac52c
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: UnityEngineMathf.__Max__SystemInt32_SystemInt32__SystemInt32
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: health
+          variableID: 3e4f0ad3-e039-4dff-9f21-0880e64ac52c
+          data:
+            objEncoded: Ai8AAAAAARYAAABTAHkAcwB0AGUAbQAuAEkAbgB0ADMAMgAsACAAbQBzAGMAbwByAGwAaQBiAAAAAAAYAAAAAAU=
+            unityObjects: []
+        - isVariable: 0
+          name: 
+          variableID: 
+          data:
+            objEncoded: Ai8AAAAAARYAAABTAHkAcwB0AGUAbQAuAEkAbgB0ADMAMgAsACAAbQBzAGMAbwByAGwAaQBiAAAAAAAYAAAAAAU=
+            unityObjects: []
+        - isVariable: 1
+          name: health
+          variableID: 3e4f0ad3-e039-4dff-9f21-0880e64ac52c
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: VRCUdonCommonInterfacesIUdonEventReceiver.__SendCustomEvent__SystemString__SystemVoid
+          guid: 
+        inputs:
+        - isVariable: 0
+          name: 
+          variableID: 
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        - isVariable: 1
+          name: onDamagedEvent
+          variableID: 71e083d2-de08-4c5b-82bc-62199f4eb92b
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBAAAAAAU=
+            unityObjects: []
+        multiInput:
+        - isVariable: 1
+          name: This UdonBehaviour
+          variableID: _this_udonbehaviour
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: CyanTriggerSpecial_If
+          guid: 
+        inputs: []
+        multiInput: []
+        expanded: 1
+        comment:
+          comment: 
+      - actionType:
+          directEvent: CyanTriggerSpecial_Condition
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: 
+          variableID: 3d16399d-68cd-41b4-bb8c-9735f0eebc77
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBBgAAAGkAcwBEAGUAYQBkAAU=
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: SystemInt32.__op_LessThanOrEqual__SystemInt32_SystemInt32__SystemBoolean
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: health
+          variableID: 3e4f0ad3-e039-4dff-9f21-0880e64ac52c
+          data:
+            objEncoded: Ai8AAAAAARYAAABTAHkAcwB0AGUAbQAuAEkAbgB0ADMAMgAsACAAbQBzAGMAbwByAGwAaQBiAAAAAAAYAAAAAAU=
+            unityObjects: []
+        - isVariable: 0
+          name: 
+          variableID: 
+          data:
+            objEncoded: Ai8AAAAAARYAAABTAHkAcwB0AGUAbQAuAEkAbgB0ADMAMgAsACAAbQBzAGMAbwByAGwAaQBiAAAAAAAYAAAAAAU=
+            unityObjects: []
+        - isVariable: 1
+          name: isDead
+          variableID: 3d16399d-68cd-41b4-bb8c-9735f0eebc77
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: CyanTriggerSpecial_BlockEnd
+          guid: 
+        inputs: []
+        multiInput: []
+        expanded: 1
+        comment:
+          comment: 
+      - actionType:
+          directEvent: CyanTriggerSpecial_ConditionBody
+          guid: 
+        inputs: []
+        multiInput: []
+        expanded: 1
+        comment:
+          comment: 
+      - actionType:
+          directEvent: VRCUdonCommonInterfacesIUdonEventReceiver.__SendCustomEvent__SystemString__SystemVoid
+          guid: 
+        inputs:
+        - isVariable: 0
+          name: 
+          variableID: 
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        - isVariable: 1
+          name: onDeathEvent
+          variableID: 455c31eb-c40f-4d68-8aa3-6c630a73d0d5
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBAAAAAAU=
+            unityObjects: []
+        multiInput:
+        - isVariable: 1
+          name: This UdonBehaviour
+          variableID: _this_udonbehaviour
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: CyanTriggerSpecial_BlockEnd
+          guid: 
+        inputs: []
+        multiInput: []
+        expanded: 1
+        comment:
+          comment: 
+      - actionType:
+          directEvent: CyanTriggerSpecial_BlockEnd
+          guid: 
+        inputs: []
+        multiInput: []
+        expanded: 1
+        comment:
+          comment: 
+      - actionType:
+          directEvent: CyanTriggerSpecial_BlockEnd
+          guid: 
+        inputs: []
+        multiInput: []
+        expanded: 1
+        comment:
+          comment: 
+      - actionType:
+          directEvent: CyanTriggerSpecial_BlockEnd
+          guid: 
+        inputs: []
+        multiInput: []
+        expanded: 1
+        comment:
+          comment: 
+      eventOptions:
+        userGate: 0
+        userGateExtraData: []
+        broadcast: 0
+        delay: 0
+        replay: 0
+      expanded: 1
+    - name: _UpdateHealth
+      eventId: 503b4bc9-61d7-4009-ae9b-7213cdea6bff
+      eventInstance:
+        actionType:
+          directEvent: Event_Custom
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: 
+          variableID: 
+          data:
+            objEncoded: 
+            unityObjects: []
+        multiInput:
+        - isVariable: 1
+          name: updateAmount
+          variableID: 4192dc46-accf-40e6-8536-c179c383264b
+          data:
+            objEncoded: Ai8AAAAAARwAAABTAHkAcwB0AGUAbQAuAFIAdQBuAHQAaQBtAGUAVAB5AHAAZQAsACAAbQBzAGMAbwByAGwAaQBiAAAAAAAoARYAAABTAHkAcwB0AGUAbQAuAEkAbgB0ADMAMgAsACAAbQBzAGMAbwByAGwAaQBiAAU=
+            unityObjects: []
+        expanded: 1
+        comment:
+          comment: 
+      actionInstances:
+      - actionType:
+          directEvent: CyanTriggerSpecial_If
+          guid: 
+        inputs: []
+        multiInput: []
+        expanded: 1
+        comment:
+          comment: 
+      - actionType:
+          directEvent: CyanTriggerSpecial_Condition
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: 
+          variableID: fca06797-ae1a-419c-8be9-e343d14824c7
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBDgAAAHAAbwBzAGkAdABpAHYAZQBBAG0AbwB1AG4AdAAF
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: SystemInt32.__op_GreaterThan__SystemInt32_SystemInt32__SystemBoolean
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: updateAmount
+          variableID: 4192dc46-accf-40e6-8536-c179c383264b
+          data:
+            objEncoded: Ai8AAAAAARYAAABTAHkAcwB0AGUAbQAuAEkAbgB0ADMAMgAsACAAbQBzAGMAbwByAGwAaQBiAAAAAAAYAAAAAAU=
+            unityObjects: []
+        - isVariable: 0
+          name: 
+          variableID: 
+          data:
+            objEncoded: Ai8AAAAAARYAAABTAHkAcwB0AGUAbQAuAEkAbgB0ADMAMgAsACAAbQBzAGMAbwByAGwAaQBiAAAAAAAYAAAAAAU=
+            unityObjects: []
+        - isVariable: 1
+          name: positiveAmount
+          variableID: fca06797-ae1a-419c-8be9-e343d14824c7
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: CyanTriggerSpecial_BlockEnd
+          guid: 
+        inputs: []
+        multiInput: []
+        expanded: 1
+        comment:
+          comment: 
+      - actionType:
+          directEvent: CyanTriggerSpecial_ConditionBody
+          guid: 
+        inputs: []
+        multiInput: []
+        expanded: 1
+        comment:
+          comment: 
+      - actionType:
+          directEvent: VRCUdonCommonInterfacesIUdonEventReceiver.__SendCustomEvent__SystemString__SystemVoid
+          guid: 
+        inputs:
+        - isVariable: 0
+          name: 
+          variableID: 
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        - isVariable: 0
+          name: 
+          variableID: 
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBCgAAAF8AQQBkAGQASABlAGEAbAB0AGgABQ==
+            unityObjects: []
+        - isVariable: 0
+          name: 
+          variableID: 
+          data:
+            objEncoded: Ai8AAAAAATEAAABDAHkAYQBuAC4AQwBUAC4AQwB5AGEAbgBUAHIAaQBnAGcAZQByAEUAdgBlAG4AdABBAHIAZwBEAGEAdABhACwAIABDAHkAYQBuAC4AQwB5AGEAbgBUAHIAaQBnAGcAZQByAAAAAAAnAQkAAABlAHYAZQBuAHQATgBhAG0AZQABCgAAAF8AQQBkAGQASABlAGEAbAB0AGgAAQENAAAAdgBhAHIAaQBhAGIAbABlAE4AYQBtAGUAcwAvAQAAAAEZAAAAUwB5AHMAdABlAG0ALgBTAHQAcgBpAG4AZwBbAF0ALAAgAG0AcwBjAG8AcgBsAGkAYgABAAAABgEAAAAAAAAAKAELAAAAYQBkAGQAZQBkAEgAZQBhAGwAdABoAAcFAQERAAAAdgBhAHIAaQBhAGIAbABlAFUAZABvAG4ATgBhAG0AZQBzADABAAAAAgAAAAYBAAAAAAAAACgBGwAAAF8AYQByAGcAXwBhAGQAZABlAGQASABlAGEAbAB0AGgAXwBfAEEAZABkAEgAZQBhAGwAdABoAAcFAQEMAAAAdgBhAHIAaQBhAGIAbABlAE8AdQB0AHMALwIAAAABGgAAAFMAeQBzAHQAZQBtAC4AQgBvAG8AbABlAGEAbgBbAF0ALAAgAG0AcwBjAG8AcgBsAGkAYgADAAAACAEAAAABAAAAAAUBAQ0AAAB2AGEAcgBpAGEAYgBsAGUAVAB5AHAAZQBzAC8DAAAAARcAAABTAHkAcwB0AGUAbQAuAFQAeQBwAGUAWwBdACwAIABtAHMAYwBvAHIAbABpAGIABAAAAAYBAAAAAAAAAAIvBAAAAAEcAAAAUwB5AHMAdABlAG0ALgBSAHUAbgB0AGkAbQBlAFQAeQBwAGUALAAgAG0AcwBjAG8AcgBsAGkAYgAFAAAAKAEWAAAAUwB5AHMAdABlAG0ALgBJAG4AdAAzADIALAAgAG0AcwBjAG8AcgBsAGkAYgAFBwUF
+            unityObjects: []
+        - isVariable: 1
+          name: updateAmount
+          variableID: 4192dc46-accf-40e6-8536-c179c383264b
+          data:
+            objEncoded: Ai8AAAAAARYAAABTAHkAcwB0AGUAbQAuAEkAbgB0ADMAMgAsACAAbQBzAGMAbwByAGwAaQBiAAAAAAAYAAAAAAU=
+            unityObjects: []
+        multiInput:
+        - isVariable: 1
+          name: This UdonBehaviour
+          variableID: _this_udonbehaviour
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: CyanTriggerSpecial_BlockEnd
+          guid: 
+        inputs: []
+        multiInput: []
+        expanded: 1
+        comment:
+          comment: 
+      - actionType:
+          directEvent: CyanTriggerSpecial_BlockEnd
+          guid: 
+        inputs: []
+        multiInput: []
+        expanded: 1
+        comment:
+          comment: 
+      - actionType:
+          directEvent: CyanTriggerSpecial_Else
+          guid: 
+        inputs: []
+        multiInput: []
+        expanded: 1
+        comment:
+          comment: 
+      - actionType:
+          directEvent: SystemInt32.__op_Multiplication__SystemInt32_SystemInt32__SystemInt32
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: updateAmount
+          variableID: 4192dc46-accf-40e6-8536-c179c383264b
+          data:
+            objEncoded: Ai8AAAAAARYAAABTAHkAcwB0AGUAbQAuAEkAbgB0ADMAMgAsACAAbQBzAGMAbwByAGwAaQBiAAAAAAAYAAAAAAU=
+            unityObjects: []
+        - isVariable: 0
+          name: 
+          variableID: 
+          data:
+            objEncoded: Ai8AAAAAARYAAABTAHkAcwB0AGUAbQAuAEkAbgB0ADMAMgAsACAAbQBzAGMAbwByAGwAaQBiAAAAAAAY/////wU=
+            unityObjects: []
+        - isVariable: 1
+          name: 
+          variableID: 1f190219-350f-4f9d-a0ee-99ad199bb4d1
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: VRCUdonCommonInterfacesIUdonEventReceiver.__SendCustomEvent__SystemString__SystemVoid
+          guid: 
+        inputs:
+        - isVariable: 0
+          name: 
+          variableID: 
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        - isVariable: 0
+          name: 
+          variableID: 
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBCgAAAF8AQQBkAGQARABhAG0AYQBnAGUABQ==
+            unityObjects: []
+        - isVariable: 0
+          name: 
+          variableID: 
+          data:
+            objEncoded: Ai8AAAAAATEAAABDAHkAYQBuAC4AQwBUAC4AQwB5AGEAbgBUAHIAaQBnAGcAZQByAEUAdgBlAG4AdABBAHIAZwBEAGEAdABhACwAIABDAHkAYQBuAC4AQwB5AGEAbgBUAHIAaQBnAGcAZQByAAAAAAAnAQkAAABlAHYAZQBuAHQATgBhAG0AZQABCgAAAF8AQQBkAGQARABhAG0AYQBnAGUAAQENAAAAdgBhAHIAaQBhAGIAbABlAE4AYQBtAGUAcwAvAQAAAAEZAAAAUwB5AHMAdABlAG0ALgBTAHQAcgBpAG4AZwBbAF0ALAAgAG0AcwBjAG8AcgBsAGkAYgABAAAABgEAAAAAAAAAKAELAAAAYQBkAGQAZQBkAEQAYQBtAGEAZwBlAAcFAQERAAAAdgBhAHIAaQBhAGIAbABlAFUAZABvAG4ATgBhAG0AZQBzADABAAAAAgAAAAYBAAAAAAAAACgBGwAAAF8AYQByAGcAXwBhAGQAZABlAGQARABhAG0AYQBnAGUAXwBfAEEAZABkAEQAYQBtAGEAZwBlAAcFAQEMAAAAdgBhAHIAaQBhAGIAbABlAE8AdQB0AHMALwIAAAABGgAAAFMAeQBzAHQAZQBtAC4AQgBvAG8AbABlAGEAbgBbAF0ALAAgAG0AcwBjAG8AcgBsAGkAYgADAAAACAEAAAABAAAAAAUBAQ0AAAB2AGEAcgBpAGEAYgBsAGUAVAB5AHAAZQBzAC8DAAAAARcAAABTAHkAcwB0AGUAbQAuAFQAeQBwAGUAWwBdACwAIABtAHMAYwBvAHIAbABpAGIABAAAAAYBAAAAAAAAAAIvBAAAAAEcAAAAUwB5AHMAdABlAG0ALgBSAHUAbgB0AGkAbQBlAFQAeQBwAGUALAAgAG0AcwBjAG8AcgBsAGkAYgAFAAAAKAEWAAAAUwB5AHMAdABlAG0ALgBJAG4AdAAzADIALAAgAG0AcwBjAG8AcgBsAGkAYgAFBwUF
+            unityObjects: []
+        - isVariable: 1
+          name: updateAmount
+          variableID: 4192dc46-accf-40e6-8536-c179c383264b
+          data:
+            objEncoded: Ai8AAAAAARYAAABTAHkAcwB0AGUAbQAuAEkAbgB0ADMAMgAsACAAbQBzAGMAbwByAGwAaQBiAAAAAAAYAAAAAAU=
+            unityObjects: []
+        multiInput:
+        - isVariable: 1
+          name: This UdonBehaviour
+          variableID: _this_udonbehaviour
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: CyanTriggerSpecial_BlockEnd
+          guid: 
+        inputs: []
+        multiInput: []
+        expanded: 1
+        comment:
+          comment: 
+      eventOptions:
+        userGate: 0
+        userGateExtraData: []
+        broadcast: 0
+        delay: 0
+        replay: 0
+      expanded: 1
+    - name: _GetCurrentHealthPercent
+      eventId: 56880a0e-3c56-4a7f-9e90-afd094b4b7c2
+      eventInstance:
+        actionType:
+          directEvent: Event_Custom
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: 
+          variableID: 
+          data:
+            objEncoded: 
+            unityObjects: []
+        multiInput:
+        - isVariable: 0
+          name: healthPercent
+          variableID: 13a1df85-182f-4521-bf77-f6ccd927d91d
+          data:
+            objEncoded: Ai8AAAAAARwAAABTAHkAcwB0AGUAbQAuAFIAdQBuAHQAaQBtAGUAVAB5AHAAZQAsACAAbQBzAGMAbwByAGwAaQBiAAAAAAAoARcAAABTAHkAcwB0AGUAbQAuAFMAaQBuAGcAbABlACwAIABtAHMAYwBvAHIAbABpAGIABQ==
+            unityObjects: []
+        expanded: 1
+        comment:
+          comment: 
+      actionInstances:
+      - actionType:
+          directEvent: SystemConvert.__ToSingle__SystemInt32__SystemSingle
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: health
+          variableID: 3e4f0ad3-e039-4dff-9f21-0880e64ac52c
+          data:
+            objEncoded: Ai8AAAAAARYAAABTAHkAcwB0AGUAbQAuAEkAbgB0ADMAMgAsACAAbQBzAGMAbwByAGwAaQBiAAAAAAAYAAAAAAU=
+            unityObjects: []
+        - isVariable: 1
+          name: 
+          variableID: 13356ef8-34b3-4070-a45c-cfa20042fb7c
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBCwAAAGgAZQBhAGwAdABoAEYAbABvAGEAdAAF
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: SystemConvert.__ToSingle__SystemInt32__SystemSingle
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: maxHealth
+          variableID: 1b9a2f8d-3bb1-4625-a1c5-e8a0bb66fe1b
+          data:
+            objEncoded: Ai8AAAAAARYAAABTAHkAcwB0AGUAbQAuAEkAbgB0ADMAMgAsACAAbQBzAGMAbwByAGwAaQBiAAAAAAAYAAAAAAU=
+            unityObjects: []
+        - isVariable: 1
+          name: 
+          variableID: 85ce32fb-d939-46ca-8613-cc0d1ecc828b
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBDgAAAG0AYQB4AEgAZQBhAGwAdABoAEYAbABvAGEAdAAF
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: SystemSingle.__op_Division__SystemSingle_SystemSingle__SystemSingle
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: healthFloat
+          variableID: 13356ef8-34b3-4070-a45c-cfa20042fb7c
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAaQBuAGcAbABlACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACAAAAAABQ==
+            unityObjects: []
+        - isVariable: 1
+          name: maxHealthFloat
+          variableID: 85ce32fb-d939-46ca-8613-cc0d1ecc828b
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAaQBuAGcAbABlACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACAAAAAABQ==
+            unityObjects: []
+        - isVariable: 1
+          name: healthPercent
+          variableID: 13a1df85-182f-4521-bf77-f6ccd927d91d
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      eventOptions:
+        userGate: 0
+        userGateExtraData: []
+        broadcast: 0
+        delay: 0
+        replay: 0
+      expanded: 1
+    - name: _IsDead
+      eventId: f3c085aa-7563-4c51-a5ac-92cce13e4628
+      eventInstance:
+        actionType:
+          directEvent: Event_Custom
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: 
+          variableID: 
+          data:
+            objEncoded: 
+            unityObjects: []
+        multiInput:
+        - isVariable: 0
+          name: isDead
+          variableID: 8cf1669f-0c27-4bd6-940e-eda556a3cf0b
+          data:
+            objEncoded: Ai8AAAAAARwAAABTAHkAcwB0AGUAbQAuAFIAdQBuAHQAaQBtAGUAVAB5AHAAZQAsACAAbQBzAGMAbwByAGwAaQBiAAAAAAAoARgAAABTAHkAcwB0AGUAbQAuAEIAbwBvAGwAZQBhAG4ALAAgAG0AcwBjAG8AcgBsAGkAYgAF
+            unityObjects: []
+        expanded: 1
+        comment:
+          comment: 
+      actionInstances:
+      - actionType:
+          directEvent: SystemInt32.__op_LessThanOrEqual__SystemInt32_SystemInt32__SystemBoolean
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: health
+          variableID: 3e4f0ad3-e039-4dff-9f21-0880e64ac52c
+          data:
+            objEncoded: Ai8AAAAAARYAAABTAHkAcwB0AGUAbQAuAEkAbgB0ADMAMgAsACAAbQBzAGMAbwByAGwAaQBiAAAAAAAYAAAAAAU=
+            unityObjects: []
+        - isVariable: 0
+          name: 
+          variableID: 
+          data:
+            objEncoded: Ai8AAAAAARYAAABTAHkAcwB0AGUAbQAuAEkAbgB0ADMAMgAsACAAbQBzAGMAbwByAGwAaQBiAAAAAAAYAAAAAAU=
+            unityObjects: []
+        - isVariable: 1
+          name: isDead
+          variableID: 8cf1669f-0c27-4bd6-940e-eda556a3cf0b
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      eventOptions:
+        userGate: 0
+        userGateExtraData: []
+        broadcast: 0
+        delay: 0
+        replay: 0
+      expanded: 1
+    variables:
+    - isVariable: 0
+      name: health
+      variableID: 3e4f0ad3-e039-4dff-9f21-0880e64ac52c
+      data:
+        objEncoded: Ai8AAAAAARYAAABTAHkAcwB0AGUAbQAuAEkAbgB0ADMAMgAsACAAbQBzAGMAbwByAGwAaQBiAAAAAAAYAAAAAAU=
+        unityObjects: []
+      type:
+        typeDef: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      sync: 0
+      showInInspector: 1
+      typeInfo: 0
+      comment:
+        comment: 
+    - isVariable: 0
+      name: maxHealth
+      variableID: 1b9a2f8d-3bb1-4625-a1c5-e8a0bb66fe1b
+      data:
+        objEncoded: Ai8AAAAAARYAAABTAHkAcwB0AGUAbQAuAEkAbgB0ADMAMgAsACAAbQBzAGMAbwByAGwAaQBiAAAAAAAYAAAAAAU=
+        unityObjects: []
+      type:
+        typeDef: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      sync: 0
+      showInInspector: 1
+      typeInfo: 0
+      comment:
+        comment: 
+    - isVariable: 0
+      name: onHealedEvent
+      variableID: 1e99cd1d-9d99-4044-ac5e-ea7fa8dda809
+      data:
+        objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBCQAAAF8ATwBuAEgAZQBhAGwAZQBkAAU=
+        unityObjects: []
+      type:
+        typeDef: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      sync: 0
+      showInInspector: 1
+      typeInfo: 0
+      comment:
+        comment: 
+    - isVariable: 0
+      name: onDamagedEvent
+      variableID: 71e083d2-de08-4c5b-82bc-62199f4eb92b
+      data:
+        objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBCgAAAF8ATwBuAEQAYQBtAGEAZwBlAGQABQ==
+        unityObjects: []
+      type:
+        typeDef: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      sync: 0
+      showInInspector: 1
+      typeInfo: 0
+      comment:
+        comment: 
+    - isVariable: 0
+      name: onDeathEvent
+      variableID: 455c31eb-c40f-4d68-8aa3-6c630a73d0d5
+      data:
+        objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBCAAAAF8ATwBuAEQAZQBhAHQAaAAF
+        unityObjects: []
+      type:
+        typeDef: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      sync: 0
+      showInInspector: 1
+      typeInfo: 0
+      comment:
+        comment: 
+    - isVariable: 0
+      name: minDurationBetweenDamage
+      variableID: ffc4bb5f-c1c6-46d5-bc40-ac67cac4ced7
+      data:
+        objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAaQBuAGcAbABlACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACAAAAAABQ==
+        unityObjects: []
+      type:
+        typeDef: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      sync: 0
+      showInInspector: 1
+      typeInfo: 0
+      comment:
+        comment: 
+    - isVariable: 0
+      name: _lastDamageTime
+      variableID: 8c030fe7-f199-424c-9e96-5086c598086c
+      data:
+        objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAaQBuAGcAbABlACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACAAAAAABQ==
+        unityObjects: []
+      type:
+        typeDef: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      sync: 0
+      showInInspector: 1
+      typeInfo: 0
+      comment:
+        comment: 
+    comment:
+      comment: 
+    expandVariables: 1
+    expandOtherSettings: 0
+    expandSyncSection: 0
+    ignoreEventWarnings: 0
+  publicVariableReferences:
+    actionDataIndices: []
+    userVariableNames:
+    - health
+    - maxHealth
+    - onHealedEvent
+    - onDamagedEvent
+    - onDeathEvent
+    - minDurationBetweenDamage
+    - _lastDamageTime
+    userVariableTypes:
+    - typeDef: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+    - typeDef: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+    - typeDef: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+    - typeDef: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+    - typeDef: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+    - typeDef: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+    - typeDef: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+  ignoreOdinData: 1
+  serializationDataOdin:
+    SerializedFormat: 0
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes: []
+  allowEditingInInspector: 0
+  expandInInspector: 0
+  isLocked: 0

@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 61d0ad128b95568438c70898dc9e600c, type: 3}
+  m_Name: PlayerCollisionEnterLocalActions
+  m_EditorClassIdentifier: 
+  autoAddPriority: 0
+  exposedActions:
+  - guid: c258392b-b888-4c87-b2ff-aed2e0cfbab6
+    actionNamespace: OnPlayerCollisionEnter
+    actionVariantName: Local Player
+    description: Fires when the local player starts colliding with a collider on
+      this GameObject
+    variables: []
+    baseEventName: Event_OnPlayerCollisionEnter
+    eventEntry: _onPlayerCollisionEnter
+    autoAdd: 0
+  isMultiInstance: 0
+  defaultNamespace: 
+  udonProgramAsset: {fileID: 11400000, guid: bd44f88d29153f045b5be2ba53fa8ed6, type: 2}
+  assetGuid: bd44f88d29153f045b5be2ba53fa8ed6
+  thisGuid: b51657aabd235554cbedcafa33511d69

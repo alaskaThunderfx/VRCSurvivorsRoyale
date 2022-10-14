@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 61d0ad128b95568438c70898dc9e600c, type: 3}
+  m_Name: PlayerTriggerExitRemoteActions
+  m_EditorClassIdentifier: 
+  autoAddPriority: 0
+  exposedActions:
+  - guid: d85ef5d8-a5ac-409d-8701-b02947ee3133
+    actionNamespace: OnPlayerTriggerExit
+    actionVariantName: Remote Player
+    description: Fires when any remote player exits the trigger colliders on this
+      GameObject
+    variables: []
+    baseEventName: Event_OnPlayerTriggerExit
+    eventEntry: _onPlayerTriggerExit
+    autoAdd: 0
+  isMultiInstance: 0
+  defaultNamespace: 
+  udonProgramAsset: {fileID: 11400000, guid: 5b460d1033d36fc43b622be189b6143d, type: 2}
+  assetGuid: 5b460d1033d36fc43b622be189b6143d
+  thisGuid: 2ba586b0a10bb4849a73c7adf275cd9c

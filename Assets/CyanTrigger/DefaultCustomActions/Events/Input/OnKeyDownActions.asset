@@ -1,0 +1,39 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 61d0ad128b95568438c70898dc9e600c, type: 3}
+  m_Name: OnKeyDownActions
+  m_EditorClassIdentifier: 
+  autoAddPriority: 0
+  exposedActions:
+  - guid: 682549f4-3d57-4345-9ccc-3e86d925d82d
+    actionNamespace: Input
+    actionVariantName: OnKeyDown
+    description: Fires on the frame when the specified key has been pressed down
+    variables:
+    - type:
+        typeDef: UnityEngine.KeyCode, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
+          PublicKeyToken=null
+      udonName: KeyCode
+      displayName: KeyCode
+      description: 
+      defaultValue:
+        objEncoded: Ai8AAAAAASsAAABVAG4AaQB0AHkARQBuAGcAaQBuAGUALgBLAGUAeQBDAG8AZABlACwAIABVAG4AaQB0AHkARQBuAGcAaQBuAGUALgBDAG8AcgBlAE0AbwBkAHUAbABlAAAAAAAeAAAAAAAAAAAF
+        unityObjects: []
+      variableType: 3
+    baseEventName: Event_Update
+    eventEntry: _update
+    autoAdd: 0
+  isMultiInstance: 0
+  defaultNamespace: 
+  udonProgramAsset: {fileID: 11400000, guid: feb7f75f8548c5e42b83bc2dee444c3c, type: 2}
+  assetGuid: feb7f75f8548c5e42b83bc2dee444c3c
+  thisGuid: 1e5a6479feb74b642bb8ac2af93ab3d8

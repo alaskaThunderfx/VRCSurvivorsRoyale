@@ -1,0 +1,78 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 61d0ad128b95568438c70898dc9e600c, type: 3}
+  m_Name: Vector3SmoothDampActions
+  m_EditorClassIdentifier: 
+  autoAddPriority: 0
+  exposedActions:
+  - guid: 86d8d03a-b880-4ab8-b825-ebfc1e860e01
+    actionNamespace: Vector3
+    actionVariantName: SmoothDamp_CT
+    description: 
+    variables:
+    - type:
+        typeDef: UnityEngine.Vector3, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
+          PublicKeyToken=null
+      udonName: _arg_current_SmoothDamp
+      displayName: current
+      description: 
+      defaultValue:
+        objEncoded: 
+        unityObjects: []
+      variableType: 3
+    - type:
+        typeDef: UnityEngine.Vector3, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
+          PublicKeyToken=null
+      udonName: _arg_target_SmoothDamp
+      displayName: target
+      description: 
+      defaultValue:
+        objEncoded: 
+        unityObjects: []
+      variableType: 3
+    - type:
+        typeDef: UnityEngine.Vector3, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
+          PublicKeyToken=null
+      udonName: _arg_currentVelocity_SmoothDamp
+      displayName: currentVelocity
+      description: 
+      defaultValue:
+        objEncoded: 
+        unityObjects: []
+      variableType: 6
+    - type:
+        typeDef: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      udonName: _arg_smoothTime_SmoothDamp
+      displayName: smoothTime
+      description: 
+      defaultValue:
+        objEncoded: 
+        unityObjects: []
+      variableType: 3
+    - type:
+        typeDef: UnityEngine.Vector3, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
+          PublicKeyToken=null
+      udonName: _arg_results_SmoothDamp
+      displayName: results
+      description: 
+      defaultValue:
+        objEncoded: 
+        unityObjects: []
+      variableType: 6
+    baseEventName: Event_Custom
+    eventEntry: SmoothDamp
+    autoAdd: 0
+  isMultiInstance: 0
+  defaultNamespace: Vector3
+  udonProgramAsset: {fileID: 11400000, guid: 8859fd3db476cc648bb5dd02ae31d4bb, type: 2}
+  assetGuid: 8859fd3db476cc648bb5dd02ae31d4bb
+  thisGuid: 47a6b835d73dbed48b94d5f52cb51eec

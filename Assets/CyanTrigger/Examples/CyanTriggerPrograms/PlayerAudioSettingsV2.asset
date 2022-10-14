@@ -1,0 +1,2492 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a31a3a978bd0448580d4ef9f3d6d95bf, type: 3}
+  m_Name: PlayerAudioSettingsV2
+  m_EditorClassIdentifier: 
+  serializedUdonProgramAsset: {fileID: 11400000, guid: c9bbd7aa963c11242a69aeb7df2df7e0,
+    type: 2}
+  udonAssembly: ".data_start\r\n  .export __CyanTrigger_ProgramName_SystemString\r\n 
+    .export globalAudio\r\n  .export voiceGain\r\n  .export voiceFar\r\n  .export
+    voiceNear\r\n  .export voiceVolumetric\r\n  .export voiceLowpass\r\n  .export
+    gainAvatar\r\n  .export farAvatar\r\n  .export nearAvatar\r\n  .export volumetricRadiusAvatar\r\n 
+    .export forceSpatialAvatar\r\n  .export customCurveAvatar\r\n  __CyanTrigger_ProgramName_SystemString:
+    %SystemString, null\r\n  __CyanTrigger_ProgramHash_SystemString: %SystemString,
+    null\r\n  __0_ra_SystemUInt32: %SystemUInt32, null\r\n  __1_ea_SystemUInt32:
+    %SystemUInt32, null\r\n  __null: %SystemObject, null\r\n  _this_gameobject: %UnityEngineGameObject,
+    this\r\n  _this_udonbehaviour: %VRCUdonUdonBehaviour, this\r\n  _this_local_player:
+    %VRCSDKBaseVRCPlayerApi, null\r\n  onPlayerJoinedPlayer: %VRCSDKBaseVRCPlayerApi,
+    null\r\n  onPlayerTriggerEnterPlayer: %VRCSDKBaseVRCPlayerApi, null\r\n  onPlayerTriggerExitPlayer:
+    %VRCSDKBaseVRCPlayerApi, null\r\n  globalAudio: %SystemBoolean, null\r\n  voiceGain:
+    %SystemSingle, null\r\n  voiceFar: %SystemSingle, null\r\n  voiceNear: %SystemSingle,
+    null\r\n  voiceVolumetric: %SystemSingle, null\r\n  voiceLowpass: %SystemBoolean,
+    null\r\n  gainAvatar: %SystemSingle, null\r\n  farAvatar: %SystemSingle, null\r\n 
+    nearAvatar: %SystemSingle, null\r\n  volumetricRadiusAvatar: %SystemSingle, null\r\n 
+    forceSpatialAvatar: %SystemBoolean, null\r\n  customCurveAvatar: %SystemBoolean,
+    null\r\n  _dataCacheKey: %SystemString, null\r\n  _colliders: %UnityEngineColliderArray,
+    null\r\n  _arg_player__SetPlayerAudio: %VRCSDKBaseVRCPlayerApi, null\r\n  _arg_player__ApplyDefaultAudio:
+    %VRCSDKBaseVRCPlayerApi, null\r\n  __ag_0_0_SystemBoolean: %SystemBoolean, null\r\n 
+    __ag_0_1_UnityEngineComponent: %UnityEngineComponent, null\r\n  __ag_0_2_SystemInt32:
+    %SystemInt32, null\r\n  __ag_0_3_SystemString: %SystemString, null\r\n  __ag_0_4_SystemBoolean:
+    %SystemBoolean, null\r\n  __ag_0_5_SystemInt32: %SystemInt32, null\r\n  __ag_0_6_SystemString:
+    %SystemString, null\r\n  __ag_0_7_SystemString: %SystemString, null\r\n  __ag_0_8_SystemBoolean:
+    %SystemBoolean, null\r\n  __ag_0_9_UnityEngineGameObject: %UnityEngineGameObject,
+    null\r\n  __ag_0_10_SystemBoolean: %SystemBoolean, null\r\n  __ag_0_11_SystemBoolean:
+    %SystemBoolean, null\r\n  __ag_0_12_SystemString: %SystemString, null\r\n  __ag_0_13_SystemBoolean:
+    %SystemBoolean, null\r\n  __ag_0_14_SystemString: %SystemString, null\r\n  __ag_0_15___jump_return_SystemUInt32:
+    %SystemUInt32, null\r\n  __ag_0_16_SystemString: %SystemString, null\r\n  __ag_0_17_SystemString:
+    %SystemString, null\r\n  __ag_0_18_SystemString: %SystemString, null\r\n  __ag_0_19_SystemBoolean:
+    %SystemBoolean, null\r\n  __ag_0_20_SystemBoolean: %SystemBoolean, null\r\n 
+    __ag_0_21_SystemString: %SystemString, null\r\n  __ag_0_22_SystemBoolean: %SystemBoolean,
+    null\r\n  __ag_0_23_SystemString: %SystemString, null\r\n  __ag_0_24_SystemString:
+    %SystemString, null\r\n  __ag_0_25_SystemType: %SystemType, null\r\n  __ag_0_26_SystemString:
+    %SystemString, null\r\n  __ag_0_27_SystemString: %SystemString, null\r\n  __ag_0_28_SystemString:
+    %SystemString, null\r\n  __ag_0_29_SystemType: %SystemType, null\r\n  __ag_0_30___jump_return_SystemUInt32:
+    %SystemUInt32, null\r\n  __ag_0_31___jump_return_SystemUInt32: %SystemUInt32,
+    null\r\n  __60_lp_init_SystemBoolean_ct_intern: %SystemBoolean, null\r\n  __ag_0_32_SystemType:
+    %SystemType, null\r\n  __ag_0_33_SystemString: %SystemString, null\r\n  __ag_0_34_SystemString:
+    %SystemString, null\r\n  __ag_0_35_SystemString: %SystemString, null\r\n  __ag_0_36_SystemString:
+    %SystemString, null\r\n  __ag_0_37_SystemBoolean: %SystemBoolean, null\r\n  __ag_0_38_SystemString:
+    %SystemString, null\r\n  __ag_0_39_SystemBoolean: %SystemBoolean, null\r\n  __ag_0_40_SystemString:
+    %SystemString, null\r\n  __ag_0_41_SystemBoolean: %SystemBoolean, null\r\n  __ag_0_42_SystemType:
+    %SystemType, null\r\n  __ag_0_43_SystemInt32: %SystemInt32, null\r\n  __ag_0_44_SystemBoolean:
+    %SystemBoolean, null\r\n  __ag_0_45_SystemBoolean: %SystemBoolean, null\r\n 
+    __ag_0_46_SystemString: %SystemString, null\r\n  __ag_0_47_SystemString: %SystemString,
+    null\r\n  __ag_0_48_SystemBoolean: %SystemBoolean, null\r\n  __ag_0_49_VRCUdonUdonBehaviour:
+    %VRCUdonUdonBehaviour, null\r\n  __ag_0_50_SystemBoolean: %SystemBoolean, null\r\n 
+    __ag_0_51_SystemString: %SystemString, null\r\n  __ag_0_52_SystemString: %SystemString,
+    null\r\n  __ag_0_53_SystemString: %SystemString, null\r\n  __ag_0_54_UnityEngineComponent[]:
+    %UnityEngineComponentArray, null\r\n  __ag_0_55_SystemString: %SystemString,
+    null\r\n  __ag_0_56_SystemBoolean: %SystemBoolean, null\r\n  __ag_0_57_SystemBoolean:
+    %SystemBoolean, null\r\n  __ag_0_58_SystemString: %SystemString, null\r\n  __ag_0_59_SystemBoolean:
+    %SystemBoolean, null\r\n  __ag_1_0_UnityEngineTransform: %UnityEngineTransform,
+    null\r\n  __ag_1_1_SystemString: %SystemString, null\r\n  __ag_1_2_SystemBoolean:
+    %SystemBoolean, null\r\n  __ag_1_3___jump_return_SystemUInt32: %SystemUInt32,
+    null\r\n  __ag_1_4_SystemString: %SystemString, null\r\n  __ag_1_5_SystemBoolean:
+    %SystemBoolean, null\r\n  __ag_1_6_SystemString: %SystemString, null\r\n  __ag_1_7_SystemBoolean:
+    %SystemBoolean, null\r\n  __ag_1_8_SystemString: %SystemString, null\r\n  __ag_1_9_SystemBoolean:
+    %SystemBoolean, null\r\n  __ag_1_10_SystemBoolean: %SystemBoolean, null\r\n 
+    __ag_1_11_SystemString: %SystemString, null\r\n  __ag_1_12_SystemBoolean: %SystemBoolean,
+    null\r\n  __ag_1_13_SystemString: %SystemString, null\r\n  __ag_1_14_SystemBoolean:
+    %SystemBoolean, null\r\n  __ag_1_15_SystemBoolean: %SystemBoolean, null\r\n 
+    __ag_1_16_SystemBoolean: %SystemBoolean, null\r\n  __ag_1_17_SystemString: %SystemString,
+    null\r\n  __ag_1_18_SystemString: %SystemString, null\r\n  __ag_1_19_SystemString:
+    %SystemString, null\r\n  __ag_1_20_SystemType: %SystemType, null\r\n  __ag_1_21_SystemString:
+    %SystemString, null\r\n  __ag_1_22_SystemBoolean: %SystemBoolean, null\r\n  __ag_1_23_SystemString:
+    %SystemString, null\r\n  __ag_1_24_SystemString: %SystemString, null\r\n  __ag_1_25_SystemString:
+    %SystemString, null\r\n  __ag_1_26_SystemBoolean: %SystemBoolean, null\r\n  __ag_1_27_SystemString:
+    %SystemString, null\r\n  __ag_1_28_UnityEngineGameObject: %UnityEngineGameObject,
+    null\r\n  __ag_1_29_SystemString: %SystemString, null\r\n  __ag_1_30_SystemBoolean:
+    %SystemBoolean, null\r\n  __ag_1_31_UnityEngineGameObject: %UnityEngineGameObject,
+    null\r\n  __ag_1_32_SystemString: %SystemString, null\r\n  __ag_1_33_SystemInt32:
+    %SystemInt32, null\r\n  __ag_1_34_SystemString: %SystemString, null\r\n  __ag_1_35_SystemString:
+    %SystemString, null\r\n  __ag_1_36___jump_return_SystemUInt32: %SystemUInt32,
+    null\r\n  __ag_1_37_SystemInt32: %SystemInt32, null\r\n  __ag_1_38___jump_return_SystemUInt32:
+    %SystemUInt32, null\r\n  __ag_1_39_SystemString: %SystemString, null\r\n  __ag_1_40_SystemBoolean:
+    %SystemBoolean, null\r\n  __ag_1_41_SystemString: %SystemString, null\r\n  __ag_1_42_SystemString:
+    %SystemString, null\r\n  __ag_1_43_SystemString: %SystemString, null\r\n  __ag_1_44_SystemString:
+    %SystemString, null\r\n  __ag_1_45_SystemString: %SystemString, null\r\n  __ag_1_46_SystemObject:
+    %SystemObject, null\r\n  __ag_1_47_SystemBoolean: %SystemBoolean, null\r\n  __ag_1_48_SystemBoolean:
+    %SystemBoolean, null\r\n  __ag_1_49_SystemBoolean: %SystemBoolean, null\r\n 
+    __ag_1_50_SystemString: %SystemString, null\r\n  __ag_1_51_UnityEngineComponent:
+    %UnityEngineComponent, null\r\n  __ag_1_52_SystemString: %SystemString, null\r\n 
+    __ag_1_53_SystemString: %SystemString, null\r\n  __ag_1_54_UnityEngineComponent[]:
+    %UnityEngineComponentArray, null\r\n  __ag_1_55_SystemString: %SystemString,
+    null\r\n  __ag_1_56_SystemString: %SystemString, null\r\n  __ag_1_57_SystemString:
+    %SystemString, null\r\n  __ag_1_58_SystemType: %SystemType, null\r\n  __ag_1_59___jump_return_SystemUInt32:
+    %SystemUInt32, null\r\n  __ag_1_60_SystemString: %SystemString, null\r\n  __ag_1_61___jump_return_SystemUInt32:
+    %SystemUInt32, null\r\n  __ag_1_62_SystemString: %SystemString, null\r\n  __ag_1_63_SystemBoolean:
+    %SystemBoolean, null\r\n  __ag_1_64_SystemInt32: %SystemInt32, null\r\n  __ag_1_65_SystemString:
+    %SystemString, null\r\n  __ag_1_66_SystemType: %SystemType, null\r\n  __ag_1_67_SystemInt32:
+    %SystemInt32, null\r\n  __ag_1_68_SystemString: %SystemString, null\r\n  __ag_1_69_SystemString:
+    %SystemString, null\r\n  __ag_1_70_SystemString: %SystemString, null\r\n  __ag_1_71_SystemString:
+    %SystemString, null\r\n  __ag_1_72_VRCUdonUdonBehaviour: %VRCUdonUdonBehaviour,
+    null\r\n  __ag_1_73_SystemString: %SystemString, null\r\n  __ag_1_74_SystemType:
+    %SystemType, null\r\n  __ag_1_75_SystemString: %SystemString, null\r\n  __ag_1_76_SystemType:
+    %SystemType, null\r\n  __ag_1_77_SystemString: %SystemString, null\r\n  __ag_1_78_SystemString:
+    %SystemString, null\r\n  __ag_1_79___jump_return_SystemUInt32: %SystemUInt32,
+    null\r\n  __ag_1_80_SystemType: %SystemType, null\r\n  __ag_1_81_SystemString:
+    %SystemString, null\r\n  __ag_1_82_SystemString: %SystemString, null\r\n  __ag_1_83_SystemInt32:
+    %SystemInt32, null\r\n  __ag_1_84_SystemBoolean: %SystemBoolean, null\r\n  __ag_1_85_SystemString:
+    %SystemString, null\r\n  __ag_1_86___jump_return_SystemUInt32: %SystemUInt32,
+    null\r\n  __ag_1_87_SystemInt32: %SystemInt32, null\r\n  __ag_1_88_SystemBoolean:
+    %SystemBoolean, null\r\n  __ag_1_89_SystemString: %SystemString, null\r\n  __ag_1_90_SystemString:
+    %SystemString, null\r\n  __ag_1_91_SystemBoolean: %SystemBoolean, null\r\n  __181_ref_SystemString:
+    %SystemString, null\r\n  __182___jump_return_10_SystemUInt32: %SystemUInt32,
+    null\r\n  __183_local_var_SystemBoolean: %SystemBoolean, null\r\n  __184_const_SystemBoolean:
+    %SystemBoolean, null\r\n  __185_ref_SystemString: %SystemString, null\r\n  __186___jump_return_11_SystemUInt32:
+    %SystemUInt32, null\r\n  __187_local_var_SystemBoolean: %SystemBoolean, null\r\n 
+    __188_local_var_VRCUdonUdonBehaviour: %VRCUdonUdonBehaviour, null\r\n  __189_local_var_SystemBoolean:
+    %SystemBoolean, null\r\n  __190___jump_return_12_SystemUInt32: %SystemUInt32,
+    null\r\n  __191_ref_SystemString: %SystemString, null\r\n  __192_const_SystemString:
+    %SystemString, null\r\n  __193_ref_SystemString: %SystemString, null\r\n  __194___jump_return_13_SystemUInt32:
+    %SystemUInt32, null\r\n  __195_ref_SystemSingle: %SystemSingle, null\r\n  __196_ref_SystemSingle:
+    %SystemSingle, null\r\n  __197_ref_SystemSingle: %SystemSingle, null\r\n  __198_ref_SystemSingle:
+    %SystemSingle, null\r\n  __199_ref_SystemBoolean: %SystemBoolean, null\r\n  __200_ref_SystemSingle:
+    %SystemSingle, null\r\n  __201_ref_SystemSingle: %SystemSingle, null\r\n  __202_ref_SystemSingle:
+    %SystemSingle, null\r\n  __203_ref_SystemSingle: %SystemSingle, null\r\n  __204_ref_SystemBoolean:
+    %SystemBoolean, null\r\n  __205_ref_SystemBoolean: %SystemBoolean, null\r\n 
+    __206___jump_return_14_SystemUInt32: %SystemUInt32, null\r\n  __207_local_var_SystemType:
+    %SystemType, null\r\n  __208_const_SystemType: %SystemType, null\r\n  __209_local_var_SystemInt32:
+    %SystemInt32, null\r\n  __210_local_var_SystemObject: %SystemObject, null\r\n 
+    __211_const_SystemInt32: %SystemInt32, null\r\n  __212_const_SystemInt32: %SystemInt32,
+    null\r\n  __213_temp_SystemInt32: %SystemInt32, null\r\n  __214_temp_SystemInt32:
+    %SystemInt32, null\r\n  __215_temp_SystemInt32: %SystemInt32, null\r\n  __216_temp_SystemBoolean:
+    %SystemBoolean, null\r\n  __217_temp_SystemBoolean: %SystemBoolean, null\r\n 
+    __218_local_var_SystemBoolean: %SystemBoolean, null\r\n  __219_ref_SystemBoolean:
+    %SystemBoolean, null\r\n  __220_ref_SystemString: %SystemString, null\r\n  __221_ref_SystemInt32:
+    %SystemInt32, null\r\n  __222_ref_VRCUdonCommonEnumsEventTiming: %VRCUdonCommonEnumsEventTiming,
+    null\r\n  __223_local_var_SystemInt32: %SystemInt32, null\r\n  __224_local_var_SystemObject:
+    %SystemObject, null\r\n  __225_temp_SystemInt32: %SystemInt32, null\r\n  __226_temp_SystemInt32:
+    %SystemInt32, null\r\n  __227_temp_SystemInt32: %SystemInt32, null\r\n  __228_temp_SystemBoolean:
+    %SystemBoolean, null\r\n  __229_temp_SystemBoolean: %SystemBoolean, null\r\n 
+    __230_local_var_SystemBoolean: %SystemBoolean, null\r\n  __231_ref_SystemBoolean:
+    %SystemBoolean, null\r\n.data_end\r\n\n.code_start\r\n  .export __ag_0_0\r\n 
+    __ag_0_0:\r\n    PUSH, __1_ea_SystemUInt32\r\n    PUSH, __60_lp_init_SystemBoolean_ct_intern\r\n   
+    JUMP_IF_FALSE, 0x0000003C\r\n    PUSH, __ag_0_59_SystemBoolean\r\n    PUSH, __60_lp_init_SystemBoolean_ct_intern\r\n   
+    COPY\r\n    PUSH, _this_local_player\r\n    EXTERN, \"VRCSDKBaseNetworking.__get_LocalPlayer__VRCSDKBaseVRCPlayerApi\"\r\n   
+    PUSH, __ag_0_28_SystemString\r\n    PUSH, __ag_0_35_SystemString\r\n    PUSH,
+    __ag_0_33_SystemString\r\n    PUSH, __ag_0_3_SystemString\r\n    EXTERN, \"SystemString.__Concat__SystemString_SystemString_SystemString__SystemString\"\r\n   
+    PUSH, _this_local_player\r\n    PUSH, __ag_0_3_SystemString\r\n    PUSH, __ag_0_38_SystemString\r\n   
+    EXTERN, \"VRCSDKBaseVRCPlayerApi.__GetPlayerTag__SystemString__SystemString\"\r\n   
+    PUSH, __ag_0_38_SystemString\r\n    PUSH, __ag_0_37_SystemBoolean\r\n    EXTERN,
+    \"SystemString.__IsNullOrEmpty__SystemString__SystemBoolean\"\r\n    PUSH, __ag_0_37_SystemBoolean\r\n   
+    PUSH, __ag_0_37_SystemBoolean\r\n    EXTERN, \"SystemBoolean.__op_UnaryNegation__SystemBoolean__SystemBoolean\"\r\n   
+    PUSH, __0_ra_SystemUInt32\r\n    COPY\r\n    JUMP_INDIRECT, __0_ra_SystemUInt32\r\n\r\n 
+    .export __ag_0_1\r\n  __ag_0_1:\r\n    PUSH, __1_ea_SystemUInt32\r\n    PUSH,
+    __ag_0_22_SystemBoolean\r\n    PUSH, __ag_0_11_SystemBoolean\r\n    COPY\r\n   
+    PUSH, __ag_0_32_SystemType\r\n    PUSH, __ag_0_50_SystemBoolean\r\n    EXTERN,
+    \"VRCSDKBaseUtilities.__IsValid__SystemObject__SystemBoolean\"\r\n    PUSH, __ag_0_50_SystemBoolean\r\n   
+    PUSH, __ag_0_11_SystemBoolean\r\n    EXTERN, \"SystemBoolean.__op_UnaryNegation__SystemBoolean__SystemBoolean\"\r\n   
+    PUSH, __ag_0_11_SystemBoolean\r\n    JUMP_IF_FALSE, 0x00000138\r\n    PUSH, __ag_0_25_SystemType\r\n   
+    PUSH, __ag_0_32_SystemType\r\n    COPY\r\n    PUSH, __ag_0_32_SystemType\r\n   
+    PUSH, __ag_0_47_SystemString\r\n    EXTERN, \"SystemType.__get_Name__SystemString\"\r\n   
+    PUSH, __ag_0_14_SystemString\r\n    PUSH, __ag_0_33_SystemString\r\n    COPY\r\n   
+    PUSH, __ag_0_47_SystemString\r\n    PUSH, __ag_0_35_SystemString\r\n    COPY\r\n   
+    PUSH, __ag_0_21_SystemString\r\n    PUSH, __ag_0_38_SystemString\r\n    COPY\r\n   
+    PUSH, __ag_0_8_SystemBoolean\r\n    PUSH, __ag_0_37_SystemBoolean\r\n    COPY\r\n   
+    PUSH, __ag_0_31___jump_return_SystemUInt32\r\n    JUMP, 0x00000008\r\n    PUSH,
+    __ag_0_38_SystemString\r\n    PUSH, __ag_0_21_SystemString\r\n    COPY\r\n   
+    PUSH, __ag_0_37_SystemBoolean\r\n    PUSH, __ag_0_8_SystemBoolean\r\n    COPY\r\n   
+    PUSH, __ag_0_22_SystemBoolean\r\n    PUSH, __ag_0_13_SystemBoolean\r\n    COPY\r\n   
+    PUSH, __ag_0_8_SystemBoolean\r\n    PUSH, __ag_0_13_SystemBoolean\r\n    EXTERN,
+    \"SystemBoolean.__op_UnaryNegation__SystemBoolean__SystemBoolean\"\r\n    PUSH,
+    __ag_0_13_SystemBoolean\r\n    JUMP_IF_FALSE, 0x000002AC\r\n    PUSH, __ag_0_18_SystemString\r\n   
+    PUSH, __ag_0_47_SystemString\r\n    PUSH, __ag_0_7_SystemString\r\n    PUSH,
+    __ag_0_34_SystemString\r\n    EXTERN, \"SystemString.__Concat__SystemString_SystemString_SystemString__SystemString\"\r\n   
+    PUSH, __ag_0_34_SystemString\r\n    PUSH, __ag_0_6_SystemString\r\n    PUSH,
+    __ag_0_14_SystemString\r\n    PUSH, __ag_0_40_SystemString\r\n    EXTERN, \"SystemString.__Concat__SystemString_SystemString_SystemString__SystemString\"\r\n   
+    PUSH, __ag_0_40_SystemString\r\n    PUSH, _this_gameobject\r\n    EXTERN, \"UnityEngineDebug.__LogError__SystemObject_UnityEngineObject__SystemVoid\"\r\n   
+    PUSH, __null\r\n    PUSH, __ag_0_1_UnityEngineComponent\r\n    COPY\r\n    PUSH,
+    __ag_0_19_SystemBoolean\r\n    PUSH, __ag_0_10_SystemBoolean\r\n    COPY\r\n   
+    JUMP, 0x0000063C\r\n    PUSH, __ag_0_21_SystemString\r\n    PUSH, __ag_0_9_UnityEngineGameObject\r\n   
+    EXTERN, \"UnityEngineGameObject.__Find__SystemString__UnityEngineGameObject\"\r\n   
+    PUSH, __ag_0_22_SystemBoolean\r\n    PUSH, __ag_0_45_SystemBoolean\r\n    COPY\r\n   
+    PUSH, __ag_0_9_UnityEngineGameObject\r\n    PUSH, __ag_0_39_SystemBoolean\r\n   
+    EXTERN, \"VRCSDKBaseUtilities.__IsValid__SystemObject__SystemBoolean\"\r\n   
+    PUSH, __ag_0_39_SystemBoolean\r\n    PUSH, __ag_0_45_SystemBoolean\r\n    EXTERN,
+    \"SystemBoolean.__op_UnaryNegation__SystemBoolean__SystemBoolean\"\r\n    PUSH,
+    __ag_0_45_SystemBoolean\r\n    JUMP_IF_FALSE, 0x000003B0\r\n    PUSH, __ag_0_46_SystemString\r\n   
+    PUSH, __ag_0_47_SystemString\r\n    PUSH, __ag_0_26_SystemString\r\n    PUSH,
+    __ag_0_12_SystemString\r\n    EXTERN, \"SystemString.__Concat__SystemString_SystemString_SystemString__SystemString\"\r\n   
+    PUSH, __ag_0_12_SystemString\r\n    PUSH, __ag_0_53_SystemString\r\n    PUSH,
+    __ag_0_14_SystemString\r\n    PUSH, __ag_0_36_SystemString\r\n    EXTERN, \"SystemString.__Concat__SystemString_SystemString_SystemString__SystemString\"\r\n   
+    PUSH, __ag_0_36_SystemString\r\n    PUSH, _this_gameobject\r\n    EXTERN, \"UnityEngineDebug.__LogError__SystemObject_UnityEngineObject__SystemVoid\"\r\n   
+    PUSH, __null\r\n    PUSH, __ag_0_1_UnityEngineComponent\r\n    COPY\r\n    PUSH,
+    __ag_0_20_SystemBoolean\r\n    PUSH, __ag_0_10_SystemBoolean\r\n    COPY\r\n   
+    JUMP, 0x0000063C\r\n    PUSH, __null\r\n    PUSH, __ag_0_1_UnityEngineComponent\r\n   
+    COPY\r\n    PUSH, __ag_0_9_UnityEngineGameObject\r\n    PUSH, __ag_0_32_SystemType\r\n   
+    PUSH, __ag_0_54_UnityEngineComponent[]\r\n    EXTERN, \"UnityEngineGameObject.__GetComponents__SystemType__UnityEngineComponentArray\"\r\n   
+    PUSH, __ag_0_43_SystemInt32\r\n    PUSH, __ag_0_2_SystemInt32\r\n    COPY\r\n   
+    PUSH, __ag_0_47_SystemString\r\n    PUSH, __ag_0_23_SystemString\r\n    PUSH,
+    __ag_0_27_SystemString\r\n    EXTERN, \"SystemString.__Concat__SystemString_SystemString__SystemString\"\r\n   
+    PUSH, __ag_0_14_SystemString\r\n    PUSH, __ag_0_33_SystemString\r\n    COPY\r\n   
+    PUSH, __ag_0_27_SystemString\r\n    PUSH, __ag_0_35_SystemString\r\n    COPY\r\n   
+    PUSH, __ag_0_58_SystemString\r\n    PUSH, __ag_0_38_SystemString\r\n    COPY\r\n   
+    PUSH, __ag_0_41_SystemBoolean\r\n    PUSH, __ag_0_37_SystemBoolean\r\n    COPY\r\n   
+    PUSH, __ag_0_30___jump_return_SystemUInt32\r\n    JUMP, 0x00000008\r\n    PUSH,
+    __ag_0_38_SystemString\r\n    PUSH, __ag_0_58_SystemString\r\n    COPY\r\n   
+    PUSH, __ag_0_37_SystemBoolean\r\n    PUSH, __ag_0_41_SystemBoolean\r\n    COPY\r\n   
+    PUSH, __ag_0_41_SystemBoolean\r\n    JUMP_IF_FALSE, 0x000004D0\r\n    PUSH, __ag_0_58_SystemString\r\n   
+    PUSH, __ag_0_2_SystemInt32\r\n    PUSH, __ag_0_57_SystemBoolean\r\n    EXTERN,
+    \"SystemInt32.__TryParse__SystemString_SystemInt32Ref__SystemBoolean\"\r\n   
+    PUSH, __ag_0_22_SystemBoolean\r\n    PUSH, __ag_0_0_SystemBoolean\r\n    COPY\r\n   
+    PUSH, __ag_0_54_UnityEngineComponent[]\r\n    PUSH, __ag_0_5_SystemInt32\r\n   
+    EXTERN, \"UnityEngineComponentArray.__get_Length__SystemInt32\"\r\n    PUSH,
+    __ag_0_2_SystemInt32\r\n    PUSH, __ag_0_5_SystemInt32\r\n    PUSH, __ag_0_0_SystemBoolean\r\n   
+    EXTERN, \"SystemInt32.__op_LessThan__SystemInt32_SystemInt32__SystemBoolean\"\r\n   
+    PUSH, __ag_0_0_SystemBoolean\r\n    JUMP_IF_FALSE, 0x0000054C\r\n    PUSH, __ag_0_54_UnityEngineComponent[]\r\n   
+    PUSH, __ag_0_2_SystemInt32\r\n    PUSH, __ag_0_1_UnityEngineComponent\r\n   
+    EXTERN, \"UnityEngineComponentArray.__Get__SystemInt32__UnityEngineComponent\"\r\n   
+    PUSH, __ag_0_22_SystemBoolean\r\n    PUSH, __ag_0_4_SystemBoolean\r\n    COPY\r\n   
+    PUSH, __ag_0_1_UnityEngineComponent\r\n    PUSH, __null\r\n    PUSH, __ag_0_4_SystemBoolean\r\n   
+    EXTERN, \"UnityEngineComponent.__op_Equality__UnityEngineObject_UnityEngineObject__SystemBoolean\"\r\n   
+    PUSH, __ag_0_4_SystemBoolean\r\n    JUMP_IF_FALSE, 0x00000628\r\n    PUSH, __ag_0_55_SystemString\r\n   
+    PUSH, __ag_0_47_SystemString\r\n    PUSH, __ag_0_52_SystemString\r\n    PUSH,
+    __ag_0_24_SystemString\r\n    EXTERN, \"SystemString.__Concat__SystemString_SystemString_SystemString__SystemString\"\r\n   
+    PUSH, __ag_0_24_SystemString\r\n    PUSH, __ag_0_17_SystemString\r\n    PUSH,
+    __ag_0_14_SystemString\r\n    PUSH, __ag_0_51_SystemString\r\n    EXTERN, \"SystemString.__Concat__SystemString_SystemString_SystemString__SystemString\"\r\n   
+    PUSH, __ag_0_51_SystemString\r\n    PUSH, _this_gameobject\r\n    EXTERN, \"UnityEngineDebug.__LogError__SystemObject_UnityEngineObject__SystemVoid\"\r\n   
+    PUSH, __null\r\n    PUSH, __ag_0_1_UnityEngineComponent\r\n    COPY\r\n    PUSH,
+    __ag_0_44_SystemBoolean\r\n    PUSH, __ag_0_10_SystemBoolean\r\n    COPY\r\n   
+    JUMP, 0x0000063C\r\n    PUSH, __ag_0_56_SystemBoolean\r\n    PUSH, __ag_0_10_SystemBoolean\r\n   
+    COPY\r\n    PUSH, __0_ra_SystemUInt32\r\n    COPY\r\n    JUMP_INDIRECT, __0_ra_SystemUInt32\r\n\r\n 
+    .export __ag_0_2\r\n  __ag_0_2:\r\n    PUSH, __1_ea_SystemUInt32\r\n    PUSH,
+    __ag_0_29_SystemType\r\n    PUSH, __ag_0_42_SystemType\r\n    COPY\r\n    PUSH,
+    __ag_0_16_SystemString\r\n    PUSH, __ag_0_14_SystemString\r\n    COPY\r\n   
+    PUSH, __ag_0_42_SystemType\r\n    PUSH, __ag_0_32_SystemType\r\n    COPY\r\n   
+    PUSH, __ag_0_49_VRCUdonUdonBehaviour\r\n    PUSH, __ag_0_1_UnityEngineComponent\r\n   
+    COPY\r\n    PUSH, __ag_0_48_SystemBoolean\r\n    PUSH, __ag_0_10_SystemBoolean\r\n   
+    COPY\r\n    PUSH, __ag_0_15___jump_return_SystemUInt32\r\n    JUMP, 0x000000D0\r\n   
+    PUSH, __ag_0_1_UnityEngineComponent\r\n    PUSH, __ag_0_49_VRCUdonUdonBehaviour\r\n   
+    COPY\r\n    PUSH, __ag_0_10_SystemBoolean\r\n    PUSH, __ag_0_48_SystemBoolean\r\n   
+    COPY\r\n    PUSH, __0_ra_SystemUInt32\r\n    COPY\r\n    JUMP_INDIRECT, __0_ra_SystemUInt32\r\n\r\n 
+    .export __ag_1_0\r\n  __ag_1_0:\r\n    PUSH, __1_ea_SystemUInt32\r\n    PUSH,
+    __60_lp_init_SystemBoolean_ct_intern\r\n    JUMP_IF_FALSE, 0x00000744\r\n   
+    PUSH, __ag_1_63_SystemBoolean\r\n    PUSH, __60_lp_init_SystemBoolean_ct_intern\r\n   
+    COPY\r\n    PUSH, _this_local_player\r\n    EXTERN, \"VRCSDKBaseNetworking.__get_LocalPlayer__VRCSDKBaseVRCPlayerApi\"\r\n   
+    PUSH, __ag_1_68_SystemString\r\n    PUSH, __ag_1_50_SystemString\r\n    PUSH,
+    __ag_1_13_SystemString\r\n    PUSH, __ag_1_82_SystemString\r\n    EXTERN, \"SystemString.__Concat__SystemString_SystemString_SystemString__SystemString\"\r\n   
+    PUSH, _this_local_player\r\n    PUSH, __ag_1_82_SystemString\r\n    PUSH, __ag_1_77_SystemString\r\n   
+    EXTERN, \"VRCSDKBaseVRCPlayerApi.__GetPlayerTag__SystemString__SystemString\"\r\n   
+    PUSH, __ag_1_77_SystemString\r\n    PUSH, __ag_1_14_SystemBoolean\r\n    EXTERN,
+    \"SystemString.__IsNullOrEmpty__SystemString__SystemBoolean\"\r\n    PUSH, __ag_1_14_SystemBoolean\r\n   
+    PUSH, __ag_1_14_SystemBoolean\r\n    EXTERN, \"SystemBoolean.__op_UnaryNegation__SystemBoolean__SystemBoolean\"\r\n   
+    PUSH, __0_ra_SystemUInt32\r\n    COPY\r\n    JUMP_INDIRECT, __0_ra_SystemUInt32\r\n\r\n 
+    .export __ag_1_1\r\n  __ag_1_1:\r\n    PUSH, __1_ea_SystemUInt32\r\n    PUSH,
+    __60_lp_init_SystemBoolean_ct_intern\r\n    JUMP_IF_FALSE, 0x0000080C\r\n   
+    PUSH, __ag_1_49_SystemBoolean\r\n    PUSH, __60_lp_init_SystemBoolean_ct_intern\r\n   
+    COPY\r\n    PUSH, _this_local_player\r\n    EXTERN, \"VRCSDKBaseNetworking.__get_LocalPlayer__VRCSDKBaseVRCPlayerApi\"\r\n   
+    PUSH, __ag_1_73_SystemString\r\n    PUSH, __ag_1_29_SystemString\r\n    PUSH,
+    __ag_1_69_SystemString\r\n    PUSH, __ag_1_71_SystemString\r\n    EXTERN, \"SystemString.__Concat__SystemString_SystemString_SystemString__SystemString\"\r\n   
+    PUSH, _this_local_player\r\n    PUSH, __ag_1_71_SystemString\r\n    PUSH, __ag_1_44_SystemString\r\n   
+    EXTERN, \"VRCSDKBaseVRCPlayerApi.__SetPlayerTag__SystemString_SystemString__SystemVoid\"\r\n   
+    PUSH, __0_ra_SystemUInt32\r\n    COPY\r\n    JUMP_INDIRECT, __0_ra_SystemUInt32\r\n\r\n 
+    .export __ag_1_2\r\n  __ag_1_2:\r\n    PUSH, __1_ea_SystemUInt32\r\n    PUSH,
+    __ag_1_48_SystemBoolean\r\n    PUSH, __ag_1_22_SystemBoolean\r\n    COPY\r\n   
+    PUSH, __ag_1_74_SystemType\r\n    PUSH, __ag_1_91_SystemBoolean\r\n    EXTERN,
+    \"VRCSDKBaseUtilities.__IsValid__SystemObject__SystemBoolean\"\r\n    PUSH, __ag_1_91_SystemBoolean\r\n   
+    PUSH, __ag_1_22_SystemBoolean\r\n    EXTERN, \"SystemBoolean.__op_UnaryNegation__SystemBoolean__SystemBoolean\"\r\n   
+    PUSH, __ag_1_22_SystemBoolean\r\n    JUMP_IF_FALSE, 0x000008D8\r\n    PUSH, __ag_1_76_SystemType\r\n   
+    PUSH, __ag_1_74_SystemType\r\n    COPY\r\n    PUSH, __ag_1_74_SystemType\r\n   
+    PUSH, __ag_1_75_SystemString\r\n    EXTERN, \"SystemType.__get_Name__SystemString\"\r\n   
+    PUSH, __ag_1_57_SystemString\r\n    PUSH, __ag_1_69_SystemString\r\n    COPY\r\n   
+    PUSH, __ag_1_75_SystemString\r\n    PUSH, __ag_1_29_SystemString\r\n    COPY\r\n   
+    PUSH, __ag_1_36___jump_return_SystemUInt32\r\n    JUMP, 0x000007D8\r\n    PUSH,
+    __ag_1_75_SystemString\r\n    PUSH, __ag_1_60_SystemString\r\n    PUSH, __ag_1_85_SystemString\r\n   
+    EXTERN, \"SystemString.__Concat__SystemString_SystemString__SystemString\"\r\n   
+    PUSH, __ag_1_57_SystemString\r\n    PUSH, __ag_1_69_SystemString\r\n    COPY\r\n   
+    PUSH, __ag_1_85_SystemString\r\n    PUSH, __ag_1_29_SystemString\r\n    COPY\r\n   
+    PUSH, __ag_1_61___jump_return_SystemUInt32\r\n    JUMP, 0x000007D8\r\n    PUSH,
+    __0_ra_SystemUInt32\r\n    COPY\r\n    JUMP_INDIRECT, __0_ra_SystemUInt32\r\n\r\n 
+    .export __ag_1_3\r\n  __ag_1_3:\r\n    PUSH, __1_ea_SystemUInt32\r\n    PUSH,
+    __60_lp_init_SystemBoolean_ct_intern\r\n    JUMP_IF_FALSE, 0x000009D0\r\n   
+    PUSH, __ag_1_12_SystemBoolean\r\n    PUSH, __60_lp_init_SystemBoolean_ct_intern\r\n   
+    COPY\r\n    PUSH, _this_local_player\r\n    EXTERN, \"VRCSDKBaseNetworking.__get_LocalPlayer__VRCSDKBaseVRCPlayerApi\"\r\n   
+    PUSH, __ag_1_55_SystemString\r\n    PUSH, __ag_1_39_SystemString\r\n    PUSH,
+    __ag_1_8_SystemString\r\n    PUSH, __ag_1_4_SystemString\r\n    EXTERN, \"SystemString.__Concat__SystemString_SystemString_SystemString__SystemString\"\r\n   
+    PUSH, _this_local_player\r\n    PUSH, __ag_1_4_SystemString\r\n    PUSH, __ag_1_27_SystemString\r\n   
+    EXTERN, \"VRCSDKBaseVRCPlayerApi.__GetPlayerTag__SystemString__SystemString\"\r\n   
+    PUSH, __ag_1_12_SystemBoolean\r\n    PUSH, __ag_1_30_SystemBoolean\r\n    COPY\r\n   
+    PUSH, __ag_1_27_SystemString\r\n    PUSH, __ag_1_88_SystemBoolean\r\n    EXTERN,
+    \"SystemString.__IsNullOrEmpty__SystemString__SystemBoolean\"\r\n    PUSH, __ag_1_88_SystemBoolean\r\n   
+    PUSH, __ag_1_30_SystemBoolean\r\n    EXTERN, \"SystemBoolean.__op_UnaryNegation__SystemBoolean__SystemBoolean\"\r\n   
+    PUSH, __ag_1_30_SystemBoolean\r\n    JUMP_IF_FALSE, 0x00000AD4\r\n    PUSH, __ag_1_39_SystemString\r\n   
+    PUSH, __ag_1_8_SystemString\r\n    PUSH, __ag_1_21_SystemString\r\n    EXTERN,
+    \"SystemString.__Concat__SystemString_SystemString__SystemString\"\r\n    PUSH,
+    __ag_1_78_SystemString\r\n    PUSH, __ag_1_21_SystemString\r\n    PUSH, __ag_1_24_SystemString\r\n   
+    PUSH, __ag_1_27_SystemString\r\n    PUSH, __ag_1_52_SystemString\r\n    EXTERN,
+    \"SystemString.__Concat__SystemString_SystemString_SystemString_SystemString__SystemString\"\r\n   
+    PUSH, __ag_1_52_SystemString\r\n    PUSH, _this_gameobject\r\n    EXTERN, \"UnityEngineDebug.__LogWarning__SystemObject_UnityEngineObject__SystemVoid\"\r\n   
+    PUSH, _this_local_player\r\n    PUSH, __ag_1_4_SystemString\r\n    PUSH, __ag_1_25_SystemString\r\n   
+    EXTERN, \"VRCSDKBaseVRCPlayerApi.__SetPlayerTag__SystemString_SystemString__SystemVoid\"\r\n   
+    PUSH, __0_ra_SystemUInt32\r\n    COPY\r\n    JUMP_INDIRECT, __0_ra_SystemUInt32\r\n\r\n 
+    .export __ag_1_4\r\n  __ag_1_4:\r\n    PUSH, __1_ea_SystemUInt32\r\n    PUSH,
+    __ag_1_5_SystemBoolean\r\n    PUSH, __ag_1_2_SystemBoolean\r\n    COPY\r\n   
+    PUSH, __ag_1_20_SystemType\r\n    PUSH, __ag_1_7_SystemBoolean\r\n    EXTERN,
+    \"VRCSDKBaseUtilities.__IsValid__SystemObject__SystemBoolean\"\r\n    PUSH, __ag_1_7_SystemBoolean\r\n   
+    PUSH, __ag_1_2_SystemBoolean\r\n    EXTERN, \"SystemBoolean.__op_UnaryNegation__SystemBoolean__SystemBoolean\"\r\n   
+    PUSH, __ag_1_2_SystemBoolean\r\n    JUMP_IF_FALSE, 0x00000B78\r\n    PUSH, __ag_1_66_SystemType\r\n   
+    PUSH, __ag_1_20_SystemType\r\n    COPY\r\n    PUSH, __ag_1_20_SystemType\r\n   
+    PUSH, __ag_1_53_SystemString\r\n    EXTERN, \"SystemType.__get_Name__SystemString\"\r\n   
+    PUSH, __ag_1_5_SystemBoolean\r\n    PUSH, __ag_1_26_SystemBoolean\r\n    COPY\r\n   
+    PUSH, __ag_1_17_SystemString\r\n    PUSH, __ag_1_13_SystemString\r\n    COPY\r\n   
+    PUSH, __ag_1_53_SystemString\r\n    PUSH, __ag_1_50_SystemString\r\n    COPY\r\n   
+    PUSH, __ag_1_18_SystemString\r\n    PUSH, __ag_1_77_SystemString\r\n    COPY\r\n   
+    PUSH, __ag_1_26_SystemBoolean\r\n    PUSH, __ag_1_14_SystemBoolean\r\n    COPY\r\n   
+    PUSH, __ag_1_86___jump_return_SystemUInt32\r\n    JUMP, 0x00000710\r\n    PUSH,
+    __ag_1_77_SystemString\r\n    PUSH, __ag_1_18_SystemString\r\n    COPY\r\n   
+    PUSH, __ag_1_14_SystemBoolean\r\n    PUSH, __ag_1_26_SystemBoolean\r\n    COPY\r\n   
+    PUSH, __ag_1_26_SystemBoolean\r\n    JUMP_IF_FALSE, 0x00000CA4\r\n    PUSH, __ag_1_34_SystemString\r\n   
+    PUSH, __ag_1_53_SystemString\r\n    PUSH, __ag_1_70_SystemString\r\n    PUSH,
+    __ag_1_6_SystemString\r\n    EXTERN, \"SystemString.__Concat__SystemString_SystemString_SystemString__SystemString\"\r\n   
+    PUSH, __ag_1_6_SystemString\r\n    PUSH, __ag_1_56_SystemString\r\n    PUSH,
+    __ag_1_17_SystemString\r\n    PUSH, __ag_1_90_SystemString\r\n    EXTERN, \"SystemString.__Concat__SystemString_SystemString_SystemString__SystemString\"\r\n   
+    PUSH, __ag_1_90_SystemString\r\n    PUSH, _this_gameobject\r\n    EXTERN, \"UnityEngineDebug.__LogWarning__SystemObject_UnityEngineObject__SystemVoid\"\r\n   
+    PUSH, __ag_1_5_SystemBoolean\r\n    PUSH, __ag_1_9_SystemBoolean\r\n    COPY\r\n   
+    PUSH, __ag_1_51_UnityEngineComponent\r\n    PUSH, __ag_1_16_SystemBoolean\r\n   
+    EXTERN, \"VRCSDKBaseUtilities.__IsValid__SystemObject__SystemBoolean\"\r\n   
+    PUSH, __ag_1_16_SystemBoolean\r\n    PUSH, __ag_1_9_SystemBoolean\r\n    EXTERN,
+    \"SystemBoolean.__op_UnaryNegation__SystemBoolean__SystemBoolean\"\r\n    PUSH,
+    __ag_1_9_SystemBoolean\r\n    JUMP_IF_FALSE, 0x00000D38\r\n    PUSH, __ag_1_17_SystemString\r\n   
+    PUSH, __ag_1_57_SystemString\r\n    COPY\r\n    PUSH, __ag_1_20_SystemType\r\n   
+    PUSH, __ag_1_74_SystemType\r\n    COPY\r\n    PUSH, __ag_1_79___jump_return_SystemUInt32\r\n   
+    JUMP, 0x00000870\r\n    JUMP, 0x00001180\r\n    PUSH, __ag_1_51_UnityEngineComponent\r\n   
+    PUSH, __ag_1_31_UnityEngineGameObject\r\n    EXTERN, \"UnityEngineComponent.__get_gameObject__UnityEngineGameObject\"\r\n   
+    PUSH, __ag_1_51_UnityEngineComponent\r\n    PUSH, __ag_1_0_UnityEngineTransform\r\n   
+    EXTERN, \"UnityEngineComponent.__get_transform__UnityEngineTransform\"\r\n   
+    PUSH, __ag_1_0_UnityEngineTransform\r\n    PUSH, __ag_1_41_SystemString\r\n   
+    EXTERN, \"UnityEngineTransform.__get_name__SystemString\"\r\n    PUSH, __ag_1_0_UnityEngineTransform\r\n   
+    PUSH, __ag_1_0_UnityEngineTransform\r\n    EXTERN, \"UnityEngineTransform.__get_parent__UnityEngineTransform\"\r\n   
+    PUSH, __ag_1_5_SystemBoolean\r\n    PUSH, __ag_1_84_SystemBoolean\r\n    COPY\r\n   
+    PUSH, __ag_1_0_UnityEngineTransform\r\n    PUSH, __null\r\n    PUSH, __ag_1_84_SystemBoolean\r\n   
+    EXTERN, \"UnityEngineTransform.__op_Inequality__UnityEngineObject_UnityEngineObject__SystemBoolean\"\r\n   
+    PUSH, __ag_1_84_SystemBoolean\r\n    JUMP_IF_FALSE, 0x00000E3C\r\n    PUSH, __ag_1_0_UnityEngineTransform\r\n   
+    PUSH, __ag_1_62_SystemString\r\n    EXTERN, \"UnityEngineTransform.__get_name__SystemString\"\r\n   
+    PUSH, __ag_1_62_SystemString\r\n    PUSH, __ag_1_65_SystemString\r\n    PUSH,
+    __ag_1_41_SystemString\r\n    PUSH, __ag_1_41_SystemString\r\n    EXTERN, \"SystemString.__Concat__SystemString_SystemString_SystemString__SystemString\"\r\n   
+    PUSH, __ag_1_0_UnityEngineTransform\r\n    PUSH, __ag_1_0_UnityEngineTransform\r\n   
+    EXTERN, \"UnityEngineTransform.__get_parent__UnityEngineTransform\"\r\n    JUMP,
+    0x00000D98\r\n    PUSH, __ag_1_5_SystemBoolean\r\n    PUSH, __ag_1_10_SystemBoolean\r\n   
+    COPY\r\n    PUSH, __ag_1_41_SystemString\r\n    PUSH, __ag_1_28_UnityEngineGameObject\r\n   
+    EXTERN, \"UnityEngineGameObject.__Find__SystemString__UnityEngineGameObject\"\r\n   
+    PUSH, __ag_1_31_UnityEngineGameObject\r\n    PUSH, __ag_1_28_UnityEngineGameObject\r\n   
+    PUSH, __ag_1_10_SystemBoolean\r\n    EXTERN, \"UnityEngineGameObject.__op_Inequality__UnityEngineObject_UnityEngineObject__SystemBoolean\"\r\n   
+    PUSH, __ag_1_10_SystemBoolean\r\n    JUMP_IF_FALSE, 0x00000F30\r\n    PUSH, __ag_1_35_SystemString\r\n   
+    PUSH, __ag_1_53_SystemString\r\n    PUSH, __ag_1_43_SystemString\r\n    PUSH,
+    __ag_1_32_SystemString\r\n    EXTERN, \"SystemString.__Concat__SystemString_SystemString_SystemString__SystemString\"\r\n   
+    PUSH, __ag_1_32_SystemString\r\n    PUSH, __ag_1_11_SystemString\r\n    PUSH,
+    __ag_1_17_SystemString\r\n    PUSH, __ag_1_89_SystemString\r\n    EXTERN, \"SystemString.__Concat__SystemString_SystemString_SystemString__SystemString\"\r\n   
+    PUSH, __ag_1_89_SystemString\r\n    PUSH, __ag_1_23_SystemString\r\n    PUSH,
+    __ag_1_17_SystemString\r\n    PUSH, __ag_1_81_SystemString\r\n    EXTERN, \"SystemString.__Concat__SystemString_SystemString_SystemString__SystemString\"\r\n   
+    PUSH, __ag_1_81_SystemString\r\n    PUSH, _this_gameobject\r\n    EXTERN, \"UnityEngineDebug.__LogError__SystemObject_UnityEngineObject__SystemVoid\"\r\n   
+    JUMP, 0x00001180\r\n    PUSH, __ag_1_17_SystemString\r\n    PUSH, __ag_1_8_SystemString\r\n   
+    COPY\r\n    PUSH, __ag_1_53_SystemString\r\n    PUSH, __ag_1_39_SystemString\r\n   
+    COPY\r\n    PUSH, __ag_1_41_SystemString\r\n    PUSH, __ag_1_25_SystemString\r\n   
+    COPY\r\n    PUSH, __ag_1_59___jump_return_SystemUInt32\r\n    JUMP, 0x0000099C\r\n   
+    PUSH, __ag_1_31_UnityEngineGameObject\r\n    PUSH, __ag_1_20_SystemType\r\n   
+    PUSH, __ag_1_54_UnityEngineComponent[]\r\n    EXTERN, \"UnityEngineGameObject.__GetComponents__SystemType__UnityEngineComponentArray\"\r\n   
+    PUSH, __ag_1_54_UnityEngineComponent[]\r\n    PUSH, __ag_1_67_SystemInt32\r\n   
+    EXTERN, \"SystemArray.__get_Length__SystemInt32\"\r\n    PUSH, __ag_1_64_SystemInt32\r\n   
+    PUSH, __ag_1_87_SystemInt32\r\n    COPY\r\n    PUSH, __ag_1_67_SystemInt32\r\n   
+    PUSH, __ag_1_83_SystemInt32\r\n    COPY\r\n    PUSH, __ag_1_33_SystemInt32\r\n   
+    PUSH, __ag_1_37_SystemInt32\r\n    COPY\r\n    PUSH, __ag_1_37_SystemInt32\r\n   
+    PUSH, __ag_1_64_SystemInt32\r\n    PUSH, __ag_1_15_SystemBoolean\r\n    EXTERN,
+    \"SystemInt32.__op_GreaterThanOrEqual__SystemInt32_SystemInt32__SystemBoolean\"\r\n   
+    JUMP, 0x00001038\r\n    PUSH, __ag_1_87_SystemInt32\r\n    PUSH, __ag_1_37_SystemInt32\r\n   
+    PUSH, __ag_1_87_SystemInt32\r\n    EXTERN, \"SystemInt32.__op_Addition__SystemInt32_SystemInt32__SystemInt32\"\r\n   
+    PUSH, __ag_1_87_SystemInt32\r\n    PUSH, __ag_1_83_SystemInt32\r\n    PUSH, __ag_1_47_SystemBoolean\r\n   
+    PUSH, __ag_1_15_SystemBoolean\r\n    JUMP_IF_FALSE, 0x00001070\r\n    EXTERN,
+    \"SystemInt32.__op_LessThan__SystemInt32_SystemInt32__SystemBoolean\"\r\n   
+    JUMP, 0x00001078\r\n    EXTERN, \"SystemInt32.__op_GreaterThan__SystemInt32_SystemInt32__SystemBoolean\"\r\n   
+    PUSH, __ag_1_47_SystemBoolean\r\n    JUMP_IF_FALSE, 0x00001180\r\n    PUSH, __ag_1_54_UnityEngineComponent[]\r\n   
+    PUSH, __ag_1_87_SystemInt32\r\n    PUSH, __ag_1_46_SystemObject\r\n    EXTERN,
+    \"SystemArray.__GetValue__SystemInt32__SystemObject\"\r\n    PUSH, __ag_1_5_SystemBoolean\r\n   
+    PUSH, __ag_1_40_SystemBoolean\r\n    COPY\r\n    PUSH, __ag_1_51_UnityEngineComponent\r\n   
+    PUSH, __ag_1_46_SystemObject\r\n    PUSH, __ag_1_40_SystemBoolean\r\n    EXTERN,
+    \"UnityEngineComponent.__op_Equality__UnityEngineObject_UnityEngineObject__SystemBoolean\"\r\n   
+    PUSH, __ag_1_40_SystemBoolean\r\n    JUMP_IF_FALSE, 0x00001178\r\n    PUSH, __ag_1_87_SystemInt32\r\n   
+    PUSH, __ag_1_1_SystemString\r\n    EXTERN, \"SystemInt32.__ToString__SystemString\"\r\n   
+    PUSH, __ag_1_53_SystemString\r\n    PUSH, __ag_1_45_SystemString\r\n    PUSH,
+    __ag_1_42_SystemString\r\n    EXTERN, \"SystemString.__Concat__SystemString_SystemString__SystemString\"\r\n   
+    PUSH, __ag_1_17_SystemString\r\n    PUSH, __ag_1_8_SystemString\r\n    COPY\r\n   
+    PUSH, __ag_1_42_SystemString\r\n    PUSH, __ag_1_39_SystemString\r\n    COPY\r\n   
+    PUSH, __ag_1_1_SystemString\r\n    PUSH, __ag_1_25_SystemString\r\n    COPY\r\n   
+    PUSH, __ag_1_3___jump_return_SystemUInt32\r\n    JUMP, 0x0000099C\r\n    JUMP,
+    0x00001180\r\n    JUMP, 0x00001018\r\n    PUSH, __0_ra_SystemUInt32\r\n    COPY\r\n   
+    JUMP_INDIRECT, __0_ra_SystemUInt32\r\n\r\n  .export __ag_1_5\r\n  __ag_1_5:\r\n   
+    PUSH, __1_ea_SystemUInt32\r\n    PUSH, __ag_1_80_SystemType\r\n    PUSH, __ag_1_58_SystemType\r\n   
+    COPY\r\n    PUSH, __ag_1_19_SystemString\r\n    PUSH, __ag_1_17_SystemString\r\n   
+    COPY\r\n    PUSH, __ag_1_58_SystemType\r\n    PUSH, __ag_1_20_SystemType\r\n   
+    COPY\r\n    PUSH, __ag_1_72_VRCUdonUdonBehaviour\r\n    PUSH, __ag_1_51_UnityEngineComponent\r\n   
+    COPY\r\n    PUSH, __ag_1_38___jump_return_SystemUInt32\r\n    JUMP, 0x00000B10\r\n   
+    PUSH, __0_ra_SystemUInt32\r\n    COPY\r\n    JUMP_INDIRECT, __0_ra_SystemUInt32\r\n\r\n 
+    .export _onPlayerJoined\r\n  _onPlayerJoined:\r\n    PUSH, __1_ea_SystemUInt32\r\n   
+    PUSH, globalAudio\r\n    JUMP_IF_FALSE, 0x0000124C\r\n    PUSH, onPlayerJoinedPlayer\r\n   
+    PUSH, _arg_player__SetPlayerAudio\r\n    COPY\r\n    PUSH, __182___jump_return_10_SystemUInt32\r\n   
+    JUMP, 0x00001424\r\n    PUSH, __0_ra_SystemUInt32\r\n    COPY\r\n    JUMP_INDIRECT,
+    __0_ra_SystemUInt32\r\n\r\n  .export _onPlayerTriggerEnter\r\n  _onPlayerTriggerEnter:\r\n   
+    PUSH, __1_ea_SystemUInt32\r\n    PUSH, __184_const_SystemBoolean\r\n    PUSH,
+    __183_local_var_SystemBoolean\r\n    COPY\r\n    PUSH, globalAudio\r\n    PUSH,
+    __183_local_var_SystemBoolean\r\n    EXTERN, \"SystemBoolean.__op_UnaryNegation__SystemBoolean__SystemBoolean\"\r\n   
+    PUSH, __183_local_var_SystemBoolean\r\n    JUMP_IF_FALSE, 0x000012C8\r\n    PUSH,
+    onPlayerTriggerEnterPlayer\r\n    PUSH, _arg_player__SetPlayerAudio\r\n    COPY\r\n   
+    PUSH, __186___jump_return_11_SystemUInt32\r\n    JUMP, 0x00001424\r\n    PUSH,
+    __0_ra_SystemUInt32\r\n    COPY\r\n    JUMP_INDIRECT, __0_ra_SystemUInt32\r\n\r\n 
+    .export _onPlayerTriggerExit\r\n  _onPlayerTriggerExit:\r\n    PUSH, __1_ea_SystemUInt32\r\n   
+    PUSH, __184_const_SystemBoolean\r\n    PUSH, __187_local_var_SystemBoolean\r\n   
+    COPY\r\n    PUSH, globalAudio\r\n    PUSH, __187_local_var_SystemBoolean\r\n   
+    EXTERN, \"SystemBoolean.__op_UnaryNegation__SystemBoolean__SystemBoolean\"\r\n   
+    PUSH, __187_local_var_SystemBoolean\r\n    JUMP_IF_FALSE, 0x00001408\r\n    PUSH,
+    _dataCacheKey\r\n    PUSH, __ag_0_16_SystemString\r\n    COPY\r\n    PUSH, __188_local_var_VRCUdonUdonBehaviour\r\n   
+    PUSH, __ag_0_49_VRCUdonUdonBehaviour\r\n    COPY\r\n    PUSH, __189_local_var_SystemBoolean\r\n   
+    PUSH, __ag_0_48_SystemBoolean\r\n    COPY\r\n    PUSH, __190___jump_return_12_SystemUInt32\r\n   
+    JUMP, 0x00000658\r\n    PUSH, __ag_0_49_VRCUdonUdonBehaviour\r\n    PUSH, __188_local_var_VRCUdonUdonBehaviour\r\n   
+    COPY\r\n    PUSH, __ag_0_48_SystemBoolean\r\n    PUSH, __189_local_var_SystemBoolean\r\n   
+    COPY\r\n    PUSH, __189_local_var_SystemBoolean\r\n    JUMP_IF_FALSE, 0x000013E4\r\n   
+    PUSH, __188_local_var_VRCUdonUdonBehaviour\r\n    PUSH, __192_const_SystemString\r\n   
+    PUSH, onPlayerTriggerExitPlayer\r\n    EXTERN, \"VRCUdonCommonInterfacesIUdonEventReceiver.__SetProgramVariable__SystemString_SystemObject__SystemVoid\"\r\n   
+    PUSH, __188_local_var_VRCUdonUdonBehaviour\r\n    PUSH, __191_ref_SystemString\r\n   
+    EXTERN, \"VRCUdonCommonInterfacesIUdonEventReceiver.__SendCustomEvent__SystemString__SystemVoid\"\r\n   
+    JUMP, 0x00001408\r\n    PUSH, onPlayerTriggerExitPlayer\r\n    PUSH, _arg_player__ApplyDefaultAudio\r\n   
+    COPY\r\n    PUSH, __194___jump_return_13_SystemUInt32\r\n    JUMP, 0x00001548\r\n   
+    PUSH, __0_ra_SystemUInt32\r\n    COPY\r\n    JUMP_INDIRECT, __0_ra_SystemUInt32\r\n\r\n 
+    .export _SetPlayerAudio\r\n  _SetPlayerAudio:\r\n    PUSH, __1_ea_SystemUInt32\r\n   
+    PUSH, _arg_player__SetPlayerAudio\r\n    PUSH, voiceGain\r\n    EXTERN, \"VRCSDKBaseVRCPlayerApi.__SetVoiceGain__SystemSingle__SystemVoid\"\r\n   
+    PUSH, _arg_player__SetPlayerAudio\r\n    PUSH, voiceFar\r\n    EXTERN, \"VRCSDKBaseVRCPlayerApi.__SetVoiceDistanceFar__SystemSingle__SystemVoid\"\r\n   
+    PUSH, _arg_player__SetPlayerAudio\r\n    PUSH, voiceNear\r\n    EXTERN, \"VRCSDKBaseVRCPlayerApi.__SetVoiceDistanceNear__SystemSingle__SystemVoid\"\r\n   
+    PUSH, _arg_player__SetPlayerAudio\r\n    PUSH, voiceVolumetric\r\n    EXTERN,
+    \"VRCSDKBaseVRCPlayerApi.__SetVoiceVolumetricRadius__SystemSingle__SystemVoid\"\r\n   
+    PUSH, _arg_player__SetPlayerAudio\r\n    PUSH, voiceLowpass\r\n    EXTERN, \"VRCSDKBaseVRCPlayerApi.__SetVoiceLowpass__SystemBoolean__SystemVoid\"\r\n   
+    PUSH, _arg_player__SetPlayerAudio\r\n    PUSH, customCurveAvatar\r\n    EXTERN,
+    \"VRCSDKBaseVRCPlayerApi.__SetAvatarAudioCustomCurve__SystemBoolean__SystemVoid\"\r\n   
+    PUSH, _arg_player__SetPlayerAudio\r\n    PUSH, farAvatar\r\n    EXTERN, \"VRCSDKBaseVRCPlayerApi.__SetAvatarAudioFarRadius__SystemSingle__SystemVoid\"\r\n   
+    PUSH, _arg_player__SetPlayerAudio\r\n    PUSH, forceSpatialAvatar\r\n    EXTERN,
+    \"VRCSDKBaseVRCPlayerApi.__SetAvatarAudioForceSpatial__SystemBoolean__SystemVoid\"\r\n   
+    PUSH, _arg_player__SetPlayerAudio\r\n    PUSH, gainAvatar\r\n    EXTERN, \"VRCSDKBaseVRCPlayerApi.__SetAvatarAudioGain__SystemSingle__SystemVoid\"\r\n   
+    PUSH, _arg_player__SetPlayerAudio\r\n    PUSH, nearAvatar\r\n    EXTERN, \"VRCSDKBaseVRCPlayerApi.__SetAvatarAudioNearRadius__SystemSingle__SystemVoid\"\r\n   
+    PUSH, _arg_player__SetPlayerAudio\r\n    PUSH, volumetricRadiusAvatar\r\n   
+    EXTERN, \"VRCSDKBaseVRCPlayerApi.__SetAvatarAudioVolumetricRadius__SystemSingle__SystemVoid\"\r\n   
+    PUSH, __0_ra_SystemUInt32\r\n    COPY\r\n    JUMP_INDIRECT, __0_ra_SystemUInt32\r\n\r\n 
+    .export _ApplyDefaultAudio\r\n  _ApplyDefaultAudio:\r\n    PUSH, __1_ea_SystemUInt32\r\n   
+    PUSH, _arg_player__ApplyDefaultAudio\r\n    PUSH, __195_ref_SystemSingle\r\n   
+    EXTERN, \"VRCSDKBaseVRCPlayerApi.__SetVoiceGain__SystemSingle__SystemVoid\"\r\n   
+    PUSH, _arg_player__ApplyDefaultAudio\r\n    PUSH, __196_ref_SystemSingle\r\n   
+    EXTERN, \"VRCSDKBaseVRCPlayerApi.__SetVoiceDistanceFar__SystemSingle__SystemVoid\"\r\n   
+    PUSH, _arg_player__ApplyDefaultAudio\r\n    PUSH, __197_ref_SystemSingle\r\n   
+    EXTERN, \"VRCSDKBaseVRCPlayerApi.__SetVoiceDistanceNear__SystemSingle__SystemVoid\"\r\n   
+    PUSH, _arg_player__ApplyDefaultAudio\r\n    PUSH, __198_ref_SystemSingle\r\n   
+    EXTERN, \"VRCSDKBaseVRCPlayerApi.__SetVoiceVolumetricRadius__SystemSingle__SystemVoid\"\r\n   
+    PUSH, _arg_player__ApplyDefaultAudio\r\n    PUSH, __199_ref_SystemBoolean\r\n   
+    EXTERN, \"VRCSDKBaseVRCPlayerApi.__SetVoiceLowpass__SystemBoolean__SystemVoid\"\r\n   
+    PUSH, _arg_player__ApplyDefaultAudio\r\n    PUSH, __200_ref_SystemSingle\r\n   
+    EXTERN, \"VRCSDKBaseVRCPlayerApi.__SetAvatarAudioGain__SystemSingle__SystemVoid\"\r\n   
+    PUSH, _arg_player__ApplyDefaultAudio\r\n    PUSH, __201_ref_SystemSingle\r\n   
+    EXTERN, \"VRCSDKBaseVRCPlayerApi.__SetAvatarAudioFarRadius__SystemSingle__SystemVoid\"\r\n   
+    PUSH, _arg_player__ApplyDefaultAudio\r\n    PUSH, __202_ref_SystemSingle\r\n   
+    EXTERN, \"VRCSDKBaseVRCPlayerApi.__SetAvatarAudioNearRadius__SystemSingle__SystemVoid\"\r\n   
+    PUSH, _arg_player__ApplyDefaultAudio\r\n    PUSH, __203_ref_SystemSingle\r\n   
+    EXTERN, \"VRCSDKBaseVRCPlayerApi.__SetAvatarAudioVolumetricRadius__SystemSingle__SystemVoid\"\r\n   
+    PUSH, _arg_player__ApplyDefaultAudio\r\n    PUSH, __204_ref_SystemBoolean\r\n   
+    EXTERN, \"VRCSDKBaseVRCPlayerApi.__SetAvatarAudioCustomCurve__SystemBoolean__SystemVoid\"\r\n   
+    PUSH, _arg_player__ApplyDefaultAudio\r\n    PUSH, __205_ref_SystemBoolean\r\n   
+    EXTERN, \"VRCSDKBaseVRCPlayerApi.__SetAvatarAudioForceSpatial__SystemBoolean__SystemVoid\"\r\n   
+    PUSH, __0_ra_SystemUInt32\r\n    COPY\r\n    JUMP_INDIRECT, __0_ra_SystemUInt32\r\n\r\n 
+    .export _start\r\n  _start:\r\n    PUSH, __1_ea_SystemUInt32\r\n    PUSH, globalAudio\r\n   
+    JUMP_IF_FALSE, 0x000016BC\r\n    PUSH, _dataCacheKey\r\n    PUSH, __ag_1_19_SystemString\r\n   
+    COPY\r\n    PUSH, _this_udonbehaviour\r\n    PUSH, __ag_1_72_VRCUdonUdonBehaviour\r\n   
+    COPY\r\n    PUSH, __206___jump_return_14_SystemUInt32\r\n    JUMP, 0x0000119C\r\n   
+    JUMP, 0x00001880\r\n    PUSH, __208_const_SystemType\r\n    PUSH, __207_local_var_SystemType\r\n   
+    COPY\r\n    PUSH, _this_gameobject\r\n    PUSH, __207_local_var_SystemType\r\n   
+    PUSH, _colliders\r\n    EXTERN, \"UnityEngineGameObject.__GetComponents__TArray\"\r\n   
+    PUSH, _colliders\r\n    PUSH, __213_temp_SystemInt32\r\n    EXTERN, \"SystemArray.__get_Length__SystemInt32\"\r\n   
+    PUSH, __211_const_SystemInt32\r\n    PUSH, __209_local_var_SystemInt32\r\n   
+    COPY\r\n    PUSH, __213_temp_SystemInt32\r\n    PUSH, __215_temp_SystemInt32\r\n   
+    COPY\r\n    PUSH, __212_const_SystemInt32\r\n    PUSH, __214_temp_SystemInt32\r\n   
+    COPY\r\n    PUSH, __214_temp_SystemInt32\r\n    PUSH, __211_const_SystemInt32\r\n   
+    PUSH, __216_temp_SystemBoolean\r\n    EXTERN, \"SystemInt32.__op_GreaterThanOrEqual__SystemInt32_SystemInt32__SystemBoolean\"\r\n   
+    JUMP, 0x0000178C\r\n    PUSH, __209_local_var_SystemInt32\r\n    PUSH, __214_temp_SystemInt32\r\n   
+    PUSH, __209_local_var_SystemInt32\r\n    EXTERN, \"SystemInt32.__op_Addition__SystemInt32_SystemInt32__SystemInt32\"\r\n   
+    PUSH, __209_local_var_SystemInt32\r\n    PUSH, __215_temp_SystemInt32\r\n   
+    PUSH, __217_temp_SystemBoolean\r\n    PUSH, __216_temp_SystemBoolean\r\n    JUMP_IF_FALSE,
+    0x000017C4\r\n    EXTERN, \"SystemInt32.__op_LessThan__SystemInt32_SystemInt32__SystemBoolean\"\r\n   
+    JUMP, 0x000017CC\r\n    EXTERN, \"SystemInt32.__op_GreaterThan__SystemInt32_SystemInt32__SystemBoolean\"\r\n   
+    PUSH, __217_temp_SystemBoolean\r\n    JUMP_IF_FALSE, 0x00001858\r\n    PUSH,
+    _colliders\r\n    PUSH, __209_local_var_SystemInt32\r\n    PUSH, __210_local_var_SystemObject\r\n   
+    EXTERN, \"SystemArray.__GetValue__SystemInt32__SystemObject\"\r\n    PUSH, __184_const_SystemBoolean\r\n   
+    PUSH, __218_local_var_SystemBoolean\r\n    COPY\r\n    PUSH, __210_local_var_SystemObject\r\n   
+    PUSH, __218_local_var_SystemBoolean\r\n    EXTERN, \"VRCSDKBaseUtilities.__IsValid__SystemObject__SystemBoolean\"\r\n   
+    PUSH, __218_local_var_SystemBoolean\r\n    JUMP_IF_FALSE, 0x00001850\r\n    PUSH,
+    __210_local_var_SystemObject\r\n    PUSH, __219_ref_SystemBoolean\r\n    EXTERN,
+    \"UnityEngineCollider.__set_enabled__SystemBoolean__SystemVoid\"\r\n    JUMP,
+    0x0000176C\r\n    PUSH, _this_udonbehaviour\r\n    PUSH, __220_ref_SystemString\r\n   
+    PUSH, __221_ref_SystemInt32\r\n    PUSH, __222_ref_VRCUdonCommonEnumsEventTiming\r\n   
+    EXTERN, \"VRCUdonCommonInterfacesIUdonEventReceiver.__SendCustomEventDelayedFrames__SystemString_SystemInt32_VRCUdonCommonEnumsEventTiming__SystemVoid\"\r\n   
+    PUSH, __0_ra_SystemUInt32\r\n    COPY\r\n    JUMP_INDIRECT, __0_ra_SystemUInt32\r\n\r\n 
+    .export _DelayEnableColliders\r\n  _DelayEnableColliders:\r\n    PUSH, __1_ea_SystemUInt32\r\n   
+    PUSH, _colliders\r\n    PUSH, __225_temp_SystemInt32\r\n    EXTERN, \"SystemArray.__get_Length__SystemInt32\"\r\n   
+    PUSH, __211_const_SystemInt32\r\n    PUSH, __223_local_var_SystemInt32\r\n   
+    COPY\r\n    PUSH, __225_temp_SystemInt32\r\n    PUSH, __227_temp_SystemInt32\r\n   
+    COPY\r\n    PUSH, __212_const_SystemInt32\r\n    PUSH, __226_temp_SystemInt32\r\n   
+    COPY\r\n    PUSH, __226_temp_SystemInt32\r\n    PUSH, __211_const_SystemInt32\r\n   
+    PUSH, __228_temp_SystemBoolean\r\n    EXTERN, \"SystemInt32.__op_GreaterThanOrEqual__SystemInt32_SystemInt32__SystemBoolean\"\r\n   
+    JUMP, 0x00001938\r\n    PUSH, __223_local_var_SystemInt32\r\n    PUSH, __226_temp_SystemInt32\r\n   
+    PUSH, __223_local_var_SystemInt32\r\n    EXTERN, \"SystemInt32.__op_Addition__SystemInt32_SystemInt32__SystemInt32\"\r\n   
+    PUSH, __223_local_var_SystemInt32\r\n    PUSH, __227_temp_SystemInt32\r\n   
+    PUSH, __229_temp_SystemBoolean\r\n    PUSH, __228_temp_SystemBoolean\r\n    JUMP_IF_FALSE,
+    0x00001970\r\n    EXTERN, \"SystemInt32.__op_LessThan__SystemInt32_SystemInt32__SystemBoolean\"\r\n   
+    JUMP, 0x00001978\r\n    EXTERN, \"SystemInt32.__op_GreaterThan__SystemInt32_SystemInt32__SystemBoolean\"\r\n   
+    PUSH, __229_temp_SystemBoolean\r\n    JUMP_IF_FALSE, 0x00001A04\r\n    PUSH,
+    _colliders\r\n    PUSH, __223_local_var_SystemInt32\r\n    PUSH, __224_local_var_SystemObject\r\n   
+    EXTERN, \"SystemArray.__GetValue__SystemInt32__SystemObject\"\r\n    PUSH, __184_const_SystemBoolean\r\n   
+    PUSH, __230_local_var_SystemBoolean\r\n    COPY\r\n    PUSH, __224_local_var_SystemObject\r\n   
+    PUSH, __230_local_var_SystemBoolean\r\n    EXTERN, \"VRCSDKBaseUtilities.__IsValid__SystemObject__SystemBoolean\"\r\n   
+    PUSH, __230_local_var_SystemBoolean\r\n    JUMP_IF_FALSE, 0x000019FC\r\n    PUSH,
+    __224_local_var_SystemObject\r\n    PUSH, __231_ref_SystemBoolean\r\n    EXTERN,
+    \"UnityEngineCollider.__set_enabled__SystemBoolean__SystemVoid\"\r\n    JUMP,
+    0x00001918\r\n    PUSH, __0_ra_SystemUInt32\r\n    COPY\r\n    JUMP_INDIRECT,
+    __0_ra_SystemUInt32\r\n\r\n.code_end\r\n"
+  assemblyError: 
+  triggerHash: F63A06D1DDEFC07059302F2FE6D17DCF
+  shouldBeNetworked: 0
+  warningMessages: []
+  errorMessages: []
+  ctDataInstance:
+    version: 6
+    updateOrder: 0
+    autoSetSyncMode: 1
+    programSyncMode: 0
+    programName: 
+    events:
+    - name: 
+      eventId: ade02daa-9b8f-48ef-8ed2-e349c529b152
+      eventInstance:
+        actionType:
+          directEvent: Event_OnPlayerJoined
+          guid: 
+        inputs: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      actionInstances:
+      - actionType:
+          directEvent: CyanTriggerSpecial_If
+          guid: 
+        inputs: []
+        multiInput: []
+        expanded: 1
+        comment:
+          comment: 
+      - actionType:
+          directEvent: CyanTriggerSpecial_Condition
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: globalAudio
+          variableID: 2e8b3bb6-3873-40a6-b19a-5b39d1dca2b7
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBDgAAAGMAbwBuAGQAaQB0AGkAbwBuAF8AYgBvAG8AbAAF
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: CyanTriggerSpecial_BlockEnd
+          guid: 
+        inputs: []
+        multiInput: []
+        expanded: 1
+        comment:
+          comment: 
+      - actionType:
+          directEvent: CyanTriggerSpecial_ConditionBody
+          guid: 
+        inputs: []
+        multiInput: []
+        expanded: 1
+        comment:
+          comment: 
+      - actionType:
+          directEvent: VRCUdonCommonInterfacesIUdonEventReceiver.__SendCustomEvent__SystemString__SystemVoid
+          guid: 
+        inputs:
+        - isVariable: 0
+          name: 
+          variableID: 
+          data:
+            objEncoded: 
+            unityObjects: []
+        - isVariable: 0
+          name: 
+          variableID: 
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBDwAAAF8AUwBlAHQAUABsAGEAeQBlAHIAQQB1AGQAaQBvAAU=
+            unityObjects: []
+        - isVariable: 0
+          name: 
+          variableID: 
+          data:
+            objEncoded: Ai8AAAAAATEAAABDAHkAYQBuAC4AQwBUAC4AQwB5AGEAbgBUAHIAaQBnAGcAZQByAEUAdgBlAG4AdABBAHIAZwBEAGEAdABhACwAIABDAHkAYQBuAC4AQwB5AGEAbgBUAHIAaQBnAGcAZQByAAAAAAAnAQkAAABlAHYAZQBuAHQATgBhAG0AZQABDwAAAF8AUwBlAHQAUABsAGEAeQBlAHIAQQB1AGQAaQBvAAEBDQAAAHYAYQByAGkAYQBiAGwAZQBOAGEAbQBlAHMALwEAAAABGQAAAFMAeQBzAHQAZQBtAC4AUwB0AHIAaQBuAGcAWwBdACwAIABtAHMAYwBvAHIAbABpAGIAAQAAAAYBAAAAAAAAACgBBgAAAHAAbABhAHkAZQByAAcFAQERAAAAdgBhAHIAaQBhAGIAbABlAFUAZABvAG4ATgBhAG0AZQBzADABAAAAAgAAAAYBAAAAAAAAACgBGwAAAF8AYQByAGcAXwBwAGwAYQB5AGUAcgBfAF8AUwBlAHQAUABsAGEAeQBlAHIAQQB1AGQAaQBvAAcFAQEMAAAAdgBhAHIAaQBhAGIAbABlAE8AdQB0AHMALwIAAAABGgAAAFMAeQBzAHQAZQBtAC4AQgBvAG8AbABlAGEAbgBbAF0ALAAgAG0AcwBjAG8AcgBsAGkAYgADAAAACAEAAAABAAAAAAUBAQ0AAAB2AGEAcgBpAGEAYgBsAGUAVAB5AHAAZQBzAC8DAAAAARcAAABTAHkAcwB0AGUAbQAuAFQAeQBwAGUAWwBdACwAIABtAHMAYwBvAHIAbABpAGIABAAAAAYBAAAAAAAAAAIvBAAAAAEcAAAAUwB5AHMAdABlAG0ALgBSAHUAbgB0AGkAbQBlAFQAeQBwAGUALAAgAG0AcwBjAG8AcgBsAGkAYgAFAAAAKAEkAAAAVgBSAEMALgBTAEQASwBCAGEAcwBlAC4AVgBSAEMAUABsAGEAeQBlAHIAQQBwAGkALAAgAFYAUgBDAFMARABLAEIAYQBzAGUABQcFBQ==
+            unityObjects: []
+        - isVariable: 1
+          name: onPlayerJoinedPlayer
+          variableID: 
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        multiInput:
+        - isVariable: 1
+          name: This UdonBehaviour
+          variableID: _this_udonbehaviour
+          data:
+            objEncoded: 
+            unityObjects: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: CyanTriggerSpecial_BlockEnd
+          guid: 
+        inputs: []
+        multiInput: []
+        expanded: 1
+        comment:
+          comment: 
+      - actionType:
+          directEvent: CyanTriggerSpecial_BlockEnd
+          guid: 
+        inputs: []
+        multiInput: []
+        expanded: 1
+        comment:
+          comment: 
+      eventOptions:
+        userGate: 0
+        userGateExtraData: []
+        broadcast: 0
+        delay: 0
+        replay: 0
+      expanded: 1
+    - name: 
+      eventId: c6858bd9-8c27-4101-b71d-56156d912abb
+      eventInstance:
+        actionType:
+          directEvent: Event_OnPlayerTriggerEnter
+          guid: 
+        inputs: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      actionInstances:
+      - actionType:
+          directEvent: CyanTriggerSpecial_If
+          guid: 
+        inputs: []
+        multiInput: []
+        expanded: 1
+        comment:
+          comment: 
+      - actionType:
+          directEvent: CyanTriggerSpecial_Condition
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: 
+          variableID: 0e58bd64-3175-4d04-8519-47d3bf7056b5
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBCQAAAG4AbwB0AEcAbABvAGIAYQBsAAU=
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: SystemBoolean.__op_UnaryNegation__SystemBoolean__SystemBoolean
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: globalAudio
+          variableID: 2e8b3bb6-3873-40a6-b19a-5b39d1dca2b7
+          data:
+            objEncoded: Ai8AAAAAARgAAABTAHkAcwB0AGUAbQAuAEIAbwBvAGwAZQBhAG4ALAAgAG0AcwBjAG8AcgBsAGkAYgAAAAAALAAF
+            unityObjects: []
+        - isVariable: 1
+          name: notGlobal
+          variableID: 0e58bd64-3175-4d04-8519-47d3bf7056b5
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: CyanTriggerSpecial_BlockEnd
+          guid: 
+        inputs: []
+        multiInput: []
+        expanded: 1
+        comment:
+          comment: 
+      - actionType:
+          directEvent: CyanTriggerSpecial_ConditionBody
+          guid: 
+        inputs: []
+        multiInput: []
+        expanded: 1
+        comment:
+          comment: 
+      - actionType:
+          directEvent: VRCUdonCommonInterfacesIUdonEventReceiver.__SendCustomEvent__SystemString__SystemVoid
+          guid: 
+        inputs:
+        - isVariable: 0
+          name: 
+          variableID: 
+          data:
+            objEncoded: 
+            unityObjects: []
+        - isVariable: 0
+          name: 
+          variableID: 
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBDwAAAF8AUwBlAHQAUABsAGEAeQBlAHIAQQB1AGQAaQBvAAU=
+            unityObjects: []
+        - isVariable: 0
+          name: 
+          variableID: 
+          data:
+            objEncoded: Ai8AAAAAATEAAABDAHkAYQBuAC4AQwBUAC4AQwB5AGEAbgBUAHIAaQBnAGcAZQByAEUAdgBlAG4AdABBAHIAZwBEAGEAdABhACwAIABDAHkAYQBuAC4AQwB5AGEAbgBUAHIAaQBnAGcAZQByAAAAAAAnAQkAAABlAHYAZQBuAHQATgBhAG0AZQABDwAAAF8AUwBlAHQAUABsAGEAeQBlAHIAQQB1AGQAaQBvAAEBDQAAAHYAYQByAGkAYQBiAGwAZQBOAGEAbQBlAHMALwEAAAABGQAAAFMAeQBzAHQAZQBtAC4AUwB0AHIAaQBuAGcAWwBdACwAIABtAHMAYwBvAHIAbABpAGIAAQAAAAYBAAAAAAAAACgBBgAAAHAAbABhAHkAZQByAAcFAQERAAAAdgBhAHIAaQBhAGIAbABlAFUAZABvAG4ATgBhAG0AZQBzADABAAAAAgAAAAYBAAAAAAAAACgBGwAAAF8AYQByAGcAXwBwAGwAYQB5AGUAcgBfAF8AUwBlAHQAUABsAGEAeQBlAHIAQQB1AGQAaQBvAAcFAQEMAAAAdgBhAHIAaQBhAGIAbABlAE8AdQB0AHMALwIAAAABGgAAAFMAeQBzAHQAZQBtAC4AQgBvAG8AbABlAGEAbgBbAF0ALAAgAG0AcwBjAG8AcgBsAGkAYgADAAAACAEAAAABAAAAAAUBAQ0AAAB2AGEAcgBpAGEAYgBsAGUAVAB5AHAAZQBzAC8DAAAAARcAAABTAHkAcwB0AGUAbQAuAFQAeQBwAGUAWwBdACwAIABtAHMAYwBvAHIAbABpAGIABAAAAAYBAAAAAAAAAAIvBAAAAAEcAAAAUwB5AHMAdABlAG0ALgBSAHUAbgB0AGkAbQBlAFQAeQBwAGUALAAgAG0AcwBjAG8AcgBsAGkAYgAFAAAAKAEkAAAAVgBSAEMALgBTAEQASwBCAGEAcwBlAC4AVgBSAEMAUABsAGEAeQBlAHIAQQBwAGkALAAgAFYAUgBDAFMARABLAEIAYQBzAGUABQcFBQ==
+            unityObjects: []
+        - isVariable: 1
+          name: onPlayerTriggerEnterPlayer
+          variableID: 
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        multiInput:
+        - isVariable: 1
+          name: This UdonBehaviour
+          variableID: _this_udonbehaviour
+          data:
+            objEncoded: 
+            unityObjects: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: CyanTriggerSpecial_BlockEnd
+          guid: 
+        inputs: []
+        multiInput: []
+        expanded: 1
+        comment:
+          comment: 
+      - actionType:
+          directEvent: CyanTriggerSpecial_BlockEnd
+          guid: 
+        inputs: []
+        multiInput: []
+        expanded: 1
+        comment:
+          comment: 
+      eventOptions:
+        userGate: 0
+        userGateExtraData: []
+        broadcast: 0
+        delay: 0
+        replay: 0
+      expanded: 1
+    - name: 
+      eventId: cee4a90e-1222-4a87-b38c-c3923449943d
+      eventInstance:
+        actionType:
+          directEvent: Event_OnPlayerTriggerExit
+          guid: 
+        inputs: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      actionInstances:
+      - actionType:
+          directEvent: CyanTriggerSpecial_If
+          guid: 
+        inputs: []
+        multiInput: []
+        expanded: 1
+        comment:
+          comment: 
+      - actionType:
+          directEvent: CyanTriggerSpecial_Condition
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: 
+          variableID: 0a2a1d8d-8d14-49f7-8442-96f0e63224fa
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBCQAAAG4AbwB0AEcAbABvAGIAYQBsAAU=
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: SystemBoolean.__op_UnaryNegation__SystemBoolean__SystemBoolean
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: globalAudio
+          variableID: 2e8b3bb6-3873-40a6-b19a-5b39d1dca2b7
+          data:
+            objEncoded: Ai8AAAAAARgAAABTAHkAcwB0AGUAbQAuAEIAbwBvAGwAZQBhAG4ALAAgAG0AcwBjAG8AcgBsAGkAYgAAAAAALAAF
+            unityObjects: []
+        - isVariable: 1
+          name: notGlobal
+          variableID: 0a2a1d8d-8d14-49f7-8442-96f0e63224fa
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: CyanTriggerSpecial_BlockEnd
+          guid: 
+        inputs: []
+        multiInput: []
+        expanded: 1
+        comment:
+          comment: 
+      - actionType:
+          directEvent: CyanTriggerSpecial_ConditionBody
+          guid: 
+        inputs: []
+        multiInput: []
+        expanded: 1
+        comment:
+          comment: 
+      - actionType:
+          directEvent: 
+          guid: 3223dc45-09c7-4f6e-b01f-a30e1b300771
+        inputs:
+        - isVariable: 1
+          name: _dataCacheKey
+          variableID: 9db1a3dd-6f54-4d72-aa59-57b1e00411e3
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBAAAAAAU=
+            unityObjects: []
+        - isVariable: 1
+          name: 
+          variableID: 01c506b0-24de-47ca-b805-0e2071c3659c
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBBAAAAHUAZABvAG4ABQ==
+            unityObjects: []
+        - isVariable: 1
+          name: 
+          variableID: b8bba7c1-d51c-47ef-aa81-e91f72d2ccc2
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBCAAAAGgAYQBzAFYAYQBsAHUAZQAF
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: CyanTriggerSpecial_If
+          guid: 
+        inputs: []
+        multiInput: []
+        expanded: 1
+        comment:
+          comment: 
+      - actionType:
+          directEvent: CyanTriggerSpecial_Condition
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: hasValue
+          variableID: b8bba7c1-d51c-47ef-aa81-e91f72d2ccc2
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBDgAAAGMAbwBuAGQAaQB0AGkAbwBuAF8AYgBvAG8AbAAF
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: CyanTriggerSpecial_BlockEnd
+          guid: 
+        inputs: []
+        multiInput: []
+        expanded: 1
+        comment:
+          comment: 
+      - actionType:
+          directEvent: CyanTriggerSpecial_ConditionBody
+          guid: 
+        inputs: []
+        multiInput: []
+        expanded: 1
+        comment:
+          comment: 
+      - actionType:
+          directEvent: VRCUdonCommonInterfacesIUdonEventReceiver.__SendCustomEvent__SystemString__SystemVoid
+          guid: 
+        inputs:
+        - isVariable: 0
+          name: 
+          variableID: 
+          data:
+            objEncoded: 
+            unityObjects: []
+        - isVariable: 0
+          name: 
+          variableID: 
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBDwAAAF8AUwBlAHQAUABsAGEAeQBlAHIAQQB1AGQAaQBvAAU=
+            unityObjects: []
+        - isVariable: 0
+          name: 
+          variableID: 
+          data:
+            objEncoded: Ai8AAAAAATEAAABDAHkAYQBuAC4AQwBUAC4AQwB5AGEAbgBUAHIAaQBnAGcAZQByAEUAdgBlAG4AdABBAHIAZwBEAGEAdABhACwAIABDAHkAYQBuAC4AQwB5AGEAbgBUAHIAaQBnAGcAZQByAAAAAAAnAQkAAABlAHYAZQBuAHQATgBhAG0AZQABDwAAAF8AUwBlAHQAUABsAGEAeQBlAHIAQQB1AGQAaQBvAAEBDQAAAHYAYQByAGkAYQBiAGwAZQBOAGEAbQBlAHMALwEAAAABGQAAAFMAeQBzAHQAZQBtAC4AUwB0AHIAaQBuAGcAWwBdACwAIABtAHMAYwBvAHIAbABpAGIAAQAAAAYBAAAAAAAAACgBBgAAAHAAbABhAHkAZQByAAcFAQERAAAAdgBhAHIAaQBhAGIAbABlAFUAZABvAG4ATgBhAG0AZQBzADABAAAAAgAAAAYBAAAAAAAAACgBGwAAAF8AYQByAGcAXwBwAGwAYQB5AGUAcgBfAF8AUwBlAHQAUABsAGEAeQBlAHIAQQB1AGQAaQBvAAcFAQEMAAAAdgBhAHIAaQBhAGIAbABlAE8AdQB0AHMALwIAAAABGgAAAFMAeQBzAHQAZQBtAC4AQgBvAG8AbABlAGEAbgBbAF0ALAAgAG0AcwBjAG8AcgBsAGkAYgADAAAACAEAAAABAAAAAAUBAQ0AAAB2AGEAcgBpAGEAYgBsAGUAVAB5AHAAZQBzAC8DAAAAARcAAABTAHkAcwB0AGUAbQAuAFQAeQBwAGUAWwBdACwAIABtAHMAYwBvAHIAbABpAGIABAAAAAYBAAAAAAAAAAIvBAAAAAEcAAAAUwB5AHMAdABlAG0ALgBSAHUAbgB0AGkAbQBlAFQAeQBwAGUALAAgAG0AcwBjAG8AcgBsAGkAYgAFAAAAKAEkAAAAVgBSAEMALgBTAEQASwBCAGEAcwBlAC4AVgBSAEMAUABsAGEAeQBlAHIAQQBwAGkALAAgAFYAUgBDAFMARABLAEIAYQBzAGUABQcFBQ==
+            unityObjects: []
+        - isVariable: 1
+          name: onPlayerTriggerExitPlayer
+          variableID: 
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        multiInput:
+        - isVariable: 1
+          name: udon
+          variableID: 01c506b0-24de-47ca-b805-0e2071c3659c
+          data:
+            objEncoded: 
+            unityObjects: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: CyanTriggerSpecial_BlockEnd
+          guid: 
+        inputs: []
+        multiInput: []
+        expanded: 1
+        comment:
+          comment: 
+      - actionType:
+          directEvent: CyanTriggerSpecial_BlockEnd
+          guid: 
+        inputs: []
+        multiInput: []
+        expanded: 1
+        comment:
+          comment: 
+      - actionType:
+          directEvent: CyanTriggerSpecial_Else
+          guid: 
+        inputs: []
+        multiInput: []
+        expanded: 1
+        comment:
+          comment: 
+      - actionType:
+          directEvent: VRCUdonCommonInterfacesIUdonEventReceiver.__SendCustomEvent__SystemString__SystemVoid
+          guid: 
+        inputs:
+        - isVariable: 0
+          name: 
+          variableID: 
+          data:
+            objEncoded: 
+            unityObjects: []
+        - isVariable: 0
+          name: 
+          variableID: 
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBEgAAAF8AQQBwAHAAbAB5AEQAZQBmAGEAdQBsAHQAQQB1AGQAaQBvAAU=
+            unityObjects: []
+        - isVariable: 0
+          name: 
+          variableID: 
+          data:
+            objEncoded: Ai8AAAAAATEAAABDAHkAYQBuAC4AQwBUAC4AQwB5AGEAbgBUAHIAaQBnAGcAZQByAEUAdgBlAG4AdABBAHIAZwBEAGEAdABhACwAIABDAHkAYQBuAC4AQwB5AGEAbgBUAHIAaQBnAGcAZQByAAAAAAAnAQkAAABlAHYAZQBuAHQATgBhAG0AZQABEgAAAF8AQQBwAHAAbAB5AEQAZQBmAGEAdQBsAHQAQQB1AGQAaQBvAAEBDQAAAHYAYQByAGkAYQBiAGwAZQBOAGEAbQBlAHMALwEAAAABGQAAAFMAeQBzAHQAZQBtAC4AUwB0AHIAaQBuAGcAWwBdACwAIABtAHMAYwBvAHIAbABpAGIAAQAAAAYBAAAAAAAAACgBBgAAAHAAbABhAHkAZQByAAcFAQERAAAAdgBhAHIAaQBhAGIAbABlAFUAZABvAG4ATgBhAG0AZQBzADABAAAAAgAAAAYBAAAAAAAAACgBHgAAAF8AYQByAGcAXwBwAGwAYQB5AGUAcgBfAF8AQQBwAHAAbAB5AEQAZQBmAGEAdQBsAHQAQQB1AGQAaQBvAAcFAQEMAAAAdgBhAHIAaQBhAGIAbABlAE8AdQB0AHMALwIAAAABGgAAAFMAeQBzAHQAZQBtAC4AQgBvAG8AbABlAGEAbgBbAF0ALAAgAG0AcwBjAG8AcgBsAGkAYgADAAAACAEAAAABAAAAAAUBAQ0AAAB2AGEAcgBpAGEAYgBsAGUAVAB5AHAAZQBzAC8DAAAAARcAAABTAHkAcwB0AGUAbQAuAFQAeQBwAGUAWwBdACwAIABtAHMAYwBvAHIAbABpAGIABAAAAAYBAAAAAAAAAAIvBAAAAAEcAAAAUwB5AHMAdABlAG0ALgBSAHUAbgB0AGkAbQBlAFQAeQBwAGUALAAgAG0AcwBjAG8AcgBsAGkAYgAFAAAAKAEkAAAAVgBSAEMALgBTAEQASwBCAGEAcwBlAC4AVgBSAEMAUABsAGEAeQBlAHIAQQBwAGkALAAgAFYAUgBDAFMARABLAEIAYQBzAGUABQcFBQ==
+            unityObjects: []
+        - isVariable: 1
+          name: onPlayerTriggerExitPlayer
+          variableID: 
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        multiInput:
+        - isVariable: 1
+          name: This UdonBehaviour
+          variableID: _this_udonbehaviour
+          data:
+            objEncoded: 
+            unityObjects: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: CyanTriggerSpecial_BlockEnd
+          guid: 
+        inputs: []
+        multiInput: []
+        expanded: 1
+        comment:
+          comment: 
+      - actionType:
+          directEvent: CyanTriggerSpecial_BlockEnd
+          guid: 
+        inputs: []
+        multiInput: []
+        expanded: 1
+        comment:
+          comment: 
+      - actionType:
+          directEvent: CyanTriggerSpecial_BlockEnd
+          guid: 
+        inputs: []
+        multiInput: []
+        expanded: 1
+        comment:
+          comment: 
+      eventOptions:
+        userGate: 0
+        userGateExtraData: []
+        broadcast: 0
+        delay: 0
+        replay: 0
+      expanded: 1
+    - name: _SetPlayerAudio
+      eventId: a4125054-ced1-4508-aa56-89cc6ef1499f
+      eventInstance:
+        actionType:
+          directEvent: Event_Custom
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: 
+          variableID: 
+          data:
+            objEncoded: 
+            unityObjects: []
+        multiInput:
+        - isVariable: 1
+          name: player
+          variableID: 98299283-506c-499d-b16f-edaac341783f
+          data:
+            objEncoded: Ai8AAAAAARwAAABTAHkAcwB0AGUAbQAuAFIAdQBuAHQAaQBtAGUAVAB5AHAAZQAsACAAbQBzAGMAbwByAGwAaQBiAAAAAAAoASQAAABWAFIAQwAuAFMARABLAEIAYQBzAGUALgBWAFIAQwBQAGwAYQB5AGUAcgBBAHAAaQAsACAAVgBSAEMAUwBEAEsAQgBhAHMAZQAF
+            unityObjects: []
+        expanded: 1
+        comment:
+          comment: 
+      actionInstances:
+      - actionType:
+          directEvent: VRCSDKBaseVRCPlayerApi.__SetVoiceGain__SystemSingle__SystemVoid
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: null
+          variableID: __null
+          data:
+            objEncoded: 
+            unityObjects: []
+        - isVariable: 1
+          name: voiceGain
+          variableID: e9a24334-6c2c-48cd-9cde-fb3a3424b6f1
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAaQBuAGcAbABlACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACAAAAAABQ==
+            unityObjects: []
+        multiInput:
+        - isVariable: 1
+          name: player
+          variableID: 98299283-506c-499d-b16f-edaac341783f
+          data:
+            objEncoded: 
+            unityObjects: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: VRCSDKBaseVRCPlayerApi.__SetVoiceDistanceFar__SystemSingle__SystemVoid
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: null
+          variableID: __null
+          data:
+            objEncoded: 
+            unityObjects: []
+        - isVariable: 1
+          name: voiceFar
+          variableID: 8ce20773-1cfb-4a77-a8f3-53ad022cfc3a
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAaQBuAGcAbABlACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACAAAAAABQ==
+            unityObjects: []
+        multiInput:
+        - isVariable: 1
+          name: player
+          variableID: 98299283-506c-499d-b16f-edaac341783f
+          data:
+            objEncoded: 
+            unityObjects: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: VRCSDKBaseVRCPlayerApi.__SetVoiceDistanceNear__SystemSingle__SystemVoid
+          guid: 
+        inputs:
+        - isVariable: 0
+          name: 
+          variableID: 
+          data:
+            objEncoded: 
+            unityObjects: []
+        - isVariable: 1
+          name: voiceNear
+          variableID: a633cbc7-2289-4d00-a95c-e4d4e425ca83
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAaQBuAGcAbABlACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACAAAAAABQ==
+            unityObjects: []
+        multiInput:
+        - isVariable: 1
+          name: player
+          variableID: 98299283-506c-499d-b16f-edaac341783f
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: VRCSDKBaseVRCPlayerApi.__SetVoiceVolumetricRadius__SystemSingle__SystemVoid
+          guid: 
+        inputs:
+        - isVariable: 0
+          name: 
+          variableID: 
+          data:
+            objEncoded: 
+            unityObjects: []
+        - isVariable: 1
+          name: voiceVolumetric
+          variableID: 11ec1820-3566-4e39-8c7a-71e512c62ad7
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAaQBuAGcAbABlACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACAAAAAABQ==
+            unityObjects: []
+        multiInput:
+        - isVariable: 1
+          name: player
+          variableID: 98299283-506c-499d-b16f-edaac341783f
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: VRCSDKBaseVRCPlayerApi.__SetVoiceLowpass__SystemBoolean__SystemVoid
+          guid: 
+        inputs:
+        - isVariable: 0
+          name: 
+          variableID: 
+          data:
+            objEncoded: 
+            unityObjects: []
+        - isVariable: 1
+          name: voiceLowpass
+          variableID: 1af1e734-8320-42ed-8357-6d460d708863
+          data:
+            objEncoded: Ai8AAAAAARgAAABTAHkAcwB0AGUAbQAuAEIAbwBvAGwAZQBhAG4ALAAgAG0AcwBjAG8AcgBsAGkAYgAAAAAALAAF
+            unityObjects: []
+        multiInput:
+        - isVariable: 1
+          name: player
+          variableID: 98299283-506c-499d-b16f-edaac341783f
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: VRCSDKBaseVRCPlayerApi.__SetAvatarAudioCustomCurve__SystemBoolean__SystemVoid
+          guid: 
+        inputs:
+        - isVariable: 0
+          name: 
+          variableID: 
+          data:
+            objEncoded: 
+            unityObjects: []
+        - isVariable: 1
+          name: customCurveAvatar
+          variableID: 3dca6a71-63de-49ef-be4a-9b5e89569035
+          data:
+            objEncoded: Ai8AAAAAARgAAABTAHkAcwB0AGUAbQAuAEIAbwBvAGwAZQBhAG4ALAAgAG0AcwBjAG8AcgBsAGkAYgAAAAAALAAF
+            unityObjects: []
+        multiInput:
+        - isVariable: 1
+          name: player
+          variableID: 98299283-506c-499d-b16f-edaac341783f
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: VRCSDKBaseVRCPlayerApi.__SetAvatarAudioFarRadius__SystemSingle__SystemVoid
+          guid: 
+        inputs:
+        - isVariable: 0
+          name: 
+          variableID: 
+          data:
+            objEncoded: 
+            unityObjects: []
+        - isVariable: 1
+          name: farAvatar
+          variableID: cc58939d-bfcd-4b5e-932d-960f2db656dc
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAaQBuAGcAbABlACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACAAAAAABQ==
+            unityObjects: []
+        multiInput:
+        - isVariable: 1
+          name: player
+          variableID: 98299283-506c-499d-b16f-edaac341783f
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: VRCSDKBaseVRCPlayerApi.__SetAvatarAudioForceSpatial__SystemBoolean__SystemVoid
+          guid: 
+        inputs:
+        - isVariable: 0
+          name: 
+          variableID: 
+          data:
+            objEncoded: 
+            unityObjects: []
+        - isVariable: 1
+          name: forceSpatialAvatar
+          variableID: c3007119-66bc-4c3c-971f-3d415426c963
+          data:
+            objEncoded: Ai8AAAAAARgAAABTAHkAcwB0AGUAbQAuAEIAbwBvAGwAZQBhAG4ALAAgAG0AcwBjAG8AcgBsAGkAYgAAAAAALAAF
+            unityObjects: []
+        multiInput:
+        - isVariable: 1
+          name: player
+          variableID: 98299283-506c-499d-b16f-edaac341783f
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: VRCSDKBaseVRCPlayerApi.__SetAvatarAudioGain__SystemSingle__SystemVoid
+          guid: 
+        inputs:
+        - isVariable: 0
+          name: 
+          variableID: 
+          data:
+            objEncoded: 
+            unityObjects: []
+        - isVariable: 1
+          name: gainAvatar
+          variableID: 5449d10f-9074-44e2-9d27-e137d4909f02
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAaQBuAGcAbABlACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACAAAAAABQ==
+            unityObjects: []
+        multiInput:
+        - isVariable: 1
+          name: player
+          variableID: 98299283-506c-499d-b16f-edaac341783f
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: VRCSDKBaseVRCPlayerApi.__SetAvatarAudioNearRadius__SystemSingle__SystemVoid
+          guid: 
+        inputs:
+        - isVariable: 0
+          name: 
+          variableID: 
+          data:
+            objEncoded: 
+            unityObjects: []
+        - isVariable: 1
+          name: nearAvatar
+          variableID: 93c9ec70-f47c-4151-8638-f7be93e02ccf
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAaQBuAGcAbABlACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACAAAAAABQ==
+            unityObjects: []
+        multiInput:
+        - isVariable: 1
+          name: player
+          variableID: 98299283-506c-499d-b16f-edaac341783f
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: VRCSDKBaseVRCPlayerApi.__SetAvatarAudioVolumetricRadius__SystemSingle__SystemVoid
+          guid: 
+        inputs:
+        - isVariable: 0
+          name: 
+          variableID: 
+          data:
+            objEncoded: 
+            unityObjects: []
+        - isVariable: 1
+          name: volumetricRadiusAvatar
+          variableID: dcce73f4-0094-4562-a134-8590adc1619b
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAaQBuAGcAbABlACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACAAAAAABQ==
+            unityObjects: []
+        multiInput:
+        - isVariable: 1
+          name: player
+          variableID: 98299283-506c-499d-b16f-edaac341783f
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        expanded: 0
+        comment:
+          comment: 
+      eventOptions:
+        userGate: 0
+        userGateExtraData: []
+        broadcast: 0
+        delay: 0
+        replay: 0
+      expanded: 1
+    - name: _ApplyDefaultAudio
+      eventId: d75b8971-7e28-4d5a-95e1-3939f66ae7cc
+      eventInstance:
+        actionType:
+          directEvent: Event_Custom
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: 
+          variableID: 
+          data:
+            objEncoded: 
+            unityObjects: []
+        multiInput:
+        - isVariable: 1
+          name: player
+          variableID: 34a4586c-7073-47f3-811e-08034f0fa22f
+          data:
+            objEncoded: Ai8AAAAAARwAAABTAHkAcwB0AGUAbQAuAFIAdQBuAHQAaQBtAGUAVAB5AHAAZQAsACAAbQBzAGMAbwByAGwAaQBiAAAAAAAoASQAAABWAFIAQwAuAFMARABLAEIAYQBzAGUALgBWAFIAQwBQAGwAYQB5AGUAcgBBAHAAaQAsACAAVgBSAEMAUwBEAEsAQgBhAHMAZQAF
+            unityObjects: []
+        expanded: 1
+        comment:
+          comment: 
+      actionInstances:
+      - actionType:
+          directEvent: VRCSDKBaseVRCPlayerApi.__SetVoiceGain__SystemSingle__SystemVoid
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: null
+          variableID: __null
+          data:
+            objEncoded: 
+            unityObjects: []
+        - isVariable: 0
+          name: voiceGain
+          variableID: e9a24334-6c2c-48cd-9cde-fb3a3424b6f1
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAaQBuAGcAbABlACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACAAAHBBBQ==
+            unityObjects: []
+        multiInput:
+        - isVariable: 1
+          name: player
+          variableID: 34a4586c-7073-47f3-811e-08034f0fa22f
+          data:
+            objEncoded: 
+            unityObjects: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: VRCSDKBaseVRCPlayerApi.__SetVoiceDistanceFar__SystemSingle__SystemVoid
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: null
+          variableID: __null
+          data:
+            objEncoded: 
+            unityObjects: []
+        - isVariable: 0
+          name: voiceFar
+          variableID: 8ce20773-1cfb-4a77-a8f3-53ad022cfc3a
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAaQBuAGcAbABlACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACAAAMhBBQ==
+            unityObjects: []
+        multiInput:
+        - isVariable: 1
+          name: player
+          variableID: 34a4586c-7073-47f3-811e-08034f0fa22f
+          data:
+            objEncoded: 
+            unityObjects: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: VRCSDKBaseVRCPlayerApi.__SetVoiceDistanceNear__SystemSingle__SystemVoid
+          guid: 
+        inputs:
+        - isVariable: 0
+          name: 
+          variableID: 
+          data:
+            objEncoded: 
+            unityObjects: []
+        - isVariable: 0
+          name: voiceNear
+          variableID: a633cbc7-2289-4d00-a95c-e4d4e425ca83
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAaQBuAGcAbABlACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACAAAAAABQ==
+            unityObjects: []
+        multiInput:
+        - isVariable: 1
+          name: player
+          variableID: 34a4586c-7073-47f3-811e-08034f0fa22f
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: VRCSDKBaseVRCPlayerApi.__SetVoiceVolumetricRadius__SystemSingle__SystemVoid
+          guid: 
+        inputs:
+        - isVariable: 0
+          name: 
+          variableID: 
+          data:
+            objEncoded: 
+            unityObjects: []
+        - isVariable: 0
+          name: voiceVolumetric
+          variableID: 11ec1820-3566-4e39-8c7a-71e512c62ad7
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAaQBuAGcAbABlACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACAAAAAABQ==
+            unityObjects: []
+        multiInput:
+        - isVariable: 1
+          name: player
+          variableID: 34a4586c-7073-47f3-811e-08034f0fa22f
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: VRCSDKBaseVRCPlayerApi.__SetVoiceLowpass__SystemBoolean__SystemVoid
+          guid: 
+        inputs:
+        - isVariable: 0
+          name: 
+          variableID: 
+          data:
+            objEncoded: 
+            unityObjects: []
+        - isVariable: 0
+          name: voiceLowpass
+          variableID: 1af1e734-8320-42ed-8357-6d460d708863
+          data:
+            objEncoded: Ai8AAAAAARgAAABTAHkAcwB0AGUAbQAuAEIAbwBvAGwAZQBhAG4ALAAgAG0AcwBjAG8AcgBsAGkAYgAAAAAALAEF
+            unityObjects: []
+        multiInput:
+        - isVariable: 1
+          name: player
+          variableID: 34a4586c-7073-47f3-811e-08034f0fa22f
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: VRCSDKBaseVRCPlayerApi.__SetAvatarAudioGain__SystemSingle__SystemVoid
+          guid: 
+        inputs:
+        - isVariable: 0
+          name: 
+          variableID: 
+          data:
+            objEncoded: 
+            unityObjects: []
+        - isVariable: 0
+          name: gainAvatar
+          variableID: 5449d10f-9074-44e2-9d27-e137d4909f02
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAaQBuAGcAbABlACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACAAACBBBQ==
+            unityObjects: []
+        multiInput:
+        - isVariable: 1
+          name: player
+          variableID: 34a4586c-7073-47f3-811e-08034f0fa22f
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: VRCSDKBaseVRCPlayerApi.__SetAvatarAudioFarRadius__SystemSingle__SystemVoid
+          guid: 
+        inputs:
+        - isVariable: 0
+          name: 
+          variableID: 
+          data:
+            objEncoded: 
+            unityObjects: []
+        - isVariable: 0
+          name: farAvatar
+          variableID: cc58939d-bfcd-4b5e-932d-960f2db656dc
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAaQBuAGcAbABlACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACAAACBCBQ==
+            unityObjects: []
+        multiInput:
+        - isVariable: 1
+          name: player
+          variableID: 34a4586c-7073-47f3-811e-08034f0fa22f
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: VRCSDKBaseVRCPlayerApi.__SetAvatarAudioNearRadius__SystemSingle__SystemVoid
+          guid: 
+        inputs:
+        - isVariable: 0
+          name: 
+          variableID: 
+          data:
+            objEncoded: 
+            unityObjects: []
+        - isVariable: 0
+          name: nearAvatar
+          variableID: 93c9ec70-f47c-4151-8638-f7be93e02ccf
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAaQBuAGcAbABlACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACAAACBCBQ==
+            unityObjects: []
+        multiInput:
+        - isVariable: 1
+          name: player
+          variableID: 34a4586c-7073-47f3-811e-08034f0fa22f
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: VRCSDKBaseVRCPlayerApi.__SetAvatarAudioVolumetricRadius__SystemSingle__SystemVoid
+          guid: 
+        inputs:
+        - isVariable: 0
+          name: 
+          variableID: 
+          data:
+            objEncoded: 
+            unityObjects: []
+        - isVariable: 0
+          name: volumetricRadiusAvatar
+          variableID: dcce73f4-0094-4562-a134-8590adc1619b
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAaQBuAGcAbABlACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACAAACBCBQ==
+            unityObjects: []
+        multiInput:
+        - isVariable: 1
+          name: player
+          variableID: 34a4586c-7073-47f3-811e-08034f0fa22f
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: VRCSDKBaseVRCPlayerApi.__SetAvatarAudioCustomCurve__SystemBoolean__SystemVoid
+          guid: 
+        inputs:
+        - isVariable: 0
+          name: 
+          variableID: 
+          data:
+            objEncoded: 
+            unityObjects: []
+        - isVariable: 0
+          name: customCurveAvatar
+          variableID: 3dca6a71-63de-49ef-be4a-9b5e89569035
+          data:
+            objEncoded: Ai8AAAAAARgAAABTAHkAcwB0AGUAbQAuAEIAbwBvAGwAZQBhAG4ALAAgAG0AcwBjAG8AcgBsAGkAYgAAAAAALAEF
+            unityObjects: []
+        multiInput:
+        - isVariable: 1
+          name: player
+          variableID: 34a4586c-7073-47f3-811e-08034f0fa22f
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: VRCSDKBaseVRCPlayerApi.__SetAvatarAudioForceSpatial__SystemBoolean__SystemVoid
+          guid: 
+        inputs:
+        - isVariable: 0
+          name: 
+          variableID: 
+          data:
+            objEncoded: 
+            unityObjects: []
+        - isVariable: 0
+          name: forceSpatialAvatar
+          variableID: c3007119-66bc-4c3c-971f-3d415426c963
+          data:
+            objEncoded: Ai8AAAAAARgAAABTAHkAcwB0AGUAbQAuAEIAbwBvAGwAZQBhAG4ALAAgAG0AcwBjAG8AcgBsAGkAYgAAAAAALAAF
+            unityObjects: []
+        multiInput:
+        - isVariable: 1
+          name: player
+          variableID: 34a4586c-7073-47f3-811e-08034f0fa22f
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        expanded: 0
+        comment:
+          comment: 
+      eventOptions:
+        userGate: 0
+        userGateExtraData: []
+        broadcast: 0
+        delay: 0
+        replay: 0
+      expanded: 1
+    - name: _Unnamed
+      eventId: 607f1d1a-3367-468d-aedd-9f1af12d8fab
+      eventInstance:
+        actionType:
+          directEvent: Event_Start
+          guid: 
+        inputs: []
+        multiInput: []
+        expanded: 1
+        comment:
+          comment: 
+      actionInstances:
+      - actionType:
+          directEvent: CyanTriggerSpecial_If
+          guid: 
+        inputs: []
+        multiInput: []
+        expanded: 1
+        comment:
+          comment: 
+      - actionType:
+          directEvent: CyanTriggerSpecial_Condition
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: globalAudio
+          variableID: 2e8b3bb6-3873-40a6-b19a-5b39d1dca2b7
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBDgAAAGMAbwBuAGQAaQB0AGkAbwBuAF8AYgBvAG8AbAAF
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: CyanTriggerSpecial_BlockEnd
+          guid: 
+        inputs: []
+        multiInput: []
+        expanded: 1
+        comment:
+          comment: 
+      - actionType:
+          directEvent: CyanTriggerSpecial_ConditionBody
+          guid: 
+        inputs: []
+        multiInput: []
+        expanded: 1
+        comment:
+          comment: 
+      - actionType:
+          directEvent: 
+          guid: 1abca34c-bde2-48c4-beda-7705a2330aad
+        inputs:
+        - isVariable: 1
+          name: _dataCacheKey
+          variableID: 9db1a3dd-6f54-4d72-aa59-57b1e00411e3
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBAAAAAAU=
+            unityObjects: []
+        - isVariable: 1
+          name: This UdonBehaviour
+          variableID: _this_udonbehaviour
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: CyanTriggerSpecial_BlockEnd
+          guid: 
+        inputs: []
+        multiInput: []
+        expanded: 1
+        comment:
+          comment: 
+      - actionType:
+          directEvent: CyanTriggerSpecial_BlockEnd
+          guid: 
+        inputs: []
+        multiInput: []
+        expanded: 1
+        comment:
+          comment: 
+      - actionType:
+          directEvent: CyanTriggerSpecial_Else
+          guid: 
+        inputs: []
+        multiInput: []
+        expanded: 1
+        comment:
+          comment: Not global audio. Modify player voices whenever a player enters
+            and exits the colliders on this object. To prevent an initialization
+            bug, all colliders on the object will be disabled and enabled a frame
+            later to force OnTriggerEnter
+      - actionType:
+          directEvent: Type_UnityEngineCollider
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: 
+          variableID: 61202ae1-e04f-48e8-ad69-e06b58b0c9f4
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBDAAAAGMAbwBsAGwAaQBkAGUAcgBUAHkAcABlAAU=
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: UnityEngineGameObject.__GetComponents__TArray
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: This GameObject
+          variableID: _this_gameobject
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        - isVariable: 1
+          name: colliderType
+          variableID: 61202ae1-e04f-48e8-ad69-e06b58b0c9f4
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        - isVariable: 1
+          name: _colliders
+          variableID: 90f27801-9ac2-429f-b93e-2f7aca7b954e
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBAwAAAFQAWwBdAAU=
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: CyanTriggerSpecial_ForEach
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: _colliders
+          variableID: 90f27801-9ac2-429f-b93e-2f7aca7b954e
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        - isVariable: 1
+          name: 
+          variableID: a4a87eb6-09bd-4c66-be54-ab4a32c598b5
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBBQAAAGkAbgBkAGUAeAAF
+            unityObjects: []
+        - isVariable: 1
+          name: 
+          variableID: b1d86ec3-0a2d-4bb1-b0f2-6699bdacc282
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBCAAAAGMAbwBsAGwAaQBkAGUAcgAF
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: CyanTriggerSpecial_If
+          guid: 
+        inputs: []
+        multiInput: []
+        expanded: 1
+        comment:
+          comment: 
+      - actionType:
+          directEvent: CyanTriggerSpecial_Condition
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: 
+          variableID: 4cff413c-2d93-4826-b978-8f691917655e
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBBwAAAGkAcwBWAGEAbABpAGQABQ==
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: VRCSDKBaseUtilities.__IsValid__SystemObject__SystemBoolean
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: collider
+          variableID: b1d86ec3-0a2d-4bb1-b0f2-6699bdacc282
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        - isVariable: 1
+          name: isValid
+          variableID: 4cff413c-2d93-4826-b978-8f691917655e
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: CyanTriggerSpecial_BlockEnd
+          guid: 
+        inputs: []
+        multiInput: []
+        expanded: 1
+        comment:
+          comment: 
+      - actionType:
+          directEvent: CyanTriggerSpecial_ConditionBody
+          guid: 
+        inputs: []
+        multiInput: []
+        expanded: 1
+        comment:
+          comment: 
+      - actionType:
+          directEvent: UnityEngineCollider.__set_enabled__SystemBoolean__SystemVoid
+          guid: 
+        inputs:
+        - isVariable: 0
+          name: 
+          variableID: 
+          data:
+            objEncoded: 
+            unityObjects: []
+        - isVariable: 0
+          name: 
+          variableID: 
+          data:
+            objEncoded: Ai8AAAAAARgAAABTAHkAcwB0AGUAbQAuAEIAbwBvAGwAZQBhAG4ALAAgAG0AcwBjAG8AcgBsAGkAYgAAAAAALAAF
+            unityObjects: []
+        multiInput:
+        - isVariable: 1
+          name: collider
+          variableID: b1d86ec3-0a2d-4bb1-b0f2-6699bdacc282
+          data:
+            objEncoded: 
+            unityObjects: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: CyanTriggerSpecial_BlockEnd
+          guid: 
+        inputs: []
+        multiInput: []
+        expanded: 1
+        comment:
+          comment: 
+      - actionType:
+          directEvent: CyanTriggerSpecial_BlockEnd
+          guid: 
+        inputs: []
+        multiInput: []
+        expanded: 1
+        comment:
+          comment: 
+      - actionType:
+          directEvent: CyanTriggerSpecial_BlockEnd
+          guid: 
+        inputs: []
+        multiInput: []
+        expanded: 1
+        comment:
+          comment: 
+      - actionType:
+          directEvent: VRCUdonCommonInterfacesIUdonEventReceiver.__SendCustomEventDelayedFrames__SystemString_SystemInt32_VRCUdonCommonEnumsEventTiming__SystemVoid
+          guid: 
+        inputs:
+        - isVariable: 0
+          name: 
+          variableID: 
+          data:
+            objEncoded: 
+            unityObjects: []
+        - isVariable: 0
+          name: 
+          variableID: 
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBFQAAAF8ARABlAGwAYQB5AEUAbgBhAGIAbABlAEMAbwBsAGwAaQBkAGUAcgBzAAU=
+            unityObjects: []
+        - isVariable: 0
+          name: 
+          variableID: 
+          data:
+            objEncoded: Ai8AAAAAARYAAABTAHkAcwB0AGUAbQAuAEkAbgB0ADMAMgAsACAAbQBzAGMAbwByAGwAaQBiAAAAAAAYAgAAAAU=
+            unityObjects: []
+        - isVariable: 0
+          name: 
+          variableID: 
+          data:
+            objEncoded: Ai8AAAAAATIAAABWAFIAQwAuAFUAZABvAG4ALgBDAG8AbQBtAG8AbgAuAEUAbgB1AG0AcwAuAEUAdgBlAG4AdABUAGkAbQBpAG4AZwAsACAAVgBSAEMALgBVAGQAbwBuAC4AQwBvAG0AbQBvAG4AAAAAAB4AAAAAAAAAAAU=
+            unityObjects: []
+        multiInput:
+        - isVariable: 1
+          name: This UdonBehaviour
+          variableID: _this_udonbehaviour
+          data:
+            objEncoded: 
+            unityObjects: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: CyanTriggerSpecial_BlockEnd
+          guid: 
+        inputs: []
+        multiInput: []
+        expanded: 1
+        comment:
+          comment: 
+      eventOptions:
+        userGate: 0
+        userGateExtraData: []
+        broadcast: 0
+        delay: 0
+        replay: 0
+      expanded: 1
+    - name: _DelayEnableColliders
+      eventId: 92cb35d2-e2c3-4f3c-a1e4-948116e25570
+      eventInstance:
+        actionType:
+          directEvent: Event_Custom
+          guid: 
+        inputs: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      actionInstances:
+      - actionType:
+          directEvent: CyanTriggerSpecial_ForEach
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: _colliders
+          variableID: 90f27801-9ac2-429f-b93e-2f7aca7b954e
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        - isVariable: 1
+          name: 
+          variableID: 378ed223-74ee-409c-8c1a-1b51bf9671e0
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBBQAAAGkAbgBkAGUAeAAF
+            unityObjects: []
+        - isVariable: 1
+          name: 
+          variableID: 000b2735-335c-413a-9ed3-1a8b050782ef
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBCAAAAGMAbwBsAGwAaQBkAGUAcgAF
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: CyanTriggerSpecial_If
+          guid: 
+        inputs: []
+        multiInput: []
+        expanded: 1
+        comment:
+          comment: 
+      - actionType:
+          directEvent: CyanTriggerSpecial_Condition
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: 
+          variableID: e60e42a2-7222-4e1d-b340-99cc9c931ce0
+          data:
+            objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBBwAAAGkAcwBWAGEAbABpAGQABQ==
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: VRCSDKBaseUtilities.__IsValid__SystemObject__SystemBoolean
+          guid: 
+        inputs:
+        - isVariable: 1
+          name: collider
+          variableID: 000b2735-335c-413a-9ed3-1a8b050782ef
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        - isVariable: 1
+          name: isValid
+          variableID: e60e42a2-7222-4e1d-b340-99cc9c931ce0
+          data:
+            objEncoded: Lg==
+            unityObjects: []
+        multiInput: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: CyanTriggerSpecial_BlockEnd
+          guid: 
+        inputs: []
+        multiInput: []
+        expanded: 1
+        comment:
+          comment: 
+      - actionType:
+          directEvent: CyanTriggerSpecial_ConditionBody
+          guid: 
+        inputs: []
+        multiInput: []
+        expanded: 1
+        comment:
+          comment: 
+      - actionType:
+          directEvent: UnityEngineCollider.__set_enabled__SystemBoolean__SystemVoid
+          guid: 
+        inputs:
+        - isVariable: 0
+          name: 
+          variableID: 
+          data:
+            objEncoded: 
+            unityObjects: []
+        - isVariable: 0
+          name: 
+          variableID: 
+          data:
+            objEncoded: Ai8AAAAAARgAAABTAHkAcwB0AGUAbQAuAEIAbwBvAGwAZQBhAG4ALAAgAG0AcwBjAG8AcgBsAGkAYgAAAAAALAEF
+            unityObjects: []
+        multiInput:
+        - isVariable: 1
+          name: collider
+          variableID: 000b2735-335c-413a-9ed3-1a8b050782ef
+          data:
+            objEncoded: 
+            unityObjects: []
+        expanded: 0
+        comment:
+          comment: 
+      - actionType:
+          directEvent: CyanTriggerSpecial_BlockEnd
+          guid: 
+        inputs: []
+        multiInput: []
+        expanded: 1
+        comment:
+          comment: 
+      - actionType:
+          directEvent: CyanTriggerSpecial_BlockEnd
+          guid: 
+        inputs: []
+        multiInput: []
+        expanded: 1
+        comment:
+          comment: 
+      - actionType:
+          directEvent: CyanTriggerSpecial_BlockEnd
+          guid: 
+        inputs: []
+        multiInput: []
+        expanded: 1
+        comment:
+          comment: 
+      eventOptions:
+        userGate: 0
+        userGateExtraData: []
+        broadcast: 0
+        delay: 0
+        replay: 0
+      expanded: 1
+    variables:
+    - isVariable: 0
+      name: globalAudio
+      variableID: 2e8b3bb6-3873-40a6-b19a-5b39d1dca2b7
+      data:
+        objEncoded: Ai8AAAAAARgAAABTAHkAcwB0AGUAbQAuAEIAbwBvAGwAZQBhAG4ALAAgAG0AcwBjAG8AcgBsAGkAYgAAAAAALAEF
+        unityObjects: []
+      type:
+        typeDef: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      sync: 0
+      showInInspector: 1
+      typeInfo: 0
+      comment:
+        comment: 'Set player audio when the player joins the world.
+
+          If
+          false, then audio will only be applied to players when entring trigger
+          colliders on this object. Exiting the trigger will set the player''s audio
+          to the default, either set by another prefab with globalAudio to true,
+          or vrchat''s default if none exist.'
+    - isVariable: 0
+      name: Voice Audio
+      variableID: ecbc7ce0-b57e-4077-a76f-b33cd4e175ae
+      data:
+        objEncoded: Ai8AAAAAARgAAABTAHkAcwB0AGUAbQAuAEIAbwBvAGwAZQBhAG4ALAAgAG0AcwBjAG8AcgBsAGkAYgAAAAAALAEF
+        unityObjects: []
+      type:
+        typeDef: System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      sync: 0
+      showInInspector: 1
+      typeInfo: 2
+      comment:
+        comment: 
+    - isVariable: 0
+      name: voiceGain
+      variableID: e9a24334-6c2c-48cd-9cde-fb3a3424b6f1
+      data:
+        objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAaQBuAGcAbABlACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACAAAHBBBQ==
+        unityObjects: []
+      type:
+        typeDef: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      sync: 0
+      showInInspector: 1
+      typeInfo: 0
+      comment:
+        comment: 
+    - isVariable: 0
+      name: voiceFar
+      variableID: 8ce20773-1cfb-4a77-a8f3-53ad022cfc3a
+      data:
+        objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAaQBuAGcAbABlACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACAAAMhBBQ==
+        unityObjects: []
+      type:
+        typeDef: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      sync: 0
+      showInInspector: 1
+      typeInfo: 0
+      comment:
+        comment: 
+    - isVariable: 0
+      name: voiceNear
+      variableID: a633cbc7-2289-4d00-a95c-e4d4e425ca83
+      data:
+        objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAaQBuAGcAbABlACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACAAAAAABQ==
+        unityObjects: []
+      type:
+        typeDef: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      sync: 0
+      showInInspector: 1
+      typeInfo: 0
+      comment:
+        comment: 
+    - isVariable: 0
+      name: voiceVolumetric
+      variableID: 11ec1820-3566-4e39-8c7a-71e512c62ad7
+      data:
+        objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAaQBuAGcAbABlACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACAAAAAABQ==
+        unityObjects: []
+      type:
+        typeDef: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      sync: 0
+      showInInspector: 1
+      typeInfo: 0
+      comment:
+        comment: 
+    - isVariable: 0
+      name: voiceLowpass
+      variableID: 1af1e734-8320-42ed-8357-6d460d708863
+      data:
+        objEncoded: Ai8AAAAAARgAAABTAHkAcwB0AGUAbQAuAEIAbwBvAGwAZQBhAG4ALAAgAG0AcwBjAG8AcgBsAGkAYgAAAAAALAEF
+        unityObjects: []
+      type:
+        typeDef: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      sync: 0
+      showInInspector: 1
+      typeInfo: 0
+      comment:
+        comment: 
+    - isVariable: 0
+      name: Variable Group End
+      variableID: 07a0adaf-1e0f-4700-96a9-39050c3a6778
+      data:
+        objEncoded: Lg==
+        unityObjects: []
+      type:
+        typeDef: System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      sync: 0
+      showInInspector: 0
+      typeInfo: 3
+      comment:
+        comment: 
+    - isVariable: 0
+      name: Avatar Audio
+      variableID: e34a73e5-2170-47f4-b8df-35d4832c9a17
+      data:
+        objEncoded: Ai8AAAAAARgAAABTAHkAcwB0AGUAbQAuAEIAbwBvAGwAZQBhAG4ALAAgAG0AcwBjAG8AcgBsAGkAYgAAAAAALAEF
+        unityObjects: []
+      type:
+        typeDef: System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      sync: 0
+      showInInspector: 1
+      typeInfo: 2
+      comment:
+        comment: 
+    - isVariable: 0
+      name: gainAvatar
+      variableID: 5449d10f-9074-44e2-9d27-e137d4909f02
+      data:
+        objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAaQBuAGcAbABlACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACAAACBBBQ==
+        unityObjects: []
+      type:
+        typeDef: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      sync: 0
+      showInInspector: 1
+      typeInfo: 0
+      comment:
+        comment: 
+    - isVariable: 0
+      name: farAvatar
+      variableID: cc58939d-bfcd-4b5e-932d-960f2db656dc
+      data:
+        objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAaQBuAGcAbABlACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACAAACBCBQ==
+        unityObjects: []
+      type:
+        typeDef: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      sync: 0
+      showInInspector: 1
+      typeInfo: 0
+      comment:
+        comment: 
+    - isVariable: 0
+      name: nearAvatar
+      variableID: 93c9ec70-f47c-4151-8638-f7be93e02ccf
+      data:
+        objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAaQBuAGcAbABlACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACAAACBCBQ==
+        unityObjects: []
+      type:
+        typeDef: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      sync: 0
+      showInInspector: 1
+      typeInfo: 0
+      comment:
+        comment: 
+    - isVariable: 0
+      name: volumetricRadiusAvatar
+      variableID: dcce73f4-0094-4562-a134-8590adc1619b
+      data:
+        objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAaQBuAGcAbABlACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACAAACBCBQ==
+        unityObjects: []
+      type:
+        typeDef: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      sync: 0
+      showInInspector: 1
+      typeInfo: 0
+      comment:
+        comment: 
+    - isVariable: 0
+      name: forceSpatialAvatar
+      variableID: c3007119-66bc-4c3c-971f-3d415426c963
+      data:
+        objEncoded: Ai8AAAAAARgAAABTAHkAcwB0AGUAbQAuAEIAbwBvAGwAZQBhAG4ALAAgAG0AcwBjAG8AcgBsAGkAYgAAAAAALAAF
+        unityObjects: []
+      type:
+        typeDef: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      sync: 0
+      showInInspector: 1
+      typeInfo: 0
+      comment:
+        comment: 
+    - isVariable: 0
+      name: customCurveAvatar
+      variableID: 3dca6a71-63de-49ef-be4a-9b5e89569035
+      data:
+        objEncoded: Ai8AAAAAARgAAABTAHkAcwB0AGUAbQAuAEIAbwBvAGwAZQBhAG4ALAAgAG0AcwBjAG8AcgBsAGkAYgAAAAAALAEF
+        unityObjects: []
+      type:
+        typeDef: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      sync: 0
+      showInInspector: 1
+      typeInfo: 0
+      comment:
+        comment: 
+    - isVariable: 0
+      name: Variable Group End
+      variableID: 7f4a0e00-048f-4430-8d0f-3e8ee6bbb5cb
+      data:
+        objEncoded: Lg==
+        unityObjects: []
+      type:
+        typeDef: System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      sync: 0
+      showInInspector: 0
+      typeInfo: 3
+      comment:
+        comment: 
+    - isVariable: 0
+      name: __internal
+      variableID: 4c0caae8-5853-47fd-93f6-2b6e4e7363df
+      data:
+        objEncoded: Ai8AAAAAARgAAABTAHkAcwB0AGUAbQAuAEIAbwBvAGwAZQBhAG4ALAAgAG0AcwBjAG8AcgBsAGkAYgAAAAAALAEF
+        unityObjects: []
+      type:
+        typeDef: System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      sync: 0
+      showInInspector: 1
+      typeInfo: 2
+      comment:
+        comment: 
+    - isVariable: 0
+      name: _dataCacheKey
+      variableID: 9db1a3dd-6f54-4d72-aa59-57b1e00411e3
+      data:
+        objEncoded: Ai8AAAAAARcAAABTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnACwAIABtAHMAYwBvAHIAbABpAGIAAAAAACgBGAAAAGMAeQBhAG4ALgBwAGwAYQB5AGUAcgBfAGEAdQBkAGkAbwAuAGcAbABvAGIAYQBsAAU=
+        unityObjects: []
+      type:
+        typeDef: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      sync: 0
+      showInInspector: 1
+      typeInfo: 0
+      comment:
+        comment: 
+    - isVariable: 0
+      name: _colliders
+      variableID: 90f27801-9ac2-429f-b93e-2f7aca7b954e
+      data:
+        objEncoded: Ai8AAAAAATEAAABVAG4AaQB0AHkARQBuAGcAaQBuAGUALgBDAG8AbABsAGkAZABlAHIAWwBdACwAIABVAG4AaQB0AHkARQBuAGcAaQBuAGUALgBQAGgAeQBzAGkAYwBzAE0AbwBkAHUAbABlAAAAAAAGAAAAAAAAAAAHBQ==
+        unityObjects: []
+      type:
+        typeDef: UnityEngine.Collider[], UnityEngine.PhysicsModule, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
+      sync: 0
+      showInInspector: 1
+      typeInfo: 0
+      comment:
+        comment: 
+    - isVariable: 0
+      name: Variable Group End
+      variableID: 2a47e0b7-2c66-4238-a5dc-59b9316a88e5
+      data:
+        objEncoded: Lg==
+        unityObjects: []
+      type:
+        typeDef: System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      sync: 0
+      showInInspector: 0
+      typeInfo: 3
+      comment:
+        comment: 
+    comment:
+      comment: "Player Audio Settinsg\nSet a player's voice and avatar audio settings.
+        It can be configured to set audio for when the player joins the world (globalAudio
+        true) or when a player enters a trigger (globalAudio false). \n\nFor player
+        voices, when increasing the voice far value, it is best to also decrease
+        the voice gain to not have the player be too loud.\n\nSee VRChat docs for
+        descriptions of each item:\nhttps://docs.vrchat.com/docs/player-audio\n\nNote
+        for when this prefab is used with globalAudio disabled, all colliders on
+        this object will be disabled and then enabled to ensure that joining an instance
+        late will still apply audio settings to players who were in the volume before
+        joining. This is to correct for a VRChat bug. Just know that the initial
+        state of any collider on this object will not matter and it will be enabled
+        at start. "
+    expandVariables: 1
+    expandOtherSettings: 1
+    expandSyncSection: 0
+    ignoreEventWarnings: 1
+  publicVariableReferences:
+    actionDataIndices: []
+    userVariableNames:
+    - globalAudio
+    - voiceGain
+    - voiceFar
+    - voiceNear
+    - voiceVolumetric
+    - voiceLowpass
+    - gainAvatar
+    - farAvatar
+    - nearAvatar
+    - volumetricRadiusAvatar
+    - forceSpatialAvatar
+    - customCurveAvatar
+    userVariableTypes:
+    - typeDef: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+    - typeDef: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+    - typeDef: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+    - typeDef: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+    - typeDef: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+    - typeDef: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+    - typeDef: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+    - typeDef: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+    - typeDef: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+    - typeDef: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+    - typeDef: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+    - typeDef: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+  ignoreOdinData: 1
+  serializationDataOdin:
+    SerializedFormat: 0
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes: []
+  allowEditingInInspector: 0
+  expandInInspector: 0
+  isLocked: 0
