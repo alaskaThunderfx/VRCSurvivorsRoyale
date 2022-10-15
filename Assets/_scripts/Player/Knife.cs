@@ -64,6 +64,8 @@ public class Knife : UdonSharpBehaviour
 
         PlayerController = KnifePool.PlayerController;
         EffectsContainer = KnifePool.EffectsContainer;
+        Spark = EffectsContainer.Spark;
+        Blood = EffectsContainer.Blood;
         Throw = EffectsContainer.Throw.clip;
         HitIAOSound = EffectsContainer.IAOHit.clip;
         HitEnemySound = EffectsContainer.EnemyHit.clip;
@@ -120,6 +122,8 @@ public class Knife : UdonSharpBehaviour
             HitEnemy = true;
             Enemy = other;
             AudioSource.PlayClipAtPoint(HitEnemySound, transform.position);
+            Blood.transform.position = transform.position;
+            Blood.Play(true);
             Networking.SetOwner(Owner, other.gameObject);
             gameObject.SetActive(false);
         }

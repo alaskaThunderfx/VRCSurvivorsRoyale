@@ -194,9 +194,9 @@ public class LilSnek : UdonSharpBehaviour
                 PlayerController = PlayerObjectAssigner
                     ._GetPlayerPooledObject(Owner)
                     .GetComponent<PlayerController>();
-                PlayerController.experience += Experience;
+                PlayerController.Experience += Experience;
                 Debug.Log("Player: " + PlayerController.Owner);
-                Debug.Log("Their total experience: " + PlayerController.experience);
+                Debug.Log("Their total experience: " + PlayerController.Experience);
                 AudioSource.PlayClipAtPoint(
                     PlayerController.EffectsContainer.Kill.clip,
                     transform.position

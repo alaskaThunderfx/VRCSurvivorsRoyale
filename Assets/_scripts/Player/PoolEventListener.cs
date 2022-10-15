@@ -10,6 +10,7 @@ public class PoolEventListener : UdonSharpBehaviour
 {
     public GameObject TestingUIBG;
     public GameObject TestingUI;
+    public Scoreboard Scoreboard;
     public LilSnekSpawner LilSnekPool;
 
     [UdonSynced]
@@ -25,6 +26,8 @@ public class PoolEventListener : UdonSharpBehaviour
             GameStarted = true;
             LilSnekPool.SpawnSneks();
         }
+        Debug.Log("In PoolEventListener > _OnPlayerAssigned()");
+        Scoreboard.SendCustomNetworkEvent(NetworkEventTarget.All, "UpdateBoard");
     }
 
     // This event is called when any player is assigned a pool object.
@@ -33,7 +36,11 @@ public class PoolEventListener : UdonSharpBehaviour
     public int playerAssignedIndex;
     public UdonBehaviour playerAssignedPoolObject;
 
-    public void _OnPlayerAssigned() { }
+    public void _OnPlayerAssigned()
+    {
+        Debug.Log("In PoolEventListener > _OnPlayerAssigned()");
+        Scoreboard.SendCustomNetworkEvent(NetworkEventTarget.All, "UpdateBoard");
+    }
 
     // This event is called when any player's object has been unassigned.
     // The variables will be set before the event is called.
@@ -41,5 +48,9 @@ public class PoolEventListener : UdonSharpBehaviour
     public int playerUnassignedIndex;
     public UdonBehaviour playerUnassignedPoolObject;
 
-    public void _OnPlayerUnassigned() { }
+    public void _OnPlayerUnassigned()
+    {
+        Debug.Log("In PoolEventListener > _OnPlayerAssigned()");
+        Scoreboard.SendCustomNetworkEvent(NetworkEventTarget.All, "UpdateBoard");
+    }
 }
