@@ -56,7 +56,6 @@ public class LilSnek : UdonSharpBehaviour
     {
         Owner = Networking.GetOwner(gameObject);
         Agent = GetComponent<NavMeshAgent>();
-        Agent.enabled = false;
         LilSnekPool = transform.parent.GetComponent<VRCObjectPool>();
         LilSnekSpawner = transform.parent.GetComponent<LilSnekSpawner>();
         AgentSpeed = Agent.speed;
@@ -83,37 +82,31 @@ public class LilSnek : UdonSharpBehaviour
         AIAnimator.SetBool("Dying", IsDying);
         AIAnimator.SetBool("Attack", IsAttacking);
 
-        // Agent.SetDestination(CurrentDestination);
+        Agent.SetDestination(CurrentDestination);
         AIVelocity = Agent.velocity.magnitude;
 
         SpawnCountdown -= Time.deltaTime;
-        if (SpawnCountdown <= 0)
+        if(SpawnCountdown <= 0)
         {
             IsSpawning = false;
-            Agent.enabled = true;
-            // Agent.SetDestination(CurrentDestination);
-            // AIVelocity = Agent.velocity.magnitude;
         }
 
-        if (Agent.enabled)
+        if (!IsMovingToNext)
         {
-            if (!IsMovingToNext)
+            HasSetNextPosition = false;
+            InternalWaitTime -= Time.deltaTime;
+            if (InternalWaitTime < 0f)
             {
-                HasSetNextPosition = false;
-                InternalWaitTime -= Time.deltaTime;
-                if (InternalWaitTime < 0f)
-                {
-                    IsMovingToNext = true;
-                    InternalWaitTime = WanderIdleTime;
-                    StartWandering();
-                }
-            }
-
-            if (Agent.remainingDistance < 1 && HasSetNextPosition)
-            {
-                IsMovingToNext = false;
+                IsMovingToNext = true;
                 InternalWaitTime = WanderIdleTime;
+                StartWandering();
             }
+        }
+
+        if (Agent.remainingDistance < 1 && HasSetNextPosition)
+        {
+            IsMovingToNext = false;
+            InternalWaitTime = WanderIdleTime;
         }
     }
 
