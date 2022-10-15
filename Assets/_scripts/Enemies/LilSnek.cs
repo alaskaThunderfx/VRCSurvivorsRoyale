@@ -61,6 +61,7 @@ public class LilSnek : UdonSharpBehaviour
 
         LocalPlayer = Networking.LocalPlayer;
         Agent = GetComponent<NavMeshAgent>();
+        Agent.enabled = true;
 
         HealthBarCanvas = transform.GetChild(16);
         HealthBar = HealthBarCanvas.GetChild(0).GetComponent<HealthBar>();
@@ -83,7 +84,7 @@ public class LilSnek : UdonSharpBehaviour
         if (Networking.LocalPlayer == Owner)
             IsSpawning = true;
         SpawnCountdown = 1.1f;
-        Owner = Networking.GetOwner(gameObject);
+        IsDying = false;
     }
 
     private void Update()
@@ -125,6 +126,7 @@ public class LilSnek : UdonSharpBehaviour
 
         if (Agent.enabled)
         {
+            gameObject.GetComponent<Collider>().enabled = true;
             if (Networking.LocalPlayer != Owner)
                 Agent.SetDestination(CurrentDestination);
             if (Networking.LocalPlayer == Owner)
@@ -203,9 +205,9 @@ public class LilSnek : UdonSharpBehaviour
                     transform.position
                 );
                 Networking.SetOwner(Owner, LilSnekPool.gameObject);
-                Agent.SetDestination(transform.position);
+                Agent.enabled = false;
+                // Agent.SetDestination(transform.position);
                 gameObject.GetComponent<Collider>().enabled = false;
-                gameObject.GetComponent<NavMeshAgent>().enabled = false;
                 if (Networking.LocalPlayer == Owner)
                     IsDying = true;
             }
