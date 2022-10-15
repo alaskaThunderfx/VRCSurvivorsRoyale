@@ -11,19 +11,23 @@ public class LilSnek : UdonSharpBehaviour
     [Header("Components")]
     public NavMeshAgent Agent;
     public VRCPlayerApi Owner;
+    private VRCPlayerApi LocalPlayer;
 
     // public HealthBar HealthBar;
     public VRCObjectPool LilSnekPool;
 
     public LilSnekSpawner LilSnekSpawner;
     public Animator AIAnimator;
+    public Transform HealthBarCanvas;
+    public HealthBar HealthBar;
 
     [Header("Stats")]
     [UdonSynced, FieldChangeCallback(nameof(Health))]
     public float health;
     public float Experience = 1f;
     public float MaxWanderDistance = 5f;
-    public float WanderIdleTime = 5f;
+    public float WanderIdleTime;
+
     public float GuardChaseTime = 15f;
 
     [UdonSynced]
@@ -56,13 +60,18 @@ public class LilSnek : UdonSharpBehaviour
     {
         Owner = Networking.GetOwner(gameObject);
         Agent = GetComponent<NavMeshAgent>();
+        LocalPlayer = Networking.LocalPlayer;
+        HealthBarCanvas = transform.GetChild(16);
+        HealthBar = HealthBarCanvas.GetChild(0).GetComponent<HealthBar>();
         LilSnekPool = transform.parent.GetComponent<VRCObjectPool>();
         LilSnekSpawner = transform.parent.GetComponent<LilSnekSpawner>();
         AgentSpeed = Agent.speed;
+        WanderIdleTime = Random.Range(0f, 5f);
         InternalWaitTime = WanderIdleTime;
         IsMovingToNext = false;
         GCTInternalTime = GuardChaseTime;
         Health = 3f;
+        HealthBar.SetMaxHealth(Health);
     }
 
     private void OnEnable()
@@ -70,7 +79,6 @@ public class LilSnek : UdonSharpBehaviour
         AIAnimator = GetComponent<Animator>();
         IsSpawning = true;
         SpawnCountdown = 1.1f;
-        Health = 3f;
         Owner = Networking.GetOwner(gameObject);
     }
 
@@ -81,13 +89,15 @@ public class LilSnek : UdonSharpBehaviour
         AIAnimator.SetBool("Spawn", IsSpawning);
         AIAnimator.SetBool("Dying", IsDying);
         AIAnimator.SetBool("Attack", IsAttacking);
-        
+
+        HealthBarCanvas.LookAt(LocalPlayer.GetTrackingData(VRCPlayerApi.TrackingDataType.Head).position);
 
         SpawnCountdown -= Time.deltaTime;
         if (SpawnCountdown <= 0)
         {
             IsSpawning = false;
             Agent.enabled = true;
+            Health = 3f;
         }
 
         if (Agent.enabled)
@@ -99,6 +109,7 @@ public class LilSnek : UdonSharpBehaviour
                 InternalWaitTime -= Time.deltaTime;
                 if (InternalWaitTime < 0f)
                 {
+                    WanderIdleTime = Random.Range(0f, 5f);
                     IsMovingToNext = true;
                     InternalWaitTime = WanderIdleTime;
                     StartWandering();
@@ -108,6 +119,7 @@ public class LilSnek : UdonSharpBehaviour
             if (Agent.remainingDistance < 1 && HasSetNextPosition)
             {
                 IsMovingToNext = false;
+                WanderIdleTime = Random.Range(0f, 5f);
                 InternalWaitTime = WanderIdleTime;
             }
         }
@@ -140,7 +152,11 @@ public class LilSnek : UdonSharpBehaviour
 
     public float Health
     {
-        set { health = value; }
+        set
+        {
+            health = value;
+            HealthBar.SetHealth(health);
+        }
         get { return health; }
     }
 }
