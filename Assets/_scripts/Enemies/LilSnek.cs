@@ -12,12 +12,14 @@ public class LilSnek : UdonSharpBehaviour
     public NavMeshAgent Agent;
     public VRCPlayerApi Owner;
     private VRCPlayerApi LocalPlayer;
-
-    // public HealthBar HealthBar;
     public VRCObjectPool LilSnekPool;
+
+    public Cyan.PlayerObjectPool.CyanPlayerObjectAssigner PlayerObjectAssigner;
+    public PlayerController PlayerController;
 
     public LilSnekSpawner LilSnekSpawner;
     public Animator AIAnimator;
+    float DeathScene;
     public Transform HealthBarCanvas;
     public HealthBar HealthBar;
 
@@ -56,13 +58,16 @@ public class LilSnek : UdonSharpBehaviour
     private float InternalWaitTime;
     private float GCTInternalTime;
 
-    private void Start()
+    private void OnEnable()
     {
         Owner = Networking.GetOwner(gameObject);
-        Agent = GetComponent<NavMeshAgent>();
+
         LocalPlayer = Networking.LocalPlayer;
+        Agent = GetComponent<NavMeshAgent>();
+
         HealthBarCanvas = transform.GetChild(16);
         HealthBar = HealthBarCanvas.GetChild(0).GetComponent<HealthBar>();
+
         LilSnekPool = transform.parent.GetComponent<VRCObjectPool>();
         LilSnekSpawner = transform.parent.GetComponent<LilSnekSpawner>();
         AgentSpeed = Agent.speed;
@@ -72,11 +77,11 @@ public class LilSnek : UdonSharpBehaviour
         GCTInternalTime = GuardChaseTime;
         Health = 3f;
         HealthBar.SetMaxHealth(Health);
-    }
-
-    private void OnEnable()
-    {
+        PlayerObjectAssigner = GameObject
+            .Find("PlayerObjectAssigner")
+            .GetComponent<Cyan.PlayerObjectPool.CyanPlayerObjectAssigner>();
         AIAnimator = GetComponent<Animator>();
+        DeathScene = 1.3f;
         IsSpawning = true;
         SpawnCountdown = 1.1f;
         Owner = Networking.GetOwner(gameObject);
@@ -84,16 +89,34 @@ public class LilSnek : UdonSharpBehaviour
 
     private void Update()
     {
-        // Set animation condisitons
+        // Set animation conditions
         AIAnimator.SetFloat("Move", AIVelocity);
         AIAnimator.SetBool("Spawn", IsSpawning);
         AIAnimator.SetBool("Dying", IsDying);
         AIAnimator.SetBool("Attack", IsAttacking);
 
-        HealthBarCanvas.LookAt(LocalPlayer.GetTrackingData(VRCPlayerApi.TrackingDataType.Head).position);
+        // make sure to stop the update loop if they are dying
+        if (IsDying)
+        {
+            DeathScene -= Time.deltaTime;
+
+            if (DeathScene <= 0)
+            {
+                Debug.Log(Owner.playerId);
+                if (Networking.LocalPlayer == Owner)
+                {
+                    Debug.Log("You're the owner" + Owner.playerId);
+                    LilSnekPool.Return(gameObject);
+                }
+            }
+        }
+
+        HealthBarCanvas.LookAt(
+            LocalPlayer.GetTrackingData(VRCPlayerApi.TrackingDataType.Head).position
+        );
 
         SpawnCountdown -= Time.deltaTime;
-        if (SpawnCountdown <= 0)
+        if (SpawnCountdown <= 0 && IsSpawning)
         {
             IsSpawning = false;
             Agent.enabled = true;
@@ -123,6 +146,11 @@ public class LilSnek : UdonSharpBehaviour
                 InternalWaitTime = WanderIdleTime;
             }
         }
+    }
+
+    private void OnDisable()
+    {
+        IsDying = false;
     }
 
     public override void OnOwnershipTransferred(VRCPlayerApi player)
@@ -156,6 +184,24 @@ public class LilSnek : UdonSharpBehaviour
         {
             health = value;
             HealthBar.SetHealth(health);
+            if (health <= 0)
+            {
+                PlayerController = PlayerObjectAssigner
+                    ._GetPlayerPooledObject(Owner)
+                    .GetComponent<PlayerController>();
+                PlayerController.experience += Experience;
+                Debug.Log("Player: " + PlayerController.Owner);
+                Debug.Log("Their total experience: " + PlayerController.experience);
+                AudioSource.PlayClipAtPoint(
+                    PlayerController.EffectsContainer.Kill.clip,
+                    transform.position
+                );
+                Networking.SetOwner(Owner, LilSnekPool.gameObject);
+                Agent.SetDestination(transform.position);
+                gameObject.GetComponent<Collider>().enabled = false;
+                gameObject.GetComponent<NavMeshAgent>().enabled = false;
+                IsDying = true;
+            }
         }
         get { return health; }
     }

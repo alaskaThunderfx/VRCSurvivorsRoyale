@@ -17,6 +17,9 @@ public class Knife : UdonSharpBehaviour
     public Vector3 KnifePosition;
     public Quaternion KnifeRotation;
 
+    // To store Enemy hit info
+    public Collider Enemy;
+
     // For tracking distance
     public float DistanceTravelled;
 
@@ -58,7 +61,7 @@ public class Knife : UdonSharpBehaviour
         // Set AudioClips
         Owner = Networking.GetOwner(gameObject);
         KnifePool = transform.parent.GetComponent<KnifePool>();
-        
+
         PlayerController = KnifePool.PlayerController;
         EffectsContainer = KnifePool.EffectsContainer;
         Throw = EffectsContainer.Throw.clip;
@@ -97,7 +100,6 @@ public class Knife : UdonSharpBehaviour
         }
         // Tracking Distance
         DistanceTravelled += Vector3.Distance(transform.position, KnifePosition);
-        // Debug.Log();
         if (DistanceTravelled >= KnifePool.Range)
         {
             gameObject.SetActive(false);
@@ -114,7 +116,11 @@ public class Knife : UdonSharpBehaviour
         }
         else if (other.name.Contains("Enemy"))
         {
+            Debug.Log(Owner + " hit a " + other.name + "!");
             HitEnemy = true;
+            Enemy = other;
+            AudioSource.PlayClipAtPoint(HitEnemySound, transform.position);
+            Networking.SetOwner(Owner, other.gameObject);
             gameObject.SetActive(false);
         }
     }
@@ -122,5 +128,16 @@ public class Knife : UdonSharpBehaviour
     private void OnDisable()
     {
         ReadyToGo = true;
+        if (HitEnemy && Networking.LocalPlayer == Owner)
+        {
+            if (Enemy.name.Contains("LilSnek"))
+            {
+                LilSnek LilSnek = Enemy.GetComponent<LilSnek>();
+                LilSnek.Health -= KnifePool.Damage;
+                HitEnemy = false;
+            }
+        }
     }
+
+    public void EnemyInteraction(Collider Enemy) { }
 }
