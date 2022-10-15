@@ -3874,6 +3874,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 706879183}
     m_Modifications:
+    - target: {fileID: 1616786875512177631, guid: cc02f095ff6e6984e8a5623a037b654e,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1616786875512177631, guid: cc02f095ff6e6984e8a5623a037b654e,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3770089882323113964, guid: cc02f095ff6e6984e8a5623a037b654e,
         type: 3}
       propertyPath: serializationData.Prefab
@@ -3940,6 +3950,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: EnemyLilSnek (24)
       objectReference: {fileID: 0}
+    - target: {fileID: 6158863091415451881, guid: cc02f095ff6e6984e8a5623a037b654e,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9018465345033481370, guid: cc02f095ff6e6984e8a5623a037b654e,
+        type: 3}
+      propertyPath: serializationData.Prefab
+      value: 
+      objectReference: {fileID: 9018465345033481370, guid: cc02f095ff6e6984e8a5623a037b654e,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cc02f095ff6e6984e8a5623a037b654e, type: 3}
 --- !u!1 &148889376 stripped
@@ -5093,12 +5114,12 @@ PrefabInstance:
         type: 3}
       propertyPath: DynamicMaterials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 93a8f67f13567f648925add681fd318f, type: 2}
+      objectReference: {fileID: 2100000, guid: 01a4b7e9b85fd2348838c868ccaf5afb, type: 2}
     - target: {fileID: 6759095419728963412, guid: 8894fa7e4588a5c4fab98453e558847d,
         type: 3}
       propertyPath: DynamicMaterials.Array.data[1]
       value: 
-      objectReference: {fileID: 2100000, guid: fa9e67520e3a0c04996a1f31dd165bb9, type: 2}
+      objectReference: {fileID: 2100000, guid: 93a8f67f13567f648925add681fd318f, type: 2}
     - target: {fileID: 6759095419728963412, guid: 8894fa7e4588a5c4fab98453e558847d,
         type: 3}
       propertyPath: DynamicMaterials.Array.data[2]
@@ -5113,25 +5134,30 @@ PrefabInstance:
         type: 3}
       propertyPath: DynamicMaterials.Array.data[4]
       value: 
-      objectReference: {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+      objectReference: {fileID: 2100000, guid: fa9e67520e3a0c04996a1f31dd165bb9, type: 2}
     - target: {fileID: 6759095419728963412, guid: 8894fa7e4588a5c4fab98453e558847d,
         type: 3}
       propertyPath: DynamicMaterials.Array.data[5]
       value: 
-      objectReference: {fileID: 2100000, guid: 4b6bfe1d24a7f6a43a88656cf3f9ad27, type: 2}
+      objectReference: {fileID: 2100000, guid: 3c2840b08a853f740a358e54538329d4, type: 2}
     - target: {fileID: 6759095419728963412, guid: 8894fa7e4588a5c4fab98453e558847d,
         type: 3}
       propertyPath: DynamicMaterials.Array.data[6]
       value: 
-      objectReference: {fileID: 2100000, guid: 3c2840b08a853f740a358e54538329d4, type: 2}
+      objectReference: {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
     - target: {fileID: 6759095419728963412, guid: 8894fa7e4588a5c4fab98453e558847d,
         type: 3}
       propertyPath: DynamicMaterials.Array.data[7]
       value: 
-      objectReference: {fileID: 2100000, guid: 01a4b7e9b85fd2348838c868ccaf5afb, type: 2}
+      objectReference: {fileID: 2100000, guid: 4b6bfe1d24a7f6a43a88656cf3f9ad27, type: 2}
     - target: {fileID: 6759095419728963412, guid: 8894fa7e4588a5c4fab98453e558847d,
         type: 3}
       propertyPath: DynamicMaterials.Array.data[8]
+      value: 
+      objectReference: {fileID: 2100000, guid: a9b6f23dda8195f4396de852b2d30214, type: 2}
+    - target: {fileID: 6759095419728963412, guid: 8894fa7e4588a5c4fab98453e558847d,
+        type: 3}
+      propertyPath: DynamicMaterials.Array.data[9]
       value: 
       objectReference: {fileID: 2100000, guid: a9b6f23dda8195f4396de852b2d30214, type: 2}
     m_RemovedComponents: []
@@ -6369,6 +6395,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 706879183}
     m_Modifications:
+    - target: {fileID: 1616786875512177631, guid: cc02f095ff6e6984e8a5623a037b654e,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1616786875512177631, guid: cc02f095ff6e6984e8a5623a037b654e,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3770089882323113964, guid: cc02f095ff6e6984e8a5623a037b654e,
         type: 3}
       propertyPath: serializationData.Prefab
@@ -6435,6 +6471,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: EnemyLilSnek (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 6158863091415451881, guid: cc02f095ff6e6984e8a5623a037b654e,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9018465345033481370, guid: cc02f095ff6e6984e8a5623a037b654e,
+        type: 3}
+      propertyPath: serializationData.Prefab
+      value: 
+      objectReference: {fileID: 9018465345033481370, guid: cc02f095ff6e6984e8a5623a037b654e,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cc02f095ff6e6984e8a5623a037b654e, type: 3}
 --- !u!114 &528761581 stripped
@@ -6462,6 +6509,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 706879183}
     m_Modifications:
+    - target: {fileID: 1616786875512177631, guid: cc02f095ff6e6984e8a5623a037b654e,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1616786875512177631, guid: cc02f095ff6e6984e8a5623a037b654e,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3770089882323113964, guid: cc02f095ff6e6984e8a5623a037b654e,
         type: 3}
       propertyPath: serializationData.Prefab
@@ -6528,6 +6585,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: EnemyLilSnek (20)
       objectReference: {fileID: 0}
+    - target: {fileID: 6158863091415451881, guid: cc02f095ff6e6984e8a5623a037b654e,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9018465345033481370, guid: cc02f095ff6e6984e8a5623a037b654e,
+        type: 3}
+      propertyPath: serializationData.Prefab
+      value: 
+      objectReference: {fileID: 9018465345033481370, guid: cc02f095ff6e6984e8a5623a037b654e,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cc02f095ff6e6984e8a5623a037b654e, type: 3}
 --- !u!1001 &580345595
@@ -8490,6 +8558,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 706879183}
     m_Modifications:
+    - target: {fileID: 1616786875512177631, guid: cc02f095ff6e6984e8a5623a037b654e,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1616786875512177631, guid: cc02f095ff6e6984e8a5623a037b654e,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3770089882323113964, guid: cc02f095ff6e6984e8a5623a037b654e,
         type: 3}
       propertyPath: serializationData.Prefab
@@ -8556,6 +8634,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: EnemyLilSnek (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 6158863091415451881, guid: cc02f095ff6e6984e8a5623a037b654e,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9018465345033481370, guid: cc02f095ff6e6984e8a5623a037b654e,
+        type: 3}
+      propertyPath: serializationData.Prefab
+      value: 
+      objectReference: {fileID: 9018465345033481370, guid: cc02f095ff6e6984e8a5623a037b654e,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cc02f095ff6e6984e8a5623a037b654e, type: 3}
 --- !u!1 &636109509 stripped
@@ -8577,6 +8666,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 706879183}
     m_Modifications:
+    - target: {fileID: 1616786875512177631, guid: cc02f095ff6e6984e8a5623a037b654e,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1616786875512177631, guid: cc02f095ff6e6984e8a5623a037b654e,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3770089882323113964, guid: cc02f095ff6e6984e8a5623a037b654e,
         type: 3}
       propertyPath: serializationData.Prefab
@@ -8643,6 +8742,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: EnemyLilSnek (15)
       objectReference: {fileID: 0}
+    - target: {fileID: 6158863091415451881, guid: cc02f095ff6e6984e8a5623a037b654e,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9018465345033481370, guid: cc02f095ff6e6984e8a5623a037b654e,
+        type: 3}
+      propertyPath: serializationData.Prefab
+      value: 
+      objectReference: {fileID: 9018465345033481370, guid: cc02f095ff6e6984e8a5623a037b654e,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cc02f095ff6e6984e8a5623a037b654e, type: 3}
 --- !u!1001 &648600270
@@ -8652,6 +8762,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 706879183}
     m_Modifications:
+    - target: {fileID: 1616786875512177631, guid: cc02f095ff6e6984e8a5623a037b654e,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1616786875512177631, guid: cc02f095ff6e6984e8a5623a037b654e,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3770089882323113964, guid: cc02f095ff6e6984e8a5623a037b654e,
         type: 3}
       propertyPath: serializationData.Prefab
@@ -8718,6 +8838,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: EnemyLilSnek (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 6158863091415451881, guid: cc02f095ff6e6984e8a5623a037b654e,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9018465345033481370, guid: cc02f095ff6e6984e8a5623a037b654e,
+        type: 3}
+      propertyPath: serializationData.Prefab
+      value: 
+      objectReference: {fileID: 9018465345033481370, guid: cc02f095ff6e6984e8a5623a037b654e,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cc02f095ff6e6984e8a5623a037b654e, type: 3}
 --- !u!1 &702356138 stripped
@@ -9003,6 +9134,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 706879183}
     m_Modifications:
+    - target: {fileID: 1616786875512177631, guid: cc02f095ff6e6984e8a5623a037b654e,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1616786875512177631, guid: cc02f095ff6e6984e8a5623a037b654e,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3770089882323113964, guid: cc02f095ff6e6984e8a5623a037b654e,
         type: 3}
       propertyPath: serializationData.Prefab
@@ -9069,6 +9210,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: EnemyLilSnek (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 6158863091415451881, guid: cc02f095ff6e6984e8a5623a037b654e,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9018465345033481370, guid: cc02f095ff6e6984e8a5623a037b654e,
+        type: 3}
+      propertyPath: serializationData.Prefab
+      value: 
+      objectReference: {fileID: 9018465345033481370, guid: cc02f095ff6e6984e8a5623a037b654e,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cc02f095ff6e6984e8a5623a037b654e, type: 3}
 --- !u!1 &788590268
@@ -9152,6 +9304,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 706879183}
     m_Modifications:
+    - target: {fileID: 1616786875512177631, guid: cc02f095ff6e6984e8a5623a037b654e,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1616786875512177631, guid: cc02f095ff6e6984e8a5623a037b654e,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3770089882323113964, guid: cc02f095ff6e6984e8a5623a037b654e,
         type: 3}
       propertyPath: serializationData.Prefab
@@ -9218,6 +9380,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: EnemyLilSnek (14)
       objectReference: {fileID: 0}
+    - target: {fileID: 6158863091415451881, guid: cc02f095ff6e6984e8a5623a037b654e,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9018465345033481370, guid: cc02f095ff6e6984e8a5623a037b654e,
+        type: 3}
+      propertyPath: serializationData.Prefab
+      value: 
+      objectReference: {fileID: 9018465345033481370, guid: cc02f095ff6e6984e8a5623a037b654e,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cc02f095ff6e6984e8a5623a037b654e, type: 3}
 --- !u!1001 &799720367
@@ -9227,6 +9400,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 706879183}
     m_Modifications:
+    - target: {fileID: 1616786875512177631, guid: cc02f095ff6e6984e8a5623a037b654e,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1616786875512177631, guid: cc02f095ff6e6984e8a5623a037b654e,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3770089882323113964, guid: cc02f095ff6e6984e8a5623a037b654e,
         type: 3}
       propertyPath: serializationData.Prefab
@@ -9293,6 +9476,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: EnemyLilSnek (18)
       objectReference: {fileID: 0}
+    - target: {fileID: 6158863091415451881, guid: cc02f095ff6e6984e8a5623a037b654e,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9018465345033481370, guid: cc02f095ff6e6984e8a5623a037b654e,
+        type: 3}
+      propertyPath: serializationData.Prefab
+      value: 
+      objectReference: {fileID: 9018465345033481370, guid: cc02f095ff6e6984e8a5623a037b654e,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cc02f095ff6e6984e8a5623a037b654e, type: 3}
 --- !u!1 &845518201
@@ -11329,6 +11523,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 706879183}
     m_Modifications:
+    - target: {fileID: 1616786875512177631, guid: cc02f095ff6e6984e8a5623a037b654e,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1616786875512177631, guid: cc02f095ff6e6984e8a5623a037b654e,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3770089882323113964, guid: cc02f095ff6e6984e8a5623a037b654e,
         type: 3}
       propertyPath: serializationData.Prefab
@@ -11395,6 +11599,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: EnemyLilSnek (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 6158863091415451881, guid: cc02f095ff6e6984e8a5623a037b654e,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9018465345033481370, guid: cc02f095ff6e6984e8a5623a037b654e,
+        type: 3}
+      propertyPath: serializationData.Prefab
+      value: 
+      objectReference: {fileID: 9018465345033481370, guid: cc02f095ff6e6984e8a5623a037b654e,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cc02f095ff6e6984e8a5623a037b654e, type: 3}
 --- !u!1001 &1082818319
@@ -11512,6 +11727,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 706879183}
     m_Modifications:
+    - target: {fileID: 1616786875512177631, guid: cc02f095ff6e6984e8a5623a037b654e,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1616786875512177631, guid: cc02f095ff6e6984e8a5623a037b654e,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3770089882323113964, guid: cc02f095ff6e6984e8a5623a037b654e,
         type: 3}
       propertyPath: serializationData.Prefab
@@ -11578,6 +11803,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: EnemyLilSnek (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 6158863091415451881, guid: cc02f095ff6e6984e8a5623a037b654e,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9018465345033481370, guid: cc02f095ff6e6984e8a5623a037b654e,
+        type: 3}
+      propertyPath: serializationData.Prefab
+      value: 
+      objectReference: {fileID: 9018465345033481370, guid: cc02f095ff6e6984e8a5623a037b654e,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cc02f095ff6e6984e8a5623a037b654e, type: 3}
 --- !u!1001 &1144813144
@@ -11587,6 +11823,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 706879183}
     m_Modifications:
+    - target: {fileID: 1616786875512177631, guid: cc02f095ff6e6984e8a5623a037b654e,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1616786875512177631, guid: cc02f095ff6e6984e8a5623a037b654e,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3770089882323113964, guid: cc02f095ff6e6984e8a5623a037b654e,
         type: 3}
       propertyPath: serializationData.Prefab
@@ -11653,6 +11899,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: EnemyLilSnek (13)
       objectReference: {fileID: 0}
+    - target: {fileID: 6158863091415451881, guid: cc02f095ff6e6984e8a5623a037b654e,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9018465345033481370, guid: cc02f095ff6e6984e8a5623a037b654e,
+        type: 3}
+      propertyPath: serializationData.Prefab
+      value: 
+      objectReference: {fileID: 9018465345033481370, guid: cc02f095ff6e6984e8a5623a037b654e,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cc02f095ff6e6984e8a5623a037b654e, type: 3}
 --- !u!1 &1158502627 stripped
@@ -12810,6 +13067,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 706879183}
     m_Modifications:
+    - target: {fileID: 1616786875512177631, guid: cc02f095ff6e6984e8a5623a037b654e,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1616786875512177631, guid: cc02f095ff6e6984e8a5623a037b654e,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3770089882323113964, guid: cc02f095ff6e6984e8a5623a037b654e,
         type: 3}
       propertyPath: serializationData.Prefab
@@ -12876,6 +13143,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: EnemyLilSnek
       objectReference: {fileID: 0}
+    - target: {fileID: 6158863091415451881, guid: cc02f095ff6e6984e8a5623a037b654e,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9018465345033481370, guid: cc02f095ff6e6984e8a5623a037b654e,
+        type: 3}
+      propertyPath: serializationData.Prefab
+      value: 
+      objectReference: {fileID: 9018465345033481370, guid: cc02f095ff6e6984e8a5623a037b654e,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cc02f095ff6e6984e8a5623a037b654e, type: 3}
 --- !u!1001 &1285099173
@@ -13776,6 +14054,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 706879183}
     m_Modifications:
+    - target: {fileID: 1616786875512177631, guid: cc02f095ff6e6984e8a5623a037b654e,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1616786875512177631, guid: cc02f095ff6e6984e8a5623a037b654e,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3770089882323113964, guid: cc02f095ff6e6984e8a5623a037b654e,
         type: 3}
       propertyPath: serializationData.Prefab
@@ -13842,6 +14130,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: EnemyLilSnek (16)
       objectReference: {fileID: 0}
+    - target: {fileID: 6158863091415451881, guid: cc02f095ff6e6984e8a5623a037b654e,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9018465345033481370, guid: cc02f095ff6e6984e8a5623a037b654e,
+        type: 3}
+      propertyPath: serializationData.Prefab
+      value: 
+      objectReference: {fileID: 9018465345033481370, guid: cc02f095ff6e6984e8a5623a037b654e,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cc02f095ff6e6984e8a5623a037b654e, type: 3}
 --- !u!1 &1311691012
@@ -13918,6 +14217,8 @@ MonoBehaviour:
   _udonSharpBackingUdonBehaviour: {fileID: 1311691013}
   TestingUIBG: {fileID: 1994721528}
   TestingUI: {fileID: 1225692809}
+  LilSnekPool: {fileID: 706879185}
+  GameStarted: 0
   playerAssignedIndex: 0
   playerAssignedPoolObject: {fileID: 0}
   playerUnassignedIndex: 0
@@ -13943,6 +14244,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 706879183}
     m_Modifications:
+    - target: {fileID: 1616786875512177631, guid: cc02f095ff6e6984e8a5623a037b654e,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1616786875512177631, guid: cc02f095ff6e6984e8a5623a037b654e,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3770089882323113964, guid: cc02f095ff6e6984e8a5623a037b654e,
         type: 3}
       propertyPath: serializationData.Prefab
@@ -14009,6 +14320,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: EnemyLilSnek (28)
       objectReference: {fileID: 0}
+    - target: {fileID: 6158863091415451881, guid: cc02f095ff6e6984e8a5623a037b654e,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9018465345033481370, guid: cc02f095ff6e6984e8a5623a037b654e,
+        type: 3}
+      propertyPath: serializationData.Prefab
+      value: 
+      objectReference: {fileID: 9018465345033481370, guid: cc02f095ff6e6984e8a5623a037b654e,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cc02f095ff6e6984e8a5623a037b654e, type: 3}
 --- !u!1 &1335511593 stripped
@@ -14132,6 +14454,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 706879183}
     m_Modifications:
+    - target: {fileID: 1616786875512177631, guid: cc02f095ff6e6984e8a5623a037b654e,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1616786875512177631, guid: cc02f095ff6e6984e8a5623a037b654e,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3770089882323113964, guid: cc02f095ff6e6984e8a5623a037b654e,
         type: 3}
       propertyPath: serializationData.Prefab
@@ -14198,6 +14530,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: EnemyLilSnek (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 6158863091415451881, guid: cc02f095ff6e6984e8a5623a037b654e,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9018465345033481370, guid: cc02f095ff6e6984e8a5623a037b654e,
+        type: 3}
+      propertyPath: serializationData.Prefab
+      value: 
+      objectReference: {fileID: 9018465345033481370, guid: cc02f095ff6e6984e8a5623a037b654e,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cc02f095ff6e6984e8a5623a037b654e, type: 3}
 --- !u!1 &1412875196
@@ -15390,6 +15733,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 706879183}
     m_Modifications:
+    - target: {fileID: 1616786875512177631, guid: cc02f095ff6e6984e8a5623a037b654e,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1616786875512177631, guid: cc02f095ff6e6984e8a5623a037b654e,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3770089882323113964, guid: cc02f095ff6e6984e8a5623a037b654e,
         type: 3}
       propertyPath: serializationData.Prefab
@@ -15456,6 +15809,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: EnemyLilSnek (23)
       objectReference: {fileID: 0}
+    - target: {fileID: 6158863091415451881, guid: cc02f095ff6e6984e8a5623a037b654e,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9018465345033481370, guid: cc02f095ff6e6984e8a5623a037b654e,
+        type: 3}
+      propertyPath: serializationData.Prefab
+      value: 
+      objectReference: {fileID: 9018465345033481370, guid: cc02f095ff6e6984e8a5623a037b654e,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cc02f095ff6e6984e8a5623a037b654e, type: 3}
 --- !u!1001 &1492028040
@@ -16356,6 +16720,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 706879183}
     m_Modifications:
+    - target: {fileID: 1616786875512177631, guid: cc02f095ff6e6984e8a5623a037b654e,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1616786875512177631, guid: cc02f095ff6e6984e8a5623a037b654e,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3770089882323113964, guid: cc02f095ff6e6984e8a5623a037b654e,
         type: 3}
       propertyPath: serializationData.Prefab
@@ -16422,6 +16796,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: EnemyLilSnek (26)
       objectReference: {fileID: 0}
+    - target: {fileID: 6158863091415451881, guid: cc02f095ff6e6984e8a5623a037b654e,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9018465345033481370, guid: cc02f095ff6e6984e8a5623a037b654e,
+        type: 3}
+      propertyPath: serializationData.Prefab
+      value: 
+      objectReference: {fileID: 9018465345033481370, guid: cc02f095ff6e6984e8a5623a037b654e,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cc02f095ff6e6984e8a5623a037b654e, type: 3}
 --- !u!1 &1512259981 stripped
@@ -16490,7 +16875,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh33008
+  m_Name: pb_Mesh681534
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -17545,6 +17930,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 706879183}
     m_Modifications:
+    - target: {fileID: 1616786875512177631, guid: cc02f095ff6e6984e8a5623a037b654e,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1616786875512177631, guid: cc02f095ff6e6984e8a5623a037b654e,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3770089882323113964, guid: cc02f095ff6e6984e8a5623a037b654e,
         type: 3}
       propertyPath: serializationData.Prefab
@@ -17611,6 +18006,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: EnemyLilSnek (22)
       objectReference: {fileID: 0}
+    - target: {fileID: 6158863091415451881, guid: cc02f095ff6e6984e8a5623a037b654e,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9018465345033481370, guid: cc02f095ff6e6984e8a5623a037b654e,
+        type: 3}
+      propertyPath: serializationData.Prefab
+      value: 
+      objectReference: {fileID: 9018465345033481370, guid: cc02f095ff6e6984e8a5623a037b654e,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cc02f095ff6e6984e8a5623a037b654e, type: 3}
 --- !u!1 &1608089888 stripped
@@ -17644,6 +18050,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 706879183}
     m_Modifications:
+    - target: {fileID: 1616786875512177631, guid: cc02f095ff6e6984e8a5623a037b654e,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1616786875512177631, guid: cc02f095ff6e6984e8a5623a037b654e,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3770089882323113964, guid: cc02f095ff6e6984e8a5623a037b654e,
         type: 3}
       propertyPath: serializationData.Prefab
@@ -17710,6 +18126,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: EnemyLilSnek (27)
       objectReference: {fileID: 0}
+    - target: {fileID: 6158863091415451881, guid: cc02f095ff6e6984e8a5623a037b654e,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9018465345033481370, guid: cc02f095ff6e6984e8a5623a037b654e,
+        type: 3}
+      propertyPath: serializationData.Prefab
+      value: 
+      objectReference: {fileID: 9018465345033481370, guid: cc02f095ff6e6984e8a5623a037b654e,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cc02f095ff6e6984e8a5623a037b654e, type: 3}
 --- !u!1001 &1696120392
@@ -18610,6 +19037,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 706879183}
     m_Modifications:
+    - target: {fileID: 1616786875512177631, guid: cc02f095ff6e6984e8a5623a037b654e,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1616786875512177631, guid: cc02f095ff6e6984e8a5623a037b654e,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3770089882323113964, guid: cc02f095ff6e6984e8a5623a037b654e,
         type: 3}
       propertyPath: serializationData.Prefab
@@ -18676,6 +19113,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: EnemyLilSnek (29)
       objectReference: {fileID: 0}
+    - target: {fileID: 6158863091415451881, guid: cc02f095ff6e6984e8a5623a037b654e,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9018465345033481370, guid: cc02f095ff6e6984e8a5623a037b654e,
+        type: 3}
+      propertyPath: serializationData.Prefab
+      value: 
+      objectReference: {fileID: 9018465345033481370, guid: cc02f095ff6e6984e8a5623a037b654e,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cc02f095ff6e6984e8a5623a037b654e, type: 3}
 --- !u!1 &1737179612 stripped
@@ -18697,6 +19145,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 706879183}
     m_Modifications:
+    - target: {fileID: 1616786875512177631, guid: cc02f095ff6e6984e8a5623a037b654e,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1616786875512177631, guid: cc02f095ff6e6984e8a5623a037b654e,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3770089882323113964, guid: cc02f095ff6e6984e8a5623a037b654e,
         type: 3}
       propertyPath: serializationData.Prefab
@@ -18763,6 +19221,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: EnemyLilSnek (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 6158863091415451881, guid: cc02f095ff6e6984e8a5623a037b654e,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9018465345033481370, guid: cc02f095ff6e6984e8a5623a037b654e,
+        type: 3}
+      propertyPath: serializationData.Prefab
+      value: 
+      objectReference: {fileID: 9018465345033481370, guid: cc02f095ff6e6984e8a5623a037b654e,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cc02f095ff6e6984e8a5623a037b654e, type: 3}
 --- !u!114 &1771895301 stripped
@@ -20807,6 +21276,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 706879183}
     m_Modifications:
+    - target: {fileID: 1616786875512177631, guid: cc02f095ff6e6984e8a5623a037b654e,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1616786875512177631, guid: cc02f095ff6e6984e8a5623a037b654e,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3770089882323113964, guid: cc02f095ff6e6984e8a5623a037b654e,
         type: 3}
       propertyPath: serializationData.Prefab
@@ -20873,6 +21352,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: EnemyLilSnek (25)
       objectReference: {fileID: 0}
+    - target: {fileID: 6158863091415451881, guid: cc02f095ff6e6984e8a5623a037b654e,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9018465345033481370, guid: cc02f095ff6e6984e8a5623a037b654e,
+        type: 3}
+      propertyPath: serializationData.Prefab
+      value: 
+      objectReference: {fileID: 9018465345033481370, guid: cc02f095ff6e6984e8a5623a037b654e,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cc02f095ff6e6984e8a5623a037b654e, type: 3}
 --- !u!1001 &1914292525
@@ -22739,6 +23229,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 706879183}
     m_Modifications:
+    - target: {fileID: 1616786875512177631, guid: cc02f095ff6e6984e8a5623a037b654e,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1616786875512177631, guid: cc02f095ff6e6984e8a5623a037b654e,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3770089882323113964, guid: cc02f095ff6e6984e8a5623a037b654e,
         type: 3}
       propertyPath: serializationData.Prefab
@@ -22805,6 +23305,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: EnemyLilSnek (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 6158863091415451881, guid: cc02f095ff6e6984e8a5623a037b654e,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9018465345033481370, guid: cc02f095ff6e6984e8a5623a037b654e,
+        type: 3}
+      propertyPath: serializationData.Prefab
+      value: 
+      objectReference: {fileID: 9018465345033481370, guid: cc02f095ff6e6984e8a5623a037b654e,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cc02f095ff6e6984e8a5623a037b654e, type: 3}
 --- !u!1 &1951974323 stripped
@@ -22826,6 +23337,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 706879183}
     m_Modifications:
+    - target: {fileID: 1616786875512177631, guid: cc02f095ff6e6984e8a5623a037b654e,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1616786875512177631, guid: cc02f095ff6e6984e8a5623a037b654e,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3770089882323113964, guid: cc02f095ff6e6984e8a5623a037b654e,
         type: 3}
       propertyPath: serializationData.Prefab
@@ -22892,6 +23413,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: EnemyLilSnek (19)
       objectReference: {fileID: 0}
+    - target: {fileID: 6158863091415451881, guid: cc02f095ff6e6984e8a5623a037b654e,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9018465345033481370, guid: cc02f095ff6e6984e8a5623a037b654e,
+        type: 3}
+      propertyPath: serializationData.Prefab
+      value: 
+      objectReference: {fileID: 9018465345033481370, guid: cc02f095ff6e6984e8a5623a037b654e,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cc02f095ff6e6984e8a5623a037b654e, type: 3}
 --- !u!1 &1994721528
@@ -23001,6 +23533,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 706879183}
     m_Modifications:
+    - target: {fileID: 1616786875512177631, guid: cc02f095ff6e6984e8a5623a037b654e,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1616786875512177631, guid: cc02f095ff6e6984e8a5623a037b654e,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3770089882323113964, guid: cc02f095ff6e6984e8a5623a037b654e,
         type: 3}
       propertyPath: serializationData.Prefab
@@ -23067,6 +23609,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: EnemyLilSnek (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 6158863091415451881, guid: cc02f095ff6e6984e8a5623a037b654e,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9018465345033481370, guid: cc02f095ff6e6984e8a5623a037b654e,
+        type: 3}
+      propertyPath: serializationData.Prefab
+      value: 
+      objectReference: {fileID: 9018465345033481370, guid: cc02f095ff6e6984e8a5623a037b654e,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cc02f095ff6e6984e8a5623a037b654e, type: 3}
 --- !u!1 &2015879575
@@ -23222,6 +23775,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 706879183}
     m_Modifications:
+    - target: {fileID: 1616786875512177631, guid: cc02f095ff6e6984e8a5623a037b654e,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1616786875512177631, guid: cc02f095ff6e6984e8a5623a037b654e,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3770089882323113964, guid: cc02f095ff6e6984e8a5623a037b654e,
         type: 3}
       propertyPath: serializationData.Prefab
@@ -23288,6 +23851,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: EnemyLilSnek (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 6158863091415451881, guid: cc02f095ff6e6984e8a5623a037b654e,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9018465345033481370, guid: cc02f095ff6e6984e8a5623a037b654e,
+        type: 3}
+      propertyPath: serializationData.Prefab
+      value: 
+      objectReference: {fileID: 9018465345033481370, guid: cc02f095ff6e6984e8a5623a037b654e,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cc02f095ff6e6984e8a5623a037b654e, type: 3}
 --- !u!1 &2060413382 stripped
@@ -23345,6 +23919,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 706879183}
     m_Modifications:
+    - target: {fileID: 1616786875512177631, guid: cc02f095ff6e6984e8a5623a037b654e,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1616786875512177631, guid: cc02f095ff6e6984e8a5623a037b654e,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3770089882323113964, guid: cc02f095ff6e6984e8a5623a037b654e,
         type: 3}
       propertyPath: serializationData.Prefab
@@ -23411,6 +23995,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: EnemyLilSnek (21)
       objectReference: {fileID: 0}
+    - target: {fileID: 6158863091415451881, guid: cc02f095ff6e6984e8a5623a037b654e,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9018465345033481370, guid: cc02f095ff6e6984e8a5623a037b654e,
+        type: 3}
+      propertyPath: serializationData.Prefab
+      value: 
+      objectReference: {fileID: 9018465345033481370, guid: cc02f095ff6e6984e8a5623a037b654e,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cc02f095ff6e6984e8a5623a037b654e, type: 3}
 --- !u!1001 &2122425248
@@ -23420,6 +24015,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 706879183}
     m_Modifications:
+    - target: {fileID: 1616786875512177631, guid: cc02f095ff6e6984e8a5623a037b654e,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1616786875512177631, guid: cc02f095ff6e6984e8a5623a037b654e,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3770089882323113964, guid: cc02f095ff6e6984e8a5623a037b654e,
         type: 3}
       propertyPath: serializationData.Prefab
@@ -23486,6 +24091,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: EnemyLilSnek (12)
       objectReference: {fileID: 0}
+    - target: {fileID: 6158863091415451881, guid: cc02f095ff6e6984e8a5623a037b654e,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9018465345033481370, guid: cc02f095ff6e6984e8a5623a037b654e,
+        type: 3}
+      propertyPath: serializationData.Prefab
+      value: 
+      objectReference: {fileID: 9018465345033481370, guid: cc02f095ff6e6984e8a5623a037b654e,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cc02f095ff6e6984e8a5623a037b654e, type: 3}
 --- !u!1001 &2124900069
@@ -23495,6 +24111,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 706879183}
     m_Modifications:
+    - target: {fileID: 1616786875512177631, guid: cc02f095ff6e6984e8a5623a037b654e,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1616786875512177631, guid: cc02f095ff6e6984e8a5623a037b654e,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3770089882323113964, guid: cc02f095ff6e6984e8a5623a037b654e,
         type: 3}
       propertyPath: serializationData.Prefab
@@ -23561,5 +24187,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: EnemyLilSnek (17)
       objectReference: {fileID: 0}
+    - target: {fileID: 6158863091415451881, guid: cc02f095ff6e6984e8a5623a037b654e,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9018465345033481370, guid: cc02f095ff6e6984e8a5623a037b654e,
+        type: 3}
+      propertyPath: serializationData.Prefab
+      value: 
+      objectReference: {fileID: 9018465345033481370, guid: cc02f095ff6e6984e8a5623a037b654e,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cc02f095ff6e6984e8a5623a037b654e, type: 3}

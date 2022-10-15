@@ -22,6 +22,7 @@ public class KnifePool : UdonSharpBehaviour
     [Header("Knife Stats")]
     // Knife array
     public GameObject[] Knives = new GameObject[20];
+
     // Used to toggle the knife weapon
     [UdonSynced]
     public bool isKnifeOn = false;

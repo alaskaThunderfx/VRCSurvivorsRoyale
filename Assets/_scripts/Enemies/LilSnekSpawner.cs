@@ -15,13 +15,13 @@ public class LilSnekSpawner : UdonSharpBehaviour
     public int numberOfSneks;
     public bool GameHasStarted = false;
 
-    private void OnEnable()
-    {
-        Owner = Networking.GetOwner(gameObject);
-        NumberOfSneks = 5;
-        SpawnSneks();
-        GameHasStarted = true;
-    }
+    // private void OnEnable()
+    // {
+    //     Owner = Networking.GetOwner(gameObject);
+    //     NumberOfSneks = 5;
+    //     SpawnSneks();
+    //     GameHasStarted = true;
+    // }
 
     public override void OnOwnershipTransferred(VRCPlayerApi player)
     {
@@ -30,8 +30,10 @@ public class LilSnekSpawner : UdonSharpBehaviour
 
     public void SpawnSneks()
     {
-        if (Networking.IsOwner(gameObject))
+        Owner = Networking.GetOwner(gameObject);
+        if (Networking.LocalPlayer == Owner)
         {
+            NumberOfSneks = 5;
             for (int i = 0; i < NumberOfSneks; i++)
             {
                 Pool.Shuffle();

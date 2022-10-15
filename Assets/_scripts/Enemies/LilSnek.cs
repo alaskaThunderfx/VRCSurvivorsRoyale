@@ -49,9 +49,6 @@ public class LilSnek : UdonSharpBehaviour
     public float AIVelocity;
 
     [UdonSynced]
-    public Vector3 CurrentPosition;
-
-    [UdonSynced]
     public float AgentSpeed;
     private bool IsMovingToNext;
     private bool HasSetNextPosition;
@@ -70,7 +67,8 @@ public class LilSnek : UdonSharpBehaviour
 
         LilSnekPool = transform.parent.GetComponent<VRCObjectPool>();
         LilSnekSpawner = transform.parent.GetComponent<LilSnekSpawner>();
-        AgentSpeed = Agent.speed;
+        if (Networking.LocalPlayer == Owner)
+            AgentSpeed = Agent.speed;
         WanderIdleTime = Random.Range(0f, 5f);
         InternalWaitTime = WanderIdleTime;
         IsMovingToNext = false;
@@ -82,7 +80,8 @@ public class LilSnek : UdonSharpBehaviour
             .GetComponent<Cyan.PlayerObjectPool.CyanPlayerObjectAssigner>();
         AIAnimator = GetComponent<Animator>();
         DeathScene = 1.3f;
-        IsSpawning = true;
+        if (Networking.LocalPlayer == Owner)
+            IsSpawning = true;
         SpawnCountdown = 1.1f;
         Owner = Networking.GetOwner(gameObject);
     }
@@ -125,32 +124,38 @@ public class LilSnek : UdonSharpBehaviour
 
         if (Agent.enabled)
         {
-            AIVelocity = Agent.velocity.magnitude;
-            if (!IsMovingToNext)
+            if (Networking.LocalPlayer != Owner)
+                Agent.SetDestination(CurrentDestination);
+            if (Networking.LocalPlayer == Owner)
             {
-                HasSetNextPosition = false;
-                InternalWaitTime -= Time.deltaTime;
-                if (InternalWaitTime < 0f)
+                AIVelocity = Agent.velocity.magnitude;
+                if (!IsMovingToNext)
                 {
-                    WanderIdleTime = Random.Range(0f, 5f);
-                    IsMovingToNext = true;
-                    InternalWaitTime = WanderIdleTime;
-                    StartWandering();
+                    HasSetNextPosition = false;
+                    InternalWaitTime -= Time.deltaTime;
+                    if (InternalWaitTime < 0f)
+                    {
+                        WanderIdleTime = Random.Range(0f, 5f);
+                        IsMovingToNext = true;
+                        InternalWaitTime = WanderIdleTime;
+                        StartWandering();
+                    }
                 }
-            }
 
-            if (Agent.remainingDistance < 1 && HasSetNextPosition)
-            {
-                IsMovingToNext = false;
-                WanderIdleTime = Random.Range(0f, 5f);
-                InternalWaitTime = WanderIdleTime;
+                if (Agent.remainingDistance < 1 && HasSetNextPosition)
+                {
+                    IsMovingToNext = false;
+                    WanderIdleTime = Random.Range(0f, 5f);
+                    InternalWaitTime = WanderIdleTime;
+                }
             }
         }
     }
 
     private void OnDisable()
     {
-        IsDying = false;
+        if (Networking.LocalPlayer == Owner)
+            IsDying = false;
     }
 
     public override void OnOwnershipTransferred(VRCPlayerApi player)
@@ -200,7 +205,8 @@ public class LilSnek : UdonSharpBehaviour
                 Agent.SetDestination(transform.position);
                 gameObject.GetComponent<Collider>().enabled = false;
                 gameObject.GetComponent<NavMeshAgent>().enabled = false;
-                IsDying = true;
+                if (Networking.LocalPlayer == Owner)
+                    IsDying = true;
             }
         }
         get { return health; }
