@@ -81,32 +81,35 @@ public class LilSnek : UdonSharpBehaviour
         AIAnimator.SetBool("Spawn", IsSpawning);
         AIAnimator.SetBool("Dying", IsDying);
         AIAnimator.SetBool("Attack", IsAttacking);
-
-        Agent.SetDestination(CurrentDestination);
-        AIVelocity = Agent.velocity.magnitude;
+        
 
         SpawnCountdown -= Time.deltaTime;
-        if(SpawnCountdown <= 0)
+        if (SpawnCountdown <= 0)
         {
             IsSpawning = false;
+            Agent.enabled = true;
         }
 
-        if (!IsMovingToNext)
+        if (Agent.enabled)
         {
-            HasSetNextPosition = false;
-            InternalWaitTime -= Time.deltaTime;
-            if (InternalWaitTime < 0f)
+            AIVelocity = Agent.velocity.magnitude;
+            if (!IsMovingToNext)
             {
-                IsMovingToNext = true;
-                InternalWaitTime = WanderIdleTime;
-                StartWandering();
+                HasSetNextPosition = false;
+                InternalWaitTime -= Time.deltaTime;
+                if (InternalWaitTime < 0f)
+                {
+                    IsMovingToNext = true;
+                    InternalWaitTime = WanderIdleTime;
+                    StartWandering();
+                }
             }
-        }
 
-        if (Agent.remainingDistance < 1 && HasSetNextPosition)
-        {
-            IsMovingToNext = false;
-            InternalWaitTime = WanderIdleTime;
+            if (Agent.remainingDistance < 1 && HasSetNextPosition)
+            {
+                IsMovingToNext = false;
+                InternalWaitTime = WanderIdleTime;
+            }
         }
     }
 
