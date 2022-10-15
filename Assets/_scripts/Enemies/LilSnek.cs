@@ -106,6 +106,7 @@ public class LilSnek : UdonSharpBehaviour
                 {
                     Debug.Log("You're the owner" + Owner.playerId);
                     LilSnekPool.Return(gameObject);
+                    LilSnekSpawner.NumberOfSneks -= 1;
                 }
             }
         }
