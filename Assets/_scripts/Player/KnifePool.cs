@@ -22,7 +22,7 @@ public class KnifePool : UdonSharpBehaviour
     [Header("Knife Stats")]
     // Knife array
     public GameObject[] Knives = new GameObject[30];
-    
+
 
     // Used to toggle the knife weapon
     [UdonSynced]
@@ -30,9 +30,6 @@ public class KnifePool : UdonSharpBehaviour
 
     // Index used for iterating through the pool
     public int KnifeIndex;
-
-    // Used to track whether attacking is on or off
-    public bool isAttacking;
 
     // Amount of damage done on hit
     [UdonSynced]
@@ -112,7 +109,7 @@ public class KnifePool : UdonSharpBehaviour
                 for (int i = 1; i <= Quantity; i++)
                 {
                     Knives[KnifeIndex].SetActive(true);
-                    if (KnifeIndex <= 18)
+                    if (KnifeIndex <= 28)
                     {
                         KnifeIndex++;
                     }
