@@ -86,7 +86,7 @@ public class Knife : UdonSharpBehaviour
         HitEnemy = false;
         HitIAO = false;
 
-        KnifePosition = new Vector3(KnifePool.PlayerPosition.x, 1, KnifePool.PlayerPosition.z);
+        KnifePosition = new Vector3(Random.Range(KnifePool.PlayerPosition.x - .2f, KnifePool.PlayerPosition.x + .2f), Random.Range(.8f, 1.2f), KnifePool.PlayerPosition.z);
         KnifeRotation = KnifePool.PlayerRotation;
 
         transform.SetPositionAndRotation(KnifePosition, KnifeRotation);

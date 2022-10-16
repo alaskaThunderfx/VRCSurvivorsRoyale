@@ -21,7 +21,8 @@ public class KnifePool : UdonSharpBehaviour
 
     [Header("Knife Stats")]
     // Knife array
-    public GameObject[] Knives = new GameObject[20];
+    public GameObject[] Knives = new GameObject[30];
+    
 
     // Used to toggle the knife weapon
     [UdonSynced]
@@ -34,19 +35,27 @@ public class KnifePool : UdonSharpBehaviour
     public bool isAttacking;
 
     // Amount of damage done on hit
+    [UdonSynced]
     public float Damage;
 
     // Attack frequency
+    [UdonSynced]
     public float cooldown;
 
     // Counter for the cooldown
     public float CDCounter;
 
     // Distance knives get thrown
+    [UdonSynced]
     public float Range;
 
     // Throw speed
+    [UdonSynced]
     public float Force;
+
+    // Amount of knives thrown at once
+    [UdonSynced]
+    public float Quantity;
 
     public bool ReadyToGo = false;
 
@@ -62,6 +71,7 @@ public class KnifePool : UdonSharpBehaviour
         cooldown = 2f;
         Range = 100f;
         Force = 2f;
+        Quantity = 1f;
 
         int index = 0;
         foreach (Transform child in transform)
@@ -99,14 +109,17 @@ public class KnifePool : UdonSharpBehaviour
             if (CDCounter <= 0)
             {
                 CDCounter = cooldown;
-                Knives[KnifeIndex].SetActive(true);
-                if (KnifeIndex <= 18)
+                for (int i = 1; i <= Quantity; i++)
                 {
-                    KnifeIndex++;
-                }
-                else
-                {
-                    KnifeIndex = 0;
+                    Knives[KnifeIndex].SetActive(true);
+                    if (KnifeIndex <= 18)
+                    {
+                        KnifeIndex++;
+                    }
+                    else
+                    {
+                        KnifeIndex = 0;
+                    }
                 }
             }
         }

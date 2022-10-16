@@ -7,6 +7,7 @@ using VRC.Udon;
 public class TestingUI : UdonSharpBehaviour
 {
     public Toggle KnifeToggle;
+    public GameObject KnifeUI;
     public Cyan.PlayerObjectPool.CyanPlayerObjectAssigner PlayerPool;
     public PlayerController PlayerController;
 
@@ -22,5 +23,13 @@ public class TestingUI : UdonSharpBehaviour
         Debug.Log("Pressing TogleKnife");
         PlayerController.TestingUi();
         PlayerController.KnifePool.isKnifeOn = !PlayerController.KnifePool.isKnifeOn;
+        if (PlayerController.KnifePool.isKnifeOn)
+        {
+            KnifeUI.SetActive(true);
+        }
+        else if (!PlayerController.KnifePool.isKnifeOn)
+        {
+            KnifeUI.SetActive(false);
+        }
     }
 }
