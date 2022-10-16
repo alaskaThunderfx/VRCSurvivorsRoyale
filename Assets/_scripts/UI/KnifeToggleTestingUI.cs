@@ -6,13 +6,18 @@ using VRC.Udon;
 
 public class KnifeToggleTestingUI : UdonSharpBehaviour
 {
-    public Slider slider;
-    public Text text;
+    public Slider QuantitySlider;
+    public Text QuantityText;
     public TestingUI TestingUI;
-    public PlayerController PlayerController;
+    public KnifePool KnifePool;
+
+    private void OnEnable() {
+        KnifePool = TestingUI.PlayerController.KnifePool;
+    }
 
     public void UpdateTab()
     {
-        text.text = slider.value.ToString();
+        QuantityText.text = QuantitySlider.value.ToString();
+        KnifePool.Quantity = QuantitySlider.value;
     }
 }
