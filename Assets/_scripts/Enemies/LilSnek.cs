@@ -49,11 +49,17 @@ public class LilSnek : UdonSharpBehaviour
     public float AIVelocity;
 
     [UdonSynced]
+    public int CurrentState;
+
+    [UdonSynced]
     public float AgentSpeed;
     private bool IsMovingToNext;
     private bool HasSetNextPosition;
     private float InternalWaitTime;
     private float GCTInternalTime;
+    private float AttackCD;
+    private float AnimCD;
+    public GameObject bite;
 
     private void OnEnable()
     {
@@ -62,12 +68,23 @@ public class LilSnek : UdonSharpBehaviour
         LocalPlayer = Networking.LocalPlayer;
         Agent = GetComponent<NavMeshAgent>();
         Agent.enabled = true;
+        // Agent.updatePosition = false;
+        CurrentState = 0;
 
         HealthBarCanvas = transform.GetChild(16);
         HealthBar = HealthBarCanvas.GetChild(0).GetComponent<HealthBar>();
 
-        LilSnekPool = transform.parent.GetComponent<VRCObjectPool>();
-        LilSnekSpawner = transform.parent.GetComponent<LilSnekSpawner>();
+        if (gameObject.name != "TestSnake")
+        {
+            LilSnekPool = transform.parent.GetComponent<VRCObjectPool>();
+            LilSnekSpawner = transform.parent.GetComponent<LilSnekSpawner>();
+        }
+        else
+        {
+            LilSnekPool = GameObject.Find("SnakeSpawner").GetComponent<VRCObjectPool>();
+            LilSnekSpawner = GameObject.Find("SnakeSpawner").GetComponent<LilSnekSpawner>();
+        }
+
         if (Networking.LocalPlayer == Owner)
             AgentSpeed = Agent.speed;
         WanderIdleTime = Random.Range(0f, 5f);
@@ -85,6 +102,7 @@ public class LilSnek : UdonSharpBehaviour
             IsSpawning = true;
         SpawnCountdown = 1.1f;
         IsDying = false;
+        AnimCD = .2f;
     }
 
     private void Update()
@@ -129,28 +147,55 @@ public class LilSnek : UdonSharpBehaviour
             gameObject.GetComponent<Collider>().enabled = true;
             if (Networking.LocalPlayer != Owner)
                 Agent.SetDestination(CurrentDestination);
-            if (Networking.LocalPlayer == Owner)
-            {
+            else
                 AIVelocity = Agent.velocity.magnitude;
-                if (!IsMovingToNext)
-                {
-                    HasSetNextPosition = false;
-                    InternalWaitTime -= Time.deltaTime;
-                    if (InternalWaitTime < 0f)
-                    {
-                        WanderIdleTime = Random.Range(0f, 5f);
-                        IsMovingToNext = true;
-                        InternalWaitTime = WanderIdleTime;
-                        StartWandering();
-                    }
-                }
 
-                if (Agent.remainingDistance < 1 && HasSetNextPosition)
-                {
-                    IsMovingToNext = false;
-                    WanderIdleTime = Random.Range(0f, 5f);
-                    InternalWaitTime = WanderIdleTime;
-                }
+            switch (CurrentState)
+            {
+                case 0:
+                    if (!Networking.IsOwner(gameObject))
+                        break;
+                    if (!IsMovingToNext)
+                    {
+                        HasSetNextPosition = false;
+                        InternalWaitTime -= Time.deltaTime;
+                        if (InternalWaitTime < 0f)
+                        {
+                            WanderIdleTime = Random.Range(0f, 5f);
+                            IsMovingToNext = true;
+                            InternalWaitTime = WanderIdleTime;
+                            StartWandering();
+                        }
+                    }
+
+                    if (Agent.remainingDistance < 1 && HasSetNextPosition)
+                    {
+                        IsMovingToNext = false;
+                        WanderIdleTime = Random.Range(0f, 5f);
+                        InternalWaitTime = WanderIdleTime;
+                    }
+                    break;
+                case 1:
+                    if (!Networking.IsOwner(gameObject))
+                        break;
+                    transform.GetChild(17).GetComponent<Collider>().enabled = false;
+                    SetAIDestination(Owner.GetPosition());
+                    GCTInternalTime -= Time.deltaTime;
+                    if (Agent.remainingDistance < 1.5f)
+                    {
+                        AttackCD -= Time.deltaTime;
+                        if (AttackCD <= 0)
+                        {
+                            AIAnimator.SetTrigger("Attacks");
+                        }
+                    }
+                    if (GCTInternalTime < 0f)
+                    {
+                        CurrentState = 0;
+                        GCTInternalTime = GuardChaseTime;
+                        transform.GetChild(17).GetComponent<Collider>().enabled = true;
+                    }
+                    break;
             }
         }
     }
@@ -184,6 +229,15 @@ public class LilSnek : UdonSharpBehaviour
         NavMeshHit hit;
         NavMesh.SamplePosition(randDir, out hit, dist, NavMesh.AllAreas);
         return hit.position;
+    }
+
+    public void activateBite(){
+        bite.GetComponent<Collider>().enabled = true;
+    }
+
+    public void deactivateBite()
+    {
+        bite.GetComponent<Collider>().enabled = false;
     }
 
     public float Health

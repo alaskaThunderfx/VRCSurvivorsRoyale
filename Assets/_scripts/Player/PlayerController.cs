@@ -13,6 +13,7 @@ public class PlayerController : UdonSharpBehaviour
     public EffectsContainer EffectsContainer;
     public Scoreboard Scoreboard;
     public KnifePool KnifePool;
+    public PlayerHitBox PlayerHitBox;
 
     [Header("Stats")]
     public int level;
@@ -37,7 +38,13 @@ public class PlayerController : UdonSharpBehaviour
         Debug.Log("Setting owner of KnifePool");
         KnifePool = transform.GetChild(1).GetComponent<KnifePool>();
         KnifePool._OnOwnerSet();
+        PlayerHitBox = transform.GetChild(2).GetComponent<PlayerHitBox>();
+        PlayerHitBox._OnOwnerSet();
         Scoreboard = GameObject.Find("Scoreboard").GetComponent<Scoreboard>();
+    }
+
+    private void Update() {
+        
     }
 
     public void _OnCleanup() { }
@@ -46,6 +53,13 @@ public class PlayerController : UdonSharpBehaviour
     {
         Debug.Log("In PlayerController");
         KnifePool.TestingUI();
+    }
+
+    private void OnTriggerEnter(Collider other) {
+        if (other.name == "Hit")
+        {
+            Debug.Log("I've been hit!");
+        }
     }
 
     public float Experience

@@ -12,6 +12,7 @@ public class PoolEventListener : UdonSharpBehaviour
     public GameObject TestingUI;
     public Scoreboard Scoreboard;
     public LilSnekSpawner LilSnekPool;
+    public GameObject TestSnake;
 
     [UdonSynced]
     public bool GameStarted = false;
@@ -21,6 +22,7 @@ public class PoolEventListener : UdonSharpBehaviour
     {
         TestingUIBG.SetActive(true);
         TestingUI.SetActive(true);
+        TestSnake.SetActive(true);
         if (Networking.IsMaster && !GameStarted)
         {
             GameStarted = true;
