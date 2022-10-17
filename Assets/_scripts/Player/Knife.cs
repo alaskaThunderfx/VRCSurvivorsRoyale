@@ -53,6 +53,11 @@ public class Knife : UdonSharpBehaviour
 
     // for OnEnable functionality
     public bool ReadyToGo = false;
+    public Transform mesh;
+    public Transform particle;
+    public Vector3 OgMesh;
+    public Vector3 OgParticle;
+    public bool HasStarted;
 
     // Ran after the owner has been set on this object
     public void _OnOwnerSet()
@@ -86,11 +91,30 @@ public class Knife : UdonSharpBehaviour
         HitEnemy = false;
         HitIAO = false;
 
-        KnifePosition = new Vector3(Random.Range(KnifePool.PlayerPosition.x - .2f, KnifePool.PlayerPosition.x + .2f), Random.Range(.8f, 1.2f), KnifePool.PlayerPosition.z);
+        KnifePosition = new Vector3(
+            Random.Range(KnifePool.PlayerPosition.x - .2f, KnifePool.PlayerPosition.x + .2f),
+            Random.Range(.8f, 1.2f),
+            KnifePool.PlayerPosition.z
+        );
         KnifeRotation = KnifePool.PlayerRotation;
 
         transform.SetPositionAndRotation(KnifePosition, KnifeRotation);
         KnifeRB.velocity = transform.forward * KnifePool.Force;
+
+        mesh = transform.GetChild(0);
+        particle = transform.GetChild(1);
+        OgMesh = mesh.localScale;
+        OgParticle = particle.localScale;
+        mesh.localScale = new Vector3(
+            OgMesh.x * KnifePool.Size,
+            OgMesh.y * KnifePool.Size,
+            OgMesh.z * KnifePool.Size
+        );
+        particle.localScale = new Vector3(
+            OgParticle.x * KnifePool.Size,
+            OgParticle.y * KnifePool.Size,
+            OgParticle.z * KnifePool.Size
+        );
         AudioSource.PlayClipAtPoint(Throw, transform.position);
     }
 
@@ -131,6 +155,12 @@ public class Knife : UdonSharpBehaviour
 
     private void OnDisable()
     {
+        if (ReadyToGo)
+        {
+            mesh.localScale = OgMesh;
+            particle.localScale = OgParticle;
+        }
+
         ReadyToGo = true;
         if (HitEnemy && Networking.LocalPlayer == Owner)
         {

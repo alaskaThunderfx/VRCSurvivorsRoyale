@@ -53,6 +53,8 @@ public class KnifePool : UdonSharpBehaviour
     // Amount of knives thrown at once
     [UdonSynced]
     public float Quantity;
+    [UdonSynced]
+    public float Size;
 
     public bool ReadyToGo = false;
 
@@ -69,6 +71,7 @@ public class KnifePool : UdonSharpBehaviour
         Range = 100f;
         Force = 2f;
         Quantity = 1f;
+        Size = 1f;
 
         int index = 0;
         foreach (Transform child in transform)

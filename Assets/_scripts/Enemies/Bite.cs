@@ -6,7 +6,4 @@ using VRC.Udon;
 
 public class Bite : UdonSharpBehaviour
 {
-    private void OnTriggerEnter(Collider other) {
-        Debug.Log("I bit " + other.name);
-    }
 }

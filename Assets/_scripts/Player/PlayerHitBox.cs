@@ -22,4 +22,11 @@ public class PlayerHitBox : UdonSharpBehaviour
             transform.position = Owner.GetPosition();
         }
     }
+
+    private void OnTriggerEnter(Collider other) {
+        if (other.name == "Hit")
+        {
+            Debug.Log("I got bit!");
+        }
+    }
 }

@@ -37,5 +37,7 @@ public class KnifeToggleTestingUI : UdonSharpBehaviour
         KnifePool.Range = RangeSlider.value;
         SpeedText.text = SpeedSlider.value.ToString();
         KnifePool.Force = SpeedSlider.value;
+        SizeText.text = SizeSlider.value.ToString();
+        KnifePool.Size = SizeSlider.value;
     }
 }
