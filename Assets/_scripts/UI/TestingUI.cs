@@ -8,6 +8,7 @@ public class TestingUI : UdonSharpBehaviour
 {
     public Toggle KnifeToggle;
     public GameObject KnifeUI;
+    public GameObject MusicControl;
     public Cyan.PlayerObjectPool.CyanPlayerObjectAssigner PlayerPool;
     public PlayerController PlayerController;
 
@@ -16,6 +17,7 @@ public class TestingUI : UdonSharpBehaviour
         PlayerController = PlayerPool
             ._GetPlayerPooledObject(Networking.LocalPlayer)
             .GetComponent<PlayerController>();
+        MusicControl.SetActive(true);
     }
 
     public void ToggleKnife()
