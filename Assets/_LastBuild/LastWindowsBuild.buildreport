@@ -1,0 +1,3995 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1126 &-8352630594415858128
+PackedAssets:
+  m_File: 5
+  m_ShortPath: CAB-dad06f69ca958869eb34e34a582547d5
+  m_Overhead: 4096
+  m_Contents:
+  - fileID: 1
+    classID: 142
+    packedSize: 104
+    offset: 4096
+    sourceAssetGUID: 00000000000000000000000000000000
+    buildTimeAssetPath: AssetBundle Object
+  - fileID: 2
+    classID: 290
+    packedSize: 104
+    offset: 4200
+    sourceAssetGUID: 00000000000000000000000000000000
+    buildTimeAssetPath: 'Built-in AssetBundleManifest: AssetBundleManifest'
+--- !u!1126 &-7746058434567349148
+PackedAssets:
+  m_File: 1
+  m_ShortPath: BuildPlayer-VRCSR.sharedAssets
+  m_Overhead: 299613
+  m_Contents:
+  - fileID: 1
+    classID: 150
+    packedSize: 85
+    offset: 300352
+    sourceAssetGUID: 00000000000000000000000000000000
+    buildTimeAssetPath: 
+  - fileID: 2
+    classID: 142
+    packedSize: 140
+    offset: 300440
+    sourceAssetGUID: 00000000000000000000000000000000
+    buildTimeAssetPath: 
+  - fileID: 3
+    classID: 21
+    packedSize: 252
+    offset: 300584
+    sourceAssetGUID: 0000000000000000f000000000000000
+    buildTimeAssetPath: Resources/unity_builtin_extra
+  - fileID: 4
+    classID: 21
+    packedSize: 1064
+    offset: 300840
+    sourceAssetGUID: 0000000000000000f000000000000000
+    buildTimeAssetPath: Resources/unity_builtin_extra
+  - fileID: 5
+    classID: 21
+    packedSize: 312
+    offset: 301904
+    sourceAssetGUID: 0000000000000000f000000000000000
+    buildTimeAssetPath: Resources/unity_builtin_extra
+  - fileID: 6
+    classID: 21
+    packedSize: 1312
+    offset: 302216
+    sourceAssetGUID: f48cd751900a1ad4c9cde0a4d8396268
+    buildTimeAssetPath: Assets/_materials/LevelUpTrail.mat
+  - fileID: 7
+    classID: 21
+    packedSize: 896
+    offset: 303528
+    sourceAssetGUID: a9b6f23dda8195f4396de852b2d30214
+    buildTimeAssetPath: Assets/_materials/New Material.mat
+  - fileID: 8
+    classID: 21
+    packedSize: 576
+    offset: 304424
+    sourceAssetGUID: 4b6bfe1d24a7f6a43a88656cf3f9ad27
+    buildTimeAssetPath: Assets/_particleEffects/blood_mat.mat
+  - fileID: 9
+    classID: 21
+    packedSize: 576
+    offset: 305000
+    sourceAssetGUID: 3c2840b08a853f740a358e54538329d4
+    buildTimeAssetPath: Assets/_particleEffects/bloodsheet.mat
+  - fileID: 10
+    classID: 21
+    packedSize: 572
+    offset: 305576
+    sourceAssetGUID: 01a4b7e9b85fd2348838c868ccaf5afb
+    buildTimeAssetPath: Assets/_particleEffects/lightmat.mat
+  - fileID: 11
+    classID: 21
+    packedSize: 552
+    offset: 306152
+    sourceAssetGUID: fa9e67520e3a0c04996a1f31dd165bb9
+    buildTimeAssetPath: Assets/_visual/Environment/PolygonDungeon/Materials/Misc/FX_Standard.mat
+  - fileID: 12
+    classID: 21
+    packedSize: 928
+    offset: 306704
+    sourceAssetGUID: b1a7899fb9438414a84eabd73b5d0218
+    buildTimeAssetPath: Assets/_visual/Monsters/Monsters Ultimate Pack 02 Cute Series/Snakelet
+      Cute Series/Materials/Snakelet.mat
+  - fileID: 13
+    classID: 21
+    packedSize: 1000
+    offset: 307632
+    sourceAssetGUID: 93a8f67f13567f648925add681fd318f
+    buildTimeAssetPath: Assets/_weapons/Steel Dagger/Asset/Materials/SteelDagger_Material_512.mat
+  - fileID: 14
+    classID: 28
+    packedSize: 21964
+    offset: 308632
+    sourceAssetGUID: 0000000000000000f000000000000000
+    buildTimeAssetPath: Resources/unity_builtin_extra
+  - fileID: 15
+    classID: 28
+    packedSize: 21952
+    offset: 330600
+    sourceAssetGUID: 0000000000000000f000000000000000
+    buildTimeAssetPath: Resources/unity_builtin_extra
+  - fileID: 16
+    classID: 28
+    packedSize: 5564
+    offset: 352552
+    sourceAssetGUID: 0000000000000000f000000000000000
+    buildTimeAssetPath: Resources/unity_builtin_extra
+  - fileID: 17
+    classID: 28
+    packedSize: 5568
+    offset: 358120
+    sourceAssetGUID: 0000000000000000f000000000000000
+    buildTimeAssetPath: Resources/unity_builtin_extra
+  - fileID: 18
+    classID: 28
+    packedSize: 21944
+    offset: 363688
+    sourceAssetGUID: 0000000000000000f000000000000000
+    buildTimeAssetPath: Resources/unity_builtin_extra
+  - fileID: 19
+    classID: 28
+    packedSize: 174908
+    offset: 385632
+    sourceAssetGUID: 113aea02acce62445a840ba7613b8d15
+    buildTimeAssetPath: Assets/_weapons/Steel Dagger/Asset/Textures/512/steeldagger_512_AlbedoTransparency.png
+  - fileID: 20
+    classID: 28
+    packedSize: 11632
+    offset: 560544
+    sourceAssetGUID: 173eee4edc62fce4eac88e04425f5671
+    buildTimeAssetPath: Assets/_visual/UI Images/HealthContainer.tga
+  - fileID: 21
+    classID: 28
+    packedSize: 349684
+    offset: 572176
+    sourceAssetGUID: 1c88945e65947784da6ae7af91526cc2
+    buildTimeAssetPath: Assets/_weapons/Steel Dagger/Asset/Textures/512/steeldagger_512_MetallicSmoothness.png
+  - fileID: 22
+    classID: 28
+    packedSize: 349672
+    offset: 921864
+    sourceAssetGUID: 23e19410c80d3ff418ed513d33134069
+    buildTimeAssetPath: Assets/_weapons/Steel Dagger/Asset/Textures/512/steeldagger_512_Normal.png
+  - fileID: 23
+    classID: 28
+    packedSize: 349660
+    offset: 1271536
+    sourceAssetGUID: 35297d0d568846d489d93c22f3259027
+    buildTimeAssetPath: Assets/_particleEffects/bloodspark.png
+  - fileID: 24
+    classID: 28
+    packedSize: 65652
+    offset: 1621200
+    sourceAssetGUID: 5d865e895ac33114a914a63a30ecdf04
+    buildTimeAssetPath: Assets/_visual/UI Images/CleanFlatIcon/png_128/icon_line/icon_line_media/icon_line_media_52.png
+  - fileID: 25
+    classID: 28
+    packedSize: 174880
+    offset: 1686856
+    sourceAssetGUID: 8016c10e702af7d47ad02b98dee125c1
+    buildTimeAssetPath: Assets/_visual/Monsters/Monsters Ultimate Pack 02 Cute Series/Snakelet
+      Cute Series/Textures/Snakelet.psd
+  - fileID: 26
+    classID: 28
+    packedSize: 43820
+    offset: 1861736
+    sourceAssetGUID: a56254110c469a549acaf09f64f72258
+    buildTimeAssetPath: Assets/_visual/Monsters/Monsters Ultimate Pack 02 Cute Series/Snakelet
+      Cute Series/Textures/Snakelet Emission.psd
+  - fileID: 27
+    classID: 28
+    packedSize: 445552
+    offset: 1905560
+    sourceAssetGUID: a9303122e28c37f4c963c2536463bd8b
+    buildTimeAssetPath: Assets/_visual/UI Images/TestingUI/Testing UI BG.jpg
+  - fileID: 28
+    classID: 28
+    packedSize: 65652
+    offset: 2351112
+    sourceAssetGUID: d0774452a52336e499b1ccb1e471b85a
+    buildTimeAssetPath: Assets/_visual/UI Images/CleanFlatIcon/png_128/icon_line/icon_line_media/icon_line_media_2.png
+  - fileID: 29
+    classID: 28
+    packedSize: 65652
+    offset: 2416768
+    sourceAssetGUID: db64ac3228d8187408af3badca05ae27
+    buildTimeAssetPath: Assets/_visual/UI Images/CleanFlatIcon/png_128/icon_line/icon_line_media/icon_line_media_1.png
+  - fileID: 30
+    classID: 28
+    packedSize: 349660
+    offset: 2482424
+    sourceAssetGUID: f668d521625fad8478d67a3782b809e9
+    buildTimeAssetPath: Assets/_particleEffects/bloodsplkat.png
+  - fileID: 31
+    classID: 43
+    packedSize: 67048
+    offset: 2832088
+    sourceAssetGUID: fdc27d8a5bffd964e86bce10091249ae
+    buildTimeAssetPath: Assets/_weapons/Steel Dagger/Asset/Models/dagger.fbx
+  - fileID: 32
+    classID: 43
+    packedSize: 52232
+    offset: 2899136
+    sourceAssetGUID: 0b080fb945711ae47abb40495a599b9b
+    buildTimeAssetPath: Assets/_visual/Monsters/Monsters Ultimate Pack 02 Cute Series/Snakelet
+      Cute Series/FBX/Snakelet.FBX
+  - fileID: 33
+    classID: 48
+    packedSize: 758636
+    offset: 2951368
+    sourceAssetGUID: 0000000000000000f000000000000000
+    buildTimeAssetPath: Resources/unity_builtin_extra
+  - fileID: 34
+    classID: 48
+    packedSize: 13452
+    offset: 3710008
+    sourceAssetGUID: 0000000000000000f000000000000000
+    buildTimeAssetPath: Resources/unity_builtin_extra
+  - fileID: 35
+    classID: 48
+    packedSize: 8140
+    offset: 3723464
+    sourceAssetGUID: 0000000000000000f000000000000000
+    buildTimeAssetPath: Resources/unity_builtin_extra
+  - fileID: 36
+    classID: 48
+    packedSize: 8348
+    offset: 3731608
+    sourceAssetGUID: 0000000000000000f000000000000000
+    buildTimeAssetPath: Resources/unity_builtin_extra
+  - fileID: 37
+    classID: 48
+    packedSize: 59988
+    offset: 3739960
+    sourceAssetGUID: 0000000000000000f000000000000000
+    buildTimeAssetPath: Resources/unity_builtin_extra
+  - fileID: 38
+    classID: 48
+    packedSize: 10980
+    offset: 3799952
+    sourceAssetGUID: 5f8fef09682fab74fb7a29d783391edb
+    buildTimeAssetPath: Packages/com.vrchat.base/Runtime/VRCSDK/Sample Assets/Shaders/VRChat-Sprites-Default.shader
+  - fileID: 39
+    classID: 74
+    packedSize: 43540
+    offset: 3810936
+    sourceAssetGUID: 048f2dcd034be904aaaa63693bca3a1f
+    buildTimeAssetPath: Assets/_visual/Monsters/Monsters Ultimate Pack 02 Cute Series/Snakelet
+      Cute Series/FBX/Snakelet@Slither Forward W Root.FBX
+  - fileID: 40
+    classID: 74
+    packedSize: 47048
+    offset: 3854480
+    sourceAssetGUID: 211c387469166a94a8231490d3329181
+    buildTimeAssetPath: Assets/_visual/Monsters/Monsters Ultimate Pack 02 Cute Series/Snakelet
+      Cute Series/FBX/Snakelet@Idle.FBX
+  - fileID: 41
+    classID: 74
+    packedSize: 37508
+    offset: 3901528
+    sourceAssetGUID: 31b0c72b34e709e4bbe99d9da0ee5a73
+    buildTimeAssetPath: Assets/_visual/Monsters/Monsters Ultimate Pack 02 Cute Series/Snakelet
+      Cute Series/FBX/Snakelet@Turn Right.FBX
+  - fileID: 42
+    classID: 74
+    packedSize: 61808
+    offset: 3939040
+    sourceAssetGUID: 3851dd3b76e86f84ca990b222a770ff0
+    buildTimeAssetPath: Assets/_visual/Monsters/Monsters Ultimate Pack 02 Cute Series/Snakelet
+      Cute Series/FBX/Snakelet@Spawn.FBX
+  - fileID: 43
+    classID: 74
+    packedSize: 10000
+    offset: 4000848
+    sourceAssetGUID: 3c755deea655c7d4190f226792da5189
+    buildTimeAssetPath: Assets/_visual/Monsters/Monsters Ultimate Pack 02 Cute Series/Snakelet
+      Cute Series/FBX/Snakelet@Underground.FBX
+  - fileID: 44
+    classID: 74
+    packedSize: 66356
+    offset: 4010848
+    sourceAssetGUID: 5b46c2a82a9dc1f4ca10b1c749d38b46
+    buildTimeAssetPath: Assets/_visual/Monsters/Monsters Ultimate Pack 02 Cute Series/Snakelet
+      Cute Series/FBX/Snakelet@Pounce and Bite Attack In Place.FBX
+  - fileID: 45
+    classID: 74
+    packedSize: 61896
+    offset: 4077208
+    sourceAssetGUID: 6914c74b218b2044ea2c463ae289d898
+    buildTimeAssetPath: Assets/_visual/Monsters/Monsters Ultimate Pack 02 Cute Series/Snakelet
+      Cute Series/FBX/Snakelet@Bite Attack.FBX
+  - fileID: 46
+    classID: 74
+    packedSize: 35712
+    offset: 4139104
+    sourceAssetGUID: 70ae52a7a48f64844af9aa34de2a09f4
+    buildTimeAssetPath: Assets/_visual/Monsters/Monsters Ultimate Pack 02 Cute Series/Snakelet
+      Cute Series/FBX/Snakelet@Turn Left.FBX
+  - fileID: 47
+    classID: 74
+    packedSize: 63264
+    offset: 4174816
+    sourceAssetGUID: aff2427e77cf53e40a77488919027b44
+    buildTimeAssetPath: Assets/_visual/Monsters/Monsters Ultimate Pack 02 Cute Series/Snakelet
+      Cute Series/FBX/Snakelet@Projectile Attack.FBX
+  - fileID: 48
+    classID: 74
+    packedSize: 70408
+    offset: 4238080
+    sourceAssetGUID: c1694ad78d2b8ca4fa7d27c700415665
+    buildTimeAssetPath: Assets/_visual/Monsters/Monsters Ultimate Pack 02 Cute Series/Snakelet
+      Cute Series/FBX/Snakelet@Die.FBX
+  - fileID: 49
+    classID: 74
+    packedSize: 39220
+    offset: 4308488
+    sourceAssetGUID: caf8df05cee5f4441b4b584b4aaac8f9
+    buildTimeAssetPath: Assets/_visual/Monsters/Monsters Ultimate Pack 02 Cute Series/Snakelet
+      Cute Series/FBX/Snakelet@Take Damage.FBX
+  - fileID: 50
+    classID: 74
+    packedSize: 77732
+    offset: 4347712
+    sourceAssetGUID: d6f11abe29a0000418f6999a7285be5e
+    buildTimeAssetPath: Assets/_visual/Monsters/Monsters Ultimate Pack 02 Cute Series/Snakelet
+      Cute Series/FBX/Snakelet@Pounce and Bite Attack W Root.FBX
+  - fileID: 51
+    classID: 74
+    packedSize: 61160
+    offset: 4425448
+    sourceAssetGUID: e40f0b936e6f87b49adffb816a83f69c
+    buildTimeAssetPath: Assets/_visual/Monsters/Monsters Ultimate Pack 02 Cute Series/Snakelet
+      Cute Series/FBX/Snakelet@Cast Spell.FBX
+  - fileID: 52
+    classID: 74
+    packedSize: 39148
+    offset: 4486608
+    sourceAssetGUID: e9e97ff4e8a989e47af733dafd080787
+    buildTimeAssetPath: Assets/_visual/Monsters/Monsters Ultimate Pack 02 Cute Series/Snakelet
+      Cute Series/FBX/Snakelet@Slither Forward In Place.FBX
+  - fileID: 53
+    classID: 83
+    packedSize: 132
+    offset: 4525760
+    sourceAssetGUID: 1b5449550144a44f18a0916d0becc426
+    buildTimeAssetPath: Assets/_sounds/SFX/Sound Assets/8 Bit/Sound Effects/Character/General/Equip_Armour_2.wav
+  - fileID: 54
+    classID: 83
+    packedSize: 132
+    offset: 4525896
+    sourceAssetGUID: 1fb5294b9a8dd4ee4b617e981e0012da
+    buildTimeAssetPath: Assets/_sounds/Music/16BIT_MUSICPACK_COMPLETE/16BIT_MUSICPACK_VOL1/All
+      Stars Choose.wav
+  - fileID: 55
+    classID: 83
+    packedSize: 136
+    offset: 4526032
+    sourceAssetGUID: 2e5a8dccb841cf948bba3b910e655be4
+    buildTimeAssetPath: Assets/_sounds/SFX/Essential Sounds Bundle/PowerUp & Whoosh/Special
+      Whoosh 2_4.wav
+  - fileID: 56
+    classID: 83
+    packedSize: 140
+    offset: 4526168
+    sourceAssetGUID: 606555bf9566a4fce8c2bf45e5d30382
+    buildTimeAssetPath: Assets/_sounds/Music/16BIT_MUSICPACK_COMPLETE/16BIT_MUSICPACK_VOL8/Breathin'
+      Metal (loop).wav
+  - fileID: 57
+    classID: 83
+    packedSize: 132
+    offset: 4526312
+    sourceAssetGUID: 738013ade19064bebb3ed596da2a491e
+    buildTimeAssetPath: Assets/_sounds/Music/16BIT_MUSICPACK_COMPLETE/16BIT_MUSICPACK_VOL5/Reignite
+      (loop).wav
+  - fileID: 58
+    classID: 83
+    packedSize: 124
+    offset: 4526448
+    sourceAssetGUID: 770100a94ab1b9b4ebf857c8fd71b843
+    buildTimeAssetPath: Assets/_sounds/SFX/Essential Sounds Bundle/Combat & Magic/Hit
+      03.wav
+  - fileID: 59
+    classID: 83
+    packedSize: 144
+    offset: 4526576
+    sourceAssetGUID: 7b77fabe78683a2428883cd0325443eb
+    buildTimeAssetPath: Assets/_sounds/SFX/Essential Sounds Bundle/Monsters/Humanoid
+      Small 3 - Short 03.wav
+  - fileID: 60
+    classID: 83
+    packedSize: 132
+    offset: 4526720
+    sourceAssetGUID: 81fe71eb58dc44717980eb39976dde99
+    buildTimeAssetPath: Assets/_sounds/Music/16BIT_MUSICPACK_COMPLETE/16BIT_MUSICPACK_VOL2/Fields
+      Of Memory.wav
+  - fileID: 61
+    classID: 83
+    packedSize: 136
+    offset: 4526856
+    sourceAssetGUID: b7811fa533351435b8c40c9cfff35887
+    buildTimeAssetPath: Assets/_sounds/Music/16BIT_MUSICPACK_COMPLETE/16BIT_MUSICPACK_VOL2/Deck
+      Customization.wav
+  - fileID: 62
+    classID: 83
+    packedSize: 136
+    offset: 4526992
+    sourceAssetGUID: ce59efdef0e634e64bc917bb9219738c
+    buildTimeAssetPath: Assets/_sounds/Music/16BIT_MUSICPACK_COMPLETE/16BIT_MUSICPACK_VOL4/From
+      The Outlands .wav
+  - fileID: 63
+    classID: 83
+    packedSize: 132
+    offset: 4527128
+    sourceAssetGUID: d9460048f8cfc40c98f6f3a1f3887411
+    buildTimeAssetPath: Assets/_sounds/SFX/Sound Assets/8 Bit/Sound Effects/Character/Attacks/Slash_Attack_1.wav
+  - fileID: 64
+    classID: 90
+    packedSize: 6056
+    offset: 4527264
+    sourceAssetGUID: 0b080fb945711ae47abb40495a599b9b
+    buildTimeAssetPath: Assets/_visual/Monsters/Monsters Ultimate Pack 02 Cute Series/Snakelet
+      Cute Series/FBX/Snakelet.FBX
+  - fileID: 65
+    classID: 91
+    packedSize: 9048
+    offset: 4533320
+    sourceAssetGUID: be15068affc04af41b54896da4d4feb7
+    buildTimeAssetPath: Assets/_visual/Monsters/Monsters Ultimate Pack 02 Cute Series/Snakelet
+      Cute Series/FBX/Snakelet.controller
+  - fileID: 66
+    classID: 115
+    packedSize: 92
+    offset: 298064
+    sourceAssetGUID: 661092b4961be7145bfbe56e1e62337b
+    buildTimeAssetPath: Packages/com.vrchat.worlds/Runtime/VRCSDK/Plugins/VRCSDK3.dll
+  - fileID: 67
+    classID: 115
+    packedSize: 96
+    offset: 298160
+    sourceAssetGUID: 4ecd63eff847044b68db9453ce219299
+    buildTimeAssetPath: Packages/com.vrchat.base/Runtime/VRCSDK/Plugins/VRCCore-Editor.dll
+  - fileID: 68
+    classID: 115
+    packedSize: 116
+    offset: 298256
+    sourceAssetGUID: 661092b4961be7145bfbe56e1e62337b
+    buildTimeAssetPath: Packages/com.vrchat.worlds/Runtime/VRCSDK/Plugins/VRCSDK3.dll
+  - fileID: 69
+    classID: 115
+    packedSize: 108
+    offset: 298376
+    sourceAssetGUID: 661092b4961be7145bfbe56e1e62337b
+    buildTimeAssetPath: Packages/com.vrchat.worlds/Runtime/VRCSDK/Plugins/VRCSDK3.dll
+  - fileID: 70
+    classID: 115
+    packedSize: 80
+    offset: 298488
+    sourceAssetGUID: 0447a7e062e8dd84889822b84cd555c3
+    buildTimeAssetPath: Assets/_scripts/Player/KnifePool.cs
+  - fileID: 71
+    classID: 115
+    packedSize: 96
+    offset: 298568
+    sourceAssetGUID: 0cd44c1031e13a943bb63640046fad76
+    buildTimeAssetPath: Packages/com.unity.ugui/Runtime/UI/Core/Layout/CanvasScaler.cs
+  - fileID: 72
+    classID: 115
+    packedSize: 88
+    offset: 298664
+    sourceAssetGUID: 45115577ef41a5b4ca741ed302693907
+    buildTimeAssetPath: Packages/com.vrchat.worlds/Runtime/Udon/UdonBehaviour.cs
+  - fileID: 73
+    classID: 115
+    packedSize: 88
+    offset: 298752
+    sourceAssetGUID: 4e29b1a8efbd4b44bb3f3716e73f07ff
+    buildTimeAssetPath: Packages/com.unity.ugui/Runtime/UI/Core/Button.cs
+  - fileID: 74
+    classID: 115
+    packedSize: 128
+    offset: 298840
+    sourceAssetGUID: 4f231c4fb786f3946a6b90b886c48677
+    buildTimeAssetPath: Packages/com.unity.ugui/Runtime/EventSystem/InputModules/StandaloneInputModule.cs
+  - fileID: 75
+    classID: 115
+    packedSize: 112
+    offset: 298968
+    sourceAssetGUID: 59f8146938fff824cb5fd77236b75775
+    buildTimeAssetPath: Packages/com.unity.ugui/Runtime/UI/Core/Layout/VerticalLayoutGroup.cs
+  - fileID: 76
+    classID: 115
+    packedSize: 80
+    offset: 299080
+    sourceAssetGUID: 5f7201a12d95ffc409449d95f23cf332
+    buildTimeAssetPath: Packages/com.unity.ugui/Runtime/UI/Core/Text.cs
+  - fileID: 77
+    classID: 115
+    packedSize: 88
+    offset: 299160
+    sourceAssetGUID: 67db9e8f0e2ae9c40bc1e2b64352a6b4
+    buildTimeAssetPath: Packages/com.unity.ugui/Runtime/UI/Core/Slider.cs
+  - fileID: 78
+    classID: 115
+    packedSize: 120
+    offset: 299248
+    sourceAssetGUID: 6922f711e24eb38459bf73a5fd4eac34
+    buildTimeAssetPath: Assets/Cyan/PlayerObjectPool/UdonSharp/CyanPlayerObjectPool.cs
+  - fileID: 79
+    classID: 115
+    packedSize: 104
+    offset: 299368
+    sourceAssetGUID: 76c392e42b5098c458856cdf6ecaaaa1
+    buildTimeAssetPath: Packages/com.unity.ugui/Runtime/EventSystem/EventSystem.cs
+  - fileID: 80
+    classID: 115
+    packedSize: 88
+    offset: 299472
+    sourceAssetGUID: 8cd972e5b580fe94d9fb9c89da934b06
+    buildTimeAssetPath: Assets/_scripts/Player/PlayerController.cs
+  - fileID: 81
+    classID: 115
+    packedSize: 88
+    offset: 299560
+    sourceAssetGUID: 9085046f02f69544eb97fd06b6048fe2
+    buildTimeAssetPath: Packages/com.unity.ugui/Runtime/UI/Core/Toggle.cs
+  - fileID: 82
+    classID: 115
+    packedSize: 128
+    offset: 299648
+    sourceAssetGUID: bf61d954ecb803046953c666facfb904
+    buildTimeAssetPath: Packages/com.vrchat.worlds/Runtime/Udon/ProgramSources/SerializedUdonProgramAsset.cs
+  - fileID: 83
+    classID: 115
+    packedSize: 120
+    offset: 299776
+    sourceAssetGUID: d9c0d913d6d4bd741aec5a89b8072b28
+    buildTimeAssetPath: Assets/Cyan/PlayerObjectPool/Scripts/CyanPoolSetupHelper.cs
+  - fileID: 84
+    classID: 115
+    packedSize: 104
+    offset: 299896
+    sourceAssetGUID: dc42784cf147c0c48a680349fa168899
+    buildTimeAssetPath: Packages/com.unity.ugui/Runtime/UI/Core/GraphicRaycaster.cs
+  - fileID: 85
+    classID: 115
+    packedSize: 72
+    offset: 300000
+    sourceAssetGUID: e6c2068cdb0a3084e9830e362e9bb134
+    buildTimeAssetPath: Assets/_scripts/Player/Knife.cs
+  - fileID: 86
+    classID: 115
+    packedSize: 88
+    offset: 300072
+    sourceAssetGUID: ef43f16bca5c44344ad9d15c2c0735ff
+    buildTimeAssetPath: Assets/_scripts/Player/EffectsContainer.cs
+  - fileID: 87
+    classID: 115
+    packedSize: 88
+    offset: 300160
+    sourceAssetGUID: fe87c0e1cc204ed48ad3b37840f39efc
+    buildTimeAssetPath: Packages/com.unity.ugui/Runtime/UI/Core/Image.cs
+  - fileID: 88
+    classID: 115
+    packedSize: 100
+    offset: 300248
+    sourceAssetGUID: 661092b4961be7145bfbe56e1e62337b
+    buildTimeAssetPath: Packages/com.vrchat.worlds/Runtime/VRCSDK/Plugins/VRCSDK3.dll
+  - fileID: 89
+    classID: 213
+    packedSize: 624
+    offset: 4542368
+    sourceAssetGUID: 0000000000000000f000000000000000
+    buildTimeAssetPath: Resources/unity_builtin_extra
+  - fileID: 90
+    classID: 213
+    packedSize: 568
+    offset: 4542992
+    sourceAssetGUID: 0000000000000000f000000000000000
+    buildTimeAssetPath: Resources/unity_builtin_extra
+  - fileID: 91
+    classID: 213
+    packedSize: 572
+    offset: 4543560
+    sourceAssetGUID: 0000000000000000f000000000000000
+    buildTimeAssetPath: Resources/unity_builtin_extra
+  - fileID: 92
+    classID: 213
+    packedSize: 632
+    offset: 4544136
+    sourceAssetGUID: 0000000000000000f000000000000000
+    buildTimeAssetPath: Resources/unity_builtin_extra
+  - fileID: 93
+    classID: 213
+    packedSize: 2412
+    offset: 4544768
+    sourceAssetGUID: 173eee4edc62fce4eac88e04425f5671
+    buildTimeAssetPath: Assets/_visual/UI Images/HealthContainer.tga
+  - fileID: 94
+    classID: 213
+    packedSize: 4540
+    offset: 4547184
+    sourceAssetGUID: 5d865e895ac33114a914a63a30ecdf04
+    buildTimeAssetPath: Assets/_visual/UI Images/CleanFlatIcon/png_128/icon_line/icon_line_media/icon_line_media_52.png
+  - fileID: 95
+    classID: 213
+    packedSize: 468
+    offset: 4551728
+    sourceAssetGUID: a9303122e28c37f4c963c2536463bd8b
+    buildTimeAssetPath: Assets/_visual/UI Images/TestingUI/Testing UI BG.jpg
+  - fileID: 96
+    classID: 213
+    packedSize: 1232
+    offset: 4552200
+    sourceAssetGUID: d0774452a52336e499b1ccb1e471b85a
+    buildTimeAssetPath: Assets/_visual/UI Images/CleanFlatIcon/png_128/icon_line/icon_line_media/icon_line_media_2.png
+  - fileID: 97
+    classID: 213
+    packedSize: 1020
+    offset: 4553432
+    sourceAssetGUID: db64ac3228d8187408af3badca05ae27
+    buildTimeAssetPath: Assets/_visual/UI Images/CleanFlatIcon/png_128/icon_line/icon_line_media/icon_line_media_1.png
+  - fileID: 98
+    classID: 238
+    packedSize: 372
+    offset: 4554456
+    sourceAssetGUID: 36ffbd5fd2bf50f4b8ff5cc7aad31659
+    buildTimeAssetPath: Assets/VRCSR/NavMesh.asset
+  - fileID: 99
+    classID: 1
+    packedSize: 67
+    offset: 4554832
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 100
+    classID: 1
+    packedSize: 87
+    offset: 4554904
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 101
+    classID: 1
+    packedSize: 63
+    offset: 4554992
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 102
+    classID: 1
+    packedSize: 63
+    offset: 4555056
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 103
+    classID: 1
+    packedSize: 87
+    offset: 4555120
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 104
+    classID: 1
+    packedSize: 67
+    offset: 4555208
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 105
+    classID: 1
+    packedSize: 63
+    offset: 4555280
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 106
+    classID: 1
+    packedSize: 87
+    offset: 4555344
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 107
+    classID: 1
+    packedSize: 67
+    offset: 4555432
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 108
+    classID: 1
+    packedSize: 63
+    offset: 4555504
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 109
+    classID: 1
+    packedSize: 87
+    offset: 4555568
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 110
+    classID: 1
+    packedSize: 63
+    offset: 4555656
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 111
+    classID: 1
+    packedSize: 67
+    offset: 4555720
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 112
+    classID: 1
+    packedSize: 63
+    offset: 4555792
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 113
+    classID: 1
+    packedSize: 63
+    offset: 4555856
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 114
+    classID: 1
+    packedSize: 67
+    offset: 4555920
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 115
+    classID: 1
+    packedSize: 63
+    offset: 4555992
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 116
+    classID: 1
+    packedSize: 63
+    offset: 4556056
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 117
+    classID: 1
+    packedSize: 67
+    offset: 4556120
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 118
+    classID: 1
+    packedSize: 67
+    offset: 4556192
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 119
+    classID: 1
+    packedSize: 59
+    offset: 4556264
+    sourceAssetGUID: 0883f57850dbfec49b42b2d4479941e5
+    buildTimeAssetPath: Assets/UdonSharp/PrefabBuild/Assets/_prefabs/UI/ScoreboardItem.prefab
+  - fileID: 120
+    classID: 1
+    packedSize: 63
+    offset: 4556328
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 121
+    classID: 1
+    packedSize: 63
+    offset: 4556392
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 122
+    classID: 1
+    packedSize: 87
+    offset: 4556456
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 123
+    classID: 1
+    packedSize: 67
+    offset: 4556544
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 124
+    classID: 1
+    packedSize: 63
+    offset: 4556616
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 125
+    classID: 1
+    packedSize: 67
+    offset: 4556680
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 126
+    classID: 1
+    packedSize: 63
+    offset: 4556752
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 127
+    classID: 1
+    packedSize: 63
+    offset: 4556816
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 128
+    classID: 1
+    packedSize: 67
+    offset: 4556880
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 129
+    classID: 1
+    packedSize: 67
+    offset: 4556952
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 130
+    classID: 1
+    packedSize: 59
+    offset: 4557024
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 131
+    classID: 1
+    packedSize: 87
+    offset: 4557088
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 132
+    classID: 1
+    packedSize: 87
+    offset: 4557176
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 133
+    classID: 1
+    packedSize: 67
+    offset: 4557264
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 134
+    classID: 1
+    packedSize: 55
+    offset: 4557336
+    sourceAssetGUID: 0883f57850dbfec49b42b2d4479941e5
+    buildTimeAssetPath: Assets/UdonSharp/PrefabBuild/Assets/_prefabs/UI/ScoreboardItem.prefab
+  - fileID: 135
+    classID: 1
+    packedSize: 63
+    offset: 4557392
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 136
+    classID: 1
+    packedSize: 87
+    offset: 4557456
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 137
+    classID: 1
+    packedSize: 63
+    offset: 4557544
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 138
+    classID: 1
+    packedSize: 67
+    offset: 4557608
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 139
+    classID: 1
+    packedSize: 87
+    offset: 4557680
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 140
+    classID: 1
+    packedSize: 87
+    offset: 4557768
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 141
+    classID: 1
+    packedSize: 67
+    offset: 4557856
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 142
+    classID: 1
+    packedSize: 87
+    offset: 4557928
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 143
+    classID: 1
+    packedSize: 87
+    offset: 4558016
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 144
+    classID: 1
+    packedSize: 67
+    offset: 4558104
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 145
+    classID: 1
+    packedSize: 87
+    offset: 4558176
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 146
+    classID: 1
+    packedSize: 67
+    offset: 4558264
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 147
+    classID: 1
+    packedSize: 63
+    offset: 4558336
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 148
+    classID: 1
+    packedSize: 63
+    offset: 4558400
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 149
+    classID: 1
+    packedSize: 67
+    offset: 4558464
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 150
+    classID: 1
+    packedSize: 71
+    offset: 4558536
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 151
+    classID: 1
+    packedSize: 63
+    offset: 4558608
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 152
+    classID: 1
+    packedSize: 67
+    offset: 4558672
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 153
+    classID: 1
+    packedSize: 67
+    offset: 4558744
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 154
+    classID: 1
+    packedSize: 63
+    offset: 4558816
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 155
+    classID: 1
+    packedSize: 87
+    offset: 4558880
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 156
+    classID: 1
+    packedSize: 87
+    offset: 4558968
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 157
+    classID: 1
+    packedSize: 67
+    offset: 4559056
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 158
+    classID: 1
+    packedSize: 63
+    offset: 4559128
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 159
+    classID: 1
+    packedSize: 67
+    offset: 4559192
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 160
+    classID: 1
+    packedSize: 83
+    offset: 4559264
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 161
+    classID: 1
+    packedSize: 63
+    offset: 4559352
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 162
+    classID: 1
+    packedSize: 63
+    offset: 4559416
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 163
+    classID: 1
+    packedSize: 63
+    offset: 4559480
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 164
+    classID: 1
+    packedSize: 67
+    offset: 4559544
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 165
+    classID: 1
+    packedSize: 63
+    offset: 4559616
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 166
+    classID: 1
+    packedSize: 63
+    offset: 4559680
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 167
+    classID: 1
+    packedSize: 35
+    offset: 4559744
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 168
+    classID: 1
+    packedSize: 67
+    offset: 4559784
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 169
+    classID: 1
+    packedSize: 59
+    offset: 4559856
+    sourceAssetGUID: 0883f57850dbfec49b42b2d4479941e5
+    buildTimeAssetPath: Assets/UdonSharp/PrefabBuild/Assets/_prefabs/UI/ScoreboardItem.prefab
+  - fileID: 170
+    classID: 1
+    packedSize: 87
+    offset: 4559920
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 171
+    classID: 1
+    packedSize: 87
+    offset: 4560008
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 172
+    classID: 1
+    packedSize: 63
+    offset: 4560096
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 173
+    classID: 1
+    packedSize: 87
+    offset: 4560160
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 174
+    classID: 1
+    packedSize: 67
+    offset: 4560248
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 175
+    classID: 1
+    packedSize: 63
+    offset: 4560320
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 176
+    classID: 1
+    packedSize: 63
+    offset: 4560384
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 177
+    classID: 1
+    packedSize: 59
+    offset: 4560448
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 178
+    classID: 1
+    packedSize: 67
+    offset: 4560512
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 179
+    classID: 1
+    packedSize: 63
+    offset: 4560584
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 180
+    classID: 1
+    packedSize: 67
+    offset: 4560648
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 181
+    classID: 1
+    packedSize: 63
+    offset: 4560720
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 182
+    classID: 1
+    packedSize: 63
+    offset: 4560784
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 183
+    classID: 1
+    packedSize: 87
+    offset: 4560848
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 184
+    classID: 1
+    packedSize: 87
+    offset: 4560936
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 185
+    classID: 1
+    packedSize: 67
+    offset: 4561024
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 186
+    classID: 1
+    packedSize: 55
+    offset: 4561096
+    sourceAssetGUID: 0883f57850dbfec49b42b2d4479941e5
+    buildTimeAssetPath: Assets/UdonSharp/PrefabBuild/Assets/_prefabs/UI/ScoreboardItem.prefab
+  - fileID: 187
+    classID: 1
+    packedSize: 63
+    offset: 4561152
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 188
+    classID: 1
+    packedSize: 87
+    offset: 4561216
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 189
+    classID: 1
+    packedSize: 87
+    offset: 4561304
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 190
+    classID: 1
+    packedSize: 87
+    offset: 4561392
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 191
+    classID: 1
+    packedSize: 67
+    offset: 4561480
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 192
+    classID: 1
+    packedSize: 67
+    offset: 4561552
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 193
+    classID: 1
+    packedSize: 67
+    offset: 4561624
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 194
+    classID: 1
+    packedSize: 63
+    offset: 4561696
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 195
+    classID: 1
+    packedSize: 87
+    offset: 4561760
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 196
+    classID: 1
+    packedSize: 67
+    offset: 4561848
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 197
+    classID: 1
+    packedSize: 87
+    offset: 4561920
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 198
+    classID: 1
+    packedSize: 87
+    offset: 4562008
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 199
+    classID: 1
+    packedSize: 67
+    offset: 4562096
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 200
+    classID: 1
+    packedSize: 63
+    offset: 4562168
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 201
+    classID: 1
+    packedSize: 63
+    offset: 4562232
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 202
+    classID: 1
+    packedSize: 87
+    offset: 4562296
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 203
+    classID: 1
+    packedSize: 87
+    offset: 4562384
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 204
+    classID: 1
+    packedSize: 67
+    offset: 4562472
+    sourceAssetGUID: a35f2996ce6d14c4c854aba5420212ed
+    buildTimeAssetPath: Assets/Cyan/PlayerObjectPool/PlayerObjectPool.prefab
+  - fileID: 205
+    classID: 1
+    packedSize: 87
+    offset: 4562544
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 206
+    classID: 1
+    packedSize: 59
+    offset: 4562632
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 207
+    classID: 1
+    packedSize: 67
+    offset: 4562696
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 208
+    classID: 1
+    packedSize: 63
+    offset: 4562768
+    sourceAssetGUID: 0883f57850dbfec49b42b2d4479941e5
+    buildTimeAssetPath: Assets/UdonSharp/PrefabBuild/Assets/_prefabs/UI/ScoreboardItem.prefab
+  - fileID: 209
+    classID: 4
+    packedSize: 92
+    offset: 4562832
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 210
+    classID: 4
+    packedSize: 68
+    offset: 4562928
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 211
+    classID: 4
+    packedSize: 428
+    offset: 4563000
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 212
+    classID: 4
+    packedSize: 68
+    offset: 4563432
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 213
+    classID: 4
+    packedSize: 68
+    offset: 4563504
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 214
+    classID: 4
+    packedSize: 68
+    offset: 4563576
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 215
+    classID: 4
+    packedSize: 68
+    offset: 4563648
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 216
+    classID: 4
+    packedSize: 68
+    offset: 4563720
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 217
+    classID: 4
+    packedSize: 92
+    offset: 4563792
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 218
+    classID: 4
+    packedSize: 92
+    offset: 4563888
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 219
+    classID: 4
+    packedSize: 68
+    offset: 4563984
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 220
+    classID: 4
+    packedSize: 92
+    offset: 4564056
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 221
+    classID: 4
+    packedSize: 68
+    offset: 4564152
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 222
+    classID: 4
+    packedSize: 68
+    offset: 4564224
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 223
+    classID: 4
+    packedSize: 68
+    offset: 4564296
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 224
+    classID: 4
+    packedSize: 68
+    offset: 4564368
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 225
+    classID: 4
+    packedSize: 92
+    offset: 4564440
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 226
+    classID: 4
+    packedSize: 92
+    offset: 4564536
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 227
+    classID: 4
+    packedSize: 92
+    offset: 4564632
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 228
+    classID: 4
+    packedSize: 68
+    offset: 4564728
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 229
+    classID: 4
+    packedSize: 68
+    offset: 4564800
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 230
+    classID: 4
+    packedSize: 68
+    offset: 4564872
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 231
+    classID: 4
+    packedSize: 92
+    offset: 4564944
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 232
+    classID: 4
+    packedSize: 68
+    offset: 4565040
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 233
+    classID: 4
+    packedSize: 68
+    offset: 4565112
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 234
+    classID: 4
+    packedSize: 68
+    offset: 4565184
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 235
+    classID: 4
+    packedSize: 68
+    offset: 4565256
+    sourceAssetGUID: a35f2996ce6d14c4c854aba5420212ed
+    buildTimeAssetPath: Assets/Cyan/PlayerObjectPool/PlayerObjectPool.prefab
+  - fileID: 236
+    classID: 4
+    packedSize: 92
+    offset: 4565328
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 237
+    classID: 4
+    packedSize: 68
+    offset: 4565424
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 238
+    classID: 4
+    packedSize: 68
+    offset: 4565496
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 239
+    classID: 4
+    packedSize: 92
+    offset: 4565568
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 240
+    classID: 4
+    packedSize: 92
+    offset: 4565664
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 241
+    classID: 4
+    packedSize: 92
+    offset: 4565760
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 242
+    classID: 4
+    packedSize: 92
+    offset: 4565856
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 243
+    classID: 4
+    packedSize: 68
+    offset: 4565952
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 244
+    classID: 4
+    packedSize: 68
+    offset: 4566024
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 245
+    classID: 4
+    packedSize: 68
+    offset: 4566096
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 246
+    classID: 4
+    packedSize: 68
+    offset: 4566168
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 247
+    classID: 4
+    packedSize: 92
+    offset: 4566240
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 248
+    classID: 4
+    packedSize: 92
+    offset: 4566336
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 249
+    classID: 4
+    packedSize: 68
+    offset: 4566432
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 250
+    classID: 4
+    packedSize: 68
+    offset: 4566504
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 251
+    classID: 4
+    packedSize: 68
+    offset: 4566576
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 252
+    classID: 4
+    packedSize: 68
+    offset: 4566648
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 253
+    classID: 4
+    packedSize: 68
+    offset: 4566720
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 254
+    classID: 4
+    packedSize: 68
+    offset: 4566792
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 255
+    classID: 4
+    packedSize: 92
+    offset: 4566864
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 256
+    classID: 4
+    packedSize: 68
+    offset: 4566960
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 257
+    classID: 4
+    packedSize: 68
+    offset: 4567032
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 258
+    classID: 4
+    packedSize: 68
+    offset: 4567104
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 259
+    classID: 4
+    packedSize: 68
+    offset: 4567176
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 260
+    classID: 4
+    packedSize: 92
+    offset: 4567248
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 261
+    classID: 4
+    packedSize: 68
+    offset: 4567344
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 262
+    classID: 4
+    packedSize: 68
+    offset: 4567416
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 263
+    classID: 4
+    packedSize: 152
+    offset: 4567488
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 264
+    classID: 4
+    packedSize: 68
+    offset: 4567640
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 265
+    classID: 4
+    packedSize: 68
+    offset: 4567712
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 266
+    classID: 4
+    packedSize: 80
+    offset: 4567784
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 267
+    classID: 4
+    packedSize: 80
+    offset: 4567864
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 268
+    classID: 4
+    packedSize: 68
+    offset: 4567944
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 269
+    classID: 4
+    packedSize: 92
+    offset: 4568016
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 270
+    classID: 4
+    packedSize: 68
+    offset: 4568112
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 271
+    classID: 4
+    packedSize: 68
+    offset: 4568184
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 272
+    classID: 4
+    packedSize: 92
+    offset: 4568256
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 273
+    classID: 4
+    packedSize: 68
+    offset: 4568352
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 274
+    classID: 4
+    packedSize: 68
+    offset: 4568424
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 275
+    classID: 4
+    packedSize: 68
+    offset: 4568496
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 276
+    classID: 4
+    packedSize: 68
+    offset: 4568568
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 277
+    classID: 4
+    packedSize: 92
+    offset: 4568640
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 278
+    classID: 4
+    packedSize: 68
+    offset: 4568736
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 279
+    classID: 4
+    packedSize: 68
+    offset: 4568808
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 280
+    classID: 4
+    packedSize: 68
+    offset: 4568880
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 281
+    classID: 4
+    packedSize: 68
+    offset: 4568952
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 282
+    classID: 4
+    packedSize: 68
+    offset: 4569024
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 283
+    classID: 4
+    packedSize: 92
+    offset: 4569096
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 284
+    classID: 4
+    packedSize: 68
+    offset: 4569192
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 285
+    classID: 4
+    packedSize: 92
+    offset: 4569264
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 286
+    classID: 4
+    packedSize: 92
+    offset: 4569360
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 287
+    classID: 4
+    packedSize: 92
+    offset: 4569456
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 288
+    classID: 4
+    packedSize: 68
+    offset: 4569552
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 289
+    classID: 4
+    packedSize: 68
+    offset: 4569624
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 290
+    classID: 4
+    packedSize: 68
+    offset: 4569696
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 291
+    classID: 4
+    packedSize: 92
+    offset: 4569768
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 292
+    classID: 4
+    packedSize: 68
+    offset: 4569864
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 293
+    classID: 4
+    packedSize: 68
+    offset: 4569936
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 294
+    classID: 4
+    packedSize: 68
+    offset: 4570008
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 295
+    classID: 4
+    packedSize: 92
+    offset: 4570080
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 296
+    classID: 4
+    packedSize: 68
+    offset: 4570176
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 297
+    classID: 4
+    packedSize: 92
+    offset: 4570248
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 298
+    classID: 4
+    packedSize: 92
+    offset: 4570344
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 299
+    classID: 4
+    packedSize: 68
+    offset: 4570440
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 300
+    classID: 4
+    packedSize: 68
+    offset: 4570512
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 301
+    classID: 4
+    packedSize: 68
+    offset: 4570584
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 302
+    classID: 4
+    packedSize: 68
+    offset: 4570656
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 303
+    classID: 4
+    packedSize: 92
+    offset: 4570728
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 304
+    classID: 4
+    packedSize: 68
+    offset: 4570824
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 305
+    classID: 4
+    packedSize: 92
+    offset: 4570896
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 306
+    classID: 4
+    packedSize: 92
+    offset: 4570992
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 307
+    classID: 4
+    packedSize: 68
+    offset: 4571088
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 308
+    classID: 4
+    packedSize: 68
+    offset: 4571160
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 309
+    classID: 4
+    packedSize: 68
+    offset: 4571232
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 310
+    classID: 4
+    packedSize: 68
+    offset: 4571304
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 311
+    classID: 4
+    packedSize: 68
+    offset: 4571376
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 312
+    classID: 4
+    packedSize: 68
+    offset: 4571448
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 313
+    classID: 4
+    packedSize: 92
+    offset: 4571520
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 314
+    classID: 23
+    packedSize: 140
+    offset: 4571616
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 315
+    classID: 23
+    packedSize: 140
+    offset: 4571760
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 316
+    classID: 23
+    packedSize: 140
+    offset: 4571904
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 317
+    classID: 23
+    packedSize: 140
+    offset: 4572048
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 318
+    classID: 23
+    packedSize: 140
+    offset: 4572192
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 319
+    classID: 23
+    packedSize: 140
+    offset: 4572336
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 320
+    classID: 23
+    packedSize: 140
+    offset: 4572480
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 321
+    classID: 23
+    packedSize: 140
+    offset: 4572624
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 322
+    classID: 23
+    packedSize: 140
+    offset: 4572768
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 323
+    classID: 23
+    packedSize: 140
+    offset: 4572912
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 324
+    classID: 23
+    packedSize: 140
+    offset: 4573056
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 325
+    classID: 23
+    packedSize: 140
+    offset: 4573200
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 326
+    classID: 23
+    packedSize: 140
+    offset: 4573344
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 327
+    classID: 23
+    packedSize: 140
+    offset: 4573488
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 328
+    classID: 23
+    packedSize: 140
+    offset: 4573632
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 329
+    classID: 23
+    packedSize: 140
+    offset: 4573776
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 330
+    classID: 23
+    packedSize: 140
+    offset: 4573920
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 331
+    classID: 23
+    packedSize: 140
+    offset: 4574064
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 332
+    classID: 23
+    packedSize: 140
+    offset: 4574208
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 333
+    classID: 23
+    packedSize: 140
+    offset: 4574352
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 334
+    classID: 23
+    packedSize: 140
+    offset: 4574496
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 335
+    classID: 23
+    packedSize: 140
+    offset: 4574640
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 336
+    classID: 23
+    packedSize: 140
+    offset: 4574784
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 337
+    classID: 23
+    packedSize: 140
+    offset: 4574928
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 338
+    classID: 23
+    packedSize: 140
+    offset: 4575072
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 339
+    classID: 23
+    packedSize: 140
+    offset: 4575216
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 340
+    classID: 23
+    packedSize: 140
+    offset: 4575360
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 341
+    classID: 23
+    packedSize: 140
+    offset: 4575504
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 342
+    classID: 23
+    packedSize: 140
+    offset: 4575648
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 343
+    classID: 23
+    packedSize: 140
+    offset: 4575792
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 344
+    classID: 33
+    packedSize: 24
+    offset: 4575936
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 345
+    classID: 33
+    packedSize: 24
+    offset: 4575960
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 346
+    classID: 33
+    packedSize: 24
+    offset: 4575984
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 347
+    classID: 33
+    packedSize: 24
+    offset: 4576008
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 348
+    classID: 33
+    packedSize: 24
+    offset: 4576032
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 349
+    classID: 33
+    packedSize: 24
+    offset: 4576056
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 350
+    classID: 33
+    packedSize: 24
+    offset: 4576080
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 351
+    classID: 33
+    packedSize: 24
+    offset: 4576104
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 352
+    classID: 33
+    packedSize: 24
+    offset: 4576128
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 353
+    classID: 33
+    packedSize: 24
+    offset: 4576152
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 354
+    classID: 33
+    packedSize: 24
+    offset: 4576176
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 355
+    classID: 33
+    packedSize: 24
+    offset: 4576200
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 356
+    classID: 33
+    packedSize: 24
+    offset: 4576224
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 357
+    classID: 33
+    packedSize: 24
+    offset: 4576248
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 358
+    classID: 33
+    packedSize: 24
+    offset: 4576272
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 359
+    classID: 33
+    packedSize: 24
+    offset: 4576296
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 360
+    classID: 33
+    packedSize: 24
+    offset: 4576320
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 361
+    classID: 33
+    packedSize: 24
+    offset: 4576344
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 362
+    classID: 33
+    packedSize: 24
+    offset: 4576368
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 363
+    classID: 33
+    packedSize: 24
+    offset: 4576392
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 364
+    classID: 33
+    packedSize: 24
+    offset: 4576416
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 365
+    classID: 33
+    packedSize: 24
+    offset: 4576440
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 366
+    classID: 33
+    packedSize: 24
+    offset: 4576464
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 367
+    classID: 33
+    packedSize: 24
+    offset: 4576488
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 368
+    classID: 33
+    packedSize: 24
+    offset: 4576512
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 369
+    classID: 33
+    packedSize: 24
+    offset: 4576536
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 370
+    classID: 33
+    packedSize: 24
+    offset: 4576560
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 371
+    classID: 33
+    packedSize: 24
+    offset: 4576584
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 372
+    classID: 33
+    packedSize: 24
+    offset: 4576608
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 373
+    classID: 33
+    packedSize: 24
+    offset: 4576632
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 374
+    classID: 54
+    packedSize: 36
+    offset: 4576656
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 375
+    classID: 54
+    packedSize: 36
+    offset: 4576696
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 376
+    classID: 54
+    packedSize: 36
+    offset: 4576736
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 377
+    classID: 54
+    packedSize: 36
+    offset: 4576776
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 378
+    classID: 54
+    packedSize: 36
+    offset: 4576816
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 379
+    classID: 54
+    packedSize: 36
+    offset: 4576856
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 380
+    classID: 54
+    packedSize: 36
+    offset: 4576896
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 381
+    classID: 54
+    packedSize: 36
+    offset: 4576936
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 382
+    classID: 54
+    packedSize: 36
+    offset: 4576976
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 383
+    classID: 54
+    packedSize: 36
+    offset: 4577016
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 384
+    classID: 54
+    packedSize: 36
+    offset: 4577056
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 385
+    classID: 54
+    packedSize: 36
+    offset: 4577096
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 386
+    classID: 54
+    packedSize: 36
+    offset: 4577136
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 387
+    classID: 54
+    packedSize: 36
+    offset: 4577176
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 388
+    classID: 54
+    packedSize: 36
+    offset: 4577216
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 389
+    classID: 54
+    packedSize: 36
+    offset: 4577256
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 390
+    classID: 54
+    packedSize: 36
+    offset: 4577296
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 391
+    classID: 54
+    packedSize: 36
+    offset: 4577336
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 392
+    classID: 54
+    packedSize: 36
+    offset: 4577376
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 393
+    classID: 54
+    packedSize: 36
+    offset: 4577416
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 394
+    classID: 54
+    packedSize: 36
+    offset: 4577456
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 395
+    classID: 54
+    packedSize: 36
+    offset: 4577496
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 396
+    classID: 54
+    packedSize: 36
+    offset: 4577536
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 397
+    classID: 54
+    packedSize: 36
+    offset: 4577576
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 398
+    classID: 54
+    packedSize: 36
+    offset: 4577616
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 399
+    classID: 54
+    packedSize: 36
+    offset: 4577656
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 400
+    classID: 54
+    packedSize: 36
+    offset: 4577696
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 401
+    classID: 54
+    packedSize: 36
+    offset: 4577736
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 402
+    classID: 54
+    packedSize: 36
+    offset: 4577776
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 403
+    classID: 54
+    packedSize: 36
+    offset: 4577816
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 404
+    classID: 65
+    packedSize: 52
+    offset: 4577856
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 405
+    classID: 65
+    packedSize: 52
+    offset: 4577912
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 406
+    classID: 65
+    packedSize: 52
+    offset: 4577968
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 407
+    classID: 65
+    packedSize: 52
+    offset: 4578024
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 408
+    classID: 65
+    packedSize: 52
+    offset: 4578080
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 409
+    classID: 65
+    packedSize: 52
+    offset: 4578136
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 410
+    classID: 65
+    packedSize: 52
+    offset: 4578192
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 411
+    classID: 65
+    packedSize: 52
+    offset: 4578248
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 412
+    classID: 65
+    packedSize: 52
+    offset: 4578304
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 413
+    classID: 65
+    packedSize: 52
+    offset: 4578360
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 414
+    classID: 65
+    packedSize: 52
+    offset: 4578416
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 415
+    classID: 65
+    packedSize: 52
+    offset: 4578472
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 416
+    classID: 65
+    packedSize: 52
+    offset: 4578528
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 417
+    classID: 65
+    packedSize: 52
+    offset: 4578584
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 418
+    classID: 65
+    packedSize: 52
+    offset: 4578640
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 419
+    classID: 65
+    packedSize: 52
+    offset: 4578696
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 420
+    classID: 65
+    packedSize: 52
+    offset: 4578752
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 421
+    classID: 65
+    packedSize: 52
+    offset: 4578808
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 422
+    classID: 65
+    packedSize: 52
+    offset: 4578864
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 423
+    classID: 65
+    packedSize: 52
+    offset: 4578920
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 424
+    classID: 65
+    packedSize: 52
+    offset: 4578976
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 425
+    classID: 65
+    packedSize: 52
+    offset: 4579032
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 426
+    classID: 65
+    packedSize: 52
+    offset: 4579088
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 427
+    classID: 65
+    packedSize: 52
+    offset: 4579144
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 428
+    classID: 65
+    packedSize: 52
+    offset: 4579200
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 429
+    classID: 65
+    packedSize: 52
+    offset: 4579256
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 430
+    classID: 65
+    packedSize: 52
+    offset: 4579312
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 431
+    classID: 65
+    packedSize: 52
+    offset: 4579368
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 432
+    classID: 65
+    packedSize: 52
+    offset: 4579424
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 433
+    classID: 65
+    packedSize: 52
+    offset: 4579480
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 434
+    classID: 82
+    packedSize: 288
+    offset: 4579536
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 435
+    classID: 82
+    packedSize: 288
+    offset: 4579824
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 436
+    classID: 82
+    packedSize: 288
+    offset: 4580112
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 437
+    classID: 82
+    packedSize: 344
+    offset: 4580400
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 438
+    classID: 82
+    packedSize: 344
+    offset: 4580744
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 439
+    classID: 198
+    packedSize: 7348
+    offset: 4581088
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 440
+    classID: 198
+    packedSize: 7348
+    offset: 4588440
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 441
+    classID: 198
+    packedSize: 7348
+    offset: 4595792
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 442
+    classID: 198
+    packedSize: 7464
+    offset: 4603144
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 443
+    classID: 198
+    packedSize: 7348
+    offset: 4610608
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 444
+    classID: 198
+    packedSize: 7348
+    offset: 4617960
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 445
+    classID: 198
+    packedSize: 7348
+    offset: 4625312
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 446
+    classID: 198
+    packedSize: 7348
+    offset: 4632664
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 447
+    classID: 198
+    packedSize: 7348
+    offset: 4640016
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 448
+    classID: 198
+    packedSize: 7348
+    offset: 4647368
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 449
+    classID: 198
+    packedSize: 7348
+    offset: 4654720
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 450
+    classID: 198
+    packedSize: 7348
+    offset: 4662072
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 451
+    classID: 198
+    packedSize: 7348
+    offset: 4669424
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 452
+    classID: 198
+    packedSize: 7348
+    offset: 4676776
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 453
+    classID: 198
+    packedSize: 7348
+    offset: 4684128
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 454
+    classID: 198
+    packedSize: 7348
+    offset: 4691480
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 455
+    classID: 198
+    packedSize: 7348
+    offset: 4698832
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 456
+    classID: 198
+    packedSize: 7348
+    offset: 4706184
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 457
+    classID: 198
+    packedSize: 7348
+    offset: 4713536
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 458
+    classID: 198
+    packedSize: 7408
+    offset: 4720888
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 459
+    classID: 198
+    packedSize: 7348
+    offset: 4728296
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 460
+    classID: 198
+    packedSize: 7348
+    offset: 4735648
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 461
+    classID: 198
+    packedSize: 7348
+    offset: 4743000
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 462
+    classID: 198
+    packedSize: 7348
+    offset: 4750352
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 463
+    classID: 198
+    packedSize: 7436
+    offset: 4757704
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 464
+    classID: 198
+    packedSize: 7348
+    offset: 4765144
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 465
+    classID: 198
+    packedSize: 7464
+    offset: 4772496
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 466
+    classID: 198
+    packedSize: 7348
+    offset: 4779960
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 467
+    classID: 198
+    packedSize: 7492
+    offset: 4787312
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 468
+    classID: 198
+    packedSize: 7348
+    offset: 4794808
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 469
+    classID: 198
+    packedSize: 7348
+    offset: 4802160
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 470
+    classID: 198
+    packedSize: 7348
+    offset: 4809512
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 471
+    classID: 198
+    packedSize: 7348
+    offset: 4816864
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 472
+    classID: 198
+    packedSize: 7348
+    offset: 4824216
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 473
+    classID: 198
+    packedSize: 7348
+    offset: 4831568
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 474
+    classID: 199
+    packedSize: 256
+    offset: 4838920
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 475
+    classID: 199
+    packedSize: 256
+    offset: 4839176
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 476
+    classID: 199
+    packedSize: 256
+    offset: 4839432
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 477
+    classID: 199
+    packedSize: 256
+    offset: 4839688
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 478
+    classID: 199
+    packedSize: 256
+    offset: 4839944
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 479
+    classID: 199
+    packedSize: 256
+    offset: 4840200
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 480
+    classID: 199
+    packedSize: 256
+    offset: 4840456
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 481
+    classID: 199
+    packedSize: 256
+    offset: 4840712
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 482
+    classID: 199
+    packedSize: 256
+    offset: 4840968
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 483
+    classID: 199
+    packedSize: 256
+    offset: 4841224
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 484
+    classID: 199
+    packedSize: 256
+    offset: 4841480
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 485
+    classID: 199
+    packedSize: 256
+    offset: 4841736
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 486
+    classID: 199
+    packedSize: 256
+    offset: 4841992
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 487
+    classID: 199
+    packedSize: 256
+    offset: 4842248
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 488
+    classID: 199
+    packedSize: 256
+    offset: 4842504
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 489
+    classID: 199
+    packedSize: 256
+    offset: 4842760
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 490
+    classID: 199
+    packedSize: 256
+    offset: 4843016
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 491
+    classID: 199
+    packedSize: 256
+    offset: 4843272
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 492
+    classID: 199
+    packedSize: 256
+    offset: 4843528
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 493
+    classID: 199
+    packedSize: 256
+    offset: 4843784
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 494
+    classID: 199
+    packedSize: 256
+    offset: 4844040
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 495
+    classID: 199
+    packedSize: 268
+    offset: 4844296
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 496
+    classID: 199
+    packedSize: 256
+    offset: 4844568
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 497
+    classID: 199
+    packedSize: 256
+    offset: 4844824
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 498
+    classID: 199
+    packedSize: 256
+    offset: 4845080
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 499
+    classID: 199
+    packedSize: 256
+    offset: 4845336
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 500
+    classID: 199
+    packedSize: 268
+    offset: 4845592
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 501
+    classID: 199
+    packedSize: 256
+    offset: 4845864
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 502
+    classID: 199
+    packedSize: 256
+    offset: 4846120
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 503
+    classID: 199
+    packedSize: 256
+    offset: 4846376
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 504
+    classID: 199
+    packedSize: 256
+    offset: 4846632
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 505
+    classID: 199
+    packedSize: 256
+    offset: 4846888
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 506
+    classID: 199
+    packedSize: 256
+    offset: 4847144
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 507
+    classID: 199
+    packedSize: 256
+    offset: 4847400
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 508
+    classID: 199
+    packedSize: 256
+    offset: 4847656
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 509
+    classID: 222
+    packedSize: 13
+    offset: 4847912
+    sourceAssetGUID: 0883f57850dbfec49b42b2d4479941e5
+    buildTimeAssetPath: Assets/UdonSharp/PrefabBuild/Assets/_prefabs/UI/ScoreboardItem.prefab
+  - fileID: 510
+    classID: 222
+    packedSize: 13
+    offset: 4847928
+    sourceAssetGUID: 0883f57850dbfec49b42b2d4479941e5
+    buildTimeAssetPath: Assets/UdonSharp/PrefabBuild/Assets/_prefabs/UI/ScoreboardItem.prefab
+  - fileID: 511
+    classID: 222
+    packedSize: 13
+    offset: 4847944
+    sourceAssetGUID: 0883f57850dbfec49b42b2d4479941e5
+    buildTimeAssetPath: Assets/UdonSharp/PrefabBuild/Assets/_prefabs/UI/ScoreboardItem.prefab
+  - fileID: 512
+    classID: 222
+    packedSize: 13
+    offset: 4847960
+    sourceAssetGUID: 0883f57850dbfec49b42b2d4479941e5
+    buildTimeAssetPath: Assets/UdonSharp/PrefabBuild/Assets/_prefabs/UI/ScoreboardItem.prefab
+  - fileID: 513
+    classID: 224
+    packedSize: 156
+    offset: 4847976
+    sourceAssetGUID: 0883f57850dbfec49b42b2d4479941e5
+    buildTimeAssetPath: Assets/UdonSharp/PrefabBuild/Assets/_prefabs/UI/ScoreboardItem.prefab
+  - fileID: 514
+    classID: 224
+    packedSize: 108
+    offset: 4848136
+    sourceAssetGUID: 0883f57850dbfec49b42b2d4479941e5
+    buildTimeAssetPath: Assets/UdonSharp/PrefabBuild/Assets/_prefabs/UI/ScoreboardItem.prefab
+  - fileID: 515
+    classID: 224
+    packedSize: 108
+    offset: 4848248
+    sourceAssetGUID: 0883f57850dbfec49b42b2d4479941e5
+    buildTimeAssetPath: Assets/UdonSharp/PrefabBuild/Assets/_prefabs/UI/ScoreboardItem.prefab
+  - fileID: 516
+    classID: 224
+    packedSize: 108
+    offset: 4848360
+    sourceAssetGUID: 0883f57850dbfec49b42b2d4479941e5
+    buildTimeAssetPath: Assets/UdonSharp/PrefabBuild/Assets/_prefabs/UI/ScoreboardItem.prefab
+  - fileID: 517
+    classID: 224
+    packedSize: 108
+    offset: 4848472
+    sourceAssetGUID: 0883f57850dbfec49b42b2d4479941e5
+    buildTimeAssetPath: Assets/UdonSharp/PrefabBuild/Assets/_prefabs/UI/ScoreboardItem.prefab
+  - fileID: 518
+    classID: 114
+    packedSize: 51196
+    offset: 4848584
+    sourceAssetGUID: f1c9a3d0ccec86c45a2d109104803040
+    buildTimeAssetPath: Assets/SerializedUdonPrograms/07ce814a8aa094541a894cf7212af8b2.asset
+  - fileID: 519
+    classID: 114
+    packedSize: 27164
+    offset: 4899784
+    sourceAssetGUID: 8a83cf1847bfc09478e3cc362b609d6b
+    buildTimeAssetPath: Assets/SerializedUdonPrograms/09d6b81a85c9b1d41bf3f48a52d53ec1.asset
+  - fileID: 520
+    classID: 114
+    packedSize: 84132
+    offset: 4926952
+    sourceAssetGUID: 136ca1d764108c642bdc0a07d8df828e
+    buildTimeAssetPath: Assets/SerializedUdonPrograms/0aa514b18d03508469b0496e100ed32b.asset
+  - fileID: 521
+    classID: 114
+    packedSize: 210184
+    offset: 5011088
+    sourceAssetGUID: 10bc41109ea76ef4a8295aea6140c366
+    buildTimeAssetPath: Assets/SerializedUdonPrograms/2198d3daa09eca24186cd87102f01cb5.asset
+  - fileID: 522
+    classID: 114
+    packedSize: 41672
+    offset: 5221272
+    sourceAssetGUID: 47320322f5bd39c4ca9a01291ff7d3d8
+    buildTimeAssetPath: Assets/SerializedUdonPrograms/574701ae66b296b4f83181158bd55326.asset
+  - fileID: 523
+    classID: 114
+    packedSize: 45336
+    offset: 5262944
+    sourceAssetGUID: e6257dbdee790264286c237e7cfa7b76
+    buildTimeAssetPath: Assets/SerializedUdonPrograms/58ab79010b51a5e42823bc7cb51bc17a.asset
+  - fileID: 524
+    classID: 114
+    packedSize: 107104
+    offset: 5308280
+    sourceAssetGUID: 84784521df210034c9cb1ddaae0ea228
+    buildTimeAssetPath: Assets/SerializedUdonPrograms/84db411c661ddff49a86001e74f41db4.asset
+  - fileID: 525
+    classID: 114
+    packedSize: 16616
+    offset: 5415384
+    sourceAssetGUID: e51ff1f5a2dbd80479d8b8f82a7564e1
+    buildTimeAssetPath: Assets/SerializedUdonPrograms/9482eaa8b3493474ba27587a91abfeac.asset
+  - fileID: 526
+    classID: 114
+    packedSize: 35940
+    offset: 5432000
+    sourceAssetGUID: e1c4bfd82752a5e44bea052dd81a20b0
+    buildTimeAssetPath: Assets/SerializedUdonPrograms/9cb211bf7c1b3dc4287bb1361ce2a48a.asset
+  - fileID: 527
+    classID: 114
+    packedSize: 32628
+    offset: 5467944
+    sourceAssetGUID: 3ab3ab04c18d6a242ae3d752c7c95a33
+    buildTimeAssetPath: Assets/SerializedUdonPrograms/9e9e4dde6d8f5dd4cb2c5a09cf8e6750.asset
+  - fileID: 528
+    classID: 114
+    packedSize: 308704
+    offset: 5500576
+    sourceAssetGUID: cea3888dc979ec74186ff2da15dd6ab6
+    buildTimeAssetPath: Assets/SerializedUdonPrograms/a57243225bd6a94408379a754932c5b6.asset
+  - fileID: 529
+    classID: 114
+    packedSize: 127008
+    offset: 5809280
+    sourceAssetGUID: 3767172e9d7dc39488895f3c93c60c32
+    buildTimeAssetPath: Assets/SerializedUdonPrograms/acbc8bb0c878a9e489a331eb01215a20.asset
+  - fileID: 530
+    classID: 114
+    packedSize: 17068
+    offset: 5936288
+    sourceAssetGUID: 56bc39152f55fca448d8ccf1c4b75ff1
+    buildTimeAssetPath: Assets/SerializedUdonPrograms/c8df303ceb45ae84f85a11591f741734.asset
+  - fileID: 531
+    classID: 114
+    packedSize: 80272
+    offset: 5953360
+    sourceAssetGUID: 6264ff86da4d23145bd85a1af7165629
+    buildTimeAssetPath: Assets/SerializedUdonPrograms/d6931b460e261d34fa725bad95d94e54.asset
+  - fileID: 532
+    classID: 114
+    packedSize: 186028
+    offset: 6033632
+    sourceAssetGUID: 2488ade50a11ed545800470cc3e8b58f
+    buildTimeAssetPath: Assets/SerializedUdonPrograms/ed24853ce0c80d342b58b60e2406e5b0.asset
+  - fileID: 533
+    classID: 114
+    packedSize: 12552
+    offset: 6219664
+    sourceAssetGUID: 2f2b3c83606560140b9aacf1ab0d4e6b
+    buildTimeAssetPath: Assets/SerializedUdonPrograms/f43a45b0574b74a42ad376a4f8d662aa.asset
+  - fileID: 534
+    classID: 114
+    packedSize: 92
+    offset: 6232216
+    sourceAssetGUID: a35f2996ce6d14c4c854aba5420212ed
+    buildTimeAssetPath: Assets/Cyan/PlayerObjectPool/PlayerObjectPool.prefab
+  - fileID: 535
+    classID: 114
+    packedSize: 240
+    offset: 6232312
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 536
+    classID: 114
+    packedSize: 240
+    offset: 6232552
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 537
+    classID: 114
+    packedSize: 240
+    offset: 6232792
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 538
+    classID: 114
+    packedSize: 56
+    offset: 6233032
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 539
+    classID: 114
+    packedSize: 8052
+    offset: 6233088
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 540
+    classID: 114
+    packedSize: 8052
+    offset: 6241144
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 541
+    classID: 114
+    packedSize: 240
+    offset: 6249200
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 542
+    classID: 114
+    packedSize: 240
+    offset: 6249440
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 543
+    classID: 114
+    packedSize: 8052
+    offset: 6249680
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 544
+    classID: 114
+    packedSize: 8052
+    offset: 6257736
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 545
+    classID: 114
+    packedSize: 240
+    offset: 6265792
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 546
+    classID: 114
+    packedSize: 240
+    offset: 6266032
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 547
+    classID: 114
+    packedSize: 240
+    offset: 6266272
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 548
+    classID: 114
+    packedSize: 8052
+    offset: 6266512
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 549
+    classID: 114
+    packedSize: 8052
+    offset: 6274568
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 550
+    classID: 114
+    packedSize: 136
+    offset: 6282624
+    sourceAssetGUID: 0883f57850dbfec49b42b2d4479941e5
+    buildTimeAssetPath: Assets/UdonSharp/PrefabBuild/Assets/_prefabs/UI/ScoreboardItem.prefab
+  - fileID: 551
+    classID: 114
+    packedSize: 240
+    offset: 6282760
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 552
+    classID: 114
+    packedSize: 220
+    offset: 6283000
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 553
+    classID: 114
+    packedSize: 240
+    offset: 6283224
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 554
+    classID: 114
+    packedSize: 240
+    offset: 6283464
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 555
+    classID: 114
+    packedSize: 56
+    offset: 6283704
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 556
+    classID: 114
+    packedSize: 8052
+    offset: 6283760
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 557
+    classID: 114
+    packedSize: 8052
+    offset: 6291816
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 558
+    classID: 114
+    packedSize: 240
+    offset: 6299872
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 559
+    classID: 114
+    packedSize: 8052
+    offset: 6300112
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 560
+    classID: 114
+    packedSize: 240
+    offset: 6308168
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 561
+    classID: 114
+    packedSize: 240
+    offset: 6308408
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 562
+    classID: 114
+    packedSize: 8052
+    offset: 6308648
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 563
+    classID: 114
+    packedSize: 240
+    offset: 6316704
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 564
+    classID: 114
+    packedSize: 8052
+    offset: 6316944
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 565
+    classID: 114
+    packedSize: 8052
+    offset: 6325000
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 566
+    classID: 114
+    packedSize: 56
+    offset: 6333056
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 567
+    classID: 114
+    packedSize: 140
+    offset: 6333112
+    sourceAssetGUID: 0883f57850dbfec49b42b2d4479941e5
+    buildTimeAssetPath: Assets/UdonSharp/PrefabBuild/Assets/_prefabs/UI/ScoreboardItem.prefab
+  - fileID: 568
+    classID: 114
+    packedSize: 240
+    offset: 6333256
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 569
+    classID: 114
+    packedSize: 240
+    offset: 6333496
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 570
+    classID: 114
+    packedSize: 240
+    offset: 6333736
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 571
+    classID: 114
+    packedSize: 240
+    offset: 6333976
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 572
+    classID: 114
+    packedSize: 8052
+    offset: 6334216
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 573
+    classID: 114
+    packedSize: 8052
+    offset: 6342272
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 574
+    classID: 114
+    packedSize: 8052
+    offset: 6350328
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 575
+    classID: 114
+    packedSize: 56
+    offset: 6358384
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 576
+    classID: 114
+    packedSize: 8052
+    offset: 6358440
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 577
+    classID: 114
+    packedSize: 240
+    offset: 6366496
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 578
+    classID: 114
+    packedSize: 6744
+    offset: 6366736
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 579
+    classID: 114
+    packedSize: 152
+    offset: 6373480
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 580
+    classID: 114
+    packedSize: 8052
+    offset: 6373632
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 581
+    classID: 114
+    packedSize: 8052
+    offset: 6381688
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 582
+    classID: 114
+    packedSize: 8052
+    offset: 6389744
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 583
+    classID: 114
+    packedSize: 1472
+    offset: 6397800
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 584
+    classID: 114
+    packedSize: 136
+    offset: 6399272
+    sourceAssetGUID: 0883f57850dbfec49b42b2d4479941e5
+    buildTimeAssetPath: Assets/UdonSharp/PrefabBuild/Assets/_prefabs/UI/ScoreboardItem.prefab
+  - fileID: 585
+    classID: 114
+    packedSize: 552
+    offset: 6399408
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 586
+    classID: 114
+    packedSize: 240
+    offset: 6399960
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 587
+    classID: 114
+    packedSize: 8052
+    offset: 6400200
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 588
+    classID: 114
+    packedSize: 3044
+    offset: 6408256
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 589
+    classID: 114
+    packedSize: 8052
+    offset: 6411304
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 590
+    classID: 114
+    packedSize: 240
+    offset: 6419360
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 591
+    classID: 114
+    packedSize: 240
+    offset: 6419600
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 592
+    classID: 114
+    packedSize: 240
+    offset: 6419840
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 593
+    classID: 114
+    packedSize: 240
+    offset: 6420080
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 594
+    classID: 114
+    packedSize: 240
+    offset: 6420320
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 595
+    classID: 114
+    packedSize: 8052
+    offset: 6420560
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 596
+    classID: 114
+    packedSize: 240
+    offset: 6428616
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 597
+    classID: 114
+    packedSize: 8052
+    offset: 6428856
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 598
+    classID: 114
+    packedSize: 56
+    offset: 6436912
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 599
+    classID: 114
+    packedSize: 8052
+    offset: 6436968
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 600
+    classID: 114
+    packedSize: 240
+    offset: 6445024
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 601
+    classID: 114
+    packedSize: 240
+    offset: 6445264
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 602
+    classID: 114
+    packedSize: 8052
+    offset: 6445504
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 603
+    classID: 114
+    packedSize: 8052
+    offset: 6453560
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 604
+    classID: 114
+    packedSize: 8052
+    offset: 6461616
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 605
+    classID: 114
+    packedSize: 8052
+    offset: 6469672
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 606
+    classID: 114
+    packedSize: 120
+    offset: 6477728
+    sourceAssetGUID: 0883f57850dbfec49b42b2d4479941e5
+    buildTimeAssetPath: Assets/UdonSharp/PrefabBuild/Assets/_prefabs/UI/ScoreboardItem.prefab
+  - fileID: 607
+    classID: 114
+    packedSize: 8052
+    offset: 6477848
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 608
+    classID: 114
+    packedSize: 2180
+    offset: 6485904
+    sourceAssetGUID: 0883f57850dbfec49b42b2d4479941e5
+    buildTimeAssetPath: Assets/UdonSharp/PrefabBuild/Assets/_prefabs/UI/ScoreboardItem.prefab
+  - fileID: 609
+    classID: 114
+    packedSize: 240
+    offset: 6488088
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 610
+    classID: 114
+    packedSize: 8052
+    offset: 6488328
+    sourceAssetGUID: 12c7cab4d1857ee40b9f824beb2dee11
+    buildTimeAssetPath: Assets/_prefabs/Player/PlayerController.prefab
+  - fileID: 611
+    classID: 114
+    packedSize: 6360
+    offset: 6496384
+    sourceAssetGUID: a35f2996ce6d14c4c854aba5420212ed
+    buildTimeAssetPath: Assets/Cyan/PlayerObjectPool/PlayerObjectPool.prefab
+--- !u!382020655 &-4566602252169128859
+PluginBuildInfo:
+  m_RuntimePlugins:
+  - Unity.Burst.Unsafe
+  - VRC.SDK3.Dynamics.PhysBone
+  - OVRPlugin
+  - YamlDotNet
+  - WatsonTcp
+  - System.Threading.Tasks.Extensions
+  - VRC.Udon.ClientBindings
+  - openvr_api
+  - portmidi
+  - VRC.Udon.VRCWrapperModules
+  - VRCSDK3
+  - VRC.Udon.VM
+  - Serilog
+  - nunit.framework
+  - SemanticVersioning
+  - librsync.net
+  - VRC.Udon.Common
+  - VRC.SDK3.Dynamics.Contact
+  - Collections.Pooled
+  - System.Collections.Immutable
+  - System.Numerics.Vectors
+  - System.Buffers
+  - VRC.Dynamics
+  - VRC.Udon.Wrapper
+  - Serilog.Sinks.File
+  - VRC.Udon.Security
+  - clipper_library
+  - VRC.Collections
+  - VRCSDKBase
+  - System.Runtime.CompilerServices.Unsafe
+  - Newtonsoft.Json
+  - libopenvr_api
+  - Blake2Sharp
+  - System.Memory
+  - System.Text.Encoding.CodePages
+  - VRCCore-Editor
+  - VRC.Utility
+  - AudioPluginOculusSpatializer
+  m_EditorPlugins:
+  - VRCSDK3-Editor
+  - Microsoft.CodeAnalysis
+  - VRC.Udon.VRCTypeResolverModules
+  - AppleEventIntegration
+  - liblz4Plastic
+  - Unity.Plastic.Newtonsoft.Json
+  - unityplastic
+  - VRC.Udon.Compiler
+  - System.Reflection.Metadata
+  - Microsoft.CodeAnalysis.CSharp
+  - VRC.Udon.UAssembly
+  - vpm-core-lib
+  - VRC.Udon.Graph
+  - UnityEditor.VR
+  - 0Harmony
+  - VRC.SDK3.Dynamics.PhysBone.Editor
+  - VRCSDKBase-Editor
+  - VRC.SDK3.Dynamics.Contact.Editor
+  - VRC.Udon.VRCGraphModules
+  - log4netPlastic
+  - VRC.Udon.EditorBindings
+  - zlib64Plastic
+  - Unity.Plastic.Antlr3.Runtime
+  - Serilog.Sinks.Unity3D
+  - lz4x64Plastic
+--- !u!641289076 &-352806907314706542
+AudioBuildInfo:
+  m_IsAudioDisabled: 0
+  m_AudioClipCount: 11
+  m_AudioMixerCount: 0
+--- !u!1126 &-238922706155550966
+PackedAssets:
+  m_File: 2
+  m_ShortPath: BuildPlayer-VRCSR.resource
+  m_Overhead: 0
+  m_Contents:
+  - fileID: 0
+    classID: 83
+    packedSize: 6048
+    offset: 0
+    sourceAssetGUID: d9460048f8cfc40c98f6f3a1f3887411
+    buildTimeAssetPath: Assets/_sounds/SFX/Sound Assets/8 Bit/Sound Effects/Character/Attacks/Slash_Attack_1.wav
+  - fileID: 0
+    classID: 83
+    packedSize: 15072
+    offset: 0
+    sourceAssetGUID: 1b5449550144a44f18a0916d0becc426
+    buildTimeAssetPath: Assets/_sounds/SFX/Sound Assets/8 Bit/Sound Effects/Character/General/Equip_Armour_2.wav
+  - fileID: 0
+    classID: 83
+    packedSize: 36800
+    offset: 0
+    sourceAssetGUID: 7b77fabe78683a2428883cd0325443eb
+    buildTimeAssetPath: Assets/_sounds/SFX/Essential Sounds Bundle/Monsters/Humanoid
+      Small 3 - Short 03.wav
+  - fileID: 0
+    classID: 83
+    packedSize: 49984
+    offset: 0
+    sourceAssetGUID: 770100a94ab1b9b4ebf857c8fd71b843
+    buildTimeAssetPath: Assets/_sounds/SFX/Essential Sounds Bundle/Combat & Magic/Hit
+      03.wav
+  - fileID: 0
+    classID: 83
+    packedSize: 143104
+    offset: 0
+    sourceAssetGUID: 2e5a8dccb841cf948bba3b910e655be4
+    buildTimeAssetPath: Assets/_sounds/SFX/Essential Sounds Bundle/PowerUp & Whoosh/Special
+      Whoosh 2_4.wav
+  - fileID: 0
+    classID: 83
+    packedSize: 392384
+    offset: 0
+    sourceAssetGUID: b7811fa533351435b8c40c9cfff35887
+    buildTimeAssetPath: Assets/_sounds/Music/16BIT_MUSICPACK_COMPLETE/16BIT_MUSICPACK_VOL2/Deck
+      Customization.wav
+  - fileID: 0
+    classID: 83
+    packedSize: 680320
+    offset: 0
+    sourceAssetGUID: 738013ade19064bebb3ed596da2a491e
+    buildTimeAssetPath: Assets/_sounds/Music/16BIT_MUSICPACK_COMPLETE/16BIT_MUSICPACK_VOL5/Reignite
+      (loop).wav
+  - fileID: 0
+    classID: 83
+    packedSize: 772896
+    offset: 0
+    sourceAssetGUID: ce59efdef0e634e64bc917bb9219738c
+    buildTimeAssetPath: Assets/_sounds/Music/16BIT_MUSICPACK_COMPLETE/16BIT_MUSICPACK_VOL4/From
+      The Outlands .wav
+  - fileID: 0
+    classID: 83
+    packedSize: 965632
+    offset: 0
+    sourceAssetGUID: 606555bf9566a4fce8c2bf45e5d30382
+    buildTimeAssetPath: Assets/_sounds/Music/16BIT_MUSICPACK_COMPLETE/16BIT_MUSICPACK_VOL8/Breathin'
+      Metal (loop).wav
+  - fileID: 0
+    classID: 83
+    packedSize: 992448
+    offset: 0
+    sourceAssetGUID: 1fb5294b9a8dd4ee4b617e981e0012da
+    buildTimeAssetPath: Assets/_sounds/Music/16BIT_MUSICPACK_COMPLETE/16BIT_MUSICPACK_VOL1/All
+      Stars Choose.wav
+  - fileID: 0
+    classID: 83
+    packedSize: 1061696
+    offset: 0
+    sourceAssetGUID: 81fe71eb58dc44717980eb39976dde99
+    buildTimeAssetPath: Assets/_sounds/Music/16BIT_MUSICPACK_COMPLETE/16BIT_MUSICPACK_VOL2/Fields
+      Of Memory.wav
+--- !u!1125 &1
+BuildReport:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: LastWindowsBuild
+  m_Summary:
+    buildStartTime:
+      serializedVersion: 2
+      ticks: 638015778954340593
+    buildGUID: 00000000000000000000000000000000
+    platformName: Win64
+    platformGroupName: Standalone
+    options: 16
+    assetBundleOptions: 32
+    outputPath: C:/Users/smack/AppData/Local/Temp/DefaultCompany/VRC Survivors Royale/scene-standalonewindows64-vrcsr.vrcw
+    crc: 3592202601
+    totalSize: 6455633
+    totalTimeTicks: 172663492
+    totalErrors: 0
+    totalWarnings: 0
+    buildType: 1
+    buildResult: 1
+  m_Files:
+  - path: C:/Users/smack/AppData/Local/VRChatProjects/VRC Survivors Royale/scene-standalonewindows64-vrcsr.vrcw/BuildPlayer-VRCSR
+    role: Scene
+    id: 0
+    totalSize: 11448336
+  - path: C:/Users/smack/AppData/Local/VRChatProjects/VRC Survivors Royale/scene-standalonewindows64-vrcsr.vrcw/BuildPlayer-VRCSR.sharedAssets
+    role: SharedAssets
+    id: 1
+    totalSize: 6502744
+  - path: C:/Users/smack/AppData/Local/VRChatProjects/VRC Survivors Royale/scene-standalonewindows64-vrcsr.vrcw/BuildPlayer-VRCSR.resource
+    role: StreamingResourceFile
+    id: 2
+    totalSize: 5116384
+  - path: C:/Users/smack/AppData/Local/VRChatProjects/VRC Survivors Royale/scene-standalonewindows64-vrcsr.vrcw
+    role: AssetBundle
+    id: 3
+    totalSize: 6450643
+  - path: C:/Users/smack/AppData/Local/VRChatProjects/VRC Survivors Royale/scene-standalonewindows64-vrcsr.vrcw.manifest
+    role: AssetBundleTextManifest
+    id: 4
+    totalSize: 3775
+  - path: C:/Users/smack/AppData/Local/VRChatProjects/VRC Survivors Royale/VRC Survivors
+      Royale/CAB-dad06f69ca958869eb34e34a582547d5
+    role: ResourcesFile
+    id: 5
+    totalSize: 4304
+  - path: C:/Users/smack/AppData/Local/VRChatProjects/VRC Survivors Royale/VRC Survivors
+      Royale
+    role: ManifestAssetBundle
+    id: 6
+    totalSize: 1051
+  - path: C:/Users/smack/AppData/Local/VRChatProjects/VRC Survivors Royale/VRC Survivors
+      Royale.manifest
+    role: AssetBundleTextManifest
+    id: 7
+    totalSize: 164
+  m_BuildSteps:
+  - stepName: Build Asset Bundles
+    durationTicks: 172663492
+    depth: 0
+    messages: []
+  - stepName: Calculate asset bundles to be built
+    durationTicks: 101552
+    depth: 1
+    messages: []
+  - stepName: Compile scripts
+    durationTicks: 24364998
+    depth: 1
+    messages: []
+  - stepName: Build player
+    durationTicks: 97973224
+    depth: 1
+    messages: []
+  - stepName: Prepare assets for target platform
+    durationTicks: 2368209
+    depth: 2
+    messages: []
+  - stepName: Building scenes
+    durationTicks: 42490510
+    depth: 2
+    messages: []
+  - stepName: Building scene Assets/VRCSR.unity
+    durationTicks: 42474677
+    depth: 3
+    messages: []
+  - stepName: Writing asset files
+    durationTicks: 7999748
+    depth: 2
+    messages: []
+  - stepName: Packaging assets - archive:/BuildPlayer-VRCSR/BuildPlayer-VRCSR.sharedAssets
+    durationTicks: 7941395
+    depth: 3
+    messages: []
+  - stepName: Creating compressed player package
+    durationTicks: 24641539
+    depth: 2
+    messages: []
+  - stepName: Postprocess built player
+    durationTicks: 203657
+    depth: 2
+    messages: []
+  m_Appendices:
+  - {fileID: 4709517002016869484}
+  - {fileID: -7746058434567349148}
+  - {fileID: -238922706155550966}
+  - {fileID: -4566602252169128859}
+  - {fileID: -352806907314706542}
+  - {fileID: -8352630594415858128}
+--- !u!668709126 &4709517002016869484
+BuiltAssetBundleInfoSet:
+  bundleInfos:
+  - bundleName: scene-standalonewindows64-vrcsr.vrcw
+    bundleArchiveFile: 3
+    packagedFileIndices: 000000000100000002000000
+  - bundleName: VRC Survivors Royale
+    bundleArchiveFile: 6
+    packagedFileIndices: 05000000

@@ -9,6 +9,8 @@ public class MusicControls : UdonSharpBehaviour
     public Button MusicOn;
     public Button MusicOff;
     public Button Shuffle;
+    public Slider Volume;
+    public Text VoulmeLabel;
     public Transform SongsContainer;
     public Text SongTitle;
     public AudioSource[] SongsArray = new AudioSource[6];
@@ -25,6 +27,8 @@ public class MusicControls : UdonSharpBehaviour
         CurrentSong = SongsArray[SongIndex];
         SongTitle.text = CurrentSong.name;
         CurrentSong.Play();
+        CurrentSong.volume = Volume.value;
+        VoulmeLabel.text = CurrentSong.volume.ToString();
     }
     
     public void ToggleMute()
@@ -58,5 +62,11 @@ public class MusicControls : UdonSharpBehaviour
             CurrentSong.Pause();
         }
         
+    }
+    
+    public void ChangeVolume()
+    {
+        CurrentSong.volume = Volume.value;
+        VoulmeLabel.text = CurrentSong.volume.ToString();
     }
 }
