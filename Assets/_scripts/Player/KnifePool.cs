@@ -55,6 +55,12 @@ public class KnifePool : UdonSharpBehaviour
     public float Quantity;
     [UdonSynced]
     public float Size;
+    [UdonSynced]
+    public float HP;
+    [UdonSynced]
+    public float DEF;
+    [UdonSynced]
+    public float RunSpeed;
 
     public bool ReadyToGo = false;
 
@@ -72,6 +78,9 @@ public class KnifePool : UdonSharpBehaviour
         Force = 2f;
         Quantity = 1f;
         Size = 1f;
+        HP = 10f;
+        DEF = 0f;
+        RunSpeed = 5f;
 
         int index = 0;
         foreach (Transform child in transform)
