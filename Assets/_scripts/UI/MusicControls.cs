@@ -10,6 +10,7 @@ public class MusicControls : UdonSharpBehaviour
     public Button MusicOff;
     public Button Shuffle;
     public Transform SongsContainer;
+    public Text SongTitle;
     public AudioSource[] SongsArray = new AudioSource[6];
     public AudioSource CurrentSong;
 
@@ -22,6 +23,7 @@ public class MusicControls : UdonSharpBehaviour
         }
         SongIndex = Random.Range(0, 6);
         CurrentSong = SongsArray[SongIndex];
+        SongTitle.text = CurrentSong.name;
         CurrentSong.Play();
     }
     
@@ -46,6 +48,7 @@ public class MusicControls : UdonSharpBehaviour
         CurrentSong.Stop();
         int RandomIndex = Random.Range(0, 6);
         CurrentSong = SongsArray[RandomIndex];
+        SongTitle.text = CurrentSong.name;
         if (MusicOn.gameObject.activeSelf)
         {
             CurrentSong.Play();
