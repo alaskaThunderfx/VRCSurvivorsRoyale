@@ -18,6 +18,7 @@ public class KnifePool : UdonSharpBehaviour
 
     // Script attached to the EffectsContainer
     public EffectsContainer EffectsContainer;
+    public PlayerUI PlayerUI;
 
     [Header("Knife Stats")]
     // Knife array
@@ -30,6 +31,9 @@ public class KnifePool : UdonSharpBehaviour
 
     // Index used for iterating through the pool
     public int KnifeIndex;
+
+    [UdonSynced]
+    public int Level;
 
     // Amount of damage done on hit
     [UdonSynced]
@@ -56,7 +60,7 @@ public class KnifePool : UdonSharpBehaviour
     [UdonSynced]
     public float Size;
     [UdonSynced]
-    public float HP;
+    public float hP;
     [UdonSynced]
     public float DEF;
     [UdonSynced]
@@ -72,13 +76,13 @@ public class KnifePool : UdonSharpBehaviour
         EffectsContainer = PlayerController.EffectsContainer;
 
         // Reset stats to base
+        Level = 1;
         Damage = 1f;
         cooldown = 2f;
         Range = 100f;
         Force = 2f;
         Quantity = 1f;
         Size = 1f;
-        HP = 10f;
         DEF = 0f;
         RunSpeed = 5f;
 
@@ -131,6 +135,19 @@ public class KnifePool : UdonSharpBehaviour
                     }
                 }
             }
+        }
+    }
+
+    public float HP
+    {
+        set
+        {
+            hP = value;
+            PlayerUI.SetHealth(hP);
+        }
+        get
+        {
+            return hP;
         }
     }
 

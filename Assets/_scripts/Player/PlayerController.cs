@@ -14,6 +14,7 @@ public class PlayerController : UdonSharpBehaviour
     public Scoreboard Scoreboard;
     public KnifePool KnifePool;
     public PlayerHitBox PlayerHitBox;
+    public PlayerUI PlayerUI;
 
     [Header("Stats")]
     public int level;
@@ -40,7 +41,10 @@ public class PlayerController : UdonSharpBehaviour
         KnifePool._OnOwnerSet();
         PlayerHitBox = transform.GetChild(2).GetComponent<PlayerHitBox>();
         PlayerHitBox._OnOwnerSet();
+        PlayerUI = transform.GetChild(3).GetComponent<PlayerUI>();
+        PlayerUI._OnOwnerSet();
         Scoreboard = GameObject.Find("Scoreboard").GetComponent<Scoreboard>();
+
     }
 
     private void Update() {

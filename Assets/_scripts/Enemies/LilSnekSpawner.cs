@@ -33,7 +33,7 @@ public class LilSnekSpawner : UdonSharpBehaviour
         Owner = Networking.GetOwner(gameObject);
         if (Networking.LocalPlayer == Owner)
         {
-            NumberOfSneks = 5;
+            NumberOfSneks = 10;
             for (int i = 0; i < NumberOfSneks; i++)
             {
                 Pool.Shuffle();
@@ -51,7 +51,7 @@ public class LilSnekSpawner : UdonSharpBehaviour
             if (numberOfSneks <= 0)
             {
                 Debug.Log("Spawning Sneks!");
-                numberOfSneks = 5;
+                numberOfSneks = 10;
                 SpawnSneks();
             }
         }

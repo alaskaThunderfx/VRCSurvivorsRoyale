@@ -24,7 +24,7 @@ public class PlayerHitBox : UdonSharpBehaviour
     }
 
     private void OnTriggerEnter(Collider other) {
-        if (other.name == "Hit")
+        if (other.name == "Hit" && other.transform.parent.parent.name.Contains("LilSnek"))
         {
             Debug.Log("I got bit!");
         }

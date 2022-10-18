@@ -84,7 +84,6 @@ GameObject:
   m_Component:
   - component: {fileID: 4507195300746919277}
   - component: {fileID: 2344606557507278836}
-  - component: {fileID: 1657641381134240579}
   m_Layer: 5
   m_Name: HealthBar
   m_TagString: Untagged
@@ -163,18 +162,6 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
---- !u!114 &1657641381134240579
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2493643512915039491}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1191622207, guid: 4ecd63eff847044b68db9453ce219299, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &5563050121601927211
 GameObject:
   m_ObjectHideFlags: 0
@@ -188,7 +175,7 @@ GameObject:
   - component: {fileID: 7824831528811382027}
   - component: {fileID: 7970184507249402639}
   m_Layer: 5
-  m_Name: Canvas
+  m_Name: HealthBar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -211,7 +198,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 1.111}
+  m_AnchoredPosition: {x: 0, y: 1.1109924}
   m_SizeDelta: {x: 230.8314, y: 37.86348}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!223 &7241427820275282142

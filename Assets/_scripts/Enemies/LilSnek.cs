@@ -26,6 +26,7 @@ public class LilSnek : UdonSharpBehaviour
     [Header("Stats")]
     [UdonSynced, FieldChangeCallback(nameof(Health))]
     public float health;
+    public float DMG;
     public float Experience = 1f;
     public float MaxWanderDistance = 5f;
     public float WanderIdleTime;
@@ -57,6 +58,8 @@ public class LilSnek : UdonSharpBehaviour
     private bool HasSetNextPosition;
     private float InternalWaitTime;
     private float GCTInternalTime;
+
+    [UdonSynced]
     private float AttackCD;
     private float AnimCD;
     public GameObject bite;
@@ -92,6 +95,7 @@ public class LilSnek : UdonSharpBehaviour
         IsMovingToNext = false;
         GCTInternalTime = GuardChaseTime;
         Health = 3f;
+        DMG = 1f;
         HealthBar.SetMaxHealth(Health);
         PlayerObjectAssigner = GameObject
             .Find("PlayerObjectAssigner")
@@ -184,10 +188,9 @@ public class LilSnek : UdonSharpBehaviour
                     if (Agent.remainingDistance < 1.5f)
                     {
                         AttackCD -= Time.deltaTime;
-                        if (AttackCD <= 0)
-                        {
-                            AIAnimator.SetTrigger("Attacks");
-                        }
+                        if (AttackCD <= 0) {
+                            SendCustomNetworkEvent(NetworkEventTarget.All, nameof(Attack));
+                         }
                     }
                     if (GCTInternalTime < 0f)
                     {
@@ -231,13 +234,19 @@ public class LilSnek : UdonSharpBehaviour
         return hit.position;
     }
 
-    public void activateBite(){
+    public void activateBite()
+    {
         bite.GetComponent<Collider>().enabled = true;
     }
 
     public void deactivateBite()
     {
         bite.GetComponent<Collider>().enabled = false;
+    }
+
+    public void Attack()
+    {
+        AIAnimator.SetTrigger("Attacks");
     }
 
     public float Health
