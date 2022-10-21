@@ -61,7 +61,6 @@ public class LilSnek : UdonSharpBehaviour
 
     [UdonSynced]
     private float AttackCD;
-    private float AnimCD;
     public GameObject bite;
 
     private void OnEnable()
@@ -106,7 +105,6 @@ public class LilSnek : UdonSharpBehaviour
             IsSpawning = true;
         SpawnCountdown = 1.1f;
         IsDying = false;
-        AnimCD = .2f;
     }
 
     private void Update()
