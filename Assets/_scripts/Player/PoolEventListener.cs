@@ -29,7 +29,7 @@ public class PoolEventListener : UdonSharpBehaviour
         }
         Debug.Log("In PoolEventListener > _OnPlayerAssigned()");
         Scoreboard.SendCustomNetworkEvent(NetworkEventTarget.All, "UpdateBoard");
-
+        StartArea.UpdatePlayersReady();
     }
 
     // This event is called when any player is assigned a pool object.
@@ -42,7 +42,7 @@ public class PoolEventListener : UdonSharpBehaviour
     {
         Debug.Log("In PoolEventListener > _OnPlayerAssigned()");
         Scoreboard.SendCustomNetworkEvent(NetworkEventTarget.All, "UpdateBoard");
-        StartArea.NumberOfPlayersReady++;
+        StartArea.UpdatePlayersReady();
     }
 
     // This event is called when any player's object has been unassigned.
@@ -55,6 +55,6 @@ public class PoolEventListener : UdonSharpBehaviour
     {
         Debug.Log("In PoolEventListener > _OnPlayerAssigned()");
         Scoreboard.SendCustomNetworkEvent(NetworkEventTarget.All, "UpdateBoard");
-        StartArea.NumberOfPlayersReady--;
+        StartArea.UpdatePlayersReady();
     }
 }

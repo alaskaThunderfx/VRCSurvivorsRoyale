@@ -1612,6 +1612,7 @@ MonoBehaviour:
   HealthBarCanvas: {fileID: 0}
   HealthBar: {fileID: 0}
   health: 0
+  DMG: 0
   Experience: 1
   MaxWanderDistance: 5
   WanderIdleTime: 5

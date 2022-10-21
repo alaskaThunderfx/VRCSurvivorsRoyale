@@ -115,7 +115,7 @@ public class Knife : UdonSharpBehaviour
             OgParticle.y * KnifePool.Size,
             OgParticle.z * KnifePool.Size
         );
-        AudioSource.PlayClipAtPoint(Throw, transform.position);
+        AudioSource.PlayClipAtPoint(Throw, transform.position, 0.1f);
     }
 
     private void Update()
