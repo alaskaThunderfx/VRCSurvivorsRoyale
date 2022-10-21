@@ -1,0 +1,124 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &3092625680877427027
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8707143861291403426}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 777d673942c940c43af08783d6f1f23c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  VertexMaterial: {fileID: 2100000, guid: ee8adcc2f7fb3264eaa2c9522b853d3c, type: 2}
+  UpdateColors: 1
+  NewColors:
+  - {r: 0.20784307, g: 0.12549016, b: 0.07450978, a: 1}
+  - {r: 0.41960776, g: 0.32941166, b: 0.24705875, a: 1}
+  - {r: 0.28627446, g: 0.18823525, b: 0.10980386, a: 1}
+--- !u!64 &833171969261581329
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8707143861291403426}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 914788822491325352, guid: c8cab540d57d73d40850f1c1059a8c9c, type: 3}
+--- !u!1001 &8364474116928075251
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: c8cab540d57d73d40850f1c1059a8c9c,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c8cab540d57d73d40850f1c1059a8c9c,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c8cab540d57d73d40850f1c1059a8c9c,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c8cab540d57d73d40850f1c1059a8c9c,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c8cab540d57d73d40850f1c1059a8c9c,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c8cab540d57d73d40850f1c1059a8c9c,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c8cab540d57d73d40850f1c1059a8c9c,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c8cab540d57d73d40850f1c1059a8c9c,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c8cab540d57d73d40850f1c1059a8c9c,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c8cab540d57d73d40850f1c1059a8c9c,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c8cab540d57d73d40850f1c1059a8c9c,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: c8cab540d57d73d40850f1c1059a8c9c,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: ee8adcc2f7fb3264eaa2c9522b853d3c, type: 2}
+    - target: {fileID: -7511558181221131132, guid: c8cab540d57d73d40850f1c1059a8c9c,
+        type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: ee8adcc2f7fb3264eaa2c9522b853d3c, type: 2}
+    - target: {fileID: -7511558181221131132, guid: c8cab540d57d73d40850f1c1059a8c9c,
+        type: 3}
+      propertyPath: m_Materials.Array.data[2]
+      value: 
+      objectReference: {fileID: 2100000, guid: ee8adcc2f7fb3264eaa2c9522b853d3c, type: 2}
+    - target: {fileID: 919132149155446097, guid: c8cab540d57d73d40850f1c1059a8c9c,
+        type: 3}
+      propertyPath: m_Name
+      value: Cave_Lair_Wooden_Timber_Suspension_Bridge_01
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: c8cab540d57d73d40850f1c1059a8c9c, type: 3}
+--- !u!1 &8707143861291403426 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: c8cab540d57d73d40850f1c1059a8c9c,
+    type: 3}
+  m_PrefabInstance: {fileID: 8364474116928075251}
+  m_PrefabAsset: {fileID: 0}

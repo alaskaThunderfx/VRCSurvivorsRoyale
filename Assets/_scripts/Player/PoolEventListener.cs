@@ -22,7 +22,6 @@ public class PoolEventListener : UdonSharpBehaviour
     {
         TestingUIBG.SetActive(true);
         TestingUI.SetActive(true);
-        TestSnake.SetActive(true);
         if (Networking.IsMaster && !GameStarted)
         {
             GameStarted = true;
