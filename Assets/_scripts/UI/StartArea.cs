@@ -30,7 +30,7 @@ public class StartArea : UdonSharpBehaviour
     {
         Debug.Log("Pressed StartGame~!");
         SendCustomNetworkEvent(NetworkEventTarget.All, nameof(TeleportPlayers));
-        LilSnekPool.SpawnSneks();
+        LilSnekPool.SendCustomNetworkEvent(NetworkEventTarget.Owner, "SpawnSneks");
     }
 
     public void TeleportPlayers()

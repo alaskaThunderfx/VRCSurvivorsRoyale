@@ -75,17 +75,8 @@ public class LilSnek : UdonSharpBehaviour
 
         HealthBarCanvas = transform.GetChild(16);
         HealthBar = HealthBarCanvas.GetChild(0).GetComponent<HealthBar>();
-
-        if (gameObject.name != "TestSnake")
-        {
-            LilSnekPool = transform.parent.GetComponent<VRCObjectPool>();
-            LilSnekSpawner = transform.parent.GetComponent<LilSnekSpawner>();
-        }
-        else
-        {
-            LilSnekPool = GameObject.Find("SnakeSpawner").GetComponent<VRCObjectPool>();
-            LilSnekSpawner = GameObject.Find("SnakeSpawner").GetComponent<LilSnekSpawner>();
-        }
+        LilSnekPool = GameObject.Find("SnakeSpawner").GetComponent<VRCObjectPool>();
+        LilSnekSpawner = GameObject.Find("SnakeSpawner").GetComponent<LilSnekSpawner>();
 
         if (Networking.LocalPlayer == Owner)
             AgentSpeed = Agent.speed;
@@ -178,17 +169,18 @@ public class LilSnek : UdonSharpBehaviour
                     }
                     break;
                 case 1:
-                    if (!Networking.IsOwner(gameObject))
-                        break;
+                    // if (!Networking.IsOwner(gameObject))
+                    //     break;
                     transform.GetChild(17).GetComponent<Collider>().enabled = false;
                     SetAIDestination(Owner.GetPosition());
                     GCTInternalTime -= Time.deltaTime;
                     if (Agent.remainingDistance < 1.5f)
                     {
                         AttackCD -= Time.deltaTime;
-                        if (AttackCD <= 0) {
+                        if (AttackCD <= 0)
+                        {
                             SendCustomNetworkEvent(NetworkEventTarget.All, nameof(Attack));
-                         }
+                        }
                     }
                     if (GCTInternalTime < 0f)
                     {
