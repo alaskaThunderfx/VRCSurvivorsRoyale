@@ -32,7 +32,7 @@ public class KnifeToggleTestingUI : UdonSharpBehaviour
         DamageText.text = DamageSlider.value.ToString();
         KnifePool.Damage = DamageSlider.value;
         CooldownText.text = CooldownSlider.value.ToString();
-        KnifePool.cooldown = CooldownSlider.value;
+        KnifePool.Cooldown = CooldownSlider.value;
         RangeText.text = RangeSlider.value.ToString();
         KnifePool.Range = RangeSlider.value;
         SpeedText.text = SpeedSlider.value.ToString();

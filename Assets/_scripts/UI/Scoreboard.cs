@@ -9,8 +9,11 @@ using VRC.Udon;
 
 public class Scoreboard : UdonSharpBehaviour
 {
-    [SerializeField] Transform Container;
-    [SerializeField] GameObject ScoreboardItemPrefab;
+    [SerializeField]
+    Transform Container;
+
+    [SerializeField]
+    GameObject ScoreboardItemPrefab;
     public Cyan.PlayerObjectPool.CyanPlayerObjectAssigner PlayersPool;
     public Component[] Players;
 
@@ -30,7 +33,11 @@ public class Scoreboard : UdonSharpBehaviour
         {
             Debug.Log("In the forach loop for Players");
             VRCPlayerApi p = Networking.GetOwner(player.gameObject);
-            float xp = player.GetComponent<PlayerController>().Experience;
+            float xp = player
+                .GetComponent<PlayerController>()
+                .transform.GetChild(1)
+                .GetComponent<KnifePool>()
+                .XP;
             Debug.Log("About to AddScoreboardItem()");
             Debug.Log(rank);
             Debug.Log(p.displayName);
@@ -67,7 +74,8 @@ public class Scoreboard : UdonSharpBehaviour
     public void AddScoreboardItem(int rank, VRCPlayerApi player, float exp)
     {
         Debug.Log("In AddScoreboardItem()");
-        ScoreboardItem row = Instantiate(ScoreboardItemPrefab, Container).GetComponent<ScoreboardItem>();
+        ScoreboardItem row = Instantiate(ScoreboardItemPrefab, Container)
+            .GetComponent<ScoreboardItem>();
         row.Initialize(rank, player, (float)Math.Round(exp, 0));
         Debug.Log("Finished AddScoreboardItem()");
     }

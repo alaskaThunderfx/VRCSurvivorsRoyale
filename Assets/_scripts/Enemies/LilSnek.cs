@@ -224,16 +224,6 @@ public class LilSnek : UdonSharpBehaviour
         return hit.position;
     }
 
-    public void activateBite()
-    {
-        bite.GetComponent<Collider>().enabled = true;
-    }
-
-    public void deactivateBite()
-    {
-        bite.GetComponent<Collider>().enabled = false;
-    }
-
     public void Attack()
     {
         AIAnimator.SetTrigger("Attacks");
@@ -250,9 +240,9 @@ public class LilSnek : UdonSharpBehaviour
                 PlayerController = PlayerObjectAssigner
                     ._GetPlayerPooledObject(Owner)
                     .GetComponent<PlayerController>();
-                PlayerController.Experience += Experience;
+                PlayerController.KnifePool.XP += Experience;
                 Debug.Log("Player: " + PlayerController.Owner);
-                Debug.Log("Their total experience: " + PlayerController.Experience);
+                Debug.Log("Their total experience: " + PlayerController.KnifePool.XP);
                 AudioSource.PlayClipAtPoint(
                     PlayerController.EffectsContainer.Kill.clip,
                     transform.position

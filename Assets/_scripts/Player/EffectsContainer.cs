@@ -8,6 +8,7 @@ public class EffectsContainer : UdonSharpBehaviour
     public VRCPlayerApi Owner;
     public PlayerController PlayerController;
     public KnifePool KnifePool;
+    public Vector3 Pos;
     public ParticleSystem LevelUpVisual;
     public AudioSource LevelUpAudio;
     public ParticleSystem Spark;
@@ -16,8 +17,13 @@ public class EffectsContainer : UdonSharpBehaviour
     public AudioSource IAOHit;
     public AudioSource EnemyHit;
     public AudioSource Kill;
+    public bool IsReady;
 
-    private void OnEnable() { }
+    private void Update()
+    {
+        if (!IsReady) return;
+        Pos = Owner.GetPosition();
+    }
 
     public void _OnOwnerSet()
     {
@@ -32,12 +38,14 @@ public class EffectsContainer : UdonSharpBehaviour
         IAOHit = transform.GetChild(4).GetComponent<AudioSource>();
         EnemyHit = transform.GetChild(5).GetComponent<AudioSource>();
         Kill = transform.GetChild(6).GetComponent<AudioSource>();
+        IsReady = true;
     }
 
-    public void LevelUp(Vector3 pos)
+    public void LevelUp()
     {
+        transform.position = Pos;
         AudioClip bong = LevelUpAudio.clip;
         LevelUpVisual.Play();
-        AudioSource.PlayClipAtPoint(bong, pos);
+        AudioSource.PlayClipAtPoint(bong, Pos);
     }
 }

@@ -1,6 +1,8 @@
 ﻿using UdonSharp;
 using UnityEngine;
+using VRC.Udon.Common.Interfaces;
 using VRC.SDKBase;
+using VRC.SDK3.Components;
 using VRC.Udon;
 
 public class KnifePool : UdonSharpBehaviour
@@ -19,11 +21,11 @@ public class KnifePool : UdonSharpBehaviour
     // Script attached to the EffectsContainer
     public EffectsContainer EffectsContainer;
     public PlayerUI PlayerUI;
+    public Scoreboard Scoreboard;
 
     [Header("Knife Stats")]
     // Knife array
     public GameObject[] Knives = new GameObject[30];
-
 
     // Used to toggle the knife weapon
     [UdonSynced]
@@ -35,36 +37,55 @@ public class KnifePool : UdonSharpBehaviour
     [UdonSynced]
     public int Level;
 
+    [UdonSynced, FieldChangeCallback(nameof(XP))]
+    public float xP;
+    public float XPToNextLv;
+
+    [UdonSynced, FieldChangeCallback(nameof(HP))]
+    public float hP;
+
+    // HPlvl tracker
+    public int TrackHPLv;
+
+    [UdonSynced]
+    public float DEF;
+    public int TrackDEFLv;
+
+    [UdonSynced]
+    public float RunSpeed;
+    public int TrackRSLv;
+
     // Amount of damage done on hit
     [UdonSynced]
     public float Damage;
+    public int TrackDMGLv;
 
     // Attack frequency
     [UdonSynced]
-    public float cooldown;
-
-    // Counter for the cooldown
-    public float CDCounter;
+    public float Cooldown;
+    public int TrackCDLv;
 
     // Distance knives get thrown
     [UdonSynced]
     public float Range;
-
-    // Throw speed
-    [UdonSynced]
-    public float Force;
+    public int TrackRangeLv;
 
     // Amount of knives thrown at once
     [UdonSynced]
     public float Quantity;
+    public int TrackQTYLv;
+
     [UdonSynced]
     public float Size;
+    public int TrackSizeLv;
+
+    // Throw speed
     [UdonSynced]
-    public float hP;
-    [UdonSynced]
-    public float DEF;
-    [UdonSynced]
-    public float RunSpeed;
+    public float Force;
+    public int TrackForceLv;
+
+    // Counter for the cooldown
+    public float CDCounter;
 
     public bool ReadyToGo = false;
 
@@ -77,14 +98,26 @@ public class KnifePool : UdonSharpBehaviour
 
         // Reset stats to base
         Level = 1;
-        Damage = 1f;
-        cooldown = 2f;
-        Range = 100f;
-        Force = 2f;
-        Quantity = 1f;
-        Size = 1f;
+        XP = 0;
+        XPToNextLv = 3f;
+        HP = 10f;
+        TrackHPLv = 0;
         DEF = 0f;
+        TrackDEFLv = 0;
         RunSpeed = 5f;
+        TrackRSLv = 0;
+        Damage = 1f;
+        TrackDMGLv = 0;
+        Cooldown = 2f;
+        TrackCDLv = 0;
+        Range = 100f;
+        TrackRangeLv = 0;
+        Quantity = 1f;
+        TrackQTYLv = 0;
+        Size = 1f;
+        TrackSizeLv = 0;
+        Force = 2f;
+        TrackForceLv = 0;
 
         int index = 0;
         foreach (Transform child in transform)
@@ -121,7 +154,7 @@ public class KnifePool : UdonSharpBehaviour
             CDCounter -= Time.deltaTime;
             if (CDCounter <= 0)
             {
-                CDCounter = cooldown;
+                CDCounter = Cooldown;
                 for (int i = 1; i <= Quantity; i++)
                 {
                     Knives[KnifeIndex].SetActive(true);
@@ -143,13 +176,36 @@ public class KnifePool : UdonSharpBehaviour
         set
         {
             hP = value;
-            PlayerUI.SetHealth(hP);
+            // PlayerUI.SetHealth(hP);
         }
-        get
-        {
-            return hP;
-        }
+        get { return hP; }
     }
+
+    public float XP
+    {
+        set
+        {
+            xP = value;
+            if (Networking.LocalPlayer == Owner)
+            {
+                if (!ReadyToGo) return;
+                Scoreboard = PlayerController.Scoreboard.GetComponent<Scoreboard>();
+                Scoreboard.SendCustomNetworkEvent(
+                    NetworkEventTarget.All,
+                    "UpdateBoard"
+                );
+                if (xP >= XPToNextLv)
+                {
+                    Level++;
+                    EffectsContainer.SendCustomNetworkEvent(NetworkEventTarget.All, nameof(LevelUp));
+                    XPToNextLv *= 1.5f;
+                }
+            }
+        }
+        get { return xP; }
+    }
+
+    public void LevelUp() { }
 
     public void TestingUI()
     {
