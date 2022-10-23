@@ -51,8 +51,8 @@ public class KnifePool : UdonSharpBehaviour
     public float DEF;
     public int TrackDEFLv;
 
-    [UdonSynced]
-    public float RunSpeed;
+    [UdonSynced, FieldChangeCallback(nameof(RunSpeed))]
+    public float runSpeed;
     public int TrackRSLv;
 
     // Amount of damage done on hit
@@ -86,6 +86,20 @@ public class KnifePool : UdonSharpBehaviour
 
     // Counter for the cooldown
     public float CDCounter;
+
+    // Upgrade tracker
+    public int[] Upgrades = new int[9];
+
+    // Correlating value for index position
+    // 0 - HP
+    // 1 - DEF
+    // 2 - RunSpeed
+    // 3 - AttackDMG
+    // 4 - Cooldown
+    // 5 - AttackSpeed
+    // 6 - Range
+    // 7 - Size
+    // 8 - Quantity
 
     public bool ReadyToGo = false;
 
@@ -128,6 +142,11 @@ public class KnifePool : UdonSharpBehaviour
             Knives[index] = Knife.gameObject;
             Knife._OnOwnerSet();
             index++;
+        }
+
+        for (int i = 0; i < Upgrades.Length; i++)
+        {
+            Upgrades[i] = 0;
         }
         ReadyToGo = true;
     }
@@ -188,21 +207,33 @@ public class KnifePool : UdonSharpBehaviour
             xP = value;
             if (Networking.LocalPlayer == Owner)
             {
-                if (!ReadyToGo) return;
+                if (!ReadyToGo)
+                    return;
                 Scoreboard = PlayerController.Scoreboard.GetComponent<Scoreboard>();
-                Scoreboard.SendCustomNetworkEvent(
-                    NetworkEventTarget.All,
-                    "UpdateBoard"
-                );
+                Scoreboard.SendCustomNetworkEvent(NetworkEventTarget.All, "UpdateBoard");
                 if (xP >= XPToNextLv)
                 {
                     Level++;
-                    EffectsContainer.SendCustomNetworkEvent(NetworkEventTarget.All, nameof(LevelUp));
+                    EffectsContainer.SendCustomNetworkEvent(
+                        NetworkEventTarget.All,
+                        nameof(LevelUp)
+                    );
                     XPToNextLv *= 1.5f;
+                    PlayerController.LevelUpUI.gameObject.SetActive(true);
                 }
             }
         }
         get { return xP; }
+    }
+
+    public float RunSpeed
+    {
+        set
+        {
+            runSpeed = value;
+            Owner.SetRunSpeed(RunSpeed);
+        }
+        get { return runSpeed; }
     }
 
     public void LevelUp() { }

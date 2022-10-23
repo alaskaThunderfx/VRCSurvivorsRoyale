@@ -23,7 +23,7 @@ public class StartArea : UdonSharpBehaviour
         Debug.Log("Number of active players == " + Players.Length);
         NumberOfPlayersReady = Players.Length;
         PlayersReady.text = "Players Ready:\n" + NumberOfPlayersReady.ToString();
-        RequestSerialization();
+        // RequestSerialization();
     }
 
     public void StartGame()
@@ -36,15 +36,16 @@ public class StartArea : UdonSharpBehaviour
     public void TeleportPlayers()
     {
         Networking.LocalPlayer.TeleportTo(TargetTransform.position, TargetTransform.rotation);
+        PlayerPool._GetPlayerPooledObject(Networking.LocalPlayer).GetComponent<PlayerController>().KnifePool.isKnifeOn = true;
     }
 
-    public override void OnDeserialization()
-    {
-        if (!Networking.IsMaster)
-        {
-            PlayersReady.text = "Players Ready:\n" + NumberOfPlayersReady.ToString();
-        }
-    }
+    // public override void OnDeserialization()
+    // {
+    //     if (!Networking.IsMaster)
+    //     {
+    //         PlayersReady.text = "Players Ready:\n" + NumberOfPlayersReady.ToString();
+    //     }
+    // }
 
     // public int NumberOfPlayersReady
     // {
