@@ -171,23 +171,51 @@ public class KnifePool : UdonSharpBehaviour
         // if isAttacking is true, begin the attack
         else
         {
+            // Countdown from the CDCounter
             CDCounter -= Time.deltaTime;
+            // Once the CDCounter is less than or equal to 0
             if (CDCounter <= 0)
             {
+                // Reset CDCounter to Cooldown value
                 CDCounter = Cooldown;
-                for (int i = 1; i <= Quantity; i++)
+                if (Quantity == 1)
                 {
-                    Knives[KnifeIndex].SetActive(true);
-                    if (KnifeIndex <= 28)
+                    ThrowKnife();
+                }
+                else
+                {
+                    // Begin for loop that corresponds with Quantity value
+                    for (int i = 1; i <= Quantity; i++)
                     {
-                        KnifeIndex++;
-                    }
-                    else
-                    {
-                        KnifeIndex = 0;
+                        if (i == 1)
+                        {
+                            ThrowKnife();
+                        }
+                        else
+                        {
+                            SendCustomEventDelayedSeconds(nameof(ThrowKnife), 0.15f);
+                        }
                     }
                 }
             }
+        }
+    }
+
+    public void ThrowKnife()
+    {
+        // Set knife at this index in the object pool to active
+        Knives[KnifeIndex].SetActive(true);
+        // If the value of knife index is less than or equal to 28
+        if (KnifeIndex <= 28)
+        {
+            // Increase KnifeIndex value
+            KnifeIndex++;
+        }
+        // If the value is 29
+        else
+        {
+            // Reset value to zaro
+            KnifeIndex = 0;
         }
     }
 
