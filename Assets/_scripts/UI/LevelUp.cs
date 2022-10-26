@@ -10,9 +10,11 @@ public class LevelUp : UdonSharpBehaviour
     public VRCPlayerApi Owner;
     public Cyan.PlayerObjectPool.CyanPlayerObjectAssigner Players;
     public PlayerController PlayerController;
+    public LevelUpUIContainer ThisContainer;
     public bool IsReady;
-    public float yAxis;
     public int ChoiceIndex;
+    public float yAxis;
+    public float zAxis;
     public Text LevelText;
     public Button[] PowerUpButtons = new Button[3];
     public Text[] PowerUpText = new Text[3];
@@ -33,6 +35,8 @@ public class LevelUp : UdonSharpBehaviour
     public void _OnOwnerSet()
     {
         Debug.Log("In _OnOwnerSet in LevelUp.cs");
+        // Setting the "Owner" to each local player, so that way we can minimize file space, since these
+        // are meant to be local.
         Owner = Networking.LocalPlayer;
         PlayerController = Players._GetPlayerPooledObject(Owner).GetComponent<PlayerController>();
         IsReady = true;
@@ -43,7 +47,12 @@ public class LevelUp : UdonSharpBehaviour
             parent.SetActive(false);
             ind++;
         }
-        yAxis = 1.2f;
+        ThisContainer = transform.parent.GetComponent<LevelUpUIContainer>();
+        ThisContainer.Owner = Owner;
+        ThisContainer.LevelUp = GetComponent<LevelUp>();
+        ThisContainer.IsReady = true;
+        yAxis = 0;
+        zAxis = 1;
         PowerUpChoices();
     }
 
@@ -77,13 +86,9 @@ public class LevelUp : UdonSharpBehaviour
 
     private void Update()
     {
-        if (IsReady)
+        if (IsReady && ThisContainer.IsReady)
         {
-            Vector3 curPos = Owner.GetPosition();
-            Vector3 headPos = Owner.GetTrackingData(VRCPlayerApi.TrackingDataType.Head).position;
-
-            transform.position = new Vector3(curPos.x, curPos.y += yAxis, curPos.z);
-            transform.LookAt(headPos);
+            transform.localPosition = new Vector3(0, yAxis, zAxis);
         }
     }
 

@@ -8,8 +8,8 @@ using VRC.Udon;
 
 public class PoolEventListener : UdonSharpBehaviour
 {
-    public GameObject TestingUIBG;
-    public GameObject TestingUI;
+    // public GameObject TestingUIBG;
+    // public GameObject TestingUI;
     public Scoreboard Scoreboard;
     public LilSnekSpawner LilSnekPool;
     public StartArea StartArea;
@@ -20,8 +20,8 @@ public class PoolEventListener : UdonSharpBehaviour
     // This event is called when the local player's pool object has been assigned.
     public void _OnLocalPlayerAssigned()
     {
-        TestingUIBG.SetActive(true);
-        TestingUI.SetActive(true);
+        // TestingUIBG.SetActive(true);
+        // TestingUI.SetActive(true);
         if (Networking.IsMaster && !GameStarted)
         {
             GameStarted = true;

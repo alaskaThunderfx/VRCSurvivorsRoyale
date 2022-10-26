@@ -13,6 +13,7 @@ public class KnifePool : UdonSharpBehaviour
     // Player tracking
     public Vector3 PlayerPosition;
     public Quaternion PlayerRotation;
+    public Transform StartSpot;
 
     [Header("Prefab Components")]
     // Main script attached to player
@@ -41,7 +42,7 @@ public class KnifePool : UdonSharpBehaviour
     public float xP;
     public float XPToNextLv;
 
-    [UdonSynced, FieldChangeCallback(nameof(HP))]
+    // [UdonSynced, FieldChangeCallback(nameof(HP))]
     public float hP;
 
     // HPlvl tracker
@@ -195,7 +196,15 @@ public class KnifePool : UdonSharpBehaviour
         set
         {
             hP = value;
-            // PlayerUI.SetHealth(hP);
+            if (ReadyToGo)
+            {
+                PlayerUI.SetHealth(hP);
+                if (hP <= 0)
+                {
+                    StartSpot = GameObject.Find("StartSpot").transform;
+                    Owner.TeleportTo(StartSpot.position, StartSpot.rotation);
+                }
+            }
         }
         get { return hP; }
     }

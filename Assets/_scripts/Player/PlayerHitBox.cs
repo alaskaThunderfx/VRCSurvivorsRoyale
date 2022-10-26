@@ -6,11 +6,13 @@ using VRC.Udon;
 public class PlayerHitBox : UdonSharpBehaviour
 {
     public VRCPlayerApi Owner;
+    public PlayerController PlayerController;
     public bool IsReady;
 
     public void _OnOwnerSet()
     {
         Owner = Networking.GetOwner(gameObject);
+        PlayerController = transform.parent.GetComponent<PlayerController>();
         IsReady = true;
         Debug.Log("Set the hitbox owner");
     }
@@ -24,9 +26,12 @@ public class PlayerHitBox : UdonSharpBehaviour
     }
 
     private void OnTriggerEnter(Collider other) {
-        if (other.name == "Hit" && other.transform.parent.parent.name.Contains("LilSnek"))
+        Transform AttackedBy = other.transform.parent.parent;
+        if (AttackedBy.name.Contains("LilSnek"))
         {
-            Debug.Log("I got bit!");
+            LilSnek ThisSnake = AttackedBy.GetComponent<LilSnek>();
+            PlayerController.KnifePool.HP -= (ThisSnake.DMG - PlayerController.KnifePool.DEF);
+            Debug.Log(Owner + " got bit by " + ThisSnake.name + "!\nHP Remaining: " + PlayerController.KnifePool.HP);
         }
     }
 }

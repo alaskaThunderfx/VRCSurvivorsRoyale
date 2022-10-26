@@ -22,6 +22,7 @@ public class LilSnek : UdonSharpBehaviour
     float DeathScene;
     public Transform HealthBarCanvas;
     public HealthBar HealthBar;
+    public Collider Biter;
 
     [Header("Stats")]
     [UdonSynced, FieldChangeCallback(nameof(Health))]
@@ -69,6 +70,7 @@ public class LilSnek : UdonSharpBehaviour
 
         LocalPlayer = Networking.LocalPlayer;
         Agent = GetComponent<NavMeshAgent>();
+        Biter = transform.GetChild(2).GetChild(0).GetComponent<Collider>();
         Agent.enabled = true;
         // Agent.updatePosition = false;
         CurrentState = 0;
@@ -227,6 +229,16 @@ public class LilSnek : UdonSharpBehaviour
     public void Attack()
     {
         AIAnimator.SetTrigger("Attacks");
+    }
+
+    public void activateBite()
+    {
+        Biter.enabled = true;
+    }
+
+    public void deactivateBite()
+    {
+        Biter.enabled = false;
     }
 
     public float Health
