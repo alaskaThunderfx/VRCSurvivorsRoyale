@@ -16,7 +16,7 @@ public class PlayerUIContainer : UdonSharpBehaviour
             Vector3 PlayerPosition = Owner.GetTrackingData(VRCPlayerApi.TrackingDataType.Head).position;
 
             transform.position = new Vector3(PlayerPosition.x, PlayerPosition.y, PlayerPosition.z);
-            transform.rotation = Owner.GetRotation();
+            transform.rotation = Quaternion.Lerp(transform.rotation, Owner.GetRotation(), .1f);
         }
     }
 }
