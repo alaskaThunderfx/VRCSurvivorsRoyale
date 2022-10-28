@@ -185,6 +185,35 @@ public class KnifePool : UdonSharpBehaviour
                 else
                 {
                     // Begin for loop that corresponds with Quantity value
+                    // Trying a switch statement instead
+                    switch (Quantity)
+                    {
+                        case 1:
+                            ThrowKnife();
+                            break;
+                        case 2:
+                            ThrowKnife();
+                            SendCustomEventDelayedSeconds(nameof(ThrowKnife), 0.1f);
+                            break;
+                        case 3:
+                            ThrowKnife();
+                            SendCustomEventDelayedSeconds(nameof(ThrowKnife), 0.1f);
+                            SendCustomEventDelayedSeconds(nameof(ThrowKnife), 0.2f);
+                            break;
+                        case 4:
+                            ThrowKnife();
+                            SendCustomEventDelayedSeconds(nameof(ThrowKnife), 0.1f);
+                            SendCustomEventDelayedSeconds(nameof(ThrowKnife), 0.2f);
+                            SendCustomEventDelayedSeconds(nameof(ThrowKnife), 0.3f);
+                            break;
+                        case 5:
+                            ThrowKnife();
+                            SendCustomEventDelayedSeconds(nameof(ThrowKnife), 0.1f);
+                            SendCustomEventDelayedSeconds(nameof(ThrowKnife), 0.2f);
+                            SendCustomEventDelayedSeconds(nameof(ThrowKnife), 0.3f);
+                            SendCustomEventDelayedSeconds(nameof(ThrowKnife), 0.4f);
+                            break;
+                    }
                     for (int i = 1; i <= Quantity; i++)
                     {
                         if (i == 1)
@@ -193,7 +222,7 @@ public class KnifePool : UdonSharpBehaviour
                         }
                         else
                         {
-                            SendCustomEventDelayedSeconds(nameof(ThrowKnife), 0.15f);
+                            SendCustomEventDelayedSeconds(nameof(ThrowKnife), 0.1f);
                         }
                     }
                 }
@@ -268,7 +297,10 @@ public class KnifePool : UdonSharpBehaviour
         set
         {
             runSpeed = value;
-            Owner.SetRunSpeed(RunSpeed);
+            if (Networking.LocalPlayer == Owner)
+            {
+                Owner.SetRunSpeed(RunSpeed);
+            }
         }
         get { return runSpeed; }
     }

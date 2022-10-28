@@ -8,8 +8,11 @@ public class PlayerUI : UdonSharpBehaviour
 {
     public VRCPlayerApi Owner;
     public Cyan.PlayerObjectPool.CyanPlayerObjectAssigner Players;
-    public Button MuteOn;
-    public Button MuteOff;
+    public Vector3 HandToElbowDist;
+    public Button Mute;
+    public Button Unmute;
+    public Button PrevSong;
+    public Button NextSong;
     public Slider Volume;
     public Slider HealthBar;
     public Text WeaponAndStats;
@@ -31,6 +34,10 @@ public class PlayerUI : UdonSharpBehaviour
         KnifePool.HP = 10f;
         SetMaxHealth(KnifePool.HP);
         WeaponAndStats = transform.GetChild(0).GetChild(1).GetComponent<Text>();
+        // Vector3 ElbowPos = Owner.GetBonePosition(HumanBodyBones.LeftLowerArm);
+        // Vector3 HandPos = Owner.GetBonePosition(HumanBodyBones.LeftHand);
+        // HandToElbowDist = ElbowPos - HandPos;
+        // transform.parent.GetComponent<PlayerUIContainer>().Scale = HandToElbowDist.y; 
         transform.parent.GetComponent<PlayerUIContainer>().IsReady = true;
     }
 
@@ -45,6 +52,11 @@ public class PlayerUI : UdonSharpBehaviour
         CurrentSong = SongsArray[SongIndex];
         CurrentSong.Play();
         CurrentSong.volume = Volume.value;
+    }
+
+    public void SkipSong()
+    {
+
     }
 
     // private void Update()
@@ -71,17 +83,17 @@ public class PlayerUI : UdonSharpBehaviour
 
     public void ToggleMute()
     {
-        if (MuteOff.gameObject.activeSelf)
+        if (Unmute.gameObject.activeSelf)
         {
             CurrentSong.Pause();
-            MuteOff.gameObject.SetActive(false);
-            MuteOn.gameObject.SetActive(true);
+            Unmute.transform.parent.gameObject.SetActive(false);
+            Mute.transform.parent.gameObject.SetActive(true);
         }
         else
         {
             CurrentSong.Play();
-            MuteOff.gameObject.SetActive(true);
-            MuteOn.gameObject.SetActive(false);
+            Unmute.transform.parent.gameObject.SetActive(true);
+            Mute.transform.parent.gameObject.SetActive(false);
         }
     }
 

@@ -98,6 +98,7 @@ public class LilSnek : UdonSharpBehaviour
             IsSpawning = true;
         SpawnCountdown = 1.1f;
         IsDying = false;
+        transform.GetChild(17).GetComponent<Collider>().enabled = true;
     }
 
     private void Update()

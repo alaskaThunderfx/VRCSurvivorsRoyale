@@ -27,6 +27,7 @@ public class PoolEventListener : UdonSharpBehaviour
             GameStarted = true;
             // LilSnekPool.SpawnSneks();
         }
+        
         Debug.Log("In PoolEventListener > _OnPlayerAssigned()");
         Scoreboard.SendCustomNetworkEvent(NetworkEventTarget.All, "UpdateBoard");
         StartArea.UpdatePlayersReady();
