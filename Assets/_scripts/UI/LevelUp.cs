@@ -13,8 +13,9 @@ public class LevelUp : UdonSharpBehaviour
     public LevelUpUIContainer ThisContainer;
     public bool IsReady;
     public int ChoiceIndex;
-    public float yAxis;
-    public float zAxis;
+    public float Size = 1;
+    public float yAxis = 0;
+    public float zAxis = 1;
     public Text LevelText;
     public Button[] PowerUpButtons = new Button[3];
     public Text[] PowerUpText = new Text[3];
@@ -38,7 +39,7 @@ public class LevelUp : UdonSharpBehaviour
         // Setting the "Owner" to each local player, so that way we can minimize file space, since these
         // are meant to be local.
         Owner = Networking.LocalPlayer;
-        PlayerController = Players._GetPlayerPooledObject(Owner).GetComponent<PlayerController>();
+        PlayerController = transform.parent.parent.GetComponent<PlayerController>();
         IsReady = true;
         int ind = 0;
         foreach (GameObject parent in IconParents)
@@ -51,21 +52,19 @@ public class LevelUp : UdonSharpBehaviour
         ThisContainer.Owner = Owner;
         ThisContainer.LevelUp = GetComponent<LevelUp>();
         ThisContainer.IsReady = true;
-        yAxis = 0;
-        zAxis = 1;
         PowerUpChoices();
     }
 
     public void OnEnable()
     {
+        Size = 1;
+        yAxis = 0;
+        zAxis = 1;
         if (IsReady)
         {
             Debug.Log("In _OnOwnerSet in LevelUp.cs");
-            Owner = Networking.LocalPlayer;
-            PlayerController = Players
-                ._GetPlayerPooledObject(Owner)
-                .GetComponent<PlayerController>();
-            int ind = 0;
+            int ind = 0; 
+
             foreach (GameObject parent in IconParents)
             {
                 Icons[ind] = parent.GetComponent<SpriteRenderer>().sprite;
@@ -78,19 +77,23 @@ public class LevelUp : UdonSharpBehaviour
 
     private void OnDisable()
     {
-        if (PlayerController.KnifePool.Upgrades[ChoiceIndex] == 4)
+        if (IsReady)
         {
-            CleanUpArrays(ChoiceIndex);
+            if (PlayerController.KnifePool.Upgrades[ChoiceIndex] == 4)
+            {
+                CleanUpArrays(ChoiceIndex);
+            }
         }
     }
 
-    private void Update()
-    {
-        if (IsReady && ThisContainer.IsReady)
-        {
-            transform.localPosition = new Vector3(0, yAxis, zAxis);
-        }
-    }
+    // private void Update()
+    // {
+    //     if (IsReady)
+    //     {
+    //         transform.localPosition = new Vector3(0, yAxis, zAxis);
+    //         transform.localScale = new Vector3(Size, Size, Size);
+    //     }
+    // }
 
     public void PowerUpChoices()
     {
@@ -416,5 +419,22 @@ public class LevelUp : UdonSharpBehaviour
             IconParents[i] = TempParentsArray[i];
             Icons[i] = TempIconsArray[i];
         }
+    }
+
+    public void LUUIChangeSize(float scale)
+    {
+        transform.localScale = new Vector3(scale, scale, scale);
+    }
+
+    public void LUUIChangeHeight(float yValue)
+    {
+        Vector3 CurrentPosition = transform.position;
+        transform.localPosition = new Vector3(0, yValue, CurrentPosition.z);
+    }
+
+    public void LUUIChangeDistance(float zValue)
+    {
+        Vector3 CurrentPosition = transform.position;
+        transform.localPosition = new Vector3(0, CurrentPosition.y, zValue);
     }
 }

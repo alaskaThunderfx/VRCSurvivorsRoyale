@@ -8,17 +8,28 @@ public class PlayerUI : UdonSharpBehaviour
 {
     public VRCPlayerApi Owner;
     public Cyan.PlayerObjectPool.CyanPlayerObjectAssigner Players;
-    public Vector3 HandToElbowDist;
     public Button Mute;
     public Button Unmute;
-    public Button PrevSong;
-    public Button NextSong;
+    public int SongIndex;
+    public bool isMuted;
+    public Button Prev;
+    public Button Next;
     public Slider Volume;
     public Slider HealthBar;
     public Text WeaponAndStats;
-    public Transform Songs;
     public AudioSource[] SongsArray = new AudioSource[6];
     public AudioSource CurrentSong;
+    public Button AttackToggleOn;
+    public Button AttackToggleOff;
+    public Button SettingsToggle;
+    public GameObject SettingsUI;
+    public Slider PUISize;
+    public Slider PUIHeight;
+    public Slider PUIDistance;
+    public Transform LevelUpUI;
+    public Slider LUUISize;
+    public Slider LUUIHeight;
+    public Slider LUUIDistance;
     public PlayerController PlayerController;
     public KnifePool KnifePool;
 
@@ -28,47 +39,73 @@ public class PlayerUI : UdonSharpBehaviour
         PlayerUIContainer ThisContainer = transform.parent.GetComponent<PlayerUIContainer>();
         ThisContainer.Owner = Owner;
         ThisContainer.IsReady = true;
-        PlayerController = Players._GetPlayerPooledObject(Owner).GetComponent<PlayerController>();
+        PlayerController = transform.parent.parent.GetComponent<PlayerController>();
         KnifePool = PlayerController.KnifePool;
         KnifePool.PlayerUI = GetComponent<PlayerUI>();
         KnifePool.HP = 10f;
         SetMaxHealth(KnifePool.HP);
         WeaponAndStats = transform.GetChild(0).GetChild(1).GetComponent<Text>();
-        // Vector3 ElbowPos = Owner.GetBonePosition(HumanBodyBones.LeftLowerArm);
-        // Vector3 HandPos = Owner.GetBonePosition(HumanBodyBones.LeftHand);
-        // HandToElbowDist = ElbowPos - HandPos;
-        // transform.parent.GetComponent<PlayerUIContainer>().Scale = HandToElbowDist.y; 
         transform.parent.GetComponent<PlayerUIContainer>().IsReady = true;
-    }
-
-    private void OnEnable()
-    {
-        Songs = GameObject.Find("Music").transform;
-        for (int i = 0; i < SongsArray.Length; i++)
+        PlayerController.SetUIWAS("Knife", KnifePool.Level.ToString());
+        Transform SongsInHierarchy = GameObject.Find("Music").GetComponent<Transform>();
+        for (int i = 0; i < 6; i++)
         {
-            SongsArray[i] = Songs.GetChild(i).GetComponent<AudioSource>();
+            SongsArray[i] = SongsInHierarchy.GetChild(i).GetComponent<AudioSource>();
         }
-        int SongIndex = Random.Range(0, 6);
+        SongIndex = Random.Range(0, 6);
         CurrentSong = SongsArray[SongIndex];
         CurrentSong.Play();
         CurrentSong.volume = Volume.value;
     }
 
-    public void SkipSong()
+    private void OnEnable()
     {
-
+        
     }
 
-    // private void Update()
-    // {
-    //     if (IsReady)
-    //     {
-    //         Vector3 PlayerPosition = Owner.GetTrackingData(VRCPlayerApi.TrackingDataType.Head).position;
+    public void PrevSong()
+    {
+        CurrentSong.Stop();
+        if (SongIndex == 0)
+        {
+            SongIndex = 5;
+            CurrentSong = SongsArray[SongIndex];
+            CurrentSong.Play();
+            CurrentSong.volume = Volume.value;
+        }
+        else
+        {
+            SongIndex--;
+            CurrentSong = SongsArray[SongIndex];
+            CurrentSong.Play();
+            CurrentSong.volume = Volume.value;
+        }
+    }
 
-    //         transform.position = new Vector3(PlayerPosition.x, PlayerPosition.y, PlayerPosition.z);
-    //         transform.rotation = Owner.GetRotation();
-    //     }
-    // }
+    public void NextSong()
+    {
+        CurrentSong.Stop();
+        if (SongIndex == 5)
+        {
+            SongIndex = 0;
+            CurrentSong = SongsArray[SongIndex];
+            if (!isMuted)
+            {
+                CurrentSong.Play();
+            }
+            CurrentSong.volume = Volume.value;
+        }
+        else
+        {
+            SongIndex++;
+            CurrentSong = SongsArray[SongIndex];
+            if (!isMuted)
+            {
+                CurrentSong.Play();
+            }
+            CurrentSong.volume = Volume.value;
+        }
+    }
 
     public void SetMaxHealth(float health)
     {
@@ -81,24 +118,80 @@ public class PlayerUI : UdonSharpBehaviour
         HealthBar.value = KnifePool.HP;
     }
 
-    public void ToggleMute()
+    public void MuteSong()
     {
-        if (Unmute.gameObject.activeSelf)
-        {
-            CurrentSong.Pause();
-            Unmute.transform.parent.gameObject.SetActive(false);
-            Mute.transform.parent.gameObject.SetActive(true);
-        }
-        else
-        {
-            CurrentSong.Play();
-            Unmute.transform.parent.gameObject.SetActive(true);
-            Mute.transform.parent.gameObject.SetActive(false);
-        }
+        CurrentSong.Pause();
+        isMuted = true;
+        Unmute.transform.parent.gameObject.SetActive(true);
+        Mute.transform.parent.gameObject.SetActive(false);
+    }
+
+    public void UnmuteSong()
+    {
+        CurrentSong.Play();
+        isMuted = false;
+        Mute.transform.parent.gameObject.SetActive(true);
+        Unmute.transform.parent.gameObject.SetActive(false);
     }
 
     public void ChangeVolume()
     {
         CurrentSong.volume = Volume.value;
+    }
+
+    public void ToggleAttackOn()
+    {
+        AttackToggleOn.gameObject.SetActive(true);
+        AttackToggleOff.gameObject.SetActive(false);
+        KnifePool.isKnifeOn = !KnifePool.isKnifeOn;
+    }
+
+    public void ToggleAttackOff()
+    {
+        AttackToggleOff.gameObject.SetActive(true);
+        AttackToggleOn.gameObject.SetActive(false);
+        KnifePool.isKnifeOn = !KnifePool.isKnifeOn;
+    }
+
+    public void ToggleSettings()
+    {
+        SettingsUI.SetActive(!SettingsUI.activeSelf);
+    }
+
+    public void PUIChangeSize()
+    {
+        float scale = PUISize.value;
+        Vector3 curPos = transform.localScale;
+        transform.localScale = new Vector3(scale, scale, scale);
+    }
+
+    public void PUIChangeHeight()
+    {
+        float height = PUIHeight.value;
+        Vector3 curPos = transform.localPosition;
+        transform.localPosition = new Vector3(curPos.x, height, curPos.z);
+    }
+
+    public void PUIChangeDistance()
+    {
+        float dist = PUIDistance.value;
+        Vector3 curPos = transform.localPosition;
+        transform.localPosition = new Vector3(curPos.x, curPos.y, dist);
+    }
+
+    public void LUUIChangeSize()
+    {
+        float scale = LUUISize.value;
+        LevelUpUI.localScale = new Vector3(scale, scale, scale);
+    }
+
+    public void LUUIChangeHeight()
+    {
+        LevelUpUI.localPosition = new Vector3(0, LUUIHeight.value, LevelUpUI.localPosition.z);
+    }
+
+    public void LUUIChangeDistance()
+    {
+        LevelUpUI.localPosition = new Vector3(0, LevelUpUI.localPosition.y, LUUIDistance.value);
     }
 }

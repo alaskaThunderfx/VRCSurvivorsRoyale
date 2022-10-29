@@ -25,19 +25,24 @@ public class PlayerUIContainer : UdonSharpBehaviour
                 SetScale = true;
             }
             // Vector3 PlayerPosition = Owner.GetTrackingData(VRCPlayerApi.TrackingDataType.Head).position;
-            Vector3 PlayerHand = Owner.GetTrackingData(VRCPlayerApi.TrackingDataType.LeftHand).position;
-            // Vector3 PlayerHand = Owner.GetBonePosition(HumanBodyBones.LeftHand);
-            Quaternion PlayerHandR = Owner.GetTrackingData(VRCPlayerApi.TrackingDataType.LeftHand).rotation;
-            // Quaternion PlayerHandR = Owner.GetBoneRotation(HumanBodyBones.LeftHand);
+            Vector3 PlayerHead = Owner.GetTrackingData(VRCPlayerApi.TrackingDataType.Head).position;
+            // Vector3 PlayerHead = Owner.GetBonePosition(HumanBodyBones.Head);
+            Quaternion PlayerHeadR = Owner.GetRotation();
+            // Quaternion PlayerHeadR = Owner.GetBoneRotation(HumanBodyBones.Head);
             // Vector3 PlayerElbow = Owner.GetBonePosition(HumanBodyBones.LeftLowerArm);
 
 
-            // Debug.Log("Distance betwen hand and elbow" + (PlayerElbow - PlayerHand));
+            // Debug.Log("Distance betwen Head and elbow" + (PlayerElbow - PlayerHead));
 
             // Owner.GetBonePosition()
 
-            transform.position = PlayerHand;
-            transform.rotation = Quaternion.Lerp(transform.rotation, PlayerHandR, .1f);
+            transform.position = PlayerHead;
+            transform.rotation = Quaternion.Lerp(transform.rotation, PlayerHeadR, .05f);
         }
+    }
+
+    private void LateUpdate() {
+         Vector3 PlayerHead = Owner.GetTrackingData(VRCPlayerApi.TrackingDataType.Head).position;
+         transform.LookAt(PlayerHead);
     }
 }

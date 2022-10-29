@@ -103,6 +103,7 @@ public class KnifePool : UdonSharpBehaviour
     // 8 - Quantity
 
     public bool ReadyToGo = false;
+    public bool SwitchOnUI = false;
 
     // Script ran after the _OnOwnerSet script on the PlayerController
     public void _OnOwnerSet()
@@ -134,6 +135,8 @@ public class KnifePool : UdonSharpBehaviour
         Force = 2f;
         TrackForceLv = 0;
 
+        
+
         int index = 0;
         foreach (Transform child in transform)
         {
@@ -162,13 +165,19 @@ public class KnifePool : UdonSharpBehaviour
         PlayerPosition = Owner.GetPosition();
         PlayerRotation = Owner.GetRotation();
 
+        if (SwitchOnUI)
+        {
+            PlayerController.PlayerUI.AttackToggleOn.gameObject.SetActive(true);
+            SwitchOnUI = false;
+        }
+
         // Used to toggle knife attacking
-        // If isAttacking is false, stop attacking
+        // If isKnifeOn is false, stop attacking
         if (!isKnifeOn)
         {
             return;
         }
-        // if isAttacking is true, begin the attack
+        // if isKnifeOn is true, begin the attack
         else
         {
             // Countdown from the CDCounter
@@ -284,8 +293,9 @@ public class KnifePool : UdonSharpBehaviour
                         NetworkEventTarget.All,
                         nameof(LevelUp)
                     );
-                    XPToNextLv *= 1.5f;
+                    XPToNextLv *= 1.2f;
                     PlayerController.LevelUpUI.gameObject.SetActive(true);
+                    PlayerController.SetUIWAS("Knife", Level.ToString());
                 }
             }
         }

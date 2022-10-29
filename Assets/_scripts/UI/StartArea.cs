@@ -37,6 +37,7 @@ public class StartArea : UdonSharpBehaviour
     {
         Networking.LocalPlayer.TeleportTo(TargetTransform.position, TargetTransform.rotation);
         PlayerPool._GetPlayerPooledObject(Networking.LocalPlayer).GetComponent<PlayerController>().KnifePool.isKnifeOn = true;
+        PlayerPool._GetPlayerPooledObject(Networking.LocalPlayer).GetComponent<PlayerController>().KnifePool.SwitchOnUI = true;
     }
 
     // public override void OnDeserialization()

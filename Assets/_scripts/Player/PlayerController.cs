@@ -42,10 +42,11 @@ public class PlayerController : UdonSharpBehaviour
         KnifePool._OnOwnerSet();
         PlayerHitBox = transform.GetChild(2).GetComponent<PlayerHitBox>();
         PlayerHitBox._OnOwnerSet();
-        PlayerUI = GameObject.Find("PlayerUI").GetComponent<PlayerUI>();
+        Debug.Log("Before getting the PlayerUI component");
+        PlayerUI = transform.GetChild(4).GetChild(0).GetComponent<PlayerUI>();
         PlayerUI._OnOwnerSet();
         Scoreboard = GameObject.Find("Scoreboard").GetComponent<Scoreboard>();
-        LevelUpUI = GameObject.Find("LevelUpUI").GetComponent<LevelUp>();
+        LevelUpUI = transform.GetChild(3).GetChild(0).GetComponent<LevelUp>();
         LevelUpUI._OnOwnerSet();
     }
 
@@ -66,6 +67,13 @@ public class PlayerController : UdonSharpBehaviour
             Debug.Log("I've been hit!");
         }
     }
+
+    public void SetUIWAS(string weapon, string level)
+    {
+        PlayerUI.WeaponAndStats.text = weapon + " Lv: " + level;
+    }
+
+    
 
     public float Experience
     {
