@@ -40,9 +40,4 @@ public class PlayerUIContainer : UdonSharpBehaviour
             transform.rotation = Quaternion.Lerp(transform.rotation, PlayerHeadR, .05f);
         }
     }
-
-    private void LateUpdate() {
-         Vector3 PlayerHead = Owner.GetTrackingData(VRCPlayerApi.TrackingDataType.Head).position;
-         transform.LookAt(PlayerHead);
-    }
 }
