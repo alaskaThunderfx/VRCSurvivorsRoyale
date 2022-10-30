@@ -59,8 +59,8 @@ public class Scoreboard : UdonSharpBehaviour
             {
                 Debug.Log("Looping through Array. i = " + i + "j = " + j);
                 if (
-                    Players[j].GetComponent<PlayerController>().Experience
-                    < Players[j + 1].GetComponent<PlayerController>().Experience
+                    Players[j].GetComponent<PlayerController>().KnifePool.XP
+                    < Players[j + 1].GetComponent<PlayerController>().KnifePool.XP
                 )
                 {
                     Component temp = Players[j];

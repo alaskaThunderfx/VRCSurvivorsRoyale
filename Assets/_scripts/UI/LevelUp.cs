@@ -35,7 +35,6 @@ public class LevelUp : UdonSharpBehaviour
 
     public void _OnOwnerSet()
     {
-        Debug.Log("In _OnOwnerSet in LevelUp.cs");
         // Setting the "Owner" to each local player, so that way we can minimize file space, since these
         // are meant to be local.
         Owner = Networking.LocalPlayer;
@@ -60,10 +59,9 @@ public class LevelUp : UdonSharpBehaviour
         Size = 1;
         yAxis = 0;
         zAxis = 1;
-        if (IsReady)
+        if (IsReady && PlayerController.KnifePool.Level > 1)
         {
-            Debug.Log("In _OnOwnerSet in LevelUp.cs");
-            int ind = 0; 
+            int ind = 0;
 
             foreach (GameObject parent in IconParents)
             {
@@ -86,18 +84,77 @@ public class LevelUp : UdonSharpBehaviour
         }
     }
 
-    // private void Update()
-    // {
-    //     if (IsReady)
-    //     {
-    //         transform.localPosition = new Vector3(0, yAxis, zAxis);
-    //         transform.localScale = new Vector3(Size, Size, Size);
-    //     }
-    // }
+    public int[] GetRandom()
+    {
+        // Get the array for the player that tracks the amount of times each PowerUp has been chosen
+        int[] Upgrades = PlayerController.KnifePool.Upgrades;
+        // Variables representing each option
+        int firstNum;
+        int secondNum;
+        int thirdNum;
+        // Finding the first random number
+        firstNum = UnityEngine.Random.Range(0, 9);
+        Debug.Log("firstNum = " + firstNum);
+        // if the Power Up at the index of the first random number is chosen is maxxed out, continue finding random integers.
+        while (Upgrades[firstNum] == 4)
+        {
+            Debug.Log("The Upgrade at Upgrades[" + firstNum + "] is maxed out.");
+            firstNum = UnityEngine.Random.Range(0, 9);
+            Debug.Log("firstNum = " + firstNum);
+        }
+        // Finding second number
+        secondNum = UnityEngine.Random.Range(0, 9);
+        Debug.Log("secondNum = " + secondNum);
+        // if the second int is the same as the first one, or if the Power Up at the index of the second int is maxxed, continue finding random integers.
+        while (secondNum == firstNum || Upgrades[secondNum] == 4)
+        {
+            Debug.Log(
+                "The Upgrade at Upgrades["
+                    + secondNum
+                    + "] is maxed out or "
+                    + secondNum
+                    + " is the same as "
+                    + firstNum
+                    + "."
+            );
+            secondNum = UnityEngine.Random.Range(0, 9);
+            Debug.Log("secondNum = " + secondNum);
+        }
+        // Finding third number
+        thirdNum = UnityEngine.Random.Range(0, 9);
+        Debug.Log("thirdNum = " + thirdNum);
+        // if the third int is the same as either the first or second int, or if the upgrade at the index of the number is maxxed, keep finding random int.
+        while (thirdNum == secondNum || thirdNum == firstNum || Upgrades[thirdNum] == 4)
+        {
+            Debug.Log(
+                "The Upgrade at Upgrades["
+                    + thirdNum
+                    + "] is maxed, "
+                    + thirdNum
+                    + " is the same as "
+                    + secondNum
+                    + ", or "
+                    + thirdNum
+                    + " is the same as "
+                    + firstNum
+                    + "."
+            );
+            thirdNum = UnityEngine.Random.Range(0, 9);
+        }
+        // Create the array that will carry the choices
+        int[] numbers = new int[3];
+        // Set the choices
+        numbers[0] = firstNum;
+        numbers[1] = secondNum;
+        numbers[2] = thirdNum;
+        Debug.Log(numbers);
+        // Return the array of choices
+        return numbers;
+    }
 
     public void PowerUpChoices()
     {
-        int[] indexes = new int[3];
+        int[] indexes = GetRandom();
         if (PlayerController.KnifePool.Level == 1)
         {
             LevelText.text =
@@ -108,38 +165,25 @@ public class LevelUp : UdonSharpBehaviour
             LevelText.text = "Level Up!!" + "\nLevel: " + PlayerController.KnifePool.Level;
         }
 
-        for (int i = 0; i < 3; i++)
-        {
-            Debug.Log("Current value of i: " + i);
-            int randInd = UnityEngine.Random.Range(0, Icons.Length);
-            if (i == 0 && Icons[i] != null)
-            {
-                Debug.Log("i == 0, first condition met");
-                Debug.Log("Icons[" + i + "].name: " + Icons[i].name);
-                indexes[i] = randInd;
-            }
-            else
-            {
-                Debug.Log("Beginning a loop that isn't the first");
-                Debug.Log("i == " + i);
-                Debug.Log("indexes[i - 1]: " + indexes[i - 1]);
-                Debug.Log("randInd: " + randInd);
-                if (indexes[i - 1] != randInd)
-                {
-                    Debug.Log("indexes[i - 1]: " + indexes[i - 1]);
-                    Debug.Log("randInd: " + randInd);
-                    indexes[i] = randInd;
-                    Debug.Log("indexes[i]: " + indexes[i]);
-                }
-                else
-                {
-                    Debug.Log("The values were the same");
-                    Debug.Log("i before: " + i);
-                    i--;
-                    Debug.Log("i after: " + i);
-                }
-            }
-        }
+        // for (int i = 0; i < 3; i++)
+        // {
+        //     int randInd = UnityEngine.Random.Range(0, Icons.Length);
+        //     if (i == 0 && Icons[i] != null)
+        //     {
+        //         indexes[i] = randInd;
+        //     }
+        //     else
+        //     {
+        //         if (indexes[i - 1] != randInd)
+        //         {
+        //             indexes[i] = randInd;
+        //         }
+        //         else
+        //         {
+        //             i--;
+        //         }
+        //     }
+        // }
 
         int ind = 0;
 
@@ -243,14 +287,11 @@ public class LevelUp : UdonSharpBehaviour
     // 8 - Quantity
     public void PickedOne(string Stat)
     {
-        Debug.Log(Stat);
         switch (Stat)
         {
             case "HP":
-                Debug.Log(PlayerController.KnifePool.HP);
-                PlayerController.KnifePool.HP += 10;
+                PlayerController.KnifePool.MaxHP += 10;
                 PlayerController.KnifePool.Upgrades[0]++;
-                Debug.Log(PlayerController.KnifePool.HP);
                 for (int i = 0; i < Icons.Length; i++)
                 {
                     if (Icons[i].name == "HP")
@@ -262,10 +303,8 @@ public class LevelUp : UdonSharpBehaviour
                 gameObject.SetActive(false);
                 break;
             case "DEF":
-                Debug.Log(PlayerController.KnifePool.DEF);
                 PlayerController.KnifePool.DEF += .3f;
                 PlayerController.KnifePool.Upgrades[1]++;
-                Debug.Log(PlayerController.KnifePool.DEF);
                 for (int i = 0; i < Icons.Length; i++)
                 {
                     if (Icons[i].name == "DEF")
@@ -277,10 +316,8 @@ public class LevelUp : UdonSharpBehaviour
                 gameObject.SetActive(false);
                 break;
             case "RunSpeed":
-                Debug.Log(PlayerController.KnifePool.RunSpeed);
                 PlayerController.KnifePool.RunSpeed += .3f;
                 PlayerController.KnifePool.Upgrades[2]++;
-                Debug.Log(PlayerController.KnifePool.RunSpeed);
                 for (int i = 0; i < Icons.Length; i++)
                 {
                     if (Icons[i].name == "RunSpeed")
@@ -292,10 +329,8 @@ public class LevelUp : UdonSharpBehaviour
                 gameObject.SetActive(false);
                 break;
             case "Damage":
-                Debug.Log(PlayerController.KnifePool.Damage);
                 PlayerController.KnifePool.Damage += 1;
                 PlayerController.KnifePool.Upgrades[3]++;
-                Debug.Log(PlayerController.KnifePool.Damage);
                 for (int i = 0; i < Icons.Length; i++)
                 {
                     if (Icons[i].name == "Damage")
@@ -307,10 +342,8 @@ public class LevelUp : UdonSharpBehaviour
                 gameObject.SetActive(false);
                 break;
             case "Cooldown":
-                Debug.Log(PlayerController.KnifePool.Cooldown);
                 PlayerController.KnifePool.Cooldown -= .33f;
                 PlayerController.KnifePool.Upgrades[4]++;
-                Debug.Log(PlayerController.KnifePool.Cooldown);
                 for (int i = 0; i < Icons.Length; i++)
                 {
                     if (Icons[i].name == "Cooldown")
@@ -322,10 +355,8 @@ public class LevelUp : UdonSharpBehaviour
                 gameObject.SetActive(false);
                 break;
             case "Force":
-                Debug.Log(PlayerController.KnifePool.Force);
                 PlayerController.KnifePool.Force += 1;
                 PlayerController.KnifePool.Upgrades[5]++;
-                Debug.Log(PlayerController.KnifePool.Force);
                 for (int i = 0; i < Icons.Length; i++)
                 {
                     if (Icons[i].name == "Force")
@@ -337,10 +368,8 @@ public class LevelUp : UdonSharpBehaviour
                 gameObject.SetActive(false);
                 break;
             case "Range":
-                Debug.Log(PlayerController.KnifePool.Range);
                 PlayerController.KnifePool.Range += 225;
                 PlayerController.KnifePool.Upgrades[6]++;
-                Debug.Log(PlayerController.KnifePool.Range);
                 for (int i = 0; i < Icons.Length; i++)
                 {
                     if (Icons[i].name == "Range")
@@ -352,10 +381,8 @@ public class LevelUp : UdonSharpBehaviour
                 gameObject.SetActive(false);
                 break;
             case "Size":
-                Debug.Log(PlayerController.KnifePool.Size);
                 PlayerController.KnifePool.Size += 1;
                 PlayerController.KnifePool.Upgrades[7]++;
-                Debug.Log(PlayerController.KnifePool.Size);
                 for (int i = 0; i < Icons.Length; i++)
                 {
                     if (Icons[i].name == "Size")
@@ -367,10 +394,8 @@ public class LevelUp : UdonSharpBehaviour
                 gameObject.SetActive(false);
                 break;
             case "Quantity":
-                Debug.Log(PlayerController.KnifePool.Quantity);
                 PlayerController.KnifePool.Quantity += 1;
                 PlayerController.KnifePool.Upgrades[8]++;
-                Debug.Log(PlayerController.KnifePool.Quantity);
                 for (int i = 0; i < Icons.Length; i++)
                 {
                     if (Icons[i].name == "Quantity")

@@ -135,8 +135,6 @@ public class KnifePool : UdonSharpBehaviour
         Force = 2f;
         TrackForceLv = 0;
 
-        
-
         int index = 0;
         foreach (Transform child in transform)
         {
@@ -187,53 +185,35 @@ public class KnifePool : UdonSharpBehaviour
             {
                 // Reset CDCounter to Cooldown value
                 CDCounter = Cooldown;
-                if (Quantity == 1)
+                // Begin for loop that corresponds with Quantity value
+                // Trying a switch statement instead
+                switch (Quantity)
                 {
-                    ThrowKnife();
-                }
-                else
-                {
-                    // Begin for loop that corresponds with Quantity value
-                    // Trying a switch statement instead
-                    switch (Quantity)
-                    {
-                        case 1:
-                            ThrowKnife();
-                            break;
-                        case 2:
-                            ThrowKnife();
-                            SendCustomEventDelayedSeconds(nameof(ThrowKnife), 0.1f);
-                            break;
-                        case 3:
-                            ThrowKnife();
-                            SendCustomEventDelayedSeconds(nameof(ThrowKnife), 0.1f);
-                            SendCustomEventDelayedSeconds(nameof(ThrowKnife), 0.2f);
-                            break;
-                        case 4:
-                            ThrowKnife();
-                            SendCustomEventDelayedSeconds(nameof(ThrowKnife), 0.1f);
-                            SendCustomEventDelayedSeconds(nameof(ThrowKnife), 0.2f);
-                            SendCustomEventDelayedSeconds(nameof(ThrowKnife), 0.3f);
-                            break;
-                        case 5:
-                            ThrowKnife();
-                            SendCustomEventDelayedSeconds(nameof(ThrowKnife), 0.1f);
-                            SendCustomEventDelayedSeconds(nameof(ThrowKnife), 0.2f);
-                            SendCustomEventDelayedSeconds(nameof(ThrowKnife), 0.3f);
-                            SendCustomEventDelayedSeconds(nameof(ThrowKnife), 0.4f);
-                            break;
-                    }
-                    for (int i = 1; i <= Quantity; i++)
-                    {
-                        if (i == 1)
-                        {
-                            ThrowKnife();
-                        }
-                        else
-                        {
-                            SendCustomEventDelayedSeconds(nameof(ThrowKnife), 0.1f);
-                        }
-                    }
+                    case 1:
+                        ThrowKnife();
+                        break;
+                    case 2:
+                        ThrowKnife();
+                        SendCustomEventDelayedSeconds(nameof(ThrowKnife), 0.1f);
+                        break;
+                    case 3:
+                        ThrowKnife();
+                        SendCustomEventDelayedSeconds(nameof(ThrowKnife), 0.1f);
+                        SendCustomEventDelayedSeconds(nameof(ThrowKnife), 0.2f);
+                        break;
+                    case 4:
+                        ThrowKnife();
+                        SendCustomEventDelayedSeconds(nameof(ThrowKnife), 0.1f);
+                        SendCustomEventDelayedSeconds(nameof(ThrowKnife), 0.2f);
+                        SendCustomEventDelayedSeconds(nameof(ThrowKnife), 0.3f);
+                        break;
+                    case 5:
+                        ThrowKnife();
+                        SendCustomEventDelayedSeconds(nameof(ThrowKnife), 0.1f);
+                        SendCustomEventDelayedSeconds(nameof(ThrowKnife), 0.2f);
+                        SendCustomEventDelayedSeconds(nameof(ThrowKnife), 0.3f);
+                        SendCustomEventDelayedSeconds(nameof(ThrowKnife), 0.4f);
+                        break;
                 }
             }
         }
@@ -254,6 +234,29 @@ public class KnifePool : UdonSharpBehaviour
         {
             // Reset value to zaro
             KnifeIndex = 0;
+        }
+    }
+
+    public float maxHP;
+    public float MaxHP
+    {
+        set
+        {
+            maxHP = HP + value;
+            Debug.Log("In MaxHP, value of MaxHP is " + maxHP);
+            PlayerController.PlayerUI.SetMaxHealth(maxHP);
+            if (HP + (maxHP - HP) > maxHP)
+            {
+                PlayerController.PlayerUI.SetHealth(maxHP);
+            }
+            else
+            {
+                HP += 10;
+            }
+        }
+        get
+        {
+            return maxHP;
         }
     }
 
@@ -286,7 +289,7 @@ public class KnifePool : UdonSharpBehaviour
                     return;
                 Scoreboard = PlayerController.Scoreboard.GetComponent<Scoreboard>();
                 Scoreboard.SendCustomNetworkEvent(NetworkEventTarget.All, "UpdateBoard");
-                if (xP >= XPToNextLv)
+                if (xP >= XPToNextLv && Level <= 20)
                 {
                     Level++;
                     EffectsContainer.SendCustomNetworkEvent(
@@ -296,6 +299,7 @@ public class KnifePool : UdonSharpBehaviour
                     XPToNextLv *= 1.2f;
                     PlayerController.LevelUpUI.gameObject.SetActive(true);
                     PlayerController.SetUIWAS("Knife", Level.ToString());
+                    xP = 0;
                 }
             }
         }

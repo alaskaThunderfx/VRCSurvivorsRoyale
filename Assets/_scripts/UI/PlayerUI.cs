@@ -109,13 +109,12 @@ public class PlayerUI : UdonSharpBehaviour
 
     public void SetMaxHealth(float health)
     {
-        HealthBar.maxValue = KnifePool.HP;
-        HealthBar.value = KnifePool.HP;
+        HealthBar.maxValue = health;
     }
 
     public void SetHealth(float health)
     {
-        HealthBar.value = KnifePool.HP;
+        HealthBar.value = health;
     }
 
     public void MuteSong()
