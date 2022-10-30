@@ -108,8 +108,8 @@ public class KnifePool : UdonSharpBehaviour
     // Script ran after the _OnOwnerSet script on the PlayerController
     public void _OnOwnerSet()
     {
-        Owner = Networking.GetOwner(gameObject);
         PlayerController = transform.parent.GetComponent<PlayerController>();
+        Owner = PlayerController.Owner;
         EffectsContainer = PlayerController.EffectsContainer;
 
         // Reset stats to base
@@ -254,10 +254,7 @@ public class KnifePool : UdonSharpBehaviour
                 HP += 10;
             }
         }
-        get
-        {
-            return maxHP;
-        }
+        get { return maxHP; }
     }
 
     public float HP
@@ -297,8 +294,11 @@ public class KnifePool : UdonSharpBehaviour
                         nameof(LevelUp)
                     );
                     XPToNextLv *= 1.2f;
-                    PlayerController.LevelUpUI.gameObject.SetActive(true);
-                    PlayerController.SetUIWAS("Knife", Level.ToString());
+                    if (Networking.LocalPlayer == Owner)
+                    {
+                        PlayerController.LevelUpUI.gameObject.SetActive(true);
+                        PlayerController.SetUIWAS("Knife", Level.ToString());
+                    }
                     xP = 0;
                 }
             }

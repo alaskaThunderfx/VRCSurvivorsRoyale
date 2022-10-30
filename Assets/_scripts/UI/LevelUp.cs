@@ -37,8 +37,8 @@ public class LevelUp : UdonSharpBehaviour
     {
         // Setting the "Owner" to each local player, so that way we can minimize file space, since these
         // are meant to be local.
-        Owner = Networking.LocalPlayer;
         PlayerController = transform.parent.parent.GetComponent<PlayerController>();
+        Owner = PlayerController.Owner;
         IsReady = true;
         int ind = 0;
         foreach (GameObject parent in IconParents)
@@ -56,20 +56,23 @@ public class LevelUp : UdonSharpBehaviour
 
     public void OnEnable()
     {
-        Size = 1;
-        yAxis = 0;
-        zAxis = 1;
-        if (IsReady && PlayerController.KnifePool.Level > 1)
+        if (IsReady && Networking.LocalPlayer == Owner)
         {
-            int ind = 0;
-
-            foreach (GameObject parent in IconParents)
+            Size = 1;
+            yAxis = 0;
+            zAxis = 1;
+            if (IsReady)
             {
-                Icons[ind] = parent.GetComponent<SpriteRenderer>().sprite;
-                parent.SetActive(false);
-                ind++;
+                int ind = 0;
+
+                foreach (GameObject parent in IconParents)
+                {
+                    Icons[ind] = parent.GetComponent<SpriteRenderer>().sprite;
+                    parent.SetActive(false);
+                    ind++;
+                }
+                PowerUpChoices();
             }
-            PowerUpChoices();
         }
     }
 

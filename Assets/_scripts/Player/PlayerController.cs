@@ -19,9 +19,6 @@ public class PlayerController : UdonSharpBehaviour
 
     [Header("Stats")]
     public int level;
-
-    [UdonSynced, FieldChangeCallback(nameof(Experience))]
-    public float experience;
     public float xpToNextLevel;
     public float hp;
 
@@ -71,20 +68,5 @@ public class PlayerController : UdonSharpBehaviour
     public void SetUIWAS(string weapon, string level)
     {
         PlayerUI.WeaponAndStats.text = weapon + " Lv: " + level;
-    }
-
-    
-
-    public float Experience
-    {
-        set
-        {
-            experience = value;
-            if (Networking.LocalPlayer == Owner)
-            {
-                Scoreboard.SendCustomNetworkEvent(NetworkEventTarget.All, "UpdateBoard");
-            }
-        }
-        get { return experience; }
     }
 }

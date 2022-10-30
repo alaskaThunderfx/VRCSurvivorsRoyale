@@ -35,11 +35,11 @@ public class PlayerUI : UdonSharpBehaviour
 
     public void _OnOwnerSet()
     {
-        Owner = Networking.LocalPlayer;
         PlayerUIContainer ThisContainer = transform.parent.GetComponent<PlayerUIContainer>();
+        PlayerController = transform.parent.parent.GetComponent<PlayerController>();
+        Owner = PlayerController.Owner;
         ThisContainer.Owner = Owner;
         ThisContainer.IsReady = true;
-        PlayerController = transform.parent.parent.GetComponent<PlayerController>();
         KnifePool = PlayerController.KnifePool;
         KnifePool.PlayerUI = GetComponent<PlayerUI>();
         KnifePool.HP = 10f;
