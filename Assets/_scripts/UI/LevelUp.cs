@@ -35,23 +35,24 @@ public class LevelUp : UdonSharpBehaviour
 
     public void _OnOwnerSet()
     {
-        // Setting the "Owner" to each local player, so that way we can minimize file space, since these
-        // are meant to be local.
-        PlayerController = transform.parent.parent.GetComponent<PlayerController>();
-        Owner = PlayerController.Owner;
-        IsReady = true;
-        int ind = 0;
-        foreach (GameObject parent in IconParents)
+        if (Networking.LocalPlayer == Owner)
         {
-            Icons[ind] = parent.GetComponent<SpriteRenderer>().sprite;
-            parent.SetActive(false);
-            ind++;
+            // Setting the "Owner" to each local player, so that way we can minimize file space, since these
+            // are meant to be local.
+            IsReady = true;
+            int ind = 0;
+            foreach (GameObject parent in IconParents)
+            {
+                Icons[ind] = parent.GetComponent<SpriteRenderer>().sprite;
+                parent.SetActive(false);
+                ind++;
+            }
+            ThisContainer = transform.parent.GetComponent<LevelUpUIContainer>();
+            ThisContainer.Owner = Owner;
+            ThisContainer.LevelUp = GetComponent<LevelUp>();
+            ThisContainer.IsReady = true;
+            PowerUpChoices();
         }
-        ThisContainer = transform.parent.GetComponent<LevelUpUIContainer>();
-        ThisContainer.Owner = Owner;
-        ThisContainer.LevelUp = GetComponent<LevelUp>();
-        ThisContainer.IsReady = true;
-        PowerUpChoices();
     }
 
     public void OnEnable()

@@ -39,12 +39,19 @@ public class PlayerController : UdonSharpBehaviour
         KnifePool._OnOwnerSet();
         PlayerHitBox = transform.GetChild(2).GetComponent<PlayerHitBox>();
         PlayerHitBox._OnOwnerSet();
-        Debug.Log("Before getting the PlayerUI component");
-        PlayerUI = transform.GetChild(4).GetChild(0).GetComponent<PlayerUI>();
-        PlayerUI._OnOwnerSet();
         Scoreboard = GameObject.Find("Scoreboard").GetComponent<Scoreboard>();
-        LevelUpUI = transform.GetChild(3).GetChild(0).GetComponent<LevelUp>();
-        LevelUpUI._OnOwnerSet();
+        if (Networking.LocalPlayer == Owner)
+        {
+            PlayerUI = GameObject.Find("PlayerUI").GetComponent<PlayerUI>();
+            PlayerUI.Owner = Owner;
+            PlayerUI.PlayerController = GetComponent<PlayerController>();
+            PlayerUI._OnOwnerSet();
+
+            LevelUpUI = GameObject.Find("LevelUpUI").GetComponent<LevelUp>();
+            LevelUpUI.Owner = Owner;
+            LevelUpUI.PlayerController = GetComponent<PlayerController>();
+            LevelUpUI._OnOwnerSet();
+        }
     }
 
     private void Update() { }

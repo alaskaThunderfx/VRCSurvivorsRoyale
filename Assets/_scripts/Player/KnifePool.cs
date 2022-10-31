@@ -110,6 +110,7 @@ public class KnifePool : UdonSharpBehaviour
     {
         PlayerController = transform.parent.GetComponent<PlayerController>();
         Owner = PlayerController.Owner;
+        PlayerUI = GameObject.Find("PlayerUI").GetComponent<PlayerUI>();
         EffectsContainer = PlayerController.EffectsContainer;
 
         // Reset stats to base
@@ -294,11 +295,8 @@ public class KnifePool : UdonSharpBehaviour
                         nameof(LevelUp)
                     );
                     XPToNextLv *= 1.2f;
-                    if (Networking.LocalPlayer == Owner)
-                    {
-                        PlayerController.LevelUpUI.gameObject.SetActive(true);
-                        PlayerController.SetUIWAS("Knife", Level.ToString());
-                    }
+                    PlayerController.LevelUpUI.gameObject.SetActive(true);
+                    PlayerController.SetUIWAS("Knife", Level.ToString());
                     xP = 0;
                 }
             }

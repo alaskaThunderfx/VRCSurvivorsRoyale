@@ -35,33 +35,31 @@ public class PlayerUI : UdonSharpBehaviour
 
     public void _OnOwnerSet()
     {
-        PlayerUIContainer ThisContainer = transform.parent.GetComponent<PlayerUIContainer>();
-        PlayerController = transform.parent.parent.GetComponent<PlayerController>();
-        Owner = PlayerController.Owner;
-        ThisContainer.Owner = Owner;
-        ThisContainer.IsReady = true;
-        KnifePool = PlayerController.KnifePool;
-        KnifePool.PlayerUI = GetComponent<PlayerUI>();
-        KnifePool.HP = 10f;
-        SetMaxHealth(KnifePool.HP);
-        WeaponAndStats = transform.GetChild(0).GetChild(1).GetComponent<Text>();
-        transform.parent.GetComponent<PlayerUIContainer>().IsReady = true;
-        PlayerController.SetUIWAS("Knife", KnifePool.Level.ToString());
-        Transform SongsInHierarchy = GameObject.Find("Music").GetComponent<Transform>();
-        for (int i = 0; i < 6; i++)
+        if (Networking.LocalPlayer == Owner)
         {
-            SongsArray[i] = SongsInHierarchy.GetChild(i).GetComponent<AudioSource>();
+            PlayerUIContainer ThisContainer = transform.parent.GetComponent<PlayerUIContainer>();
+            ThisContainer.Owner = Owner;
+            ThisContainer.IsReady = true;
+            KnifePool = PlayerController.KnifePool;
+            // KnifePool.PlayerUI = GetComponent<PlayerUI>();
+            KnifePool.HP = 10f;
+            SetMaxHealth(KnifePool.HP);
+            WeaponAndStats = transform.GetChild(0).GetChild(1).GetComponent<Text>();
+            transform.parent.GetComponent<PlayerUIContainer>().IsReady = true;
+            PlayerController.SetUIWAS("Knife", KnifePool.Level.ToString());
+            Transform SongsInHierarchy = GameObject.Find("Music").GetComponent<Transform>();
+            for (int i = 0; i < 6; i++)
+            {
+                SongsArray[i] = SongsInHierarchy.GetChild(i).GetComponent<AudioSource>();
+            }
+            SongIndex = Random.Range(0, 6);
+            CurrentSong = SongsArray[SongIndex];
+            CurrentSong.Play();
+            CurrentSong.volume = Volume.value;
         }
-        SongIndex = Random.Range(0, 6);
-        CurrentSong = SongsArray[SongIndex];
-        CurrentSong.Play();
-        CurrentSong.volume = Volume.value;
     }
 
-    private void OnEnable()
-    {
-        
-    }
+    private void OnEnable() { }
 
     public void PrevSong()
     {
