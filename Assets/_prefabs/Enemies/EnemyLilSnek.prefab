@@ -185,7 +185,7 @@ GameObject:
   - component: {fileID: 8619572547992100105}
   - component: {fileID: 202568911432331330}
   m_Layer: 0
-  m_Name: Hit
+  m_Name: LilSnekHit
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

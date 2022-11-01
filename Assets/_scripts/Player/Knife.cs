@@ -137,6 +137,7 @@ public class Knife : UdonSharpBehaviour
         EffectPosition = transform.position;
         if (other.name.Contains("IAE"))
         {
+            Debug.Log("Hit an inanimate object");
             HitIAO = true;
             gameObject.SetActive(false);
         }
@@ -161,6 +162,13 @@ public class Knife : UdonSharpBehaviour
             particle.localScale = OgParticle;
         }
 
+        if (HitIAO)
+        {
+            AudioSource.PlayClipAtPoint(HitIAOSound, transform.position, 0.1f);
+            Spark.transform.position = transform.position;
+            Spark.Play(true);
+        }
+
         ReadyToGo = true;
         if (HitEnemy && Networking.LocalPlayer == Owner)
         {
@@ -168,8 +176,13 @@ public class Knife : UdonSharpBehaviour
             {
                 LilSnek LilSnek = Enemy.GetComponent<LilSnek>();
                 LilSnek.Health -= KnifePool.Damage;
-                HitEnemy = false;
             }
+            else if (Enemy.name.Contains("LilWolf"))
+            {
+                LilWolf LilWolf = Enemy.GetComponent<LilWolf>();
+                LilWolf.Health -= KnifePool.Damage;
+            }
+            HitEnemy = false;
         }
     }
 

@@ -10,6 +10,7 @@ public class StartArea : UdonSharpBehaviour
 {
     public Text PlayersReady;
     public LilSnekSpawner LilSnekPool;
+    public LilWolfSpawner LilWolfPool;
     public Cyan.PlayerObjectPool.CyanPlayerObjectAssigner PlayerPool;
     [UdonSynced]
     public int NumberOfPlayersReady;
@@ -31,6 +32,7 @@ public class StartArea : UdonSharpBehaviour
         Debug.Log("Pressed StartGame~!");
         SendCustomNetworkEvent(NetworkEventTarget.All, nameof(TeleportPlayers));
         LilSnekPool.SendCustomNetworkEvent(NetworkEventTarget.Owner, "SpawnSneks");
+        LilWolfPool.SendCustomNetworkEvent(NetworkEventTarget.Owner, "SpawnWolfs");
     }
 
     public void TeleportPlayers()

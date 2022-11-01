@@ -25,13 +25,44 @@ public class PlayerHitBox : UdonSharpBehaviour
         }
     }
 
-    private void OnTriggerEnter(Collider other) {
-        Transform AttackedBy = other.transform.parent.parent;
-        if (AttackedBy.name.Contains("LilSnek"))
+    // When the enemy attack trigger enter the PlayerHitBox
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.name.Contains("Hit"))
         {
-            LilSnek ThisSnake = AttackedBy.GetComponent<LilSnek>();
-            PlayerController.KnifePool.HP -= (ThisSnake.DMG - PlayerController.KnifePool.DEF);
-            Debug.Log(Owner + " got bit by " + ThisSnake.name + "!\nHP Remaining: " + PlayerController.KnifePool.HP);
+            Transform Attacker = other.transform.parent.parent;
+            if (Attacker.name.Contains("LilSnek"))
+            {
+                // Get the script from the scpeific LilSnek
+                LilSnek ThisSnake = Attacker.GetComponent<LilSnek>();
+                // Reduce the HP of the player based on the damage of the LilSnek and the amount of Defense the player has
+                PlayerController.KnifePool.HP -= (ThisSnake.DMG - PlayerController.KnifePool.DEF);
+                // For debugging purposes
+                Debug.Log(
+                    Owner
+                        + " got bit by "
+                        + ThisSnake.name
+                        + "!\nHP Remaining: "
+                        + PlayerController.KnifePool.HP
+                );
+            }
+            else if (Attacker.name.Contains("LilWolf"))
+            {
+                Debug.Log(other.transform.parent.parent.name);
+                // Get teh root Transform of the specific LilWolf
+                LilWolf ThisWolf = Attacker.GetComponent<LilWolf>();
+                Debug.Log(ThisWolf.name);
+                // Reduce the HP of the player based on the damage of the LilWolf and the amount of Defense the player has
+                PlayerController.KnifePool.HP -= (ThisWolf.DMG - PlayerController.KnifePool.DEF);
+                // For debugging purposes
+                Debug.Log(
+                    Owner
+                        + " got bit by "
+                        + ThisWolf.name
+                        + "!\nHP Remaining: "
+                        + PlayerController.KnifePool.HP
+                );
+            }
         }
     }
 }
