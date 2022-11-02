@@ -182,6 +182,11 @@ public class Knife : UdonSharpBehaviour
                 LilWolf LilWolf = Enemy.GetComponent<LilWolf>();
                 LilWolf.Health -= KnifePool.Damage;
             }
+            else if (Enemy.name.Contains("LilGhost"))
+            {
+                LilGhost LilGhost = Enemy.GetComponent<LilGhost>();
+                LilGhost.Health -= KnifePool.Damage;
+            }
             HitEnemy = false;
         }
     }

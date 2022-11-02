@@ -11,6 +11,7 @@ public class StartArea : UdonSharpBehaviour
     public Text PlayersReady;
     public LilSnekSpawner LilSnekPool;
     public LilWolfSpawner LilWolfPool;
+    public LilGhostSpawner LilGhostPool;
     public Cyan.PlayerObjectPool.CyanPlayerObjectAssigner PlayerPool;
     [UdonSynced]
     public int NumberOfPlayersReady;
@@ -33,6 +34,7 @@ public class StartArea : UdonSharpBehaviour
         SendCustomNetworkEvent(NetworkEventTarget.All, nameof(TeleportPlayers));
         LilSnekPool.SendCustomNetworkEvent(NetworkEventTarget.Owner, "SpawnSneks");
         LilWolfPool.SendCustomNetworkEvent(NetworkEventTarget.Owner, "SpawnWolfs");
+        LilGhostPool.SendCustomNetworkEvent(NetworkEventTarget.Owner, "SpawnGhosts");
     }
 
     public void TeleportPlayers()

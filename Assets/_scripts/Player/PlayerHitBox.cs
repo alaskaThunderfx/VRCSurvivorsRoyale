@@ -63,6 +63,23 @@ public class PlayerHitBox : UdonSharpBehaviour
                         + PlayerController.KnifePool.HP
                 );
             }
+            else if (Attacker.name.Contains("LilGhost"))
+            {
+                Debug.Log(other.transform.parent.parent.name);
+                // Get teh root Transform of the specific LilWolf
+                LilGhost ThisGhost = Attacker.GetComponent<LilGhost>();
+                Debug.Log(ThisGhost.name);
+                // Reduce the HP of the player based on the damage of the LilGhost and the amount of Defense the player has
+                PlayerController.KnifePool.HP -= (ThisGhost.DMG - PlayerController.KnifePool.DEF);
+                // For debugging purposes
+                Debug.Log(
+                    Owner
+                        + " got bit by "
+                        + ThisGhost.name
+                        + "!\nHP Remaining: "
+                        + PlayerController.KnifePool.HP
+                );
+            }
         }
     }
 }
