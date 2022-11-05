@@ -33,17 +33,21 @@ public class Scoreboard : UdonSharpBehaviour
         {
             Debug.Log("In the forach loop for Players");
             VRCPlayerApi p = Networking.GetOwner(player.gameObject);
-            float xp = player
-                .GetComponent<PlayerController>()
-                .transform.GetChild(1)
-                .GetComponent<KnifePool>()
-                .XP;
-            Debug.Log("About to AddScoreboardItem()");
-            Debug.Log(rank);
-            Debug.Log(p.displayName);
-            Debug.Log(xp);
-            AddScoreboardItem(rank, p, xp);
-            rank++;
+            PlayerController PlayerController = player.GetComponent<PlayerController>();
+            if (PlayerController.Weapon == "Knife")
+            {
+                float xp = player
+                    .GetComponent<PlayerController>()
+                    .transform.GetChild(1)
+                    .GetComponent<KnifePool>()
+                    .XP;
+                Debug.Log("About to AddScoreboardItem()");
+                Debug.Log(rank);
+                Debug.Log(p.displayName);
+                Debug.Log(xp);
+                AddScoreboardItem(rank, p, xp);
+                rank++;
+            }
         }
     }
 

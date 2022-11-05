@@ -12,7 +12,10 @@ public class PlayerController : UdonSharpBehaviour
     public VRCPlayerApi Owner;
     public EffectsContainer EffectsContainer;
     public Scoreboard Scoreboard;
+    [UdonSynced, FieldChangeCallback(nameof(Weapon))]
+    public string weapon;
     public KnifePool KnifePool;
+    public FireballPool FireballPool;
     public PlayerHitBox PlayerHitBox;
     public PlayerUI PlayerUI;
     public LevelUp LevelUpUI;
@@ -32,12 +35,13 @@ public class PlayerController : UdonSharpBehaviour
         {
             Networking.SetOwner(Owner, child.gameObject);
         }
-        EffectsContainer = transform.GetChild(0).GetComponent<EffectsContainer>();
+        EffectsContainer = transform.GetChild(1).GetComponent<EffectsContainer>();
         EffectsContainer._OnOwnerSet();
-        Debug.Log("Setting owner of KnifePool");
-        KnifePool = transform.GetChild(1).GetComponent<KnifePool>();
+        KnifePool = transform.GetChild(2).GetComponent<KnifePool>();
         KnifePool._OnOwnerSet();
-        PlayerHitBox = transform.GetChild(2).GetComponent<PlayerHitBox>();
+        FireballPool = transform.GetChild(3).GetComponent<FireballPool>();
+        FireballPool._OnOwnerSet();
+        PlayerHitBox = transform.GetChild(0).GetComponent<PlayerHitBox>();
         PlayerHitBox._OnOwnerSet();
         Scoreboard = GameObject.Find("Scoreboard").GetComponent<Scoreboard>();
         if (Networking.LocalPlayer == Owner)
@@ -75,5 +79,26 @@ public class PlayerController : UdonSharpBehaviour
     public void SetUIWAS(string weapon, string level)
     {
         PlayerUI.WeaponAndStats.text = weapon + " Lv: " + level;
+    }
+
+    public string Weapon
+    {
+        set
+        {
+            weapon = value;
+            switch (weapon)
+            {
+                case "Knife":
+                    SetUIWAS("Knife", "1");
+                    break;
+                case "Fireball":
+                    SetUIWAS("Fireball", "1");
+                    break;
+            }
+        }
+        get
+        {
+            return weapon;
+        }
     }
 }

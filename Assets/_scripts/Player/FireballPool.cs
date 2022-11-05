@@ -26,7 +26,7 @@ public class FireballPool : UdonSharpBehaviour
 
     [Header("Fireball Stats")]
     // Fireball array
-    public GameObject[] Knives = new GameObject[30];
+    public GameObject[] Fireballs = new GameObject[30];
 
     // Used to toggle the Fireball weapon
     [UdonSynced]
@@ -144,11 +144,14 @@ public class FireballPool : UdonSharpBehaviour
         int index = 0;
         foreach (Transform child in transform)
         {
+            Debug.Log(child.gameObject.name);
             Networking.SetOwner(Owner, child.gameObject);
+            // Networking.SetOwner(Owner, child.gameObject);
             Fireball Fireball = child.GetComponent<Fireball>();
             Fireball.name = index.ToString() + "Fireball";
-            Knives[index] = Fireball.gameObject;
+            Fireballs[index] = Fireball.gameObject;
             Fireball._OnOwnerSet();
+            
             index++;
         }
 
@@ -228,7 +231,7 @@ public class FireballPool : UdonSharpBehaviour
     public void ThrowFireball()
     {
         // Set Fireball at this index in the object pool to active
-        Knives[FireballIndex].SetActive(true);
+        Fireballs[FireballIndex].SetActive(true);
         // If the value of Fireball index is less than or equal to 28
         if (FireballIndex <= 28)
         {
@@ -290,8 +293,8 @@ public class FireballPool : UdonSharpBehaviour
             {
                 if (!ReadyToGo)
                     return;
-                Scoreboard = PlayerController.Scoreboard.GetComponent<Scoreboard>();
-                Scoreboard.SendCustomNetworkEvent(NetworkEventTarget.All, "UpdateBoard");
+                // Scoreboard = PlayerController.Scoreboard.GetComponent<Scoreboard>();
+                // Scoreboard.SendCustomNetworkEvent(NetworkEventTarget.All, "UpdateBoard");
                 if (xP >= XPToNextLv && Level <= 20)
                 {
                     Level++;

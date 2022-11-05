@@ -13,6 +13,7 @@ public class StartArea : UdonSharpBehaviour
     public LilWolfSpawner LilWolfPool;
     public LilGhostSpawner LilGhostPool;
     public Cyan.PlayerObjectPool.CyanPlayerObjectAssigner PlayerPool;
+
     [UdonSynced]
     public int NumberOfPlayersReady;
     public Component[] Players;
@@ -40,8 +41,22 @@ public class StartArea : UdonSharpBehaviour
     public void TeleportPlayers()
     {
         Networking.LocalPlayer.TeleportTo(TargetTransform.position, TargetTransform.rotation);
-        PlayerPool._GetPlayerPooledObject(Networking.LocalPlayer).GetComponent<PlayerController>().KnifePool.isKnifeOn = true;
-        PlayerPool._GetPlayerPooledObject(Networking.LocalPlayer).GetComponent<PlayerController>().KnifePool.SwitchOnUI = true;
+        PlayerController PlayerController = PlayerPool
+            ._GetPlayerPooledObject(Networking.LocalPlayer)
+            .GetComponent<PlayerController>();
+        string Weapon = PlayerController.Weapon;
+        switch (Weapon)
+        {
+            case "Knife":
+                PlayerController.LevelUpUI.gameObject.SetActive(true);
+                PlayerController.KnifePool.isKnifeOn = true;
+                PlayerController.KnifePool.SwitchOnUI = true;
+                break;
+            case "Fireball":
+                PlayerController.FireballPool.isFireballOn = true;
+                PlayerController.FireballPool.SwitchOnUI = true;
+                break;
+        }
     }
 
     // public override void OnDeserialization()

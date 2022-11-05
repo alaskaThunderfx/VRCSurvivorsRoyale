@@ -40,13 +40,12 @@ public class PlayerUI : UdonSharpBehaviour
             PlayerUIContainer ThisContainer = transform.parent.GetComponent<PlayerUIContainer>();
             ThisContainer.Owner = Owner;
             ThisContainer.IsReady = true;
-            KnifePool = PlayerController.KnifePool;
-            // KnifePool.PlayerUI = GetComponent<PlayerUI>();
-            KnifePool.HP = 10f;
-            SetMaxHealth(KnifePool.HP);
             WeaponAndStats = transform.GetChild(0).GetChild(1).GetComponent<Text>();
-            transform.parent.GetComponent<PlayerUIContainer>().IsReady = true;
-            PlayerController.SetUIWAS("Knife", KnifePool.Level.ToString());
+            WeaponAndStats.text = Owner.displayName;
+            // Just so the bar looks full in the beginning.
+            SetMaxHealth(10f);
+            SetHealth(10f);
+            
             Transform SongsInHierarchy = GameObject.Find("Music").GetComponent<Transform>();
             for (int i = 0; i < 6; i++)
             {
@@ -59,7 +58,12 @@ public class PlayerUI : UdonSharpBehaviour
         }
     }
 
-    private void OnEnable() { }
+    public void ChoseKnife()
+    {
+        KnifePool = PlayerController.KnifePool;
+        KnifePool.HP = 10f;
+        SetMaxHealth(KnifePool.HP);
+    }
 
     public void PrevSong()
     {

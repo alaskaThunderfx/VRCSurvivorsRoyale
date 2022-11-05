@@ -11,17 +11,23 @@ public class EffectsContainer : UdonSharpBehaviour
     public Vector3 Pos;
     public ParticleSystem LevelUpVisual;
     public AudioSource LevelUpAudio;
+    public AudioSource Kill;
+    // Knife effects
     public ParticleSystem Spark;
     public ParticleSystem Blood;
     public AudioSource Throw;
-    public AudioSource IAOHit;
-    public AudioSource EnemyHit;
-    public AudioSource Kill;
+    public AudioSource KnifeIAOHit;
+    public AudioSource KnifeEnemyHit;
+    // Fireball effects
+    public ParticleSystem Explode;
+    public ParticleSystem Burn;
+
     public bool IsReady;
 
     private void Update()
     {
-        if (!IsReady) return;
+        if (!IsReady)
+            return;
         Pos = Owner.GetPosition();
     }
 
@@ -32,12 +38,14 @@ public class EffectsContainer : UdonSharpBehaviour
         // Set ParticleSystems and Sounds
         LevelUpVisual = transform.GetChild(0).GetChild(0).GetComponent<ParticleSystem>();
         LevelUpAudio = transform.GetChild(0).GetChild(1).GetComponent<AudioSource>();
-        Spark = transform.GetChild(1).GetComponent<ParticleSystem>();
-        Blood = transform.GetChild(2).GetComponent<ParticleSystem>();
-        Throw = transform.GetChild(3).GetComponent<AudioSource>();
-        IAOHit = transform.GetChild(4).GetComponent<AudioSource>();
-        EnemyHit = transform.GetChild(5).GetComponent<AudioSource>();
-        Kill = transform.GetChild(6).GetComponent<AudioSource>();
+        Kill = transform.GetChild(1).GetComponent<AudioSource>();
+        Spark = transform.GetChild(2).GetComponent<ParticleSystem>();
+        Blood = transform.GetChild(3).GetComponent<ParticleSystem>();
+        Throw = transform.GetChild(4).GetComponent<AudioSource>();
+        KnifeIAOHit = transform.GetChild(5).GetComponent<AudioSource>();
+        KnifeEnemyHit = transform.GetChild(6).GetComponent<AudioSource>();
+        Explode = transform.GetChild(7).GetComponent<ParticleSystem>();
+
         IsReady = true;
     }
 

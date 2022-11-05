@@ -30,14 +30,9 @@ public class Fireball : UdonSharpBehaviour
     // Checks to see if what was hit was an inanimate object
     public bool HitIAO;
 
-    // The effect when the Fireball hits an IAO
-    public ParticleSystem Spark;
+    public ParticleSystem Explode;
 
-    // The effect for when a Fireball hits an enemy
-    public ParticleSystem Blood;
-
-    // The sound made when the player throws the Fireball
-    private AudioClip Throw;
+    public ParticleSystem Burn;
 
     // The sound when a Fireball hits an IAO
     private AudioClip HitIAOSound;
@@ -63,17 +58,17 @@ public class Fireball : UdonSharpBehaviour
     public void _OnOwnerSet()
     {
         Debug.Log("In _OnOwnerSet in Fireball");
+        Networking.SetOwner(PlayerController.Owner, gameObject);
         // Set AudioClips
         Owner = Networking.GetOwner(gameObject);
         FireballPool = transform.parent.GetComponent<FireballPool>();
 
         PlayerController = FireballPool.PlayerController;
         EffectsContainer = FireballPool.EffectsContainer;
-        Spark = EffectsContainer.Spark;
-        Blood = EffectsContainer.Blood;
-        Throw = EffectsContainer.Throw.clip;
-        HitIAOSound = EffectsContainer.IAOHit.clip;
-        HitEnemySound = EffectsContainer.EnemyHit.clip;
+        Explode = EffectsContainer.Explode;
+        Burn = EffectsContainer.Burn;
+        // HitIAOSound = EffectsContainer.IAOHit.clip;
+        // HitEnemySound = EffectsContainer.EnemyHit.clip;
         Kill = EffectsContainer.Kill.clip;
         gameObject.SetActive(false);
     }
@@ -115,7 +110,7 @@ public class Fireball : UdonSharpBehaviour
             OgParticle.y * FireballPool.Size,
             OgParticle.z * FireballPool.Size
         );
-        AudioSource.PlayClipAtPoint(Throw, transform.position, 0.1f);
+        // AudioSource.PlayClipAtPoint(Throw, transform.position, 0.1f);
     }
 
     private void Update()
@@ -147,8 +142,8 @@ public class Fireball : UdonSharpBehaviour
             HitEnemy = true;
             Enemy = other;
             AudioSource.PlayClipAtPoint(HitEnemySound, transform.position);
-            Blood.transform.position = transform.position;
-            Blood.Play(true);
+            Explode.transform.position = transform.position;
+            Explode.Play(true);
             Networking.SetOwner(Owner, other.gameObject);
             gameObject.SetActive(false);
         }
@@ -164,9 +159,9 @@ public class Fireball : UdonSharpBehaviour
 
         if (HitIAO)
         {
-            AudioSource.PlayClipAtPoint(HitIAOSound, transform.position, 0.1f);
-            Spark.transform.position = transform.position;
-            Spark.Play(true);
+            // AudioSource.PlayClipAtPoint(HitIAOSound, transform.position, 0.1f);
+            Explode.transform.position = transform.position;
+            Explode.Play(true);
         }
 
         ReadyToGo = true;

@@ -51,7 +51,8 @@ public class LevelUp : UdonSharpBehaviour
             ThisContainer.Owner = Owner;
             ThisContainer.LevelUp = GetComponent<LevelUp>();
             ThisContainer.IsReady = true;
-            PowerUpChoices();
+            gameObject.SetActive(false);
+            // PowerUpChoices();
         }
     }
 

@@ -72,8 +72,8 @@ public class Knife : UdonSharpBehaviour
         Spark = EffectsContainer.Spark;
         Blood = EffectsContainer.Blood;
         Throw = EffectsContainer.Throw.clip;
-        HitIAOSound = EffectsContainer.IAOHit.clip;
-        HitEnemySound = EffectsContainer.EnemyHit.clip;
+        HitIAOSound = EffectsContainer.KnifeIAOHit.clip;
+        HitEnemySound = EffectsContainer.KnifeEnemyHit.clip;
         Kill = EffectsContainer.Kill.clip;
         gameObject.SetActive(false);
     }

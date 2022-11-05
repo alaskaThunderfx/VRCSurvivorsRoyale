@@ -172,7 +172,7 @@ public class KnifePool : UdonSharpBehaviour
 
         // Used to toggle knife attacking
         // If isKnifeOn is false, stop attacking
-        if (!isKnifeOn)
+        if (!isKnifeOn || PlayerController.Weapon != "Knife")
         {
             return;
         }
