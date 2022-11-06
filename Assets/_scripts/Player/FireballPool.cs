@@ -73,8 +73,8 @@ public class FireballPool : UdonSharpBehaviour
 
     // Amount of knives thrown at once
     [UdonSynced]
-    public float Quantity;
-    public int TrackQTYLv;
+    public float BurnTime;
+    public int TrackBTLv;
 
     [UdonSynced]
     public float Size;
@@ -100,15 +100,10 @@ public class FireballPool : UdonSharpBehaviour
     // 5 - AttackSpeed
     // 6 - Range
     // 7 - Size
-    // 8 - Quantity
+    // 8 - BurnTime
 
     public bool ReadyToGo = false;
     public bool SwitchOnUI = false;
-
-    private void OnEnable() {
-        _OnOwnerSet();
-        isFireballOn = true;
-    }
 
     // Script ran after the _OnOwnerSet script on the PlayerController
     public void _OnOwnerSet()
@@ -130,15 +125,15 @@ public class FireballPool : UdonSharpBehaviour
         TrackRSLv = 0;
         Damage = 1f;
         TrackDMGLv = 0;
-        Cooldown = 2f;
+        Cooldown = 3f;
         TrackCDLv = 0;
         Range = 100f;
         TrackRangeLv = 0;
-        Quantity = 1f;
-        TrackQTYLv = 0;
+        BurnTime = 3f;
+        TrackBTLv = 0;
         Size = 1f;
         TrackSizeLv = 0;
-        Force = 2f;
+        Force = 4.5f;
         TrackForceLv = 0;
 
         int index = 0;
@@ -146,12 +141,11 @@ public class FireballPool : UdonSharpBehaviour
         {
             Debug.Log(child.gameObject.name);
             Networking.SetOwner(Owner, child.gameObject);
-            // Networking.SetOwner(Owner, child.gameObject);
             Fireball Fireball = child.GetComponent<Fireball>();
             Fireball.name = index.ToString() + "Fireball";
             Fireballs[index] = Fireball.gameObject;
             Fireball._OnOwnerSet();
-            
+
             index++;
         }
 
@@ -194,42 +188,15 @@ public class FireballPool : UdonSharpBehaviour
             {
                 // Reset CDCounter to Cooldown value
                 CDCounter = Cooldown;
-                // Begin for loop that corresponds with Quantity value
-                // Trying a switch statement instead
-                switch (Quantity)
-                {
-                    case 1:
-                        ThrowFireball();
-                        break;
-                    case 2:
-                        ThrowFireball();
-                        SendCustomEventDelayedSeconds(nameof(ThrowFireball), 0.1f);
-                        break;
-                    case 3:
-                        ThrowFireball();
-                        SendCustomEventDelayedSeconds(nameof(ThrowFireball), 0.1f);
-                        SendCustomEventDelayedSeconds(nameof(ThrowFireball), 0.2f);
-                        break;
-                    case 4:
-                        ThrowFireball();
-                        SendCustomEventDelayedSeconds(nameof(ThrowFireball), 0.1f);
-                        SendCustomEventDelayedSeconds(nameof(ThrowFireball), 0.2f);
-                        SendCustomEventDelayedSeconds(nameof(ThrowFireball), 0.3f);
-                        break;
-                    case 5:
-                        ThrowFireball();
-                        SendCustomEventDelayedSeconds(nameof(ThrowFireball), 0.1f);
-                        SendCustomEventDelayedSeconds(nameof(ThrowFireball), 0.2f);
-                        SendCustomEventDelayedSeconds(nameof(ThrowFireball), 0.3f);
-                        SendCustomEventDelayedSeconds(nameof(ThrowFireball), 0.4f);
-                        break;
-                }
+                ThrowFireball();
             }
         }
     }
 
     public void ThrowFireball()
     {
+        Debug.Log("FireballIndex = " + FireballIndex);
+        Debug.Log("Fireballs[FireballIndex].name = " + Fireballs[FireballIndex].name);
         // Set Fireball at this index in the object pool to active
         Fireballs[FireballIndex].SetActive(true);
         // If the value of Fireball index is less than or equal to 28

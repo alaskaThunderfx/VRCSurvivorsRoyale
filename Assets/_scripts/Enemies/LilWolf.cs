@@ -23,7 +23,6 @@ public class LilWolf : UdonSharpBehaviour
     public Transform HealthBarCanvas;
     public HealthBar HealthBar;
     public Collider Biter;
-
     [Header("Stats")]
     [UdonSynced, FieldChangeCallback(nameof(Health))]
     public float health;

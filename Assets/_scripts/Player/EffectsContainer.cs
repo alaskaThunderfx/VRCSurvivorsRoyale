@@ -20,7 +20,6 @@ public class EffectsContainer : UdonSharpBehaviour
     public AudioSource KnifeEnemyHit;
     // Fireball effects
     public ParticleSystem Explode;
-    public ParticleSystem Burn;
 
     public bool IsReady;
 

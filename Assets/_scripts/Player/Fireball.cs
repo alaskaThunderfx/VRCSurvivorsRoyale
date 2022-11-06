@@ -11,6 +11,7 @@ public class Fireball : UdonSharpBehaviour
     public EffectsContainer EffectsContainer;
     public FireballPool FireballPool;
     public Rigidbody FireballRB;
+    public Burner Burner;
 
     [Header("Fireball Info")]
     // Used to initialize where the Fireball will spawn in reference to the current player
@@ -32,7 +33,9 @@ public class Fireball : UdonSharpBehaviour
 
     public ParticleSystem Explode;
 
-    public ParticleSystem Burn;
+    public GameObject Burn;
+    public float BurnTime;
+    public bool IsBurning;
 
     // The sound when a Fireball hits an IAO
     private AudioClip HitIAOSound;
@@ -58,15 +61,17 @@ public class Fireball : UdonSharpBehaviour
     public void _OnOwnerSet()
     {
         Debug.Log("In _OnOwnerSet in Fireball");
-        Networking.SetOwner(PlayerController.Owner, gameObject);
         // Set AudioClips
         Owner = Networking.GetOwner(gameObject);
         FireballPool = transform.parent.GetComponent<FireballPool>();
+        Burn = transform.GetChild(2).gameObject;
+        BurnTime = FireballPool.BurnTime;
+        Burner = transform.GetChild(2).GetComponent<Burner>();
+        Burner._OnOwnerSet();
 
         PlayerController = FireballPool.PlayerController;
         EffectsContainer = FireballPool.EffectsContainer;
         Explode = EffectsContainer.Explode;
-        Burn = EffectsContainer.Burn;
         // HitIAOSound = EffectsContainer.IAOHit.clip;
         // HitEnemySound = EffectsContainer.EnemyHit.clip;
         Kill = EffectsContainer.Kill.clip;
@@ -83,18 +88,13 @@ public class Fireball : UdonSharpBehaviour
         FireballPool = transform.parent.GetComponent<FireballPool>();
         FireballRB = transform.GetComponent<Rigidbody>();
         DistanceTravelled = 0;
-        HitEnemy = false;
-        HitIAO = false;
 
-        FireballPosition = new Vector3(
-            Random.Range(FireballPool.PlayerPosition.x - .2f, FireballPool.PlayerPosition.x + .2f),
-            Random.Range(.8f, 1.2f),
-            FireballPool.PlayerPosition.z
-        );
+        Vector3 PlayerPos = FireballPool.PlayerPosition;
+        FireballPosition = new Vector3(PlayerPos.x, PlayerPos.y + .2f, PlayerPos.z);
         FireballRotation = FireballPool.PlayerRotation;
 
         transform.SetPositionAndRotation(FireballPosition, FireballRotation);
-        FireballRB.velocity = transform.forward * FireballPool.Force;
+        FireballRB.velocity = (transform.forward + transform.up) * FireballPool.Force;
 
         mesh = transform.GetChild(0);
         particle = transform.GetChild(1);
@@ -115,44 +115,40 @@ public class Fireball : UdonSharpBehaviour
 
     private void Update()
     {
-        if (ReadyToGo == false)
+        if (IsBurning)
         {
-            return;
-        }
-        // Tracking Distance
-        DistanceTravelled += Vector3.Distance(transform.position, FireballPosition);
-        if (DistanceTravelled >= FireballPool.Range)
-        {
-            gameObject.SetActive(false);
+            BurnTime -= Time.deltaTime;
+            if (BurnTime <= 0)
+            {
+                BurnTime = FireballPool.BurnTime;
+                gameObject.SetActive(false);
+            }
         }
     }
 
     private void OnTriggerEnter(Collider other)
     {
         EffectPosition = transform.position;
-        if (other.name.Contains("IAE"))
+        if (other.name.Contains("Floor"))
         {
-            Debug.Log("Hit an inanimate object");
+            FireballRB.isKinematic = true;
             HitIAO = true;
-            gameObject.SetActive(false);
-        }
-        else if (other.name.Contains("Enemy"))
-        {
-            Debug.Log(Owner + " hit a " + other.name + "!");
-            HitEnemy = true;
-            Enemy = other;
-            AudioSource.PlayClipAtPoint(HitEnemySound, transform.position);
+            IsBurning = true;
             Explode.transform.position = transform.position;
             Explode.Play(true);
-            Networking.SetOwner(Owner, other.gameObject);
-            gameObject.SetActive(false);
+            Burn.SetActive(true);
         }
     }
 
     private void OnDisable()
     {
         if (ReadyToGo)
-        {
+        { 
+            // Reset conditions here
+            HitIAO = false;
+            IsBurning = false;
+            FireballRB.isKinematic = false;
+            Burn.SetActive(false);
             mesh.localScale = OgMesh;
             particle.localScale = OgParticle;
         }

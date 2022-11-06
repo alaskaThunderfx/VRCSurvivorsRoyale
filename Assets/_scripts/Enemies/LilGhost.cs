@@ -23,6 +23,9 @@ public class LilGhost : UdonSharpBehaviour
     public Transform HealthBarCanvas;
     public HealthBar HealthBar;
     public Collider Biter;
+    public bool IsBurning;
+    public float BurnTime;
+    public VRCPlayerApi FireOwner;
 
     [Header("Stats")]
     [UdonSynced, FieldChangeCallback(nameof(Health))]
@@ -271,4 +274,3 @@ public class LilGhost : UdonSharpBehaviour
         get { return health; }
     }
 }
-
